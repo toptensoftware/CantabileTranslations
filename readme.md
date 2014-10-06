@@ -33,5 +33,5 @@ Cantabile doesn't provide a setting for which language to use.  Rather it uses t
 
 ## Notes for Translators
 
-If you're interested in contributing to a translation, [see here](./readme-translators.md)
+If you're interested in contributing to a translation, [see here](./cantabiletranslations/readme-translators.md)
 
