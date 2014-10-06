@@ -29,9 +29,9 @@ You'll need to restart Cantabile if it's already running.
 
 ## Switching Languages
 
-Cantabile doesn't provide a setting for which language to use.  Rather it uses the language selected in the operating system.  To switch languages you need to close Cantabile, change the language in the operating system, restart Cantabile.
+Cantabile doesn't provide a setting for which language to use.  Rather it uses the language selected in the operating system.  To switch languages you need to close Cantabile, change the language in the operating system and restart Cantabile.
 
+## Notes for Translators
 
-
-
+If you're interested in contributing to a translation, [see here](readme-translators.md)
 
