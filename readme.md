@@ -1,6 +1,6 @@
 # Cantabile Translations
 
-Cantabile Translations is a set of resource files that Cantabile 3 uses for translated language strings in it's user interface.
+Cantabile Translations is a set of resource files that Cantabile 3 uses for translated language strings in its user interface.
 
 ## Langauge Translation Files
 
@@ -48,6 +48,8 @@ All translation files are in [JSON](http://json.org/) format.  If you're not fam
 1. Special characters in strings need to be escaped with a leading backslash.  eg: to embed a double quote use `\"`
 2. Unicode characters can be embedded using the \uNNNN escape sequence where NNNN is the hex code of the character.
 3. Syntax is important. ie: the placement braces, commas etc... must be syntactically correct or Cantabile will fail to load the file.
+
+If you find Cantabile isn't loading your strings file, try running it though an online JSON validator tool to find the problem.
 
 ## Format Strings
 
@@ -106,3 +108,11 @@ Sometimes however the same English string may need different translations for a 
 ## Committing Changes
 
 Once you've made a set of changes you'd like to commit for inclusion, either email me the file directly and I'll commit it back into the repository, or, if you understand git you can send me a pull request on BitBucket.
+
+## New Builds of Cantabile
+
+As Cantabile is currently under active development the set of strings that require translation will be constantly changing.  To support this the build process extracts new strings from the code base and will update existing translations with any new strings and also provide an initial machine translation for them.
+
+When a new build of Cantabile is released, this repository will also be updated and each language file will contain the new strings - each marked with `"machine": true` indicating strings that need to be reviewed.
+
+This means that for the time being at least, Cantabile's builds will always be a little ahead of the translations.  When Cantabile gets closer to release I'll work more actively with translators to ensure the translations are done ahead of time and included in the released product.
