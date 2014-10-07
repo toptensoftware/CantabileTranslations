@@ -66,7 +66,7 @@ To embed actual curly braces in a translated string use double braces {{like thi
 
 For many user-interface strings, the shortcut key is prefixed with an ampersand `&` character.  A literal ampersand must be escaped with a double ampersand. eg: `Instruments && Effects`.
 
-It's important that after translation there are no duplicate short cut keys.  To support this the machine generated translation will try to re-use the same short cut key as the English version.  If the translated string doesn't contain the same letter is will suffix the letter in brackets.
+It's important that after translation there are no duplicate short cut keys.  To support this the machine generated translation will try to re-use the same short cut key as the English version.  If the translated string doesn't contain the same letter it will suffix the letter in brackets.
 
 eg: The machine tranlation for `"&Delete"` to Italian is `"Cancellare (&D)"`.  If the translated string was `"&Cancellare"` this would conflict with `"&Copy"` in the Edit menu.
 
@@ -115,7 +115,7 @@ There may be cases where a translated constructed phrase doesn't read correctly 
 
 ## Conflicting Contexts
 
-Some strings are used in multiple contexts and the tool that generates the source json files coalesces these into a single entry with multiple "contexts" entries.  Normally this is desirable behaviour as it saves translating the same string multiple times.
+Some strings are used in multiple contexts and the tool that generates the source json files coalesces these into a single entry with multiple context entries.  Normally this is desirable behaviour as it saves translating the same string multiple times.
 
 Sometimes however the same English string may need different translations for a different contexts.  Currently this isn't supported however if you encounter such scenarios please get in touch and I'll work out a solution.
 
