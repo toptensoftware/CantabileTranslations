@@ -59,7 +59,7 @@ Some of the strings that require translation include C# format specifiers enclos
 
 These format specifiers must be included in the translated string or an exception will occur when the string is used.  See here for more information about [string formats](http://msdn.microsoft.com/en-us/library/system.string.format(v=vs.110).aspx#HowFormatted).
 
-Similarly, to embed curly brace in a translated string use double braces {{like this}}.
+To embed actual curly braces in a translated string use double braces {{like this}}.
 
 ## Shortcut Keys
 
@@ -67,7 +67,7 @@ For many user-interface strings, the shortcut key is prefixed with an ampersand 
 
 It's important that after translation there are no duplicate short cut keys.  To support this the machine generated translation will try to re-use the same short cut key as the English version.  If the translated string doesn't contain the same letter is will suffix the letter in brackets.
 
-eg: The machine tranlation for "&Delete" to Italian is "Cancellare (&D)".  If the translated string was "&Cancellare" this would conflict with "&Copy" in the Edit menu.
+eg: The machine tranlation for `"&Delete"` to Italian is `"Cancellare (&D)"`.  If the translated string was `"&Cancellare"` this would conflict with `"&Copy"` in the Edit menu.
 
 Translations are free to use different short-cut keys however they should be checked for duplicates in the final application.
 
