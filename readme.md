@@ -46,8 +46,9 @@ Once you decide to start work on a translation you can either download the file 
 All translation files are in [JSON](http://json.org/) format.  If you're not familiar with JSON it's an extremely simple data exchange format, most of which you can easily understand simply by looking at an existing file.  There are some things to be aware of however:
 
 1. Special characters in strings need to be escaped with a leading backslash.  eg: to embed a double quote use `\"`
-2. Unicode characters can be embedded using the \uNNNN escape sequence where NNNN is the hex code of the character.
-3. Syntax is important. ie: the placement braces, commas etc... must be syntactically correct or Cantabile will fail to load the file.
+2. New line characters are encoded as `\n`, tabs as `\t`.
+3. Unicode characters can be embedded using the \uNNNN escape sequence where NNNN is the hex code of the character.
+4. Syntax is important. ie: the placement braces, commas etc... must be syntactically correct or Cantabile will fail to load the file.
 
 If you find Cantabile isn't loading your strings file, try running it though an online JSON validator tool to find the problem.
 
@@ -98,6 +99,19 @@ So the typical process for updating a translation would be:
 2. Delete the `"machine": true` setting to flag that this entry has been reviewed by a human.
 
 Alternatively you could check and update all the translations and then do a search and replace to update all the `"machine"` entries.
+
+## Length of Strings
+
+Most of Cantabile's user-interface is responsive enough to rescale itself to make strings fit correctly. However a translated string that is considerably longer or shorter than the English string may cause some layout issues.  
+
+If you encounter this, try changing the string to more closely match length of the English string, or contact me with a screen shot of the issue and I'll try to provide a solution.
+
+## Constructed Strings
+
+Some messages that Cantabile displays are constructed by concatenating multiple strings together.  If a string starts or ends with a space be sure to leave the spaces intact as these are probably the spaces between words in a constructed phrase.
+
+There may be cases where a translated constructed phrase doesn't read correctly due to different semantics of the target language.  If you encounter this please let me know.
+
 
 ## Conflicting Contexts
 
