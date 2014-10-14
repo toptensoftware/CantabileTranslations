@@ -18,8 +18,9 @@ Cantabile looks for these files in the same folder as Cantabile.exe.
 
 Currently Cantabile doesn't include any official language translations so you'll need to manually install these files in order to use them:
 
-1. Locate and download the correct file in the [translations repository](https://bitbucket.org/toptensoftware/cantabiletranslations/src).
-2. Copy the file to the same location as Cantabile.exe, typically:
+1. Locate the file for the language you're interested in from the [translations repository](https://bitbucket.org/toptensoftware/cantabiletranslations/src).
+2. Click the file to view it and then download it by right clicking the "Raw" button at the top right and choosing Save As.
+3. Copy the file to the same location as Cantabile.exe, typically:
 	* `C:\Program Files\Topten Software\Cantabile 3.0`, or 
 	* `C:\Program Files (x86)\Topten Software\Cantabile 3.0`, or 
 
