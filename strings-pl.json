@@ -180,6 +180,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
+			".\\Cantabile\\Dialogs\\StateDialog.cs",
 			".\\Cantabile\\Options\\MidiPortsPage.cs"
 		],
 		"translation": "&Nazwa:",
@@ -558,6 +559,8 @@
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\SetListPanel.cs",
+			".\\Cantabile\\MainWindow\\StatesPanel.cs",
 			".\\Cantabile\\Options\\ExternalToolsPage.cs",
 			".\\Cantabile\\Options\\MidiPortsPage.cs"
 		],
@@ -721,7 +724,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\Options\\MidiPortsPage.cs"
 		],
 		"translation": "Artykuł",
 		"machine": true
@@ -858,7 +862,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\SetListPanel.cs"
 		],
 		"translation": "Wy&tnij",
 		"machine": true
@@ -870,7 +875,8 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\SetListPanel.cs"
 		],
 		"translation": "Kopiuj (&C)",
 		"machine": true
@@ -884,7 +890,8 @@
 			".\\Cantabile\\MainPanel\\AddRouteFooterSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\SetListPanel.cs"
 		],
 		"translation": "Wklej (&P)",
 		"machine": true
@@ -905,7 +912,9 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\SetListPanel.cs",
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
 		],
 		"translation": "Przesuń w górę (&V)",
 		"machine": true
@@ -917,7 +926,9 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\SetListPanel.cs",
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
 		],
 		"translation": "Przenieś &w dół",
 		"machine": true
@@ -1086,7 +1097,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
 		],
 		"translation": "Stan",
 		"machine": true
@@ -2811,7 +2823,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainPanel\\MainPanel.cs"
+			".\\Cantabile\\MainPanel\\MainPanel.cs",
+			".\\Cantabile\\MainWindow\\SetListPanel.cs",
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
 		],
 		"translation": "Cofnij {0} (&U)",
 		"machine": true
@@ -2820,7 +2834,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainPanel\\MainPanel.cs"
+			".\\Cantabile\\MainPanel\\MainPanel.cs",
+			".\\Cantabile\\MainWindow\\SetListPanel.cs",
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
 		],
 		"translation": "&Redo {0}",
 		"machine": true
@@ -3001,8 +3017,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainPanel\\PluginSlot.cs",
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainPanel\\PluginSlot.cs"
 		],
 		"translation": "Zmia&na nazwy...",
 		"machine": true
@@ -3188,15 +3203,6 @@
 		"translation": "&Nowa sesja",
 		"machine": true
 	},
-	"New Set List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Nowa lista zestaw",
-		"machine": true
-	},
 	"&Open...": 
 	{
 		"contexts": 
@@ -3204,60 +3210,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "&Otwarte...",
-		"machine": true
-	},
-	"&Save": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Zapi&sz",
-		"machine": true
-	},
-	"Save &As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Z&apisz jako...",
-		"machine": true
-	},
-	"Save Sub-session": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Zapisać pod-sesji",
-		"machine": true
-	},
-	"Save Sub-session As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Zapisać sesję jako pod-...",
-		"machine": true
-	},
-	"Save Set List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Zapisz zestaw listy",
-		"machine": true
-	},
-	"Save Set List As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Zapisz ustawić listę jako...",
 		"machine": true
 	},
 	"Import...": 
@@ -3323,15 +3275,6 @@
 		"translation": "Ostatnie sesje (&R)",
 		"machine": true
 	},
-	"Recent Set Lists": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Najnowsze setlisty",
-		"machine": true
-	},
 	"E&xit": 
 	{
 		"contexts": 
@@ -3357,15 +3300,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Nie można powtó&rzyć",
-		"machine": true
-	},
-	"Plugin &Editor...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "&Edytor plugin...",
 		"machine": true
 	},
 	"Plugin P&arameters...": 
@@ -3791,15 +3725,6 @@
 		"translation": "Klawiatura ekran&owa",
 		"machine": true
 	},
-	"MIDI Mo&nitor": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Mo&nitor MIDI",
-		"machine": true
-	},
 	"&Tools": 
 	{
 		"contexts": 
@@ -4121,6 +4046,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\SongDialog.cs",
 			".\\Cantabile\\MainWindow\\MainWindow.cs",
 			".\\Cantabile\\Options\\StartupPage.cs"
 		],
@@ -4169,6 +4095,7 @@
 		[
 			".\\Cantabile\\MainWindow\\MetronomePanel.cs",
 			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile.Application\\Sessions\\Metronome.cs",
 			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Metronom",
@@ -5504,24 +5431,6 @@
 			".\\Cantabile\\Options\\MidiPortsPage.cs"
 		],
 		"translation": "Domyślnie (a&utomatycznie połączyć się nowych wtyczek syntezatorowych)",
-		"machine": true
-	},
-	" (Disconnected)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
-		],
-		"translation": " (Odłączony)",
-		"machine": true
-	},
-	"(None)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
-		],
-		"translation": "(Brak)",
 		"machine": true
 	},
 	"Cantabile needs to restart to apply some changes to settings.  Restart now?": 
@@ -6864,15 +6773,6 @@
 			".\\Cantabile.Core\\Decibel.cs"
 		],
 		"translation": "+ {0:N1} dB",
-		"machine": true
-	},
-	"type": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "Typ",
 		"machine": true
 	},
 	"Unknown MIDI filter item type: '{0}'": 
@@ -8349,6 +8249,609 @@
 			".\\Cantabile\\Dialogs\\RenameDialog.cs"
 		],
 		"translation": "Proszę wpisać nazwę.",
+		"machine": true
+	},
+	"Insert Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SongDialog.cs",
+			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
+		],
+		"translation": "Włóż piosenkę",
+		"machine": true
+	},
+	"Edit Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SongDialog.cs",
+			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
+		],
+		"translation": "Edycja piosenka",
+		"machine": true
+	},
+	"New State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\StateDialog.cs",
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
+		],
+		"translation": "Nowy stan",
+		"machine": true
+	},
+	"Edit State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\StateDialog.cs",
+			".\\Cantabile.Application\\Sessions\\Racks\\RackUndoUnits.cs"
+		],
+		"translation": "Edycja stanu",
+		"machine": true
+	},
+	"N&ew Set List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Nowa lista z&estaw",
+		"machine": true
+	},
+	"&Save Session": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Zapi&sz sesji",
+		"machine": true
+	},
+	"Save Session &As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Z&apisz sesji jako...",
+		"machine": true
+	},
+	"Save Set &List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Zapisz zestaw &listy",
+		"machine": true
+	},
+	"Save Set L&ist As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Zap&isz listę jako zestaw...",
+		"machine": true
+	},
+	"Re&cent Set Lists": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Ostatnie setlisty (&C)",
+		"machine": true
+	},
+	"Renam&e...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Prz&emianować...",
+		"machine": true
+	},
+	"Plugin Ed&itor...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Edytor plug&in...",
+		"machine": true
+	},
+	"Update S&tate": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "S&tan aktualizacji",
+		"machine": true
+	},
+	"Aut&omatically Update States": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Aut&omatyczna aktualizacja stanów",
+		"machine": true
+	},
+	"S&tate...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "S&tan...",
+		"machine": true
+	},
+	"&Song...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Pio&senka...",
+		"machine": true
+	},
+	"&First State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Pierwszy stan (&F)",
+		"machine": true
+	},
+	"Next S&tate": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Nas&tępny stan",
+		"machine": true
+	},
+	"Pre&vious State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Poprzedni stan (&V)",
+		"machine": true
+	},
+	"F&irst Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "P&ierwsza piosenka",
+		"machine": true
+	},
+	"Next S&ong": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Następny utwór (&O)",
+		"machine": true
+	},
+	"Previous Son&g": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Poprzedni utwór (&G)",
+		"machine": true
+	},
+	"Fi&rst Song Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Pie&rwsza część utworu",
+		"machine": true
+	},
+	"Next Song &Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Nastę&pna piosenka część",
+		"machine": true
+	},
+	"Prev&ious Song Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Poprzedn&ia część piosenka",
+		"machine": true
+	},
+	"&States": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Zjednoczone (&S)",
+		"machine": true
+	},
+	"States &Behavior": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Zjednoczone zachowanie (&B)",
+		"machine": true
+	},
+	"MIDI Mo&nitor...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Mo&nitor MIDI...",
+		"machine": true
+	},
+	"Set List Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Set lista plików",
+		"machine": true
+	},
+	"Do you want to save changes to set list '{0}'?": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Czy chcesz zapisać zmiany do listy ustawiony \"{0}'?",
+		"machine": true
+	},
+	"Session and Set List Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Sesja i set lista plików",
+		"machine": true
+	},
+	"A state with this name already exists": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs",
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
+		],
+		"translation": "Państwo o tej nazwie już istnieje",
+		"machine": true
+	},
+	"Delete Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\SetListPanel.cs",
+			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
+		],
+		"translation": "Usuń piosenkę",
+		"machine": true
+	},
+	"Delete Songs": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\SetListPanel.cs"
+		],
+		"translation": "Usuwanie utworów",
+		"machine": true
+	},
+	"&Edit Song...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\SetListPanel.cs"
+		],
+		"translation": "&Edycja piosenka...",
+		"machine": true
+	},
+	"&Load Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\SetListPanel.cs"
+		],
+		"translation": "Piosenka obciążenia (&L)",
+		"machine": true
+	},
+	"State Behavior": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\StateBehaviourPanel.cs"
+		],
+		"translation": "Zachowanie państwa",
+		"machine": true
+	},
+	"Delete State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
+		],
+		"translation": "Usuń stan",
+		"machine": true
+	},
+	"Delete States": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
+		],
+		"translation": "Usuń stany",
+		"machine": true
+	},
+	"&Edit State...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
+		],
+		"translation": "&Edycja stanu...",
+		"machine": true
+	},
+	"Create Multi-part Song with Selected States": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
+		],
+		"translation": "Tworzenie utwór składanki z wybranymi państwami",
+		"machine": true
+	},
+	"Create Song for Each Selected State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
+		],
+		"translation": "Stworzyć piosenkę dla każdego wybranego kraju",
+		"machine": true
+	},
+	"{0}\n\nFailed to save setlist - {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "{0}\n\nNie udało się zapisać setlisty - {1}",
+		"machine": true
+	},
+	"Time Signature": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Metronome.cs"
+		],
+		"translation": "Metrum",
+		"machine": true
+	},
+	"Tempo": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Metronome.cs"
+		],
+		"translation": "Tempo",
+		"machine": true
+	},
+	"Run and Bypass Mode": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
+		],
+		"translation": "Tryb pracy i obwodnicy",
+		"machine": true
+	},
+	"Selected Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
+		],
+		"translation": "Wybrany program",
+		"machine": true
+	},
+	"Entire Bank": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
+		],
+		"translation": "Cały bankowy",
+		"machine": true
+	},
+	"Gain Level": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
+			".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs"
+		],
+		"translation": "Poziom wzmocnienia",
+		"machine": true
+	},
+	"Wet\/Dry Mix": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
+		],
+		"translation": "Mokra \/ sucha mieszanka",
+		"machine": true
+	},
+	"Pan and Fade": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
+		],
+		"translation": "Pan i blaknięcie",
+		"machine": true
+	},
+	"Plugin": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
+		],
+		"translation": "Plugin",
+		"machine": true
+	},
+	"Move State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Racks\\RackUndoUnits.cs"
+		],
+		"translation": "Przenieś stan",
+		"machine": true
+	},
+	"Enabled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs",
+			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Włączone",
+		"machine": true
+	},
+	"Source Port": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs",
+			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Port źródłowy",
+		"machine": true
+	},
+	"Target Port": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs"
+		],
+		"translation": "Port docelowy",
+		"machine": true
+	},
+	"Audio Route": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs"
+		],
+		"translation": "Trasa audio",
+		"machine": true
+	},
+	"Target Object and Port": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Obiekt docelowy i port",
+		"machine": true
+	},
+	"Target Channel": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Kanał docelowa",
+		"machine": true
+	},
+	"Target Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Program docelowy",
+		"machine": true
+	},
+	"Key Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Zakres klucz",
+		"machine": true
+	},
+	"Transpose": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Transponować",
+		"machine": true
+	},
+	"Source Channel": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Kanał Źródło",
+		"machine": true
+	},
+	"Source Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Program źródłowy",
+		"machine": true
+	},
+	"MIDI Route": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Trasa MIDI",
+		"machine": true
+	},
+	"Move Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
+		],
+		"translation": "Przenieś utwór",
 		"machine": true
 	}
 }
