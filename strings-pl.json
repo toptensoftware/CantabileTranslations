@@ -87,7 +87,8 @@
 		[
 			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
 			".\\Cantabile\\Controls\\Forms\\ChannelCombo.cs",
-			".\\Cantabile.Core\\ProgramNumber.cs"
+			".\\Cantabile.Core\\ProgramNumber.cs",
+			".\\GuiKit\\Forms\\MidiChannelBar.cs"
 		],
 		"translation": "Sam",
 		"machine": true
@@ -100,7 +101,8 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile.Core\\PanAndFade.cs",
-			".\\Cantabile.Core\\ProgramNumber.cs"
+			".\\Cantabile.Core\\ProgramNumber.cs",
+			".\\GuiKit\\Forms\\MidiChannelBar.cs"
 		],
 		"translation": "Brak",
 		"machine": true
@@ -2760,7 +2762,8 @@
 		[
 			".\\Cantabile\\MainPanel\\InputPortsSlot.cs",
 			".\\Cantabile.Application\\MidiAssignable\\MasterLevels.cs",
-			".\\Cantabile.Application\\MidiAssignable\\SessionLevels.cs"
+			".\\Cantabile.Application\\MidiAssignable\\SessionLevels.cs",
+			".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs"
 		],
 		"translation": "Wzmocnienie wejścia",
 		"machine": true
@@ -2769,7 +2772,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainPanel\\InputPortsSlot.cs"
+			".\\Cantabile\\MainPanel\\InputPortsSlot.cs",
+			".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs"
 		],
 		"translation": "Porty wejściowe",
 		"machine": true
@@ -2879,7 +2883,8 @@
 		[
 			".\\Cantabile\\MainPanel\\OutputPortsSlot.cs",
 			".\\Cantabile.Application\\MidiAssignable\\MasterLevels.cs",
-			".\\Cantabile.Application\\MidiAssignable\\SessionLevels.cs"
+			".\\Cantabile.Application\\MidiAssignable\\SessionLevels.cs",
+			".\\Cantabile.Application\\Sessions\\External\\ExternalOutputPorts.cs"
 		],
 		"translation": "Zysk wyjście",
 		"machine": true
@@ -2888,7 +2893,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainPanel\\OutputPortsSlot.cs"
+			".\\Cantabile\\MainPanel\\OutputPortsSlot.cs",
+			".\\Cantabile.Application\\Sessions\\External\\ExternalOutputPorts.cs"
 		],
 		"translation": "Porty wyjściowe",
 		"machine": true
@@ -3755,24 +3761,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "U&ruchom silnik dźwięku",
-		"machine": true
-	},
-	"&All Notes Off (Panic)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Wszystko z&auważa się (panika)",
-		"machine": true
-	},
-	"Capture PC &Keys": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "&Klucze przechwytywania PC",
 		"machine": true
 	},
 	"Scan &Plugin Folders (Quick)": 
@@ -6758,7 +6746,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Core\\ChannelMask.cs",
-			".\\Cantabile.Environment\\DriverPorts\\MidiInputPort.cs"
+			".\\Cantabile.Environment\\DriverPorts\\MidiInputPort.cs",
+			".\\GuiKit\\Forms\\MidiChannelBar.cs"
 		],
 		"translation": "Omni",
 		"machine": true
@@ -8804,6 +8793,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
 			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
 		],
 		"translation": "Transponować",
@@ -9181,7 +9171,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs"
+			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Engine.cs"
 		],
 		"translation": "Cel",
 		"machine": true
@@ -9335,6 +9326,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\SidePanel.cs",
 			".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs"
 		],
 		"translation": "Stany sesji",
@@ -9500,6 +9492,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\SidePanel.cs",
 			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
 		],
 		"translation": "Set lista",
@@ -9809,6 +9802,69 @@
 			".\\Cantabile.Environment\\DriverPorts\\MidiInputPort.cs"
 		],
 		"translation": "Kanał MIDI",
+		"machine": true
+	},
+	"Tr: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainPanel\\InputPortsSlot.cs"
+		],
+		"translation": "Tr: {0}",
+		"machine": true
+	},
+	"Set Tra&nspose...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Ustaw tra&nspozycji...",
+		"machine": true
+	},
+	"&All Sounds Off": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Wszystko dźwiękowy (&A)",
+		"machine": true
+	},
+	"New Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\SetListPanel.cs"
+		],
+		"translation": "Nowa piosenka",
+		"machine": true
+	},
+	"Engine": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Engine.cs"
+		],
+		"translation": "Silnik",
+		"machine": true
+	},
+	"Restart Engine": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Engine.cs"
+		],
+		"translation": "Ponowne uruchomienie silnika",
+		"machine": true
+	},
+	"All Sounds Off": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Engine.cs"
+		],
+		"translation": "Wszystko dźwiękowy",
 		"machine": true
 	}
 }
