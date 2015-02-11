@@ -17,22 +17,458 @@
 		".\\Cantabile\\Program.cs",
 	],
 },
-"Column Headers":
+"Play":
 {
 	"contexts": [
-		".\\Cantabile\\Controls\\Composited\\ColumnHeaders.cs",
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
+	],
+},
+"Pause":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
+	],
+},
+"Stop":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
+	],
+},
+"Toggle Play\/Stop":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Toggle Play\/Pause":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Next State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Previous State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"First State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Last State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Next Song":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Previous Song":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"First Song":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Last Song":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Next Song Part":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Previous Song Part":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"First Song Part":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Last Song Part":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Load Selected Song":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Undo":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Redo":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Cut":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+		".\\Cantabile\\MainPanel\\MainPanel.cs",
+		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+	],
+},
+"Copy":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+		".\\Cantabile\\MainPanel\\MainPanel.cs",
+		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+	],
+},
+"Paste":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+		".\\Cantabile\\MainPanel\\MainPanel.cs",
+		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+	],
+},
+"Delete":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+		".\\Cantabile\\MainPanel\\MainPanel.cs",
+		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+		".\\Cantabile.Application\\Sessions\\Racks\\RackUndoUnits.cs",
+	],
+},
+"Rename":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Move Up":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Move Down":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Plugin Editor":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Plugin Parameters":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Plugin Audio Ports":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"MIDI Filters":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Run Mode Running":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Run Mode Suspended":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Run Mode Unloaded":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Update State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Automatically Update States":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Increment Program Number":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Decrement Program Number":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Set Transpose":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"New Session":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"New Set List":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"Open":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"Save Session":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"Save Session As":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"Save Set List":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"Save Set List As":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"Exit":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"About":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\HelpCommands.cs",
+		".\\Cantabile\\Options\\AboutPage.cs",
+	],
+},
+"User UserGuides":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\HelpCommands.cs",
+	],
+},
+"Plugin":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\InsertCommands.cs",
+		".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
+	],
+},
+"State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\InsertCommands.cs",
+		".\\Cantabile\\MainPanel\\MainPanel.cs",
+		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+	],
+},
+"Song":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\InsertCommands.cs",
+	],
+},
+"Songs":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\InsertCommands.cs",
+	],
+},
+"MIDI Assignment":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\InsertCommands.cs",
+		".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
+	],
+},
+"Learn MIDI Assignment":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\InsertCommands.cs",
+	],
+},
+"Options":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ToolsCommands.cs",
+		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+		".\\GuiKit\\OptionsDialog\\OptionsDialog.cs",
+	],
+},
+"Start-Stop Engine":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ToolsCommands.cs",
+	],
+},
+"Scan Plugins (Quick)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ToolsCommands.cs",
+	],
+},
+"Scan Plugins (Full)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ToolsCommands.cs",
+	],
+},
+"All Sounds Off":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ToolsCommands.cs",
+		".\\Cantabile.Application\\MidiAssignable\\Engine.cs",
 	],
 },
 "Main":
 {
 	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
 		".\\Cantabile\\Controls\\Composited\\ContentPanel.cs",
 	],
 },
 "MIDI Assignments":
 {
 	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
 		".\\Cantabile\\Controls\\Composited\\ContentPanel.cs",
+	],
+},
+"MIDI Monitor":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
+"On-screen Keyboard":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
+"Metronome":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+		".\\Cantabile\\MainWindow\\MetronomePanel.cs",
+		".\\Cantabile\\Options\\GeneralPage.cs",
+		".\\Cantabile.Application\\MidiAssignable\\Metronome.cs",
+		".\\Cantabile.Application\\Sessions\\Metronome.cs",
+		".\\Cantabile.Environment\\Environment.cs",
+	],
+},
+"Toggle Metronome":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
+"Set List":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+		".\\Cantabile\\MainWindow\\SidePanel.cs",
+		".\\Cantabile.Application\\MidiAssignable\\SetList.cs",
+	],
+},
+"States":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
+"State Behaviours":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
+"Column Headers":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\ColumnHeaders.cs",
 	],
 },
 "Gain: +14.0 dB":
@@ -387,6 +823,7 @@
 		".\\Cantabile\\MainWindow\\StatesPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
 		".\\Cantabile\\Options\\ExternalToolsPage.cs",
+		".\\Cantabile\\Options\\HotKeysPage.cs",
 		".\\Cantabile\\Options\\MidiPortsPage.cs",
 	],
 },
@@ -665,14 +1102,6 @@
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
 	],
 },
-"Paste":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-		".\\Cantabile\\MainPanel\\MainPanel.cs",
-		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
-	],
-},
 "Duplicate":
 {
 	"contexts": [
@@ -689,15 +1118,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-		".\\Cantabile.Application\\Sessions\\Racks\\RackUndoUnits.cs",
-	],
-},
-"Delete":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-		".\\Cantabile\\MainPanel\\MainPanel.cs",
-		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+		".\\Cantabile\\Options\\HotKeysPage.cs",
 		".\\Cantabile.Application\\Sessions\\Racks\\RackUndoUnits.cs",
 	],
 },
@@ -2000,13 +2421,6 @@
 		".\\Cantabile\\MainPanel\\InputPortsSlot.cs",
 	],
 },
-"State":
-{
-	"contexts": [
-		".\\Cantabile\\MainPanel\\MainPanel.cs",
-		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
-	],
-},
 "Name\/Source":
 {
 	"contexts": [
@@ -2023,6 +2437,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainPanel\\MainPanel.cs",
+		".\\Cantabile\\Options\\HotKeysPage.cs",
 	],
 },
 "Indicators":
@@ -2053,20 +2468,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainPanel\\MainPanel.cs",
-	],
-},
-"Cut":
-{
-	"contexts": [
-		".\\Cantabile\\MainPanel\\MainPanel.cs",
-		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
-	],
-},
-"Copy":
-{
-	"contexts": [
-		".\\Cantabile\\MainPanel\\MainPanel.cs",
-		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
 	],
 },
 "Output Gain":
@@ -2640,27 +3041,6 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"Play":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-		".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
-	],
-},
-"Pause":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-		".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
-	],
-},
-"Stop":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-		".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
-	],
-},
 "Rewind":
 {
 	"contexts": [
@@ -3096,16 +3476,6 @@
 		".\\Cantabile\\MainWindow\\StatesPanel.cs",
 	],
 },
-"Metronome":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MetronomePanel.cs",
-		".\\Cantabile\\Options\\GeneralPage.cs",
-		".\\Cantabile.Application\\MidiAssignable\\Metronome.cs",
-		".\\Cantabile.Application\\Sessions\\Metronome.cs",
-		".\\Cantabile.Environment\\Environment.cs",
-	],
-},
 "To hear metronome sounds you must configure an audio port named 'Metronome' (and create channel assignments to the audio driver).":
 {
 	"contexts": [
@@ -3179,13 +3549,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
-	],
-},
-"Set List":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\SidePanel.cs",
-		".\\Cantabile.Application\\MidiAssignable\\SetList.cs",
 	],
 },
 "Session States":
@@ -3330,13 +3693,6 @@
 		".\\Cantabile.Application\\MidiAssignable\\Engine.cs",
 	],
 },
-"Options":
-{
-	"contexts": [
-		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
-		".\\GuiKit\\OptionsDialog\\OptionsDialog.cs",
-	],
-},
 "No recent files":
 {
 	"contexts": [
@@ -3389,12 +3745,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\VariableMenu.cs",
-	],
-},
-"About":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\AboutPage.cs",
 	],
 },
 "Get Updates":
@@ -3797,6 +4147,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Options\\ExternalToolsPage.cs",
+		".\\Cantabile\\Options\\HotKeysPage.cs",
 	],
 },
 "Ar&guments:":
@@ -4111,6 +4462,115 @@
 		".\\Cantabile\\Options\\GeneralPage.cs",
 	],
 },
+"Hot Keys":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"File":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"Edit":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"Tools":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"View":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"Help":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"The key {0} is bound to both {1} and {2}":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"Are you sure you want to reset to the default set of key bindings":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"Command":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"Hot Key":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"&Add...":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+		".\\Cantabile\\Options\\PluginsPage.cs",
+	],
+},
+"&Edit...":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"&Reset Defaults...":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"Edit Hot Key":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"&Hot Key:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"This key is already bound to {0}":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"Please select a command":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"Please type a hot key":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
 "MIDI Ports":
 {
 	"contexts": [
@@ -4220,12 +4680,6 @@
 	],
 },
 "Re&scan plugin folders on startup":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\PluginsPage.cs",
-	],
-},
-"&Add...":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\PluginsPage.cs",
@@ -4551,12 +5005,6 @@
 	],
 },
 "Restart Engine":
-{
-	"contexts": [
-		".\\Cantabile.Application\\MidiAssignable\\Engine.cs",
-	],
-},
-"All Sounds Off":
 {
 	"contexts": [
 		".\\Cantabile.Application\\MidiAssignable\\Engine.cs",
@@ -4897,12 +5345,6 @@
 		".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
 	],
 },
-"MIDI Assignment":
-{
-	"contexts": [
-		".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
-	],
-},
 "Enabled":
 {
 	"contexts": [
@@ -4962,12 +5404,6 @@
 	],
 },
 "Pan and Fade":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
-	],
-},
-"Plugin":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
