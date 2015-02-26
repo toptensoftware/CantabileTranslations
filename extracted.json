@@ -22,6 +22,7 @@
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 		".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
 	],
 },
@@ -149,6 +150,7 @@
 		".\\Cantabile\\Commands\\EditCommands.cs",
 		".\\Cantabile\\MainPanel\\MainPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+		".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
 	],
 },
 "Copy":
@@ -157,6 +159,7 @@
 		".\\Cantabile\\Commands\\EditCommands.cs",
 		".\\Cantabile\\MainPanel\\MainPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+		".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
 	],
 },
 "Paste":
@@ -166,6 +169,7 @@
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\MainPanel\\MainPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+		".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
 	],
 },
 "Delete":
@@ -175,6 +179,7 @@
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\MainPanel\\MainPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+		".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
 		".\\Cantabile.Application\\Sessions\\Racks\\RackUndoUnits.cs",
 	],
 },
@@ -342,6 +347,7 @@
 		".\\Cantabile\\Commands\\InsertCommands.cs",
 		".\\Cantabile\\MainPanel\\MainPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+		".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
 	],
 },
 "Song":
@@ -400,6 +406,12 @@
 	"contexts": [
 		".\\Cantabile\\Commands\\ToolsCommands.cs",
 		".\\Cantabile.Application\\MidiAssignable\\Engine.cs",
+	],
+},
+"Invoke Trigger":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ToolsCommands.cs",
 	],
 },
 "Main":
@@ -471,6 +483,13 @@
 		".\\Cantabile\\Controls\\Composited\\ColumnHeaders.cs",
 	],
 },
+"Triggers":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\ContentPanel.cs",
+		".\\Cantabile.Application\\MidiAssignable\\Triggers.cs",
+	],
+},
 "Gain: +14.0 dB":
 {
 	"contexts": [
@@ -516,6 +535,7 @@
 		".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 		".\\Cantabile\\MainPanel\\PluginSlot.cs",
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 		".\\Cantabile.Core\\PanAndFade.cs",
 		".\\Cantabile.Core\\ProgramNumber.cs",
 		".\\GuiKit\\Forms\\MidiChannelBar.cs",
@@ -825,6 +845,7 @@
 		".\\Cantabile\\Options\\ExternalToolsPage.cs",
 		".\\Cantabile\\Options\\HotKeysPage.cs",
 		".\\Cantabile\\Options\\MidiPortsPage.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Choose Object":
@@ -891,6 +912,36 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\CrashCheckDialog.cs",
+	],
+},
+"Enter &Custom Event Number: (0-127)":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\CustomEventDialog.cs",
+	],
+},
+"Please enter a value between 0 and 127":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\CustomEventDialog.cs",
+	],
+},
+"Execute External Program":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\ExecuteProgramDialog.cs",
+	],
+},
+"&Command Line:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\ExecuteProgramDialog.cs",
+	],
+},
+"&Working Directory:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\ExecuteProgramDialog.cs",
 	],
 },
 "(Waiting for MIDI events)":
@@ -1056,6 +1107,7 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "&Paste":
@@ -1070,6 +1122,8 @@
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\AddMidiAssignmentFooterSlot.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\TriggersPanel\\AddTriggerFooterSlot.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Dupl&icate":
@@ -1088,6 +1142,7 @@
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\MainWindow\\StatesPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Move Do&wn":
@@ -1100,6 +1155,7 @@
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\MainWindow\\StatesPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Duplicate":
@@ -1739,13 +1795,13 @@
 		".\\Cantabile\\Dialogs\\RenameDialog.cs",
 	],
 },
-"Enter &Parameter Number: (0-16383)":
+"Enter &{0}: (0-16383)":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\RpnDialog.cs",
 	],
 },
-"Please enter a valid program number.":
+"Please enter a valid {0}.":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\RpnDialog.cs",
@@ -1791,6 +1847,78 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\StateDialog.cs",
+	],
+},
+"&Sys-Ex Data:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SysExDialog.cs",
+	],
+},
+"&Preview:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SysExDialog.cs",
+	],
+},
+"&Macros...":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SysExDialog.cs",
+	],
+},
+"&Import...":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SysExDialog.cs",
+	],
+},
+"E&xport...":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SysExDialog.cs",
+	],
+},
+"Error: {0}":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SysExDialog.cs",
+	],
+},
+"Expanded: {0}":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SysExDialog.cs",
+	],
+},
+"Sys-Ex Files":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SysExDialog.cs",
+	],
+},
+"Set Trigger Delays":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\TriggerDelaysDialog.cs",
+	],
+},
+"Before executing trigger, delay for:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\TriggerDelaysDialog.cs",
+	],
+},
+"After executing trigger, delay for:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\TriggerDelaysDialog.cs",
+	],
+},
+"Please enter a delay value between 0 and 10,000 ms":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\TriggerDelaysDialog.cs",
 	],
 },
 "Update Available":
@@ -2453,6 +2581,7 @@
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\MainWindow\\StatesPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+		".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
 	],
 },
 "&Redo {0}":
@@ -2462,6 +2591,7 @@
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\MainWindow\\StatesPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+		".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
 	],
 },
 "Rename Object":
@@ -2564,12 +2694,21 @@
 		".\\Cantabile\\MainPanel\\PluginSlot.cs",
 	],
 },
+"MIDI &Filters...":
+{
+	"contexts": [
+		".\\Cantabile\\MainPanel\\PluginSlot.cs",
+		".\\Cantabile\\MainPanel\\RouteSlot.cs",
+		".\\Cantabile\\Options\\MidiPortsPage.cs",
+	],
+},
 "C&ut":
 {
 	"contexts": [
 		".\\Cantabile\\MainPanel\\PluginSlot.cs",
 		".\\Cantabile\\MainPanel\\RouteSlot.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Re&name...":
@@ -2589,6 +2728,7 @@
 	"contexts": [
 		".\\Cantabile\\MainPanel\\RouteSlot.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Source":
@@ -2658,6 +2798,12 @@
 		".\\Cantabile\\MainPanel\\RouteSlot.cs",
 	],
 },
+"MIDI &Route Settings...":
+{
+	"contexts": [
+		".\\Cantabile\\MainPanel\\RouteSlot.cs",
+	],
+},
 "Onscreen Keyboard":
 {
 	"contexts": [
@@ -2681,12 +2827,14 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Choose MIDI Channel":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "&File":
@@ -3666,6 +3814,14 @@
 {
 	"contexts": [
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"Parameter Number":
+{
+	"contexts": [
+		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Choose Target":
@@ -3678,12 +3834,14 @@
 {
 	"contexts": [
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Event":
 {
 	"contexts": [
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 	],
 },
 "Target":
@@ -3691,6 +3849,7 @@
 	"contexts": [
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
 		".\\Cantabile.Application\\MidiAssignable\\Engine.cs",
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 	],
 },
 "No recent files":
@@ -4643,12 +4802,6 @@
 		".\\Cantabile\\Options\\MidiPortsPage.cs",
 	],
 },
-"MIDI &Filters...":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\MidiPortsPage.cs",
-	],
-},
 "MIDI Filters provide more control over the MIDI events\npassing through this port":
 {
 	"contexts": [
@@ -4992,6 +5145,110 @@
 		".\\Cantabile\\Options\\WelcomePage.cs",
 	],
 },
+"Add Trigger":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\AddTriggerFooterSlot.cs",
+	],
+},
+"Choose Event":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\AddTriggerFooterSlot.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"(no data)":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"(not configured)":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"Choose {0}":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"Pitch Bend Value":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"Controller Value":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Parameter Value":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Master Volume Value":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"Master Balance Value":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"Choose MIDI Target":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"Set Delays":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"Invo&ke Trigger":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"Action":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
+		".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
+		".\\Cantabile.Application\\MidiAssignable\\SetList.cs",
+		".\\Cantabile.Application\\MidiAssignable\\Triggers.cs",
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Value":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
+	],
+},
+"Delays":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
 "There was a problem loading Cantabile's settings file.  Please correct or delete the file and re-start Cantabile.\n\n{0}\n\n{1}":
 {
 	"contexts": [
@@ -5118,19 +5375,13 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\MidiAssignable\\Metronome.cs",
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
 	],
 },
 "Session Levels":
 {
 	"contexts": [
 		".\\Cantabile.Application\\MidiAssignable\\SessionLevels.cs",
-	],
-},
-"Action":
-{
-	"contexts": [
-		".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
-		".\\Cantabile.Application\\MidiAssignable\\SetList.cs",
 	],
 },
 "Load Specific State (Delayed)":
@@ -5357,12 +5608,25 @@
 		".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
 	],
 },
+"Custom Event Trigger":
+{
+	"contexts": [
+		".\\Cantabile.Application\\MidiAssignable\\Triggers.cs",
+	],
+},
+"Custom Event {0}":
+{
+	"contexts": [
+		".\\Cantabile.Application\\MidiAssignable\\Triggers.cs",
+	],
+},
 "Enabled":
 {
 	"contexts": [
 		".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
 		".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs",
 		".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs",
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 	],
 },
 "Time Signature":
@@ -6064,6 +6328,78 @@
 		".\\Cantabile.Application\\SetLists\\UndoUnits.cs",
 	],
 },
+"Session Start":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Session Stop":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Session-State Load":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Session-State Unload":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Transport Play":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Transport Pause":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Transport Resume":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Transport Stop":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Transport Play or Resume":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Transport Stop or Pause":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Custom Event":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Trigger":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
 "Ch:":
 {
 	"contexts": [
@@ -6094,6 +6430,24 @@
 {
 	"contexts": [
 		".\\Cantabile.Core\\Decibel.cs",
+	],
+},
+"0 (note off)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Velocity":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Balance":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
 	],
 },
 "Unknown MIDI filter item type: '{0}'":
