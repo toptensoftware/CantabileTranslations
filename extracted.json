@@ -498,6 +498,19 @@
 		".\\Cantabile\\Commands\\ViewCommands.cs",
 	],
 },
+"Large Status":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
+"Quick Controller":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
 "Column Headers":
 {
 	"contexts": [
@@ -549,6 +562,7 @@
 		".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 		".\\Cantabile\\MainPanel\\PluginSlot.cs",
+		".\\Cantabile\\QuickController\\QuickController.cs",
 		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 		".\\Cantabile.Core\\PanAndFade.cs",
 		".\\Cantabile.Core\\ProgramNumber.cs",
@@ -2834,14 +2848,9 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+		".\\Cantabile\\QuickController\\QuickController.cs",
 		".\\Cantabile.Application\\Sessions\\OnscreenKeyboardState.cs",
 		".\\Cantabile.Environment\\Environment.cs",
-	],
-},
-"Ch: {0}":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
 	],
 },
 "Ch: NN":
@@ -2862,6 +2871,54 @@
 	"contexts": [
 		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
 		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"Ch: {0}":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+	],
+},
+"Failed to locate layout file for '{0}'":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\LargeStatusPanel.cs",
+	],
+},
+"Use Page Up\/Down keys to adjust font sizes":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\LargeStatusPanel.cs",
+	],
+},
+"&Adjust Font Sizes":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\LargeStatusPanel.cs",
+	],
+},
+"Layout":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\LargeStatusPanel.cs",
+	],
+},
+"Default":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\LargeStatusPanel.cs",
+	],
+},
+"&Custom....":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\LargeStatusPanel.cs",
+	],
+},
+"Failed to load layout: {0}":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\LargeStatusPanel.cs",
 	],
 },
 "&File":
@@ -3337,6 +3394,19 @@
 		".\\Cantabile\\MainWindow\\MainWindow.cs",
 	],
 },
+"Hide Large Stat&us":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\MainWindow\\MainWindow.cs",
+	],
+},
+"&Quick Controller\t0-9":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
 "Ma&in":
 {
 	"contexts": [
@@ -3639,6 +3709,12 @@
 		".\\Cantabile\\MainWindow\\MainWindow.cs",
 	],
 },
+"Show Large Stat&us":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainWindow.cs",
+	],
+},
 "A state with this name already exists":
 {
 	"contexts": [
@@ -3721,6 +3797,14 @@
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 	],
 },
+"Invalid program number":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\SetListPanel.cs",
+		".\\Cantabile\\MainWindow\\StatesPanel.cs",
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
 "Session States":
 {
 	"contexts": [
@@ -3770,6 +3854,12 @@
 		".\\Cantabile\\MainWindow\\StatusPanel.cs",
 	],
 },
+"Quick Action":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\StatusPanel.cs",
+	],
+},
 "Add MIDI Assignment":
 {
 	"contexts": [
@@ -3806,12 +3896,14 @@
 {
 	"contexts": [
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\QuickController\\QuickController.cs",
 	],
 },
 "On":
 {
 	"contexts": [
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\QuickController\\QuickController.cs",
 	],
 },
 "Toggle":
@@ -3830,6 +3922,13 @@
 {
 	"contexts": [
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+	],
+},
+"Invalid controller value":
+{
+	"contexts": [
+		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Choose Controller":
@@ -5155,6 +5254,282 @@
 		".\\Cantabile\\Options\\WelcomePage.cs",
 	],
 },
+"Please enter a number between {0} and {1}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Please enter a number above {0}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Please enter a number before {0}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Please enter a valid number":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"No suitable selection":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Loaded {0}: {1}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Song {0} not found":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"State {0} not found":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"No plugin selected":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Plugin not loaded":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Invalid preset number":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Loaded preset {0}: {1}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Invoked custom triggers #{0}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"No matching triggers found":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"MIDI Channel {0} Selected":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Sent program change {0}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Sent CC Button {0}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Switched CC {0} {1}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"CC {0} Selected":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Sent {0} to CC {1}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Note velocity {0}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Sent note {0} @ {1}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Sent note off {0}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Sent pitch bend {0}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Sent channel pressure {0}":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Invalid time signature":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"MIDI device not found":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Repeat Last":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Assign Value":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Load Song":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Load Session-State":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Load Plugin Preset":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Invoke Triggers":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Set MIDI Channel":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Send Program Change":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Send CC (Push)":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Send CC (Toggle)":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Set CC Number":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Send CC Value":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Set Note Velocity":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Send Note On":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Send Note Off":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Send Pitch Bend":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Send Channel Pressure":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Set Tempo":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
+"Set Time Signature":
+{
+	"contexts": [
+		".\\Cantabile\\QuickController\\QuickController.cs",
+	],
+},
 "Add Trigger":
 {
 	"contexts": [
@@ -5260,6 +5635,24 @@
 	],
 },
 "There was a problem loading Cantabile's settings file.  Please correct or delete the file and re-start Cantabile.\n\n{0}\n\n{1}":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
+"Paused":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
+"Playing":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
+"Stopped":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Application.cs",
