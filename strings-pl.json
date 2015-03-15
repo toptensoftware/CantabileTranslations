@@ -100,6 +100,7 @@
 			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
+			".\\Cantabile\\QuickController\\QuickController.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs",
 			".\\Cantabile.Core\\PanAndFade.cs",
 			".\\Cantabile.Core\\ProgramNumber.cs",
@@ -2759,16 +2760,6 @@
 		"translation": "Rozwiń",
 		"machine": true
 	},
-	"Rack Name": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainPanel\\InputPortsSlot.cs",
-			".\\Cantabile\\MainPanel\\OutputPortsSlot.cs"
-		],
-		"translation": "Nazwa rack",
-		"machine": true
-	},
 	"Input Gain": 
 	{
 		"contexts": 
@@ -3184,6 +3175,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+			".\\Cantabile\\QuickController\\QuickController.cs",
 			".\\Cantabile.Application\\Sessions\\OnscreenKeyboardState.cs",
 			".\\Cantabile.Environment\\Environment.cs"
 		],
@@ -8997,7 +8989,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs"
+			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+			".\\Cantabile\\QuickController\\QuickController.cs"
 		],
 		"translation": "Od",
 		"machine": true
@@ -9006,7 +8999,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs"
+			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+			".\\Cantabile\\QuickController\\QuickController.cs"
 		],
 		"translation": "Na",
 		"machine": true
@@ -11131,6 +11125,729 @@
 			".\\Cantabile.Application\\Application.cs"
 		],
 		"translation": "Zatrzymany",
+		"machine": true
+	},
+	"Quick Controller": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\Options\\HotKeysPage.cs"
+		],
+		"translation": "Szybki sterownik",
+		"machine": true
+	},
+	"&Ignore Song and Session Transpose Settings (for percussive targets)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+		],
+		"translation": "&Ignoruj ​​piosenki i sesji transpozycji ustawienia (dla celów perkusyjnych)",
+		"machine": true
+	},
+	"Failed to locate layout file for '{0}'": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\LargeStatusPanel.cs"
+		],
+		"translation": "Nie udało się zlokalizować plik układu dla \"{0}'",
+		"machine": true
+	},
+	"Use Page Up\/Down keys to adjust font sizes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\LargeStatusPanel.cs"
+		],
+		"translation": "Korzystanie strona górę \/ w dół, aby dostosować wielkość czcionek",
+		"machine": true
+	},
+	"&Adjust Font Sizes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\LargeStatusPanel.cs"
+		],
+		"translation": "Regul&acja rozmiarów czcionek",
+		"machine": true
+	},
+	"Layout": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\LargeStatusPanel.cs"
+		],
+		"translation": "Układ",
+		"machine": true
+	},
+	"Default": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\LargeStatusPanel.cs",
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Domyślnie",
+		"machine": true
+	},
+	"&Custom....": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\LargeStatusPanel.cs"
+		],
+		"translation": "Zwy&czaj....",
+		"machine": true
+	},
+	"Failed to load layout: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\LargeStatusPanel.cs"
+		],
+		"translation": "Nie udało się załadować układ: {0}",
+		"machine": true
+	},
+	"&Quick Controller\t0-9": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Szybki sterownik 0-9 (&Q)",
+		"machine": true
+	},
+	"Invalid program number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\SetListPanel.cs",
+			".\\Cantabile\\MainWindow\\StatesPanel.cs",
+			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+			".\\Cantabile\\QuickController\\QuickController.cs",
+			".\\Cantabile\\TriggersPanel\\TriggerSlot.cs"
+		],
+		"translation": "Nieprawidłowy numer programu",
+		"machine": true
+	},
+	"Quick Action": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\StatusPanel.cs"
+		],
+		"translation": "Szybka akcja",
+		"machine": true
+	},
+	"Invalid controller value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+			".\\Cantabile\\TriggersPanel\\TriggerSlot.cs"
+		],
+		"translation": "Nieprawidłowa wartość sterownik",
+		"machine": true
+	},
+	"Red": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Czerwony",
+		"machine": true
+	},
+	"Maroon": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Kasztanowaty",
+		"machine": true
+	},
+	"Green": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Zielony",
+		"machine": true
+	},
+	"Lime": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Wapno",
+		"machine": true
+	},
+	"Blue": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Niebieski",
+		"machine": true
+	},
+	"Navy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Marynarka wojenna",
+		"machine": true
+	},
+	"Yellow": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Żółty",
+		"machine": true
+	},
+	"Olive": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Oliwkowy",
+		"machine": true
+	},
+	"Fuscia": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Fuscia",
+		"machine": true
+	},
+	"Purple": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Purpurowy",
+		"machine": true
+	},
+	"Cyan": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Cyan",
+		"machine": true
+	},
+	"Teal": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Cyraneczka",
+		"machine": true
+	},
+	"Orange": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Pomarańczowy",
+		"machine": true
+	},
+	"Brown": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Brązowy",
+		"machine": true
+	},
+	"&Prevent Memory Paging:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Za&pobiegać stronicowania pamięci:",
+		"machine": true
+	},
+	"Normal": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Normalny",
+		"machine": true
+	},
+	"Disabled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Niepełnosprawny",
+		"machine": true
+	},
+	"No suitable selection": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Nie nadaje się wybór",
+		"machine": true
+	},
+	"Loaded {0}: {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Loaded {0}: {1}",
+		"machine": true
+	},
+	"Song {0} not found": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Piosenka {0} Nie znaleziono",
+		"machine": true
+	},
+	"State {0} not found": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Nie znaleziono Państwo {0}",
+		"machine": true
+	},
+	"No plugin selected": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Nie wybrano plugin",
+		"machine": true
+	},
+	"Plugin not loaded": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wtyczka nie załadowana",
+		"machine": true
+	},
+	"Invalid preset number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Nieprawidłowy numer presetu",
+		"machine": true
+	},
+	"Loaded preset {0}: {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Loaded ustawiony {0}: {1}",
+		"machine": true
+	},
+	"Invoked custom triggers #{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wywołuje się zwyczaj wyzwala # {0}",
+		"machine": true
+	},
+	"No matching triggers found": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Nie znaleziono pasujących wyzwalacze",
+		"machine": true
+	},
+	"MIDI Channel {0} Selected": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wybrany kanał {0} MIDI",
+		"machine": true
+	},
+	"Sent program change {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wysłane zmiana programu {0}",
+		"machine": true
+	},
+	"Sent CC Button {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wysłane CC przycisk {0}",
+		"machine": true
+	},
+	"Switched CC {0} {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Switched CC {0} {1}",
+		"machine": true
+	},
+	"CC {0} Selected": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wybrane CC {0}",
+		"machine": true
+	},
+	"Sent {0} to CC {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wysłane {0} CC {1}",
+		"machine": true
+	},
+	"Note velocity {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Uwaga prędkość {0}",
+		"machine": true
+	},
+	"Sent note {0} @ {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wysłane uwaga {0} @ {1}",
+		"machine": true
+	},
+	"Sent note off {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wysłane note off {0}",
+		"machine": true
+	},
+	"Sent pitch bend {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wysłane Pitch Bend {0}",
+		"machine": true
+	},
+	"Sent channel pressure {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wysłane ciśnienia kanał {0}",
+		"machine": true
+	},
+	"Invalid time signature": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Nieprawidłowy metrum",
+		"machine": true
+	},
+	"MIDI device not found": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Nie znaleziono urządzenie MIDI",
+		"machine": true
+	},
+	"Repeat Last": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Powtórz ostatnią",
+		"machine": true
+	},
+	"Assign Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Przypisywanie wartości",
+		"machine": true
+	},
+	"Load Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Piosenka obciążenia",
+		"machine": true
+	},
+	"Load Session-State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Stan sesji obciążenia",
+		"machine": true
+	},
+	"Load Plugin Preset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wtyczka do ładowania ustawiony",
+		"machine": true
+	},
+	"Invoke Triggers": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Przywołaj wyzwalaczy",
+		"machine": true
+	},
+	"Set MIDI Channel": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Ustaw kanał MIDI",
+		"machine": true
+	},
+	"Send Program Change": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wyślij zmiany programu",
+		"machine": true
+	},
+	"Send CC (Push)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wyślij CC (impuls)",
+		"machine": true
+	},
+	"Send CC (Toggle)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wyślij CC (przełączanie)",
+		"machine": true
+	},
+	"Set CC Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Ustaw CC",
+		"machine": true
+	},
+	"Send CC Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wyślij wartość CC",
+		"machine": true
+	},
+	"Set Note Velocity": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Ustaw prędkość uwaga",
+		"machine": true
+	},
+	"Send Note On": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wyślij notatkę na",
+		"machine": true
+	},
+	"Send Note Off": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wyślij Note off",
+		"machine": true
+	},
+	"Send Pitch Bend": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wyślij pitch bend",
+		"machine": true
+	},
+	"Send Channel Pressure": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Wyślij ciśnienie kanału",
+		"machine": true
+	},
+	"Set Tempo": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Zestaw Tempo",
+		"machine": true
+	},
+	"Set Time Signature": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Zestaw metrum",
+		"machine": true
+	},
+	"Invalid format": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\TriggersPanel\\TriggerSlot.cs"
+		],
+		"translation": "Nieprawidłowy format",
+		"machine": true
+	},
+	"Invalid parameter": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Triggers.cs"
+		],
+		"translation": "Nieprawidłowy parametr",
+		"machine": true
+	},
+	"Color": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
+			".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
+			".\\Cantabile.Application\\Sessions\\External\\ExternalOutputPorts.cs",
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
+			".\\Cantabile.Application\\Triggers\\Trigger.cs"
+		],
+		"translation": "Kolor",
+		"machine": true
+	},
+	"Please enter a number between {0} and {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Proszę podać numer od {0} i {1}",
+		"machine": true
+	},
+	"Please enter a number above {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Proszę wprowadzić numer powyżej {0}",
+		"machine": true
+	},
+	"Please enter a number before {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Przed {0} Proszę wprowadzić numer",
+		"machine": true
+	},
+	"Please enter a valid number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Proszę podać poprawny numer",
 		"machine": true
 	}
 }
