@@ -1281,6 +1281,12 @@
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\Transpose.cs",
 	],
 },
+"&Ignore Song and Session Transpose Settings (for percussive targets)":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+	],
+},
 "Condition":
 {
 	"contexts": [
@@ -2554,13 +2560,6 @@
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsGroupSlot.cs",
 	],
 },
-"Rack Name":
-{
-	"contexts": [
-		".\\Cantabile\\MainPanel\\InputPortsSlot.cs",
-		".\\Cantabile\\MainPanel\\OutputPortsSlot.cs",
-	],
-},
 "Input Gain":
 {
 	"contexts": [
@@ -2907,6 +2906,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\LargeStatusPanel.cs",
+		".\\Cantabile\\Misc\\ColorMenu.cs",
 	],
 },
 "&Custom....":
@@ -3802,7 +3802,9 @@
 	"contexts": [
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\MainWindow\\StatesPanel.cs",
+		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
 		".\\Cantabile\\QuickController\\QuickController.cs",
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Session States":
@@ -3971,6 +3973,90 @@
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsPanel.cs",
 		".\\Cantabile.Application\\MidiAssignable\\Engine.cs",
 		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Red":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Maroon":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Green":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Lime":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Blue":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Navy":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Yellow":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Olive":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Fuscia":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Purple":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Cyan":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Teal":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Orange":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
+	],
+},
+"Brown":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\ColorMenu.cs",
 	],
 },
 "No recent files":
@@ -4226,6 +4312,24 @@
 	],
 },
 "Aggressive":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\AudioEnginePage.cs",
+	],
+},
+"&Prevent Memory Paging:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\AudioEnginePage.cs",
+	],
+},
+"Normal":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\AudioEnginePage.cs",
+	],
+},
+"Disabled":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\AudioEnginePage.cs",
@@ -5254,30 +5358,6 @@
 		".\\Cantabile\\Options\\WelcomePage.cs",
 	],
 },
-"Please enter a number between {0} and {1}":
-{
-	"contexts": [
-		".\\Cantabile\\QuickController\\QuickController.cs",
-	],
-},
-"Please enter a number above {0}":
-{
-	"contexts": [
-		".\\Cantabile\\QuickController\\QuickController.cs",
-	],
-},
-"Please enter a number before {0}":
-{
-	"contexts": [
-		".\\Cantabile\\QuickController\\QuickController.cs",
-	],
-},
-"Please enter a valid number":
-{
-	"contexts": [
-		".\\Cantabile\\QuickController\\QuickController.cs",
-	],
-},
 "No suitable selection":
 {
 	"contexts": [
@@ -5605,6 +5685,12 @@
 		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
+"Invalid format":
+{
+	"contexts": [
+		".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
 "Invo&ke Trigger":
 {
 	"contexts": [
@@ -5885,6 +5971,13 @@
 		".\\Cantabile.Application\\MidiAssignable\\SetList.cs",
 	],
 },
+"Invalid parameter":
+{
+	"contexts": [
+		".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
+		".\\Cantabile.Application\\MidiAssignable\\Triggers.cs",
+	],
+},
 "Load Specific Song (Delayed)":
 {
 	"contexts": [
@@ -6041,6 +6134,16 @@
 		".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
 		".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs",
 		".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs",
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Color":
+{
+	"contexts": [
+		".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
+		".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
+		".\\Cantabile.Application\\Sessions\\External\\ExternalOutputPorts.cs",
+		".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
 		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 	],
 },
@@ -7697,6 +7800,30 @@
 {
 	"contexts": [
 		".\\Cantabile.Environment\\DriverPorts\\MidiInputPort.cs",
+	],
+},
+"Please enter a number between {0} and {1}":
+{
+	"contexts": [
+		".\\Cantabile.Utils\\IntegerText.cs",
+	],
+},
+"Please enter a number above {0}":
+{
+	"contexts": [
+		".\\Cantabile.Utils\\IntegerText.cs",
+	],
+},
+"Please enter a number before {0}":
+{
+	"contexts": [
+		".\\Cantabile.Utils\\IntegerText.cs",
+	],
+},
+"Please enter a valid number":
+{
+	"contexts": [
+		".\\Cantabile.Utils\\IntegerText.cs",
 	],
 },
 "one semitone":

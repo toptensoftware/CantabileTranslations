@@ -2829,16 +2829,6 @@
 		"translation": "Uitbreiden",
 		"machine": false
 	},
-	"Rack Name": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainPanel\\InputPortsSlot.cs",
-			".\\Cantabile\\MainPanel\\OutputPortsSlot.cs"
-		],
-		"translation": "Racknaam",
-		"machine": false
-	},
 	"Input Gain": 
 	{
 		"contexts": 
@@ -11091,6 +11081,52 @@
 		"translation": "Groot-status",
 		"machine": true
 	},
+	"Hide Large Stat&us": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Verberg grote stat&uut",
+		"machine": true
+	},
+	"Show Large Stat&us": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Toon grote stat&uut",
+		"machine": true
+	},
+	"Paused": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Gepauzeerd",
+		"machine": true
+	},
+	"Playing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Spelen",
+		"machine": true
+	},
+	"Stopped": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Gestopt",
+		"machine": true
+	},
 	"Quick Controller": 
 	{
 		"contexts": 
@@ -11099,6 +11135,15 @@
 			".\\Cantabile\\Options\\HotKeysPage.cs"
 		],
 		"translation": "Quick-controller",
+		"machine": true
+	},
+	"&Ignore Song and Session Transpose Settings (for percussive targets)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+		],
+		"translation": "Negeer l&ied en sessie transpositie instellingen (voor percussieve doelen)",
 		"machine": true
 	},
 	"Failed to locate layout file for '{0}'": 
@@ -11141,7 +11186,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\LargeStatusPanel.cs"
+			".\\Cantabile\\MainWindow\\LargeStatusPanel.cs",
+			".\\Cantabile\\Misc\\ColorMenu.cs"
 		],
 		"translation": "Verzuim",
 		"machine": true
@@ -11164,16 +11210,6 @@
 		"translation": "Nagelaten om de layout te laden: {0}",
 		"machine": true
 	},
-	"Hide Large Stat&us": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		],
-		"translation": "Verberg grote stat&uut",
-		"machine": true
-	},
 	"&Quick Controller\t0-9": 
 	{
 		"contexts": 
@@ -11183,22 +11219,15 @@
 		"translation": "Snel controller 0-9 (&Q)",
 		"machine": true
 	},
-	"Show Large Stat&us": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		],
-		"translation": "Toon grote stat&uut",
-		"machine": true
-	},
 	"Invalid program number": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\MainWindow\\SetListPanel.cs",
 			".\\Cantabile\\MainWindow\\StatesPanel.cs",
-			".\\Cantabile\\QuickController\\QuickController.cs"
+			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+			".\\Cantabile\\QuickController\\QuickController.cs",
+			".\\Cantabile\\TriggersPanel\\TriggerSlot.cs"
 		],
 		"translation": "Ongeldig programmanummer",
 		"machine": true
@@ -11222,40 +11251,157 @@
 		"translation": "Ongeldige controller waarde",
 		"machine": true
 	},
-	"Please enter a number between {0} and {1}": 
+	"Red": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\QuickController\\QuickController.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs"
 		],
-		"translation": "Vul een getal tussen {0} en {1}",
+		"translation": "Rood",
 		"machine": true
 	},
-	"Please enter a number above {0}": 
+	"Maroon": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\QuickController\\QuickController.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs"
 		],
-		"translation": "Vul een getal boven {0}",
+		"translation": "Kastanjebruin",
 		"machine": true
 	},
-	"Please enter a number before {0}": 
+	"Green": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\QuickController\\QuickController.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs"
 		],
-		"translation": "Vul een nummer voordat {0}",
+		"translation": "Groen",
 		"machine": true
 	},
-	"Please enter a valid number": 
+	"Lime": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\QuickController\\QuickController.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs"
 		],
-		"translation": "Vul een geldig aantal",
+		"translation": "Kalk",
+		"machine": true
+	},
+	"Blue": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Blauw",
+		"machine": true
+	},
+	"Navy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Marine",
+		"machine": true
+	},
+	"Yellow": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Geel",
+		"machine": true
+	},
+	"Olive": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Olijf",
+		"machine": true
+	},
+	"Fuscia": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Fuscia",
+		"machine": true
+	},
+	"Purple": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Purper",
+		"machine": true
+	},
+	"Cyan": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Cyan",
+		"machine": true
+	},
+	"Teal": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Taling",
+		"machine": true
+	},
+	"Orange": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Oranje",
+		"machine": true
+	},
+	"Brown": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Bruin",
+		"machine": true
+	},
+	"&Prevent Memory Paging:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Voorkomen geheugen &paging:",
+		"machine": true
+	},
+	"Normal": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Normaal",
+		"machine": true
+	},
+	"Disabled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Invalide",
 		"machine": true
 	},
 	"No suitable selection": 
@@ -11636,31 +11782,72 @@
 		"translation": "Set maatsoort",
 		"machine": true
 	},
-	"Paused": 
+	"Invalid format": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Application.cs"
+			".\\Cantabile\\TriggersPanel\\TriggerSlot.cs"
 		],
-		"translation": "Gepauzeerd",
+		"translation": "Ongeldig formaat",
 		"machine": true
 	},
-	"Playing": 
+	"Invalid parameter": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Application.cs"
+			".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Triggers.cs"
 		],
-		"translation": "Spelen",
+		"translation": "Ongeldige parameter",
 		"machine": true
 	},
-	"Stopped": 
+	"Color": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Application.cs"
+			".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
+			".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
+			".\\Cantabile.Application\\Sessions\\External\\ExternalOutputPorts.cs",
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
+			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
-		"translation": "Gestopt",
+		"translation": "Kleur",
+		"machine": true
+	},
+	"Please enter a number between {0} and {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Vul een getal tussen {0} en {1}",
+		"machine": true
+	},
+	"Please enter a number above {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Vul een getal boven {0}",
+		"machine": true
+	},
+	"Please enter a number before {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Vul een nummer voordat {0}",
+		"machine": true
+	},
+	"Please enter a valid number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Vul een geldig aantal",
 		"machine": true
 	}
 }

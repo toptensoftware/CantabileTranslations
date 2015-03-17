@@ -2829,16 +2829,6 @@
 		"translation": "Utvid",
 		"machine": true
 	},
-	"Rack Name": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainPanel\\InputPortsSlot.cs",
-			".\\Cantabile\\MainPanel\\OutputPortsSlot.cs"
-		],
-		"translation": "Rack navn",
-		"machine": true
-	},
 	"Input Gain": 
 	{
 		"contexts": 
@@ -11091,6 +11081,52 @@
 		"translation": "Stor status",
 		"machine": true
 	},
+	"Hide Large Stat&us": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Skj&ul stort status",
+		"machine": true
+	},
+	"Show Large Stat&us": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Vis stor stat&us",
+		"machine": true
+	},
+	"Paused": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Satt på pause",
+		"machine": true
+	},
+	"Playing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Spille",
+		"machine": true
+	},
+	"Stopped": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Stoppet",
+		"machine": true
+	},
 	"Quick Controller": 
 	{
 		"contexts": 
@@ -11099,6 +11135,15 @@
 			".\\Cantabile\\Options\\HotKeysPage.cs"
 		],
 		"translation": "Hurtig controller",
+		"machine": true
+	},
+	"&Ignore Song and Session Transpose Settings (for percussive targets)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+		],
+		"translation": "&Ignorer sang og session transponere innstillinger (for perkussive mål)",
 		"machine": true
 	},
 	"Failed to locate layout file for '{0}'": 
@@ -11141,7 +11186,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\LargeStatusPanel.cs"
+			".\\Cantabile\\MainWindow\\LargeStatusPanel.cs",
+			".\\Cantabile\\Misc\\ColorMenu.cs"
 		],
 		"translation": "Standard",
 		"machine": true
@@ -11164,16 +11210,6 @@
 		"translation": "Kunne ikke laste layout: {0}",
 		"machine": true
 	},
-	"Hide Large Stat&us": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		],
-		"translation": "Skj&ul stort status",
-		"machine": true
-	},
 	"&Quick Controller\t0-9": 
 	{
 		"contexts": 
@@ -11183,22 +11219,15 @@
 		"translation": "Hurtig kontrolleren 0-9 (&Q)",
 		"machine": true
 	},
-	"Show Large Stat&us": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		],
-		"translation": "Vis stor stat&us",
-		"machine": true
-	},
 	"Invalid program number": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\MainWindow\\SetListPanel.cs",
 			".\\Cantabile\\MainWindow\\StatesPanel.cs",
-			".\\Cantabile\\QuickController\\QuickController.cs"
+			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
+			".\\Cantabile\\QuickController\\QuickController.cs",
+			".\\Cantabile\\TriggersPanel\\TriggerSlot.cs"
 		],
 		"translation": "Ugyldig programnummer",
 		"machine": true
@@ -11222,40 +11251,157 @@
 		"translation": "Ugyldig kontrolleren verdi",
 		"machine": true
 	},
-	"Please enter a number between {0} and {1}": 
+	"Red": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\QuickController\\QuickController.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs"
 		],
-		"translation": "Skriv inn et tall mellom {0} og {1}",
+		"translation": "Rød",
 		"machine": true
 	},
-	"Please enter a number above {0}": 
+	"Maroon": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\QuickController\\QuickController.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs"
 		],
-		"translation": "Skriv inn et tall over {0}",
+		"translation": "Maroon",
 		"machine": true
 	},
-	"Please enter a number before {0}": 
+	"Green": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\QuickController\\QuickController.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs"
 		],
-		"translation": "Skriv inn et nummer før {0}",
+		"translation": "Grønn",
 		"machine": true
 	},
-	"Please enter a valid number": 
+	"Lime": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\QuickController\\QuickController.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs"
 		],
-		"translation": "Skriv inn et gyldig nummer",
+		"translation": "Lime",
+		"machine": true
+	},
+	"Blue": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Blå",
+		"machine": true
+	},
+	"Navy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Navy",
+		"machine": true
+	},
+	"Yellow": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Gul",
+		"machine": true
+	},
+	"Olive": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Oliven",
+		"machine": true
+	},
+	"Fuscia": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Fuscia",
+		"machine": true
+	},
+	"Purple": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Lilla",
+		"machine": true
+	},
+	"Cyan": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Cyan",
+		"machine": true
+	},
+	"Teal": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Teal",
+		"machine": true
+	},
+	"Orange": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Orange",
+		"machine": true
+	},
+	"Brown": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\ColorMenu.cs"
+		],
+		"translation": "Brown",
+		"machine": true
+	},
+	"&Prevent Memory Paging:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Forhindre minne &paging:",
+		"machine": true
+	},
+	"Normal": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Normal",
+		"machine": true
+	},
+	"Disabled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Deaktivert",
 		"machine": true
 	},
 	"No suitable selection": 
@@ -11636,31 +11782,72 @@
 		"translation": "Set tid signatur",
 		"machine": true
 	},
-	"Paused": 
+	"Invalid format": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Application.cs"
+			".\\Cantabile\\TriggersPanel\\TriggerSlot.cs"
 		],
-		"translation": "Satt på pause",
+		"translation": "Ugyldig format",
 		"machine": true
 	},
-	"Playing": 
+	"Invalid parameter": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Application.cs"
+			".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Triggers.cs"
 		],
-		"translation": "Spille",
+		"translation": "Ugyldig parameter",
 		"machine": true
 	},
-	"Stopped": 
+	"Color": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Application.cs"
+			".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
+			".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
+			".\\Cantabile.Application\\Sessions\\External\\ExternalOutputPorts.cs",
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
+			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
-		"translation": "Stoppet",
+		"translation": "Farge",
+		"machine": true
+	},
+	"Please enter a number between {0} and {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Skriv inn et tall mellom {0} og {1}",
+		"machine": true
+	},
+	"Please enter a number above {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Skriv inn et tall over {0}",
+		"machine": true
+	},
+	"Please enter a number before {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Skriv inn et nummer før {0}",
+		"machine": true
+	},
+	"Please enter a valid number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\IntegerText.cs"
+		],
+		"translation": "Skriv inn et gyldig nummer",
 		"machine": true
 	}
 }
