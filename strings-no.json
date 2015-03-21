@@ -3643,87 +3643,6 @@
 		"translation": "Play \/ pa&use",
 		"machine": true
 	},
-	"&First State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "&Første staten",
-		"machine": true
-	},
-	"Next S&tate": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Nes&te tilstand",
-		"machine": true
-	},
-	"Pre&vious State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Tidligere tilstand (&V)",
-		"machine": true
-	},
-	"F&irst Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Første sang (&I)",
-		"machine": true
-	},
-	"Next S&ong": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Neste sang (&O)",
-		"machine": true
-	},
-	"Previous Son&g": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Forri&ge sang",
-		"machine": true
-	},
-	"Fi&rst Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Fø&rste sangen del",
-		"machine": true
-	},
-	"Ne&xt Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Neste sang del (&X)",
-		"machine": true
-	},
-	"Pr&evious Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Forrig&e sang del",
-		"machine": true
-	},
 	"Play": 
 	{
 		"contexts": 
@@ -9248,6 +9167,7 @@
 			".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
 			".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
 			".\\Cantabile.Application\\MidiAssignable\\SetList.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs",
 			".\\Cantabile.Application\\MidiAssignable\\Triggers.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
@@ -9385,7 +9305,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
 		],
 		"translation": "#{0} - N \/ A",
 		"machine": true
@@ -9395,7 +9316,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
 		],
 		"translation": "#{0}",
 		"machine": true
@@ -9537,42 +9459,6 @@
 		"translation": "Siste sang (instant)",
 		"machine": true
 	},
-	"Next Song Part (Delayed)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
-		],
-		"translation": "Neste sang del (forsinket)",
-		"machine": true
-	},
-	"Next Song Part (Instant)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
-		],
-		"translation": "Neste sang del (instant)",
-		"machine": true
-	},
-	"Previous Song Part (Delayed)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
-		],
-		"translation": "Forrige sang del (forsinket)",
-		"machine": true
-	},
-	"Previous Song Part (Instant)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
-		],
-		"translation": "Forrige sang del (instant)",
-		"machine": true
-	},
 	"Transport": 
 	{
 		"contexts": 
@@ -9632,6 +9518,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
 		],
 		"translation": "Neste forhåndsinnstilte",
@@ -9641,6 +9528,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
 		],
 		"translation": "Forrige forhåndsinnstilte",
@@ -9870,42 +9758,6 @@
 			".\\Cantabile\\Commands\\ControlCommands.cs"
 		],
 		"translation": "Siste sang",
-		"machine": true
-	},
-	"Next Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Neste sang del",
-		"machine": true
-	},
-	"Previous Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Forrige sang del",
-		"machine": true
-	},
-	"First Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Første sangen del",
-		"machine": true
-	},
-	"Last Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Siste sangen del",
 		"machine": true
 	},
 	"Load Selected Song": 
@@ -10155,7 +10007,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs"
+			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
 		],
 		"translation": "Song",
 		"machine": true
@@ -11932,6 +11785,312 @@
 			".\\Cantabile\\Commands\\ToolsCommands.cs"
 		],
 		"translation": "Kjør test",
+		"machine": true
+	},
+	"Next Song or Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Neste sang eller deler",
+		"machine": true
+	},
+	"Previous Song or Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Forrige sang eller deler",
+		"machine": true
+	},
+	"First Song in Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Første sangen delvis",
+		"machine": true
+	},
+	"Last Song in Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Siste sang delvis",
+		"machine": true
+	},
+	"Next Part in Song ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Neste del i sang ",
+		"machine": true
+	},
+	"Previous Part in Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Forrige del i sang",
+		"machine": true
+	},
+	"First Preset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Første forhåndsinnstilte",
+		"machine": true
+	},
+	"Last Preset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Siste forhånds",
+		"machine": true
+	},
+	"&Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "&Song",
+		"machine": true
+	},
+	"&Part in Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Del i sang (&P)",
+		"machine": true
+	},
+	"S&tate": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "S&tat",
+		"machine": true
+	},
+	"Pr&eset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Pr&eset",
+		"machine": true
+	},
+	"&Part or Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Del eller sang (&P)",
+		"machine": true
+	},
+	"Pa&rt in Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Del i sang (&R)",
+		"machine": true
+	},
+	"Run &Test...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Kjør &test...",
+		"machine": true
+	},
+	"Load Song Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Last song del",
+		"machine": true
+	},
+	"Next Song or Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+		],
+		"translation": "Neste sang eller del (forsinket)",
+		"machine": true
+	},
+	"Next Song or Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+		],
+		"translation": "Neste sang eller del (instant)",
+		"machine": true
+	},
+	"Previous Song or Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+		],
+		"translation": "Forrige sang eller del (forsinket)",
+		"machine": true
+	},
+	"Previous Song or Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+		],
+		"translation": "Forrige sang eller del (instant)",
+		"machine": true
+	},
+	"Load Specific Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Belastning bestemt del (forsinket)",
+		"machine": true
+	},
+	"Load Specific Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Laste bestemt del (instant)",
+		"machine": true
+	},
+	"Load Part Scaled (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Last del skalert (forsinket)",
+		"machine": true
+	},
+	"Load Part Scaled (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Last del skalert (instant)",
+		"machine": true
+	},
+	"Load Part by Program (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Last del av programmet (forsinket)",
+		"machine": true
+	},
+	"Load Part by Program (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Last del av programmet (instant)",
+		"machine": true
+	},
+	"Next Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Neste del (forsinket)",
+		"machine": true
+	},
+	"Next Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Neste del (instant)",
+		"machine": true
+	},
+	"Previous Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Forrige del (forsinket)",
+		"machine": true
+	},
+	"Previous Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Forrige del (instant)",
+		"machine": true
+	},
+	"First Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Første del (forsinket)",
+		"machine": true
+	},
+	"First Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Første del (instant)",
+		"machine": true
+	},
+	"Last Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Siste del (forsinket)",
+		"machine": true
+	},
+	"Last Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Siste del (instant)",
 		"machine": true
 	}
 }

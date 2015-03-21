@@ -8320,69 +8320,6 @@
 		"translation": "Pio&senka...",
 		"machine": true
 	},
-	"&First State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Pierwszy stan (&F)",
-		"machine": true
-	},
-	"Next S&tate": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Nas&tępny stan",
-		"machine": true
-	},
-	"Pre&vious State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Poprzedni stan (&V)",
-		"machine": true
-	},
-	"F&irst Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "P&ierwsza piosenka",
-		"machine": true
-	},
-	"Next S&ong": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Następny utwór (&O)",
-		"machine": true
-	},
-	"Previous Son&g": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Poprzedni utwór (&G)",
-		"machine": true
-	},
-	"Fi&rst Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Pie&rwsza część utworu",
-		"machine": true
-	},
 	"States &Behavior": 
 	{
 		"contexts": 
@@ -8760,24 +8697,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "&Stan aktualizacji",
-		"machine": true
-	},
-	"Ne&xt Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Następna piosenka część (&X)",
-		"machine": true
-	},
-	"Pr&evious Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Poprz&ednia część piosenka",
 		"machine": true
 	},
 	"Cantabile Bank Files": 
@@ -9248,6 +9167,7 @@
 			".\\Cantabile\\TriggersPanel\\TriggersPanel.cs",
 			".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
 			".\\Cantabile.Application\\MidiAssignable\\SetList.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs",
 			".\\Cantabile.Application\\MidiAssignable\\Triggers.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
@@ -9385,7 +9305,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
 		],
 		"translation": "#{0} - N \/",
 		"machine": true
@@ -9395,7 +9316,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\MidiAssignable\\SessionStates.cs",
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
 		],
 		"translation": "#{0}",
 		"machine": true
@@ -9537,42 +9459,6 @@
 		"translation": "Ostatni utwór (instant)",
 		"machine": true
 	},
-	"Next Song Part (Delayed)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
-		],
-		"translation": "Następny utwór część (opóźnione)",
-		"machine": true
-	},
-	"Next Song Part (Instant)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
-		],
-		"translation": "Następny utwór częścią (instant)",
-		"machine": true
-	},
-	"Previous Song Part (Delayed)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
-		],
-		"translation": "Poprzednia część utworu (opóźnione)",
-		"machine": true
-	},
-	"Previous Song Part (Instant)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
-		],
-		"translation": "Poprzednia część utwór (instant)",
-		"machine": true
-	},
 	"Transport": 
 	{
 		"contexts": 
@@ -9632,6 +9518,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
 		],
 		"translation": "Następny presetu",
@@ -9641,6 +9528,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
 		],
 		"translation": "Poprzedni presetu",
@@ -9870,42 +9758,6 @@
 			".\\Cantabile\\Commands\\ControlCommands.cs"
 		],
 		"translation": "Ostatnia piosenka",
-		"machine": true
-	},
-	"Next Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Następny utwór częścią",
-		"machine": true
-	},
-	"Previous Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Poprzednia część piosenki",
-		"machine": true
-	},
-	"First Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Pierwsza część utworu",
-		"machine": true
-	},
-	"Last Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Ostatnia część utworu",
 		"machine": true
 	},
 	"Load Selected Song": 
@@ -10155,7 +10007,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs"
+			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
 		],
 		"translation": "Piosenka",
 		"machine": true
@@ -11932,6 +11785,312 @@
 			".\\Cantabile\\Commands\\ToolsCommands.cs"
 		],
 		"translation": "Uruchom sprawdzian",
+		"machine": true
+	},
+	"Next Song or Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Następny utwór lub jego część",
+		"machine": true
+	},
+	"Previous Song or Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Poprzedni utwór lub jego część",
+		"machine": true
+	},
+	"First Song in Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Pierwszy utwór na części",
+		"machine": true
+	},
+	"Last Song in Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Ostatnia piosenka w części",
+		"machine": true
+	},
+	"Next Part in Song ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Następna część w piosence ",
+		"machine": true
+	},
+	"Previous Part in Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Poprzednia część w piosence",
+		"machine": true
+	},
+	"First Preset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Pierwszy ustawiony",
+		"machine": true
+	},
+	"Last Preset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Ostatnio zaprogramowana",
+		"machine": true
+	},
+	"&Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Pio&senka",
+		"machine": true
+	},
+	"&Part in Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Część w &piosence",
+		"machine": true
+	},
+	"S&tate": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Pańs&two",
+		"machine": true
+	},
+	"Pr&eset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Pr&eset",
+		"machine": true
+	},
+	"&Part or Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Część lub utworu (&P)",
+		"machine": true
+	},
+	"Pa&rt in Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Część w piosence (&R)",
+		"machine": true
+	},
+	"Run &Test...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Uruchom &testy...",
+		"machine": true
+	},
+	"Load Song Part": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\QuickController\\QuickController.cs"
+		],
+		"translation": "Część piosenki obciążenia",
+		"machine": true
+	},
+	"Next Song or Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+		],
+		"translation": "Następny utwór lub jego część (opóźnione)",
+		"machine": true
+	},
+	"Next Song or Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+		],
+		"translation": "Następny utwór lub jego część (instant)",
+		"machine": true
+	},
+	"Previous Song or Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+		],
+		"translation": "Poprzedni utwór lub jego część (opóźnione)",
+		"machine": true
+	},
+	"Previous Song or Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\SetList.cs"
+		],
+		"translation": "Poprzedni utwór lub jego część (instant)",
+		"machine": true
+	},
+	"Load Specific Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Część specyficzne obciążenie (opóźnione)",
+		"machine": true
+	},
+	"Load Specific Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Załaduj określoną część (instant)",
+		"machine": true
+	},
+	"Load Part Scaled (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Część obciążenia skalowane (opóźnione)",
+		"machine": true
+	},
+	"Load Part Scaled (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Część obciążenia skalowane (instant)",
+		"machine": true
+	},
+	"Load Part by Program (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Część obciążenia przez program (opóźnione)",
+		"machine": true
+	},
+	"Load Part by Program (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Część obciążenia przez program (instant)",
+		"machine": true
+	},
+	"Next Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Następna część (opóźnione)",
+		"machine": true
+	},
+	"Next Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Następna część (instant)",
+		"machine": true
+	},
+	"Previous Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Poprzednia część (opóźnione)",
+		"machine": true
+	},
+	"Previous Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Poprzednia część (instant)",
+		"machine": true
+	},
+	"First Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Pierwsza część (opóźnione)",
+		"machine": true
+	},
+	"First Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Pierwsza część (instant)",
+		"machine": true
+	},
+	"Last Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Ostatnia część (opóźnione)",
+		"machine": true
+	},
+	"Last Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Song.cs"
+		],
+		"translation": "Ostatnia część (instant)",
 		"machine": true
 	}
 }
