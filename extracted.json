@@ -11,7 +11,7 @@
 		".\\Cantabile\\CommandLine.cs",
 	],
 },
-"This preview build of Cantabile has expired but there's probably an updated one available.\n\nPress OK to visit http:\/\/www.cantabilesoftware.com\/Cantabile3":
+"This preview build of Cantabile has expired but there's probably an updated one available.\n\nPress OK to visit http:\/\/www.cantabilesoftware.com\/v3":
 {
 	"contexts": [
 		".\\Cantabile\\Program.cs",
@@ -308,6 +308,34 @@
 	],
 },
 "Set Transpose":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Switch Preset on Program Change":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Sort by Program Number":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+		".\\Cantabile\\MainWindow\\SetListPanel.cs",
+		".\\Cantabile\\MainWindow\\StatesPanel.cs",
+	],
+},
+"Sort by Name":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+		".\\Cantabile\\MainWindow\\SetListPanel.cs",
+		".\\Cantabile\\MainWindow\\StatesPanel.cs",
+	],
+},
+"Reassign Program Numbers":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\EditCommands.cs",
@@ -1876,6 +1904,14 @@
 		".\\Cantabile\\Dialogs\\ProgramNumberDialog.cs",
 	],
 },
+"Re-assign Program Numbers":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\ReassignProgramNumbersDialog.cs",
+		".\\Cantabile\\MainWindow\\SetListPanel.cs",
+		".\\Cantabile\\MainWindow\\StatesPanel.cs",
+	],
+},
 "New &name:":
 {
 	"contexts": [
@@ -1988,6 +2024,13 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\SysExDialog.cs",
+	],
+},
+"Time Signature":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\TimeSignatureDialog.cs",
+		".\\Cantabile.Application\\Sessions\\Metronome.cs",
 	],
 },
 "Set Trigger Delays":
@@ -2800,6 +2843,12 @@
 		".\\Cantabile\\MainPanel\\PluginSlot.cs",
 	],
 },
+"Change Preset &on MIDI Program Change":
+{
+	"contexts": [
+		".\\Cantabile\\MainPanel\\PluginSlot.cs",
+	],
+},
 "MIDI &Filters...":
 {
 	"contexts": [
@@ -3587,7 +3636,7 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"Dump E&xecution Plan":
+"Dump E&xecution Tree":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -3835,6 +3884,21 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
+	],
+},
+"&Edit...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\SetListPanel.cs",
+		".\\Cantabile\\MainWindow\\StatesPanel.cs",
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"Re-assign Program Numbers...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\SetListPanel.cs",
+		".\\Cantabile\\MainWindow\\StatesPanel.cs",
 	],
 },
 "Increment Pr&ogram Number":
@@ -4983,12 +5047,6 @@
 	"contexts": [
 		".\\Cantabile\\Options\\HotKeysPage.cs",
 		".\\Cantabile\\Options\\PluginsPage.cs",
-	],
-},
-"&Edit...":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\HotKeysPage.cs",
 	],
 },
 "&Reset Defaults...":
@@ -6300,12 +6358,6 @@
 		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 	],
 },
-"Time Signature":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Sessions\\Metronome.cs",
-	],
-},
 "Sync. Mode":
 {
 	"contexts": [
@@ -7066,6 +7118,12 @@
 	],
 },
 "Custom Event":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Song Load":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Triggers\\Trigger.cs",
