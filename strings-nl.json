@@ -90,6 +90,7 @@
 		[
 			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\QuickController\\QuickController.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs",
@@ -142,7 +143,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "Invoer",
 		"machine": false
@@ -153,7 +154,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "Uitgang",
 		"machine": false
@@ -164,8 +165,8 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
-			".\\Cantabile\\Dialogs\\StateDialog.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\StateDialog.cs"
 		],
 		"translation": "&Naam:",
 		"machine": false
@@ -174,7 +175,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs"
+			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "Opdrachten (&S):",
 		"machine": false
@@ -247,7 +249,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs"
+			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaFileAudioAssignmentDialog.cs"
 		],
 		"translation": "Niveau: (%)",
 		"machine": false
@@ -285,8 +288,8 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\Options\\ExternalToolsPage.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\Options\\ExternalToolsPage.cs"
 		],
 		"translation": "Toevoegen (&A)",
 		"machine": false
@@ -304,7 +307,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs"
+			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaFileAudioAssignmentDialog.cs"
 		],
 		"translation": "&Balans : (&P)",
 		"machine": false
@@ -313,7 +317,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs"
+			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaFileAudioAssignmentDialog.cs"
 		],
 		"translation": "Vervagen (&F):",
 		"machine": false
@@ -350,7 +355,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "&Aliassen:",
 		"machine": false
@@ -360,7 +365,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "Ing&eschakeld",
 		"machine": false
@@ -379,7 +384,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "Vul een naam voor de poort",
 		"machine": false
@@ -389,6 +394,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs",
 			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Links",
@@ -399,6 +405,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs",
 			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Rechts",
@@ -427,7 +434,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "Gee&n",
 		"machine": false
@@ -437,6 +444,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Options\\MidiPortsPage.cs"
 		],
@@ -448,6 +456,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Options\\MidiPortsPage.cs"
 		],
 		"translation": "in",
@@ -458,6 +467,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Options\\MidiPortsPage.cs"
 		],
 		"translation": "uit",
@@ -468,7 +478,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": " (Standaard)",
 		"machine": false
@@ -497,7 +507,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "&Ingangspoort...",
 		"machine": false
@@ -507,7 +517,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "&Uitgangsp&oort...",
 		"machine": false
@@ -517,7 +527,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "&Duplicaat...",
 		"machine": false
@@ -528,8 +538,8 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Bew&erk",
 		"machine": false
@@ -540,6 +550,8 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -548,7 +560,6 @@
 			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
 			".\\Cantabile\\Options\\ExternalToolsPage.cs",
 			".\\Cantabile\\Options\\HotKeysPage.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs",
 			".\\Cantabile\\TriggersPanel\\TriggerSlot.cs"
 		],
 		"translation": "Verwij&der",
@@ -712,7 +723,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "Item",
 		"machine": false
@@ -860,6 +871,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -877,6 +889,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainPanel\\AddPluginFooterSlot.cs",
 			".\\Cantabile\\MainPanel\\AddRouteFooterSlot.cs",
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -903,6 +916,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -919,6 +933,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -1237,9 +1252,9 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\MultiDriverConfigDialog.cs",
-			".\\Cantabile\\MainPanel\\RouteSlot.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\MainPanel\\RouteSlot.cs"
 		],
 		"translation": "Instellingen",
 		"machine": false
@@ -1466,6 +1481,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Options\\GeneralPage.cs"
@@ -1588,15 +1605,6 @@
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
 		],
 		"translation": "Verkoper:",
-		"machine": false
-	},
-	"Capabilities:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
-		],
-		"translation": "Mogelijkheden:",
 		"machine": false
 	},
 	"&Favourite": 
@@ -2355,8 +2363,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs"
 		],
 		"translation": "Kanaal (&C):",
 		"machine": false
@@ -2813,6 +2821,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\MainPanel\\InputPortsSlot.cs",
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\OutputPortsSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentsGroupSlot.cs"
@@ -2877,7 +2886,9 @@
 		"contexts": 
 		[
 			".\\Cantabile\\MainPanel\\MainPanel.cs",
-			".\\Cantabile\\Options\\HotKeysPage.cs"
+			".\\Cantabile\\Options\\HotKeysPage.cs",
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
+			".\\Cantabile.Application\\Sessions\\Routing\\Route.cs"
 		],
 		"translation": "Controle",
 		"machine": false
@@ -3030,6 +3041,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs"
 		],
 		"translation": "Balans:",
@@ -3039,6 +3051,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs"
 		],
 		"translation": "100% Rechts",
@@ -3048,6 +3061,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs"
 		],
 		"translation": "Vervagen:",
@@ -3057,6 +3071,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs"
 		],
 		"translation": "100% Voorzijde",
@@ -3093,6 +3108,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
 			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
@@ -3105,6 +3121,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs"
 		],
 		"translation": "Wijzig &naam...",
@@ -3465,8 +3482,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainPanel\\PluginSlot.cs",
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainPanel\\PluginSlot.cs"
 		],
 		"translation": "Plug&in bewerker...",
 		"machine": false
@@ -3475,19 +3491,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainPanel\\PluginSlot.cs",
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainPanel\\PluginSlot.cs"
 		],
 		"translation": "Plugin p&arameters...",
-		"machine": false
-	},
-	"Plu&gin Audio Ports...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Plu&gin audiopoorten...",
 		"machine": false
 	},
 	"&MIDI Filters...": 
@@ -3612,9 +3618,11 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\TriggersPanel\\TriggerSlot.cs",
-			".\\Cantabile.Application\\MidiAssignable\\Transport.cs"
+			".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
 		],
 		"translation": "Afspelen",
 		"machine": false
@@ -3624,8 +3632,10 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile.Application\\MidiAssignable\\Transport.cs"
+			".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
 		],
 		"translation": "Pauze",
 		"machine": false
@@ -3635,8 +3645,10 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile.Application\\MidiAssignable\\Transport.cs"
+			".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
 		],
 		"translation": "Stop",
 		"machine": false
@@ -5573,27 +5585,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "(Uitgezet)",
-		"machine": false
-	},
-	"(No physical device assigned)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
-		],
-		"translation": "(Geen fysiek apparaat toegewezen)",
-		"machine": false
-	},
-	" Ch: {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
-		],
-		"translation": " Kan.: {0}",
 		"machine": false
 	},
 	"Similarly to audio ports, here you can create MIDI ports and map them to your\nexternal MIDI devices.  Right click to create simple assignments.": 
@@ -5636,27 +5630,18 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "MIDI {0} poort",
-		"machine": false
-	},
-	"Physical &Device:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
-		],
-		"translation": "Fysieke apparaat (&D):",
 		"machine": false
 	},
 	"MIDI &Filters...": 
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
-			".\\Cantabile\\MainPanel\\RouteSlot.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\MainPanel\\RouteSlot.cs"
 		],
 		"translation": "MIDI &filters...",
 		"machine": false
@@ -5665,18 +5650,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "MIDI-filters zorgen voor meer controle over de MIDI-events\nvia deze poort",
-		"machine": false
-	},
-	"Defa&ult (automatically connect to new synth plugins)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
-		],
-		"translation": "Standaard (automatisch verbinding met nieuwe synth plugins)",
 		"machine": false
 	},
 	"Cantabile needs to restart to apply some changes to settings.  Restart now?": 
@@ -6218,6 +6194,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
 			".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs"
 		],
@@ -6237,6 +6214,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
 		],
 		"translation": "Balans en fade",
@@ -6988,6 +6966,7 @@
 			".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
 			".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs",
 			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs",
+			".\\Cantabile.Application\\Sessions\\Routing\\Route.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
 		"translation": "Ingeschakeld",
@@ -9426,7 +9405,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\MidiAssignable\\Transport.cs"
+			".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
 		],
 		"translation": "Afspelen \/ pauzeren",
 		"machine": true
@@ -9435,7 +9415,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\MidiAssignable\\Transport.cs"
+			".\\Cantabile.Application\\MidiAssignable\\Transport.cs",
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
 		],
 		"translation": "Play \/ stop",
 		"machine": true
@@ -9445,6 +9426,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\Dialogs\\MediaFileMidiAssignmentDialog.cs",
 			".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs"
 		],
 		"translation": "MIDI-opdracht",
@@ -9510,7 +9492,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs",
+			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
+			".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs"
 		],
 		"translation": "Winst",
 		"machine": true
@@ -9528,6 +9512,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
 		],
 		"translation": "Pan",
@@ -9537,6 +9522,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs"
 		],
 		"translation": "Vervagen",
@@ -9766,15 +9752,6 @@
 			".\\Cantabile\\Commands\\EditCommands.cs"
 		],
 		"translation": "Naar beneden",
-		"machine": true
-	},
-	"Plugin Editor": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		],
-		"translation": "Plugin-editor",
 		"machine": true
 	},
 	"Plugin Parameters": 
@@ -10252,15 +10229,6 @@
 		"translation": "Triggers",
 		"machine": true
 	},
-	"Enter &Custom Event Number: (0-127)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\CustomEventDialog.cs"
-		],
-		"translation": "Voer aangepaste gebeurtenis nummer: (0-127 (&C))",
-		"machine": true
-	},
 	"Please enter a value between 0 and 127": 
 	{
 		"contexts": 
@@ -10581,15 +10549,6 @@
 		"translation": "Vertragingen",
 		"machine": true
 	},
-	"Custom Event Trigger": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\MidiAssignable\\Triggers.cs"
-		],
-		"translation": "Custom gebeurtenisactivering",
-		"machine": true
-	},
 	"Custom Event {0}": 
 	{
 		"contexts": 
@@ -10778,6 +10737,7 @@
 			".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
 			".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
 			".\\Cantabile.Application\\Sessions\\External\\ExternalOutputPorts.cs",
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
 			".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs",
 			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs",
@@ -11254,24 +11214,6 @@
 		"translation": "Staat {0} niet gevonden",
 		"machine": true
 	},
-	"No plugin selected": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\QuickController\\QuickController.cs"
-		],
-		"translation": "Geen plugin geselecteerd",
-		"machine": true
-	},
-	"Plugin not loaded": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\QuickController\\QuickController.cs"
-		],
-		"translation": "Plugin niet geladen",
-		"machine": true
-	},
 	"Invalid preset number": 
 	{
 		"contexts": 
@@ -11622,6 +11564,7 @@
 			".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
 			".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
 			".\\Cantabile.Application\\Sessions\\External\\ExternalOutputPorts.cs",
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
@@ -11689,15 +11632,6 @@
 			".\\Cantabile\\Options\\MidiPortsPage.cs"
 		],
 		"translation": " (Losgekoppeld)",
-		"machine": true
-	},
-	"Sync. Mode": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Sessions\\Metronome.cs"
-		],
-		"translation": "Sync. mode",
 		"machine": true
 	},
 	"any Cantabile window": 
@@ -12182,6 +12116,470 @@
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
 		"translation": "Song load",
+		"machine": true
+	},
+	"Select Master Transport": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Selecteer meester transport",
+		"machine": true
+	},
+	"Show Editor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Show editor",
+		"machine": true
+	},
+	"Edit Preset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Preset bewerken",
+		"machine": true
+	},
+	"Media Player": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\InsertCommands.cs"
+		],
+		"translation": "Mediaspeler",
+		"machine": true
+	},
+	"Enter &Custom Event Number: (0-16383)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\CustomEventDialog.cs"
+		],
+		"translation": "Voer aangepaste gebeurtenis nummer: (0-16.383 (&C))",
+		"machine": true
+	},
+	"Jump to Position": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\JumpToPositionDialog.cs"
+		],
+		"translation": "Ga naar positie",
+		"machine": true
+	},
+	"&Position:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\JumpToPositionDialog.cs"
+		],
+		"translation": "&Positie:",
+		"machine": true
+	},
+	"Audio Channel Assignment": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaFileAudioAssignmentDialog.cs"
+		],
+		"translation": "Audio kanaaltoewijzing",
+		"machine": true
+	},
+	"Source Channel: ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaFileAudioAssignmentDialog.cs"
+		],
+		"translation": "Bron kanaal: ",
+		"machine": true
+	},
+	"Target Port: ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaFileAudioAssignmentDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaFileMidiAssignmentDialog.cs"
+		],
+		"translation": "Target port: ",
+		"machine": true
+	},
+	"Target Channel: ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaFileAudioAssignmentDialog.cs"
+		],
+		"translation": "Target kanaal: ",
+		"machine": true
+	},
+	"All Media Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
+		],
+		"translation": "Alle mediabestanden",
+		"machine": true
+	},
+	"Audio Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
+		],
+		"translation": "Audiobestanden",
+		"machine": true
+	},
+	"MIDI Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
+		],
+		"translation": "MIDI-bestanden",
+		"machine": true
+	},
+	"Source Track:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaFileMidiAssignmentDialog.cs"
+		],
+		"translation": "Bronspoor:",
+		"machine": true
+	},
+	"Edit Audio Ports - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaPlayerAudioPortsDialog.cs"
+		],
+		"translation": "Bewerken audiopoorten - {0}",
+		"machine": true
+	},
+	"Edit MIDI Ports - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaPlayerMidiPortsDialog.cs"
+		],
+		"translation": "Bewerken MIDI-poorten - {0}",
+		"machine": true
+	},
+	"(Not assigned)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+		],
+		"translation": "(Niet toegekend)",
+		"machine": true
+	},
+	"Defa&ult Port": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+		],
+		"translation": "Defa&ult poort",
+		"machine": true
+	},
+	"Capabilities": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "Mogelijkheden",
+		"machine": true
+	},
+	"10:1.000": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainPanel\\MediaPlayerScrubberSlot.cs"
+		],
+		"translation": "10: 1.000",
+		"machine": true
+	},
+	"Position": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainPanel\\MediaPlayerScrubberSlot.cs"
+		],
+		"translation": "Positie",
+		"machine": true
+	},
+	"&Jump to Position...\tEnter": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainPanel\\MediaPlayerScrubberSlot.cs"
+		],
+		"translation": "Ga naar positie... in te voeren (&J)",
+		"machine": true
+	},
+	"Display as &Musical Time": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainPanel\\MediaPlayerScrubberSlot.cs"
+		],
+		"translation": "Weer als &muzikaal tijd",
+		"machine": true
+	},
+	"Display as &Real-time": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainPanel\\MediaPlayerScrubberSlot.cs"
+		],
+		"translation": "Display &real-time",
+		"machine": true
+	},
+	"MediaPlayer Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs"
+		],
+		"translation": "MediaPlayer naam",
+		"machine": true
+	},
+	"MediaPlayer Gain": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs"
+		],
+		"translation": "MediaPlayer winst",
+		"machine": true
+	},
+	"Speed:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs"
+		],
+		"translation": "Snelheid:",
+		"machine": true
+	},
+	"500%": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs"
+		],
+		"translation": "500%",
+		"machine": true
+	},
+	"Choose File": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs"
+		],
+		"translation": "Kies bestand",
+		"machine": true
+	},
+	"Ed&itor...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Ed&itor...",
+		"machine": true
+	},
+	"Plu&gin Parameters...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Plu&gin parameters...",
+		"machine": true
+	},
+	"&Audio Ports...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "&Audio poorten...",
+		"machine": true
+	},
+	"MIDI P&orts...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "MIDI p&orts...",
+		"machine": true
+	},
+	"Media Pla&yer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Mediaspeler (&Y)",
+		"machine": true
+	},
+	"Select &Master Transport": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Selecteer &meester transport",
+		"machine": true
+	},
+	"Specific Trigger Event": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Triggers.cs"
+		],
+		"translation": "Specifieke trigger event",
+		"machine": true
+	},
+	"Indexed Trigger Event": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Triggers.cs"
+		],
+		"translation": "Geïndexeerde trigger event",
+		"machine": true
+	},
+	"Master Transport": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Metronome.cs"
+		],
+		"translation": "Master transport",
+		"machine": true
+	},
+	"Sync. to MIDI Clock": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Metronome.cs"
+		],
+		"translation": "Sync. MIDI clock",
+		"machine": true
+	},
+	"Stereo Out": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
+		],
+		"translation": "Stereo out",
+		"machine": true
+	},
+	"MIDI Out": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
+		],
+		"translation": "MIDI out",
+		"machine": true
+	},
+	"Selected File": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
+		],
+		"translation": "Geselecteerde bestand",
+		"machine": true
+	},
+	"Playback Speed": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
+		],
+		"translation": "Afspeelsnelheid",
+		"machine": true
+	},
+	"MediaPlayer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
+		],
+		"translation": "Mediaspeler",
+		"machine": true
+	},
+	"Speed": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
+		],
+		"translation": "Snelheid",
+		"machine": true
+	},
+	"Next File": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
+		],
+		"translation": "Volgend bestand",
+		"machine": true
+	},
+	"Previous File": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
+		],
+		"translation": "Vorige bestand",
+		"machine": true
+	},
+	"Select File Scaled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
+		],
+		"translation": "Select file geschaald",
+		"machine": true
+	},
+	"Select File Indexed": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
+		],
+		"translation": "Selecteer bestand geïndexeerd",
+		"machine": true
+	},
+	"Rename Route": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Sessions\\Racks\\RackBase.cs"
+		],
+		"translation": "Hernoem route",
 		"machine": true
 	}
 }
