@@ -89,7 +89,6 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\QuickController\\QuickController.cs",
@@ -108,15 +107,6 @@
 			".\\Cantabile\\Controls\\Forms\\CCValueField.cs"
 		],
 		"translation": "CC waarde",
-		"machine": false
-	},
-	"none": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "geen",
 		"machine": false
 	},
 	"same": 
@@ -2013,8 +2003,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs",
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs"
 		],
 		"translation": "Bron (&S):",
 		"machine": false
@@ -2156,38 +2145,10 @@
 		"translation": "Flank &getriggert",
 		"machine": false
 	},
-	"Channel Pressure": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Channel druk",
-		"machine": false
-	},
-	"Pitch Bend": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Pitch bend",
-		"machine": false
-	},
-	"Program Number": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Programmanummer",
-		"machine": false
-	},
 	"CC #{0}": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "CC #{0}",
@@ -2200,42 +2161,6 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
 		],
 		"translation": "&Pas toe op kanalen:",
-		"machine": false
-	},
-	"&Value:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Waarde (&V):",
-		"machine": false
-	},
-	"to:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "naar:",
-		"machine": false
-	},
-	"&Target:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Doel (&T):",
-		"machine": false
-	},
-	"Val&ue:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Waarde (&U):",
 		"machine": false
 	},
 	"&New Channel:": 
@@ -2548,6 +2473,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityGate.cs"
 		],
@@ -4425,15 +4351,6 @@
 			".\\Cantabile\\Misc\\VariableMenu.cs"
 		],
 		"translation": "&Tijd",
-		"machine": false
-	},
-	"&Counter": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Misc\\VariableMenu.cs"
-		],
-		"translation": "Teller (&C)",
 		"machine": false
 	},
 	"About": 
@@ -7291,15 +7208,6 @@
 		"translation": "pitch bend",
 		"machine": false
 	},
-	"program number": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "programmanummer",
-		"machine": false
-	},
 	"controller {0}": 
 	{
 		"contexts": 
@@ -7307,15 +7215,6 @@
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "controller {0}",
-		"machine": false
-	},
-	"Uninitialized channel map": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "Niet ingestelde kanaal kaart",
 		"machine": false
 	},
 	"Suppress {0} on {1}": 
@@ -13187,6 +13086,24 @@
 			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
 		],
 		"translation": "Clear play range",
+		"machine": true
+	},
+	"&From:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
+		],
+		"translation": "Van (&F):",
+		"machine": true
+	},
+	"Uninitialized controller map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Geïnitialiseerd controller kaart",
 		"machine": true
 	}
 }

@@ -89,7 +89,6 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\QuickController\\QuickController.cs",
@@ -108,15 +107,6 @@
 			".\\Cantabile\\Controls\\Forms\\CCValueField.cs"
 		],
 		"translation": "CC-Wert",
-		"machine": false
-	},
-	"none": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "keiner",
 		"machine": false
 	},
 	"same": 
@@ -1944,8 +1934,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs",
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs"
 		],
 		"translation": "Quelle (&s):",
 		"machine": false
@@ -2087,38 +2076,10 @@
 		"translation": "Flanken&getriggert",
 		"machine": false
 	},
-	"Channel Pressure": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Channel Aftertouch",
-		"machine": false
-	},
-	"Pitch Bend": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Pitch Bend",
-		"machine": false
-	},
-	"Program Number": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Programmnummer",
-		"machine": false
-	},
 	"CC #{0}": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "CC # {0}",
@@ -2131,42 +2092,6 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
 		],
 		"translation": "Zuweisen auf Kanäle (&p):",
-		"machine": false
-	},
-	"&Value:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Wert (&v):",
-		"machine": false
-	},
-	"to:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "zu:",
-		"machine": false
-	},
-	"&Target:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Ziel (&t):",
-		"machine": false
-	},
-	"Val&ue:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Wert (&u):",
 		"machine": false
 	},
 	"&New Channel:": 
@@ -2479,6 +2404,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityGate.cs"
 		],
@@ -4122,15 +4048,6 @@
 			".\\Cantabile\\Misc\\VariableMenu.cs"
 		],
 		"translation": "Zei&t",
-		"machine": false
-	},
-	"&Counter": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Misc\\VariableMenu.cs"
-		],
-		"translation": "Zähler (&c)",
 		"machine": false
 	},
 	"About": 
@@ -6760,15 +6677,6 @@
 		"translation": "Pitch Bend",
 		"machine": false
 	},
-	"program number": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "Programmnummer",
-		"machine": false
-	},
 	"controller {0}": 
 	{
 		"contexts": 
@@ -6776,15 +6684,6 @@
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "Controller {0}",
-		"machine": false
-	},
-	"Uninitialized channel map": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "Nicht initialisierte Kanalzuweisung",
 		"machine": false
 	},
 	"Suppress {0} on {1}": 
@@ -13187,6 +13086,24 @@
 			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
 		],
 		"translation": "Klare Spielbereich",
+		"machine": true
+	},
+	"&From:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
+		],
+		"translation": "Von (&F):",
+		"machine": true
+	},
+	"Uninitialized controller map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Uninitialized Controller Karte",
 		"machine": true
 	}
 }

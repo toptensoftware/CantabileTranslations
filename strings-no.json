@@ -89,7 +89,6 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile\\MainPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\QuickController\\QuickController.cs",
@@ -108,15 +107,6 @@
 			".\\Cantabile\\Controls\\Forms\\CCValueField.cs"
 		],
 		"translation": "CC verdi",
-		"machine": true
-	},
-	"none": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "none",
 		"machine": true
 	},
 	"same": 
@@ -2013,8 +2003,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs",
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs"
 		],
 		"translation": "Kilde (&S):",
 		"machine": true
@@ -2156,38 +2145,10 @@
 		"translation": "Kant utløst (&G)",
 		"machine": true
 	},
-	"Channel Pressure": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Kanal press",
-		"machine": true
-	},
-	"Pitch Bend": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Pitch bend",
-		"machine": true
-	},
-	"Program Number": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Program nummer",
-		"machine": true
-	},
 	"CC #{0}": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "CC # {0}",
@@ -2200,42 +2161,6 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
 		],
 		"translation": "Gjelder for kanaler (&P):",
-		"machine": true
-	},
-	"&Value:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "&Verdi:",
-		"machine": true
-	},
-	"to:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "til:",
-		"machine": true
-	},
-	"&Target:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "&Target:",
-		"machine": true
-	},
-	"Val&ue:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		],
-		"translation": "Verdi (&U):",
 		"machine": true
 	},
 	"&New Channel:": 
@@ -2548,6 +2473,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityGate.cs"
 		],
@@ -4425,15 +4351,6 @@
 			".\\Cantabile\\Misc\\VariableMenu.cs"
 		],
 		"translation": "&Tid",
-		"machine": true
-	},
-	"&Counter": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Misc\\VariableMenu.cs"
-		],
-		"translation": "&Counter",
 		"machine": true
 	},
 	"About": 
@@ -7291,15 +7208,6 @@
 		"translation": "pitch bend",
 		"machine": true
 	},
-	"program number": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "programnummer",
-		"machine": true
-	},
 	"controller {0}": 
 	{
 		"contexts": 
@@ -7307,15 +7215,6 @@
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "kontrolleren {0}",
-		"machine": true
-	},
-	"Uninitialized channel map": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "Initialisert kanal kartet",
 		"machine": true
 	},
 	"Suppress {0} on {1}": 
@@ -13187,6 +13086,24 @@
 			".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs"
 		],
 		"translation": "Clear play utvalg",
+		"machine": true
+	},
+	"&From:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
+		],
+		"translation": "&Fra:",
+		"machine": true
+	},
+	"Uninitialized controller map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Initialisert controller kart",
 		"machine": true
 	}
 }
