@@ -183,6 +183,43 @@
 		".\\Cantabile\\MainWindow\\MainToolbar.cs",
 	],
 },
+"Start Recording":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
+"Stop Recording":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Toggle Recording":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Enable Auto Record":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Disable Auto Record":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
+"Toggle Auto Record":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+	],
+},
 "Undo":
 {
 	"contexts": [
@@ -661,6 +698,20 @@
 		".\\Cantabile\\Commands\\ViewCommands.cs",
 	],
 },
+"Recordings":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+		".\\Cantabile\\MainWindow\\SidePanel.cs",
+		".\\Cantabile\\Options\\HotKeysPage.cs",
+	],
+},
+"Recorder Ports":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
 "Toolbar":
 {
 	"contexts": [
@@ -724,6 +775,12 @@
 	],
 },
 "Choose Loop Mode":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
+"Show in Windows Explorer":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ViewCommands.cs",
@@ -811,6 +868,7 @@
 		".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 		".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+		".\\Cantabile\\MainWindow\\RecorderPortsPanel.cs",
 	],
 },
 "Output":
@@ -819,6 +877,7 @@
 		".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 		".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+		".\\Cantabile\\MainWindow\\RecorderPortsPanel.cs",
 	],
 },
 "&Name:":
@@ -1102,6 +1161,7 @@
 		".\\Cantabile\\MainPanel\\PluginSlot.cs",
 		".\\Cantabile\\MainPanel\\RouteSlot.cs",
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\MainWindow\\StatesPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
@@ -1496,6 +1556,7 @@
 		".\\Cantabile\\MainPanel\\PluginSlot.cs",
 		".\\Cantabile\\MainPanel\\RouteSlot.cs",
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\MainWindow\\StatesPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
@@ -1510,6 +1571,7 @@
 		".\\Cantabile\\MainPanel\\PluginSlot.cs",
 		".\\Cantabile\\MainPanel\\RouteSlot.cs",
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\MainWindow\\StatesPanel.cs",
 		".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
@@ -2313,6 +2375,26 @@
 		".\\Cantabile.Application\\Sessions\\Metronome.cs",
 	],
 },
+"Transpose":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\TransposeDialog.cs",
+		".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
+		".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs",
+	],
+},
+"&Session Transpose:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\TransposeDialog.cs",
+	],
+},
+"Son&g Transpose:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\TransposeDialog.cs",
+	],
+},
 "Set Trigger Delays":
 {
 	"contexts": [
@@ -2365,6 +2447,20 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+	],
+},
+"User Notes":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
+		".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
+		".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
+		".\\Cantabile.Application\\Sessions\\External\\ExternalOutputPorts.cs",
+		".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs",
+		".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
+		".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs",
+		".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs",
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 	],
 },
 "&Notes:":
@@ -3597,6 +3693,12 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
+"&Record":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
 "&First":
 {
 	"contexts": [
@@ -3705,18 +3807,6 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"&Record":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-	],
-},
-"Start Recording":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-	],
-},
 "Automatically Start Recording":
 {
 	"contexts": [
@@ -3810,6 +3900,18 @@
 	],
 },
 "States &Behavior":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
+"&Recordings":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
+"Recorder &Ports":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -4146,6 +4248,56 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MetronomePanel.cs",
+	],
+},
+"Ports to Record":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\RecorderPortsPanel.cs",
+	],
+},
+"MIDI":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\RecorderPortsPanel.cs",
+		".\\Cantabile.Application\\Sessions\\Routing\\Route.cs",
+	],
+},
+"Audio":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\RecorderPortsPanel.cs",
+		".\\Cantabile.Application\\Sessions\\Routing\\Route.cs",
+	],
+},
+"Rename Recording":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
+	],
+},
+"A recording with this name already exists":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
+	],
+},
+"&Rename...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
+	],
+},
+"Delete &Unpinned Recordings":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
+	],
+},
+"&Clear List":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
 	],
 },
 "New Song":
@@ -4666,6 +4818,12 @@
 	],
 },
 "&Browse...":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"&Counter":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\VariableMenu.cs",
@@ -5838,6 +5996,12 @@
 		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
+"Please select recordings folder:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\RecordingPage.cs",
+	],
+},
 "Startup\/Shutdown":
 {
 	"contexts": [
@@ -6486,6 +6650,30 @@
 		".\\Cantabile.Core\\MidiControllerEvent.cs",
 	],
 },
+"Recorder":
+{
+	"contexts": [
+		".\\Cantabile.Application\\MidiAssignable\\Recorder.cs",
+	],
+},
+"Record Start\/Stop":
+{
+	"contexts": [
+		".\\Cantabile.Application\\MidiAssignable\\Recorder.cs",
+	],
+},
+"Auto Record On\/Off":
+{
+	"contexts": [
+		".\\Cantabile.Application\\MidiAssignable\\Recorder.cs",
+	],
+},
+"Pin\/Unpin Last Recording":
+{
+	"contexts": [
+		".\\Cantabile.Application\\MidiAssignable\\Recorder.cs",
+	],
+},
 "Session":
 {
 	"contexts": [
@@ -6851,19 +7039,6 @@
 		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 	],
 },
-"User Notes":
-{
-	"contexts": [
-		".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
-		".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
-		".\\Cantabile.Application\\Sessions\\External\\ExternalOutputPorts.cs",
-		".\\Cantabile.Application\\Sessions\\MediaPlayers\\MediaPlayer.cs",
-		".\\Cantabile.Application\\Sessions\\Plugins\\Plugin.cs",
-		".\\Cantabile.Application\\Sessions\\Routing\\AudioRoute.cs",
-		".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs",
-		".\\Cantabile.Application\\Triggers\\Trigger.cs",
-	],
-},
 "Color":
 {
 	"contexts": [
@@ -6897,13 +7072,6 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Sessions\\OnscreenKeyboardState.cs",
-	],
-},
-"Transpose":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
-		".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs",
 	],
 },
 "Temporary Range":
@@ -7656,18 +7824,6 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs",
-	],
-},
-"MIDI":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Sessions\\Routing\\Route.cs",
-	],
-},
-"Audio":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Sessions\\Routing\\Route.cs",
 	],
 },
 " route":

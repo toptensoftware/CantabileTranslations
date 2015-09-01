@@ -133,7 +133,8 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
-			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\MainWindow\\RecorderPortsPanel.cs"
 		],
 		"translation": "Invoer",
 		"machine": false
@@ -144,7 +145,8 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
-			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\MainWindow\\RecorderPortsPanel.cs"
 		],
 		"translation": "Uitgang",
 		"machine": false
@@ -545,6 +547,7 @@
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
 			".\\Cantabile\\MainWindow\\SetListPanel.cs",
 			".\\Cantabile\\MainWindow\\StatesPanel.cs",
 			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
@@ -910,6 +913,7 @@
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
 			".\\Cantabile\\MainWindow\\SetListPanel.cs",
 			".\\Cantabile\\MainWindow\\StatesPanel.cs",
 			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
@@ -927,6 +931,7 @@
 			".\\Cantabile\\MainPanel\\PluginSlot.cs",
 			".\\Cantabile\\MainPanel\\RouteSlot.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
 			".\\Cantabile\\MainWindow\\SetListPanel.cs",
 			".\\Cantabile\\MainWindow\\StatesPanel.cs",
 			".\\Cantabile\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
@@ -3655,6 +3660,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Opname starten",
@@ -6867,6 +6873,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\TransposeDialog.cs",
 			".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
 			".\\Cantabile.Application\\Sessions\\Routing\\MidiRoute.cs"
 		],
@@ -6904,6 +6911,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\RecorderPortsPanel.cs",
 			".\\Cantabile.Application\\Sessions\\Routing\\Route.cs"
 		],
 		"translation": "MIDI",
@@ -6913,6 +6921,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\RecorderPortsPanel.cs",
 			".\\Cantabile.Application\\Sessions\\Routing\\Route.cs"
 		],
 		"translation": "Audio",
@@ -12051,6 +12060,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
 			".\\Cantabile.Application\\MidiAssignments\\MidiAssignment.cs",
 			".\\Cantabile.Application\\Sessions\\External\\ExternalInputPorts.cs",
 			".\\Cantabile.Application\\Sessions\\External\\ExternalOutputPorts.cs",
@@ -13104,6 +13114,224 @@
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "Geïnitialiseerd controller kaart",
+		"machine": true
+	},
+	"Stop Recording": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Stop de opname",
+		"machine": true
+	},
+	"Toggle Recording": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Toggle opname",
+		"machine": true
+	},
+	"Enable Auto Record": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Enable auto-opnemen",
+		"machine": true
+	},
+	"Disable Auto Record": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Disable auto-opnemen",
+		"machine": true
+	},
+	"Toggle Auto Record": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Toggle auto-opnemen",
+		"machine": true
+	},
+	"Recordings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\MainWindow\\SidePanel.cs",
+			".\\Cantabile\\Options\\HotKeysPage.cs"
+		],
+		"translation": "Recordings",
+		"machine": true
+	},
+	"Recorder Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Recorder poorten",
+		"machine": true
+	},
+	"Show in Windows Explorer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Toon in Windows Verkenner",
+		"machine": true
+	},
+	"&Session Transpose:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\TransposeDialog.cs"
+		],
+		"translation": "&Sessie transpositie:",
+		"machine": true
+	},
+	"Son&g Transpose:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\TransposeDialog.cs"
+		],
+		"translation": "Son&g transponeren:",
+		"machine": true
+	},
+	"&Recordings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "&Recordings",
+		"machine": true
+	},
+	"Recorder &Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Recorder &poorten",
+		"machine": true
+	},
+	"Ports to Record": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\RecorderPortsPanel.cs"
+		],
+		"translation": "Havens op te nemen",
+		"machine": true
+	},
+	"Rename Recording": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\RecordingsPanel.cs"
+		],
+		"translation": "Hernoemen opname",
+		"machine": true
+	},
+	"A recording with this name already exists": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\RecordingsPanel.cs"
+		],
+		"translation": "Een opname met deze naam bestaat al",
+		"machine": true
+	},
+	"&Rename...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\RecordingsPanel.cs"
+		],
+		"translation": "Ande&re naam geven...",
+		"machine": true
+	},
+	"Delete &Unpinned Recordings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\RecordingsPanel.cs"
+		],
+		"translation": "Verwijderen losgemaakt opnames (&U)",
+		"machine": true
+	},
+	"&Clear List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\RecordingsPanel.cs"
+		],
+		"translation": "Duidelijke lijst (&C)",
+		"machine": true
+	},
+	"&Counter": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Teller (&C)",
+		"machine": true
+	},
+	"Please select recordings folder:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Selecteer opnames map:",
+		"machine": true
+	},
+	"Recorder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Recorder.cs"
+		],
+		"translation": "Opnemer",
+		"machine": true
+	},
+	"Record Start\/Stop": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Recorder.cs"
+		],
+		"translation": "Record start \/ stop",
+		"machine": true
+	},
+	"Auto Record On\/Off": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Recorder.cs"
+		],
+		"translation": "Automatisch opnemen aan \/ uit",
+		"machine": true
+	},
+	"Pin\/Unpin Last Recording": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\MidiAssignable\\Recorder.cs"
+		],
+		"translation": "Pin \/ losmaken laatste opname",
 		"machine": true
 	}
 }
