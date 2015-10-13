@@ -10923,6 +10923,7 @@
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
@@ -10939,6 +10940,7 @@
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
 		"translation": "Kleur",
@@ -13005,7 +13007,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
+			".\\Cantabile\\RackPanel\\RackPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
 		],
 		"translation": "Rack-bestanden",
 		"machine": true
@@ -13293,6 +13296,105 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
 		],
 		"translation": "Plugin toevoegen",
+		"machine": true
+	},
+	"Embed Object": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Insluiten object",
+		"machine": true
+	},
+	"Replace Object": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Vervang object",
+		"machine": true
+	},
+	"Save Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Rack opslaan",
+		"machine": true
+	},
+	"Save Rack As": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Opslaan rack",
+		"machine": true
+	},
+	"Embedded Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\InsertCommands.cs"
+		],
+		"translation": "Embedded rek",
+		"machine": true
+	},
+	"New Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\InsertCommands.cs"
+		],
+		"translation": "Nieuwe rack",
+		"machine": true
+	},
+	"Existing Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\InsertCommands.cs"
+		],
+		"translation": "Bestaande rek",
+		"machine": true
+	},
+	"&Save Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Rack op&slaan",
+		"machine": true
+	},
+	"Save Rack &As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Opsl&aan rack...",
+		"machine": true
+	},
+	"Em&bedded Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Em&bedded rek...",
+		"machine": true
+	},
+	"Embedded racks can't link to other racks": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
+		],
+		"translation": "Embedded racks kan niet linken naar andere racks",
 		"machine": true
 	}
 }
