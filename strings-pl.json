@@ -69,7 +69,6 @@
 		[
 			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
 			".\\Cantabile\\Controls\\Forms\\ChannelCombo.cs",
-			".\\Cantabile.Core\\ProgramNumber.cs",
 			".\\GuiKit\\Forms\\MidiChannelBar.cs"
 		],
 		"translation": "Sam",
@@ -86,7 +85,7 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs",
 			".\\Cantabile.Core\\PanAndFade.cs",
-			".\\Cantabile.Core\\ProgramNumber.cs",
+			".\\Cantabile.Core\\ProgramMask.cs",
 			".\\GuiKit\\Forms\\MidiChannelBar.cs"
 		],
 		"translation": "Brak",
@@ -1049,15 +1048,6 @@
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
 		],
 		"translation": "Tylko kiedy ta trasa jest aktywny numer &programu:",
-		"machine": true
-	},
-	"Before sending routed events, send this p&rogram:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
-		],
-		"translation": "P&rzed wysłaniem kierowane wydarzenia, wyślij ten program:",
 		"machine": true
 	},
 	"Note Range": 
@@ -7547,15 +7537,6 @@
 		"translation": "Kanał docelowa",
 		"machine": true
 	},
-	"Target Program": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
-		],
-		"translation": "Program docelowy",
-		"machine": true
-	},
 	"Key Range": 
 	{
 		"contexts": 
@@ -7662,7 +7643,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ProgramNumberDialog.cs"
+			".\\Cantabile\\Dialogs\\ProgramMaskDialog.cs"
 		],
 		"translation": "W&prowadź bank i numer programu:",
 		"machine": true
@@ -7671,7 +7652,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ProgramNumberDialog.cs"
+			".\\Cantabile\\Dialogs\\ProgramMaskDialog.cs"
 		],
 		"translation": "Proszę podać poprawny numer programu",
 		"machine": true
@@ -8454,7 +8435,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\ProgramNumber.cs"
+			".\\Cantabile.Core\\ProgramMask.cs"
 		],
 		"translation": "Dowolny",
 		"machine": true
@@ -9827,10 +9808,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\MainWindow\\SetListPanel.cs",
-			".\\Cantabile\\MainWindow\\StatesPanel.cs",
-			".\\Cantabile\\QuickController\\QuickController.cs",
-			".\\Cantabile\\RackPanel\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
 		],
 		"translation": "Nieprawidłowy numer programu",
 		"machine": true
@@ -10773,7 +10751,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs"
+			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
 		],
 		"translation": "Odtwarzacz multimedialny",
 		"machine": true
@@ -13338,7 +13317,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs"
+			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
 		],
 		"translation": "Szafy wbudowane",
 		"machine": true
@@ -13395,6 +13375,42 @@
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		],
 		"translation": "Regały osadzone nie odwołuje się do innych stojaków",
+		"machine": true
+	},
+	"&Show in Windows Explorer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\RecordingsPanel.cs"
+		],
+		"translation": "Pokaż w Ek&sploratorze Windows",
+		"machine": true
+	},
+	"Plugin...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
+		],
+		"translation": "Podłącz...",
+		"machine": true
+	},
+	"New Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
+		],
+		"translation": "Nowy stojak...",
+		"machine": true
+	},
+	"Existing Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
+		],
+		"translation": "Istniejące rack...",
 		"machine": true
 	}
 }

@@ -60,7 +60,6 @@
 		[
 			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
 			".\\Cantabile\\Controls\\Forms\\ChannelCombo.cs",
-			".\\Cantabile.Core\\ProgramNumber.cs",
 			".\\GuiKit\\Forms\\MidiChannelBar.cs"
 		],
 		"translation": "Stesso",
@@ -77,7 +76,7 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs",
 			".\\Cantabile.Core\\PanAndFade.cs",
-			".\\Cantabile.Core\\ProgramNumber.cs",
+			".\\Cantabile.Core\\ProgramMask.cs",
 			".\\GuiKit\\Forms\\MidiChannelBar.cs"
 		],
 		"translation": "Nessuno",
@@ -896,15 +895,6 @@
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
 		],
 		"translation": "connettere solo quando questo numero di &programma è attivo:",
-		"machine": false
-	},
-	"Before sending routed events, send this p&rogram:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
-		],
-		"translation": "Prima di inviare gli eventi indirizzati, inviare questo p&rogramma:",
 		"machine": false
 	},
 	"Note Range": 
@@ -7547,15 +7537,6 @@
 		"translation": "Canale di destinazione",
 		"machine": true
 	},
-	"Target Program": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
-		],
-		"translation": "Programma di destinazione",
-		"machine": true
-	},
 	"Key Range": 
 	{
 		"contexts": 
@@ -7662,7 +7643,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ProgramNumberDialog.cs"
+			".\\Cantabile\\Dialogs\\ProgramMaskDialog.cs"
 		],
 		"translation": "Inserire banca e numero di &programma:",
 		"machine": true
@@ -7671,7 +7652,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ProgramNumberDialog.cs"
+			".\\Cantabile\\Dialogs\\ProgramMaskDialog.cs"
 		],
 		"translation": "Si prega di inserire un numero di programma valido",
 		"machine": true
@@ -8454,7 +8435,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\ProgramNumber.cs"
+			".\\Cantabile.Core\\ProgramMask.cs"
 		],
 		"translation": "Qualsiasi",
 		"machine": true
@@ -9827,10 +9808,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\MainWindow\\SetListPanel.cs",
-			".\\Cantabile\\MainWindow\\StatesPanel.cs",
-			".\\Cantabile\\QuickController\\QuickController.cs",
-			".\\Cantabile\\RackPanel\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
 		],
 		"translation": "Numero di programma non valido",
 		"machine": true
@@ -10773,7 +10751,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs"
+			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
 		],
 		"translation": "Media Player",
 		"machine": true
@@ -13338,7 +13317,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs"
+			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
 		],
 		"translation": "Cremagliera integrata",
 		"machine": true
@@ -13395,6 +13375,42 @@
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		],
 		"translation": "Rack integrate non possono collegarsi ad altri rack",
+		"machine": true
+	},
+	"&Show in Windows Explorer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\RecordingsPanel.cs"
+		],
+		"translation": "Mo&stra in Windows Explorer",
+		"machine": true
+	},
+	"Plugin...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
+		],
+		"translation": "Collegare...",
+		"machine": true
+	},
+	"New Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
+		],
+		"translation": "Nuovo rack...",
+		"machine": true
+	},
+	"Existing Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
+		],
+		"translation": "Rastrelliera esistente...",
 		"machine": true
 	}
 }

@@ -553,6 +553,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\InsertCommands.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
 	],
 },
 "New Rack":
@@ -571,6 +572,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\InsertCommands.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
 	],
 },
 "State":
@@ -879,7 +881,6 @@
 	"contexts": [
 		".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
 		".\\Cantabile\\Controls\\Forms\\ChannelCombo.cs",
-		".\\Cantabile.Core\\ProgramNumber.cs",
 		".\\GuiKit\\Forms\\MidiChannelBar.cs",
 	],
 },
@@ -893,7 +894,7 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 		".\\Cantabile.Core\\PanAndFade.cs",
-		".\\Cantabile.Core\\ProgramNumber.cs",
+		".\\Cantabile.Core\\ProgramMask.cs",
 		".\\GuiKit\\Forms\\MidiChannelBar.cs",
 	],
 },
@@ -1777,12 +1778,6 @@
 		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 	],
 },
-"Before sending routed events, send this p&rogram:":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
-	],
-},
 "Note Range":
 {
 	"contexts": [
@@ -2316,13 +2311,13 @@
 "Enter Bank and &Program Number:":
 {
 	"contexts": [
-		".\\Cantabile\\Dialogs\\ProgramNumberDialog.cs",
+		".\\Cantabile\\Dialogs\\ProgramMaskDialog.cs",
 	],
 },
 "Please enter a valid program number":
 {
 	"contexts": [
-		".\\Cantabile\\Dialogs\\ProgramNumberDialog.cs",
+		".\\Cantabile\\Dialogs\\ProgramMaskDialog.cs",
 	],
 },
 "Re-assign Program Numbers":
@@ -3840,6 +3835,12 @@
 		".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
 	],
 },
+"&Show in Windows Explorer":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\RecordingsPanel.cs",
+	],
+},
 "&Undo {0}":
 {
 	"contexts": [
@@ -3945,9 +3946,6 @@
 	"contexts": [
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\MainWindow\\StatesPanel.cs",
-		".\\Cantabile\\QuickController\\QuickController.cs",
-		".\\Cantabile\\RackPanel\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
-		".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
 	],
 },
 "Insert Songs":
@@ -6035,6 +6033,24 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
 	],
 },
+"Plugin...":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
+	],
+},
+"New Rack...":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
+	],
+},
+"Existing Rack...":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
+	],
+},
 "Add Route":
 {
 	"contexts": [
@@ -7795,12 +7811,6 @@
 		".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
 	],
 },
-"Target Program":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
-	],
-},
 "Key Range":
 {
 	"contexts": [
@@ -8824,7 +8834,7 @@
 "Any":
 {
 	"contexts": [
-		".\\Cantabile.Core\\ProgramNumber.cs",
+		".\\Cantabile.Core\\ProgramMask.cs",
 	],
 },
 "Null Audio":

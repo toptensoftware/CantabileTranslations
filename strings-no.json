@@ -69,7 +69,6 @@
 		[
 			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
 			".\\Cantabile\\Controls\\Forms\\ChannelCombo.cs",
-			".\\Cantabile.Core\\ProgramNumber.cs",
 			".\\GuiKit\\Forms\\MidiChannelBar.cs"
 		],
 		"translation": "Samme",
@@ -86,7 +85,7 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs",
 			".\\Cantabile.Core\\PanAndFade.cs",
-			".\\Cantabile.Core\\ProgramNumber.cs",
+			".\\Cantabile.Core\\ProgramMask.cs",
 			".\\GuiKit\\Forms\\MidiChannelBar.cs"
 		],
 		"translation": "None",
@@ -1049,15 +1048,6 @@
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
 		],
 		"translation": "Bare rute når dette &programmet står aktiv:",
-		"machine": true
-	},
-	"Before sending routed events, send this p&rogram:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
-		],
-		"translation": "Fø&r du sender rutede hendelser, sende dette programmet:",
 		"machine": true
 	},
 	"Note Range": 
@@ -6019,15 +6009,6 @@
 		"translation": "Target kanal",
 		"machine": true
 	},
-	"Target Program": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
-		],
-		"translation": "Target program",
-		"machine": true
-	},
 	"Key Range": 
 	{
 		"contexts": 
@@ -7662,7 +7643,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ProgramNumberDialog.cs"
+			".\\Cantabile\\Dialogs\\ProgramMaskDialog.cs"
 		],
 		"translation": "Tast bank og &programnummer:",
 		"machine": true
@@ -7671,7 +7652,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ProgramNumberDialog.cs"
+			".\\Cantabile\\Dialogs\\ProgramMaskDialog.cs"
 		],
 		"translation": "Skriv inn en gyldig programnummer",
 		"machine": true
@@ -8454,7 +8435,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\ProgramNumber.cs"
+			".\\Cantabile.Core\\ProgramMask.cs"
 		],
 		"translation": "Enhver",
 		"machine": true
@@ -9827,10 +9808,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\MainWindow\\SetListPanel.cs",
-			".\\Cantabile\\MainWindow\\StatesPanel.cs",
-			".\\Cantabile\\QuickController\\QuickController.cs",
-			".\\Cantabile\\RackPanel\\MidiAssignmentsPanel\\MidiAssignmentSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\MainWindow\\StatesPanel.cs"
 		],
 		"translation": "Ugyldig programnummer",
 		"machine": true
@@ -10773,7 +10751,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs"
+			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
 		],
 		"translation": "Mediespiller",
 		"machine": true
@@ -13338,7 +13317,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs"
+			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
 		],
 		"translation": "Innebygd stativ",
 		"machine": true
@@ -13395,6 +13375,42 @@
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		],
 		"translation": "Embedded stativer kan ikke koble til andre stativer",
+		"machine": true
+	},
+	"&Show in Windows Explorer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\RecordingsPanel.cs"
+		],
+		"translation": "Vi&s i windows explorer",
+		"machine": true
+	},
+	"Plugin...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
+		],
+		"translation": "Koble til...",
+		"machine": true
+	},
+	"New Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
+		],
+		"translation": "New stativ...",
+		"machine": true
+	},
+	"Existing Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
+		],
+		"translation": "Eksisterende stativ...",
 		"machine": true
 	}
 }
