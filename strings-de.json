@@ -4205,15 +4205,6 @@
 		"translation": "Befehl (&c):",
 		"machine": false
 	},
-	"Ar&guments:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\ExternalToolsPage.cs"
-		],
-		"translation": "Parameter (&g):",
-		"machine": false
-	},
 	"I&nitial Dir:": 
 	{
 		"contexts": 
@@ -8892,8 +8883,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile.Application\\MidiAssignable\\States.cs"
+			".\\Cantabile\\Commands\\ViewCommands.cs"
 		],
 		"translation": "Zustände",
 		"machine": false
@@ -10698,15 +10688,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
 		],
 		"translation": "Preset bei MIDI-Pr&ogrammwechsel umschalten",
-		"machine": false
-	},
-	"Dump E&xecution Tree": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Ausführungsbaum ausgeben (&X)",
 		"machine": false
 	},
 	"Re-assign Program Numbers...": 
@@ -12536,7 +12517,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\MainWindow\\SidePanel.cs",
-			".\\Cantabile\\MainWindow\\StatesPanel.cs"
+			".\\Cantabile\\MainWindow\\StatesPanel.cs",
+			".\\Cantabile.Application\\MidiAssignable\\SongStates.cs"
 		],
 		"translation": "Songzustände",
 		"machine": false
@@ -12545,7 +12527,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\StatesPanel.cs"
+			".\\Cantabile\\MainWindow\\StatesPanel.cs",
+			".\\Cantabile.Application\\MidiAssignable\\RackStates.cs"
 		],
 		"translation": "Rackzustände",
 		"machine": false
@@ -12874,24 +12857,6 @@
 		"translation": "Neuen &Song starten",
 		"machine": false
 	},
-	"&Reload last used song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\SongsPage.cs"
-		],
-		"translation": "Zuletzt ve&rwendeten Song neu laden",
-		"machine": false
-	},
-	"&Prompt to reload last song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\SongsPage.cs"
-		],
-		"translation": "Aufforderung, den letzten Song neu zu laden (&P)",
-		"machine": false
-	},
 	"File Locations": 
 	{
 		"contexts": 
@@ -12899,15 +12864,6 @@
 			".\\Cantabile\\Options\\SongsPage.cs"
 		],
 		"translation": "Dateispeicherorte",
-		"machine": false
-	},
-	"S&ession Files:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\SongsPage.cs"
-		],
-		"translation": "S&essiondateien:",
 		"machine": false
 	},
 	"Browse": 
@@ -13411,6 +13367,51 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
 		],
 		"translation": "Bestehende Rack...",
+		"machine": true
+	},
+	"Dump E&xecution Plan": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Dump Ausführungsplan (&X)",
+		"machine": true
+	},
+	"&Reload the last used song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\SongsPage.cs"
+		],
+		"translation": "Laden Sie die zuletzt ve&rwendete Song",
+		"machine": true
+	},
+	"&Prompt to reload the last used song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\SongsPage.cs"
+		],
+		"translation": "&Prompt, um die zuletzt verwendeten Song neu zu laden",
+		"machine": true
+	},
+	"Re-load t&he last used set list": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\SongsPage.cs"
+		],
+		"translation": "Re-laden die zuletzt verwendete Set-Liste (&H)",
+		"machine": true
+	},
+	"S&ong Files:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\SongsPage.cs"
+		],
+		"translation": "S&ong-Dateien:",
 		"machine": true
 	}
 }
