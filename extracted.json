@@ -997,6 +997,8 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+		".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
+		".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
 		".\\GuiKit\\Forms\\OKCancelButtons.cs",
 		".\\GuiKit\\OptionsDialog\\OptionsDialog.cs",
 	],
@@ -1009,6 +1011,8 @@
 		".\\Cantabile\\Dialogs\\PluginScanProgressDialog.cs",
 		".\\Cantabile\\Dialogs\\SongLoadProgressDialog.cs",
 		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+		".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
+		".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
 		".\\GuiKit\\Forms\\OKCancelButtons.cs",
 		".\\GuiKit\\OptionsDialog\\OptionsDialog.cs",
 	],
@@ -2381,6 +2385,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\SetListEntryDialog.cs",
+		".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 		".\\Cantabile\\MainWindow\\MainWindow.cs",
 		".\\Cantabile\\MainWindow\\SetListPanel.cs",
 		".\\Cantabile\\Options\\SongsPage.cs",
@@ -2533,6 +2538,22 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+	],
+},
+"Rack Files":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
+		".\\Cantabile\\Options\\SongsPage.cs",
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+	],
+},
+"Set List Files":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
+		".\\Cantabile\\MainWindow\\MainWindow.cs",
 	],
 },
 "User Notes":
@@ -3729,12 +3750,6 @@
 		".\\Cantabile\\MainWindow\\MainWindow.cs",
 	],
 },
-"Set List Files":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainWindow.cs",
-	],
-},
 "Do you want to save changes to set list '{0}'?":
 {
 	"contexts": [
@@ -4579,6 +4594,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Options\\AudioEnginePage.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 	],
 },
 "Disabled":
@@ -5597,6 +5613,12 @@
 		".\\Cantabile\\Options\\SongsPage.cs",
 	],
 },
+"&Global Rack File:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\SongsPage.cs",
+	],
+},
 "Welcome":
 {
 	"contexts": [
@@ -5904,13 +5926,6 @@
 		".\\Cantabile\\RackPanel\\RackPanel.cs",
 	],
 },
-"Rack Files":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RackPanel.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-	],
-},
 "Unable to load preset\/bank as it references an unknown plugin ID: 0x{0:X8}":
 {
 	"contexts": [
@@ -5943,6 +5958,12 @@
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
 		".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
+	],
+},
+"Inverted":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 	],
 },
 "Toggle":
@@ -7050,6 +7071,7 @@
 	"contexts": [
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 		".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
+		".\\Cantabile.Application\\Upgrade\\V2Session.cs",
 	],
 },
 "Selected File":
@@ -7211,6 +7233,12 @@
 	],
 },
 "Wet\/Dry Mix":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+	],
+},
+"Editor Visibility":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
@@ -8041,6 +8069,12 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Audio Out":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Upgrade\\V2Session.cs",
 	],
 },
 "Ch:":

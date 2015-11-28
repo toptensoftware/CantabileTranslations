@@ -149,6 +149,8 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
+			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
 			".\\GuiKit\\Forms\\OKCancelButtons.cs",
 			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
 		],
@@ -164,6 +166,8 @@
 			".\\Cantabile\\Dialogs\\PluginScanProgressDialog.cs",
 			".\\Cantabile\\Dialogs\\SongLoadProgressDialog.cs",
 			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
+			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
 			".\\GuiKit\\Forms\\OKCancelButtons.cs",
 			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
 		],
@@ -7268,6 +7272,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
 			".\\Cantabile\\MainWindow\\MainWindow.cs"
 		],
 		"translation": "File Set List",
@@ -9906,7 +9911,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\AudioEnginePage.cs"
+			".\\Cantabile\\Options\\AudioEnginePage.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "Normale",
 		"machine": true
@@ -11010,7 +11016,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
-			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
+			".\\Cantabile.Application\\Upgrade\\V2Session.cs"
 		],
 		"translation": "MIDI out",
 		"machine": true
@@ -12261,6 +12268,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\SetListEntryDialog.cs",
+			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\MainWindow\\MainWindow.cs",
 			".\\Cantabile\\MainWindow\\SetListPanel.cs",
 			".\\Cantabile\\Options\\SongsPage.cs"
@@ -12887,6 +12895,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
+			".\\Cantabile\\Options\\SongsPage.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
 		],
@@ -13496,6 +13506,42 @@
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\IndexedRackHostBindingClass.cs"
 		],
 		"translation": "Rack per indice",
+		"machine": true
+	},
+	"&Global Rack File:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\SongsPage.cs"
+		],
+		"translation": "File crema&gliera globale:",
+		"machine": true
+	},
+	"Inverted": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "Rovesciato",
+		"machine": true
+	},
+	"Editor Visibility": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		],
+		"translation": "Editor visibilità",
+		"machine": true
+	},
+	"Audio Out": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Upgrade\\V2Session.cs"
+		],
+		"translation": "Uscita audio",
 		"machine": true
 	}
 }
