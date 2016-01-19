@@ -140,7 +140,8 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
-			".\\Cantabile\\Dialogs\\StateDialog.cs"
+			".\\Cantabile\\Dialogs\\StateDialog.cs",
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
 		],
 		"translation": "&Navn:",
 		"machine": true
@@ -171,15 +172,6 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs"
 		],
 		"translation": "Mix nivå",
-		"machine": true
-	},
-	"(none)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs"
-		],
-		"translation": "(none)",
 		"machine": true
 	},
 	" (missing)": 
@@ -620,60 +612,6 @@
 			".\\Cantabile\\Dialogs\\CrashCheckDialog.cs"
 		],
 		"translation": "Ikke legg noen innstillinger (siste utvei, vil alle innstillinger gå tapt (&D))",
-		"machine": true
-	},
-	"Enter License": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\LicenseDetailsDialog.cs"
-		],
-		"translation": "Tast lisens",
-		"machine": true
-	},
-	"Please enter your license details exactly as per the information you\nreceived by email after purchasing Cantabile.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\LicenseDetailsDialog.cs"
-		],
-		"translation": "Skriv inn dine lisensdetaljene akkurat som per den informasjonen du\nmottatt via e-post etter kjøp Cantabile.",
-		"machine": true
-	},
-	"Note: this preview release of Cantabile 3 will accept a Cantabile 2 Solo or Performer serial number.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\LicenseDetailsDialog.cs"
-		],
-		"translation": "Merk: Denne forhåndslansering av cantabile 3 vil godta en cantabile to solo eller utøver serienummer.",
-		"machine": true
-	},
-	"&License Holder:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\LicenseDetailsDialog.cs"
-		],
-		"translation": "&Lisensinnehaver:",
-		"machine": true
-	},
-	"&Serial Number:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\LicenseDetailsDialog.cs"
-		],
-		"translation": "&Serienummer:",
-		"machine": true
-	},
-	"Your registration details are incorrect.  Please check carefully what you have entered, or contact Topten Software if the problem persists": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\LicenseDetailsDialog.cs"
-		],
-		"translation": "Dine registreringsdetaljer er feil. kan du sjekke nøye hva du har skrevet, eller kontakt TopTen programvare hvis problemet vedvarer",
 		"machine": true
 	},
 	"Edit MIDI Filter": 
@@ -3626,15 +3564,6 @@
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Strømknappen",
-		"machine": true
-	},
-	"This is a preview build of Cantabile that will run until {0:dd MMMM yyyy}.   Be sure to check the Cantabile website for an updated build before then.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		],
-		"translation": "Dette er en forhåndsvisning bygge av cantabile som vil løpe frem {0:dd MMMM yyyy}. Husk å sjekke cantabile hjemmeside for oppdatert build før da.",
 		"machine": true
 	},
 	"Are you sure you want to exit?": 
@@ -10424,15 +10353,6 @@
 		"translation": "Enter",
 		"machine": true
 	},
-	"This preview build of Cantabile has expired but there's probably an updated one available.\n\nPress OK to visit http:\/\/www.cantabilesoftware.com\/v3": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Program.cs"
-		],
-		"translation": "Denne forhåndsvisningen bygge av cantabile har utløpt, men det er sannsynligvis en oppdatert én tilgjengelig.\n\nTrykk OK for å besøke http:\/\/www.cantabilesoftware.com\/v3",
-		"machine": true
-	},
 	"Switch Preset on Program Change": 
 	{
 		"contexts": 
@@ -13427,7 +13347,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
+			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
 		],
 		"translation": "Vis notater",
 		"machine": true
@@ -14278,6 +14199,551 @@
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs"
 		],
 		"translation": "Sync-modus",
+		"machine": true
+	},
+	"OK, Got It!": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Controls\\Composited\\TipPanel.cs"
+		],
+		"translation": "Ok, skjønner!",
+		"machine": true
+	},
+	"Tell Me More": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Controls\\Composited\\TipPanel.cs"
+		],
+		"translation": "Fortell meg mer",
+		"machine": true
+	},
+	"(None)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaFileMidiAssignmentDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListEntryDialog.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
+		],
+		"translation": "(None)",
+		"machine": true
+	},
+	"Select &License": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ChooseLicensePage.cs"
+		],
+		"translation": "Ve&lg lisens",
+		"machine": true
+	},
+	"License": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ChooseLicensePage.cs"
+		],
+		"translation": "Tillatelse",
+		"machine": true
+	},
+	"&Use Selected License": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ChooseLicensePage.cs"
+		],
+		"translation": "Br&uk valgt lisens",
+		"machine": true
+	},
+	"&Refresh List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ChooseLicensePage.cs"
+		],
+		"translation": "Oppdate&r liste",
+		"machine": true
+	},
+	"You can change license later by selecting Change License from the Help menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ChooseLicensePage.cs"
+		],
+		"translation": "Du kan endre lisens senere ved å velge endring lisens fra hjelpemenyen",
+		"machine": true
+	},
+	"Alternatively": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ChooseLicensePage.cs",
+			".\\Cantabile\\Licensing\\ExpiredPage.cs",
+			".\\Cantabile\\Licensing\\LoginPage.cs",
+			".\\Cantabile\\Licensing\\OfflinePage.cs",
+			".\\Cantabile\\Licensing\\RegisteredPage.cs",
+			".\\Cantabile\\Licensing\\RegisterPage.cs",
+			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
+		],
+		"translation": "Alternativt",
+		"machine": true
+	},
+	"&Offline Licensing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ChooseLicensePage.cs",
+			".\\Cantabile\\Licensing\\LoginPage.cs",
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
+		],
+		"translation": "&Offline lisensiering",
+		"machine": true
+	},
+	"Change &Account": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ChooseLicensePage.cs",
+			".\\Cantabile\\Licensing\\ExpiredPage.cs"
+		],
+		"translation": "Endre konto (&A)",
+		"machine": true
+	},
+	"&Contact Us": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ChooseLicensePage.cs",
+			".\\Cantabile\\Licensing\\ExpiredPage.cs",
+			".\\Cantabile\\Licensing\\LoginPage.cs",
+			".\\Cantabile\\Licensing\\OfflinePage.cs",
+			".\\Cantabile\\Licensing\\RegisteredPage.cs",
+			".\\Cantabile\\Licensing\\RegisterPage.cs",
+			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
+		],
+		"translation": "Kontakt oss (&C)",
+		"machine": true
+	},
+	"Failed to refresh license list - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ChooseLicensePage.cs"
+		],
+		"translation": "Kunne ikke oppdatere lisens Liste - {0}",
+		"machine": true
+	},
+	"If you've already purchased a license, you can install it\nby clicking the Use a Different License button below.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ExpiredPage.cs"
+		],
+		"translation": "Hvis du allerede har kjøpt en lisens, kan du installere det\nved å klikke på Bruk en annen lisens knappen nedenfor.",
+		"machine": true
+	},
+	"&Buy Now": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ExpiredPage.cs",
+			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
+		],
+		"translation": "Kjøp nå (&B)",
+		"machine": true
+	},
+	"&Use a Different License": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\ExpiredPage.cs"
+		],
+		"translation": "Br&uk en annen lisens",
+		"machine": true
+	},
+	"An unknown error occurred (status {0})": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LicenseManager.cs"
+		],
+		"translation": "En ukjent feil (status {0})",
+		"machine": true
+	},
+	"Invalid License": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LicenseManager.cs"
+		],
+		"translation": "Ugyldig lisens",
+		"machine": true
+	},
+	"License Not Installed": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LicenseManager.cs"
+		],
+		"translation": "Lisens ikke installert",
+		"machine": true
+	},
+	"Your subscription doesn't cover this build :(\nTo continue using Cantabile you must either purchase a subscription extension or revert to an earlier build.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LicenseManager.cs"
+		],
+		"translation": "Abonnementet dekker ikke dette bygge:(\nÅ fortsette å bruke cantabile du må enten kjøpe et abonnement forlengelse eller gå tilbake til en tidligere build.",
+		"machine": true
+	},
+	"Your trial has expired :(\nTo continue using this edition of Cantabile you must purchase a license.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LicenseManager.cs"
+		],
+		"translation": "Din prøveperioden er utløpt:(\nÅ fortsette å bruke denne utgaven av cantabile du må kjøpe en lisens.",
+		"machine": true
+	},
+	"Cantabile": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LicensingDialog.cs"
+		],
+		"translation": "Cantabile",
+		"machine": true
+	},
+	"Enter Your License Details": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LoginPage.cs"
+		],
+		"translation": "Skriv inn dine lisensdetaljene",
+		"machine": true
+	},
+	"Please enter your email address and license key to continue.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LoginPage.cs"
+		],
+		"translation": "Fyll inn din e-postadresse og lisensnøkkel for å fortsette.",
+		"machine": true
+	},
+	"&Email Address:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LoginPage.cs",
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
+		],
+		"translation": "&Epostadresse:",
+		"machine": true
+	},
+	"&License Key:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LoginPage.cs"
+		],
+		"translation": "&Lisensnøkkel:",
+		"machine": true
+	},
+	"Use password instead": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LoginPage.cs"
+		],
+		"translation": "Bruk passord i stedet",
+		"machine": true
+	},
+	"&Password:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LoginPage.cs"
+		],
+		"translation": "&Passord:",
+		"machine": true
+	},
+	"Continue": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LoginPage.cs",
+			".\\Cantabile\\Licensing\\OfflinePage.cs",
+			".\\Cantabile\\Licensing\\RegisteredPage.cs",
+			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
+		],
+		"translation": "Fortsette",
+		"machine": true
+	},
+	"I &Don't Have a License Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LoginPage.cs"
+		],
+		"translation": "Jeg har ikke en lisensnøkkel (&D)",
+		"machine": true
+	},
+	"No Internet Access?": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\OfflinePage.cs"
+		],
+		"translation": "Ingen Internett-tilgang?",
+		"machine": true
+	},
+	"If you don't have internet access on this computer, your can request an offline license by visiting": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\OfflinePage.cs"
+		],
+		"translation": "Hvis du ikke har tilgang til Internett på denne datamaskinen, kan du be om en offline-lisens ved å besøke",
+		"machine": true
+	},
+	"and entering the code:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\OfflinePage.cs"
+		],
+		"translation": "og skrive inn koden:",
+		"machine": true
+	},
+	"Once you've received and installed your license, click Continue.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\OfflinePage.cs"
+		],
+		"translation": "Når du har mottatt og installert lisensen din, klikker du på Fortsett.",
+		"machine": true
+	},
+	"Go &Back": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\OfflinePage.cs"
+		],
+		"translation": "Gå til&bake",
+		"machine": true
+	},
+	"Thanks!": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisteredPage.cs"
+		],
+		"translation": "Takk!",
+		"machine": true
+	},
+	"Please check your email.\n(Don't forget to check your spam folder)\n\nClick continue when you're ready to enter your license key.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisteredPage.cs"
+		],
+		"translation": "Vennligst sjekk din e-post.\n(Ikke glem å sjekke spam-mappen)\n\nKlikk fortsette når du er klar til å gå inn lisensnøkkelen.",
+		"machine": true
+	},
+	"&Use an Existing License": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisteredPage.cs"
+		],
+		"translation": "Br&uk en eksisterende lisens",
+		"machine": true
+	},
+	"Welcome to Cantabile!": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
+		],
+		"translation": "Velkommen til Cantabile!",
+		"machine": true
+	},
+	"Please register to get your free Cantabile Lite licence and 30-day trial of Cantabile Solo and Performer.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
+		],
+		"translation": "Vennligst registrer deg for å få gratis cantabile lite lisens og 30-dagers prøveversjon av cantabile solo og utøver.",
+		"machine": true
+	},
+	"Get Free License": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
+		],
+		"translation": "Få gratis lisens",
+		"machine": true
+	},
+	"We respect your privacy and will never sell, give away or otherwise\nshare any of your details with any other person or organisation.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
+		],
+		"translation": "Vi respekterer ditt privatliv og vil aldri selge, gi bort eller på annen måte\ndele noen av dine detaljer med noen annen person eller organisasjon.",
+		"machine": true
+	},
+	"I've &Already Registered": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
+		],
+		"translation": "Jeg h&ar allerede registrert",
+		"machine": true
+	},
+	"Welcome to your {0} Trial": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
+		],
+		"translation": "Velkommen til ditt {0} rettssak",
+		"machine": true
+	},
+	"This is a trial version of {0} provided for evaluation purposes only.\n\nIt is not restricted in any way except that it requires an internet connection and\nwill not run after {1:D}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
+		],
+		"translation": "Dette er en prøveversjon av {0} tilgjengelig for evalueringsformål.\n\nDet er ikke begrenset på noen måte, bortsett fra at det krever en internettforbindelse og\nvil ikke løpe etter {1:D}",
+		"machine": true
+	},
+	"Please note that although this trial requires an internet connection, purchased licenses do not.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
+		],
+		"translation": "Vær oppmerksom på at selv om denne rettssaken krever en Internett-tilkobling, kjøpte lisenser ikke.",
+		"machine": true
+	},
+	"Choose a &Different License": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
+		],
+		"translation": "Velg en annen lisens (&D)",
+		"machine": true
+	},
+	"Verifying License...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
+		],
+		"translation": "Bekrefter lisens...",
+		"machine": true
+	},
+	"Show &Note...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Vis &notat...",
+		"machine": true
+	},
+	"&Live Mode": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "&Live-modus",
+		"machine": true
+	},
+	"&Side Panel": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "&Sidepanelet",
+		"machine": true
+	},
+	"Main &Panel": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Hoved&panelet",
+		"machine": true
+	},
+	"Change &License...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Endre &lisens...",
+		"machine": true
+	},
+	"Cantabile &User Portal": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Cantabile br&ukerportal",
+		"machine": true
+	},
+	"Cantabile needs to restart for these changes to take effect.  Restart now?": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Cantabile må starte på nytt for at disse endringene skal tre i kraft. start på nytt nå?",
+		"machine": true
+	},
+	"Solo": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Edition\\Edition.cs"
+		],
+		"translation": "Solo",
+		"machine": true
+	},
+	"Performer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Edition\\Edition.cs"
+		],
+		"translation": "Performer",
+		"machine": true
+	},
+	"Lite": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Edition\\Edition.cs"
+		],
+		"translation": "Lite",
 		"machine": true
 	}
 }
