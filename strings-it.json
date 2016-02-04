@@ -140,6 +140,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
 			".\\GuiKit\\Forms\\OKCancelButtons.cs",
@@ -154,6 +155,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginScanProgressDialog.cs",
 			".\\Cantabile\\Dialogs\\SongLoadProgressDialog.cs",
 			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
@@ -362,7 +364,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "Porta di &ingresso...",
@@ -372,7 +373,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "P&orta di uscita...",
@@ -5609,6 +5609,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Segnale",
@@ -14927,6 +14928,51 @@
 			".\\Cantabile\\Options\\AudioEnginePage.cs"
 		],
 		"translation": "modalità condivisa",
+		"machine": true
+	},
+	"Stereo &Input Port...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs"
+		],
+		"translation": "porta d&i ingresso stereo...",
+		"machine": true
+	},
+	"Stereo &Output Port...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs"
+		],
+		"translation": "p&orta di uscita stereo...",
+		"machine": true
+	},
+	"Mono I&nput Port...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs"
+		],
+		"translation": "porta di i&ngresso Mono...",
+		"machine": true
+	},
+	"Mono O&utput Port...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs"
+		],
+		"translation": "porta di &uscita Mono...",
+		"machine": true
+	},
+	"Reset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+		],
+		"translation": "Reset",
 		"machine": true
 	}
 }
