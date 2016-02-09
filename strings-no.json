@@ -2058,15 +2058,6 @@
 		"translation": "Kant utløst (&G)",
 		"machine": true
 	},
-	"CC #{0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "CC # {0}",
-		"machine": true
-	},
 	"A&pply to Channels:": 
 	{
 		"contexts": 
@@ -2529,15 +2520,6 @@
 		"translation": "Pitch &bend",
 		"machine": true
 	},
-	"&Controllers:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
-		],
-		"translation": "&Controllers:",
-		"machine": true
-	},
 	"eg: 1,2,3-30,45": 
 	{
 		"contexts": 
@@ -2560,6 +2542,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs"
 		],
 		"translation": "Min. inngang (&U):",
@@ -2569,6 +2552,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs"
 		],
 		"translation": "&Max innspill:",
@@ -2578,6 +2562,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs"
 		],
 		"translation": "Mi&n. utgang:",
@@ -2587,6 +2572,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs"
 		],
 		"translation": "Ma&x utgang:",
@@ -2596,6 +2582,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs"
 		],
 		"translation": "Utvi&de \/ komprimere",
@@ -2605,6 +2592,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs"
 		],
 		"translation": "Forbedre (&H)",
@@ -11950,15 +11938,6 @@
 		"translation": "Preload settliste",
 		"machine": true
 	},
-	"Global Rack": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		],
-		"translation": "Global stativ",
-		"machine": true
-	},
 	"Don't reload the last &song": 
 	{
 		"contexts": 
@@ -13201,15 +13180,6 @@
 		"translation": "Rack av index",
 		"machine": true
 	},
-	"&Global Rack File:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\SongsPage.cs"
-		],
-		"translation": "&Global stativ fil:",
-		"machine": true
-	},
 	"Inverted": 
 	{
 		"contexts": 
@@ -13664,15 +13634,6 @@
 		"translation": "Vis notater (&W)",
 		"machine": true
 	},
-	"&Global Rack": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "&Global stativ",
-		"machine": true
-	},
 	"&Hide Active Panel\/Bar": 
 	{
 		"contexts": 
@@ -14094,15 +14055,6 @@
 			".\\Cantabile\\Options\\DiagnosticsPage.cs"
 		],
 		"translation": "Åpne innstillinger mappen (&F)",
-		"machine": true
-	},
-	"Bindings let you control Cantabile and any loaded plugins from an external MIDI keyboard or control surface.\nCreate bindings in the Global Rack (available via the View menu) if you want them available in all songs.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs"
-		],
-		"translation": "Bindinger lar deg kontrollere Cantabile og eventuelle lastet plugins fra en ekstern MIDI-keyboard eller styreflate.\nLag bindinger i den globale stativ (tilgjengelig via menyvisningen) hvis du vil ha dem tilgjengelig i alle sanger.",
 		"machine": true
 	},
 	"Master": 
@@ -14745,6 +14697,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "Undertrykk",
@@ -14982,6 +14935,88 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
 		],
 		"translation": "lydporter (&U)...",
+		"machine": true
+	},
+	"Background Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "bakgrunn stativ",
+		"machine": true
+	},
+	"Velocity Curve": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Velocity kurve",
+		"machine": true
+	},
+	"Allow": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Tillate",
+		"machine": true
+	},
+	"these &Controllers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "disse kontrollerne (&C):",
+		"machine": true
+	},
+	"Back&ground Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "bak&grunn stativ",
+		"machine": true
+	},
+	"Back&ground Rack File:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\SongsPage.cs"
+		],
+		"translation": "Bak&grunn stativ fil:",
+		"machine": true
+	},
+	"Bindings let you control Cantabile and any loaded plugins from an external MIDI keyboard or control surface.\nCreate bindings in the Background Rack (available via the View menu) if you want them available in all songs.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs"
+		],
+		"translation": "Bindinger lar deg kontrollere Cantabile og eventuelle lastet plugins fra en ekstern MIDI-keyboard eller kontrollflate.\nLag bindinger i bakgrunnen stativ (tilgjengelig via Vis-menyen) hvis du vil ha dem tilgjengelig i alle sanger.",
+		"machine": true
+	},
+	"{0}CC #{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "{0}CC # {1}",
+		"machine": true
+	},
+	"Allow ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Tillate ",
 		"machine": true
 	}
 }
