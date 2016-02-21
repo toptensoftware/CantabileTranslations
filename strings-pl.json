@@ -7031,7 +7031,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\SetListEntryDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
 			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
 		],
@@ -7042,7 +7042,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\SetListEntryDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
 			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
 		],
 		"translation": "Edycja piosenka",
@@ -7181,19 +7181,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
 		],
 		"translation": "Usuń piosenkę",
-		"machine": true
-	},
-	"Delete Songs": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Usuwanie utworów",
 		"machine": true
 	},
 	"&Edit Song...": 
@@ -11931,7 +11921,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\SetListEntryDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\MainWindow\\MainWindow.cs",
 			".\\Cantabile\\Options\\SongsPage.cs",
@@ -12100,15 +12090,6 @@
 			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
 		"translation": "Dodaj bieżą&cy utwór",
-		"machine": true
-	},
-	"Add Songs...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Dodaj utwory...",
 		"machine": true
 	},
 	"Insert Songs": 
@@ -13803,15 +13784,6 @@
 		"translation": "Dodaj piosenkę...",
 		"machine": true
 	},
-	"Rename Song File...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Zmień nazwę pliku utworu...",
-		"machine": true
-	},
 	"Insert Binding": 
 	{
 		"contexts": 
@@ -14142,7 +14114,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileMidiAssignmentDialog.cs",
-			".\\Cantabile\\Dialogs\\SetListEntryDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
 		],
 		"translation": "(Żaden)",
@@ -15196,13 +15168,67 @@
 		"translation": "Wolna (ale stabilny)",
 		"machine": true
 	},
-	"You've selected the Microsoft GS Wavetable Synth device.\n\nThis device is not recommended due to poor performance and known conflicts with some audio drivers.\n\nAre you sure you want to use this device?": 
+	"Add Break to Set List": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Commands\\FileCommands.cs"
 		],
-		"translation": "Wybrałeś Microsoft GS wavetable urządzenie synth.\n\nTo urządzenie nie jest zalecane ze względu na niską wydajność i znane konflikty z niektórymi sterownikami dźwięku.\n\nCzy jesteś pewien, że chcesz używać tego urządzenia?",
+		"translation": "Dodaj do listy ustawioną przerwę",
+		"machine": true
+	},
+	"Add Brea&k to Set List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Dodaj do listy ustawioną przerwę (&K)...",
+		"machine": true
+	},
+	"Delete Set List Entry": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Usuń ustawioną pozycję listy",
+		"machine": true
+	},
+	"Delete Set List Entries": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Usuń Ustalona lista wpisów",
+		"machine": true
+	},
+	"Add Son&gs...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Dodaj utwory (&G)...",
+		"machine": true
+	},
+	"Add Brea&k...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Dodaj przerwę (&K)...",
+		"machine": true
+	},
+	"Rename...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Przemianować...",
 		"machine": true
 	}
 }

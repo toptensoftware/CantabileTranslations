@@ -1810,7 +1810,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\SetListEntryDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
 			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
 		],
@@ -1821,7 +1821,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\SetListEntryDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
 			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
 		],
 		"translation": "Redigere sang",
@@ -3688,19 +3688,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
 		],
 		"translation": "Slett sang",
-		"machine": true
-	},
-	"Delete Songs": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Slett sanger",
 		"machine": true
 	},
 	"&Edit Song...": 
@@ -11931,7 +11921,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\SetListEntryDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\MainWindow\\MainWindow.cs",
 			".\\Cantabile\\Options\\SongsPage.cs",
@@ -12100,15 +12090,6 @@
 			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
 		"translation": "Legg gjeldende sang (&C)",
-		"machine": true
-	},
-	"Add Songs...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Legg til sanger...",
 		"machine": true
 	},
 	"Insert Songs": 
@@ -13803,15 +13784,6 @@
 		"translation": "Legg til sang...",
 		"machine": true
 	},
-	"Rename Song File...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Rename sangfil...",
-		"machine": true
-	},
 	"Insert Binding": 
 	{
 		"contexts": 
@@ -14142,7 +14114,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileMidiAssignmentDialog.cs",
-			".\\Cantabile\\Dialogs\\SetListEntryDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
 		],
 		"translation": "(None)",
@@ -15196,13 +15168,67 @@
 		"translation": "Sakte (men stabil)",
 		"machine": true
 	},
-	"You've selected the Microsoft GS Wavetable Synth device.\n\nThis device is not recommended due to poor performance and known conflicts with some audio drivers.\n\nAre you sure you want to use this device?": 
+	"Add Break to Set List": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Commands\\FileCommands.cs"
 		],
-		"translation": "Du har valgt Microsoft GS Wavetable synth-enhet.\n\nDenne enheten er ikke anbefalt på grunn av dårlig ytelse og kjente konflikter med noen lyddrivere.\n\nEr du sikker på at du vil bruke denne enheten?",
+		"translation": "Legg pause for å sette liste",
+		"machine": true
+	},
+	"Add Brea&k to Set List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Legg pause for å sette liste (&K)...",
+		"machine": true
+	},
+	"Delete Set List Entry": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Slett settliste entry",
+		"machine": true
+	},
+	"Delete Set List Entries": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Slett sett listeoppføringer",
+		"machine": true
+	},
+	"Add Son&gs...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Le&gg til sanger...",
+		"machine": true
+	},
+	"Add Brea&k...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Legg pause (&K)...",
+		"machine": true
+	},
+	"Rename...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Gi nytt navn...",
 		"machine": true
 	}
 }
