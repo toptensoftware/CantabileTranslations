@@ -7537,7 +7537,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Numer &programu ubytek",
@@ -10310,7 +10309,6 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Sortuj według liczby programu",
@@ -10321,7 +10319,6 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Sortuj według nazwy",
@@ -10360,7 +10357,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Ponowne przypisanie numerów programu...",
@@ -11621,7 +11617,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
 		"translation": "Zmiana nazwy (&R)...",
 		"machine": true
@@ -12081,15 +12078,6 @@
 			".\\Cantabile\\MainWindow\\MainWindow.cs"
 		],
 		"translation": "Czy chcesz zapisać zmiany w następującym pliku (ów)?\n\n{0}",
-		"machine": true
-	},
-	"Add &Current Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Dodaj bieżą&cy utwór",
 		"machine": true
 	},
 	"Insert Songs": 
@@ -12883,15 +12871,6 @@
 			".\\Cantabile\\Commands\\InsertCommands.cs"
 		],
 		"translation": "Istniejące rack",
-		"machine": true
-	},
-	"&Save Rack": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Zapi&sz rack",
 		"machine": true
 	},
 	"Embedded racks can't link to other racks": 
@@ -15177,15 +15156,6 @@
 		"translation": "Dodaj do listy ustawioną przerwę",
 		"machine": true
 	},
-	"Add Brea&k to Set List...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Dodaj do listy ustawioną przerwę (&K)...",
-		"machine": true
-	},
 	"Delete Set List Entry": 
 	{
 		"contexts": 
@@ -15222,13 +15192,85 @@
 		"translation": "Dodaj przerwę (&K)...",
 		"machine": true
 	},
-	"Rename...": 
+	"Sa&ve Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Zapisz rack (&V)",
+		"machine": true
+	},
+	"Add &Break to Set List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Dodaj do listy ustawioną przerwę (&B)...",
+		"machine": true
+	},
+	"Rename Song File": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
-		"translation": "Przemianować...",
+		"translation": "Zmień nazwę pliku utworu",
+		"machine": true
+	},
+	"Enter Break Title": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Wprowadź tytuł przerwy",
+		"machine": true
+	},
+	"&Add Current Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Dod&aj bieżący utwór",
+		"machine": true
+	},
+	"&Sort by Program Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "&Sortuj według numeru programu",
+		"machine": true
+	},
+	"Sort &by Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Sortuj według nazw (&B)",
+		"machine": true
+	},
+	"Re-ass&ign Program Numbers...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Ponowne przyp&isanie numerów programów...",
+		"machine": true
+	},
+	"Decre&ment Program Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Nu&mer programu ubytek",
 		"machine": true
 	}
 }

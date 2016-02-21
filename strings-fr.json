@@ -667,7 +667,6 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Trier par numéro de programme",
@@ -678,7 +677,6 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Trier par nom",
@@ -5337,15 +5335,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Enregistrer sous (&A)...",
-		"machine": true
-	},
-	"&Save Rack": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "&Sauvegarder crémaillère",
 		"machine": true
 	},
 	"Save Rac&k As...": 
@@ -10509,7 +10498,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
 		"translation": "&Rebaptiser...",
 		"machine": true
@@ -10606,20 +10596,10 @@
 		"translation": "Chanson de charge (&L)",
 		"machine": true
 	},
-	"Add &Current Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Ajouter la &chanson en cours",
-		"machine": true
-	},
 	"Re-assign Program Numbers...": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Re-attribuent des numéros de programme...",
@@ -10639,7 +10619,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Numéro de &programme de décrémentation",
@@ -15177,15 +15156,6 @@
 		"translation": "Ajouter un saut de liste figurant",
 		"machine": true
 	},
-	"Add Brea&k to Set List...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Ajouter un saut de liste figurant (&K)...",
-		"machine": true
-	},
 	"Delete Set List Entry": 
 	{
 		"contexts": 
@@ -15222,13 +15192,85 @@
 		"translation": "Ajouter un saut (&K)...",
 		"machine": true
 	},
-	"Rename...": 
+	"Sa&ve Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Sau&vegarder crémaillère",
+		"machine": true
+	},
+	"Add &Break to Set List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Ajouter un saut de liste figurant (&B)...",
+		"machine": true
+	},
+	"Rename Song File": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
-		"translation": "Rebaptiser...",
+		"translation": "Renommer le fichier de chanson",
+		"machine": true
+	},
+	"Enter Break Title": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Entrez le titre de la rupture",
+		"machine": true
+	},
+	"&Add Current Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "&Ajouter la chanson en cours",
+		"machine": true
+	},
+	"&Sort by Program Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Trier par numéro de programme (&S)",
+		"machine": true
+	},
+	"Sort &by Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Trier par nom (&B)",
+		"machine": true
+	},
+	"Re-ass&ign Program Numbers...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Réaffecter les numéros de programme (&I)...",
+		"machine": true
+	},
+	"Decre&ment Program Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "nu&méro de programme de décrémentation",
 		"machine": true
 	}
 }
