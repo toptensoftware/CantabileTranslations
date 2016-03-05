@@ -3059,15 +3059,6 @@
 		"translation": "Plik (&F)",
 		"machine": true
 	},
-	"&Open...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "&Otwarte...",
-		"machine": true
-	},
 	"Rack": 
 	{
 		"contexts": 
@@ -7068,33 +7059,6 @@
 		"translation": "Edycja stanu",
 		"machine": true
 	},
-	"N&ew Set List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Nowa lista z&estaw",
-		"machine": true
-	},
-	"Save Set &List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Zapisz zestaw &listy",
-		"machine": true
-	},
-	"Save Set L&ist As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Zap&isz listę jako zestaw...",
-		"machine": true
-	},
 	"Re&cent Set Lists": 
 	{
 		"contexts": 
@@ -7154,7 +7118,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
+			".\\Cantabile\\MainWindow\\MainWindow.cs",
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
 		"translation": "Set lista plików",
 		"machine": true
@@ -7163,7 +7128,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
 		"translation": "Czy chcesz zapisać zmiany do listy ustawiony \"{0}'?",
 		"machine": true
@@ -7983,7 +7948,8 @@
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\SidePanel\\SidePanel.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetList.cs",
+			".\\Cantabile.Application\\SetLists\\SetList.cs"
 		],
 		"translation": "Set lista",
 		"machine": true
@@ -11922,6 +11888,7 @@
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\MainWindow\\MainWindow.cs",
 			".\\Cantabile\\Options\\SongsPage.cs",
+			".\\Cantabile\\RackPanel\\SongSaveActions.cs",
 			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
 		"translation": "Pliki piosenki",
@@ -11970,15 +11937,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Z&apisz jako...",
-		"machine": true
-	},
-	"Open Se&t List...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Rozwinąć lis&tę zestaw...",
 		"machine": true
 	},
 	"Add C&urrent Song to Set List": 
@@ -13138,15 +13096,6 @@
 		"translation": "Wyjście audio",
 		"machine": true
 	},
-	"Save Rac&k As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Zapisz stoja&k jako...",
-		"machine": true
-	},
 	"Edit Rack": 
 	{
 		"contexts": 
@@ -13163,15 +13112,6 @@
 			".\\Cantabile\\Commands\\FileCommands.cs"
 		],
 		"translation": "Stojak Export",
-		"machine": true
-	},
-	"Ex&port Rack...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Stojak Ex&port...",
 		"machine": true
 	},
 	"Next Part or Song": 
@@ -15192,15 +15132,6 @@
 		"translation": "Dodaj przerwę (&K)...",
 		"machine": true
 	},
-	"Sa&ve Rack": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Zapisz rack (&V)",
-		"machine": true
-	},
 	"Add &Break to Set List...": 
 	{
 		"contexts": 
@@ -15379,6 +15310,305 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
 		],
 		"translation": "Edycja rack (&I)...",
+		"machine": true
+	},
+	"Save File": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Zapisz plik",
+		"machine": true
+	},
+	"Save File As": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Zapisz plik jako",
+		"machine": true
+	},
+	"Save Copy As": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Zapisz kopię jako",
+		"machine": true
+	},
+	"Save All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Zapisz wszystko",
+		"machine": true
+	},
+	"File Options": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Opcje pliku",
+		"machine": true
+	},
+	" Properties": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
+		],
+		"translation": " Nieruchomości",
+		"machine": true
+	},
+	"&Full Path:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Pełna ścieżka (&F):",
+		"machine": true
+	},
+	"(Unsaved)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
+		],
+		"translation": "(Niezapisany)",
+		"machine": true
+	},
+	"Locate in E&xplorer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Znajdź w eksploratorze (&X)",
+		"machine": true
+	},
+	"Prompt to save:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Pytaj, aby zapisać:",
+		"machine": true
+	},
+	"Never": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Nigdy",
+		"machine": true
+	},
+	"only on significant changes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "tylko na istotnych zmian",
+		"machine": true
+	},
+	"on any change": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "w sprawie ewentualnych zmian",
+		"machine": true
+	},
+	"Let the parent &song control this rack's selected state and gain": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Niech pio&senka rodzic kontrolować stan wybrany Taki stojak i zysk",
+		"machine": true
+	},
+	"Save &Copy &As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Zapisz kopię jako (&C)...",
+		"machine": true
+	},
+	"Save A&ll": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Zapisz wszystko (&L)",
+		"machine": true
+	},
+	"O&ptions...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "O&pcje...",
+		"machine": true
+	},
+	"Cantabile Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "pliki Cantabile",
+		"machine": true
+	},
+	"&Save Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Zapi&sz rack",
+		"machine": true
+	},
+	"&Save Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Zapi&sz utwór",
+		"machine": true
+	},
+	"Save Rack &As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Z&apisz jako stojak...",
+		"machine": true
+	},
+	"Save Song &As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Z&apisz utworu jako...",
+		"machine": true
+	},
+	"Save Rack &Copy As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Zapisz kopię jako stojak (&C)...",
+		"machine": true
+	},
+	"Save Song &Copy As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Zapisz kopię jako piosenkę (&C)...",
+		"machine": true
+	},
+	"Rack O&ptions...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "O&pcje regałowe...",
+		"machine": true
+	},
+	"Song O&ptions...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "O&pcje piosenki...",
+		"machine": true
+	},
+	"Song control of this rack has been disabled. To change states you must open the rack and make the change there.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
+		],
+		"translation": "Kontrola Pieśń tego stojaka została wyłączona. zmiany stanów należy otworzyć bagażnik i sprawiają, że zmiany.",
+		"machine": true
+	},
+	"&Save Set List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Zapi&sz set listy",
+		"machine": true
+	},
+	"Save Set List &As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Z&apisz listę jako zestaw...",
+		"machine": true
+	},
+	"Save Set List &Copy As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Zapisz kopię jako zestaw listy (&C)...",
+		"machine": true
+	},
+	"Set List O&ptions...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Ustawianie o&pcji lista...",
+		"machine": true
+	},
+	"NewSong": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
+		],
+		"translation": "Nowa piosenka",
+		"machine": true
+	},
+	"NewRack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
+		],
+		"translation": "NewRack",
 		"machine": true
 	}
 }
