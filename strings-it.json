@@ -2825,6 +2825,15 @@
 		"translation": "&File",
 		"machine": false
 	},
+	"&Open...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Apri... (&O)",
+		"machine": false
+	},
 	"Rack": 
 	{
 		"contexts": 
@@ -7059,6 +7068,33 @@
 		"translation": "Modifica dello stato",
 		"machine": true
 	},
+	"N&ew Set List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Lista Nuovo s&et",
+		"machine": true
+	},
+	"Save Set &List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Sa&lva scaletta",
+		"machine": true
+	},
+	"Save Set L&ist As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Salva nell'elenco d&i come...",
+		"machine": true
+	},
 	"Re&cent Set Lists": 
 	{
 		"contexts": 
@@ -7118,8 +7154,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
-			".\\Cantabile\\MainWindow\\MainWindow.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
 		],
 		"translation": "File Set List",
 		"machine": true
@@ -7128,7 +7163,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
 		],
 		"translation": "Vuoi salvare le modifiche per impostare lista '{0}'?",
 		"machine": true
@@ -7948,8 +7983,7 @@
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\SidePanel\\SidePanel.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs",
-			".\\Cantabile.Application\\SetLists\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Set list",
 		"machine": true
@@ -11888,7 +11922,6 @@
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\MainWindow\\MainWindow.cs",
 			".\\Cantabile\\Options\\SongsPage.cs",
-			".\\Cantabile\\RackPanel\\SongSaveActions.cs",
 			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
 		"translation": "File di Song",
@@ -11937,6 +11970,15 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "S&alva come...",
+		"machine": true
+	},
+	"Open Se&t List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Se&t list Aperto...",
 		"machine": true
 	},
 	"Add C&urrent Song to Set List": 
@@ -13096,6 +13138,15 @@
 		"translation": "Uscita audio",
 		"machine": true
 	},
+	"Save Rac&k As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Salva rac&k come...",
+		"machine": true
+	},
 	"Edit Rack": 
 	{
 		"contexts": 
@@ -13112,6 +13163,15 @@
 			".\\Cantabile\\Commands\\FileCommands.cs"
 		],
 		"translation": "Export cremagliera",
+		"machine": true
+	},
+	"Ex&port Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Ex&port cremagliera...",
 		"machine": true
 	},
 	"Next Part or Song": 
@@ -15132,6 +15192,15 @@
 		"translation": "Aggiungere pausa (&K)...",
 		"machine": true
 	},
+	"Sa&ve Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Sal&va cremagliera",
+		"machine": true
+	},
 	"Add &Break to Set List...": 
 	{
 		"contexts": 
@@ -15267,15 +15336,6 @@
 		"translation": "Tempo di &rilevamento di risposta:",
 		"machine": true
 	},
-	"You've selected the Microsoft GS Wavetable Synth device.\n\nThis device is not recommended due to poor performance and known conflicts with some audio drivers.\n\nAre you sure you want to use this device?": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
-		],
-		"translation": "Hai selezionato il dispositivo synth wavetable Microsoft GS.\n\nQuesto dispositivo non è raccomandato a causa di scarso rendimento e conflitti noto con alcuni driver audio.\n\nSei sicuro che si desidera utilizzare questo dispositivo?",
-		"machine": true
-	},
 	"Convert to E&mbedded Rack...": 
 	{
 		"contexts": 
@@ -15310,313 +15370,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
 		],
 		"translation": "Mod&ifica cremagliera...",
-		"machine": true
-	},
-	"Save File": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Salvare il file",
-		"machine": true
-	},
-	"Save File As": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Salva file come",
-		"machine": true
-	},
-	"Save Copy As": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Salva copia con nome",
-		"machine": true
-	},
-	"Save All": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Salva tutto",
-		"machine": true
-	},
-	"File Options": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "opzioni del file",
-		"machine": true
-	},
-	"&Full Path:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "Percorso completo (&F):",
-		"machine": true
-	},
-	"(Unsaved)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
-			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
-		],
-		"translation": "(non salvato)",
-		"machine": true
-	},
-	"Locate in E&xplorer": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "Individuare in e&xplorer",
-		"machine": true
-	},
-	"Prompt to save:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "Prompt per salvare:",
-		"machine": true
-	},
-	"Never": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "Mai",
-		"machine": true
-	},
-	"only on significant changes": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "solo su cambiamenti significativi",
-		"machine": true
-	},
-	"on any change": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "su ogni cambiamento",
-		"machine": true
-	},
-	"Let the parent &song control this rack's selected state and gain": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "La&sciate che la canzone genitore controllo dello stato selezionato di questa cremagliera e il guadagno",
-		"machine": true
-	},
-	"Save &Copy &As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Salva &copia con nome...",
-		"machine": true
-	},
-	"Save A&ll": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Sa&lva tutto",
-		"machine": true
-	},
-	"O&ptions...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "O&pzioni...",
-		"machine": true
-	},
-	"Cantabile Files": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		],
-		"translation": "file cantabili",
-		"machine": true
-	},
-	"&Save Rack": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		],
-		"translation": "&Salva cremagliera",
-		"machine": true
-	},
-	"&Save Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		],
-		"translation": "&Salva canzone",
-		"machine": true
-	},
-	"Save Rack &As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		],
-		"translation": "S&alva rack come...",
-		"machine": true
-	},
-	"Save Song &As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		],
-		"translation": "S&alva canzone...",
-		"machine": true
-	},
-	"Save Rack &Copy As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		],
-		"translation": "Salva &copia rack come...",
-		"machine": true
-	},
-	"Save Song &Copy As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		],
-		"translation": "Salva &copia canzone...",
-		"machine": true
-	},
-	"Rack O&ptions...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		],
-		"translation": "o&pzioni Rack...",
-		"machine": true
-	},
-	"Song O&ptions...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		],
-		"translation": "o&pzioni canzone...",
-		"machine": true
-	},
-	"Song control of this rack has been disabled. To change states you must open the rack and make the change there.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
-		],
-		"translation": "il controllo Canzone di questo rack è stato disattivato. per cambiare gli stati è necessario aprire il rack e fare il cambiamento c'è.",
-		"machine": true
-	},
-	"&Save Set List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "&Salva set list",
-		"machine": true
-	},
-	"Save Set List &As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "S&alva lista impostata come...",
-		"machine": true
-	},
-	"Save Set List &Copy As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Salva una &copia dell'elenco di come...",
-		"machine": true
-	},
-	"Set List O&ptions...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Im&postare le opzioni della lista...",
-		"machine": true
-	},
-	"NewSong": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
-		],
-		"translation": "Nuova canzone",
-		"machine": true
-	},
-	"NewRack": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
-		],
-		"translation": "NewRack",
-		"machine": true
-	},
-	" Options": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": " Opzioni",
-		"machine": true
-	},
-	" Optinos": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
-		],
-		"translation": " Optinos",
 		"machine": true
 	}
 }
