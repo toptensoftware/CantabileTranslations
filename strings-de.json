@@ -11790,24 +11790,6 @@
 		"translation": "Song öffnen",
 		"machine": false
 	},
-	"Save Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Song speichern",
-		"machine": false
-	},
-	"Save Song As": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Song speichern unter",
-		"machine": false
-	},
 	"Open Set List": 
 	{
 		"contexts": 
@@ -11868,7 +11850,6 @@
 		[
 			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
-			".\\Cantabile\\MainWindow\\MainWindow.cs",
 			".\\Cantabile\\Options\\SongsPage.cs",
 			".\\Cantabile\\RackPanel\\SongSaveActions.cs",
 			".\\Cantabile\\SidePanel\\SetListPanel.cs"
@@ -12767,24 +12748,6 @@
 		"translation": "Objekt ersetzen",
 		"machine": false
 	},
-	"Save Rack": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Rack speichern",
-		"machine": false
-	},
-	"Save Rack As": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Rack speichern unter",
-		"machine": false
-	},
 	"Embedded Rack": 
 	{
 		"contexts": 
@@ -13085,15 +13048,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
 		],
 		"translation": "Rack bearbeiten",
-		"machine": false
-	},
-	"Export Rack": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Rack exportieren",
 		"machine": false
 	},
 	"Next Part or Song": 
@@ -15379,7 +15333,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
 		],
 		"translation": " Optionen",
 		"machine": false
@@ -15455,15 +15410,6 @@
 			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
 		],
 		"translation": "Übergeordneter &Song steuert den gewählten Zustand und die Verstärkung dieses Racks",
-		"machine": false
-	},
-	" Optinos": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
-		],
-		"translation": " Optionen",
 		"machine": false
 	},
 	"Save &Copy &As...": 
@@ -15682,15 +15628,6 @@
 		"translation": "Setlistenkopie spei&chern unter...",
 		"machine": false
 	},
-	"Set List O&ptions...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Setlisteno&ptionen...",
-		"machine": false
-	},
 	"NewSong": 
 	{
 		"contexts": 
@@ -15708,5 +15645,32 @@
 		],
 		"translation": "Neues Rack",
 		"machine": false
+	},
+	"Save Set List Copy As": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Speichern-Set-Liste Kopie als",
+		"machine": true
+	},
+	"&New Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "&Neues Lied",
+		"machine": true
+	},
+	"&Open...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Öffnen (&O)...",
+		"machine": true
 	}
 }
