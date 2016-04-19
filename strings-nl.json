@@ -1900,10 +1900,12 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ButtonBank.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCLatch.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToProgramMap.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ProgramMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\Split.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\Transpose.cs",
@@ -2135,6 +2137,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToProgramMap.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ProgramMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\Transpose.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityGate.cs"
 		],
@@ -15805,6 +15808,123 @@
 			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Load nummer met programma (instant)",
+		"machine": true
+	},
+	"Target &Base Channel:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs"
+		],
+		"translation": "Target &basiskanaal:",
+		"machine": true
+	},
+	"Zone 0 ports will be mapped to CC 0-7, Zone 1 port will be mapped to CC 8-15 etc...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs"
+		],
+		"translation": "Zone 0 poorten zullen worden toegewezen aan CC 0-7, zone 1 port zal worden toegewezen aan CC 8-15 etc...",
+		"machine": true
+	},
+	"Zones 16 and above will be mapped to the next channel after the target base channel": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs"
+		],
+		"translation": "Zones 16 en hoger zal worden toegewezen aan het volgende kanaal na het doelwit basiskanaal",
+		"machine": true
+	},
+	"&Source Program:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ProgramMap.cs"
+		],
+		"translation": "&source programma:",
+		"machine": true
+	},
+	"&Target Program:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ProgramMap.cs"
+		],
+		"translation": "&Target-programma:",
+		"machine": true
+	},
+	"HUI &Switch Decoder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "HUI &switch decoder",
+		"machine": true
+	},
+	"&Program Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "&programma kaart",
+		"machine": true
+	},
+	"Uninitialized HUI Switch Decoder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Geïnitialiseerd HUI switch decoder",
+		"machine": true
+	},
+	"HUI Switch Decoder from {0} to base channel {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "HUI switch decoder van {0} naar basiskanaal {1}",
+		"machine": true
+	},
+	"Uninitialized Program Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Geïnitialiseerd programma kaart",
+		"machine": true
+	},
+	"Suppress program {0} on {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Onderdruk programma {0} op {1}",
+		"machine": true
+	},
+	"Re-map program {0} to {1} on {2}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Re-map programma {0} om {1} op {2}",
+		"machine": true
+	},
+	"Re-map program {0} on {1} to {2} on {3}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Re-map programma {0} op {1} om {2} op {3}",
 		"machine": true
 	}
 }
