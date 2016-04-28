@@ -16,6 +16,7 @@
 	"contexts": [
 		".\\Cantabile\\CommandRouting\\CommandList.cs",
 		".\\Cantabile\\Commands\\ViewCommands.cs",
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 	],
 },
 "Recordings":
@@ -57,6 +58,8 @@
 {
 	"contexts": [
 		".\\Cantabile\\CommandRouting\\CommandList.cs",
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
+		".\\Cantabile\\MainWindow\\ViewBindingClass.cs",
 	],
 },
 "Help":
@@ -70,6 +73,8 @@
 	"contexts": [
 		".\\Cantabile\\CommandRouting\\CommandList.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 		".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
@@ -82,6 +87,7 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 		".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
@@ -91,6 +97,7 @@
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
@@ -100,6 +107,7 @@
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
@@ -115,87 +123,185 @@
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"Next State":
+"First State (Delayed)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+		".\\Cantabile.Application\\Bindable\\States.cs",
 	],
 },
-"Previous State":
+"First State (Instant)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+		".\\Cantabile.Application\\Bindable\\States.cs",
 	],
 },
-"First State":
+"Last State (Delayed)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\States.cs",
+	],
+},
+"Last State (Instant)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\States.cs",
+	],
+},
+"Next State (Delayed)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\States.cs",
+	],
+},
+"Next State (Instant)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\States.cs",
+	],
+},
+"Previous State (Delayed)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\States.cs",
+	],
+},
+"Previous State (Instant)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\States.cs",
+	],
+},
+"First Song (Delayed)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\SetList.cs",
+	],
+},
+"First Song (Instant)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\SetList.cs",
+	],
+},
+"Last Song (Delayed)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\SetList.cs",
+	],
+},
+"Last Song (Instant)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\SetList.cs",
+	],
+},
+"Next Song (Delayed)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\SetList.cs",
+	],
+},
+"Next Song (Instant)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\SetList.cs",
+	],
+},
+"Previous Song (Delayed)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\SetList.cs",
+	],
+},
+"Previous Song (Instant)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Bindable\\SetList.cs",
+	],
+},
+"Next Part or Song (Delayed)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"Last State":
+"Next Part or Song (Instant)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"Next Song":
+"Previous Part or Song (Instant)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"Previous Song":
+"Previous Part or Song (Delayed)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"First Song":
+"First Part (Delayed)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"Last Song":
+"First Part (Instant)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"Next Part or Song":
+"Last Part (Delayed)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"Previous Part or Song":
+"Last Part (Instant)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"Next Part":
+"Next Part (Delayed)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"Previous Part":
+"Next Part (Instant)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"First Part":
+"Previous Part (Delayed)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 	],
 },
-"Last Part":
+"Previous Part (Instant)":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
@@ -217,6 +323,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 	],
 },
@@ -224,6 +331,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 	],
 },
@@ -550,6 +658,26 @@
 		".\\Cantabile\\Commands\\EditCommands.cs",
 	],
 },
+"Key Ranges":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Set Key Range":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Clear Key Range":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
+	],
+},
 "New Song":
 {
 	"contexts": [
@@ -831,6 +959,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ViewCommands.cs",
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 		".\\Cantabile\\RackPanel\\RackPanel.cs",
 	],
 },
@@ -844,6 +973,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ViewCommands.cs",
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 		".\\Cantabile\\RackPanel\\RackPanel.cs",
 	],
 },
@@ -851,6 +981,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ViewCommands.cs",
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 		".\\Cantabile\\RackPanel\\RackPanel.cs",
 		".\\Cantabile.Application\\Bindable\\Triggers.cs",
 	],
@@ -867,11 +998,18 @@
 		".\\Cantabile\\Commands\\ViewCommands.cs",
 	],
 },
+"Compact On-screen Keyboard":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
 "Metronome":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ViewCommands.cs",
 		".\\Cantabile\\MainWindow\\MetronomePanel.cs",
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 		".\\Cantabile\\Options\\GeneralPage.cs",
 		".\\Cantabile.Application\\Bindable\\Metronome.cs",
 		".\\Cantabile.Application\\Racks\\Song\\Metronome.cs",
@@ -941,6 +1079,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ViewCommands.cs",
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 	],
 },
 "Quick Controller":
@@ -1023,6 +1162,12 @@
 		".\\Cantabile\\Commands\\ViewCommands.cs",
 	],
 },
+"Key Range Indicator":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\KeyRangeIndicator.cs",
+	],
+},
 "Column Headers":
 {
 	"contexts": [
@@ -1097,6 +1242,12 @@
 		".\\Cantabile.Core\\PanAndFade.cs",
 		".\\Cantabile.Core\\ProgramMask.cs",
 		".\\GuiKit\\Forms\\MidiChannelBar.cs",
+	],
+},
+"Automatic":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Forms\\ColorCombo.cs",
 	],
 },
 "Edit {0} Channel Port":
@@ -2020,10 +2171,11 @@
 		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 	],
 },
-"Note Range":
+"Key Range":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+		".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
 	],
 },
 "&Lowest Note:":
@@ -2051,6 +2203,19 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+	],
+},
+"Sho&w range on keyboard as:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+	],
+},
+"(Target Color)":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
 	],
 },
 "Velocity\/Controller Curve":
@@ -2170,6 +2335,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
 	],
 },
 "Configure {0}":
@@ -3809,10 +3975,36 @@
 	"contexts": [
 		".\\Cantabile\\MainWindow\\ControllerBar.cs",
 		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 		".\\Cantabile\\Options\\KeyboardPage.cs",
 		".\\Cantabile\\QuickController\\QuickController.cs",
 		".\\Cantabile.Application\\Racks\\Song\\OnscreenKeyboardState.cs",
 		".\\Cantabile.Environment\\Environment.cs",
+	],
+},
+"&Edit Key Ranges":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+	],
+},
+"C&ompact Mode":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+	],
+},
+"&Capture Keyboard":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
+"Hide Key Range":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
 	],
 },
 "Ch: NN":
@@ -3853,6 +4045,12 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
+"&Open Song...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
 "&Save":
 {
 	"contexts": [
@@ -3883,6 +4081,12 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
+"Se&t List":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
 "&New":
 {
 	"contexts": [
@@ -3890,6 +4094,12 @@
 	],
 },
 "&Open...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
+"A&dd":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -4352,12 +4562,6 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"&Capture Keyboard":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-	],
-},
 "Scan Plugin Folders (&Quick)":
 {
 	"contexts": [
@@ -4500,6 +4704,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 	],
 },
 "Master Output Gain:":
@@ -4832,6 +5037,49 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+	],
+},
+"Panel\/Bar\/Mode":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
+	],
+},
+"Toolbar":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
+	],
+},
+"Controller Bar":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
+	],
+},
+"Compact Onscreen Keyboard":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
+	],
+},
+"Show Notes\/Routing":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
+	],
+},
+"Routing":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+	],
+},
+"Side Panel":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 	],
 },
 "Default":
@@ -6263,6 +6511,12 @@
 		".\\Cantabile\\Options\\RecordingPage.cs",
 	],
 },
+"Filename contains invalid characters":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\RecordingPage.cs",
+	],
+},
 "Startup\/Shutdown":
 {
 	"contexts": [
@@ -6652,12 +6906,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\QuickController\\QuickController.cs",
-	],
-},
-"Routing":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RackPanel.cs",
 	],
 },
 "Unable to load preset\/bank as it references an unknown plugin ID: 0x{0:X8}":
@@ -7305,6 +7553,12 @@
 	],
 },
 "MIDI &Route Settings...":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
+	],
+},
+"Set Key Range...":
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
@@ -8084,54 +8338,6 @@
 		".\\Cantabile.Application\\Bindable\\SetList.cs",
 	],
 },
-"Next Song (Delayed)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\SetList.cs",
-	],
-},
-"Next Song (Instant)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\SetList.cs",
-	],
-},
-"Previous Song (Delayed)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\SetList.cs",
-	],
-},
-"Previous Song (Instant)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\SetList.cs",
-	],
-},
-"First Song (Delayed)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\SetList.cs",
-	],
-},
-"First Song (Instant)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\SetList.cs",
-	],
-},
-"Last Song (Delayed)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\SetList.cs",
-	],
-},
-"Last Song (Instant)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\SetList.cs",
-	],
-},
 "Next Song or Part (Delayed)":
 {
 	"contexts": [
@@ -8210,6 +8416,7 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\IndexedPluginBindingClass.cs",
 	],
@@ -8268,54 +8475,6 @@
 		".\\Cantabile.Application\\Bindable\\States.cs",
 	],
 },
-"Next State (Delayed)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\States.cs",
-	],
-},
-"Next State (Instant)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\States.cs",
-	],
-},
-"Previous State (Delayed)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\States.cs",
-	],
-},
-"Previous State (Instant)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\States.cs",
-	],
-},
-"First State (Delayed)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\States.cs",
-	],
-},
-"First State (Instant)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\States.cs",
-	],
-},
-"Last State (Delayed)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\States.cs",
-	],
-},
-"Last State (Instant)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\States.cs",
-	],
-},
 "Invalid parameter":
 {
 	"contexts": [
@@ -8333,6 +8492,7 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
@@ -8340,6 +8500,7 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
@@ -8431,18 +8592,85 @@
 		".\\Cantabile.Application\\Bindings\\UndoUnits.cs",
 	],
 },
-"Media Player by Index":
+"Gain":
 {
 	"contexts": [
-		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+		".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
+	],
+},
+"Wet\/Dry":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Pan":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Fade":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Speed":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Select Preset Scaled":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Select Preset Indexed":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Object by Index":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
 	],
 },
 "Rack #{0}":
 {
 	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\IndexedPluginBindingClass.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\IndexedRackHostBindingClass.cs",
+	],
+},
+"Object #{0}":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
+	],
+},
+"Media Player by Index":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
 	],
 },
 "Media Player #{0}":
@@ -8515,35 +8743,6 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
-	],
-},
-"Gain":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
-		".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
-	],
-},
-"Speed":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-	],
-},
-"Pan":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-	],
-},
-"Fade":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 	],
 },
 "Next File":
@@ -8655,24 +8854,6 @@
 	],
 },
 "Bypass":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-	],
-},
-"Select Preset Scaled":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-	],
-},
-"Select Preset Indexed":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-	],
-},
-"Wet\/Dry":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
@@ -9194,6 +9375,18 @@
 		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 	],
 },
+"Next State":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+	],
+},
+"Previous State":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+	],
+},
 "Select State Scaled":
 {
 	"contexts": [
@@ -9313,7 +9506,7 @@
 		".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
 	],
 },
-"Key Range":
+"Key Range Display":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",

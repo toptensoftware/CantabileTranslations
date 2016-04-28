@@ -990,15 +990,6 @@
 		"translation": "Route alleen route als dit &programmanummer actief is:",
 		"machine": false
 	},
-	"Note Range": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
-		],
-		"translation": "Noten reeks",
-		"machine": false
-	},
 	"&Lowest Note:": 
 	{
 		"contexts": 
@@ -1106,7 +1097,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs"
 		],
 		"translation": "Bewerk {0}",
 		"machine": false
@@ -2715,6 +2707,8 @@
 		[
 			".\\Cantabile\\CommandRouting\\CommandList.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\Route.cs"
@@ -3084,6 +3078,7 @@
 		[
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+			".\\Cantabile\\MainWindow\\ViewBinding.cs",
 			".\\Cantabile\\Options\\KeyboardPage.cs",
 			".\\Cantabile\\QuickController\\QuickController.cs",
 			".\\Cantabile.Application\\Racks\\Song\\OnscreenKeyboardState.cs",
@@ -3291,6 +3286,7 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Afspelen",
@@ -3303,6 +3299,7 @@
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Pauze",
@@ -3315,6 +3312,7 @@
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Stop",
@@ -3608,6 +3606,7 @@
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\MainWindow\\MetronomePanel.cs",
+			".\\Cantabile\\MainWindow\\ViewBinding.cs",
 			".\\Cantabile\\Options\\GeneralPage.cs",
 			".\\Cantabile.Application\\Bindable\\Metronome.cs",
 			".\\Cantabile.Application\\Racks\\Song\\Metronome.cs",
@@ -5890,6 +5889,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		],
 		"translation": "Toets omvang",
@@ -7875,6 +7875,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Volgende status (vertraagd)",
@@ -7884,6 +7885,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Volgende status (direct)",
@@ -7893,6 +7895,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Vorige status (vertraagd)",
@@ -7902,6 +7905,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Vorige status (direct)",
@@ -7911,6 +7915,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Eerste status (vertraagd)",
@@ -7920,6 +7925,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Eerste status (direct)",
@@ -7929,6 +7935,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Laatste status (vertraagd)",
@@ -7938,6 +7945,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Laatste status (direct)",
@@ -8015,6 +8023,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Volgende nummer (vertraagd)",
@@ -8024,6 +8033,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Volgende nummer (direct)",
@@ -8033,6 +8043,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Vorige nummer (vertraagd)",
@@ -8042,6 +8053,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Vorige nummer (instant)",
@@ -8051,6 +8063,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Eerste nummer (vertraagd)",
@@ -8060,6 +8073,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Eerste nummer (instant)",
@@ -8069,6 +8083,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Laatste nummer (vertraagd)",
@@ -8078,6 +8093,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Laatste nummer (instant)",
@@ -8097,6 +8113,7 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Afspelen \/ pauzeren",
@@ -8107,6 +8124,7 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Play \/ stop",
@@ -8144,6 +8162,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
 		],
 		"translation": "Volgende vooraf ingestelde",
@@ -8154,6 +8173,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
 		],
 		"translation": "Vorige vooraf ingestelde",
@@ -8163,6 +8183,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
 		],
 		"translation": "Selecteer vooraf ingestelde geschaald",
@@ -8172,6 +8193,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
 		],
 		"translation": "Selecteer vooraf ingestelde geïndexeerd",
@@ -8181,6 +8203,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
@@ -8193,6 +8216,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
 		],
 		"translation": "Nat \/ droog",
@@ -8202,6 +8226,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
 		],
@@ -8212,6 +8237,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
 		],
@@ -8259,7 +8285,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		],
 		"translation": "Volgende state",
@@ -8269,64 +8294,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		],
 		"translation": "Vorige toestand",
-		"machine": true
-	},
-	"First State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Eerste staat",
-		"machine": true
-	},
-	"Last State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Laatste stand",
-		"machine": true
-	},
-	"Next Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Volgende song",
-		"machine": true
-	},
-	"Previous Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Vorige song",
-		"machine": true
-	},
-	"First Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Eerste nummer",
-		"machine": true
-	},
-	"Last Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Laatste nummer",
 		"machine": true
 	},
 	"Load Selected Song": 
@@ -8619,6 +8589,7 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\IndexedPluginBindingClass.cs"
 		],
@@ -8704,6 +8675,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\MainWindow\\ViewBinding.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs",
 			".\\Cantabile.Application\\Bindable\\Triggers.cs"
 		],
@@ -9381,6 +9353,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "&Capture toetsenbord",
@@ -9729,7 +9702,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs"
+			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\MainWindow\\ViewBinding.cs",
+			".\\Cantabile\\MainWindow\\ViewBindingClass.cs"
 		],
 		"translation": "Uitzicht",
 		"machine": true
@@ -10589,6 +10564,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Snelheid",
@@ -11042,7 +11018,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\CommandRouting\\CommandList.cs",
-			".\\Cantabile\\Commands\\ViewCommands.cs"
+			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
 		],
 		"translation": "Tijdlijn",
 		"machine": true
@@ -12292,6 +12269,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ViewBinding.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs"
 		],
 		"translation": "Routing",
@@ -12827,7 +12805,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
 		],
 		"translation": "Live mode",
 		"machine": true
@@ -12856,6 +12835,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\MainWindow\\ViewBinding.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs"
 		],
 		"translation": "Bindingen",
@@ -12928,6 +12908,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\IndexedPluginBindingClass.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\IndexedRackHostBindingClass.cs"
@@ -13007,60 +12988,6 @@
 		"translation": "Rek bewerken",
 		"machine": true
 	},
-	"Next Part or Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Volgende deel of de song",
-		"machine": true
-	},
-	"Previous Part or Song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Vorige deel of nummer",
-		"machine": true
-	},
-	"Next Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Volgende deel",
-		"machine": true
-	},
-	"Previous Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Vorige deel",
-		"machine": true
-	},
-	"First Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Eerste deel",
-		"machine": true
-	},
-	"Last Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ControlCommands.cs"
-		],
-		"translation": "Laatste deel",
-		"machine": true
-	},
 	"Show Note": 
 	{
 		"contexts": 
@@ -13076,6 +13003,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\MainWindow\\ViewBinding.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs"
 		],
 		"translation": "Toon notities",
@@ -13122,7 +13050,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
+			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
 		],
 		"translation": "Ticker bar",
 		"machine": true
@@ -15925,6 +15854,342 @@
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "Re-map programma {0} op {1} om {2} op {3}",
+		"machine": true
+	},
+	"Next Part or Song (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Het volgende deel of de song (vertraagd)",
+		"machine": true
+	},
+	"Next Part or Song (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Het volgende deel of de song (instant)",
+		"machine": true
+	},
+	"Previous Part or Song (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Vorige deel of de song (instant)",
+		"machine": true
+	},
+	"Previous Part or Song (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Vorige deel of de song (vertraagd)",
+		"machine": true
+	},
+	"First Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Eerste deel (vertraagd)",
+		"machine": true
+	},
+	"First Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Eerste deel (instant)",
+		"machine": true
+	},
+	"Last Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Laatste deel (vertraagd)",
+		"machine": true
+	},
+	"Last Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Laatste deel (instant)",
+		"machine": true
+	},
+	"Next Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Het volgende deel (vertraagd)",
+		"machine": true
+	},
+	"Next Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Het volgende deel (instant)",
+		"machine": true
+	},
+	"Previous Part (Delayed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Vorige deel (vertraagd)",
+		"machine": true
+	},
+	"Previous Part (Instant)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		],
+		"translation": "Vorige deel (instant)",
+		"machine": true
+	},
+	"Key Ranges": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Key ranges",
+		"machine": true
+	},
+	"Set Key Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Stel toetsbereik",
+		"machine": true
+	},
+	"Clear Key Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs"
+		],
+		"translation": "Clear-toets range",
+		"machine": true
+	},
+	"Compact On-screen Keyboard": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Compacte toetsenbord op het scherm",
+		"machine": true
+	},
+	"Key Range Indicator": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Controls\\KeyRangeIndicator.cs"
+		],
+		"translation": "Toetsbereik indicator",
+		"machine": true
+	},
+	"Automatic": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Controls\\Forms\\ColorCombo.cs"
+		],
+		"translation": "automatisch",
+		"machine": true
+	},
+	"Sho&w range on keyboard as:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+		],
+		"translation": "Laat bereik op het toetsenbord als (&W):",
+		"machine": true
+	},
+	"(Target Color)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs"
+		],
+		"translation": "(doelkleur)",
+		"machine": true
+	},
+	"&Edit Key Ranges": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs"
+		],
+		"translation": "B&ewerken key ranges",
+		"machine": true
+	},
+	"C&ompact Mode": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs"
+		],
+		"translation": "C&ompact mode",
+		"machine": true
+	},
+	"Hide Key Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs"
+		],
+		"translation": "Hide toetsbereik",
+		"machine": true
+	},
+	"&Open Song...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "&Open lied...",
+		"machine": true
+	},
+	"Se&t List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "se&t lijst",
+		"machine": true
+	},
+	"A&dd": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Toevoegen (&D)",
+		"machine": true
+	},
+	"Panel\/Bar\/Mode": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+		],
+		"translation": "Panel \/ bar \/ mode",
+		"machine": true
+	},
+	"Toolbar": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+		],
+		"translation": "Toolbar",
+		"machine": true
+	},
+	"Controller Bar": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+		],
+		"translation": "controller bar",
+		"machine": true
+	},
+	"Compact Onscreen Keyboard": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+		],
+		"translation": "Compacte toetsenbord op het scherm",
+		"machine": true
+	},
+	"Show Notes\/Routing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+		],
+		"translation": "Show notities \/ routing",
+		"machine": true
+	},
+	"Side Panel": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+		],
+		"translation": "Zijpaneel",
+		"machine": true
+	},
+	"Filename contains invalid characters": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Bestandsnaam bevat ongeldige tekens",
+		"machine": true
+	},
+	"Set Key Range...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs"
+		],
+		"translation": "Stel toetsbereik...",
+		"machine": true
+	},
+	"Object by Index": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs"
+		],
+		"translation": "Object per index",
+		"machine": true
+	},
+	"Object #{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs"
+		],
+		"translation": "Object # {0}",
+		"machine": true
+	},
+	"Key Range Display": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Toetsbereik scherm",
 		"machine": true
 	}
 }
