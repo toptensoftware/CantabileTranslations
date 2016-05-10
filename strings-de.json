@@ -262,6 +262,7 @@
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
 			".\\Cantabile\\Options\\ExternalToolsPage.cs"
 		],
 		"translation": "Hinzufügen (&a)",
@@ -719,7 +720,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
 		],
 		"translation": "Rückgängig machen (&u)",
 		"machine": false
@@ -3513,6 +3515,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
 			".\\Cantabile\\Misc\\VariableMenu.cs"
 		],
 		"translation": "Durchsuchen (&b)...",
@@ -8875,6 +8878,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
 			".\\Cantabile\\Dialogs\\SysExDialog.cs"
 		],
 		"translation": "&Import...",
@@ -11746,7 +11750,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
+			".\\Cantabile\\Commands\\FileCommands.cs",
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
 		],
 		"translation": "Songs der Setliste hinzufügen",
 		"machine": false
@@ -14949,6 +14954,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
 			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
 		"translation": "Pause hinzufügen(&K)...",
@@ -16218,5 +16224,114 @@
 		],
 		"translation": "'{0} '- nicht gefunden",
 		"machine": false
+	},
+	"Add Songs to Set List (Browse)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "In Songs gesetzt Liste (blättern)",
+		"machine": true
+	},
+	"Add Break to End of Set List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Hinzufügen Pause bis zum Ende der Setlist",
+		"machine": true
+	},
+	"Import Songs from Set List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Import Songs aus Setlist",
+		"machine": true
+	},
+	"Import Set List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Import-Set-Liste",
+		"machine": true
+	},
+	"Ignore songs already in the list set list": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs"
+		],
+		"translation": "Ignorieren Songs bereits in der Liste die Liste",
+		"machine": true
+	},
+	"Maintain program numbers": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs"
+		],
+		"translation": "Pflegen Programmnummern",
+		"machine": true
+	},
+	"&Folder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
+		],
+		"translation": "Mappe (&F)",
+		"machine": true
+	},
+	"Use Songs Folder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
+		],
+		"translation": "Verwenden Sie Lieder Ordner",
+		"machine": true
+	},
+	"Choose folder...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
+		],
+		"translation": "Wähle einen Ordner...",
+		"machine": true
+	},
+	"Choose Songs Folder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
+		],
+		"translation": "Wählen Sie Lieder Ordner",
+		"machine": true
+	},
+	"&Import Songs from Another Set List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "&Import Songs aus einem anderen Set-Liste...",
+		"machine": true
+	},
+	"Import Songs...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+		],
+		"translation": "Import Songs...",
+		"machine": true
 	}
 }
