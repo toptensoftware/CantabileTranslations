@@ -120,7 +120,6 @@
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
@@ -357,8 +356,7 @@
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
-			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggersPanel.cs"
+			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Couper",
 		"machine": false
@@ -370,8 +368,7 @@
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
-			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggersPanel.cs"
+			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Copier",
 		"machine": false
@@ -384,8 +381,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
-			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggersPanel.cs"
+			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Coller",
 		"machine": false
@@ -399,7 +395,6 @@
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggersPanel.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
 		],
 		"translation": "Effacer",
@@ -867,7 +862,8 @@
 			".\\Cantabile\\Commands\\InsertCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggersPanel.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Etat",
 		"machine": false
@@ -895,7 +891,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Bindable\\States.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
 		"translation": "Déclencheur",
@@ -916,7 +914,6 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ToolsCommands.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
 		],
 		"translation": "Préférences",
@@ -1039,9 +1036,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs",
 			".\\Cantabile.Application\\Bindable\\Triggers.cs"
 		],
 		"translation": "Déclencheurs",
@@ -1387,7 +1381,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-			".\\Cantabile.Application\\Triggers\\Trigger.cs",
 			".\\Cantabile.Core\\PanAndFade.cs",
 			".\\Cantabile.Core\\ProgramMask.cs",
 			".\\GuiKit\\Forms\\MidiChannelBar.cs"
@@ -1842,7 +1835,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
 			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
 			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
@@ -1872,7 +1864,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ControllerRangeDialog.cs"
+			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs"
 		],
 		"translation": "Intervalle pour la sou&rce:",
 		"machine": false
@@ -1881,7 +1873,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ControllerRangeDialog.cs"
+			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs",
+			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
 		],
 		"translation": "à:",
 		"machine": false
@@ -1890,7 +1883,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ControllerRangeDialog.cs"
+			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs"
 		],
 		"translation": "In&tervalle pour la destination:",
 		"machine": false
@@ -1899,7 +1892,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ControllerRangeDialog.cs",
+			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs"
 		],
 		"translation": "à :",
@@ -1984,15 +1977,6 @@
 			".\\Cantabile\\Dialogs\\CustomEventDialog.cs"
 		],
 		"translation": "Entrez le numéro d'événement personnalisé: (0-16383 (&C))",
-		"machine": false
-	},
-	"Please enter a value between 0 and 127": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\CustomEventDialog.cs"
-		],
-		"translation": "S'il vous plaît entrer une valeur entre 0 et 127",
 		"machine": false
 	},
 	"MIDI &Pressed Velocity:": 
@@ -2437,7 +2421,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
 			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
 		"translation": "&Copier",
@@ -2457,8 +2440,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\AddTriggerFooterSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
 			".\\Cantabile\\SidePanel\\SetListPanel.cs"
 		],
 		"translation": "&Coller",
@@ -2485,7 +2466,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
 			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
 			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
@@ -2505,7 +2485,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
 			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
 			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
@@ -3726,6 +3705,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\TransposeDialog.cs",
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		],
@@ -5112,8 +5092,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs"
 		],
 		"translation": "Canal {0}",
 		"machine": false
@@ -5122,8 +5101,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs"
 		],
 		"translation": "Choisissez canal MIDI",
 		"machine": false
@@ -5405,15 +5383,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Créer &assignation (apprentissage)...",
-		"machine": false
-	},
-	"Tri&gger": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "&Déclencheur",
 		"machine": false
 	},
 	"S&tate...": 
@@ -5774,15 +5743,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Assignations",
-		"machine": false
-	},
-	"Tri&ggers": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Declencheurs",
 		"machine": false
 	},
 	"&Quick Controller\t0-9": 
@@ -9087,8 +9047,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs"
 		],
 		"translation": "Activer",
 		"machine": false
@@ -9133,8 +9092,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "Valeur du contrôleur invalide",
 		"machine": false
@@ -9143,8 +9101,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "Choisir valeur",
 		"machine": false
@@ -9153,8 +9110,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "Numéro Paramètre",
 		"machine": false
@@ -9172,8 +9128,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile.Application\\Bindable\\ExternalScript.cs"
 		],
 		"translation": "Choisir l'action",
 		"machine": false
@@ -9240,8 +9195,7 @@
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs"
 		],
 		"translation": "Co&uper",
 		"machine": false
@@ -9283,8 +9237,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggersPanel.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
 		],
 		"translation": "Annotations",
 		"machine": false
@@ -10018,30 +9971,11 @@
 		"translation": "Couleur du texte",
 		"machine": false
 	},
-	"Add Trigger": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\AddTriggerFooterSlot.cs"
-		],
-		"translation": "Ajouter déclencheur",
-		"machine": false
-	},
-	"Choose Event": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\AddTriggerFooterSlot.cs",
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
-		],
-		"translation": "Choisissez l'événement",
-		"machine": false
-	},
 	"(no data)": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "(pas de données)",
 		"machine": false
@@ -10050,34 +9984,15 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "(non configuré)",
-		"machine": false
-	},
-	"Choose {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
-		],
-		"translation": "Choisissez {0}",
-		"machine": false
-	},
-	"Pitch Bend Value": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
-		],
-		"translation": "Valeur du pitch bend",
 		"machine": false
 	},
 	"Controller Value": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
 		"translation": "Valeur du contrôleur",
@@ -10087,80 +10002,25 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
 		"translation": "Valeur du paramètre",
-		"machine": false
-	},
-	"Master Volume Value": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
-		],
-		"translation": "Valeur du volume principal",
-		"machine": false
-	},
-	"Master Balance Value": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
-		],
-		"translation": "Valeur du panoramique général",
-		"machine": false
-	},
-	"Choose MIDI Target": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
-		],
-		"translation": "Choisir la cible MIDI",
 		"machine": false
 	},
 	"Set Delays": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "Selectionner le retard",
-		"machine": false
-	},
-	"Invalid format": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
-		],
-		"translation": "Format invalide",
-		"machine": false
-	},
-	"Invo&ke Trigger": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggerSlot.cs"
-		],
-		"translation": "Appelez le déclencheur (&K)",
-		"machine": false
-	},
-	"Use Triggers to configure external gear by sending MIDI events or to launch external programs and scripts when certain actions occur.\neg: Send a program change to an external synth module when a song loads.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggersPanel.cs"
-		],
-		"translation": "Utilisez les déclencheurs pour configurer un équipement externe en envoyant des événements MIDI, ou pour lancer des programmes et des scripts externes lorsque certains évènements se produisent.\nPar exemple: Envoyer un changement de programme à un module de synthé externe au chargement d'un morceau.",
 		"machine": false
 	},
 	"Action": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggersPanel.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs",
 			".\\Cantabile.Application\\Bindable\\Triggers.cs",
@@ -10173,7 +10033,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggersPanel.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs"
 		],
 		"translation": "Valeur",
 		"machine": false
@@ -10182,7 +10042,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\TriggersPanel\\TriggersPanel.cs",
+			".\\Cantabile.Application\\Bindings\\Binding.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
 		"translation": "Retards",
@@ -10560,6 +10420,7 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
 		],
 		"translation": "Paramètre cible",
@@ -10924,7 +10785,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile.Application\\Bindable\\States.cs",
+			".\\Cantabile.Application\\Bindable\\Triggers.cs"
 		],
 		"translation": "#{0}",
 		"machine": false
@@ -12357,6 +12219,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		],
 		"translation": "Grille",
@@ -12411,8 +12274,11 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Bindable\\ObjectMidiSourceBinding.cs",
+			".\\Cantabile.Application\\Bindable\\ObjectMidiTargetBinding.cs",
 			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs",
-			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiInputPort.cs"
+			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiInputPort.cs",
+			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiOutputPort.cs"
 		],
 		"translation": "Canal MIDI",
 		"machine": false
@@ -12421,6 +12287,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Bindable\\ObjectMidiSourceBinding.cs",
 			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs",
 			".\\Cantabile.Core\\ChannelMask.cs",
 			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiInputPort.cs",
@@ -12699,177 +12566,6 @@
 			".\\Cantabile.Application\\ShowNotes\\UndoUnits.cs"
 		],
 		"translation": "Déplacer Annotation",
-		"machine": false
-	},
-	"Song Start": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Début du morceau",
-		"machine": false
-	},
-	"Song Stop": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Arrêt du morceau",
-		"machine": false
-	},
-	"Song State Load": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Chargement d'un Etat",
-		"machine": false
-	},
-	"Song State Unload": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Déchargement d'un Etat",
-		"machine": false
-	},
-	"Transport Play": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Lecture",
-		"machine": false
-	},
-	"Transport Pause": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Pause",
-		"machine": false
-	},
-	"Transport Resume": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Reprise",
-		"machine": false
-	},
-	"Transport Stop": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Stop",
-		"machine": false
-	},
-	"Transport Play or Resume": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Lecture ou Reprise",
-		"machine": false
-	},
-	"Transport Stop or Pause": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Stop ou Pause",
-		"machine": false
-	},
-	"Custom Event": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Événement personnalisé",
-		"machine": false
-	},
-	"(Obsolete)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "(Obsolète)",
-		"machine": false
-	},
-	"Rack Start": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Activation du Rack",
-		"machine": false
-	},
-	"Rack Stop": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Arrêt du Rack",
-		"machine": false
-	},
-	"Rack State Load": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "Rack dans l'Etat chargé",
-		"machine": false
-	},
-	"Rack State Unload": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
-		],
-		"translation": "RRack dans l'Etat non chargé",
-		"machine": false
-	},
-	"Insert Trigger": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\UndoUnits.cs"
-		],
-		"translation": "Insérer déclencheur",
-		"machine": false
-	},
-	"Delete Trigger": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\UndoUnits.cs"
-		],
-		"translation": "Supprimer déclencheur",
-		"machine": false
-	},
-	"Move Trigger": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Triggers\\UndoUnits.cs"
-		],
-		"translation": "Déplacer déclencheur",
 		"machine": false
 	},
 	"Audio Out": 
@@ -14146,6 +13842,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Upgrade\\V2Session.cs",
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\ProgramMask.cs"
 		],
 		"translation": "Quelconque",
@@ -14915,7 +14613,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ControllerRangeDialog.cs"
+			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs"
 		],
 		"translation": "mise à l'échelle relative:",
 		"machine": true
@@ -16507,6 +16205,308 @@
 			".\\Cantabile\\Options\\WelcomePage.cs"
 		],
 		"translation": "Vous pouvez revenir à ces paramètres ultérieurement dans les options. cliquez sur suivant pour continuer ou...",
+		"machine": true
+	},
+	"(max)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Controls\\Forms\\BindingValueField.cs"
+		],
+		"translation": "(max)",
+		"machine": true
+	},
+	"Value Mapping": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
+		],
+		"translation": "la cartographie de la valeur",
+		"machine": true
+	},
+	"&Source range from:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
+		],
+		"translation": "Plage &source de:",
+		"machine": true
+	},
+	"&Target range from:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
+		],
+		"translation": "Plage de cible à par&tir:",
+		"machine": true
+	},
+	"On\/Off Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingOnOffValueDialog.cs"
+		],
+		"translation": "On \/ off valeur",
+		"machine": true
+	},
+	"O&ff Value:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingOnOffValueDialog.cs"
+		],
+		"translation": "O&ff valeur:",
+		"machine": true
+	},
+	"&On Value:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingOnOffValueDialog.cs"
+		],
+		"translation": "Sur la valeur (&O):",
+		"machine": true
+	},
+	"Target Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
+		],
+		"translation": "Valeur cible",
+		"machine": true
+	},
+	"&Value:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
+		],
+		"translation": "&Valeur:",
+		"machine": true
+	},
+	"Please enter a value between 0 and 16383": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\CustomEventDialog.cs"
+		],
+		"translation": "S'il vous plaît entrer une valeur entre 0 et 16383",
+		"machine": true
+	},
+	"(Invalid Binding)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "(Invalid liaison)",
+		"machine": true
+	},
+	"This binding is invalid because you haven't selected a compatible source and target.\n\nTip: If you're trying to bind button controller to an action, try selecting \"Controller (Button)\" or \"Controller (No Edge Button)\"as the source": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "Cette liaison est invalide parce que vous avez sélectionné une source et cible compatible.\n\nAstuce: si vous essayez de lier contrôleur de bouton pour une action, essayez de sélectionner \"contrôleur (bouton)\" ou \"contrôleur (pas de bouton de bord)\" comme source",
+		"machine": true
+	},
+	"Mapping": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "cartographie",
+		"machine": true
+	},
+	"Invoke when Switched:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "Invoke lors de la mise:",
+		"machine": true
+	},
+	"On All Sounds Off": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Engine.cs"
+		],
+		"translation": "Sur tous les sons",
+		"machine": true
+	},
+	"External Script": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\ExternalScript.cs"
+		],
+		"translation": "script externe",
+		"machine": true
+	},
+	"Execute": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\ExternalScript.cs"
+		],
+		"translation": "Exécuter",
+		"machine": true
+	},
+	"On Load": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
+		],
+		"translation": "En charge",
+		"machine": true
+	},
+	"On Unload": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
+		],
+		"translation": "Le déchargement",
+		"machine": true
+	},
+	"Trigger\/Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
+		],
+		"translation": "Trigger \/ valeur",
+		"machine": true
+	},
+	"On Play": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
+		],
+		"translation": "Le jeu",
+		"machine": true
+	},
+	"On Pause": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
+		],
+		"translation": "En pause",
+		"machine": true
+	},
+	"On Resume": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
+		],
+		"translation": "Pour résumer",
+		"machine": true
+	},
+	"On Stop": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
+		],
+		"translation": "Sur arrêt",
+		"machine": true
+	},
+	"On Play or Resume": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
+		],
+		"translation": "Le jeu ou reprendre",
+		"machine": true
+	},
+	"On Stop or Pause": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
+		],
+		"translation": "Sur arrêt ou pause",
+		"machine": true
+	},
+	"Is Playing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Est en train de jouer",
+		"machine": true
+	},
+	"Is Paused": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "est en pause",
+		"machine": true
+	},
+	"Is Stopped": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Est arrêté",
+		"machine": true
+	},
+	"Trigger Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+		],
+		"translation": "Numéro de déclenchement",
+		"machine": true
+	},
+	"Selected State Scaled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+		],
+		"translation": "état sélectionné échelle",
+		"machine": true
+	},
+	"Selected State Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+		],
+		"translation": "programme d'Etat sélectionné",
+		"machine": true
+	},
+	"Selected State Index": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+		],
+		"translation": "Indice sélectionné d'état",
 		"machine": true
 	}
 }
