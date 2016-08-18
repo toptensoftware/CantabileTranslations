@@ -1852,6 +1852,14 @@
 		".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
 	],
 },
+"MIDI":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
+		".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
+	],
+},
 "Momentary Button":
 {
 	"contexts": [
@@ -1874,6 +1882,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\ExecuteProgramDialog.cs",
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
 	],
 },
 "&Command Line:":
@@ -7645,6 +7654,12 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 	],
 },
+"R&eset MIDI at start of file":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+	],
+},
 "Re&name...":
 {
 	"contexts": [
@@ -8098,13 +8113,6 @@
 		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
 	],
 },
-"MIDI":
-{
-	"contexts": [
-		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
-		".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
-	],
-},
 "Audio":
 {
 	"contexts": [
@@ -8377,7 +8385,7 @@
 		".\\Cantabile\\SidePanel\\StatesPanel.cs",
 	],
 },
-"Warning: failed to load {0}, reverting to defaults":
+"Warning: failed to load {0}, reverting to defaults\n\n{1}":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Application.cs",
@@ -10160,6 +10168,256 @@
 		".\\Cantabile.Core\\KeyboardCapture.cs",
 	],
 },
+"Note":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Controller":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Program Change":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Pitch Bend":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Channel Pressure":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Note (Off)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Controller (Button)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Controller (No Edge Button)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Controller (Switch)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Controller (Fine)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Program Change (Banked)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"RPN (Coarse)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"RPN (Fine)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"NRPN (Coarse)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"NRPN (Fine)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Master Volume":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Master Balance":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MmcBase??":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Stop":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Play":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Deferred Play":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Fast Forward":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Rewind":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Record Punch-in":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Record Punch-out":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Record Ready":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Pause":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Eject":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Chase":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Unused C":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Unused D":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Unused E":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MMC Reset":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"SysEx":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Transport Play":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Transport Stop":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Transport Pause":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Song Select":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MIDI Clock Start":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MIDI Clock Continue":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"MIDI Clock Stop":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
 "Mapped":
 {
 	"contexts": [
@@ -10196,23 +10454,10 @@
 		".\\Cantabile.Core\\MidiControllerEvent.cs",
 	],
 },
-"Note":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiControllerEvent.cs",
-	],
-},
 "Program Number":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiControllerEvent.cs",
-	],
-},
-"Controller":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiControllerEvent.cs",
-		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
 "Parameter":
@@ -10510,18 +10755,6 @@
 	],
 },
 "After Touch":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiFilterItem.cs",
-	],
-},
-"Channel Pressure":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiFilterItem.cs",
-	],
-},
-"Pitch Bend":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",
@@ -10870,12 +11103,6 @@
 	],
 },
 "Bank Select\/Program Change":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiFilterItem.cs",
-	],
-},
-"Program Change":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",

@@ -2066,7 +2066,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ExecuteProgramDialog.cs"
+			".\\Cantabile\\Dialogs\\ExecuteProgramDialog.cs",
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
 		"translation": "Exécuter un programme externe",
 		"machine": false
@@ -10065,6 +10066,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
 			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\Route.cs"
 		],
@@ -13558,6 +13560,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "Changement de programme",
@@ -15963,6 +15966,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "Pression de canal",
@@ -15972,6 +15976,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "Pitch bend",
@@ -16711,15 +16716,6 @@
 		"translation": "Decrement transposer",
 		"machine": true
 	},
-	"Warning: failed to load {0}, reverting to defaults": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Application.cs"
-		],
-		"translation": "Attention: Échec de chargement {0}, revenant aux valeurs par défaut",
-		"machine": true
-	},
 	"1 semitone": 
 	{
 		"contexts": 
@@ -16790,6 +16786,348 @@
 			".\\Cantabile.Utils\\MusicalInterval.cs"
 		],
 		"translation": " + ",
+		"machine": true
+	},
+	"R&eset MIDI at start of file": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
+		],
+		"translation": "Réinitialis&er MIDI au début du fichier",
+		"machine": true
+	},
+	"Warning: failed to load {0}, reverting to defaults\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Attention: Échec de chargement {0}, revenant aux valeurs par défaut\n\n{1}",
+		"machine": true
+	},
+	"Note (Off)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "Note (off)",
+		"machine": true
+	},
+	"Controller (Button)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "Contrôleur (bouton)",
+		"machine": true
+	},
+	"Controller (No Edge Button)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "Contrôleur (pas de bouton de bord)",
+		"machine": true
+	},
+	"Controller (Switch)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "Contrôleur (commutateur)",
+		"machine": true
+	},
+	"Controller (Fine)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "Contrôleur (fine)",
+		"machine": true
+	},
+	"Program Change (Banked)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "Changement de programme (en banque)",
+		"machine": true
+	},
+	"RPN (Coarse)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "RPN (grossier)",
+		"machine": true
+	},
+	"RPN (Fine)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "RPN (fine)",
+		"machine": true
+	},
+	"NRPN (Coarse)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "NRPN (grossier)",
+		"machine": true
+	},
+	"NRPN (Fine)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "NRPN (fine)",
+		"machine": true
+	},
+	"Master Volume": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "Master volume",
+		"machine": true
+	},
+	"Master Balance": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "balance Master",
+		"machine": true
+	},
+	"MmcBase??": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "MmcBase??",
+		"machine": true
+	},
+	"MMC Stop": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "arrêt MMC",
+		"machine": true
+	},
+	"MMC Play": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "jeu de MMC",
+		"machine": true
+	},
+	"MMC Deferred Play": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "MMC jeu différé",
+		"machine": true
+	},
+	"MMC Fast Forward": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "MMC avance rapide",
+		"machine": true
+	},
+	"MMC Rewind": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "MMC rembobinage",
+		"machine": true
+	},
+	"MMC Record Punch-in": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "fiche MMC Punch-in",
+		"machine": true
+	},
+	"MMC Record Punch-out": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "fiche MMC punch-out",
+		"machine": true
+	},
+	"MMC Record Ready": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "fiche MMC prêt",
+		"machine": true
+	},
+	"MMC Pause": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "MMC pause",
+		"machine": true
+	},
+	"MMC Eject": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "MMC éjection",
+		"machine": true
+	},
+	"MMC Chase": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "chase MMC",
+		"machine": true
+	},
+	"MMC Unused C": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "MMC utilisé C",
+		"machine": true
+	},
+	"MMC Unused D": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "MMC D utilisé",
+		"machine": true
+	},
+	"MMC Unused E": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "MMC utilisé E",
+		"machine": true
+	},
+	"MMC Reset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "réinitialisation MMC",
+		"machine": true
+	},
+	"SysEx": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "SysEx",
+		"machine": true
+	},
+	"Transport Play": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "jeu de transport",
+		"machine": true
+	},
+	"Transport Stop": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "arrêt de transport",
+		"machine": true
+	},
+	"Transport Pause": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "pause de transport",
+		"machine": true
+	},
+	"Song Select": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "song Select",
+		"machine": true
+	},
+	"MIDI Clock Start": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "MIDI début d'horloge",
+		"machine": true
+	},
+	"MIDI Clock Continue": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "Horloge MIDI continuer",
+		"machine": true
+	},
+	"MIDI Clock Stop": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "MIDI arrêt d'horloge",
 		"machine": true
 	}
 }
