@@ -1289,6 +1289,16 @@
 		".\\Cantabile\\Controls\\Forms\\BindingValueField.cs",
 	],
 },
+"Any":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
+		".\\Cantabile\\Controls\\Forms\\CCValueField.cs",
+		".\\Cantabile.Application\\Upgrade\\V2Session.cs",
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+		".\\Cantabile.Core\\ProgramMask.cs",
+	],
+},
 "Same":
 {
 	"contexts": [
@@ -3806,6 +3816,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\Sostenuto.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
 	],
 },
 "&Split Point:":
@@ -3891,6 +3902,19 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs",
+	],
+},
+"&Send on channel:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+	],
+},
+" (Error: {0})":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
 	],
 },
 "t&o":
@@ -5502,6 +5526,98 @@
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\RecentFileListExtensions.cs",
+	],
+},
+"Sys-ex Start":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Sys-ex End":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Wildcard Nibble":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Wildcard Byte":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Binary Bits with Wildcard":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Channel Number":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Controller or (N)RPN Parameter Number":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Controller or (N)RPN Value":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Channel Number (4 bit)":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Controller (Fine Part)":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Controller (Coarse Part)":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Value (Fine Part)":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Value (Coarse Part)":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+	],
+},
+"Master Volume":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+	],
+},
+"Master Balance":
+{
+	"contexts": [
+		".\\Cantabile\\Misc\\VariableMenu.cs",
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
 	],
 },
 "&Counter":
@@ -7416,7 +7532,7 @@
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 	],
 },
-"This binding is invalid because you haven't selected a compatible source and target.\n\nTip: If you're trying to bind button controller to an action, try selecting \"Controller (Button)\" or \"Controller (No Edge Button)\"as the source":
+"This binding is invalid because you haven't selected a compatible source and target.\n\nTip: If you're trying to bind button controller to an action, try selecting \"Controller (Button)\" or \"Controller (No Edge Button)\"as the event.":
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
@@ -10127,18 +10243,17 @@
 		".\\Cantabile.Application\\Upgrade\\V2Session.cs",
 	],
 },
-"Any":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Upgrade\\V2Session.cs",
-		".\\Cantabile.Core\\MidiControllerEvent.cs",
-		".\\Cantabile.Core\\ProgramMask.cs",
-	],
-},
 "'{0}' - not found":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Verification\\VerificationContext.cs",
+	],
+},
+"Null Audio":
+{
+	"contexts": [
+		".\\Cantabile.Core\\AudioDriver.cs",
+		".\\Cantabile.Environment\\Environment.cs",
 	],
 },
 "Ch:":
@@ -10290,18 +10405,6 @@
 	],
 },
 "NRPN (Fine)":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiControllerEvent.cs",
-	],
-},
-"Master Volume":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiControllerEvent.cs",
-	],
-},
-"Master Balance":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiControllerEvent.cs",
@@ -10620,6 +10723,18 @@
 	],
 },
 "Sosten&uto":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Sysex Encoder":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Sysex Decoder":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",
@@ -11231,6 +11346,30 @@
 		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
+"Uninitialized sys-ex Encoder ":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Encode to sys-ex: {0}{1}":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Uninitialized sys-ex decoder ":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Decode from sys-ex: {0}{1}":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
 "Left (Balance)":
 {
 	"contexts": [
@@ -11361,12 +11500,6 @@
 {
 	"contexts": [
 		".\\Cantabile.Edition\\Edition.cs",
-	],
-},
-"Null Audio":
-{
-	"contexts": [
-		".\\Cantabile.Environment\\Environment.cs",
 	],
 },
 "Failed to create audio driver, unknown multi-driver configuration '{0}'":

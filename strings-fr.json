@@ -13825,6 +13825,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
+			".\\Cantabile\\Controls\\Forms\\CCValueField.cs",
 			".\\Cantabile.Application\\Upgrade\\V2Session.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\ProgramMask.cs"
@@ -13863,6 +13865,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Core\\AudioDriver.cs",
 			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Audio coupé",
@@ -16282,15 +16285,6 @@
 		"translation": "(Invalid liaison)",
 		"machine": true
 	},
-	"This binding is invalid because you haven't selected a compatible source and target.\n\nTip: If you're trying to bind button controller to an action, try selecting \"Controller (Button)\" or \"Controller (No Edge Button)\"as the source": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		],
-		"translation": "Cette liaison est invalide parce que vous avez sélectionné une source et cible compatible.\n\nAstuce: si vous essayez de lier contrôleur de bouton pour une action, essayez de sélectionner \"contrôleur (bouton)\" ou \"contrôleur (pas de bouton de bord)\" comme source",
-		"machine": true
-	},
 	"Mapping": 
 	{
 		"contexts": 
@@ -16894,6 +16888,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Misc\\VariableMenu.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
 		"translation": "Master volume",
@@ -16903,6 +16898,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Misc\\VariableMenu.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
 		"translation": "balance Master",
@@ -17137,7 +17133,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\Sostenuto.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\Sostenuto.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
 		],
 		"translation": "filières (&C):",
 		"machine": true
@@ -17203,6 +17200,205 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs"
 		],
 		"translation": "Export &sélectionné...",
+		"machine": true
+	},
+	"&Send on channel:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs"
+		],
+		"translation": "Envoyer &sur le canal:",
+		"machine": true
+	},
+	" (Error: {0})": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
+		],
+		"translation": " (Erreur: {0})",
+		"machine": true
+	},
+	"Sys-ex Start": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Sys-ex début",
+		"machine": true
+	},
+	"Sys-ex End": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Sys-ex fin",
+		"machine": true
+	},
+	"Wildcard Nibble": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "quartet wildcard",
+		"machine": true
+	},
+	"Wildcard Byte": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "octet wildcard",
+		"machine": true
+	},
+	"Binary Bits with Wildcard": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "les bits binaires avec joker",
+		"machine": true
+	},
+	"Channel Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Le numéro de canal",
+		"machine": true
+	},
+	"Controller or (N)RPN Parameter Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Contrôleur ou (n) RPN numéro de paramètre",
+		"machine": true
+	},
+	"Controller or (N)RPN Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Contrôleur ou (n) valeur RPN",
+		"machine": true
+	},
+	"Channel Number (4 bit)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Numéro de canal (4 bits)",
+		"machine": true
+	},
+	"Controller (Fine Part)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Contrôleur (partie amende)",
+		"machine": true
+	},
+	"Controller (Coarse Part)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Contrôleur (partie grossière)",
+		"machine": true
+	},
+	"Value (Fine Part)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Valeur (partie amende)",
+		"machine": true
+	},
+	"Value (Coarse Part)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Valeur (partie grossière)",
+		"machine": true
+	},
+	"This binding is invalid because you haven't selected a compatible source and target.\n\nTip: If you're trying to bind button controller to an action, try selecting \"Controller (Button)\" or \"Controller (No Edge Button)\"as the event.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "Cette liaison est invalide parce que vous avez sélectionné une source et cible compatible.\n\nAstuce: si vous essayez de lier contrôleur de bouton pour une action, essayez de sélectionner \"contrôleur (bouton)\" ou \"contrôleur (pas de bouton de bord)\" comme l'événement.",
+		"machine": true
+	},
+	"Sysex Encoder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Sysex codeur",
+		"machine": true
+	},
+	"Sysex Decoder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "décodeur Sysex",
+		"machine": true
+	},
+	"Uninitialized sys-ex Encoder ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "sys-ex initialisées codeur ",
+		"machine": true
+	},
+	"Encode to sys-ex: {0}{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Encode sys-ex: {0}{1}",
+		"machine": true
+	},
+	"Uninitialized sys-ex decoder ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "sys-ex initialisées décodeur ",
+		"machine": true
+	},
+	"Decode from sys-ex: {0}{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Décoder du sys-ex: {0}{1}",
 		"machine": true
 	}
 }

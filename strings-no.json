@@ -7084,6 +7084,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Core\\AudioDriver.cs",
 			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Null lyd",
@@ -8182,6 +8183,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
+			".\\Cantabile\\Controls\\Forms\\CCValueField.cs",
 			".\\Cantabile.Application\\Upgrade\\V2Session.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\ProgramMask.cs"
@@ -16282,15 +16285,6 @@
 		"translation": "(Ugyldig binding)",
 		"machine": true
 	},
-	"This binding is invalid because you haven't selected a compatible source and target.\n\nTip: If you're trying to bind button controller to an action, try selecting \"Controller (Button)\" or \"Controller (No Edge Button)\"as the source": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		],
-		"translation": "Denne bindingen er ugyldig fordi du ikke har valgt en kompatibel kilde og mål.\n\nTips: Hvis du prøver å binde knappen kontrolleren til en handling, prøve å velge \"controller (knapp)\" eller \"controller (ingen kant knapp)\" som kilde",
-		"machine": true
-	},
 	"Mapping": 
 	{
 		"contexts": 
@@ -16894,6 +16888,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Misc\\VariableMenu.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
 		"translation": "Master volum",
@@ -16903,6 +16898,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Misc\\VariableMenu.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
 		"translation": "Master balanse",
@@ -17137,7 +17133,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\Sostenuto.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\Sostenuto.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
 		],
 		"translation": "kanaler (&C):",
 		"machine": true
@@ -17203,6 +17200,205 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs"
 		],
 		"translation": "Export valgt (&S)...",
+		"machine": true
+	},
+	"&Send on channel:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs"
+		],
+		"translation": "&Send på kanal:",
+		"machine": true
+	},
+	" (Error: {0})": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
+		],
+		"translation": " (Feil: {0})",
+		"machine": true
+	},
+	"Sys-ex Start": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Sys-ex start",
+		"machine": true
+	},
+	"Sys-ex End": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Sys-ex slutten",
+		"machine": true
+	},
+	"Wildcard Nibble": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Wildcard nibble",
+		"machine": true
+	},
+	"Wildcard Byte": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Wildcard byte",
+		"machine": true
+	},
+	"Binary Bits with Wildcard": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Binære biter med wildcard",
+		"machine": true
+	},
+	"Channel Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Kanalnummer nummer~~POS=HEADCOMP",
+		"machine": true
+	},
+	"Controller or (N)RPN Parameter Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Controller eller (n) RPN parameternummer",
+		"machine": true
+	},
+	"Controller or (N)RPN Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Controller eller (n) RPN verdi",
+		"machine": true
+	},
+	"Channel Number (4 bit)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Kanalnummer (4 bit)",
+		"machine": true
+	},
+	"Controller (Fine Part)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Controller (fin del)",
+		"machine": true
+	},
+	"Controller (Coarse Part)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Controller (grov del)",
+		"machine": true
+	},
+	"Value (Fine Part)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Verdi (fin del)",
+		"machine": true
+	},
+	"Value (Coarse Part)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Verdi (grov del)",
+		"machine": true
+	},
+	"This binding is invalid because you haven't selected a compatible source and target.\n\nTip: If you're trying to bind button controller to an action, try selecting \"Controller (Button)\" or \"Controller (No Edge Button)\"as the event.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "Denne bindingen er ugyldig fordi du ikke har valgt en kompatibel kilde og mål.\n\nTips: Hvis du prøver å binde knappen kontrolleren til en handling, prøve å velge \"controller (knapp)\" eller \"controller (ingen kant knapp)\" som hendelsen.",
+		"machine": true
+	},
+	"Sysex Encoder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Sysex encoder",
+		"machine": true
+	},
+	"Sysex Decoder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Sysex dekoder",
+		"machine": true
+	},
+	"Uninitialized sys-ex Encoder ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Initialisert sys-ex encoder ",
+		"machine": true
+	},
+	"Encode to sys-ex: {0}{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Kode til sys-ex: {0}{1}",
+		"machine": true
+	},
+	"Uninitialized sys-ex decoder ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Initialisert sys-ex-dekoder ",
+		"machine": true
+	},
+	"Decode from sys-ex: {0}{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Dekode fra sys-ex: {0}{1}",
 		"machine": true
 	}
 }
