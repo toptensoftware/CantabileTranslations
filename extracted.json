@@ -446,7 +446,6 @@
 	"contexts": [
 		".\\Cantabile\\Commands\\EditCommands.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 		".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
 	],
 },
@@ -455,7 +454,6 @@
 	"contexts": [
 		".\\Cantabile\\Commands\\EditCommands.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 		".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
 	],
 },
@@ -909,6 +907,12 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 	],
 },
+"Embedded Rack (From File)":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\InsertCommands.cs",
+	],
+},
 "New Linked Rack":
 {
 	"contexts": [
@@ -947,6 +951,19 @@
 	],
 },
 "Learn Binding":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\InsertCommands.cs",
+		".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
+	],
+},
+"Create Binding":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\InsertCommands.cs",
+	],
+},
+"Create Plugin Parameter Binding":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\InsertCommands.cs",
@@ -1250,6 +1267,24 @@
 	],
 },
 "Toggle Active Pane":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
+"Collapse All":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
+"Expand All":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
+"Toggle Zoom Rack":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ViewCommands.cs",
@@ -1972,47 +2007,59 @@
 		".\\Cantabile\\Dialogs\\JumpToPositionDialog.cs",
 	],
 },
-"Learn Binding Source":
+"&Source Event:":
 {
 	"contexts": [
-		".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs",
-	],
-},
-"Source:":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs",
-	],
-},
-"(All)":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs",
-		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+		".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
 	],
 },
 "(Waiting - move MIDI controller or on-screen setting)":
 {
 	"contexts": [
-		".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs",
+		".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
+	],
+},
+"Learn &From:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
+	],
+},
+"(All)":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+	],
+},
+"&BindTo:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
+	],
+},
+"&Create Binding In:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
 	],
 },
 "No MIDI events found":
 {
 	"contexts": [
-		".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs",
+		".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
 	],
 },
 "Please select which controller to bind from the list of learned events":
 {
 	"contexts": [
-		".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs",
+		".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
 	],
 },
 "{0}{1} on {2} ch {3}":
 {
 	"contexts": [
-		".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs",
+		".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
 	],
 },
 "Loop &Count:":
@@ -2761,6 +2808,12 @@
 		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 	],
 },
+"Cr&eate Parameter Binding":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
 "&Close":
 {
 	"contexts": [
@@ -3162,13 +3215,19 @@
 		".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
 	],
 },
-"only on significant changes":
+"Only on significant changes":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
 	],
 },
-"on any change":
+"On any change except via bindings":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+	],
+},
+"On any change":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
@@ -4414,6 +4473,17 @@
 		".\\Cantabile\\MainWindow\\ControllerBar.cs",
 	],
 },
+"Create Binding...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+		".\\Cantabile\\MainWindow\\MainWindowView.cs",
+		".\\Cantabile\\MainWindow\\MetronomePanel.cs",
+		".\\Cantabile\\SidePanel\\SetListPanel.cs",
+		".\\Cantabile\\SidePanel\\StatesPanel.cs",
+	],
+},
 "Custom MIDI Button":
 {
 	"contexts": [
@@ -4703,7 +4773,13 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"&Embedded Rack...":
+"&Embedded Rack":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
+"Embedded Rack (From &File)...":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -4785,6 +4861,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\MainWindow\\MainToolbar.cs",
 	],
 },
 "&Record":
@@ -5284,6 +5361,18 @@
 	],
 },
 "Power Button":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+	],
+},
+"&Flash":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+	],
+},
+"Flash &When Stopped":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainToolbar.cs",
@@ -8267,6 +8356,12 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
 	],
 },
+"Embedded Rack (from file)":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
+	],
+},
 "New Linked Rack...":
 {
 	"contexts": [
@@ -8332,6 +8427,7 @@
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
 		".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
+		".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 		".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
 	],
@@ -8643,6 +8739,7 @@
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
 		".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
+		".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 		".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",

@@ -359,7 +359,6 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Couper",
@@ -371,7 +370,6 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Copier",
@@ -860,7 +858,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs"
+			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs"
 		],
 		"translation": "Apprendre Assignation",
 		"machine": false
@@ -5307,15 +5306,6 @@
 		"translation": "Plugin (&P)...",
 		"machine": false
 	},
-	"&Embedded Rack...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Rack intégré (&E)",
-		"machine": false
-	},
 	"New &Rack...": 
 	{
 		"contexts": 
@@ -5428,7 +5418,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Enregistrement automatique (&D)",
 		"machine": false
@@ -6187,7 +6178,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs",
+			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
 		],
 		"translation": "(Tous)",
@@ -9257,6 +9248,7 @@
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
 			".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs"
 		],
@@ -9444,6 +9436,7 @@
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
 			".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
@@ -14689,24 +14682,6 @@
 		"translation": "Jamais",
 		"machine": true
 	},
-	"only on significant changes": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "que sur des changements significatifs",
-		"machine": true
-	},
-	"on any change": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "sur tout changement",
-		"machine": true
-	},
 	"Let the parent &song control this rack's selected state and gain": 
 	{
 		"contexts": 
@@ -16525,29 +16500,11 @@
 		"translation": "type de fichier non reconnu",
 		"machine": true
 	},
-	"Learn Binding Source": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs"
-		],
-		"translation": "Apprenez la source de liaison",
-		"machine": true
-	},
-	"Source:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs"
-		],
-		"translation": "La source:",
-		"machine": true
-	},
 	"(Waiting - move MIDI controller or on-screen setting)": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs"
+			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs"
 		],
 		"translation": "(En attente - déplacer un contrôleur MIDI ou à l'écran réglage)",
 		"machine": true
@@ -16556,7 +16513,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs"
+			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs"
 		],
 		"translation": "Aucun événement MIDI trouvé",
 		"machine": true
@@ -16565,7 +16522,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs"
+			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs"
 		],
 		"translation": "S'il vous plaît sélectionner le contrôleur à se lier dans la liste des événements tirés",
 		"machine": true
@@ -16574,7 +16531,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\LearnMidiControllerDialog.cs"
+			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs"
 		],
 		"translation": "{0}{1} sur {2} de {3}",
 		"machine": true
@@ -18977,6 +18934,191 @@
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Nouvel état de rack",
+		"machine": true
+	},
+	"Embedded Rack (From File)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\InsertCommands.cs"
+		],
+		"translation": "support intégré (à partir du fichier)",
+		"machine": true
+	},
+	"Create Binding": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\InsertCommands.cs"
+		],
+		"translation": "Créer la liaison",
+		"machine": true
+	},
+	"Create Plugin Parameter Binding": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\InsertCommands.cs"
+		],
+		"translation": "Créer la liaison des paramètres plug-in",
+		"machine": true
+	},
+	"Collapse All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Réduire tout",
+		"machine": true
+	},
+	"Expand All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Développer tout",
+		"machine": true
+	},
+	"Toggle Zoom Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "rack zoom Basculer",
+		"machine": true
+	},
+	"&Source Event:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs"
+		],
+		"translation": "événement &Source:",
+		"machine": true
+	},
+	"Learn &From:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs"
+		],
+		"translation": "Apprendre (&F):",
+		"machine": true
+	},
+	"&BindTo:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs"
+		],
+		"translation": "Lier à (&B):",
+		"machine": true
+	},
+	"&Create Binding In:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs"
+		],
+		"translation": "&Créer contraignant:",
+		"machine": true
+	},
+	"Cr&eate Parameter Binding": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Cré&er la liaison des paramètres",
+		"machine": true
+	},
+	"Only on significant changes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Seuls des changements importants",
+		"machine": true
+	},
+	"On any change except via bindings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Sur tout changement, sauf via des liaisons",
+		"machine": true
+	},
+	"On any change": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Sur tout changement",
+		"machine": true
+	},
+	"Create Binding...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\MainWindowView.cs",
+			".\\Cantabile\\MainWindow\\MetronomePanel.cs",
+			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Créer la liaison...",
+		"machine": true
+	},
+	"&Embedded Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "support intégré (&E)",
+		"machine": true
+	},
+	"Embedded Rack (From &File)...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "support intégré (à partir du &fichier)...",
+		"machine": true
+	},
+	"&Flash": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "&Flash",
+		"machine": true
+	},
+	"Flash &When Stopped": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Clignote à l'arrêt (&W)",
+		"machine": true
+	},
+	"Embedded Rack (from file)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs"
+		],
+		"translation": "support intégré (à partir du fichier)",
 		"machine": true
 	}
 }
