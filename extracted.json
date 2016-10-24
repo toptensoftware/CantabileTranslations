@@ -722,6 +722,12 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
 	],
 },
+"Toggle Object Solo Control":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
 "New Song":
 {
 	"contexts": [
@@ -1337,6 +1343,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Controls\\Composited\\RunModeButton.cs",
+		".\\Cantabile\\Controls\\Composited\\SoloModeButton.cs",
 	],
 },
 "Disclosure Button":
@@ -7945,6 +7952,28 @@
 		".\\Cantabile\\QuickController\\QuickController.cs",
 	],
 },
+"Solo":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+		".\\Cantabile.Edition\\Edition.cs",
+	],
+},
+"Solo this rack":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+	],
+},
 "Displays useful information during performance - text notes, reminders, images etc...":
 {
 	"contexts": [
@@ -8555,6 +8584,14 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 	],
 },
+"Solo this object":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+	],
+},
 "MediaPlayer Name":
 {
 	"contexts": [
@@ -8756,6 +8793,20 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 	],
 },
+"Solo Control":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+	],
+},
 "Re&name...":
 {
 	"contexts": [
@@ -8818,6 +8869,18 @@
 		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
 	],
 },
+"Audio Bypass":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+	],
+},
+"Bypasses the audio signal around this plugin.":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+	],
+},
 "Running":
 {
 	"contexts": [
@@ -8839,18 +8902,6 @@
 	],
 },
 "Suspends the plugin from processing audio and MIDI but keeps it loaded into memory.\n\n(Alt+Click to unload the plugin).":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-	],
-},
-"Audio Bypass":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-	],
-},
-"Bypasses the audio signal around this plugin.":
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
@@ -10629,6 +10680,14 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Solo Exclusive":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 	],
 },
 "Plugin by Index":
@@ -12704,12 +12763,6 @@
 {
 	"contexts": [
 		".\\Cantabile.Core\\PluginHost.cs",
-	],
-},
-"Solo":
-{
-	"contexts": [
-		".\\Cantabile.Edition\\Edition.cs",
 	],
 },
 "Performer":
