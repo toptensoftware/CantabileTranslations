@@ -84,6 +84,7 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile.Core\\Curve.cs",
 			".\\Cantabile.Core\\PanAndFade.cs",
 			".\\Cantabile.Core\\ProgramMask.cs",
 			".\\GuiKit\\Forms\\MidiChannelBar.cs"
@@ -14347,7 +14348,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs",
+			".\\Cantabile.Application\\Bindings\\Binding.cs",
+			".\\Cantabile.Core\\Curve.cs"
 		],
 		"translation": "Kurve",
 		"machine": false
@@ -14356,7 +14359,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs",
+			".\\Cantabile.Core\\Curve.cs"
 		],
 		"translation": "Verbessern",
 		"machine": false
@@ -19259,6 +19263,25 @@
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		],
 		"translation": "Solo exklusiv",
+		"machine": true
+	},
+	"&Curve Kind:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs",
+			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
+		],
+		"translation": "Kurvenart (&C):",
+		"machine": true
+	},
+	"Curve &Amount:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
+		],
+		"translation": "Curve Menge (&A):",
 		"machine": true
 	}
 }
