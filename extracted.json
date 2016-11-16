@@ -3591,6 +3591,7 @@
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToProgramMap.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
@@ -3810,6 +3811,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\Transpose.cs",
 	],
@@ -3818,6 +3820,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 	],
 },
 "&Notes only":
@@ -3832,6 +3835,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityGate.cs",
 	],
 },
@@ -3840,6 +3844,18 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityGate.cs",
+	],
+},
+"&Target Note:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
+	],
+},
+"&Retriggerable":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 	],
 },
 "&Mode:":
@@ -6871,13 +6887,19 @@
 		".\\Cantabile\\Options\\GeneralPage.cs",
 	],
 },
-"MSB\/LSB Combined (eg: 1234)":
+"MSB\/LSB Combined (eg: 1234.1)":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\GeneralPage.cs",
 	],
 },
-"MSB\/LSB Separate (eg: 9.82)":
+"MSB\/LSB Separate (eg: 9.82.1)":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\GeneralPage.cs",
+	],
+},
+"Bank and Program Combined":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\GeneralPage.cs",
@@ -8911,19 +8933,6 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 	],
 },
-"Suspended":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-	],
-},
-"Suspends the plugin from processing audio and MIDI but keeps it loaded into memory.\n\n(Alt+Click to unload the plugin).":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-	],
-},
 "The name of this plugin.\n\nDouble click to open the plugin's editor or Alt+Double click to edit its parameters.":
 {
 	"contexts": [
@@ -9078,12 +9087,6 @@
 	],
 },
 "Starts the rack processing audio and MIDI.":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-	],
-},
-"Suspends the rack from processing audio and MIDI but keeps it loaded into memory.":
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
@@ -12038,6 +12041,12 @@
 		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
+"Key Range to Note":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
 "-- no description --":
 {
 	"contexts": [
@@ -12663,6 +12672,24 @@
 	],
 },
 "Decode from sys-ex: {0}{1}":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Map Key range {0} - {1} on {2}":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+" to {0}":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+", retriggerable":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",

@@ -1889,6 +1889,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToProgramMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
@@ -2173,6 +2174,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\Transpose.cs"
 		],
@@ -2183,7 +2185,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs"
 		],
 		"translation": "Naar (&O):",
 		"machine": false
@@ -2214,6 +2217,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityGate.cs"
 		],
 		"translation": "Onderdrukken buiten bereik noten (&s)",
@@ -14101,24 +14105,6 @@
 		"translation": "One gebaseerde",
 		"machine": true
 	},
-	"MSB\/LSB Combined (eg: 1234)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "MSB \/ LSB gecombineerd (bijvoorbeeld: 1234)",
-		"machine": true
-	},
-	"MSB\/LSB Separate (eg: 9.82)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "MSB \/ LSB aparte (bijv: 9,82)",
-		"machine": true
-	},
 	"Load Song by Index (Delayed)": 
 	{
 		"contexts": 
@@ -18464,25 +18450,6 @@
 		"translation": "Start de plugin verwerking audio en MIDI.",
 		"machine": true
 	},
-	"Suspended": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
-		],
-		"translation": "Geschorst",
-		"machine": true
-	},
-	"Suspends the plugin from processing audio and MIDI but keeps it loaded into memory.\n\n(Alt+Click to unload the plugin).": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
-		],
-		"translation": "Schorst de plugin van verwerking audio en MIDI, maar houdt het in het geheugen geladen.\n\n(Alt + klik om de plugin te lossen).",
-		"machine": true
-	},
 	"Bypasses the audio signal around this plugin.": 
 	{
 		"contexts": 
@@ -18580,15 +18547,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
 		],
 		"translation": "Begint het rek verwerking audio en MIDI.",
-		"machine": true
-	},
-	"Suspends the rack from processing audio and MIDI but keeps it loaded into memory.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
-		],
-		"translation": "Schorst de rek bij de verwerking van audio en MIDI, maar houdt het in het geheugen geladen.",
 		"machine": true
 	},
 	"The name of this rack.\n\nDouble click to open the rack for editing.": 
@@ -19282,6 +19240,87 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
 		],
 		"translation": "Pas de snelheid van dit mediabestand.",
+		"machine": true
+	},
+	"&Target Note:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs"
+		],
+		"translation": "doelnoo&t:",
+		"machine": true
+	},
+	"&Retriggerable": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs"
+		],
+		"translation": "&retriggerable",
+		"machine": true
+	},
+	"MSB\/LSB Combined (eg: 1234.1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "MSB \/ LSB gecombineerd (bijvoorbeeld: 1234,1)",
+		"machine": true
+	},
+	"MSB\/LSB Separate (eg: 9.82.1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "MSB \/ LSB apart (bijv: 9.82.1)",
+		"machine": true
+	},
+	"Bank and Program Combined": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Bank en het programma gecombineerd",
+		"machine": true
+	},
+	"Key Range to Note": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Key range op te merken",
+		"machine": true
+	},
+	"Map Key range {0} - {1} on {2}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Kaart toetsbereik {0} - {1} op {2}",
+		"machine": true
+	},
+	" to {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": " naar {0}",
+		"machine": true
+	},
+	", retriggerable": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": ", retriggerable",
 		"machine": true
 	}
 }
