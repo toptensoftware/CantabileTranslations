@@ -809,18 +809,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
+			".\\Cantabile\\Commands\\StateCommands.cs"
 		],
 		"translation": "Atnaujinti būklė",
-		"machine": true
-	},
-	"Automatically Update States": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		],
-		"translation": "Automatiškai atnaujinti būsenas",
 		"machine": true
 	},
 	"Increment (Fine)": 
@@ -1370,9 +1361,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
@@ -1630,8 +1621,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+			".\\Cantabile\\Commands\\ViewCommands.cs"
 		],
 		"translation": "dainų dalys",
 		"machine": true
@@ -2389,6 +2379,7 @@
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
 			".\\Cantabile\\Options\\MidiPortsPage.cs"
 		],
 		"translation": "vardas",
@@ -4786,15 +4777,6 @@
 		"translation": "Raskite E&xplorer",
 		"machine": true
 	},
-	"Prompt to save:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "Greitas sutaupyti:",
-		"machine": true
-	},
 	"Never": 
 	{
 		"contexts": 
@@ -5102,7 +5084,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\StateDialog.cs"
+			".\\Cantabile\\Commands\\StateCommands.cs",
+			".\\Cantabile\\Dialogs\\StateDialog.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "nauja valstybė",
 		"machine": true
@@ -6280,7 +6264,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Licensing\\ExpiredPage.cs",
 			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
 		],
 		"translation": "Pirkti da&bar",
@@ -7219,33 +7202,6 @@
 		"translation": "MIDI maršruto nustatymai...",
 		"machine": true
 	},
-	"Set Tra&nspose...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "&nustatyti perkėlimą į nacionalinę teisę...",
-		"machine": true
-	},
-	"Update &State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Atnaujinti būklė (&S)",
-		"machine": true
-	},
-	"Automatica&lly Update States": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Automatiškai atnaujinti būsenas (&L)",
-		"machine": true
-	},
 	"&Insert": 
 	{
 		"contexts": 
@@ -7291,24 +7247,6 @@
 		"translation": "Įterptosios stovas (iš &failo)...",
 		"machine": true
 	},
-	"New &Rack...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "nauja bagažinė (&R)...",
-		"machine": true
-	},
-	"E&xisting Rack...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Esama stovas (&X)...",
-		"machine": true
-	},
 	"Media Pla&yer": 
 	{
 		"contexts": 
@@ -7334,15 +7272,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Sužinokite priva&lomas...",
-		"machine": true
-	},
-	"S&tate...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "vals&tybės...",
 		"machine": true
 	},
 	"&Control": 
@@ -8239,15 +8168,6 @@
 			".\\Cantabile\\MainWindow\\MainWindow.cs"
 		],
 		"translation": "Nežinau, kaip atidaryti failus, kurių tipas \"{0}'.",
-		"machine": true
-	},
-	"Do you want to save changes to the following file(s)?\n\n{0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		],
-		"translation": "Ar norite išsaugoti pakeitimus į šį failą (-us)?\n\n{0}",
 		"machine": true
 	},
 	"Update information not available": 
@@ -14778,24 +14698,6 @@
 		"translation": "Narės leidžia jums išsaugoti ir prisiminti vaizdus iš valstybės dainą ar stovo.",
 		"machine": true
 	},
-	"New Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
-		],
-		"translation": "Nauja daina dalis",
-		"machine": true
-	},
-	"New Rack State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
-		],
-		"translation": "Nauja stovo būklė",
-		"machine": true
-	},
 	"Delete State": 
 	{
 		"contexts": 
@@ -17179,15 +17081,6 @@
 			".\\Cantabile.Application\\Racks\\Song\\OnscreenKeyboardState.cs"
 		],
 		"translation": "Aktyvus oktava (viršutinis)",
-		"machine": true
-	},
-	"Part {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\SetLists\\SetListEntry.cs"
-		],
-		"translation": "{0} dalis",
 		"machine": true
 	},
 	"Delete Song": 
@@ -19616,15 +19509,6 @@
 		"translation": "Pasirinkta daina programa",
 		"machine": true
 	},
-	"Auto Update States": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		],
-		"translation": "Auto Update narės",
-		"machine": true
-	},
 	"On Specific Trigger": 
 	{
 		"contexts": 
@@ -19776,15 +19660,6 @@
 			".\\Cantabile\\MainWindow\\StatusPanel.cs"
 		],
 		"translation": "Išsaugoti& {0} {1} stovai",
-		"machine": true
-	},
-	"Always sa&ve when saving parent song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "įrašant patronuojanti dainą &visada sutaupoma",
 		"machine": true
 	},
 	"1 digit counter": 
@@ -20388,6 +20263,304 @@
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs"
 		],
 		"translation": "Išvesties prievadas - {0}",
+		"machine": true
+	},
+	"Toggle Lock": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Perjungti spyna",
+		"machine": true
+	},
+	"Revert File": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Grąžinti bylą",
+		"machine": true
+	},
+	"New Linked Clone": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Nauja susijęs klonas",
+		"machine": true
+	},
+	"Edit Current State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Redaguoti esamą",
+		"machine": true
+	},
+	"Delete Current State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Ištrinti esamą",
+		"machine": true
+	},
+	"Revert Current State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Grąžinti esamą",
+		"machine": true
+	},
+	"Lock\/Unlock Current State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Užrakinti \/ atrakinti dabartinė",
+		"machine": true
+	},
+	"Lock All States": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Užfiksuokite visas valstybes",
+		"machine": true
+	},
+	"Unlock All States": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Atrakinti visas valstybes",
+		"machine": true
+	},
+	"Save Changes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs"
+		],
+		"translation": "Išsaugoti pakeitimus",
+		"machine": true
+	},
+	"Do you want to save changes to these songs:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs"
+		],
+		"translation": "Ar norite išsaugoti pakeitimus šių dainų:",
+		"machine": true
+	},
+	"Unsaved Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs"
+		],
+		"translation": "neįrašytų daina",
+		"machine": true
+	},
+	"&Mark as Modified:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Žy&mėti kaip keistas:",
+		"machine": true
+	},
+	"S&ave Rack on Unloading:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Išs&augoti Rack dėl iškrovimo:",
+		"machine": true
+	},
+	"Always": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "visada",
+		"machine": true
+	},
+	"Your update subscription may not cover this build :(": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs"
+		],
+		"translation": "Jūsų atnaujinimas prenumerata negali padengti šios statyti:(",
+		"machine": true
+	},
+	"About Subscriptions": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs"
+		],
+		"translation": "apie prenumeratos",
+		"machine": true
+	},
+	"Renew Subscription": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+			".\\Cantabile\\Licensing\\LicenseManager.cs"
+		],
+		"translation": "atnaujinti prenumeratą",
+		"machine": true
+	},
+	"Buy Now": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LicenseManager.cs"
+		],
+		"translation": "Pirkti dabar",
+		"machine": true
+	},
+	"Re&vert...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "sugrįžti (&V)...",
+		"machine": true
+	},
+	"&State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "val&stybės",
+		"machine": true
+	},
+	"New Linked &Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Nauja susijęs stovas (&R)...",
+		"machine": true
+	},
+	"E&xisting Linked Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Esama susijęs stovo (&X)...",
+		"machine": true
+	},
+	"Global Tra&nspose...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Pasauli&nis perkėlimą į nacionalinę teisę...",
+		"machine": true
+	},
+	"Do you want to save changes?\n\n{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Ar norite išsaugoti pakeitimus?\n\n{0}",
+		"machine": true
+	},
+	"Re&vert Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Grąžinti sto&vo...",
+		"machine": true
+	},
+	"Re&vert Song...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Grąžinti dainą (&V)...",
+		"machine": true
+	},
+	"States (aka Song Parts)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Narėse (taip pat žinomas kaip dainų dalys)",
+		"machine": true
+	},
+	"&Locked": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "užrakintas (&L)",
+		"machine": true
+	},
+	"Lock": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "spyna",
+		"machine": true
+	},
+	"Unlock": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "atrakinti",
+		"machine": true
+	},
+	"Lock State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+		],
+		"translation": "Užrakinti būklė",
+		"machine": true
+	},
+	"Unlock State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+		],
+		"translation": "atrakinti būklę",
 		"machine": true
 	}
 }

@@ -431,6 +431,7 @@
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
 			".\\Cantabile\\Options\\MidiPortsPage.cs"
 		],
 		"translation": "Nazwa",
@@ -2609,9 +2610,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
@@ -7023,7 +7024,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\StateDialog.cs"
+			".\\Cantabile\\Commands\\StateCommands.cs",
+			".\\Cantabile\\Dialogs\\StateDialog.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Nowy stan",
 		"machine": true
@@ -7054,15 +7057,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
 		],
 		"translation": "Edytor plug&in...",
-		"machine": true
-	},
-	"S&tate...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "S&tan...",
 		"machine": true
 	},
 	"States &Behavior": 
@@ -7404,15 +7398,6 @@
 			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
 		],
 		"translation": "Przenieś utwór",
-		"machine": true
-	},
-	"Update &State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "&Stan aktualizacji",
 		"machine": true
 	},
 	"Cantabile Bank Files": 
@@ -8246,15 +8231,6 @@
 		"translation": "Tr: {0}",
 		"machine": true
 	},
-	"Set Tra&nspose...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Ustaw tra&nspozycji...",
-		"machine": true
-	},
 	"&All Sounds Off": 
 	{
 		"contexts": 
@@ -8443,18 +8419,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
+			".\\Cantabile\\Commands\\StateCommands.cs"
 		],
 		"translation": "Stan aktualizacji",
-		"machine": true
-	},
-	"Automatically Update States": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		],
-		"translation": "Automatyczna aktualizacja stanów",
 		"machine": true
 	},
 	"Increment Program Number": 
@@ -9900,15 +9867,6 @@
 			".\\Cantabile\\Commands\\ControlCommands.cs"
 		],
 		"translation": "Ostatnio zaprogramowana",
-		"machine": true
-	},
-	"Automatica&lly Update States": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Automatyczna aktua&lizacja stanów",
 		"machine": true
 	},
 	"Pla&y": 
@@ -11695,24 +11653,6 @@
 		"translation": "Najnowsze piosenki (&R)",
 		"machine": true
 	},
-	"New &Rack...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Nowy stojak (&R)...",
-		"machine": true
-	},
-	"E&xisting Rack...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Istniejące rack (&X)...",
-		"machine": true
-	},
 	"Rout&ing": 
 	{
 		"contexts": 
@@ -11756,15 +11696,6 @@
 			".\\Cantabile\\MainWindow\\MainWindow.cs"
 		],
 		"translation": "{0}\n\nCzy chcesz otworzyć tę piosenkę?",
-		"machine": true
-	},
-	"Do you want to save changes to the following file(s)?\n\n{0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		],
-		"translation": "Czy chcesz zapisać zmiany w następującym pliku (ów)?\n\n{0}",
 		"machine": true
 	},
 	"Insert Songs": 
@@ -12387,15 +12318,6 @@
 			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
 		],
 		"translation": "Nowa trasa",
-		"machine": true
-	},
-	"Part {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\SetLists\\SetListEntry.cs"
-		],
-		"translation": "Część {0}",
 		"machine": true
 	},
 	"Add Plugin": 
@@ -13607,7 +13529,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Licensing\\ExpiredPage.cs",
 			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
 		],
 		"translation": "Kup teraz (&B)",
@@ -14871,15 +14792,6 @@
 			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
 		],
 		"translation": "Znajdź w eksploratorze (&X)",
-		"machine": true
-	},
-	"Prompt to save:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "Pytaj, aby zapisać:",
 		"machine": true
 	},
 	"Never": 
@@ -17361,8 +17273,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+			".\\Cantabile\\Commands\\ViewCommands.cs"
 		],
 		"translation": "części utworu",
 		"machine": true
@@ -18867,24 +18778,6 @@
 		"translation": "Wybierz atrybuty wybranego obiektu powinny być kontrolowane przez państwa",
 		"machine": true
 	},
-	"New Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
-		],
-		"translation": "Nowa część piosenki",
-		"machine": true
-	},
-	"New Rack State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
-		],
-		"translation": "Nowy stan stojak",
-		"machine": true
-	},
 	"Embedded Rack (From File)": 
 	{
 		"contexts": 
@@ -19616,15 +19509,6 @@
 		"translation": "Wybrany program piosenka",
 		"machine": true
 	},
-	"Auto Update States": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		],
-		"translation": "stany aktualizacji Auto",
-		"machine": true
-	},
 	"On Specific Trigger": 
 	{
 		"contexts": 
@@ -19776,15 +19660,6 @@
 			".\\Cantabile\\MainWindow\\StatusPanel.cs"
 		],
 		"translation": "Regały& zapisane {0} {1}",
-		"machine": true
-	},
-	"Always sa&ve when saving parent song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "Zawsze zachowaj przy zapisywaniu piosenkę rodzica (&V)",
 		"machine": true
 	},
 	"1 digit counter": 
@@ -20388,6 +20263,304 @@
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs"
 		],
 		"translation": "Port wyjściowy - {0}",
+		"machine": true
+	},
+	"Toggle Lock": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Przełącznik blokady",
+		"machine": true
+	},
+	"Revert File": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Przywróć plik",
+		"machine": true
+	},
+	"New Linked Clone": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Nowy związane klon",
+		"machine": true
+	},
+	"Edit Current State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Edycja stan obecny",
+		"machine": true
+	},
+	"Delete Current State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Usuń stan obecny",
+		"machine": true
+	},
+	"Revert Current State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Przywróć stan obecny",
+		"machine": true
+	},
+	"Lock\/Unlock Current State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Blokowanie \/ odblokowanie stan obecny",
+		"machine": true
+	},
+	"Lock All States": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Zablokować wszystkie stany",
+		"machine": true
+	},
+	"Unlock All States": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Odblokuj wszystkie stany",
+		"machine": true
+	},
+	"Save Changes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs"
+		],
+		"translation": "Zapisz zmiany",
+		"machine": true
+	},
+	"Do you want to save changes to these songs:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs"
+		],
+		"translation": "Czy chcesz zapisać zmiany do tych piosenek:",
+		"machine": true
+	},
+	"Unsaved Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs"
+		],
+		"translation": "Niezapisany piosenki",
+		"machine": true
+	},
+	"&Mark as Modified:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Oznacz jako z&modyfikowane:",
+		"machine": true
+	},
+	"S&ave Rack on Unloading:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Z&apisz stojak na rozładunek:",
+		"machine": true
+	},
+	"Always": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		],
+		"translation": "Zawsze",
+		"machine": true
+	},
+	"Your update subscription may not cover this build :(": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs"
+		],
+		"translation": "Subskrypcja aktualizacji nie może obejmować ten build:(",
+		"machine": true
+	},
+	"About Subscriptions": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs"
+		],
+		"translation": "o subskrypcji",
+		"machine": true
+	},
+	"Renew Subscription": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+			".\\Cantabile\\Licensing\\LicenseManager.cs"
+		],
+		"translation": "Odnów subskrypcję",
+		"machine": true
+	},
+	"Buy Now": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\LicenseManager.cs"
+		],
+		"translation": "Kup teraz",
+		"machine": true
+	},
+	"Re&vert...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Odwracać (&V)...",
+		"machine": true
+	},
+	"&State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "&Stan",
+		"machine": true
+	},
+	"New Linked &Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Nowy związane &rack...",
+		"machine": true
+	},
+	"E&xisting Linked Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Istniejące połączony rack (&X)...",
+		"machine": true
+	},
+	"Global Tra&nspose...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Global&ny transpozycji...",
+		"machine": true
+	},
+	"Do you want to save changes?\n\n{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Czy chcesz zapisać zmiany?\n\n{0}",
+		"machine": true
+	},
+	"Re&vert Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Przywróć rack (&V)...",
+		"machine": true
+	},
+	"Re&vert Song...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Przywróć utwór (&V)...",
+		"machine": true
+	},
+	"States (aka Song Parts)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "USA (aka części piosenki)",
+		"machine": true
+	},
+	"&Locked": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Zab&lokowany",
+		"machine": true
+	},
+	"Lock": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Zamek",
+		"machine": true
+	},
+	"Unlock": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Odblokować",
+		"machine": true
+	},
+	"Lock State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+		],
+		"translation": "stan blokady",
+		"machine": true
+	},
+	"Unlock State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+		],
+		"translation": "Odblokuj stan",
 		"machine": true
 	}
 }

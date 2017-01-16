@@ -561,13 +561,7 @@
 		".\\Cantabile\\Commands\\EditCommands.cs",
 	],
 },
-"Update State":
-{
-	"contexts": [
-		".\\Cantabile\\Commands\\EditCommands.cs",
-	],
-},
-"Automatically Update States":
+"Toggle Lock":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\EditCommands.cs",
@@ -758,6 +752,12 @@
 		".\\Cantabile\\Commands\\FileCommands.cs",
 	],
 },
+"Revert File":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
 "New Set List":
 {
 	"contexts": [
@@ -939,16 +939,6 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
 	],
 },
-"State":
-{
-	"contexts": [
-		".\\Cantabile\\Commands\\InsertCommands.cs",
-		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
-		".\\Cantabile.Application\\Bindable\\Transport.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-	],
-},
 "Binding":
 {
 	"contexts": [
@@ -980,6 +970,62 @@
 	"contexts": [
 		".\\Cantabile\\Commands\\InsertCommands.cs",
 		".\\Cantabile.Application\\ShowNotes\\ShowNote.cs",
+	],
+},
+"New State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\StateCommands.cs",
+		".\\Cantabile\\Dialogs\\StateDialog.cs",
+		".\\Cantabile\\SidePanel\\StatesPanel.cs",
+	],
+},
+"New Linked Clone":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\StateCommands.cs",
+	],
+},
+"Edit Current State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\StateCommands.cs",
+	],
+},
+"Update State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\StateCommands.cs",
+	],
+},
+"Delete Current State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\StateCommands.cs",
+	],
+},
+"Revert Current State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\StateCommands.cs",
+	],
+},
+"Lock\/Unlock Current State":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\StateCommands.cs",
+	],
+},
+"Lock All States":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\StateCommands.cs",
+	],
+},
+"Unlock All States":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\StateCommands.cs",
 	],
 },
 "Options":
@@ -1262,7 +1308,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ViewCommands.cs",
-		".\\Cantabile\\SidePanel\\StatesPanel.cs",
 	],
 },
 "States":
@@ -1770,6 +1815,7 @@
 		".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+		".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
 		".\\Cantabile\\Options\\MidiPortsPage.cs",
 	],
 },
@@ -3642,6 +3688,24 @@
 		".\\Cantabile\\Dialogs\\PromptPlatformDialog.cs",
 	],
 },
+"Save Changes":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
+	],
+},
+"Do you want to save changes to these songs:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
+	],
+},
+"Unsaved Song":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
+	],
+},
 " Options":
 {
 	"contexts": [
@@ -3668,7 +3732,13 @@
 		".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
 	],
 },
-"Prompt to save:":
+"&Mark as Modified:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+	],
+},
+"S&ave Rack on Unloading:":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
@@ -3698,7 +3768,7 @@
 		".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
 	],
 },
-"Always sa&ve when saving parent song":
+"Always":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
@@ -3878,12 +3948,6 @@
 		".\\Cantabile\\Dialogs\\SongLoadProgressDialog.cs",
 	],
 },
-"New State":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\StateDialog.cs",
-	],
-},
 "Edit State":
 {
 	"contexts": [
@@ -4003,6 +4067,25 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+	],
+},
+"Your update subscription may not cover this build :(":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+	],
+},
+"About Subscriptions":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+	],
+},
+"Renew Subscription":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+		".\\Cantabile\\Licensing\\LicenseManager.cs",
 	],
 },
 "More Information":
@@ -4683,13 +4766,6 @@
 		".\\Cantabile\\Licensing\\ExpiredPage.cs",
 	],
 },
-"&Buy Now":
-{
-	"contexts": [
-		".\\Cantabile\\Licensing\\ExpiredPage.cs",
-		".\\Cantabile\\Licensing\\TrialNoticePage.cs",
-	],
-},
 "&Use a Different License":
 {
 	"contexts": [
@@ -4721,6 +4797,12 @@
 	],
 },
 "Your trial has expired :(\nTo continue using this edition of Cantabile you must purchase a license.":
+{
+	"contexts": [
+		".\\Cantabile\\Licensing\\LicenseManager.cs",
+	],
+},
+"Buy Now":
 {
 	"contexts": [
 		".\\Cantabile\\Licensing\\LicenseManager.cs",
@@ -4883,6 +4965,12 @@
 	],
 },
 "Choose a &Different License":
+{
+	"contexts": [
+		".\\Cantabile\\Licensing\\TrialNoticePage.cs",
+	],
+},
+"&Buy Now":
 {
 	"contexts": [
 		".\\Cantabile\\Licensing\\TrialNoticePage.cs",
@@ -5162,6 +5250,12 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
+"Re&vert...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
 "O&ptions...":
 {
 	"contexts": [
@@ -5240,6 +5334,12 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
+"&State":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
 "Can't &Undo":
 {
 	"contexts": [
@@ -5307,24 +5407,6 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"Set Tra&nspose...":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-	],
-},
-"Update &State":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-	],
-},
-"Automatica&lly Update States":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-	],
-},
 "&Insert":
 {
 	"contexts": [
@@ -5355,13 +5437,13 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"New &Rack...":
+"New Linked &Rack...":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"E&xisting Rack...":
+"E&xisting Linked Rack...":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -5380,12 +5462,6 @@
 	],
 },
 "&Learn Binding...":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-	],
-},
-"S&tate...":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -5507,6 +5583,12 @@
 	],
 },
 "Select &Master Transport":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
+"Global Tra&nspose...":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -5983,7 +6065,7 @@
 		".\\Cantabile\\MainWindow\\MainWindow.cs",
 	],
 },
-"Do you want to save changes to the following file(s)?\n\n{0}":
+"Do you want to save changes?\n\n{0}":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainWindow.cs",
@@ -8695,6 +8777,18 @@
 		".\\Cantabile\\RackPanel\\RackPanel.cs",
 	],
 },
+"Re&vert Rack...":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+	],
+},
+"Re&vert Song...":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+	],
+},
 "Rack O&ptions...":
 {
 	"contexts": [
@@ -9005,6 +9099,16 @@
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+	],
+},
+"State":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
+		".\\Cantabile\\SidePanel\\StatesPanel.cs",
+		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
 "Source":
@@ -10516,13 +10620,7 @@
 		".\\Cantabile\\SidePanel\\StatesPanel.cs",
 	],
 },
-"New Song Part":
-{
-	"contexts": [
-		".\\Cantabile\\SidePanel\\StatesPanel.cs",
-	],
-},
-"New Rack State":
+"States (aka Song Parts)":
 {
 	"contexts": [
 		".\\Cantabile\\SidePanel\\StatesPanel.cs",
@@ -10558,6 +10656,12 @@
 		".\\Cantabile\\SidePanel\\StatesPanel.cs",
 	],
 },
+"&Locked":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\StatesPanel.cs",
+	],
+},
 "Re-assign Program Numbers...":
 {
 	"contexts": [
@@ -10565,6 +10669,18 @@
 	],
 },
 "Decrement &Program Number":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\StatesPanel.cs",
+	],
+},
+"Lock":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\StatesPanel.cs",
+	],
+},
+"Unlock":
 {
 	"contexts": [
 		".\\Cantabile\\SidePanel\\StatesPanel.cs",
@@ -11004,12 +11120,6 @@
 	],
 },
 "Load State by Index (Instant)":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\States.cs",
-	],
-},
-"Auto Update States":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindable\\States.cs",
@@ -12143,6 +12253,18 @@
 		".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs",
 	],
 },
+"Lock State":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs",
+	],
+},
+"Unlock State":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs",
+	],
+},
 "Target Port":
 {
 	"contexts": [
@@ -12207,12 +12329,6 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Racks\\Song\\OnscreenKeyboardState.cs",
-	],
-},
-"Part {0}":
-{
-	"contexts": [
-		".\\Cantabile.Application\\SetLists\\SetListEntry.cs",
 	],
 },
 "Delete Song":
