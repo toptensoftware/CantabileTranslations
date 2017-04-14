@@ -2052,6 +2052,12 @@
 		".\\Cantabile\\Dialogs\\ChooseObjectDialog.cs",
 	],
 },
+"Choose Program":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\ChooseProgramDialog.cs",
+	],
+},
 "{0}\nExistence of this file indicates Cantabile is either running, or didn't shutdown cleanly":
 {
 	"contexts": [
@@ -2555,7 +2561,6 @@
 		".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 		".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 		".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
 		".\\Cantabile\\Options\\GeneralPage.cs",
@@ -3314,7 +3319,7 @@
 		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 	],
 },
-"Export &Program...":
+"E&xport Program...":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
@@ -3327,6 +3332,24 @@
 	],
 },
 "&Rename Program...":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"&Undo Program Changes":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"&Copy Program":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"&Paste Program":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
@@ -3362,7 +3385,43 @@
 		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 	],
 },
-"&Close":
+"Enable &Morph and Randomize":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Randomi&ze":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Show Plugin Editor":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Show Plugin Parameters":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"C&lose":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Open the plugin's built-in editor (if supported by the plugin).":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Edit the plugin parameters and select parameters for morph\/randomize.":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
@@ -3373,6 +3432,106 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+	],
+},
+"&Load from Current Settings":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"&Load from Program...":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Load from &{0}":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"&Swap with {0}":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Load Parameter Set A":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Select to edit the start (aka \"A\") parameters for morphing":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Morph:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Morph Position":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Morph parameters between start and end values.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Load Parameter Set B":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Select to edit the end (aka \"B\") parameters for morphing":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Randomize":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Constrain Randomization":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Constrain parameter randomization to the A-B range":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Randomize Limit":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Controls the maximum amount parameters are randomized by.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 	],
 },
 "Choose Preset":
@@ -3401,6 +3560,24 @@
 		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 	],
 },
+"&Enable All":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"&Disable All":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"&Disable All Inactive":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
 "Program and Bank Files":
 {
 	"contexts": [
@@ -3417,6 +3594,25 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Unknown file type '{0}'":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Cantabile Program Files":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Cantabile Bank Files":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 	],
 },
 "Edit Ports - {0}":
@@ -3541,12 +3737,6 @@
 	],
 },
 "Preset Bank Files":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
-	],
-},
-"Cantabile Bank Files":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
@@ -11869,6 +12059,12 @@
 	"contexts": [
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
+	],
+},
+"Constrained Randomization":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 	],
 },
 "Select Specific Preset":

@@ -33,16 +33,17 @@
 		[
 			".\\Cantabile\\Controls\\Composited\\MidiActivityIndicator.cs"
 		],
-		"translation": "Indicatore di attivita'  MIDI",
+		"translation": "Indicatore di attivita'ï¿½ MIDI",
 		"machine": false
 	},
 	"Run Mode": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\RunModeButton.cs"
+			".\\Cantabile\\Controls\\Composited\\RunModeButton.cs",
+			".\\Cantabile\\Controls\\Composited\\SoloModeButton.cs"
 		],
-		"translation": "Modalita'  di esecuzione",
+		"translation": "Modalita'ï¿½ di esecuzione",
 		"machine": false
 	},
 	"Disclosure Button": 
@@ -74,6 +75,7 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile.Core\\Curve.cs",
 			".\\Cantabile.Core\\PanAndFade.cs",
 			".\\Cantabile.Core\\ProgramMask.cs",
 			".\\GuiKit\\Forms\\MidiChannelBar.cs"
@@ -138,6 +140,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
@@ -153,6 +156,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginScanProgressDialog.cs",
@@ -184,7 +188,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs"
+			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
 		],
 		"translation": "&Rimuovi",
 		"machine": false
@@ -282,7 +287,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
-			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
 		],
 		"translation": "&Nessuno",
 		"machine": false
@@ -292,8 +298,10 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
 			".\\Cantabile\\Options\\MidiPortsPage.cs"
 		],
 		"translation": "Nome",
@@ -405,6 +413,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -415,8 +424,9 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Elimina (&D)",
@@ -446,7 +456,7 @@
 		[
 			".\\Cantabile\\Dialogs\\CrashCheckDialog.cs"
 		],
-		"translation": "Se si hanno problemi di riavvio, e' possibile utilizzare le seguenti\\opzioni per disabilitare la normale modalita'  di avvio e recuperare il controllo.",
+		"translation": "Se si hanno problemi di riavvio, e' possibile utilizzare le seguenti\\opzioni per disabilitare la normale modalita'ï¿½ di avvio e recuperare il controllo.",
 		"machine": false
 	},
 	"Don't start the audio &engine": 
@@ -530,15 +540,6 @@
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
 		],
 		"translation": "(nessuna selezione)",
-		"machine": false
-	},
-	"Learn& Mode": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs"
-		],
-		"translation": "Modalita' di apprendimento",
 		"machine": false
 	},
 	"MIDI Filter - {0}": 
@@ -630,7 +631,8 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Taglia",
 		"machine": false
@@ -646,7 +648,8 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Copia",
 		"machine": false
@@ -665,7 +668,8 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Incolla (&P)",
 		"machine": false
@@ -691,8 +695,9 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Sposta su (&V)",
@@ -710,8 +715,9 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Sposta giu (&W)",
@@ -1008,6 +1014,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\MultiDriverConfigDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs"
@@ -1087,15 +1094,6 @@
 		"translation": "&Importare Programma o Banco...",
 		"machine": false
 	},
-	"Export &Program...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
-		],
-		"translation": "Esporta &Programma...",
-		"machine": false
-	},
 	"Export &Bank...": 
 	{
 		"contexts": 
@@ -1150,15 +1148,6 @@
 		"translation": "&Guadagno plugin",
 		"machine": false
 	},
-	"&Close": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
-		],
-		"translation": "&Chiudi",
-		"machine": false
-	},
 	"Plugin Gain": 
 	{
 		"contexts": 
@@ -1174,7 +1163,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
 		],
 		"translation": "Seleziona il preset",
 		"machine": false
@@ -1240,7 +1230,6 @@
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
 			".\\Cantabile\\Options\\GeneralPage.cs"
@@ -1656,6 +1645,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToProgramMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
@@ -1930,6 +1920,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\Transpose.cs"
 		],
@@ -1940,7 +1931,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs"
 		],
 		"translation": "A:",
 		"machine": false
@@ -1971,6 +1963,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityGate.cs"
 		],
 		"translation": "Sopprimi le note al di fuori dell'intervallo (&S)",
@@ -1986,20 +1979,20 @@
 		"translation": "Copia i dati originali (&H)",
 		"machine": false
 	},
-	"&Target Note:":
+	"&Target Note:": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs"
 		],
 		"translation": "Destinazione nota",
 		"machine": false
 	},
-	"&Retriggerable":
+	"&Retriggerable": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs"
 		],
 		"translation": "Riattivabile",
 		"machine": false
@@ -2245,6 +2238,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\Split.cs"
 		],
 		"translation": "T&rasponi:",
@@ -2438,9 +2432,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\InsertCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
@@ -2494,7 +2488,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\RackPanel.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Ann&ulla l'operazione {0}",
@@ -2505,7 +2499,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\RackPanel.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "&Ripeti l'operazione {0}",
@@ -2927,7 +2921,7 @@
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
-		"translation": "Riproduci / Stop",
+		"translation": "Riproduci \/ Stop",
 		"machine": false
 	},
 	"Pause": 
@@ -2950,7 +2944,6 @@
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
@@ -3170,7 +3163,9 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
+			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
 			".\\Cantabile\\Misc\\VariableMenu.cs"
 		],
 		"translation": "&Sfoglia...",
@@ -4093,6 +4088,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Options\\HotKeysPage.cs",
 			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
@@ -4269,7 +4266,7 @@
 		[
 			".\\Cantabile\\Options\\WelcomePage.cs"
 		],
-		"translation": "Cantabile ti da'  il benvenuto! Prima di iniziare ci sono alcuni elementi che devono essere configurati:",
+		"translation": "Cantabile ti da'ï¿½ il benvenuto! Prima di iniziare ci sono alcuni elementi che devono essere configurati:",
 		"machine": false
 	},
 	"    â€¢ The audio driver that you want to use": 
@@ -4337,11 +4334,11 @@
 		"translation": "MIDI",
 		"machine": false
 	},
-	"Button":
+	"Button": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
 		],
 		"translation": "Pulsante",
 		"machine": false
@@ -4808,24 +4805,6 @@
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "Automazione di parametro non inizializzata",
-		"machine": false
-	},
-	"<invalid parameter index>": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "<indice di parametro non valido>",
-		"machine": false
-	},
-	"Automate parameter {0} ({1}) using CC #{2} on {3}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "Automatizza parametro {0} ({1}) utilizzando CC # {2} su {3}",
 		"machine": false
 	},
 	" {0}\/{1} -> {2}\/{3}, curve": 
@@ -5948,7 +5927,7 @@
 		[
 			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
 		],
-		"translation": "Si e' verificata un'eccezione non gestibile. Se si sceglie Continua, l'applicazione ignorera'  \nquesto errore e cerchera'  di continuare. Se si clicca Esci, l'applicazione \nsi chiudera' immediatamente.",
+		"translation": "Si e' verificata un'eccezione non gestibile. Se si sceglie Continua, l'applicazione ignorera'ï¿½ \nquesto errore e cerchera'ï¿½ di continuare. Se si clicca Esci, l'applicazione \nsi chiudera' immediatamente.",
 		"machine": false
 	},
 	"&Ignore": 
@@ -6039,6 +6018,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\StateDialog.cs",
 			".\\Cantabile\\Licensing\\RegisterPage.cs"
@@ -6179,6 +6159,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Aiuto (&H)",
@@ -6263,6 +6244,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
 			".\\Cantabile\\MainWindow\\ViewBinding.cs",
@@ -6422,6 +6404,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\Options\\GeneralPage.cs"
 		],
 		"translation": "Personalizzato",
@@ -7026,7 +7009,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 			".\\Cantabile.Application\\SetLists\\UndoUnits.cs"
 		],
 		"translation": "Inserisci song",
@@ -7046,7 +7029,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\StateDialog.cs"
+			".\\Cantabile\\Commands\\StateCommands.cs",
+			".\\Cantabile\\Dialogs\\StateDialog.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Nuovo stato",
 		"machine": false
@@ -7079,15 +7064,6 @@
 		"translation": "Ed&itor Plugin...",
 		"machine": false
 	},
-	"S&tate...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "S&tato...",
-		"machine": false
-	},
 	"States &Behavior": 
 	{
 		"contexts": 
@@ -7112,7 +7088,7 @@
 		[
 			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
 			".\\Cantabile\\MainWindow\\MainWindow.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "File Set List",
 		"machine": false
@@ -7121,7 +7097,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "Vuoi salvare le modifiche per impostare lista '{0}'?",
 		"machine": false
@@ -7148,7 +7124,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "Modifica Song&...",
 		"machine": false
@@ -7157,7 +7133,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Carica Song(&L)",
 		"machine": false
@@ -7383,6 +7360,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\TransposeDialog.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
@@ -7394,6 +7372,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		],
 		"translation": "Canale sorgente",
@@ -7427,19 +7406,11 @@
 		"translation": "Sposta Song",
 		"machine": false
 	},
-	"Update &State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Aggiornamento dello &stato",
-		"machine": false
-	},
 	"Cantabile Bank Files": 
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
 		],
 		"translation": "File banco Cantabile",
@@ -7485,7 +7456,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Aumenta numer&o di programma",
@@ -7504,7 +7476,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Regola il numero programma",
@@ -7514,7 +7486,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Regolare i numeri programma",
@@ -7620,6 +7592,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile.Application\\Bindable\\PCKeyboard.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
 		"translation": "Evento",
@@ -7953,7 +7926,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\SidePanel.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
 			".\\Cantabile.Application\\SetLists\\SetList.cs"
@@ -7979,29 +7952,29 @@
 		"translation": "Carica Song estesa (istantaneo)",
 		"machine": false
 	},
-	"Selected Song Index":
+	"Selected Song Index": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs",
+			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Seleziona indice song",
 		"machine": false
 	},
-	"Selected Song Scaled":
+	"Selected Song Scaled": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs",
+			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Seleziona song in scala",
 		"machine": false
 	},
-	"Selected Song Program":
+	"Selected Song Program": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs",
+			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Seleziona programma song",
 		"machine": false
@@ -8157,7 +8130,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
 		],
 		"translation": "Bypass",
 		"machine": false
@@ -8224,7 +8198,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
 		],
 		"translation": "Wet \/ Dry",
 		"machine": false
@@ -8237,7 +8212,8 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
 		],
 		"translation": "Pan",
 		"machine": false
@@ -8250,7 +8226,8 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
 		],
 		"translation": "Dissolvenza",
 		"machine": false
@@ -8288,15 +8265,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs"
 		],
 		"translation": "Tr: {0}",
-		"machine": false
-	},
-	"Set Tra&nspose...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Set di trasposizio&ne...",
 		"machine": false
 	},
 	"&All Sounds Off": 
@@ -8487,25 +8455,16 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
+			".\\Cantabile\\Commands\\StateCommands.cs"
 		],
 		"translation": "Aggiornamento dello stato",
-		"machine": false
-	},
-	"Automatically Update States": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		],
-		"translation": "Aggiorna automaticamente gli stati",
 		"machine": false
 	},
 	"Increment Program Number": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Aumenta numero di programma",
@@ -8515,7 +8474,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Diminuisci numero di programma",
@@ -8623,15 +8582,6 @@
 		"translation": "Monitor MIDI",
 		"machine": false
 	},
-	"On-screen Keyboard": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		],
-		"translation": "Tastiera su schermo",
-		"machine": false
-	},
 	"Toggle Metronome": 
 	{
 		"contexts": 
@@ -8670,24 +8620,6 @@
 		"translation": "Tema:",
 		"machine": false
 	},
-	"Dark": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Scuro",
-		"machine": false
-	},
-	"Light": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Chiaro",
-		"machine": false
-	},
 	"Hot Keys": 
 	{
 		"contexts": 
@@ -8701,7 +8633,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs"
+			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
 		],
 		"translation": "File",
 		"machine": false
@@ -8784,8 +8717,12 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\Options\\HotKeysPage.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Modifica (&E)...",
@@ -8824,7 +8761,7 @@
 		[
 			".\\Cantabile\\Options\\HotKeysPage.cs"
 		],
-		"translation": "Questo tasto e' gia' associato a {0}",
+		"translation": "Questo tasto e' gia'ï¿½associato a {0}",
 		"machine": false
 	},
 	"Please select a command": 
@@ -9028,11 +8965,11 @@
 		"translation": "Numero di parametro",
 		"machine": false
 	},
-	"(missing target)":
+	"(missing target)": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "(destinazione mancante)",
 		"machine": false
@@ -9137,7 +9074,7 @@
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
-		"translation": "Velocity ",
+		"translation": "Velocityï¿½",
 		"machine": false
 	},
 	"Balance": 
@@ -9219,15 +9156,6 @@
 		"translation": "Carica la prima Song in Set List (&F)",
 		"machine": false
 	},
-	"Load &current song in Set List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\StartupPage.cs"
-		],
-		"translation": "&Carica la Song corrente in Set List",
-		"machine": false
-	},
 	"Onscreen &Keyboard": 
 	{
 		"contexts": 
@@ -9305,7 +9233,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Numero di programma non valido",
@@ -9649,6 +9577,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\QuickController\\QuickController.cs"
 		],
 		"translation": "Metrica del tempo non valida",
@@ -9824,12 +9753,12 @@
 		],
 		"translation": "Imposta metrica tempo",
 		"machine": false
-	},		
-	"Solo this rack":
+	},
+	"Solo this rack": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs",
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
 		],
 		"translation": "Metti in Solo questo rack",
 		"machine": false
@@ -9839,7 +9768,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+			".\\Cantabile.Application\\Bindable\\Triggers.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
 		],
 		"translation": "Parametro non valido",
 		"machine": false
@@ -9986,15 +9916,6 @@
 		"translation": "Ultimo preset",
 		"machine": false
 	},
-	"Automatica&lly Update States": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Aggiorna automaticamente g&li stati",
-		"machine": false
-	},
 	"Pla&y": 
 	{
 		"contexts": 
@@ -10074,15 +9995,6 @@
 			".\\Cantabile.Application\\Bindable\\SetList.cs"
 		],
 		"translation": "Song successiva o parte (in ritardo)",
-		"machine": false
-	},
-	"Next Song or Part (Istantaneo)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
-		],
-		"translation": "Song successiva o parte (istantaneo)",
 		"machine": false
 	},
 	"Previous Song or Part (Delayed)": 
@@ -10173,7 +10085,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\ReassignProgramNumbersDialog.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Riassegna numeri di programma",
@@ -10409,7 +10321,7 @@
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
 		],
-		"translation": "Velocita' :",
+		"translation": "Velocita'ï¿½:",
 		"machine": false
 	},
 	"500%": 
@@ -10452,7 +10364,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
 		],
 		"translation": "Porte &audio...",
 		"machine": false
@@ -10502,20 +10415,20 @@
 		"translation": "Evento trigger indicizzato",
 		"machine": false
 	},
-	"On Specific Trigger":
+	"On Specific Trigger": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Triggers.cs",
+			".\\Cantabile.Application\\Bindable\\Triggers.cs"
 		],
 		"translation": "Su specifico trigger",
 		"machine": false
 	},
-	"On Indexed Trigger":
+	"On Indexed Trigger": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Triggers.cs",
+			".\\Cantabile.Application\\Bindable\\Triggers.cs"
 		],
 		"translation": "Su trigger indicizzato",
 		"machine": false
@@ -10575,7 +10488,7 @@
 		[
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs"
 		],
-		"translation": "Velocita'  di riproduzione",
+		"translation": "Velocita'ï¿½ di riproduzione",
 		"machine": false
 	},
 	"MediaPlayer": 
@@ -10923,7 +10836,7 @@
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
-		"translation": "Prima/o  (&F)",
+		"translation": "Prima\/o  (&F)",
 		"machine": false
 	},
 	"&Next": 
@@ -10932,7 +10845,7 @@
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
-		"translation": "Successiva/o  (&N)",
+		"translation": "Successiva\/o  (&N)",
 		"machine": false
 	},
 	"&Previous": 
@@ -10950,7 +10863,7 @@
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
-		"translation": "U&ltima/o",
+		"translation": "U&ltima\/o",
 		"machine": false
 	},
 	"Range:": 
@@ -11459,15 +11372,16 @@
 		[
 			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
-		"translation": "Una registrazione con questo nome esiste gia' ",
+		"translation": "Una registrazione con questo nome esiste gia'ï¿½",
 		"machine": false
 	},
 	"&Rename...": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
 		"translation": "&Rinomina...",
 		"machine": false
@@ -11590,14 +11504,15 @@
 		"translation": "Intervallo di destinazione variabile:",
 		"machine": false
 	},
-	"&Curve Kind:":
+	"&Curve Kind:": 
 	{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs",
-		".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs",
-	],
-	"translation": "Tipo di curva:",
-	"machine": false
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs",
+			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
+		],
+		"translation": "Tipo di curva:",
+		"machine": false
 	},
 	"{0:N1}": 
 	{
@@ -11732,6 +11647,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
 		],
 		"translation": "&Ignora impostazioni di trasposizione globali",
@@ -11745,7 +11661,7 @@
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\Options\\StartupPage.cs",
 			".\\Cantabile\\RackPanel\\SongSaveActions.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "File di Song",
 		"machine": false
@@ -11822,24 +11738,6 @@
 		"translation": "Song &recenti",
 		"machine": false
 	},
-	"New &Rack...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Nuovo rack collegato...",
-		"machine": false
-	},
-	"E&xisting Rack...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Rack collegato esistente (&X)...",
-		"machine": false
-	},
 	"Rout&ing": 
 	{
 		"contexts": 
@@ -11885,20 +11783,11 @@
 		"translation": "{0}\n\nVuoi aprire questa song?",
 		"machine": false
 	},
-	"Do you want to save changes to the following file(s)?\n\n{0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		],
-		"translation": "Vuoi salvare le modifiche nel seguente file (s)?\n\n{0}",
-		"machine": false
-	},
 	"Insert Songs": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "Inserisci song",
 		"machine": false
@@ -11945,7 +11834,7 @@
 		[
 			".\\Cantabile\\Options\\AudioPortsPage.cs"
 		],
-		"translation": "Qui e' possibile creare le porte audio che saranno a disposizione per le vostre song\n e mapparli ai canali fisici della tua scheda audio.\n\n(Suggerimento: E' possibile creare rapidamente semplici assegnazioni facendo clic destro nella lista qui sopra)",
+		"translation": "Qui e' possibile creare le porte audio che sarannoï¿½a disposizione per le vostre song\n e mapparli ai canali fisici della tua scheda audio.\n\n(Suggerimento: E' possibile creare rapidamente semplici assegnazioni facendo clic destro nella lista qui sopra)",
 		"machine": false
 	},
 	"Save Songs when switching via File menu:": 
@@ -12514,15 +12403,6 @@
 			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
 		],
 		"translation": "Nuova rotta",
-		"machine": false
-	},
-	"Part {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\SetLists\\SetListEntry.cs"
-		],
-		"translation": "Parte {0}",
 		"machine": false
 	},
 	"Add Plugin": 
@@ -13099,65 +12979,65 @@
 		"translation": "Modifica mostra note",
 		"machine": false
 	},
-	"&Text:":
+	"&Text:": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs"
 		],
 		"translation": "Testo:",
 		"machine": false
 	},
-	"Text &Alignment:":
+	"Text &Alignment:": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs"
 		],
 		"translation": "Allineamento testo:",
 		"machine": false
 	},
-	"Text &Size:":
+	"Text &Size:": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs"
 		],
 		"translation": "Dimensione testo:",
 		"machine": false
 	},
-	"&Bold":
+	"&Bold": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs"
 		],
 		"translation": "Grassetto",
 		"machine": false
 	},
-	"&Fixed Pitch":
+	"&Fixed Pitch": 
 	{
 		"contexts": 
 		[
-		".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs"
 		],
 		"translation": "Font a passo fisso (monospazio)",
 		"machine": false
 	},
-	"Background &Image:":
+	"Background &Image:": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs"
 		],
 		"translation": "Immagine di sfondo",
 		"machine": false
 	},
-	"&Hidden":
+	"&Hidden": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs"
 		],
 		"translation": "Nascosto",
 		"machine": false
@@ -13261,38 +13141,38 @@
 		"translation": "Muovi a dest&ra",
 		"machine": false
 	},
-	"Tra&nspose":
+	"Tra&nspose": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		],
 		"translation": "Trasposizione",
 		"machine": false
 	},
-	"&Song Selector":
+	"&Song Selector": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		],
 		"translation": "Selettore Song",
 		"machine": false
 	},
-	"&Part Selector":
+	"&Part Selector": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		],
 		"translation": "Selettore parte",
 		"machine": false
 	},
-	"&Continue Button":
+	"&Continue Button": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		],
 		"translation": "Pulsante continua",
 		"machine": false
@@ -13553,7 +13433,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Aggiungi song...",
 		"machine": false
@@ -13765,15 +13645,6 @@
 		"translation": "Tutte le registrazioni effettuate appariranno qui.\nFare clic sul pulsante di registrazione qui sopra per avviare la registrazione, oppure fare clic destro per abilitare automaticamente la registrazione",
 		"machine": false
 	},
-	"A set list is simply list of song files.\nUse the File menu to manage Set Lists.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
-		],
-		"translation": "Una Set List e' semplicemente l'elenco dei file musicali.\nUtilizza il menu file per gestire le tue Set List.",
-		"machine": false
-	},
 	"States let you save and recall snapshots of the state a song or rack.": 
 	{
 		"contexts": 
@@ -13941,7 +13812,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Licensing\\ExpiredPage.cs",
 			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
 		],
 		"translation": "Compra ora (&B)",
@@ -14220,7 +14090,7 @@
 		[
 			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
 		],
-		"translation": "Si tratta di una versione di prova {0} prevista con il  solo scopo di valutazione.\n\nEssa non da restrizioni in nessun modo tranne che richiede una connessione Internet e\nnon verra' piu' eseguita dopo {1:D}",
+		"translation": "Si tratta di una versione di prova {0} prevista con il  solo scopo di valutazione.\n\nEssa non da restrizioni in nessun modo tranne che richiede una connessione Internet e\nnon verra'ï¿½piu' eseguita dopo {1:D}",
 		"machine": false
 	},
 	"Please note that although this trial requires an internet connection, purchased licenses do not.": 
@@ -14317,6 +14187,17 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 			".\\Cantabile.Edition\\Edition.cs"
 		],
 		"translation": "Solo",
@@ -14431,15 +14312,6 @@
 		"translation": "Basato su Uno",
 		"machine": false
 	},
-	"MSB\/LSB Combined (eg: 1234)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "MSB \/ LSB combinato (ad esempio: 1234)",
-		"machine": false
-	},
 	"MSB\/LSB Combined (eg: 1234.1)": 
 	{
 		"contexts": 
@@ -14447,15 +14319,6 @@
 			".\\Cantabile\\Options\\GeneralPage.cs"
 		],
 		"translation": "MSB \/ LSB combinato (ad esempio: 1234.1)",
-		"machine": false
-	},
-	"MSB\/LSB Separate (eg: 9.82)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "MSB \/ LSB separato (ad es: 9.82)",
 		"machine": false
 	},
 	"MSB\/LSB Separate (eg: 9.82.1)": 
@@ -14521,15 +14384,6 @@
 		"translation": "Carica stato in base all'indice (istantaneo)",
 		"machine": false
 	},
-	"Auto Update States":
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs",
-		],
-		"translation": "Aggiornamento automatico stato",
-		"machine": false
-	},
 	"Time Signature Numerator": 
 	{
 		"contexts": 
@@ -14563,7 +14417,7 @@
 		[
 			".\\Cantabile\\Options\\AudioEnginePage.cs"
 		],
-		"translation": "Hai scelto di attivare la memoria prevenzione di paging.\n\nSi consiglia di utilizzare questa opzione solo se hai problemi con eccessivi errori di paging della memoria. questa opzione va in conflitto anche con Windows 10 e potra' risultare un carico eccessivo sulla CPU in questa piattaforma.\n\nSei sicuro di voler attivare questa opzione?",
+		"translation": "Hai scelto di attivare la memoria prevenzione di paging.\n\nSi consiglia di utilizzare questa opzione solo se hai problemi con eccessivi errori di paging della memoria. questa opzione va in conflitto anche con Windows 10 e potra' risultareï¿½un carico eccessivo sulla CPU in questa piattaforma.\n\nSei sicuro di voler attivare questa opzione?",
 		"machine": false
 	},
 	"Shared Mode": 
@@ -14572,7 +14426,7 @@
 		[
 			".\\Cantabile\\Options\\AudioEnginePage.cs"
 		],
-		"translation": "modalita' condivisa",
+		"translation": "modalita'ï¿½condivisa",
 		"machine": false
 	},
 	"Stereo &Input Port...": 
@@ -14642,6 +14496,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		],
 		"translation": "Curva velocita'",
@@ -14710,20 +14565,13 @@
 		"translation": "Consenti ",
 		"machine": false
 	},
-	"Velocity\/Controller Curve": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
-		],
-		"translation": "Velocita' \/ Controller Curva",
-		"machine": false
-	},
 	"Curve": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs",
+			".\\Cantabile.Application\\Bindings\\Binding.cs",
+			".\\Cantabile.Core\\Curve.cs"
 		],
 		"translation": "Curva",
 		"machine": false
@@ -14732,7 +14580,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs",
+			".\\Cantabile.Core\\Curve.cs"
 		],
 		"translation": "Migliora",
 		"machine": false
@@ -14932,7 +14781,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "Elimina voce Set List",
 		"machine": false
@@ -14941,7 +14790,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "Eliminare voci Set List",
 		"machine": false
@@ -14950,7 +14799,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "A&ggiungi le song...",
 		"machine": false
@@ -14960,7 +14810,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Aggiungi una pausa (&K)...",
 		"machine": false
@@ -14978,7 +14829,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "Rinomina file song",
 		"machine": false
@@ -14987,7 +14838,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "Inserisci titolo pausa",
 		"machine": false
@@ -14996,7 +14847,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "&Aggiungi song corrente",
 		"machine": false
@@ -15005,7 +14857,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Ordina per numero di programma (&S)",
 		"machine": false
@@ -15014,7 +14867,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Ordina per nome (&B)",
 		"machine": false
@@ -15023,7 +14877,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "R&iassegna i numeri di programma...",
 		"machine": false
@@ -15032,7 +14887,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Diminuisci nu&mero di programma",
 		"machine": false
@@ -15172,15 +15028,6 @@
 		"translation": "Salva tutto",
 		"machine": false
 	},
-	"File Options": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Opzioni del file",
-		"machine": false
-	},
 	"User Portal": 
 	{
 		"contexts": 
@@ -15262,15 +15109,6 @@
 			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
 		],
 		"translation": "Individuare in e&xplorer",
-		"machine": false
-	},
-	"Prompt to save:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "Prompt per salvare:",
 		"machine": false
 	},
 	"Never": 
@@ -15475,7 +15313,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "&Salva Set List",
 		"machine": false
@@ -15484,7 +15322,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "S&alva Set List con nome...",
 		"machine": false
@@ -15493,7 +15331,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "Salva una &copia Set List con nome...",
 		"machine": false
@@ -15585,7 +15423,7 @@
 		[
 			".\\Cantabile.Application\\Bindings\\Binding.cs"
 		],
-		"translation": "Modalita' relativa 1 (complemento a 2)",
+		"translation": "Modalita'ï¿½relativa 1 (complemento a 2)",
 		"machine": false
 	},
 	"Relative Mode 2 (Offset)": 
@@ -15594,7 +15432,7 @@
 		[
 			".\\Cantabile.Application\\Bindings\\Binding.cs"
 		],
-		"translation": "Modalita' relativa 2 (offset)",
+		"translation": "Modalita'ï¿½relativa 2 (offset)",
 		"machine": false
 	},
 	"Relative Mode 3 (Sign Bit)": 
@@ -15603,7 +15441,7 @@
 		[
 			".\\Cantabile.Application\\Bindings\\Binding.cs"
 		],
-		"translation": "Modalita' relativa 3 (Segno bit)",
+		"translation": "Modalita'ï¿½relativa 3 (Segno bit)",
 		"machine": false
 	},
 	"Abort on managed e&xception": 
@@ -16084,13 +15922,14 @@
 		[
 			".\\Cantabile\\MainWindow\\ViewBinding.cs"
 		],
-		"translation": "Pannello \/ bar \/ modalita' ",
+		"translation": "Pannello \/ bar \/ modalita'ï¿½",
 		"machine": false
 	},
 	"Toolbar": 
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\MainWindow\\ViewBinding.cs"
 		],
 		"translation": "Barra degli strumenti",
@@ -16100,6 +15939,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\MainWindow\\ViewBinding.cs"
 		],
 		"translation": "Barra dei controlli",
@@ -16127,6 +15967,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\MainWindow\\ViewBinding.cs"
 		],
 		"translation": "Pannello laterale",
@@ -16236,7 +16077,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "Importa Set List",
 		"machine": false
@@ -16308,7 +16149,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Importa le song...",
 		"machine": false
@@ -16540,7 +16382,7 @@
 		"translation": "Destinazione intervallo da:",
 		"machine": false
 	},
-	"Curve &Amount:":
+	"Curve &Amount:": 
 	{
 		"contexts": 
 		[
@@ -16585,15 +16427,6 @@
 		"translation": "Valore destinazione",
 		"machine": false
 	},
-	"&Value:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
-		],
-		"translation": "&Valore:",
-		"machine": false
-	},
 	"Please enter a value between 0 and 16383": 
 	{
 		"contexts": 
@@ -16603,65 +16436,65 @@
 		"translation": "Inserisci un valore compreso tra 0 e 16383",
 		"machine": false
 	},
-	"Customize Button":
+	"Customize Button": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
 		],
 		"translation": "Personalizza pulsante",
 		"machine": false
 	},
-	"&Tip:":
+	"&Tip:": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
 		],
 		"translation": "Nome in alto",
 		"machine": false
 	},
-	"&Caption:":
+	"&Caption:": 
 	{
 		"contexts": 
 		[
-		".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
 		],
 		"translation": "Titolo",
 		"machine": false
 	},
-	"&Action:":
+	"&Action:": 
 	{
 		"contexts": 
 		[
-		".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
 		],
 		"translation": "Azione",
 		"machine": false
 	},
-	"No Action":
+	"No Action": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
 		],
 		"translation": "Nessuna azione",
 		"machine": false
 	},
-	"Interaction &Style:":
+	"Interaction &Style:": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
 		],
 		"translation": "Tipo di interattivita'",
 		"machine": false
 	},
-	"&MIDI Channel:":
+	"&MIDI Channel:": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
 		],
 		"translation": "Canale MIDI",
 		"machine": false
@@ -16693,11 +16526,11 @@
 		"translation": "Modalita' impara",
 		"machine": false
 	},
-	"MI&DI Controller:":
+	"MI&DI Controller:": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
 		],
 		"translation": "Controller MIDI",
 		"machine": false
@@ -16761,7 +16594,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Sul caricamento",
 		"machine": false
@@ -16771,7 +16605,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Sullo scaricamento",
 		"machine": false
@@ -16882,6 +16717,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Bindable\\States.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		],
 		"translation": "Seleziona stato in scala",
@@ -16891,6 +16727,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Bindable\\States.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		],
 		"translation": "Seleziona stato programma",
@@ -16900,6 +16737,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Bindable\\States.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		],
 		"translation": "Seleziona indice stato",
@@ -17194,21 +17032,23 @@
 		"translation": "Ripristina& MIDI all'avvio del file",
 		"machine": false
 	},
-	"Solo Control":
+	"Solo Control": 
 	{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
-	],
-	"translation": "Controllo Solo",
-	"machine": false
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+		],
+		"translation": "Controllo Solo",
+		"machine": false
 	},
 	"Warning: failed to load {0}, reverting to defaults\n\n{1}": 
 	{
@@ -17791,11 +17631,11 @@
 		"translation": "Decodificatore Sysex",
 		"machine": false
 	},
-	"Key Range to Note":
+	"Key Range to Note": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "Intervallo tasti a nota",
 		"machine": false
@@ -17836,29 +17676,29 @@
 		"translation": "Decodifica da sys-ex: {0}{1}",
 		"machine": false
 	},
-	"Map Key range {0} - {1} on {2}":
+	"Map Key range {0} - {1} on {2}": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "Mappa intervallo dei tasti {0} - {1} su {2}",
 		"machine": false
 	},
-	" to {0}":
+	" to {0}": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": " a {0}",
 		"machine": false
 	},
-	", retriggerable":
+	", retriggerable": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": ", riattivabile",
 		"machine": false
@@ -17904,8 +17744,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+			".\\Cantabile\\Commands\\ViewCommands.cs"
 		],
 		"translation": "Parti Song",
 		"machine": false
@@ -17961,7 +17800,7 @@
 		[
 			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
 		],
-		"translation": "Il nome del rack contiene caratteri non validi e non può essere utilizzato.",
+		"translation": "Il nome del rack contiene caratteri non validi e non puï¿½ essere utilizzato.",
 		"machine": false
 	},
 	"A file with this name already exists.  Overwrite?": 
@@ -18021,11 +17860,11 @@
 		"translation": "Seleziona un song dalla Set List.",
 		"machine": false
 	},
-	"Song $(SongNumber) of $(SongCount)":
+	"Song $(SongNumber) of $(SongCount)": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		],
 		"translation": "Song $(SongNumber) di $(SongCount)",
 		"machine": false
@@ -18048,11 +17887,11 @@
 		"translation": "Seleziona una parte dalla song corrente.",
 		"machine": false
 	},
-	"Part $(SongPart) of $(SongPartCount)":
+	"Part $(SongPart) of $(SongPartCount)": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		],
 		"translation": "Parte $(SongPart) di $(SongPartCount)",
 		"machine": false
@@ -18066,20 +17905,20 @@
 		"translation": "Sposta alla successiva parte song, o alla song successiva se e' alla fine della song corrente.",
 		"machine": false
 	},
-	"Time":
+	"Time": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		],
 		"translation": "Tempo",
 		"machine": false
 	},
-	"Right click to customize behaviour.":
+	"Right click to customize behaviour.": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		],
 		"translation": "Tasto destro del mouse per personalizzare il comportamento",
 		"machine": false
@@ -18160,8 +17999,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Interrompe la riproduzione del transport principale",
 		"machine": false
@@ -18895,8 +18733,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
-		    ".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-		    ".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
 		],
 		"translation": "Metti in Solo questo oggetto",
 		"machine": false
@@ -18907,6 +18745,7 @@
 		[
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		],
 		"translation": "Solo esclusivo",
@@ -18925,6 +18764,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
 		],
 		"translation": "File multimediale",
@@ -18948,22 +18788,13 @@
 		"translation": "Regola il guadagno di questo file multimediale.",
 		"machine": false
 	},
-	"Adjust the speed of this media file.":
-	{
-	"contexts": 
-	[
-		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
-	],
-	"translation": "Regola la velocita' di questo file multimediale.",
-		"machine": false
-	},
-	"Adjust the speed of this media file (MIDI files only).": 
+	"Adjust the speed of this media file.": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
 		],
-		"translation": "Regola la velocita' di questo file multimediale (solo file MIDI).",
+		"translation": "Regola la velocita' di questo file multimediale.",
 		"machine": false
 	},
 	"Pans the audio signal from left to right.": 
@@ -19081,25 +18912,6 @@
 		"translation": "Avvia o sospende il plugin processando l'audio e il MIDI. Premere (Alt + Click) per scaricare il plugin dalla memoria.",
 		"machine": false
 	},
-	"Suspended": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
-		],
-		"translation": "Sospeso",
-		"machine": false
-	},
-	"Suspends the plugin from processing audio and MIDI but keeps it loaded into memory.\n\n(Alt+Click to unload the plugin).": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
-		],
-		"translation": "Sospende il plugin da audio e MIDI di elaborazione, ma lo mantiene caricato in memoria.\n\n(Alt + clic per scaricare il plugin).",
-		"machine": false
-	},
 	"Bypasses the audio signal around this plugin.": 
 	{
 		"contexts": 
@@ -19197,15 +19009,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
 		],
 		"translation": "Avvia o sospende il processo audio e MIDI del rack.",
-		"machine": false
-	},
-	"Suspends the rack from processing audio and MIDI but keeps it loaded into memory.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
-		],
-		"translation": "Sospende il rack audio e MIDI di elaborazione, ma lo mantiene caricato in memoria.",
 		"machine": false
 	},
 	"The name of this rack.\n\nDouble click to open the rack for editing.": 
@@ -19419,7 +19222,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Set List - {0}",
 		"machine": false
@@ -19428,7 +19231,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Set List - Senza nome",
 		"machine": false
@@ -19521,24 +19324,6 @@
 			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
 		],
 		"translation": "Scegliere quali attributi dell'oggetto selezionato dovrebbero essere controllati dagli stati",
-		"machine": false
-	},
-	"New Song Part": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
-		],
-		"translation": "Nuova parte Song",
-		"machine": false
-	},
-	"New Rack State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
-		],
-		"translation": "Nuovo stato Rack",
 		"machine": false
 	},
 	"Embedded Rack (From File)": 
@@ -19666,7 +19451,8 @@
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
 			".\\Cantabile\\MainWindow\\MainWindowView.cs",
 			".\\Cantabile\\MainWindow\\MetronomePanel.cs",
-			".\\Cantabile\\SidePanel\\SetListPanel.cs",
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Crea azioni...",
@@ -19814,15 +19600,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Stampa Set List&",
-		"machine": false
-	},
-	"Always sa&ve when saving parent song": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
-		],
-		"translation": "Sal&va sempre durante il salvataggio della parent song",
 		"machine": false
 	},
 	"Toggle Object Solo Control": 
@@ -20308,7 +20085,7 @@
 		[
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
 		],
-		"translation": "Il nome '{0}' e' utilizzato più volte",
+		"translation": "Il nome '{0}' e' utilizzato piï¿½ volte",
 		"machine": false
 	},
 	"&Notes Only (suppress all other events)": 
@@ -20333,9 +20110,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
-		"translation": "Una Set List è semplicemente l'elenco delle Song.\nUtilizza il menu' File per gestire le Set List.",
+		"translation": "Una Set List ï¿½ semplicemente l'elenco delle Song.\nUtilizza il menu' File per gestire le Set List.",
 		"machine": false
 	},
 	"Select Specific Preset": 
@@ -20614,7 +20391,7 @@
 		[
 			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs"
 		],
-		"translation": "La tua sottoscrizione per gli aggiornamenti non può coprire questa build:(",
+		"translation": "La tua sottoscrizione per gli aggiornamenti non puï¿½ coprire questa build:(",
 		"machine": false
 	},
 	"About Subscriptions": 
@@ -20730,6 +20507,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "B&loccato",
@@ -20852,7 +20630,7 @@
 		"translation": "&Ripristina '{0}'",
 		"machine": false
 	},
-    "&Update '{0}'": 
+	"&Update '{0}'": 
 	{
 		"contexts": 
 		[
@@ -20912,7 +20690,7 @@
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs"
 		],
-		"translation": "Attiva/disattiva griglia Set List",
+		"translation": "Attiva\/disattiva griglia Set List",
 		"machine": false
 	},
 	"Adjust Layout": 
@@ -21143,5 +20921,315 @@
 		],
 		"translation": "Quando rilascio il tasto in ampiezza sistema",
 		"machine": false
+	},
+	"Choose Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseProgramDialog.cs"
+		],
+		"translation": "Scegli il programma",
+		"machine": true
+	},
+	"E&xport Program...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "programma di esportazione (&X)...",
+		"machine": true
+	},
+	"&Undo Program Changes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Ann&ulla modifiche al programma",
+		"machine": true
+	},
+	"&Copy Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "programma di &copia",
+		"machine": true
+	},
+	"&Paste Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "&programma di pasta",
+		"machine": true
+	},
+	"Enable &Morph and Randomize": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Abilita &morph e ripartire le probabilitÃ ",
+		"machine": true
+	},
+	"Randomi&ze": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Rendi casuale (&Z)",
+		"machine": true
+	},
+	"Show Plugin Editor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Mostra editor plug-in",
+		"machine": true
+	},
+	"Show Plugin Parameters": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "parametri del plugin Visualizza",
+		"machine": true
+	},
+	"C&lose": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Vicino (&L)",
+		"machine": true
+	},
+	"Open the plugin's built-in editor (if supported by the plugin).": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Aprire editor di built-in del plugin (se supportato dal plugin).",
+		"machine": true
+	},
+	"Edit the plugin parameters and select parameters for morph\/randomize.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Modificare i parametri del plugin e selezionare i parametri per morph \/ casuale.",
+		"machine": true
+	},
+	"&Load from Current Settings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Carica da impostazioni correnti (&L)",
+		"machine": true
+	},
+	"&Load from Program...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Carica da programma (&L)...",
+		"machine": true
+	},
+	"Load from &{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Carica da &{0}",
+		"machine": true
+	},
+	"&Swap with {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "&Scambia con {0}",
+		"machine": true
+	},
+	"Load Parameter Set A": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Carico set di parametri A",
+		"machine": true
+	},
+	"Select to edit the start (aka \"A\") parameters for morphing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Selezionare per modificare l'inizio (aka \"A\") parametri per morphing",
+		"machine": true
+	},
+	"Morph:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Morph:",
+		"machine": true
+	},
+	"Morph Position": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "posizione Morph",
+		"machine": true
+	},
+	"Morph parameters between start and end values.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Morph parametri tra i valori di inizio e fine.",
+		"machine": true
+	},
+	"Load Parameter Set B": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "caricamento set di parametri B",
+		"machine": true
+	},
+	"Select to edit the end (aka \"B\") parameters for morphing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Selezionare per modificare la fine (aka \"B\") parametri per morphing",
+		"machine": true
+	},
+	"Randomize": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Rendi casuale",
+		"machine": true
+	},
+	"Constrain Randomization": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Vincola randomizzazione",
+		"machine": true
+	},
+	"Constrain parameter randomization to the A-B range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Vincolare parametro randomizzazione alla gamma ab",
+		"machine": true
+	},
+	"Randomize Limit": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Randomizza limite",
+		"machine": true
+	},
+	"Controls the maximum amount parameters are randomized by.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Controlla la quantitÃ  massima parametri sono randomizzati per.",
+		"machine": true
+	},
+	"&Enable All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Attiva tutto (&E)",
+		"machine": true
+	},
+	"&Disable All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "&Disabilitare tutto",
+		"machine": true
+	},
+	"&Disable All Inactive": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "&Disabilitare tutti inattivi",
+		"machine": true
+	},
+	"Unknown file type '{0}'": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Tipo di file sconosciuto '{0}'",
+		"machine": true
+	},
+	"Cantabile Program Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "file di programma cantabili",
+		"machine": true
+	},
+	"Constrained Randomization": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "randomizzazione vincolata",
+		"machine": true
 	}
 }

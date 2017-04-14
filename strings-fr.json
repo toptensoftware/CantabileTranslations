@@ -2155,7 +2155,6 @@
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
 			".\\Cantabile\\Options\\GeneralPage.cs"
@@ -2864,15 +2863,6 @@
 		"translation": "Programme ou &Import Bank...",
 		"machine": false
 	},
-	"Export &Program...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
-		],
-		"translation": "&Programme d'exportation...",
-		"machine": false
-	},
 	"Export &Bank...": 
 	{
 		"contexts": 
@@ -2925,15 +2915,6 @@
 			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
 		],
 		"translation": "&Gain du Plugin",
-		"machine": false
-	},
-	"&Close": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
-		],
-		"translation": "Près (&C)",
 		"machine": false
 	},
 	"Plugin Gain": 
@@ -3205,6 +3186,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
 		],
 		"translation": "Fichiers bancaires Cantabile",
@@ -20938,6 +20920,316 @@
 			".\\Cantabile.Application\\Bindable\\PCKeyboard.cs"
 		],
 		"translation": "Système large puis relâchez la touche",
+		"machine": true
+	},
+	"Choose Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseProgramDialog.cs"
+		],
+		"translation": "choisir le programme",
+		"machine": true
+	},
+	"E&xport Program...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "programme d'e&xportation...",
+		"machine": true
+	},
+	"&Undo Program Changes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Ann&uler les modifications du programme",
+		"machine": true
+	},
+	"&Copy Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "&copie programme",
+		"machine": true
+	},
+	"&Paste Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "coller &programme",
+		"machine": true
+	},
+	"Enable &Morph and Randomize": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Activer &Morph et randomiser",
+		"machine": true
+	},
+	"Randomi&ze": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Randomiser (&Z)",
+		"machine": true
+	},
+	"Show Plugin Editor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Afficher l'éditeur de plug-in",
+		"machine": true
+	},
+	"Show Plugin Parameters": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Afficher les paramètres de plug-ins",
+		"machine": true
+	},
+	"C&lose": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Fermer (&L)",
+		"machine": true
+	},
+	"Open the plugin's built-in editor (if supported by the plugin).": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Ouvrez l'éditeur intégré du plug-in (si supporté par le plug-in).",
+		"machine": true
+	},
+	"Edit the plugin parameters and select parameters for morph\/randomize.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Modifier les paramètres de plug-in et sélectionnez les paramètres pour morph \/ randomiser.",
+		"machine": true
+	},
+	"&Load from Current Settings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Charger à partir des paramètres actue&ls",
+		"machine": true
+	},
+	"&Load from Program...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Charge du programme (&L)...",
+		"machine": true
+	},
+	"Load from &{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Charger à partir &{0}",
+		"machine": true
+	},
+	"&Swap with {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "&Swap avec {0}",
+		"machine": true
+	},
+	"Load Parameter Set A": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Charger le jeu de paramètres A",
+		"machine": true
+	},
+	"Select to edit the start (aka \"A\") parameters for morphing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Sélectionnez cette option pour modifier les paramètres début (aka « a ») pour morphing",
+		"machine": true
+	},
+	"Morph:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Morph:",
+		"machine": true
+	},
+	"Morph Position": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Position Morph",
+		"machine": true
+	},
+	"Morph parameters between start and end values.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Morph paramètres entre les valeurs de début et de fin.",
+		"machine": true
+	},
+	"Load Parameter Set B": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "paramètre de charge réglé B",
+		"machine": true
+	},
+	"Select to edit the end (aka \"B\") parameters for morphing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Sélectionnez cette option pour modifier les paramètres fin (aka « b ») pour morphing",
+		"machine": true
+	},
+	"Randomize": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Randomiser",
+		"machine": true
+	},
+	"Constrain Randomization": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "contraindre randomization",
+		"machine": true
+	},
+	"Constrain parameter randomization to the A-B range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Contrainte paramètre aléatoire de la gamme ab",
+		"machine": true
+	},
+	"Randomize Limit": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Randomisez limite",
+		"machine": true
+	},
+	"Controls the maximum amount parameters are randomized by.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Contrôle les paramètres maximum sont randomisés par.",
+		"machine": true
+	},
+	"&Enable All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "activ&er tous",
+		"machine": true
+	},
+	"&Disable All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "&Désactiver tous les",
+		"machine": true
+	},
+	"&Disable All Inactive": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "&Désactiver tous inactifs",
+		"machine": true
+	},
+	"Unknown file type '{0}'": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Type de fichier inconnu « {0}'",
+		"machine": true
+	},
+	"Cantabile Program Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "fichiers programme Cantabile",
+		"machine": true
+	},
+	"Constrained Randomization": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "randomization Constrained",
 		"machine": true
 	}
 }
