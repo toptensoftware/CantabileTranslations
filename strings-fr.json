@@ -1337,6 +1337,7 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile.Core\\Curve.cs",
+			".\\Cantabile.Core\\MidiFilterItem.cs",
 			".\\Cantabile.Core\\PanAndFade.cs",
 			".\\Cantabile.Core\\ProgramMask.cs",
 			".\\GuiKit\\Forms\\MidiChannelBar.cs"
@@ -4259,6 +4260,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs"
 		],
 		"translation": "Gamme",
@@ -9020,6 +9022,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "&Suppresion",
@@ -10222,15 +10225,6 @@
 			".\\Cantabile.Application\\Bindable\\Engine.cs"
 		],
 		"translation": "Moteur audio",
-		"machine": false
-	},
-	"Restart Engine": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
-		],
-		"translation": "Redémarrer moteur",
 		"machine": false
 	},
 	"Master Levels": 
@@ -12532,7 +12526,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiControllerEvent.cs"
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
+			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "Numéro de programme",
 		"machine": false
@@ -12541,6 +12536,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
@@ -16875,7 +16871,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiControllerEvent.cs"
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
+			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "song Select",
 		"machine": true
@@ -21340,6 +21337,108 @@
 			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "État de chargement avec programme (instantané)",
+		"machine": true
+	},
+	"Controller Kind": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
+		],
+		"translation": "Type de contrôleur",
+		"machine": true
+	},
+	"Controller &Kind:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
+		],
+		"translation": "Type de contrôleur (&K):",
+		"machine": true
+	},
+	"Controller &Number:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
+		],
+		"translation": "&Numéro de contrôleur:",
+		"machine": true
+	},
+	"&Value:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
+		],
+		"translation": "&Valeur:",
+		"machine": true
+	},
+	"&Supress Sys-ex": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs"
+		],
+		"translation": "&Supress sys-ex",
+		"machine": true
+	},
+	"Match Syse&x:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs"
+		],
+		"translation": "Match syse&x:",
+		"machine": true
+	},
+	"Generate Syse&x:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
+		],
+		"translation": "Générer du syse&x:",
+		"machine": true
+	},
+	"Restart Engine (Quick)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Engine.cs"
+		],
+		"translation": "Redémarrer le moteur (rapide)",
+		"machine": true
+	},
+	"Restart Engine (Full)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Engine.cs"
+		],
+		"translation": "Redémarrez le moteur (plein)",
+		"machine": true
+	},
+	"CC Coarse": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "CC grossier",
+		"machine": true
+	},
+	"CC Fine": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "CC bien",
 		"machine": true
 	}
 }

@@ -1578,6 +1578,7 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 		".\\Cantabile.Core\\Curve.cs",
+		".\\Cantabile.Core\\MidiFilterItem.cs",
 		".\\Cantabile.Core\\PanAndFade.cs",
 		".\\Cantabile.Core\\ProgramMask.cs",
 		".\\GuiKit\\Forms\\MidiChannelBar.cs",
@@ -4571,6 +4572,27 @@
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 	],
 },
+"Controller Kind":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
+	],
+},
+"Controller":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Range":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
+	],
+},
 "&From:":
 {
 	"contexts": [
@@ -4789,12 +4811,6 @@
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs",
 	],
 },
-"Range":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
-	],
-},
 "to":
 {
 	"contexts": [
@@ -4947,10 +4963,56 @@
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
 	],
 },
+"Controller &Kind:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
+	],
+},
+"Controller &Number:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
+	],
+},
+"&Value:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
+	],
+},
+"&Supress Sys-ex":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+	],
+},
+"Match Syse&x:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+	],
+},
 " (Error: {0})":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
+	],
+},
+"&Suppress":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
+	],
+},
+"Generate Syse&x:":
+{
+	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
 	],
 },
@@ -9471,12 +9533,6 @@
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 	],
 },
-"&Suppress":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-	],
-},
 "&Block until complete (and then suppress)":
 {
 	"contexts": [
@@ -11204,7 +11260,13 @@
 		".\\Cantabile.Application\\Bindable\\Engine.cs",
 	],
 },
-"Restart Engine":
+"Restart Engine (Quick)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Bindable\\Engine.cs",
+	],
+},
+"Restart Engine (Full)":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindable\\Engine.cs",
@@ -13000,13 +13062,6 @@
 		".\\Cantabile.Core\\MidiControllerEvent.cs",
 	],
 },
-"Controller":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiControllerEvent.cs",
-		".\\Cantabile.Core\\MidiFilterItem.cs",
-	],
-},
 "Program Change":
 {
 	"contexts": [
@@ -13212,6 +13267,7 @@
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiControllerEvent.cs",
+		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
 "MIDI Clock Start":
@@ -13272,6 +13328,7 @@
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiControllerEvent.cs",
+		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
 "Parameter":
@@ -13448,6 +13505,42 @@
 		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
+"CC Coarse":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"CC Fine":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"NRPN Coarse":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"NRPN Fine":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"RPN Coarse":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"RPN Fine":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
 "Uninitialized controller map":
 {
 	"contexts": [
@@ -13593,30 +13686,6 @@
 	],
 },
 "Fine Controller":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiFilterItem.cs",
-	],
-},
-"RPN Coarse":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiFilterItem.cs",
-	],
-},
-"RPN Fine":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiFilterItem.cs",
-	],
-},
-"NRPN Coarse":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiFilterItem.cs",
-	],
-},
-"NRPN Fine":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",

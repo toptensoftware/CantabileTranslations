@@ -2001,6 +2001,7 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile.Core\\Curve.cs",
+			".\\Cantabile.Core\\MidiFilterItem.cs",
 			".\\Cantabile.Core\\PanAndFade.cs",
 			".\\Cantabile.Core\\ProgramMask.cs",
 			".\\GuiKit\\Forms\\MidiChannelBar.cs"
@@ -5808,6 +5809,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs"
 		],
 		"translation": "diapazonas",
@@ -12470,6 +12472,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "&slopinti",
@@ -14807,15 +14810,6 @@
 			".\\Cantabile.Application\\Bindable\\Engine.cs"
 		],
 		"translation": "variklis",
-		"machine": true
-	},
-	"Restart Engine": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
-		],
-		"translation": "Perkraukite variklis",
 		"machine": true
 	},
 	"On All Sounds Off": 
@@ -17253,6 +17247,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
@@ -17563,7 +17558,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiControllerEvent.cs"
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
+			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "daina pasirinkti",
 		"machine": true
@@ -17653,7 +17649,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiControllerEvent.cs"
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
+			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "programos numeris",
 		"machine": true
@@ -21340,6 +21337,108 @@
 			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Apkrovos valstybė su programos (Instant)",
+		"machine": true
+	},
+	"Controller Kind": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
+		],
+		"translation": "valdiklis natūra",
+		"machine": true
+	},
+	"Controller &Kind:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
+		],
+		"translation": "valdi&klis natūra:",
+		"machine": true
+	},
+	"Controller &Number:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
+		],
+		"translation": "valdiklis skaičius (&N):",
+		"machine": true
+	},
+	"&Value:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
+		],
+		"translation": "&vertė:",
+		"machine": true
+	},
+	"&Supress Sys-ex": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs"
+		],
+		"translation": "Malšinant &SYS-ex",
+		"machine": true
+	},
+	"Match Syse&x:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs"
+		],
+		"translation": "rungtynės syse&x:",
+		"machine": true
+	},
+	"Generate Syse&x:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
+		],
+		"translation": "Sukurti syse&x:",
+		"machine": true
+	},
+	"Restart Engine (Quick)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Engine.cs"
+		],
+		"translation": "Iš naujo paleiskite variklį (greitai)",
+		"machine": true
+	},
+	"Restart Engine (Full)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Engine.cs"
+		],
+		"translation": "Iš naujo paleiskite variklį (pilna)",
+		"machine": true
+	},
+	"CC Coarse": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "CK rupi",
+		"machine": true
+	},
+	"CC Fine": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "CK baudą",
 		"machine": true
 	}
 }
