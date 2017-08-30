@@ -375,6 +375,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
 			".\\Cantabile.Environment\\Environment.cs"
@@ -388,6 +389,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
 			".\\Cantabile.Environment\\Environment.cs"
@@ -433,7 +435,12 @@
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Options\\MidiPortsPage.cs",
+			".\\Cantabile.Application\\Bindable\\SetList.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\Route.cs"
 		],
 		"translation": "Naam",
 		"machine": false
@@ -1616,7 +1623,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "&Recent",
 		"machine": false
@@ -2513,15 +2521,6 @@
 		"translation": "T&ransponeren:",
 		"machine": false
 	},
-	"&Notes": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
-		],
-		"translation": "&Noten",
-		"machine": false
-	},
 	"After &Touch": 
 	{
 		"contexts": 
@@ -2688,7 +2687,6 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
 			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs"
@@ -2710,6 +2708,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\CommandRouting\\CommandList.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs",
@@ -2819,7 +2818,6 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
 			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
@@ -3170,7 +3168,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "&Open...",
 		"machine": false
@@ -5868,6 +5867,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Options\\KeyboardPage.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
 			".\\Cantabile.Application\\Bindings\\Binding.cs",
@@ -6062,7 +6062,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\Decibel.cs"
+			".\\Cantabile.Utils\\Decibel.cs"
 		],
 		"translation": "Dempen",
 		"machine": false
@@ -6071,7 +6071,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\Decibel.cs"
+			".\\Cantabile.Utils\\Decibel.cs"
 		],
 		"translation": "{0:N1} dB",
 		"machine": false
@@ -6080,7 +6080,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\Decibel.cs"
+			".\\Cantabile.Utils\\Decibel.cs"
 		],
 		"translation": "+ {0:N1} dB",
 		"machine": false
@@ -7837,6 +7837,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs",
@@ -8767,7 +8768,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\NumberPad.cs"
+			".\\Cantabile\\Controls\\Composited\\NumberPad.cs",
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
 		],
 		"translation": "Invoeren",
 		"machine": false
@@ -8997,15 +8999,6 @@
 		"translation": "Voorbeeld (&P):",
 		"machine": false
 	},
-	"&Macros...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\SysExDialog.cs"
-		],
-		"translation": "&Macro's...",
-		"machine": false
-	},
 	"&Import...": 
 	{
 		"contexts": 
@@ -9024,24 +9017,6 @@
 			".\\Cantabile\\Dialogs\\SysExDialog.cs"
 		],
 		"translation": "E&xporteer...",
-		"machine": false
-	},
-	"Error: {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\SysExDialog.cs"
-		],
-		"translation": "Fout: {0}",
-		"machine": false
-	},
-	"Expanded: {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\SysExDialog.cs"
-		],
-		"translation": "Uitgebreid: {0}",
 		"machine": false
 	},
 	"Sys-Ex Files": 
@@ -9625,7 +9600,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\AudioEnginePage.cs"
+			".\\Cantabile\\Options\\AudioEnginePage.cs",
+			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "Uitgezet",
 		"machine": false
@@ -10835,7 +10811,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		],
 		"translation": "Transponeren",
 		"machine": true
@@ -10845,7 +10822,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		],
 		"translation": "Transponeren naar beneden",
 		"machine": true
@@ -11402,15 +11380,6 @@
 		"translation": "Verwijder de huidige toestand",
 		"machine": true
 	},
-	"Revert Current State": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\StateCommands.cs"
-		],
-		"translation": "Huidige toestand terugzetten",
-		"machine": true
-	},
 	"Lock\/Unlock Current State": 
 	{
 		"contexts": 
@@ -11948,7 +11917,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Forms\\ColorCombo.cs"
+			".\\Cantabile\\Controls\\Forms\\ColorCombo.cs",
+			".\\Cantabile\\Options\\RecordingPage.cs"
 		],
 		"translation": "automatisch",
 		"machine": true
@@ -12074,15 +12044,6 @@
 			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
 		],
 		"translation": "Uit de bereik modus:",
-		"machine": true
-	},
-	"Select Binding Target": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\BindingIndiciesDialog.cs"
-		],
-		"translation": "Selecteer bindend doel",
 		"machine": true
 	},
 	"Value Mapping": 
@@ -12870,7 +12831,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
 		],
 		"translation": "Reset",
 		"machine": true
@@ -14690,7 +14653,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "&Save",
 		"machine": true
@@ -14699,7 +14663,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Opsl&aan als...",
 		"machine": true
@@ -14708,7 +14673,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Bewaar kopie als (&C)...",
 		"machine": true
@@ -14753,54 +14719,10 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "&nieuwe",
-		"machine": true
-	},
-	"A&dd": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Toevoegen (&D)",
-		"machine": true
-	},
-	"Add C&urrent Song to Set List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Voeg h&uidige song toe aan lijst met lijst",
-		"machine": true
-	},
-	"Add Son&gs to Set List...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Voe&g liedjes toe aan lijstlijst...",
-		"machine": true
-	},
-	"Add &Break to Set List...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Voeg pauze toe aan ingestelde lijst (&B)...",
-		"machine": true
-	},
-	"&Import Songs from Another Set List...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Voer l&iedjes uit een andere lijst in...",
 		"machine": true
 	},
 	"&Recent Songs": 
@@ -14855,15 +14777,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Bijwerken (&U)",
-		"machine": true
-	},
-	"&Revert": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "te&rugkeren",
 		"machine": true
 	},
 	"&Locked": 
@@ -15246,29 +15159,12 @@
 		"translation": "Sluit alle pop-upvensters (&W)",
 		"machine": true
 	},
-	"&Pre-load Set List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "&Pre-load set lijst",
-		"machine": true
-	},
-	"&Verify Set List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Controleer de ingestelde lijst (&V)",
-		"machine": true
-	},
 	"Pr&intable Set List": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Afdrukbare set l&ijst",
 		"machine": true
@@ -15449,18 +15345,10 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile.Application\\Bindable\\MasterLevels.cs"
 		],
 		"translation": "Master output gain",
-		"machine": true
-	},
-	"Global gain setting applied across all songs.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainToolbar.cs"
-		],
-		"translation": "Globale winstinstelling toegepast in alle liedjes.",
 		"machine": true
 	},
 	"Releases all notes and resets common controllers.": 
@@ -17038,6 +16926,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
+			".\\Cantabile\\MainWindow\\NavigationBindingClass.cs",
 			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "Navigatie",
@@ -17230,15 +17120,6 @@
 			".\\Cantabile\\Options\\RecordingPage.cs"
 		],
 		"translation": "Teller (&C):",
-		"machine": true
-	},
-	"Audio File Forma&t:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "Audio bes&tandsformaat:",
 		"machine": true
 	},
 	"16-bit integer": 
@@ -17975,7 +17856,11 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\Route.cs"
 		],
 		"translation": "Notes",
 		"machine": true
@@ -19162,6 +19047,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\SetList\\SetListGrid.cs",
 			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
@@ -19568,15 +19454,6 @@
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "B&ewerk '{0}'...",
-		"machine": true
-	},
-	"&Revert '{0}'": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
-		],
-		"translation": "{0} te&rugkeren'",
 		"machine": true
 	},
 	"&Update '{0}'": 
@@ -20742,7 +20619,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\Decibel.cs"
+			".\\Cantabile.Utils\\Decibel.cs"
 		],
 		"translation": "{0:N1}",
 		"machine": true
@@ -20751,7 +20628,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\Decibel.cs"
+			".\\Cantabile.Utils\\Decibel.cs"
 		],
 		"translation": "+ {0:N1}",
 		"machine": true
@@ -21216,24 +21093,6 @@
 		"translation": "Uninitialized speed \/ controller curve",
 		"machine": true
 	},
-	"{0}CC #{1}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "{0}CC # {1}",
-		"machine": true
-	},
-	"Allow ": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "Toestaan ",
-		"machine": true
-	},
 	"Uninitialized HUI Switch Decoder": 
 	{
 		"contexts": 
@@ -21457,6 +21316,712 @@
 			".\\Cantabile.Utils\\MusicalInterval.cs"
 		],
 		"translation": " + ",
+		"machine": true
+	},
+	"Reset Current State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Reset huidige toestand",
+		"machine": true
+	},
+	"Show in M&onitor Panel": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+		],
+		"translation": "T&oon in het monitorpaneel",
+		"machine": true
+	},
+	"&Include in Master Indicator": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+		],
+		"translation": "&Inclusief in hoofdindicator",
+		"machine": true
+	},
+	"Select Object Index": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingIndiciesDialog.cs"
+		],
+		"translation": "Selecteer object index",
+		"machine": true
+	},
+	"&Track Parameter Changes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "&Track parameter verandert",
+		"machine": true
+	},
+	"Sys-Ex Data": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SysExDialog.cs"
+		],
+		"translation": "Sys-ex data",
+		"machine": true
+	},
+	"these &Notes:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Deze &notities:",
+		"machine": true
+	},
+	"eg: A0,C2-C4": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Bijvoorbeeld: A0, C2-C4",
+		"machine": true
+	},
+	"&Pre-load": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "&Pre-load",
+		"machine": true
+	},
+	"Add C&urrent Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "Voeg h&uidige song toe",
+		"machine": true
+	},
+	"Add &Break...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "Voeg pauze toe (&B)...",
+		"machine": true
+	},
+	"Add Songs from Another Set &List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "&Liedjes toevoegen van een andere lijst...",
+		"machine": true
+	},
+	"&Verify": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "&Verifiëren",
+		"machine": true
+	},
+	"&Reset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "&Reset",
+		"machine": true
+	},
+	"Reset A&ll": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "A&lles resetten",
+		"machine": true
+	},
+	"Master Input Gain:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Master input gain:",
+		"machine": true
+	},
+	"Master Input Gain": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile.Application\\Bindable\\MasterLevels.cs"
+		],
+		"translation": "Master input gain",
+		"machine": true
+	},
+	"Global input gain setting applied across all songs.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Global input gain instelling toegepast in alle liedjes.",
+		"machine": true
+	},
+	"Global output gain setting applied across all songs.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Global output gain instelling is toegepast in alle liedjes.",
+		"machine": true
+	},
+	"Escape": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "Ontsnappen",
+		"machine": true
+	},
+	"Shift+Escape": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "Shift + escape",
+		"machine": true
+	},
+	"Up": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "omhoog",
+		"machine": true
+	},
+	"Down": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "naar beneden",
+		"machine": true
+	},
+	"Page Up": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "Pagina omhoog",
+		"machine": true
+	},
+	"Page Down": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "Pagina omlaag",
+		"machine": true
+	},
+	"Home": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "Huis",
+		"machine": true
+	},
+	"End": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "Einde",
+		"machine": true
+	},
+	"Ctrl+Up": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "Ctrl +",
+		"machine": true
+	},
+	"Ctrl+Down": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "CTRL +",
+		"machine": true
+	},
+	"Ctrl+Left": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "Ctrl + links",
+		"machine": true
+	},
+	"Ctrl+Right": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+		],
+		"translation": "Ctrl + rechts",
+		"machine": true
+	},
+	"Show Song Program Numbers": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TickerBar.cs"
+		],
+		"translation": "Toon lied programma nummers",
+		"machine": true
+	},
+	"Show State Program Numbers": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TickerBar.cs"
+		],
+		"translation": "Toon staats programma nummers",
+		"machine": true
+	},
+	"Close Rack Editor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+		],
+		"translation": "Sluit rack editor",
+		"machine": true
+	},
+	"Zoom Rack Editor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+		],
+		"translation": "Zoom rack editor",
+		"machine": true
+	},
+	"Wave-64 Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Wave-64 bestanden",
+		"machine": true
+	},
+	"Knobs and Sliders": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Knoppen en schuifregelaars",
+		"machine": true
+	},
+	"Only When Control Key Pressed": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Alleen als de bedieningstoets ingedrukt is",
+		"machine": true
+	},
+	"Enable Solo Control for new objects": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Schakel solo controle in voor nieuwe objecten",
+		"machine": true
+	},
+	"Audio Sample Forma&t:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Audio voorbeeld formaa&t:",
+		"machine": true
+	},
+	"&Wave File Format:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "&Wave bestandsformaat:",
+		"machine": true
+	},
+	"Wave": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Golf",
+		"machine": true
+	},
+	"Wave-64": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Wave-64",
+		"machine": true
+	},
+	"Auto-Repeat (Fast)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "Automatisch herhalen (snel)",
+		"machine": true
+	},
+	"Auto-Repeat (Slow)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "Automatisch herhalen (langzaam)",
+		"machine": true
+	},
+	"Also Reset the Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
+		],
+		"translation": "Zet ook het rek opnieuw op",
+		"machine": true
+	},
+	" (in)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs"
+		],
+		"translation": " (in)",
+		"machine": true
+	},
+	" (out)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs"
+		],
+		"translation": " (uit)",
+		"machine": true
+	},
+	"Port Gain:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs"
+		],
+		"translation": "Poortwinst:",
+		"machine": true
+	},
+	"Exported Behaviour": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Uitgevoerd gedrag",
+		"machine": true
+	},
+	"Select to have this behaviour controlled by the parent song.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Selecteer om dit gedrag te laten controleren door het ouderlied.",
+		"machine": true
+	},
+	"Enable State Control": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Sta staatscontrole aan",
+		"machine": true
+	},
+	"Select to have this behaviour controlled by states.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Selecteer om dit gedrag te laten controleren door staten.",
+		"machine": true
+	},
+	"Reset State Captured": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Herstel staat vastgelegd",
+		"machine": true
+	},
+	"Indicates this behaviour has a captured reset state.  (Right click to re-capture or clear the captured state)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Geeft aan dat dit gedrag een ingevoerde resetstatus heeft. (Klik met de rechtermuisknop om de vastgelegde toestand opnieuw vast te leggen of te verwijderen)",
+		"machine": true
+	},
+	"Also Reset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Ook resetten",
+		"machine": true
+	},
+	"Loading this state will also reset previously captured defaults.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Als u deze toestand laadt, worden de eerder ingestelde standaardwaarden ook opnieuw ingesteld.",
+		"machine": true
+	},
+	"Linked Clone": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Gekoppelde kloon",
+		"machine": true
+	},
+	"This state is a linked clone.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Deze staat is een gekoppelde kloon.",
+		"machine": true
+	},
+	"Locked": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "opgesloten",
+		"machine": true
+	},
+	"This state is a locked and won't automatically update.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Deze staat is vergrendeld en wordt niet automatisch bijgewerkt.",
+		"machine": true
+	},
+	"Reset All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Engine.cs"
+		],
+		"translation": "Alles resetten",
+		"machine": true
+	},
+	"On Reset All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Engine.cs"
+		],
+		"translation": "Op reset allen",
+		"machine": true
+	},
+	"Selected Song Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\SetList.cs"
+		],
+		"translation": "Geselecteerde songnaam",
+		"machine": true
+	},
+	"Transpose Octave Up": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Transactie octaaf omhoog",
+		"machine": true
+	},
+	"Transpose Octave Down": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Plaats octaaf omlaag",
+		"machine": true
+	},
+	"Transpose Octave Up (Snapped)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Transactie octaaf omhoog (gebroken)",
+		"machine": true
+	},
+	"Transpose Octave Down (Snapped)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Plaats octaaf omlaag (gebroken)",
+		"machine": true
+	},
+	"Title": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
+		],
+		"translation": "Titel",
+		"machine": true
+	},
+	"Selected State Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\States.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+		],
+		"translation": "Geselecteerde staat naam",
+		"machine": true
+	},
+	"Selected Preset Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs"
+		],
+		"translation": "Geselecteerde voorkeuze naam",
+		"machine": true
+	},
+	"Selected File Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Geselecteerde bestandsnaam",
+		"machine": true
+	},
+	"Open Rack Editor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+		],
+		"translation": "Open rek editor",
+		"machine": true
+	},
+	"Note (Switch)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		],
+		"translation": "Opmerking (schakelaar)",
+		"machine": true
+	},
+	"notes {0}{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Notities {0}{1}",
+		"machine": true
+	},
+	"except ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "behalve ",
+		"machine": true
+	},
+	"CCs {0}#{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "CCs {0} # {1}",
 		"machine": true
 	}
 }

@@ -38,7 +38,7 @@ The following describes how to contribute to a language translation for Cantabil
 
 ## Before Starting
 
-Before starting on a translation, please [get in contact](http://www.cantabilesoftware.com/contact) with me.  This way I can make sure no one is already working on the same language and also provide you with machine generated translation to get you started.
+Before starting on a translation, please [get in contact](http://www.cantabilesoftware.com/contact) with me.  This way I can make sure no one is already working on the same language and also provide you with a machine generated translation to get you started.
 
 Once you decide to start work on a translation you can either download the file directly from BitBucket, or if you're familiar with git you can simply clone the repository.
 
@@ -49,9 +49,9 @@ All translation files are in [JSON](http://json.org/) format.  If you're not fam
 1. Special characters in strings need to be escaped with a leading backslash.  eg: to embed a double quote use `\"`
 2. New line characters are encoded as `\n`, tabs as `\t`.
 3. Unicode characters can be embedded using the \uNNNN escape sequence where NNNN is the hex code of the character.
-4. Syntax is important. ie: the placement braces, commas etc... must be syntactically correct or Cantabile will fail to load the file.
+4. Syntax is important. ie: the placement of braces, commas etc... must be syntactically correct or Cantabile will fail to load the file.
 
-If you find Cantabile isn't loading your strings file, try running it though an online JSON validator tool to find the problem.
+If you find Cantabile isn't loading your strings file, try running it though an online JSON validator tool (such as [JSONLint](https://jsonlint.com/))to find the problem.  You can also check Cantabile's log file - a message will be logged if there was a problem loading the file.
 
 ## Format Strings
 
@@ -96,8 +96,8 @@ and has the following parts:
 
 So the typical process for updating a translation would be:
 
-1. Check and if necessary udpate the `"translation"`.
-2. Delete the `"machine": true` setting to flag that this entry has been reviewed by a human.
+1. Check and if necessary update the `"translation"`.
+2. Change the `"machine": true` setting to `"machine": true` to indicate that this entry has been reviewed by a human.
 
 Alternatively you could check and update all the translations and then do a search and replace to update all the `"machine"` entries.
 
@@ -126,7 +126,7 @@ Once you've made a set of changes you'd like to commit for inclusion, either ema
 
 ## New Builds of Cantabile
 
-As Cantabile is currently under active development the set of strings that require translation will be constantly changing.  To support this the build process extracts new strings from the code base and will update existing translations with any new strings and also provide an initial machine translation for them.
+As Cantabile is always under active development the set of strings that require translation will be constantly changing.  To support this the build process extracts new strings from the code base and will update existing translations with any new strings and also provide an initial machine translation for them.
 
 When a new build of Cantabile is released, this repository will also be updated and each language file will contain the new strings - each marked with `"machine": true` indicating strings that need to be reviewed.
 
