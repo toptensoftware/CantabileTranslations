@@ -97,7 +97,7 @@ and has the following parts:
 So the typical process for updating a translation would be:
 
 1. Check and if necessary update the `"translation"`.
-2. Change the `"machine": true` setting to `"machine": true` to indicate that this entry has been reviewed by a human.
+2. Change the `"machine": true` setting to `"machine": false` to indicate that this entry has been reviewed by a human.
 
 Alternatively you could check and update all the translations and then do a search and replace to update all the `"machine"` entries.
 
