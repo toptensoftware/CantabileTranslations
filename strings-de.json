@@ -2672,6 +2672,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Ausschneiden",
@@ -2683,6 +2684,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Kopieren",
@@ -14599,16 +14601,6 @@
 		"translation": "Übergeordneter &Song steuert den gewählten Zustand und die Verstärkung dieses Racks",
 		"machine": false
 	},
-	"Save &Copy &As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs"
-		],
-		"translation": "Kopie spei&chern unter...",
-		"machine": false
-	},
 	"Save A&ll": 
 	{
 		"contexts": 
@@ -17558,6 +17550,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\LoopCountDialog.cs",
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
 		],
 		"translation": "Schleifenzähler",
@@ -22101,6 +22094,79 @@
 			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "&Wert mit Mausrad einstellen:",
+		"machine": true
+	},
+	"Save &Copy As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "Kopie spei&chern unter...",
+		"machine": true
+	},
+	"&Musical Time": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\StatusPanel.cs"
+		],
+		"translation": "&Musikalische Zeit",
+		"machine": true
+	},
+	"&Real-time": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\StatusPanel.cs"
+		],
+		"translation": "Echtzeit (&R)",
+		"machine": true
+	},
+	"Do you want to add the song '{0}' to the set list '{1}'": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\SongSaveActions.cs"
+		],
+		"translation": "Möchten Sie den Song '{0}' zur Setliste '{1} hinzufügen?'",
+		"machine": true
+	},
+	"Gain: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Knob.cs"
+		],
+		"translation": "Gewinn: {0}",
+		"machine": true
+	},
+	"Percent:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "Prozent:",
+		"machine": true
+	},
+	"{0}bpm": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "{0}bpm",
+		"machine": true
+	},
+	"Tempo:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "Tempo:",
 		"machine": true
 	}
 }

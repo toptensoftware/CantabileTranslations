@@ -361,6 +361,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Couper",
@@ -372,6 +373,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Copier",
@@ -14568,16 +14570,6 @@
 		"translation": "&Ouvrir chanson...",
 		"machine": true
 	},
-	"Save &Copy &As...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs"
-		],
-		"translation": "Enregistrer une &copie sous...",
-		"machine": true
-	},
 	"O&ptions...": 
 	{
 		"contexts": 
@@ -17558,6 +17550,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\LoopCountDialog.cs",
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
 		],
 		"translation": "count Loop",
@@ -22101,6 +22094,79 @@
 			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "Ajuster la valeur avec la molette (&W):",
+		"machine": true
+	},
+	"Save &Copy As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "Enregistrer la &copie sous...",
+		"machine": true
+	},
+	"&Musical Time": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\StatusPanel.cs"
+		],
+		"translation": "Te&mps musical",
+		"machine": true
+	},
+	"&Real-time": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\StatusPanel.cs"
+		],
+		"translation": "Temps &réél",
+		"machine": true
+	},
+	"Do you want to add the song '{0}' to the set list '{1}'": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\SongSaveActions.cs"
+		],
+		"translation": "Est ce que vous voulez ajouter la chanson '{0}' à la liste de la pièce '{1}'",
+		"machine": true
+	},
+	"Gain: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Knob.cs"
+		],
+		"translation": "Gain: {0}",
+		"machine": true
+	},
+	"Percent:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "Pour cent:",
+		"machine": true
+	},
+	"{0}bpm": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "{0}bpm",
+		"machine": true
+	},
+	"Tempo:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "Tempo:",
 		"machine": true
 	}
 }
