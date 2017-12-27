@@ -14,7 +14,7 @@
 "Timeline":
 {
 	"contexts": [
-		".\\Cantabile\\Commands\\CommandList.cs",
+		".\\Cantabile\\CommandRouting\\CommandList.cs",
 		".\\Cantabile\\Commands\\ViewCommands.cs",
 		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 	],
@@ -22,7 +22,7 @@
 "Recordings":
 {
 	"contexts": [
-		".\\Cantabile\\Commands\\CommandList.cs",
+		".\\Cantabile\\CommandRouting\\CommandList.cs",
 		".\\Cantabile\\Commands\\ViewCommands.cs",
 		".\\Cantabile\\SidePanel\\SidePanel.cs",
 	],
@@ -30,20 +30,20 @@
 "File":
 {
 	"contexts": [
-		".\\Cantabile\\Commands\\CommandList.cs",
+		".\\Cantabile\\CommandRouting\\CommandList.cs",
 		".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 	],
 },
 "Edit":
 {
 	"contexts": [
-		".\\Cantabile\\Commands\\CommandList.cs",
+		".\\Cantabile\\CommandRouting\\CommandList.cs",
 	],
 },
 "Insert":
 {
 	"contexts": [
-		".\\Cantabile\\Commands\\CommandList.cs",
+		".\\Cantabile\\CommandRouting\\CommandList.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
 		".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs",
@@ -52,13 +52,13 @@
 "Tools":
 {
 	"contexts": [
-		".\\Cantabile\\Commands\\CommandList.cs",
+		".\\Cantabile\\CommandRouting\\CommandList.cs",
 	],
 },
 "View":
 {
 	"contexts": [
-		".\\Cantabile\\Commands\\CommandList.cs",
+		".\\Cantabile\\CommandRouting\\CommandList.cs",
 		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 		".\\Cantabile\\MainWindow\\ViewBindingClass.cs",
 	],
@@ -66,13 +66,13 @@
 "Help":
 {
 	"contexts": [
-		".\\Cantabile\\Commands\\CommandList.cs",
+		".\\Cantabile\\CommandRouting\\CommandList.cs",
 	],
 },
 "Control":
 {
 	"contexts": [
-		".\\Cantabile\\Commands\\CommandList.cs",
+		".\\Cantabile\\CommandRouting\\CommandList.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
@@ -84,7 +84,7 @@
 "State":
 {
 	"contexts": [
-		".\\Cantabile\\Commands\\CommandList.cs",
+		".\\Cantabile\\CommandRouting\\CommandList.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 		".\\Cantabile\\SidePanel\\StatesPanel.cs",
@@ -459,7 +459,6 @@
 	"contexts": [
 		".\\Cantabile\\Commands\\EditCommands.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 		".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
 	],
 },
@@ -468,7 +467,6 @@
 	"contexts": [
 		".\\Cantabile\\Commands\\EditCommands.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 		".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
 	],
 },
@@ -1053,7 +1051,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ToolsCommands.cs",
-		".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs",
+		".\\GuiKit\\OptionsDialog\\OptionsDialog.cs",
 	],
 },
 "Start-Stop Engine":
@@ -1503,10 +1501,125 @@
 		".\\Cantabile\\Commands\\ViewCommands.cs",
 	],
 },
+"Key Range Indicator":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\KeyRangeIndicator.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
+	],
+},
+"Column Headers":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\ColumnHeaders.cs",
+	],
+},
+"Gain: +14.0 dB":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\Knob.cs",
+	],
+},
+"Gain: {0}":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\Knob.cs",
+	],
+},
+"Level Meter":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\LevelMeter.cs",
+	],
+},
+"MIDI Activity Indicator":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\MidiActivityIndicator.cs",
+	],
+},
+"Enter":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\NumberPad.cs",
+		".\\Cantabile\\MainWindow\\NavigationBinding.cs",
+	],
+},
+"Run Mode":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\RunModeButton.cs",
+		".\\Cantabile\\Controls\\Composited\\SoloModeButton.cs",
+	],
+},
+"Tempo:":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\Slider.cs",
+	],
+},
+"Disclosure Button":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\SlotButton.cs",
+	],
+},
+"OK, Got It!":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\TipPanel.cs",
+	],
+},
+"Tell Me More":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Composited\\TipPanel.cs",
+	],
+},
 "(max)":
 {
 	"contexts": [
 		".\\Cantabile\\Controls\\Forms\\BindingValueField.cs",
+	],
+},
+"Any":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
+		".\\Cantabile\\Controls\\Forms\\CCValueField.cs",
+		".\\Cantabile.Application\\Upgrade\\V2Session.cs",
+		".\\Cantabile.Core\\MidiControllerEvent.cs",
+		".\\Cantabile.Core\\ProgramMask.cs",
+	],
+},
+"Same":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
+		".\\Cantabile\\Controls\\Forms\\ChannelCombo.cs",
+		".\\GuiKit\\Forms\\MidiChannelBar.cs",
+	],
+},
+"None":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
+		".\\Cantabile\\QuickController\\QuickController.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+		".\\Cantabile.Core\\Curve.cs",
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+		".\\Cantabile.Core\\PanAndFade.cs",
+		".\\Cantabile.Core\\ProgramMask.cs",
+		".\\GuiKit\\Forms\\MidiChannelBar.cs",
+	],
+},
+"Automatic":
+{
+	"contexts": [
+		".\\Cantabile\\Controls\\Forms\\ColorCombo.cs",
+		".\\Cantabile\\Options\\RecordingPage.cs",
 	],
 },
 "Clamp":
@@ -1632,8 +1745,8 @@
 		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 		".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 		".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
-		".\\GuiKit2\\GuiKit\\FormControls\\OKCancelButtons.cs",
-		".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs",
+		".\\GuiKit\\Forms\\OKCancelButtons.cs",
+		".\\GuiKit\\OptionsDialog\\OptionsDialog.cs",
 	],
 },
 "Cancel":
@@ -1648,8 +1761,8 @@
 		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
 		".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 		".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
-		".\\GuiKit2\\GuiKit\\FormControls\\OKCancelButtons.cs",
-		".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs",
+		".\\GuiKit\\Forms\\OKCancelButtons.cs",
+		".\\GuiKit\\OptionsDialog\\OptionsDialog.cs",
 	],
 },
 "&Add":
@@ -1752,7 +1865,6 @@
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 		".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
 		".\\Cantabile.Environment\\Environment.cs",
-		".\\Cantabile.Gui\\Composited\\Slider.cs",
 	],
 },
 "Right":
@@ -1764,7 +1876,6 @@
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 		".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
 		".\\Cantabile.Environment\\Environment.cs",
-		".\\Cantabile.Gui\\Composited\\Slider.cs",
 	],
 },
 "Signal":
@@ -2069,12 +2180,6 @@
 	],
 },
 "&Don't reload any settings (last resort, all settings will be lost)":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\CrashCheckDialog.cs",
-	],
-},
-"Disable &GPU accelerated rendering":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\CrashCheckDialog.cs",
@@ -4158,8 +4263,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
-		".\\Cantabile.Gui\\Composited\\Slider.cs",
-		".\\Cantabile.Utils\\PanAndFade.cs",
+		".\\Cantabile.Core\\PanAndFade.cs",
 	],
 },
 "Text &Size:":
@@ -6209,12 +6313,6 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"&Highlight Redraws":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-	],
-},
 "Debu&g":
 {
 	"contexts": [
@@ -6417,30 +6515,6 @@
 		".\\Cantabile\\MainWindow\\MainToolbar.cs",
 	],
 },
-"Master Input Level Meter":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainToolbar.cs",
-	],
-},
-"Master Output Level Meter":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainToolbar.cs",
-	],
-},
-"Master Midi Input Indicator":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainToolbar.cs",
-	],
-},
-"Master Midi Output Indicator":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainToolbar.cs",
-	],
-},
 "Releases all notes and resets common controllers.":
 {
 	"contexts": [
@@ -6481,12 +6555,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainToolbar.cs",
-	],
-},
-"Cantabile is configured to prevent power suspend":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainWindow.cs",
 	],
 },
 "{0}\n\nDo you want to open this song?":
@@ -6684,13 +6752,6 @@
 		".\\Cantabile\\MainWindow\\NavigationBinding.cs",
 		".\\Cantabile\\MainWindow\\NavigationBindingClass.cs",
 		".\\Cantabile\\Options\\KeyboardPage.cs",
-	],
-},
-"Enter":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\NavigationBinding.cs",
-		".\\Cantabile.Gui\\Composited\\NumberPad.cs",
 	],
 },
 "Escape":
@@ -7206,105 +7267,90 @@
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Red":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Maroon":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Green":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Lime":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Blue":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Navy":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Yellow":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Olive":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Fuscia":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Purple":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Cyan":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Teal":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Orange":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Brown":
 {
 	"contexts": [
 		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Set C&olor":
@@ -8001,6 +8047,18 @@
 		".\\Cantabile\\Options\\DiagnosticsPage.cs",
 	],
 },
+"Disable &SSE optimizations":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\DiagnosticsPage.cs",
+	],
+},
+"Disable SSE&2 optimizations":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\DiagnosticsPage.cs",
+	],
+},
 "Disable Audio Engine &Timeouts (for debugging only)":
 {
 	"contexts": [
@@ -8152,6 +8210,12 @@
 		".\\Cantabile\\Options\\GeneralPage.cs",
 	],
 },
+"System Default ({0}%)":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\GeneralPage.cs",
+	],
+},
 "User Interface":
 {
 	"contexts": [
@@ -8176,19 +8240,7 @@
 		".\\Cantabile\\Options\\GeneralPage.cs",
 	],
 },
-"Enable &High-Resolution for Cantabile Windows":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\GeneralPage.cs",
-	],
-},
 "Enable &High-Resolution UI":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\GeneralPage.cs",
-	],
-},
-"Use Per-Window Resolution Scaling (prevents plugins appearing too small)":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\GeneralPage.cs",
@@ -8525,30 +8577,6 @@
 		".\\Cantabile\\Options\\KeyboardPage.cs",
 	],
 },
-"any Cantabile window":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\KeyboardPage.cs",
-	],
-},
-"Cantabile's main window only":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\KeyboardPage.cs",
-	],
-},
-"anywhere, but only when capture is already turned on":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\KeyboardPage.cs",
-	],
-},
-"anywhere, including turning on capture":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\KeyboardPage.cs",
-	],
-},
 "Similarly to audio ports, here you can create MIDI ports and map them to your\nexternal MIDI devices.  Right click to create simple assignments.":
 {
 	"contexts": [
@@ -8652,6 +8680,12 @@
 	],
 },
 "Power and Suspend":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\MiscPage.cs",
+	],
+},
+"Prevent scree&n saver":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\MiscPage.cs",
@@ -8765,6 +8799,12 @@
 		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
+"&Exclude...":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\PluginsPage.cs",
+	],
+},
 "Presets and Banks":
 {
 	"contexts": [
@@ -8873,13 +8913,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\Options\\RecordingPage.cs",
-	],
-},
-"Automatic":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\RecordingPage.cs",
-		".\\Cantabile.Gui\\Forms\\ColorCombo.cs",
 	],
 },
 "Wave":
@@ -9259,22 +9292,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\QuickController\\QuickController.cs",
-	],
-},
-"None":
-{
-	"contexts": [
-		".\\Cantabile\\QuickController\\QuickController.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-		".\\Cantabile.Core\\Curve.cs",
-		".\\Cantabile.Core\\MidiFilterItem.cs",
-		".\\Cantabile.Gui\\Forms\\CCNumberField.cs",
-		".\\Cantabile.Utils\\ControllerKind.cs",
-		".\\Cantabile.Utils\\PanAndFade.cs",
-		".\\Cantabile.Utils\\ProgramMask.cs",
-		".\\GuiKit2\\GuiKit\\PlatformWin\\FormControls\\implMidiChannelBar.cs",
 	],
 },
 "Repeat Last":
@@ -9937,7 +9954,6 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-		".\\Cantabile.Gui\\Composited\\ExpandButton.cs",
 	],
 },
 "Expand\/Collapse (Ctrl+Left\/Right)":
@@ -9948,7 +9964,6 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-		".\\Cantabile.Gui\\Composited\\ExpandButton.cs",
 	],
 },
 "Shows or hides the contents of this panel.":
@@ -9959,7 +9974,6 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-		".\\Cantabile.Gui\\Composited\\ExpandButton.cs",
 	],
 },
 "Input Gain":
@@ -10140,7 +10154,6 @@
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-		".\\Cantabile.Gui\\Composited\\Slider.cs",
 	],
 },
 "100% Right":
@@ -10380,7 +10393,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-		".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs",
 	],
 },
 "Bypasses the audio signal around this plugin.":
@@ -10749,13 +10761,6 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
 	],
 },
-"Key Range Indicator":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
-		".\\Cantabile.Gui\\Composited\\KeyRangeIndicator.cs",
-	],
-},
 "Shows the range of keys that this route responds to.":
 {
 	"contexts": [
@@ -10897,18 +10902,6 @@
 	],
 },
 "Rename Object":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
-	],
-},
-"Move Routes":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
-	],
-},
-"Move Objects":
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
@@ -11781,7 +11774,7 @@
 		".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs",
 		".\\Cantabile.Core\\ChannelMask.cs",
 		".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiInputPort.cs",
-		".\\GuiKit2\\GuiKit\\PlatformWin\\FormControls\\implMidiChannelBar.cs",
+		".\\GuiKit\\Forms\\MidiChannelBar.cs",
 	],
 },
 "PC Keyboard":
@@ -13423,16 +13416,6 @@
 		".\\Cantabile.Application\\Upgrade\\V2Session.cs",
 	],
 },
-"Any":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Upgrade\\V2Session.cs",
-		".\\Cantabile.Core\\MidiControllerEvent.cs",
-		".\\Cantabile.Gui\\Forms\\CCNumberField.cs",
-		".\\Cantabile.Gui\\Forms\\CCValueField.cs",
-		".\\Cantabile.Utils\\ProgramMask.cs",
-	],
-},
 "'{0}' - not found":
 {
 	"contexts": [
@@ -13450,6 +13433,30 @@
 {
 	"contexts": [
 		".\\Cantabile.Core\\ChannelMask.cs",
+	],
+},
+"any Cantabile window":
+{
+	"contexts": [
+		".\\Cantabile.Core\\KeyboardCapture.cs",
+	],
+},
+"Cantabile's main window only":
+{
+	"contexts": [
+		".\\Cantabile.Core\\KeyboardCapture.cs",
+	],
+},
+"anywhere, but only when capture is already turned on":
+{
+	"contexts": [
+		".\\Cantabile.Core\\KeyboardCapture.cs",
+	],
+},
+"anywhere, including turning on capture":
+{
+	"contexts": [
+		".\\Cantabile.Core\\KeyboardCapture.cs",
 	],
 },
 "Note":
@@ -13470,7 +13477,6 @@
 	"contexts": [
 		".\\Cantabile.Core\\MidiControllerEvent.cs",
 		".\\Cantabile.Core\\MidiFilterItem.cs",
-		".\\Cantabile.Utils\\ControllerKind.cs",
 	],
 },
 "Channel Pressure":
@@ -13478,7 +13484,6 @@
 	"contexts": [
 		".\\Cantabile.Core\\MidiControllerEvent.cs",
 		".\\Cantabile.Core\\MidiFilterItem.cs",
-		".\\Cantabile.Utils\\ControllerKind.cs",
 	],
 },
 "Note (Off)":
@@ -13672,7 +13677,6 @@
 	"contexts": [
 		".\\Cantabile.Core\\MidiControllerEvent.cs",
 		".\\Cantabile.Core\\MidiFilterItem.cs",
-		".\\Cantabile.Utils\\ControllerKind.cs",
 	],
 },
 "MIDI Clock Start":
@@ -13734,7 +13738,6 @@
 	"contexts": [
 		".\\Cantabile.Core\\MidiControllerEvent.cs",
 		".\\Cantabile.Core\\MidiFilterItem.cs",
-		".\\Cantabile.Utils\\ControllerKind.cs",
 	],
 },
 "Parameter":
@@ -13915,42 +13918,36 @@
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",
-		".\\Cantabile.Utils\\ControllerKind.cs",
 	],
 },
 "CC Fine":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",
-		".\\Cantabile.Utils\\ControllerKind.cs",
 	],
 },
 "NRPN Coarse":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",
-		".\\Cantabile.Utils\\ControllerKind.cs",
 	],
 },
 "NRPN Fine":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",
-		".\\Cantabile.Utils\\ControllerKind.cs",
 	],
 },
 "RPN Coarse":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",
-		".\\Cantabile.Utils\\ControllerKind.cs",
 	],
 },
 "RPN Fine":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",
-		".\\Cantabile.Utils\\ControllerKind.cs",
 	],
 },
 "Uninitialized controller map":
@@ -14553,6 +14550,84 @@
 		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
+"Left (Balance)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"Right (Balance)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"Left (Pan)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"Right (Pan)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"Front (Balance)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"Rear (Balance)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"Front (Pan)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"Rear (Pan)":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"{0:0}% Left":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"{0:0}% Right":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"Middle":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"{0:0}% Rear":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
+"{0:0}% Front":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PanAndFade.cs",
+	],
+},
 "Failed to open '{0}' - {1} (error code {2})":
 {
 	"contexts": [
@@ -14629,118 +14704,6 @@
 {
 	"contexts": [
 		".\\Cantabile.Environment\\Environment.cs",
-	],
-},
-"Gain: +14.0 dB":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\Knob.cs",
-	],
-},
-"Gain: {0}":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\Knob.cs",
-	],
-},
-"Level Meter":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\LevelMeter.cs",
-	],
-},
-"MIDI Activity Indicator":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\MidiActivityIndicator.cs",
-	],
-},
-"Run Mode":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\RunModeButton.cs",
-		".\\Cantabile.Gui\\Composited\\SoloModeButton.cs",
-	],
-},
-"Percent:":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\Slider.cs",
-	],
-},
-"Rear":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\Slider.cs",
-	],
-},
-"Middle":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\Slider.cs",
-		".\\Cantabile.Utils\\PanAndFade.cs",
-	],
-},
-"Front":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\Slider.cs",
-	],
-},
-"Gain:":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\Slider.cs",
-	],
-},
-"{0}bpm":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\Slider.cs",
-	],
-},
-"Tempo:":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\Slider.cs",
-	],
-},
-"Disclosure Button":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\SlotButton.cs",
-	],
-},
-"OK, Got It!":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\TipPanel.cs",
-	],
-},
-"Tell Me More":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\TipPanel.cs",
-	],
-},
-"Same":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Forms\\CCNumberField.cs",
-		".\\Cantabile.Gui\\Forms\\ChannelCombo.cs",
-		".\\GuiKit2\\GuiKit\\PlatformWin\\FormControls\\implMidiChannelBar.cs",
-	],
-},
-"Add SubItem":
-{
-	"contexts": [
-		".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs",
-	],
-},
-"Add Item":
-{
-	"contexts": [
-		".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs",
 	],
 },
 "{0:N1} dB":
@@ -14953,94 +14916,64 @@
 		".\\Cantabile.Utils\\MusicalNote.cs",
 	],
 },
-"Left (Balance)":
+"Unhandled Exception":
 {
 	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
+		".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs",
 	],
 },
-"Right (Balance)":
+"An unhandled exception has occurred.  If you click continue, the application will \nignore this error and attempt to continue.  If you click Quit, the application will\nclose immediately.":
 {
 	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
+		".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs",
 	],
 },
-"Left (Pan)":
+"&Ignore":
 {
 	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
+		".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs",
 	],
 },
-"Right (Pan)":
+"&Throw":
 {
 	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
+		".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs",
 	],
 },
-"Front (Balance)":
+"&Quit":
 {
 	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
+		".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs",
 	],
 },
-"Rear (Balance)":
+"&Send":
 {
 	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
+		".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs",
 	],
 },
-"Front (Pan)":
+"&Details":
 {
 	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
-	],
-},
-"Rear (Pan)":
-{
-	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
-	],
-},
-"{0:0}% Left":
-{
-	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
-	],
-},
-"{0:0}% Right":
-{
-	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
-	],
-},
-"{0:0}% Rear":
-{
-	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
-	],
-},
-"{0:0}% Front":
-{
-	"contexts": [
-		".\\Cantabile.Utils\\PanAndFade.cs",
+		".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs",
 	],
 },
 "< Back":
 {
 	"contexts": [
-		".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs",
+		".\\GuiKit\\OptionsDialog\\OptionsDialog.cs",
 	],
 },
 "Next >":
 {
 	"contexts": [
-		".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs",
+		".\\GuiKit\\OptionsDialog\\OptionsDialog.cs",
 	],
 },
 "Finish":
 {
 	"contexts": [
-		".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs",
+		".\\GuiKit\\OptionsDialog\\OptionsDialog.cs",
 	],
 },
 }
