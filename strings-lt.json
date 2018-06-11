@@ -22,7 +22,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\MainWindow\\ViewBinding.cs"
 		],
@@ -33,7 +33,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\SidePanel\\SidePanel.cs"
 		],
@@ -44,7 +44,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
 		],
 		"translation": "byla",
@@ -54,7 +54,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs"
+			".\\Cantabile\\Commands\\CommandList.cs"
 		],
 		"translation": "Redaguoti",
 		"machine": true
@@ -63,7 +63,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
@@ -75,7 +75,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs"
+			".\\Cantabile\\Commands\\CommandList.cs"
 		],
 		"translation": "Įrankiai",
 		"machine": true
@@ -84,7 +84,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\MainWindow\\ViewBinding.cs",
 			".\\Cantabile\\MainWindow\\ViewBindingClass.cs"
 		],
@@ -95,7 +95,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs"
+			".\\Cantabile\\Commands\\CommandList.cs"
 		],
 		"translation": "padėti",
 		"machine": true
@@ -104,7 +104,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
@@ -136,6 +136,7 @@
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -642,6 +643,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "supjaustyti",
@@ -653,6 +655,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "kopija",
@@ -1354,7 +1357,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs",
@@ -1417,7 +1421,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ToolsCommands.cs",
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "Nustatymai",
 		"machine": true
@@ -1871,8 +1875,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\KeyRangeIndicator.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
+			".\\Cantabile.Gui\\Composited\\KeyRangeIndicator.cs"
 		],
 		"translation": "Pagrindiniai asortimentas indikatorius",
 		"machine": true
@@ -1881,7 +1885,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\Knob.cs"
+			".\\Cantabile.Gui\\Composited\\Knob.cs"
 		],
 		"translation": "Pelnas: 14,0 dB",
 		"machine": true
@@ -1890,7 +1894,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\LevelMeter.cs"
+			".\\Cantabile.Gui\\Composited\\LevelMeter.cs"
 		],
 		"translation": "lygio matuoklis",
 		"machine": true
@@ -1899,7 +1903,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\MidiActivityIndicator.cs"
+			".\\Cantabile.Gui\\Composited\\MidiActivityIndicator.cs"
 		],
 		"translation": "MIDI veiklos rodiklis",
 		"machine": true
@@ -1908,8 +1912,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\NumberPad.cs",
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
+			".\\Cantabile.Gui\\Composited\\NumberPad.cs"
 		],
 		"translation": "įeiti",
 		"machine": true
@@ -1918,8 +1922,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\RunModeButton.cs",
-			".\\Cantabile\\Controls\\Composited\\SoloModeButton.cs"
+			".\\Cantabile.Gui\\Composited\\RunModeButton.cs",
+			".\\Cantabile.Gui\\Composited\\SoloModeButton.cs"
 		],
 		"translation": "Vykdyti režimas",
 		"machine": true
@@ -1928,7 +1932,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\SlotButton.cs"
+			".\\Cantabile.Gui\\Composited\\SlotButton.cs"
 		],
 		"translation": "atskleidimas mygtuką",
 		"machine": true
@@ -1937,7 +1941,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\TipPanel.cs"
+			".\\Cantabile.Gui\\Composited\\TipPanel.cs"
 		],
 		"translation": "Gerai supratau!",
 		"machine": true
@@ -1946,7 +1950,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\TipPanel.cs"
+			".\\Cantabile.Gui\\Composited\\TipPanel.cs"
 		],
 		"translation": "Pasakyk man daugiau",
 		"machine": true
@@ -1964,11 +1968,11 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
-			".\\Cantabile\\Controls\\Forms\\CCValueField.cs",
 			".\\Cantabile.Application\\Upgrade\\V2Session.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Core\\ProgramMask.cs"
+			".\\Cantabile.Gui\\Forms\\CCNumberField.cs",
+			".\\Cantabile.Gui\\Forms\\CCValueField.cs",
+			".\\Cantabile.Utils\\ProgramMask.cs"
 		],
 		"translation": "bet koks",
 		"machine": true
@@ -1977,9 +1981,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
-			".\\Cantabile\\Controls\\Forms\\ChannelCombo.cs",
-			".\\GuiKit\\Forms\\MidiChannelBar.cs"
+			".\\Cantabile.Gui\\Forms\\CCNumberField.cs",
+			".\\Cantabile.Gui\\Forms\\ChannelCombo.cs",
+			".\\GuiKit2\\GuiKit\\PlatformWin\\FormControls\\implMidiChannelBar.cs"
 		],
 		"translation": "tas pats",
 		"machine": true
@@ -1988,16 +1992,17 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
 			".\\Cantabile\\QuickController\\QuickController.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile.Core\\Curve.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs",
-			".\\Cantabile.Core\\PanAndFade.cs",
-			".\\Cantabile.Core\\ProgramMask.cs",
-			".\\GuiKit\\Forms\\MidiChannelBar.cs"
+			".\\Cantabile.Gui\\Forms\\CCNumberField.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs",
+			".\\Cantabile.Utils\\PanAndFade.cs",
+			".\\Cantabile.Utils\\ProgramMask.cs",
+			".\\GuiKit2\\GuiKit\\PlatformWin\\FormControls\\implMidiChannelBar.cs"
 		],
 		"translation": "Nė vienas",
 		"machine": true
@@ -2006,8 +2011,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Forms\\ColorCombo.cs",
-			".\\Cantabile\\Options\\RecordingPage.cs"
+			".\\Cantabile\\Options\\RecordingPage.cs",
+			".\\Cantabile.Gui\\Forms\\ColorCombo.cs"
 		],
 		"translation": "Automatinis",
 		"machine": true
@@ -2094,6 +2099,7 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileMidiAssignmentDialog.cs",
 			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
+			".\\Cantabile\\Options\\AudioEnginePage.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs"
 		],
@@ -2157,8 +2163,8 @@
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
-			".\\GuiKit\\Forms\\OKCancelButtons.cs",
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\FormControls\\OKCancelButtons.cs",
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "Gerai",
 		"machine": true
@@ -2176,8 +2182,8 @@
 			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
-			".\\GuiKit\\Forms\\OKCancelButtons.cs",
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\FormControls\\OKCancelButtons.cs",
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "atšaukti",
 		"machine": true
@@ -2301,7 +2307,8 @@
 			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
-			".\\Cantabile.Environment\\Environment.cs"
+			".\\Cantabile.Environment\\Environment.cs",
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
 		],
 		"translation": "į kairę",
 		"machine": true
@@ -2315,7 +2322,8 @@
 			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
-			".\\Cantabile.Environment\\Environment.cs"
+			".\\Cantabile.Environment\\Environment.cs",
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
 		],
 		"translation": "teisė",
 		"machine": true
@@ -2364,6 +2372,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
@@ -2515,6 +2524,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\BindingEncodedIndexValueDialog.cs",
 			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs"
 		],
 		"translation": "santykinis mastelio:",
@@ -4961,7 +4971,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Gui\\Composited\\Slider.cs",
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "centras",
 		"machine": true
@@ -6159,7 +6170,6 @@
 			".\\Cantabile\\Licensing\\LoginPage.cs",
 			".\\Cantabile\\Licensing\\OfflinePage.cs",
 			".\\Cantabile\\Licensing\\RegisteredPage.cs",
-			".\\Cantabile\\Licensing\\RegisterPage.cs",
 			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
 		],
 		"translation": "Susisiekite su mumis (&C)",
@@ -6728,13 +6738,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs",
-			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile\\MainWindow\\MainWindowView.cs",
-			".\\Cantabile\\MainWindow\\MetronomePanel.cs",
-			".\\Cantabile\\SetList\\SetListGrid.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs",
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+			".\\Cantabile\\MainWindow\\CreateBindingMenuItem.cs"
 		],
 		"translation": "Sukurti privalomas...",
 		"machine": true
@@ -7545,15 +7549,6 @@
 		"translation": "Fono stovas (&G)",
 		"machine": true
 	},
-	"MIDI Mo&nitor...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "MIDI mo&nitorius...",
-		"machine": true
-	},
 	"&Hide Active Panel\/Bar": 
 	{
 		"contexts": 
@@ -7644,15 +7639,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Atidaryti nu&statymų aplankas",
-		"machine": true
-	},
-	"Run &Test...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Pradė&ti testą...",
 		"machine": true
 	},
 	"Debu&g": 
@@ -8153,6 +8139,7 @@
 		[
 			".\\Cantabile\\MainWindow\\MetronomePanel.cs",
 			".\\Cantabile.Application\\Bindable\\Metronome.cs",
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Song\\Metronome.cs"
 		],
 		"translation": "tempas",
@@ -8817,7 +8804,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Numatytas",
 		"machine": true
@@ -8826,7 +8814,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "raudonas",
 		"machine": true
@@ -8835,7 +8824,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "kaštoninė spalva",
 		"machine": true
@@ -8844,7 +8834,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "žalias",
 		"machine": true
@@ -8853,7 +8844,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "kalkės",
 		"machine": true
@@ -8862,7 +8854,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "mėlynas",
 		"machine": true
@@ -8871,7 +8864,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "karinis jūrų laivynas",
 		"machine": true
@@ -8880,7 +8874,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "geltonas",
 		"machine": true
@@ -8889,7 +8884,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "alyvmedis",
 		"machine": true
@@ -8898,7 +8894,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Fuscia",
 		"machine": true
@@ -8907,7 +8904,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Violetinė",
 		"machine": true
@@ -8916,7 +8914,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Žydras",
 		"machine": true
@@ -8925,7 +8924,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "kryklė",
 		"machine": true
@@ -8934,7 +8934,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "oranžinis",
 		"machine": true
@@ -8943,7 +8944,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "rudas",
 		"machine": true
@@ -11763,8 +11765,7 @@
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
-			".\\Cantabile.Edition\\Edition.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		],
 		"translation": "solo",
 		"machine": true
@@ -12507,11 +12508,13 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerContentView.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile.Gui\\Composited\\ExpandButton.cs"
 		],
 		"translation": "išplėsti",
 		"machine": true
@@ -12524,7 +12527,8 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile.Gui\\Composited\\ExpandButton.cs"
 		],
 		"translation": "Išskleisti \/ sutraukti (Ctrl + kairė \/ dešinė)",
 		"machine": true
@@ -12537,7 +12541,8 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile.Gui\\Composited\\ExpandButton.cs"
 		],
 		"translation": "Rodo arba slepia šios komisijos turinį.",
 		"machine": true
@@ -12802,7 +12807,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
 		],
 		"translation": "Panas:",
 		"machine": true
@@ -13080,7 +13086,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+			".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs"
 		],
 		"translation": "Garso aplinkkelis",
 		"machine": true
@@ -13975,19 +13982,11 @@
 		"translation": "apkrovos& informacijos",
 		"machine": true
 	},
-	"Load": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
-		],
-		"translation": "apkrova",
-		"machine": true
-	},
 	"Page Faults": 
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
 		],
 		"translation": "puslapis gedimai",
@@ -13997,6 +13996,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
 		],
 		"translation": "atmintis",
@@ -14006,6 +14006,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
 		],
 		"translation": "Darbas nustatyti",
@@ -14015,6 +14016,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
 		],
 		"translation": "Veikia \"\/\" pakrauta lentynos",
@@ -14024,7 +14026,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
 		],
 		"translation": "Objektai \/ uždarytas zombiai",
 		"machine": true
@@ -14036,15 +14038,6 @@
 			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
 		],
 		"translation": "Nėra garso tvarkyklės",
-		"machine": true
-	},
-	"$(bufferSize) samples @ $(sampleRate)Hz": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
-		],
-		"translation": "$ (BufferSize) bandiniai @ $ (samplerate) Hz,",
 		"machine": true
 	},
 	"Ports to Record": 
@@ -14711,7 +14704,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\Metronome.cs",
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
 		],
 		"translation": "Laikas parašas skaitiklis",
 		"machine": true
@@ -14720,7 +14714,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\Metronome.cs",
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
 		],
 		"translation": "Laikas parašas vardiklis",
 		"machine": true
@@ -14729,7 +14724,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\Metronome.cs",
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
 		],
 		"translation": "Laikas parašas vardiklis (2 ^ n)",
 		"machine": true
@@ -14855,7 +14851,7 @@
 			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs",
 			".\\Cantabile.Core\\ChannelMask.cs",
 			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiInputPort.cs",
-			".\\GuiKit\\Forms\\MidiChannelBar.cs"
+			".\\GuiKit2\\GuiKit\\PlatformWin\\FormControls\\implMidiChannelBar.cs"
 		],
 		"translation": "\"Omni",
 		"machine": true
@@ -14917,7 +14913,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Recorder.cs"
+			".\\Cantabile.Application\\Bindable\\Recorder.cs",
+			".\\Cantabile.Application\\Recordings\\Recorder.cs"
 		],
 		"translation": "magnetofonas",
 		"machine": true
@@ -15100,6 +15097,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
@@ -15380,6 +15378,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 			".\\Cantabile.Application\\Bindings\\Binding.cs"
 		],
 		"translation": "absoliutus",
@@ -16696,6 +16695,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
 		],
 		"translation": "Nauja daina",
@@ -17041,7 +17041,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\KeyboardCapture.cs"
+			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "bet Cantabile langas",
 		"machine": true
@@ -17050,7 +17050,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\KeyboardCapture.cs"
+			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "tik Cantabile pagrindinis langas",
 		"machine": true
@@ -17059,7 +17059,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\KeyboardCapture.cs"
+			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "kur, bet tik tada, kai gaudyti jau įjungtas",
 		"machine": true
@@ -17068,7 +17068,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\KeyboardCapture.cs"
+			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "bet kur, įskaitant įjungimo surinkimo",
 		"machine": true
@@ -17108,7 +17108,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "Pikis lenkimo",
 		"machine": true
@@ -17118,7 +17119,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "kanalo slėgio",
 		"machine": true
@@ -17398,7 +17400,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "daina pasirinkti",
 		"machine": true
@@ -17489,7 +17492,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "programos numeris",
 		"machine": true
@@ -17975,7 +17979,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "RPN rupi",
 		"machine": true
@@ -17984,7 +17989,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "RPN baudą",
 		"machine": true
@@ -17993,7 +17999,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "NRPN rupi",
 		"machine": true
@@ -18002,7 +18009,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "NRPN baudą",
 		"machine": true
@@ -18659,7 +18667,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Kairysis (balansas)",
 		"machine": true
@@ -18668,7 +18676,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Teisė (balansas)",
 		"machine": true
@@ -18677,7 +18685,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Kairysis (PAN)",
 		"machine": true
@@ -18686,7 +18694,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Teisė (PAN)",
 		"machine": true
@@ -18695,7 +18703,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Priekinė (balansas)",
 		"machine": true
@@ -18704,7 +18712,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Galinis (balansas)",
 		"machine": true
@@ -18713,7 +18721,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Priekinė (PAN)",
 		"machine": true
@@ -18722,7 +18730,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Galinis (PAN)",
 		"machine": true
@@ -18731,7 +18739,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "{0:0}% Kairysis",
 		"machine": true
@@ -18740,7 +18748,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "{0:0}% Teisė",
 		"machine": true
@@ -18749,7 +18757,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Gui\\Composited\\Slider.cs",
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "vidurys",
 		"machine": true
@@ -18758,7 +18767,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "{0:0}% Galinis",
 		"machine": true
@@ -18767,7 +18776,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "{0:0}% Priekinė",
 		"machine": true
@@ -18824,24 +18833,6 @@
 			".\\Cantabile.Core\\PluginHost.cs"
 		],
 		"translation": "Nepavyko įkelti VST 3 modulis - {0}",
-		"machine": true
-	},
-	"Performer": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Edition\\Edition.cs"
-		],
-		"translation": "atlikėjas",
-		"machine": true
-	},
-	"Lite": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Edition\\Edition.cs"
-		],
-		"translation": "lite",
 		"machine": true
 	},
 	"Failed to create audio driver, unknown multi-driver configuration '{0}'": 
@@ -19163,7 +19154,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "<Atgal",
 		"machine": true
@@ -19172,7 +19163,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "Kitas>",
 		"machine": true
@@ -19181,7 +19172,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "Baigti",
 		"machine": true
@@ -20708,7 +20699,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
 		],
 		"translation": "Uždaryti (&L)",
 		"machine": true
@@ -21149,7 +21141,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "CK rupi",
 		"machine": true
@@ -21158,7 +21151,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "CK baudą",
 		"machine": true
@@ -21947,7 +21941,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\Knob.cs"
+			".\\Cantabile.Gui\\Composited\\Knob.cs"
 		],
 		"translation": "Pelnas: {0}",
 		"machine": true
@@ -21956,70 +21950,16 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\Slider.cs"
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
 		],
 		"translation": "Tempo:",
-		"machine": true
-	},
-	"Column Headers": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Controls\\Composited\\ColumnHeaders.cs"
-		],
-		"translation": "Stulpelių antraštės",
-		"machine": true
-	},
-	"Disable &SSE optimizations": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\DiagnosticsPage.cs"
-		],
-		"translation": "Išjungti &SSE optimizavimą",
-		"machine": true
-	},
-	"Disable SSE&2 optimizations": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\DiagnosticsPage.cs"
-		],
-		"translation": "Išjungti SSE&2 optimizavimą",
-		"machine": true
-	},
-	"System Default ({0}%)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Sistemos numatytoji ({0}%)",
-		"machine": true
-	},
-	"Prevent scree&n saver": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MiscPage.cs"
-		],
-		"translation": "Užkirsti kelią ekra&no užsklandą",
-		"machine": true
-	},
-	"&Exclude...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "N&eįtraukti...",
 		"machine": true
 	},
 	"Unhandled Exception": 
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "Negydoma išimtis",
 		"machine": true
@@ -22028,7 +21968,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "Neteisėta išimtis įvyko. jei spustelėkite Tęsti, programa bus \nignoruokite šią klaidą ir bandykite tęsti. Jei paspausite \"Quit\", programa bus\nnedelsiant uždarykite.",
 		"machine": true
@@ -22037,7 +21977,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "&Ignoruoti",
 		"machine": true
@@ -22046,7 +21986,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "Mes&ti",
 		"machine": true
@@ -22055,25 +21995,16 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "Baigti (&Q)",
-		"machine": true
-	},
-	"&Send": 
-	{
-		"contexts": 
-		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
-		],
-		"translation": "&Siųsti",
 		"machine": true
 	},
 	"&Details": 
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "Informacija (&D)",
 		"machine": true
@@ -22103,6 +22034,830 @@
 			".\\Cantabile.Application\\Bindings\\Binding.cs"
 		],
 		"translation": " - (nekonfigūruotas)",
+		"machine": true
+	},
+	"Trim Unused Plugin Ports (Rack)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Trim nenaudojamas įskiepių jungtis (stovo)",
+		"machine": true
+	},
+	"Trim Unused Plugin Ports (Selected Plugin)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Trim nenaudojamas įskiepių jungtis (pasirinktas papildinys)",
+		"machine": true
+	},
+	"Lock\/Unlock All States": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Užrakinti \/ atrakinti visas būsenas",
+		"machine": true
+	},
+	"Profiler": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Profiler",
+		"machine": true
+	},
+	"Master Gain Levels": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Meistras įgyti lygius",
+		"machine": true
+	},
+	"Disable &GPU accelerated rendering": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\CrashCheckDialog.cs"
+		],
+		"translation": "Išjunkite &GPU pagreitintą vaizdą",
+		"machine": true
+	},
+	"&All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs"
+		],
+		"translation": "Visi (&A)",
+		"machine": true
+	},
+	"Trim Unused Plugin Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\TrimPluginPortsDialog.cs"
+		],
+		"translation": "Trima nepanaudotus įskiepių prievadus",
+		"machine": true
+	},
+	"Occa&ssionally notify me of new features and special offers.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
+		],
+		"translation": "Vėl pranešti apie nauja&s funkcijas ir specialius pasiūlymus.",
+		"machine": true
+	},
+	"&Privacy Policy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
+		],
+		"translation": "&Privatumo politika",
+		"machine": true
+	},
+	"Set Reset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Nustatyti atstatymą",
+		"machine": true
+	},
+	"Clear Reset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Išvalyti iš naujo",
+		"machine": true
+	},
+	"Trim &Unused Audio Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "N&ustatykite nepanaudotus garso prievadus",
+		"machine": true
+	},
+	"From Selected Plugin": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Iš pasirinkto papildinio",
+		"machine": true
+	},
+	"From All Plugins in this Song\/Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Iš visų šios dainos \/ stovo įskiepių...",
+		"machine": true
+	},
+	"P&rofiler": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "P&rofiler",
+		"machine": true
+	},
+	"MIDI Mo&nitor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "MIDI mo&nitorius",
+		"machine": true
+	},
+	"&Highlight Redraws": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Paryškinti persijungia (&H)",
+		"machine": true
+	},
+	"Audio Driver Reset Re&quest": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Garso tvarkyklės atstatymo užklausa (&Q)",
+		"machine": true
+	},
+	"Master Input Level Meter": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Pagrindinis įvesties lygio matuoklis",
+		"machine": true
+	},
+	"Master Output Level Meter": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Meistras išėjimo lygio matuoklis",
+		"machine": true
+	},
+	"Master Midi Input Indicator": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Pagrindinis \"midi\" įvesties indikatorius",
+		"machine": true
+	},
+	"Master Midi Output Indicator": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Pagrindinio midi išvesties indikatorius",
+		"machine": true
+	},
+	"Cantabile is configured to prevent power suspend": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "\"Cantabile\" sukonfigūruotas taip, kad sustabdytų maitinimą",
+		"machine": true
+	},
+	"Invalid value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MetronomePanel.cs"
+		],
+		"translation": "Netinkama vertė",
+		"machine": true
+	},
+	"Not a valid time signature": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MetronomePanel.cs"
+		],
+		"translation": "Netinkamas parašas",
+		"machine": true
+	},
+	"Metr&ics": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Metr&ika",
+		"machine": true
+	},
+	"S&witch to Power Plan:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Perjungti į maitinimo planą (&W):",
+		"machine": true
+	},
+	"Audio Engine Profiling": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "Garso sistemos variklio apibūdinimas",
+		"machine": true
+	},
+	"Detail Level:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "Detalusis lygis:",
+		"machine": true
+	},
+	"0 - Disabled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "0 - neįgalus",
+		"machine": true
+	},
+	"1 - Normal": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "1 - normalus",
+		"machine": true
+	},
+	"2 - Detailed": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "2 - Išsamus",
+		"machine": true
+	},
+	"3 - Over the top": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "3 - viršuje",
+		"machine": true
+	},
+	"History Length:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "Istorijos ilgis:",
+		"machine": true
+	},
+	"{0} minutes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "{0} minut",
+		"machine": true
+	},
+	"hour": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "valandą",
+		"machine": true
+	},
+	"hours": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "valandos",
+		"machine": true
+	},
+	"Enable &High-Resolution for Cantabile Windows": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Įgalinti didelės skiriamosios gebos \"cantabile\" langams (&H)",
+		"machine": true
+	},
+	"Use Per-Window Resolution Scaling (prevents plugins appearing too small)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Naudokite lango raiškos mastelį (neleidžia papildintuvams pasirodyti per mažas)",
+		"machine": true
+	},
+	"Enable GPU Accelerated Rendering (OpenGL)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Įgalinti GPU pagreitintą vaizdą (openGL)",
+		"machine": true
+	},
+	"Web Server": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Tinklapio serveris",
+		"machine": true
+	},
+	"Enable Web &Server": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Įgalinti žiniatinklio &serverį",
+		"machine": true
+	},
+	"Configuration Guide": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Konfigūravimo vadovas",
+		"machine": true
+	},
+	"Object\/Action": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerContentView.cs"
+		],
+		"translation": "Objektas \/ veiksmas",
+		"machine": true
+	},
+	"Maximum": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerContentView.cs"
+		],
+		"translation": "Maksimalus",
+		"machine": true
+	},
+	"Average": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerContentView.cs"
+		],
+		"translation": "Vidurkis",
+		"machine": true
+	},
+	" MB": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": " MB",
+		"machine": true
+	},
+	"Time Load": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
+		],
+		"translation": "Laiko apkrova",
+		"machine": true
+	},
+	"CPU Load (Cantabile)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
+		],
+		"translation": "Procesoriaus apkrova (cantabile)",
+		"machine": true
+	},
+	"CPU Load (System)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
+		],
+		"translation": "Procesoriaus apkrova (sistema)",
+		"machine": true
+	},
+	"Profiler Queue": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Profilio eilė",
+		"machine": true
+	},
+	"Buffer Size": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Buferio dydis",
+		"machine": true
+	},
+	" samples": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": " pavyzdžiai",
+		"machine": true
+	},
+	"Sample Rate": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Mėginio norma",
+		"machine": true
+	},
+	"Hz": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Hz",
+		"machine": true
+	},
+	"Buffer Mode": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Buferio režimas",
+		"machine": true
+	},
+	"Single": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Vienvietis",
+		"machine": true
+	},
+	"Double": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Dvivietis",
+		"machine": true
+	},
+	"Pause or resume display of live profile data": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Sustabdyti arba atnaujinti tiesioginio profilio duomenų rodymą",
+		"machine": true
+	},
+	"Previous Interval": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Ankstesnis intervalas",
+		"machine": true
+	},
+	"Move to the previous interval": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Perkelti į ankstesnį intervalą",
+		"machine": true
+	},
+	"Next Interval": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Kitas intervalas",
+		"machine": true
+	},
+	"Move to the next interval": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Perkelti į kitą intervalą",
+		"machine": true
+	},
+	"Audio engine stopped or Profiler disabled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Garso variklis sustojo arba profileer buvo išjungtas",
+		"machine": true
+	},
+	"Cantabile Profile History": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Cantabile profilio istorija",
+		"machine": true
+	},
+	"No unused plugins ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
+		],
+		"translation": "Nėra neišnaudotų papildinių prievadų",
+		"machine": true
+	},
+	"Relative → {0},{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "Santykinis → {0}, {1}",
+		"machine": true
+	},
+	"Relative": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "Santykinis",
+		"machine": true
+	},
+	"Trim Unused Ports...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
+		],
+		"translation": "Trim nenaudojamas uoste...",
+		"machine": true
+	},
+	"Map All Channels...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
+		],
+		"translation": "Rodyti visus kanalus...",
+		"machine": true
+	},
+	"Move Routes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		],
+		"translation": "Perkelti maršrutus",
+		"machine": true
+	},
+	"Move Objects": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		],
+		"translation": "Perkelti objektus",
+		"machine": true
+	},
+	"$(bufferSize) samples @ $(sampleRate)Hz $(DoubleBuffered)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
+		],
+		"translation": "$ (bufferSize) mėginiai @ $ (sampleRate) Hz $ (DoubleBuffered)",
+		"machine": true
+	},
+	"(Double Buffered)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "(Dvigubas buferis)",
+		"machine": true
+	},
+	"(Single Buffered)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "(Vienkartinis buferis)",
+		"machine": true
+	},
+	"Key Range Data": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Engine.cs"
+		],
+		"translation": "Pagrindinio diapazono duomenys",
+		"machine": true
+	},
+	"\n\nUsing prefixes: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\NetworkServer\\NetworkServer.cs"
+		],
+		"translation": "\n\nNaudojant prefiksus: {0}",
+		"machine": true
+	},
+	"Failed to start network server - {0}{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\NetworkServer\\NetworkServer.cs"
+		],
+		"translation": "Nepavyko paleisti tinklo serverio - {0}{1}",
+		"machine": true
+	},
+	"Media Player \"{0}\"": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs"
+		],
+		"translation": "Media grotuvas \"{0}\"",
+		"machine": true
+	},
+	"Plugin \"{0}\"": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		],
+		"translation": "Įskiepis \"{0}\"",
+		"machine": true
+	},
+	"Input Processing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+		],
+		"translation": "Įvesties apdorojimas",
+		"machine": true
+	},
+	"Output Processing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+		],
+		"translation": "Išvesties apdorojimas",
+		"machine": true
+	},
+	"Engine Cycle": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Environment\\Environment.cs"
+		],
+		"translation": "Variklio ciklą",
+		"machine": true
+	},
+	"Percent:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "Procentas:",
+		"machine": true
+	},
+	"Rear": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "Galas",
+		"machine": true
+	},
+	"Front": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "Priekis",
+		"machine": true
+	},
+	"Gain:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "Pasiekti:",
+		"machine": true
+	},
+	"{0}bpm": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "{0}bpm",
+		"machine": true
+	},
+	"Add SubItem": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs"
+		],
+		"translation": "Pridėti subitem",
+		"machine": true
+	},
+	"Add Item": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs"
+		],
+		"translation": "Pridėti daiktą",
 		"machine": true
 	}
 }

@@ -13,7 +13,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\Knob.cs"
+			".\\Cantabile.Gui\\Composited\\Knob.cs"
 		],
 		"translation": "Gain: 14,0 dB",
 		"machine": true
@@ -22,7 +22,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\LevelMeter.cs"
+			".\\Cantabile.Gui\\Composited\\LevelMeter.cs"
 		],
 		"translation": "Nivåmåler",
 		"machine": true
@@ -31,7 +31,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\MidiActivityIndicator.cs"
+			".\\Cantabile.Gui\\Composited\\MidiActivityIndicator.cs"
 		],
 		"translation": "MIDI aktivitetsindikatoren",
 		"machine": true
@@ -40,8 +40,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\RunModeButton.cs",
-			".\\Cantabile\\Controls\\Composited\\SoloModeButton.cs"
+			".\\Cantabile.Gui\\Composited\\RunModeButton.cs",
+			".\\Cantabile.Gui\\Composited\\SoloModeButton.cs"
 		],
 		"translation": "Driftsmodus",
 		"machine": true
@@ -50,7 +50,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\SlotButton.cs"
+			".\\Cantabile.Gui\\Composited\\SlotButton.cs"
 		],
 		"translation": "Disclosure knappen",
 		"machine": true
@@ -59,9 +59,9 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
-			".\\Cantabile\\Controls\\Forms\\ChannelCombo.cs",
-			".\\GuiKit\\Forms\\MidiChannelBar.cs"
+			".\\Cantabile.Gui\\Forms\\CCNumberField.cs",
+			".\\Cantabile.Gui\\Forms\\ChannelCombo.cs",
+			".\\GuiKit2\\GuiKit\\PlatformWin\\FormControls\\implMidiChannelBar.cs"
 		],
 		"translation": "Samme",
 		"machine": true
@@ -70,16 +70,17 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
 			".\\Cantabile\\QuickController\\QuickController.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 			".\\Cantabile.Core\\Curve.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs",
-			".\\Cantabile.Core\\PanAndFade.cs",
-			".\\Cantabile.Core\\ProgramMask.cs",
-			".\\GuiKit\\Forms\\MidiChannelBar.cs"
+			".\\Cantabile.Gui\\Forms\\CCNumberField.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs",
+			".\\Cantabile.Utils\\PanAndFade.cs",
+			".\\Cantabile.Utils\\ProgramMask.cs",
+			".\\GuiKit2\\GuiKit\\PlatformWin\\FormControls\\implMidiChannelBar.cs"
 		],
 		"translation": "None",
 		"machine": true
@@ -225,8 +226,8 @@
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
-			".\\GuiKit\\Forms\\OKCancelButtons.cs",
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\FormControls\\OKCancelButtons.cs",
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "OK",
 		"machine": true
@@ -244,8 +245,8 @@
 			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
-			".\\GuiKit\\Forms\\OKCancelButtons.cs",
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\FormControls\\OKCancelButtons.cs",
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "Avbryt",
 		"machine": true
@@ -369,7 +370,8 @@
 			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
-			".\\Cantabile.Environment\\Environment.cs"
+			".\\Cantabile.Environment\\Environment.cs",
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
 		],
 		"translation": "Venstre",
 		"machine": true
@@ -383,7 +385,8 @@
 			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
-			".\\Cantabile.Environment\\Environment.cs"
+			".\\Cantabile.Environment\\Environment.cs",
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
 		],
 		"translation": "Rett",
 		"machine": true
@@ -422,6 +425,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
@@ -913,7 +917,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
@@ -2605,11 +2609,13 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerContentView.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile.Gui\\Composited\\ExpandButton.cs"
 		],
 		"translation": "Utvid",
 		"machine": true
@@ -2640,7 +2646,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs",
@@ -2672,7 +2679,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
@@ -2729,6 +2736,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Kutt",
@@ -2740,6 +2748,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Kopi",
@@ -2772,7 +2781,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+			".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs"
 		],
 		"translation": "Audio bypass",
 		"machine": true
@@ -2828,7 +2838,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
 		],
 		"translation": "Pan:",
 		"machine": true
@@ -3244,6 +3255,7 @@
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -3317,15 +3329,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "&Metronome",
-		"machine": true
-	},
-	"MIDI Mo&nitor...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "MIDI-skjerm (&N)...",
 		"machine": true
 	},
 	"&Tools": 
@@ -4891,6 +4894,7 @@
 		[
 			".\\Cantabile\\MainWindow\\MetronomePanel.cs",
 			".\\Cantabile.Application\\Bindable\\Metronome.cs",
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Song\\Metronome.cs"
 		],
 		"translation": "Tempo",
@@ -5892,7 +5896,7 @@
 			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs",
 			".\\Cantabile.Core\\ChannelMask.cs",
 			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiInputPort.cs",
-			".\\GuiKit\\Forms\\MidiChannelBar.cs"
+			".\\GuiKit2\\GuiKit\\PlatformWin\\FormControls\\implMidiChannelBar.cs"
 		],
 		"translation": "Omni",
 		"machine": true
@@ -6750,7 +6754,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "RPN grov",
 		"machine": true
@@ -6759,7 +6764,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "RPN bot",
 		"machine": true
@@ -6768,7 +6774,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "NRPN grov",
 		"machine": true
@@ -6777,7 +6784,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "NRPN bot",
 		"machine": true
@@ -6831,7 +6839,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Venstre (balanse)",
 		"machine": true
@@ -6840,7 +6848,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Høyre (balanse)",
 		"machine": true
@@ -6849,7 +6857,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Venstre (pan)",
 		"machine": true
@@ -6858,7 +6866,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Høyre (pan)",
 		"machine": true
@@ -6867,7 +6875,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Front (balanse)",
 		"machine": true
@@ -6876,7 +6884,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Bak (balanse)",
 		"machine": true
@@ -6885,7 +6893,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Front (pan)",
 		"machine": true
@@ -6894,7 +6902,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Bak (pan)",
 		"machine": true
@@ -6904,7 +6912,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Gui\\Composited\\Slider.cs",
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Sentrum",
 		"machine": true
@@ -6913,7 +6922,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "{0:0}% Venstre",
 		"machine": true
@@ -6922,7 +6931,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "{0:0}% Høyre",
 		"machine": true
@@ -6931,7 +6940,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Gui\\Composited\\Slider.cs",
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "Midten",
 		"machine": true
@@ -6940,7 +6950,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "{0:0}% Rear",
 		"machine": true
@@ -6949,7 +6959,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PanAndFade.cs"
+			".\\Cantabile.Utils\\PanAndFade.cs"
 		],
 		"translation": "{0:0}% Front",
 		"machine": true
@@ -7240,7 +7250,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ToolsCommands.cs",
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "Opsjoner",
 		"machine": true
@@ -7249,7 +7259,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "<Tilbake",
 		"machine": true
@@ -7258,7 +7268,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "Neste>",
 		"machine": true
@@ -7267,7 +7277,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\OptionsDialog\\OptionsDialog.cs"
+			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "Finish",
 		"machine": true
@@ -8048,11 +8058,11 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Forms\\CCNumberField.cs",
-			".\\Cantabile\\Controls\\Forms\\CCValueField.cs",
 			".\\Cantabile.Application\\Upgrade\\V2Session.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Core\\ProgramMask.cs"
+			".\\Cantabile.Gui\\Forms\\CCNumberField.cs",
+			".\\Cantabile.Gui\\Forms\\CCValueField.cs",
+			".\\Cantabile.Utils\\ProgramMask.cs"
 		],
 		"translation": "Enhver",
 		"machine": true
@@ -8341,6 +8351,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
@@ -8436,7 +8447,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
 		],
 		"translation": "Fil",
@@ -8446,7 +8457,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs"
+			".\\Cantabile\\Commands\\CommandList.cs"
 		],
 		"translation": "Rediger",
 		"machine": true
@@ -8455,7 +8466,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs"
+			".\\Cantabile\\Commands\\CommandList.cs"
 		],
 		"translation": "Verktøy",
 		"machine": true
@@ -8464,7 +8475,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\MainWindow\\ViewBinding.cs",
 			".\\Cantabile\\MainWindow\\ViewBindingClass.cs"
 		],
@@ -8475,7 +8486,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs"
+			".\\Cantabile\\Commands\\CommandList.cs"
 		],
 		"translation": "Hjelp",
 		"machine": true
@@ -8991,7 +9002,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Standard",
 		"machine": true
@@ -9037,7 +9049,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Rød",
 		"machine": true
@@ -9046,7 +9059,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Maroon",
 		"machine": true
@@ -9055,7 +9069,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Grønn",
 		"machine": true
@@ -9064,7 +9079,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Lime",
 		"machine": true
@@ -9073,7 +9089,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Blå",
 		"machine": true
@@ -9082,7 +9099,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Navy",
 		"machine": true
@@ -9091,7 +9109,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Gul",
 		"machine": true
@@ -9100,7 +9119,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Oliven",
 		"machine": true
@@ -9109,7 +9129,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Fuscia",
 		"machine": true
@@ -9118,7 +9139,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Lilla",
 		"machine": true
@@ -9127,7 +9149,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Cyan",
 		"machine": true
@@ -9136,7 +9159,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Teal",
 		"machine": true
@@ -9145,7 +9169,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Orange",
 		"machine": true
@@ -9154,7 +9179,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs"
+			".\\Cantabile\\Misc\\ColorMenu.cs",
+			".\\Cantabile.Utils\\BasicColor.cs"
 		],
 		"translation": "Brown",
 		"machine": true
@@ -9625,7 +9651,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\KeyboardCapture.cs"
+			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "noen Cantabile vindu",
 		"machine": true
@@ -9634,7 +9660,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\KeyboardCapture.cs"
+			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "Cantabile hovedvinduet bare",
 		"machine": true
@@ -9643,7 +9669,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\KeyboardCapture.cs"
+			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "hvor som helst, men bare når fangst allerede er slått på",
 		"machine": true
@@ -9652,7 +9678,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\KeyboardCapture.cs"
+			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "hvor som helst, inkludert å slå på fangst",
 		"machine": true
@@ -9747,15 +9773,6 @@
 		"translation": "Del i sang (&R)",
 		"machine": true
 	},
-	"Run &Test...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Kjør &test...",
-		"machine": true
-	},
 	"Next Song or Part (Delayed)": 
 	{
 		"contexts": 
@@ -9796,8 +9813,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\NumberPad.cs",
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
+			".\\Cantabile.Gui\\Composited\\NumberPad.cs"
 		],
 		"translation": "Enter",
 		"machine": true
@@ -10438,7 +10455,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\MainWindow\\ViewBinding.cs"
 		],
@@ -11049,7 +11066,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\CommandRouting\\CommandList.cs",
+			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\SidePanel\\SidePanel.cs"
 		],
@@ -11170,7 +11187,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Recorder.cs"
+			".\\Cantabile.Application\\Bindable\\Recorder.cs",
+			".\\Cantabile.Application\\Recordings\\Recorder.cs"
 		],
 		"translation": "Opptaker",
 		"machine": true
@@ -13031,7 +13049,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "Program nummer",
 		"machine": true
@@ -13166,7 +13185,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\TipPanel.cs"
+			".\\Cantabile.Gui\\Composited\\TipPanel.cs"
 		],
 		"translation": "Ok, skjønner!",
 		"machine": true
@@ -13175,7 +13194,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\TipPanel.cs"
+			".\\Cantabile.Gui\\Composited\\TipPanel.cs"
 		],
 		"translation": "Fortell meg mer",
 		"machine": true
@@ -13187,6 +13206,7 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileMidiAssignmentDialog.cs",
 			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
+			".\\Cantabile\\Options\\AudioEnginePage.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs"
 		],
@@ -13283,7 +13303,6 @@
 			".\\Cantabile\\Licensing\\LoginPage.cs",
 			".\\Cantabile\\Licensing\\OfflinePage.cs",
 			".\\Cantabile\\Licensing\\RegisteredPage.cs",
-			".\\Cantabile\\Licensing\\RegisterPage.cs",
 			".\\Cantabile\\Licensing\\TrialNoticePage.cs"
 		],
 		"translation": "Kontakt oss (&C)",
@@ -13696,28 +13715,9 @@
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
-			".\\Cantabile.Edition\\Edition.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		],
 		"translation": "Solo",
-		"machine": true
-	},
-	"Performer": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Edition\\Edition.cs"
-		],
-		"translation": "Performer",
-		"machine": true
-	},
-	"Lite": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Edition\\Edition.cs"
-		],
-		"translation": "Lite",
 		"machine": true
 	},
 	"Suppress": 
@@ -13852,7 +13852,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\Metronome.cs",
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
 		],
 		"translation": "Taktart teller",
 		"machine": true
@@ -13861,7 +13862,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\Metronome.cs",
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
 		],
 		"translation": "Taktart evner",
 		"machine": true
@@ -13870,7 +13872,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\Metronome.cs",
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
 		],
 		"translation": "Taktart nevneren (2 ^ n)",
 		"machine": true
@@ -14043,19 +14046,11 @@
 		"translation": "Aktiver måle lyder",
 		"machine": true
 	},
-	"Load": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
-		],
-		"translation": "Laste",
-		"machine": true
-	},
 	"Page Faults": 
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
 		],
 		"translation": "siden feil",
@@ -14065,6 +14060,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
 		],
 		"translation": "Hukommelse",
@@ -14074,6 +14070,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
 		],
 		"translation": "Working Set",
@@ -14083,6 +14080,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
 		],
 		"translation": "Kjører \/ lastet stativer",
@@ -14092,7 +14090,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
 		],
 		"translation": "Objekter \/ låste zombier",
 		"machine": true
@@ -14104,15 +14102,6 @@
 			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
 		],
 		"translation": "Ingen lyd driver",
-		"machine": true
-	},
-	"$(bufferSize) samples @ $(sampleRate)Hz": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
-		],
-		"translation": "$ (Buffer) prøver @ $ (samplerate) Hz",
 		"machine": true
 	},
 	"&Velocity\/Controller Curve": 
@@ -14156,7 +14145,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "Channel press",
 		"machine": true
@@ -14166,7 +14156,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "Pitch bend",
 		"machine": true
@@ -14771,6 +14762,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
 		],
 		"translation": "Ny sang",
@@ -14817,6 +14809,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\BindingEncodedIndexValueDialog.cs",
 			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs"
 		],
 		"translation": "relativ skalering:",
@@ -14835,6 +14828,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 			".\\Cantabile.Application\\Bindings\\Binding.cs"
 		],
 		"translation": "Absolute",
@@ -15260,8 +15254,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\KeyRangeIndicator.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
+			".\\Cantabile.Gui\\Composited\\KeyRangeIndicator.cs"
 		],
 		"translation": "Key rekkevidde indikator",
 		"machine": true
@@ -15270,8 +15264,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Forms\\ColorCombo.cs",
-			".\\Cantabile\\Options\\RecordingPage.cs"
+			".\\Cantabile\\Options\\RecordingPage.cs",
+			".\\Cantabile.Gui\\Forms\\ColorCombo.cs"
 		],
 		"translation": "Automatisk",
 		"machine": true
@@ -16636,7 +16630,8 @@
 		"contexts": 
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "Song velge",
 		"machine": true
@@ -17834,7 +17829,8 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile.Gui\\Composited\\ExpandButton.cs"
 		],
 		"translation": "Utvid \/ kollaps (ctrl + venstre \/ høyre)",
 		"machine": true
@@ -17847,7 +17843,8 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile.Gui\\Composited\\ExpandButton.cs"
 		],
 		"translation": "Viser eller skjuler innholdet i dette panelet.",
 		"machine": true
@@ -18610,13 +18607,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs",
-			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile\\MainWindow\\MainWindowView.cs",
-			".\\Cantabile\\MainWindow\\MetronomePanel.cs",
-			".\\Cantabile\\SetList\\SetListGrid.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs",
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+			".\\Cantabile\\MainWindow\\CreateBindingMenuItem.cs"
 		],
 		"translation": "Opprett binding...",
 		"machine": true
@@ -20708,7 +20699,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
 		],
 		"translation": "&Lukk",
 		"machine": true
@@ -21149,7 +21141,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "CC grov",
 		"machine": true
@@ -21158,7 +21151,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs"
 		],
 		"translation": "CC fint",
 		"machine": true
@@ -21947,7 +21941,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\Knob.cs"
+			".\\Cantabile.Gui\\Composited\\Knob.cs"
 		],
 		"translation": "Gain: {0}",
 		"machine": true
@@ -21956,70 +21950,16 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Controls\\Composited\\Slider.cs"
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
 		],
 		"translation": "tempo:",
-		"machine": true
-	},
-	"Column Headers": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Controls\\Composited\\ColumnHeaders.cs"
-		],
-		"translation": "Kolonneoverskrifter",
-		"machine": true
-	},
-	"Disable &SSE optimizations": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\DiagnosticsPage.cs"
-		],
-		"translation": "Deaktiver &SSE-optimaliseringer",
-		"machine": true
-	},
-	"Disable SSE&2 optimizations": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\DiagnosticsPage.cs"
-		],
-		"translation": "Deaktiver SSE&2-optimaliseringer",
-		"machine": true
-	},
-	"System Default ({0}%)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Systemstandard ({0}%)",
-		"machine": true
-	},
-	"Prevent scree&n saver": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MiscPage.cs"
-		],
-		"translation": "Forhi&ndre skjermsparer",
-		"machine": true
-	},
-	"&Exclude...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "Ut&elukke...",
 		"machine": true
 	},
 	"Unhandled Exception": 
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "Ubehandlet unntak",
 		"machine": true
@@ -22028,7 +21968,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "Et uhåndtert unntak har skjedd. Hvis du klikker Fortsett, vil programmet \nignorere denne feilen og forsøk å fortsette. Hvis du klikker Avslutt, vil applikasjonen\nlukk umiddelbart.",
 		"machine": true
@@ -22037,7 +21977,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "Overse (&I)",
 		"machine": true
@@ -22046,7 +21986,7 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "Kas&te",
 		"machine": true
@@ -22055,25 +21995,16 @@
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "Slutte (&Q)",
-		"machine": true
-	},
-	"&Send": 
-	{
-		"contexts": 
-		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
-		],
-		"translation": "&Sende",
 		"machine": true
 	},
 	"&Details": 
 	{
 		"contexts": 
 		[
-			".\\GuiKit\\ExceptionDialog\\ExceptionDialog.cs"
+			".\\GuiKit2\\GuiKit\\Utils\\ExceptionDialog.cs"
 		],
 		"translation": "&detaljer",
 		"machine": true
@@ -22103,6 +22034,830 @@
 			".\\Cantabile.Application\\Bindings\\Binding.cs"
 		],
 		"translation": " - (ikke konfigurert)",
+		"machine": true
+	},
+	"Trim Unused Plugin Ports (Rack)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Trim ubrukt plugin porter (rack)",
+		"machine": true
+	},
+	"Trim Unused Plugin Ports (Selected Plugin)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Trim ubrukte plugin-porter (valgt plugin)",
+		"machine": true
+	},
+	"Lock\/Unlock All States": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs"
+		],
+		"translation": "Lås \/ låse opp alle statene",
+		"machine": true
+	},
+	"Profiler": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Profiler",
+		"machine": true
+	},
+	"Master Gain Levels": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Master gevinst nivåer",
+		"machine": true
+	},
+	"Disable &GPU accelerated rendering": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\CrashCheckDialog.cs"
+		],
+		"translation": "Deaktiver &GPU-akselerert gjengivelse",
+		"machine": true
+	},
+	"&All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs"
+		],
+		"translation": "&Alle",
+		"machine": true
+	},
+	"Trim Unused Plugin Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\TrimPluginPortsDialog.cs"
+		],
+		"translation": "Trim ubrukte plugin porter",
+		"machine": true
+	},
+	"Occa&ssionally notify me of new features and special offers.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
+		],
+		"translation": "Eventuelt informer meg om nye funk&sjoner og spesialtilbud.",
+		"machine": true
+	},
+	"&Privacy Policy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Licensing\\RegisterPage.cs"
+		],
+		"translation": "&Personvernregler",
+		"machine": true
+	},
+	"Set Reset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Still inn tilbakestilling",
+		"machine": true
+	},
+	"Clear Reset": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Gyldig tilbakestilling",
+		"machine": true
+	},
+	"Trim &Unused Audio Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Trim &ubrukte lydporter",
+		"machine": true
+	},
+	"From Selected Plugin": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Fra valgt plugin",
+		"machine": true
+	},
+	"From All Plugins in this Song\/Rack...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Fra alle plugins i denne sangen \/ rack...",
+		"machine": true
+	},
+	"P&rofiler": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "P&rofiler",
+		"machine": true
+	},
+	"MIDI Mo&nitor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "MIDI-skjerm (&N)",
+		"machine": true
+	},
+	"&Highlight Redraws": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Frem&hev redraws",
+		"machine": true
+	},
+	"Audio Driver Reset Re&quest": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Tilbakestill forespørsel for lyddriver (&Q)",
+		"machine": true
+	},
+	"Master Input Level Meter": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Master inngangsnivåmåler",
+		"machine": true
+	},
+	"Master Output Level Meter": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Mastergradsmåler",
+		"machine": true
+	},
+	"Master Midi Input Indicator": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Master midi inngang indikator",
+		"machine": true
+	},
+	"Master Midi Output Indicator": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		],
+		"translation": "Master midi output indikator",
+		"machine": true
+	},
+	"Cantabile is configured to prevent power suspend": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Cantabile er konfigurert for å forhindre strømbrudd",
+		"machine": true
+	},
+	"Invalid value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MetronomePanel.cs"
+		],
+		"translation": "ugyldig verdi",
+		"machine": true
+	},
+	"Not a valid time signature": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MetronomePanel.cs"
+		],
+		"translation": "Ikke gyldig tids signatur",
+		"machine": true
+	},
+	"Metr&ics": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "metr&ics",
+		"machine": true
+	},
+	"S&witch to Power Plan:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Bytt til kraftplan (&W):",
+		"machine": true
+	},
+	"Audio Engine Profiling": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "Audio motor profiling",
+		"machine": true
+	},
+	"Detail Level:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "Detaljnivå:",
+		"machine": true
+	},
+	"0 - Disabled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "0 - Deaktivert",
+		"machine": true
+	},
+	"1 - Normal": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "1 - Normal",
+		"machine": true
+	},
+	"2 - Detailed": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "2 - Detaljert",
+		"machine": true
+	},
+	"3 - Over the top": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "3 - Over toppen",
+		"machine": true
+	},
+	"History Length:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "Historikklengde:",
+		"machine": true
+	},
+	"{0} minutes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "{0} minutter",
+		"machine": true
+	},
+	"hour": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "time",
+		"machine": true
+	},
+	"hours": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\DiagnosticsPage.cs"
+		],
+		"translation": "timer",
+		"machine": true
+	},
+	"Enable &High-Resolution for Cantabile Windows": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Aktiver &høy oppløsning for cantabile vinduer",
+		"machine": true
+	},
+	"Use Per-Window Resolution Scaling (prevents plugins appearing too small)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Bruk skaleringsoppløsning per vindu (forhindrer at plugins vises for små)",
+		"machine": true
+	},
+	"Enable GPU Accelerated Rendering (OpenGL)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Aktiver GPU-akselerert rendering (openGL)",
+		"machine": true
+	},
+	"Web Server": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Internett server",
+		"machine": true
+	},
+	"Enable Web &Server": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Aktiver web&server",
+		"machine": true
+	},
+	"Configuration Guide": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Konfigurasjonsguide",
+		"machine": true
+	},
+	"Object\/Action": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerContentView.cs"
+		],
+		"translation": "Objekt \/ action",
+		"machine": true
+	},
+	"Maximum": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerContentView.cs"
+		],
+		"translation": "Maksimum",
+		"machine": true
+	},
+	"Average": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerContentView.cs"
+		],
+		"translation": "Gjennomsnitt",
+		"machine": true
+	},
+	" MB": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": " MB",
+		"machine": true
+	},
+	"Time Load": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
+		],
+		"translation": "Tidsbelastning",
+		"machine": true
+	},
+	"CPU Load (Cantabile)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
+		],
+		"translation": "CPU belastning (cantabile)",
+		"machine": true
+	},
+	"CPU Load (System)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
+		],
+		"translation": "CPU belastning (system)",
+		"machine": true
+	},
+	"Profiler Queue": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Profiler kø",
+		"machine": true
+	},
+	"Buffer Size": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Buffer størrelse",
+		"machine": true
+	},
+	" samples": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": " prøver",
+		"machine": true
+	},
+	"Sample Rate": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Sample rate",
+		"machine": true
+	},
+	"Hz": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "hz",
+		"machine": true
+	},
+	"Buffer Mode": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Buffer modus",
+		"machine": true
+	},
+	"Single": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Enkelt",
+		"machine": true
+	},
+	"Double": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs"
+		],
+		"translation": "Dobbelt",
+		"machine": true
+	},
+	"Pause or resume display of live profile data": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Pause eller fortsett visning av live profildata",
+		"machine": true
+	},
+	"Previous Interval": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Tidligere intervall",
+		"machine": true
+	},
+	"Move to the previous interval": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Flytt til forrige intervall",
+		"machine": true
+	},
+	"Next Interval": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Neste intervall",
+		"machine": true
+	},
+	"Move to the next interval": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Flytt til neste intervall",
+		"machine": true
+	},
+	"Audio engine stopped or Profiler disabled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Lydmotor stoppet eller profiler deaktivert",
+		"machine": true
+	},
+	"Cantabile Profile History": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
+		],
+		"translation": "Kantabile profil historie",
+		"machine": true
+	},
+	"No unused plugins ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
+		],
+		"translation": "Ingen ubrukte plugins porter",
+		"machine": true
+	},
+	"Relative → {0},{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "Relativ → {0}, {1}",
+		"machine": true
+	},
+	"Relative": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "Slektning",
+		"machine": true
+	},
+	"Trim Unused Ports...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
+		],
+		"translation": "Trim ubrukte porter...",
+		"machine": true
+	},
+	"Map All Channels...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
+		],
+		"translation": "Kart alle kanaler...",
+		"machine": true
+	},
+	"Move Routes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		],
+		"translation": "Flytt ruter",
+		"machine": true
+	},
+	"Move Objects": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		],
+		"translation": "Flytt objekter",
+		"machine": true
+	},
+	"$(bufferSize) samples @ $(sampleRate)Hz $(DoubleBuffered)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\LoadMonitorPanel.cs"
+		],
+		"translation": "$ (bufferSize) prøver @ $ (sampleRate) Hz $ (DoubleBuffered)",
+		"machine": true
+	},
+	"(Double Buffered)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "(Dobbeltbuffet)",
+		"machine": true
+	},
+	"(Single Buffered)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "(Enkeltbuffet)",
+		"machine": true
+	},
+	"Key Range Data": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\Engine.cs"
+		],
+		"translation": "Nøkkeltalldata",
+		"machine": true
+	},
+	"\n\nUsing prefixes: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\NetworkServer\\NetworkServer.cs"
+		],
+		"translation": "\n\nBruk av prefikser: {0}",
+		"machine": true
+	},
+	"Failed to start network server - {0}{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\NetworkServer\\NetworkServer.cs"
+		],
+		"translation": "Kunne ikke starte nettverksserveren - {0}{1}",
+		"machine": true
+	},
+	"Media Player \"{0}\"": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs"
+		],
+		"translation": "Mediespiller \"{0}\"",
+		"machine": true
+	},
+	"Plugin \"{0}\"": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		],
+		"translation": "Plugin \"{0}\"",
+		"machine": true
+	},
+	"Input Processing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+		],
+		"translation": "Inputbehandling",
+		"machine": true
+	},
+	"Output Processing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+		],
+		"translation": "Output behandling",
+		"machine": true
+	},
+	"Engine Cycle": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Environment\\Environment.cs"
+		],
+		"translation": "Motorsyklus",
+		"machine": true
+	},
+	"Percent:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "prosent:",
+		"machine": true
+	},
+	"Rear": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "bakre",
+		"machine": true
+	},
+	"Front": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "Front",
+		"machine": true
+	},
+	"Gain:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "Gevinst:",
+		"machine": true
+	},
+	"{0}bpm": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui\\Composited\\Slider.cs"
+		],
+		"translation": "{0}bpm",
+		"machine": true
+	},
+	"Add SubItem": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs"
+		],
+		"translation": "Legg til subItem",
+		"machine": true
+	},
+	"Add Item": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs"
+		],
+		"translation": "Legg til element",
 		"machine": true
 	}
 }
