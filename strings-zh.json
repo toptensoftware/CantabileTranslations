@@ -2429,6 +2429,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
@@ -6160,6 +6161,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs"
 		],
 		"translation": "隐 (&H)",
@@ -7542,6 +7544,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 			".\\Cantabile\\Licensing\\LicensingDialog.cs"
 		],
 		"translation": "如歌",
@@ -12315,15 +12318,6 @@
 		"translation": "格式化",
 		"machine": true
 	},
-	"Program Numbers:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "节目号码:",
-		"machine": true
-	},
 	"Zero Based": 
 	{
 		"contexts": 
@@ -12340,15 +12334,6 @@
 			".\\Cantabile\\Options\\GeneralPage.cs"
 		],
 		"translation": "一个基础",
-		"machine": true
-	},
-	"Program Banks:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "计划银行:",
 		"machine": true
 	},
 	"MSB\/LSB Combined (eg: 1234.1)": 
@@ -12376,15 +12361,6 @@
 			".\\Cantabile\\Options\\GeneralPage.cs"
 		],
 		"translation": "银行和计划相结合",
-		"machine": true
-	},
-	"Display Middle-C As:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "显示中间的C为:",
 		"machine": true
 	},
 	"Save and Load": 
@@ -13013,24 +12989,6 @@
 			".\\Cantabile\\Options\\MiscPage.cs"
 		],
 		"translation": "防止监视器电源挂起 (&M)",
-		"machine": true
-	},
-	"Web Server": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MiscPage.cs"
-		],
-		"translation": "网络服务器",
-		"machine": true
-	},
-	"Enable Web &Server": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MiscPage.cs"
-		],
-		"translation": "启用Web服务器 (&S)",
 		"machine": true
 	},
 	"Configuration Guide": 
@@ -20356,6 +20314,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile.Application\\ShowNotes\\ShowNote.cs"
 		],
 		"translation": "隐",
@@ -22858,6 +22817,141 @@
 			".\\GuiKit2\\GuiKit\\Windows\\OptionsDialog.cs"
 		],
 		"translation": "完",
+		"machine": true
+	},
+	"Checking for updated subscription...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs"
+		],
+		"translation": "检查更新的订阅...",
+		"machine": true
+	},
+	"Checking for an updated subscription...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs"
+		],
+		"translation": "检查更新的订阅...",
+		"machine": true
+	},
+	"Let Each Song control Metronome Sound Settings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MetronomePanel.cs"
+		],
+		"translation": "让每首歌控制节拍器声音设置",
+		"machine": true
+	},
+	"&Program Numbers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "程序编号 (&P):",
+		"machine": true
+	},
+	"Program &Banks:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "计划银行 (&B):",
+		"machine": true
+	},
+	"Zero Padded (eg: 009.082.001)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "零填充（例如：009.082.001)",
+		"machine": true
+	},
+	"(N)&RPN Numbers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "(N）&RPN号码:",
+		"machine": true
+	},
+	"MSB\/LSB Combined (eg: 1234)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "MSB \/ LSB组合（例如：1234)",
+		"machine": true
+	},
+	"MSB\/LSB Separate (eg: 9.82)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "MSB \/ LSB分开（例如：9.82)",
+		"machine": true
+	},
+	"Zero Padded (eg: 009.082)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "零填充（例如：009.082)",
+		"machine": true
+	},
+	"Display &Middle-C As:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "显示中间c为 (&M):",
+		"machine": true
+	},
+	"Network Server (Experimental)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "网络服务器（实验)",
+		"machine": true
+	},
+	"Enable Network &Server": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "启用网络服务器 (&S)",
+		"machine": true
+	},
+	"Sounds": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Song\\Metronome.cs"
+		],
+		"translation": "声音",
+		"machine": true
+	},
+	"Invalid (N)RPN number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\RpnNumber.cs"
+		],
+		"translation": "无效（n）RPN号码",
 		"machine": true
 	}
 }

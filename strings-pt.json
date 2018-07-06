@@ -5653,15 +5653,6 @@
 		"translation": "um semitom",
 		"machine": false
 	},
-	"Program Banks:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Bancos de Programas:",
-		"machine": false
-	},
 	"Quadro+Lfe": 
 	{
 		"contexts": 
@@ -5861,15 +5852,6 @@
 			".\\Cantabile.Application\\ShowNotes\\UndoUnits.cs"
 		],
 		"translation": "Excluir Nota do Show",
-		"machine": false
-	},
-	"Display Middle-C As:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Exibir C Médio Como:",
 		"machine": false
 	},
 	"&Delete Play Range": 
@@ -8487,6 +8469,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 			".\\Cantabile\\Licensing\\LicensingDialog.cs"
 		],
 		"translation": "Cantabile",
@@ -9136,15 +9119,6 @@
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "Esta atribuição é inválida porque você não selecionou uma origem e destino compatíveis.\n\nDica: se você está tentando atribuir um botão de controlador para uma ação, tente selecionar \"Controlador (Botão)\" ou \"Controlador (Sem Botão de Borda)\" como o evento.",
-		"machine": false
-	},
-	"Program Numbers:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Números do Programa:",
 		"machine": false
 	},
 	"MIDI Clock": 
@@ -10778,6 +10752,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile.Application\\ShowNotes\\ShowNote.cs"
 		],
 		"translation": "Escondido",
@@ -16057,6 +16032,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
@@ -17444,6 +17420,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs"
 		],
 		"translation": "Escondido (&H)",
@@ -22406,24 +22383,6 @@
 		"translation": "Ativar renderização acelerada por GPU (openGL)",
 		"machine": true
 	},
-	"Web Server": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MiscPage.cs"
-		],
-		"translation": "servidor web",
-		"machine": true
-	},
-	"Enable Web &Server": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MiscPage.cs"
-		],
-		"translation": "Ativar &servidor da web",
-		"machine": true
-	},
 	"Configuration Guide": 
 	{
 		"contexts": 
@@ -22858,6 +22817,141 @@
 			".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs"
 		],
 		"translation": "Adicionar Item",
+		"machine": true
+	},
+	"Checking for updated subscription...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs"
+		],
+		"translation": "Verificando a assinatura atualizada...",
+		"machine": true
+	},
+	"Checking for an updated subscription...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs"
+		],
+		"translation": "Verificando uma assinatura atualizada...",
+		"machine": true
+	},
+	"Let Each Song control Metronome Sound Settings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MetronomePanel.cs"
+		],
+		"translation": "Deixe que cada música controle as configurações de som do metrônomo",
+		"machine": true
+	},
+	"&Program Numbers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Números do &programa:",
+		"machine": true
+	},
+	"Program &Banks:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "&Bancos de programas:",
+		"machine": true
+	},
+	"Zero Padded (eg: 009.082.001)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Zero acolchoado (por exemplo: 009.082.001)",
+		"machine": true
+	},
+	"(N)&RPN Numbers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "(N) Núme&ros RPN:",
+		"machine": true
+	},
+	"MSB\/LSB Combined (eg: 1234)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "MSB \/ LSB combinado (por exemplo: 1234)",
+		"machine": true
+	},
+	"MSB\/LSB Separate (eg: 9.82)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "MSB \/ LSB separado (exemplo: 9,82)",
+		"machine": true
+	},
+	"Zero Padded (eg: 009.082)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Zero acolchoado (por exemplo: 009.082)",
+		"machine": true
+	},
+	"Display &Middle-C As:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Exibir &meio-c como:",
+		"machine": true
+	},
+	"Network Server (Experimental)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Servidor de rede (experimental)",
+		"machine": true
+	},
+	"Enable Network &Server": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Ativar &servidor de rede",
+		"machine": true
+	},
+	"Sounds": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Song\\Metronome.cs"
+		],
+		"translation": "Sons",
+		"machine": true
+	},
+	"Invalid (N)RPN number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\RpnNumber.cs"
+		],
+		"translation": "Número RPN inválido (n)",
 		"machine": true
 	}
 }

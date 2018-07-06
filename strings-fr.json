@@ -1500,6 +1500,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
@@ -4669,6 +4670,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 			".\\Cantabile\\Licensing\\LicensingDialog.cs"
 		],
 		"translation": "Cantabile",
@@ -12252,6 +12254,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile.Application\\ShowNotes\\ShowNote.cs"
 		],
 		"translation": "Masqué",
@@ -14803,33 +14806,6 @@
 			".\\Cantabile\\Options\\FileLocationsPage.cs"
 		],
 		"translation": "fichier de support d'arrière-plan (&G):",
-		"machine": true
-	},
-	"Program Numbers:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Les numéros de programme:",
-		"machine": true
-	},
-	"Program Banks:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "banques de programme:",
-		"machine": true
-	},
-	"Display Middle-C As:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Afficher middle-c comme:",
 		"machine": true
 	},
 	"Keyboard & Controls": 
@@ -19082,6 +19058,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs"
 		],
 		"translation": "Cac&hé",
@@ -22406,24 +22383,6 @@
 		"translation": "Activer le rendu accéléré par GPU (openGL)",
 		"machine": true
 	},
-	"Web Server": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MiscPage.cs"
-		],
-		"translation": "serveur Web",
-		"machine": true
-	},
-	"Enable Web &Server": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\MiscPage.cs"
-		],
-		"translation": "Activer le &serveur Web",
-		"machine": true
-	},
 	"Configuration Guide": 
 	{
 		"contexts": 
@@ -22858,6 +22817,141 @@
 			".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs"
 		],
 		"translation": "Ajouter un item",
+		"machine": true
+	},
+	"Checking for updated subscription...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs"
+		],
+		"translation": "Vérification de l'abonnement mis à jour...",
+		"machine": true
+	},
+	"Checking for an updated subscription...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs"
+		],
+		"translation": "Vérification d'un abonnement mis à jour...",
+		"machine": true
+	},
+	"Let Each Song control Metronome Sound Settings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MetronomePanel.cs"
+		],
+		"translation": "Laissez chaque morceau contrôler les paramètres de son du métronome",
+		"machine": true
+	},
+	"&Program Numbers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Numéros de &programme:",
+		"machine": true
+	},
+	"Program &Banks:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "&Banques de programme:",
+		"machine": true
+	},
+	"Zero Padded (eg: 009.082.001)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Zéro rembourré (ex: 009.082.001)",
+		"machine": true
+	},
+	"(N)&RPN Numbers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "(N) numé&ros RPN:",
+		"machine": true
+	},
+	"MSB\/LSB Combined (eg: 1234)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "MSB \/ LSB combinés (par exemple: 1234)",
+		"machine": true
+	},
+	"MSB\/LSB Separate (eg: 9.82)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "MSB \/ LSB séparé (par exemple: 9.82)",
+		"machine": true
+	},
+	"Zero Padded (eg: 009.082)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Zéro rembourré (ex: 009.082)",
+		"machine": true
+	},
+	"Display &Middle-C As:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Afficher &milieu-c comme:",
+		"machine": true
+	},
+	"Network Server (Experimental)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Serveur de réseau (expérimental)",
+		"machine": true
+	},
+	"Enable Network &Server": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Activer le &serveur réseau",
+		"machine": true
+	},
+	"Sounds": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Song\\Metronome.cs"
+		],
+		"translation": "Des sons",
+		"machine": true
+	},
+	"Invalid (N)RPN number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\RpnNumber.cs"
+		],
+		"translation": "Numéro RPN invalide (n)",
 		"machine": true
 	}
 }

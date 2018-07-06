@@ -1674,6 +1674,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+		".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 		".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
@@ -1940,6 +1941,19 @@
 		".\\Cantabile\\SetList\\SetListPanel.cs",
 		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
 		".\\Cantabile\\SidePanel\\StatesPanel.cs",
+	],
+},
+"Cantabile":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
+		".\\Cantabile\\Licensing\\LicensingDialog.cs",
+	],
+},
+"Checking for updated subscription...":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 	],
 },
 "Relative Scaling:":
@@ -3738,6 +3752,13 @@
 		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 	],
 },
+"&Hidden":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+		".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+	],
+},
 "&More":
 {
 	"contexts": [
@@ -3899,6 +3920,13 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+	],
+},
+"Hidden":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+		".\\Cantabile.Application\\ShowNotes\\ShowNote.cs",
 	],
 },
 "Enter Bank and &Program Number:":
@@ -4229,12 +4257,6 @@
 		".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
 	],
 },
-"&Hidden":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
-	],
-},
 "Image Files":
 {
 	"contexts": [
@@ -4374,12 +4396,6 @@
 		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
 	],
 },
-"Your update subscription may not cover this build :(":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
-	],
-},
 "About Subscriptions":
 {
 	"contexts": [
@@ -4400,6 +4416,18 @@
 	],
 },
 "Download":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+	],
+},
+"Your update subscription may not cover this build :(":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
+	],
+},
+"Checking for an updated subscription...":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
@@ -5177,12 +5205,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\Licensing\\LicenseManager.cs",
-	],
-},
-"Cantabile":
-{
-	"contexts": [
-		".\\Cantabile\\Licensing\\LicensingDialog.cs",
 	],
 },
 "Enter Your License Details":
@@ -6723,6 +6745,12 @@
 	],
 },
 "Enable Measure Sounds":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MetronomePanel.cs",
+	],
+},
+"Let Each Song control Metronome Sound Settings":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MetronomePanel.cs",
@@ -8387,7 +8415,7 @@
 		".\\Cantabile\\Options\\GeneralPage.cs",
 	],
 },
-"Program Numbers:":
+"&Program Numbers:":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\GeneralPage.cs",
@@ -8405,7 +8433,7 @@
 		".\\Cantabile\\Options\\GeneralPage.cs",
 	],
 },
-"Program Banks:":
+"Program &Banks:":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\GeneralPage.cs",
@@ -8423,13 +8451,43 @@
 		".\\Cantabile\\Options\\GeneralPage.cs",
 	],
 },
+"Zero Padded (eg: 009.082.001)":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\GeneralPage.cs",
+	],
+},
 "Bank and Program Combined":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\GeneralPage.cs",
 	],
 },
-"Display Middle-C As:":
+"(N)&RPN Numbers:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\GeneralPage.cs",
+	],
+},
+"MSB\/LSB Combined (eg: 1234)":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\GeneralPage.cs",
+	],
+},
+"MSB\/LSB Separate (eg: 9.82)":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\GeneralPage.cs",
+	],
+},
+"Zero Padded (eg: 009.082)":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\GeneralPage.cs",
+	],
+},
+"Display &Middle-C As:":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\GeneralPage.cs",
@@ -8856,13 +8914,13 @@
 		".\\Cantabile\\Options\\MiscPage.cs",
 	],
 },
-"Web Server":
+"Network Server (Experimental)":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\MiscPage.cs",
 	],
 },
-"Enable Web &Server":
+"Enable Network &Server":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\MiscPage.cs",
@@ -13781,6 +13839,12 @@
 		".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
 	],
 },
+"Sounds":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Song\\Metronome.cs",
+	],
+},
 "Sync. to MIDI Clock":
 {
 	"contexts": [
@@ -13824,12 +13888,6 @@
 	],
 },
 "Colors":
-{
-	"contexts": [
-		".\\Cantabile.Application\\ShowNotes\\ShowNote.cs",
-	],
-},
-"Hidden":
 {
 	"contexts": [
 		".\\Cantabile.Application\\ShowNotes\\ShowNote.cs",
@@ -15453,6 +15511,12 @@
 {
 	"contexts": [
 		".\\Cantabile.Utils\\PanAndFade.cs",
+	],
+},
+"Invalid (N)RPN number":
+{
+	"contexts": [
+		".\\Cantabile.Utils\\RpnNumber.cs",
 	],
 },
 "Unhandled Exception":
