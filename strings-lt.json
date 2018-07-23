@@ -151,6 +151,7 @@
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
@@ -7847,7 +7848,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
 		],
 		"translation": "Stotelės atkūrimą magistro transporto",
 		"machine": true
@@ -10153,15 +10155,6 @@
 			".\\Cantabile\\Options\\GeneralPage.cs"
 		],
 		"translation": "Išsaugoti dainas perjungiant per meniu Failas:",
-		"machine": true
-	},
-	"Save Songs when switching via MIDI:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Išsaugoti dainas perjungiant per MIDI:",
 		"machine": true
 	},
 	"Save Songs when switching via Set List:": 
@@ -22952,6 +22945,60 @@
 			".\\Cantabile.Utils\\RpnNumber.cs"
 		],
 		"translation": "Neteisingas (n) RPN numeris",
+		"machine": true
+	},
+	"Cantabile no longer prompts to save song files when switching via MIDI or via the Network API.\n\nThe default option of NOT SAVING has been selected, however if you prefer songs to be saved in this situation adjust this setting:\n\nSave Songs when switching via MIDI\/Network -> Yes\/No\n\non the General Page in Options.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "\"Cantabile\" nebepasiekia išsaugoti dainų rinkmenų, kai perjungiate per MIDI arba per tinklo API.\n\nNumatyta parinktis NEPAŽINTINTA buvo pasirinkta, tačiau jei norite, kad dainos būtų išsaugotos šioje situacijoje, sureguliuokite šį nustatymą:\n\nĮrašyti dainas perjungus per MIDI \/ tinklą -> taip \/ ne\n\nBendrojo puslapio parinktyse.",
+		"machine": true
+	},
+	"Save Songs when switching via MIDI\/Network:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Įrašyti dainas perjungiant per MIDI \/ tinklą:",
+		"machine": true
+	},
+	"The following related {0} will be overwritten.\n\n{1}\n\nAre you sure?": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\RelatedFiles.cs"
+		],
+		"translation": "Bus pakeistos tokios susijusios {0}.\n\n{1}\n\nAr tu tuo tikras?",
+		"machine": true
+	},
+	"file": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\RelatedFiles.cs"
+		],
+		"translation": "failas",
+		"machine": true
+	},
+	"files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\RelatedFiles.cs"
+		],
+		"translation": "failai",
+		"machine": true
+	},
+	"The file can't be renamed because the following {0} would be overwritten.\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\RelatedFiles.cs"
+		],
+		"translation": "Failas negali būti pervadintas, nes bus pakeistas šis {0}.\n\n{1}",
 		"machine": true
 	}
 }

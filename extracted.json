@@ -122,6 +122,7 @@
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
 		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
@@ -6457,6 +6458,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 	],
 },
 "Master Transport":
@@ -6596,6 +6598,12 @@
 	],
 },
 "Cantabile is configured to prevent power suspend":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainWindow.cs",
+	],
+},
+"Cantabile no longer prompts to save song files when switching via MIDI or via the Network API.\n\nThe default option of NOT SAVING has been selected, however if you prefer songs to be saved in this situation adjust this setting:\n\nSave Songs when switching via MIDI\/Network -> Yes\/No\n\non the General Page in Options.":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainWindow.cs",
@@ -8505,7 +8513,7 @@
 		".\\Cantabile\\Options\\GeneralPage.cs",
 	],
 },
-"Save Songs when switching via MIDI:":
+"Save Songs when switching via MIDI\/Network:":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\GeneralPage.cs",
@@ -15511,6 +15519,30 @@
 {
 	"contexts": [
 		".\\Cantabile.Utils\\PanAndFade.cs",
+	],
+},
+"The following related {0} will be overwritten.\n\n{1}\n\nAre you sure?":
+{
+	"contexts": [
+		".\\Cantabile.Utils\\RelatedFiles.cs",
+	],
+},
+"file":
+{
+	"contexts": [
+		".\\Cantabile.Utils\\RelatedFiles.cs",
+	],
+},
+"files":
+{
+	"contexts": [
+		".\\Cantabile.Utils\\RelatedFiles.cs",
+	],
+},
+"The file can't be renamed because the following {0} would be overwritten.\n\n{1}":
+{
+	"contexts": [
+		".\\Cantabile.Utils\\RelatedFiles.cs",
 	],
 },
 "Invalid (N)RPN number":

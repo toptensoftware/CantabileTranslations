@@ -2937,6 +2937,7 @@
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
@@ -11670,15 +11671,6 @@
 		"translation": "Salva le song quando commuto attraverso il menu File:",
 		"machine": false
 	},
-	"Save Songs when switching via MIDI:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Salva le song quando commuto attraverso MIDI:",
-		"machine": false
-	},
 	"Save Songs when switching via Set List:": 
 	{
 		"contexts": 
@@ -17715,7 +17707,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs"
 		],
 		"translation": "Interrompe la riproduzione del transport principale",
 		"machine": false
@@ -22952,6 +22945,60 @@
 			".\\Cantabile.Utils\\RpnNumber.cs"
 		],
 		"translation": "Numero RPN non valido (n)",
+		"machine": true
+	},
+	"Cantabile no longer prompts to save song files when switching via MIDI or via the Network API.\n\nThe default option of NOT SAVING has been selected, however if you prefer songs to be saved in this situation adjust this setting:\n\nSave Songs when switching via MIDI\/Network -> Yes\/No\n\non the General Page in Options.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
+		],
+		"translation": "Cantabile non richiede più di salvare i file dei brani quando si passa via MIDI o tramite l'API di rete.\n\nL'opzione predefinita di NON RISPARMIO è stata selezionata, tuttavia se si preferisce salvare i brani in questa situazione, regolare questa impostazione:\n\nSalva i brani quando si passa via MIDI \/ rete -> si \/ no\n\nnella pagina Generale in Opzioni.",
+		"machine": true
+	},
+	"Save Songs when switching via MIDI\/Network:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Salva i brani quando si passa tramite MIDI \/ rete:",
+		"machine": true
+	},
+	"The following related {0} will be overwritten.\n\n{1}\n\nAre you sure?": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\RelatedFiles.cs"
+		],
+		"translation": "Il seguente {0} correlato verrà sovrascritto.\n\n{1}\n\nSei sicuro?",
+		"machine": true
+	},
+	"file": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\RelatedFiles.cs"
+		],
+		"translation": "file",
+		"machine": true
+	},
+	"files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\RelatedFiles.cs"
+		],
+		"translation": "File",
+		"machine": true
+	},
+	"The file can't be renamed because the following {0} would be overwritten.\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\RelatedFiles.cs"
+		],
+		"translation": "Il file non può essere rinominato perché il seguente {0} verrebbe sovrascritto.\n\n{1}",
 		"machine": true
 	}
 }
