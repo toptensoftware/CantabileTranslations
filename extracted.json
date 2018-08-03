@@ -1933,6 +1933,7 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 		".\\Cantabile\\Options\\ExternalToolsPage.cs",
 		".\\Cantabile\\Options\\HotKeysPage.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
@@ -2894,6 +2895,7 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
 		".\\Cantabile\\SetList\\SetListGrid.cs",
 		".\\Cantabile\\SetList\\SetListPanel.cs",
@@ -2904,6 +2906,7 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
@@ -2919,6 +2922,8 @@
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\AddBindingFooterSlot.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\AddGroupFooterSlot.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\AddObjectFooterSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\AddRouteFooterSlot.cs",
@@ -2941,6 +2946,7 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
@@ -2958,6 +2964,7 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
@@ -4498,6 +4505,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
@@ -4506,6 +4514,7 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
 		".\\Cantabile.Application\\Bindings\\Binding.cs",
+		".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
@@ -8414,6 +8423,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Options\\GeneralPage.cs",
+		".\\Cantabile.Application\\Bindings\\BindingManager.cs",
 	],
 },
 "User Interface":
@@ -8744,9 +8754,11 @@
 {
 	"contexts": [
 		".\\Cantabile\\Options\\KeyboardPage.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
 		".\\Cantabile.Application\\Bindings\\Binding.cs",
+		".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
 		".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
 		".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
 		".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
@@ -9474,6 +9486,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\ProfilerWindow\\ProfilerContentView.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
@@ -10082,11 +10095,83 @@
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 	],
 },
+"Add Group":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\AddGroupFooterSlot.cs",
+	],
+},
+"Adds a new binding group.":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\AddGroupFooterSlot.cs",
+	],
+},
+"Binding Group Name":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\AddGroupFooterSlot.cs",
+	],
+},
+"Expand\/Collapse (Ctrl+Left\/Right)":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+		".\\Cantabile.Gui\\Composited\\ExpandButton.cs",
+	],
+},
+"Shows or hides the contents of this group.":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
+	],
+},
 "Enable":
 {
 	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
+	],
+},
+"Enables or disables this binding group.":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
+	],
+},
+"Click to enter your own notes and reminders.":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
+	],
+},
+"Re&name...":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+	],
+},
+"Rename Binding Group":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
+		".\\Cantabile.Application\\Bindings\\UndoUnits.cs",
 	],
 },
 "Enables or disables this binding.":
@@ -10189,18 +10274,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-	],
-},
-"Click to enter your own notes and reminders.":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
 	],
 },
 "(missing target)":
@@ -10410,6 +10483,32 @@
 		".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
 	],
 },
+"Move To Group":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\MoveBindingMenu.cs",
+	],
+},
+"New Group...":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\MoveBindingMenu.cs",
+	],
+},
+"Move Bindings":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\MoveBindingMenu.cs",
+		".\\Cantabile.Application\\Bindings\\BindingManager.cs",
+	],
+},
+"Move Binding":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\BindingsPanel\\MoveBindingMenu.cs",
+		".\\Cantabile.Application\\Bindings\\UndoUnits.cs",
+	],
+},
 "Add Object":
 {
 	"contexts": [
@@ -10468,17 +10567,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RoutingPanel\\AddRouteFooterSlot.cs",
-	],
-},
-"Expand\/Collapse (Ctrl+Left\/Right)":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
-		".\\Cantabile.Gui\\Composited\\ExpandButton.cs",
 	],
 },
 "Shows or hides the contents of this panel.":
@@ -10843,14 +10931,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
-	],
-},
-"Re&name...":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
 	],
 },
 "&Test Mode":
@@ -12799,6 +12879,12 @@
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
 	],
 },
+"On Section":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Bindable\\Transport.cs",
+	],
+},
 "Is After Position":
 {
 	"contexts": [
@@ -12891,6 +12977,7 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindings\\Binding.cs",
+		".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
@@ -12929,6 +13016,30 @@
 		".\\Cantabile.Application\\Bindings\\Binding.cs",
 	],
 },
+"Binding Group":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
+	],
+},
+"Insert Binding Group":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Bindings\\UndoUnits.cs",
+	],
+},
+"Delete Binding Group":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Bindings\\UndoUnits.cs",
+	],
+},
+"Move Binding Group":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Bindings\\UndoUnits.cs",
+	],
+},
 "Insert Binding":
 {
 	"contexts": [
@@ -12936,12 +13047,6 @@
 	],
 },
 "Delete Binding":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindings\\UndoUnits.cs",
-	],
-},
-"Move Binding":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindings\\UndoUnits.cs",
