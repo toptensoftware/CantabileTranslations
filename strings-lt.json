@@ -1758,6 +1758,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Program.cs",
 			".\\Cantabile\\Commands\\ViewCommands.cs"
 		],
 		"translation": "Parodyti viską",
@@ -1825,15 +1826,6 @@
 			".\\Cantabile\\Commands\\ViewCommands.cs"
 		],
 		"translation": "Pasirinkite kontūro režime",
-		"machine": true
-	},
-	"Show in Windows Explorer": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		],
-		"translation": "Rodyti \"Windows Explorer\"",
 		"machine": true
 	},
 	"Toggle Active Pane": 
@@ -4760,7 +4752,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
 		],
 		"translation": "Raskite E&xplorer",
 		"machine": true
@@ -10377,15 +10370,6 @@
 		"translation": "Karštos raktas (&H):",
 		"machine": true
 	},
-	"This key is already bound to {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\HotKeysPage.cs"
-		],
-		"translation": "Šis raktas jau yra įpareigota {0}",
-		"machine": true
-	},
 	"Please select a command": 
 	{
 		"contexts": 
@@ -14111,15 +14095,6 @@
 			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
 		"translation": "Švarus sąrašas (&C)",
-		"machine": true
-	},
-	"&Show in Windows Explorer": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
-		],
-		"translation": "Rodyti \"Window&s Explorer\"",
 		"machine": true
 	},
 	"A set list is simply list of song files.\nUse the File menu to manage set lists.": 
@@ -22734,7 +22709,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
+			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Įvesties apdorojimas",
 		"machine": true
@@ -22743,7 +22719,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
+			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Išvesties apdorojimas",
 		"machine": true
@@ -23370,6 +23347,151 @@
 			".\\Cantabile.Application\\Bindable\\Engine.cs"
 		],
 		"translation": "Iš naujo paleiskite variklį",
+		"machine": true
+	},
+	"About Cantabile...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Apie cantabile...",
+		"machine": true
+	},
+	"Preferences...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Nustatymai...",
+		"machine": true
+	},
+	"Services": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Paslaugos",
+		"machine": true
+	},
+	"Hide Test Harness": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Paslėpti bandymo diržus",
+		"machine": true
+	},
+	"Hide Others": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Slėpti kitus",
+		"machine": true
+	},
+	"Quit Cantabile": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Išeikite iš cantabile",
+		"machine": true
+	},
+	"Show in Explorer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Rodyti \"Explorer\"",
+		"machine": true
+	},
+	"Reveal in Finder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Atskleisti ieškiklyje",
+		"machine": true
+	},
+	"&Reveal in Finder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
+		],
+		"translation": "Atskleisti ieškiklyje (&R)",
+		"machine": true
+	},
+	"A&ll Racks": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Visi sta&lčiai",
+		"machine": true
+	},
+	"&Double Buffered Audio": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "&Dvigubas buferinis garsas",
+		"machine": true
+	},
+	"This key is already bound to:\n  {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\HotKeysPage.cs"
+		],
+		"translation": "Šis raktas jau yra susijęs:\n  {0}",
+		"machine": true
+	},
+	"URL &Prefixes:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "URL &prefiksai:",
+		"machine": true
+	},
+	"&Show in Explorer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Rodyti \"Explorer\" (&S)",
+		"machine": true
+	},
+	"Reveal in &Finder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Atskleisti ieškiklyje (&F)",
+		"machine": true
+	},
+	"Execution Root": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\CoreEngine.cs"
+		],
+		"translation": "Vykdymo šaknis",
 		"machine": true
 	}
 }

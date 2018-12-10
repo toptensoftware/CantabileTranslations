@@ -8695,15 +8695,6 @@
 		"translation": "Tasto di scelta rapida (&H):",
 		"machine": false
 	},
-	"This key is already bound to {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\HotKeysPage.cs"
-		],
-		"translation": "Questo tasto e' gia'�associato a {0}",
-		"machine": false
-	},
 	"Please select a command": 
 	{
 		"contexts": 
@@ -10631,6 +10622,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Program.cs",
 			".\\Cantabile\\Commands\\ViewCommands.cs"
 		],
 		"translation": "Mostra tutto",
@@ -11245,15 +11237,6 @@
 			".\\Cantabile\\Commands\\ViewCommands.cs"
 		],
 		"translation": "Porte di registrazione",
-		"machine": false
-	},
-	"Show in Windows Explorer": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		],
-		"translation": "Mostra in Windows Explorer",
 		"machine": false
 	},
 	"&Recordings": 
@@ -12339,15 +12322,6 @@
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		],
 		"translation": "Rack integrate non possono collegarsi ad altri rack",
-		"machine": false
-	},
-	"&Show in Windows Explorer": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
-		],
-		"translation": "Mo&stra in Windows Explorer",
 		"machine": false
 	},
 	"Plugin...": 
@@ -14932,7 +14906,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
 		],
 		"translation": "Individuare in e&xplorer",
 		"machine": false
@@ -22715,7 +22690,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
+			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Elaborazione Input",
 		"machine": false
@@ -22724,7 +22700,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
+			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Elaborazione Output",
 		"machine": false
@@ -23370,6 +23347,151 @@
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "Relativo → {0}, {1}",
+		"machine": true
+	},
+	"About Cantabile...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "A proposito di cantabile...",
+		"machine": true
+	},
+	"Preferences...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Preferenze...",
+		"machine": true
+	},
+	"Services": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Servizi",
+		"machine": true
+	},
+	"Hide Test Harness": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Nascondi cablaggio di test",
+		"machine": true
+	},
+	"Hide Others": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Nascondi gli altri",
+		"machine": true
+	},
+	"Quit Cantabile": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Esci cantabile",
+		"machine": true
+	},
+	"Show in Explorer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Mostra in Explorer",
+		"machine": true
+	},
+	"Reveal in Finder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Rivela nel cercatore",
+		"machine": true
+	},
+	"&Reveal in Finder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
+		],
+		"translation": "&Rivela nel cercatore",
+		"machine": true
+	},
+	"A&ll Racks": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Tutti i rack (&L)",
+		"machine": true
+	},
+	"&Double Buffered Audio": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "Au&dio con doppio buffer",
+		"machine": true
+	},
+	"This key is already bound to:\n  {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\HotKeysPage.cs"
+		],
+		"translation": "Questa chiave è già legata a:\n  {0}",
+		"machine": true
+	},
+	"URL &Prefixes:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "&Prefissi URL:",
+		"machine": true
+	},
+	"&Show in Explorer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Mo&stra in Explorer",
+		"machine": true
+	},
+	"Reveal in &Finder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Rivela nel cercatore (&F)",
+		"machine": true
+	},
+	"Execution Root": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\CoreEngine.cs"
+		],
+		"translation": "Radice di esecuzione",
 		"machine": true
 	}
 }

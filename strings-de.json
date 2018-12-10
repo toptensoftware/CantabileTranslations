@@ -8587,15 +8587,6 @@
 		"translation": "&Hotkey:",
 		"machine": false
 	},
-	"This key is already bound to {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\HotKeysPage.cs"
-		],
-		"translation": "Diese Taste ist bereits auf {0} gebunden",
-		"machine": false
-	},
 	"Please select a command": 
 	{
 		"contexts": 
@@ -10487,6 +10478,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Program.cs",
 			".\\Cantabile\\Commands\\ViewCommands.cs"
 		],
 		"translation": "Alles anzeigen",
@@ -11101,15 +11093,6 @@
 			".\\Cantabile\\Commands\\ViewCommands.cs"
 		],
 		"translation": "Aufnahmeports",
-		"machine": false
-	},
-	"Show in Windows Explorer": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		],
-		"translation": "Im Windows Explorer anzeigen",
 		"machine": false
 	},
 	"&Recordings": 
@@ -12185,15 +12168,6 @@
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		],
 		"translation": "Eingebundene Racks können nicht auf andere Racks verweisen",
-		"machine": false
-	},
-	"&Show in Windows Explorer": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
-		],
-		"translation": "Im Window&s-Explorer anzeigen",
 		"machine": false
 	},
 	"Plugin...": 
@@ -14525,7 +14499,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
 		],
 		"translation": "Im E&xplorer anzeigen",
 		"machine": false
@@ -22734,7 +22709,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
+			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Eingangsverarbeitung",
 		"machine": false
@@ -22743,7 +22719,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
+			".\\Cantabile.Environment\\Environment.cs"
 		],
 		"translation": "Ausgangsverarbeitung",
 		"machine": false
@@ -23371,5 +23348,150 @@
 		],
 		"translation": "Engine neu starten",
 		"machine": false
+	},
+	"About Cantabile...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Über Cantabile...",
+		"machine": true
+	},
+	"Preferences...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Einstellungen...",
+		"machine": true
+	},
+	"Services": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Dienstleistungen",
+		"machine": true
+	},
+	"Hide Test Harness": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Test-Kabelbaum ausblenden",
+		"machine": true
+	},
+	"Hide Others": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Andere verstecken",
+		"machine": true
+	},
+	"Quit Cantabile": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Program.cs"
+		],
+		"translation": "Beenden Sie Cantabile",
+		"machine": true
+	},
+	"Show in Explorer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Im Explorer anzeigen",
+		"machine": true
+	},
+	"Reveal in Finder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Im Finder enthüllen",
+		"machine": true
+	},
+	"&Reveal in Finder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
+		],
+		"translation": "Im Finde&r enthüllen",
+		"machine": true
+	},
+	"A&ll Racks": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "A&lle Racks",
+		"machine": true
+	},
+	"&Double Buffered Audio": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
+		],
+		"translation": "&Doppelt gepuffertes Audio",
+		"machine": true
+	},
+	"This key is already bound to:\n  {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\HotKeysPage.cs"
+		],
+		"translation": "Dieser Schlüssel ist bereits an gebunden:\n  {0}",
+		"machine": true
+	},
+	"URL &Prefixes:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "URL-&Präfixe:",
+		"machine": true
+	},
+	"&Show in Explorer": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Im Explorer anzeigen (&S)",
+		"machine": true
+	},
+	"Reveal in &Finder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Im &Finder enthüllen",
+		"machine": true
+	},
+	"Execution Root": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\CoreEngine.cs"
+		],
+		"translation": "Ausführungswurzel",
+		"machine": true
 	}
 }
