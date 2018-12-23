@@ -151,6 +151,7 @@
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
@@ -4356,7 +4357,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiMonitorDialog.cs"
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs"
 		],
 		"translation": "MIDI monitor - {0}",
 		"machine": false
@@ -4411,7 +4412,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs"
 		],
 		"translation": "&Csatorna:",
@@ -4450,7 +4450,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs"
 		],
 		"translation": "Csatorna",
 		"machine": false
@@ -5050,6 +5051,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
 		],
 		"translation": "Bezárás (&L)",
@@ -5690,7 +5692,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
 		],
 		"translation": "Egyéb",
 		"machine": false
@@ -10834,6 +10837,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs",
 			".\\Cantabile\\Misc\\VariableMenu.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
@@ -10844,6 +10848,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs",
 			".\\Cantabile\\Misc\\VariableMenu.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
@@ -14312,6 +14317,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile.Application\\Bindable\\PCKeyboard.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
@@ -15306,15 +15312,6 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
 		],
 		"translation": "A MIDI pr&ogramváltás beállításainak módosítása",
-		"machine": false
-	},
-	"MIDI &Monitor...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs"
-		],
-		"translation": "&MIDI monitor...",
 		"machine": false
 	},
 	"A&udio Ports...": 
@@ -19619,6 +19616,9 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
@@ -19629,6 +19629,9 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs",
 			".\\Cantabile.Utils\\ControllerKind.cs"
@@ -19640,6 +19643,9 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs",
 			".\\Cantabile.Utils\\ControllerKind.cs"
@@ -19705,6 +19711,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
 		"translation": "Programváltozás (bankolt)",
@@ -19930,6 +19937,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs",
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs",
 			".\\Cantabile.Utils\\ControllerKind.cs"
@@ -20561,6 +20569,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "After Touch",
@@ -22112,7 +22121,14 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RouteSlot.cs",
+			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs"
 		],
 		"translation": "MIDI mo&nitor",
 		"machine": false
@@ -22484,6 +22500,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs"
 		],
 		"translation": "Az élő profiladatok megjelenítésének szüneteltetése vagy folytatása",
@@ -23592,6 +23609,474 @@
 			".\\Cantabile\\Dialogs\\PluginTagsDialog.cs"
 		],
 		"translation": "Címke",
+		"machine": true
+	},
+	"Listen on MIDI &Channels:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+		],
+		"translation": "Hallgasson MIDI &csatornákon:",
+		"machine": true
+	},
+	"Map all events to MIDI &Channel:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+		],
+		"translation": "Az események megjelenítése MIDI &csatornára:",
+		"machine": true
+	},
+	"No suitable object selected": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\PluginSlot.cs",
+			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs"
+		],
+		"translation": "Nincs megfelelő objektum kiválasztva",
+		"machine": true
+	},
+	"No events.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs"
+		],
+		"translation": "Nincs esemény.",
+		"machine": true
+	},
+	"Showing all {0:N0} {1}.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs"
+		],
+		"translation": "Az összes {0:n0} {1} megjelenítése.",
+		"machine": true
+	},
+	"event": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs"
+		],
+		"translation": "esemény",
+		"machine": true
+	},
+	"events": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs"
+		],
+		"translation": "események",
+		"machine": true
+	},
+	"Showing {0:N0} of {1:N0} {2}.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs"
+		],
+		"translation": "{0:n0} a {1:n0} {2}-ből.",
+		"machine": true
+	},
+	"Time (secs)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs"
+		],
+		"translation": "Idő (másodperc))",
+		"machine": true
+	},
+	"Data": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs"
+		],
+		"translation": "Adat",
+		"machine": true
+	},
+	"Select Related Events": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs"
+		],
+		"translation": "Válassza ki a kapcsolódó eseményeket",
+		"machine": true
+	},
+	"Select Similar Events": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs"
+		],
+		"translation": "Válasszon hasonló eseményeket",
+		"machine": true
+	},
+	"Note Off": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "Jegyezze fel",
+		"machine": true
+	},
+	"Note On (Held)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "Megjegyzés a (tartott))",
+		"machine": true
+	},
+	"Note On": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "Jegyezze fel",
+		"machine": true
+	},
+	"After-touch": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "Miután gombnyomással",
+		"machine": true
+	},
+	"Controller {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs"
+		],
+		"translation": "{0} vezérlő",
+		"machine": true
+	},
+	"Controller {0} - {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs"
+		],
+		"translation": "{0} - {1} vezérlő",
+		"machine": true
+	},
+	"MIDI Monitor Settings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "MIDI monitor beállításai",
+		"machine": true
+	},
+	"Channels:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "Csatornák:",
+		"machine": true
+	},
+	"Show MIDI Events": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "MIDI események megjelenítése",
+		"machine": true
+	},
+	"Controllers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "vezérlők:",
+		"machine": true
+	},
+	"Not Controllers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "Nem vezérlők:",
+		"machine": true
+	},
+	"Sys-ex": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "Sys-ex",
+		"machine": true
+	},
+	"Show Decoded Events": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "Dekódolt események megjelenítése",
+		"machine": true
+	},
+	"Fine Controllers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "Finom vezérlők:",
+		"machine": true
+	},
+	"Not Fine Controllers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "Nem finom vezérlők:",
+		"machine": true
+	},
+	"Banked Program Changes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "A banki program megváltozik",
+		"machine": true
+	},
+	"RPN Parameters (Fine)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "RPN paraméterek (finom)",
+		"machine": true
+	},
+	"RPN Parameters (Coarse)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "RPN paraméterek (durva)",
+		"machine": true
+	},
+	"NRPN Parameters (Fine)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "NRPN paraméterek (finom)",
+		"machine": true
+	},
+	"NRPN Parameters (Coarse)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "NRPN paraméterek (durva)",
+		"machine": true
+	},
+	"Master Volume\/Balance Sys-ex": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "Master hangerő \/ egyensúly sys-ex",
+		"machine": true
+	},
+	"MMC Events": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "MMC események",
+		"machine": true
+	},
+	"Enable Filtering": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "Szűrés engedélyezése",
+		"machine": true
+	},
+	"Show Keyboard": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "A billentyűzet megjelenítése",
+		"machine": true
+	},
+	"Show Channel States": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "A csatornaállapotok megjelenítése",
+		"machine": true
+	},
+	"Save these settings as the default": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		],
+		"translation": "Mentse ezeket a beállításokat alapértelmezettként",
+		"machine": true
+	},
+	"Controller {0} (Fine)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs"
+		],
+		"translation": "{0} vezérlő (finom)",
+		"machine": true
+	},
+	"RPN {0} (Coarse)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs"
+		],
+		"translation": "RPN {0} (durva)",
+		"machine": true
+	},
+	"RPN {0} (Fine)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs"
+		],
+		"translation": "RPN {0} (finom)",
+		"machine": true
+	},
+	"NRPN {0} (Coarse)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs"
+		],
+		"translation": "NRPN {0} (durva)",
+		"machine": true
+	},
+	"NRPN {0} (Fine)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs"
+		],
+		"translation": "NRPN {0} (finom)",
+		"machine": true
+	},
+	"Select Events": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSidePanel.cs"
+		],
+		"translation": "Válasszon eseményeket",
+		"machine": true
+	},
+	"Choose Monitor Point": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs"
+		],
+		"translation": "Válassza ki a monitor pontját",
+		"machine": true
+	},
+	"No MIDI Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\OutputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RackHostSlot.cs"
+		],
+		"translation": "Nincs MIDI port",
+		"machine": true
+	},
+	"Pre MIDI Filter": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerMidiPort.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiPortIn.cs",
+			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
+			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiPort.cs"
+		],
+		"translation": "Előzetes MIDI szűrő",
+		"machine": true
+	},
+	"Post MIDI Filter": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerMidiPort.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiPortIn.cs",
+			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
+			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiPort.cs"
+		],
+		"translation": "Közvetlen MIDI szűrő",
+		"machine": true
+	},
+	"Input Port": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiPort.cs"
+		],
+		"translation": "Bemeneti port",
+		"machine": true
+	},
+	"Output Port": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiPort.cs"
+		],
+		"translation": "Kimeneti port",
 		"machine": true
 	}
 }
