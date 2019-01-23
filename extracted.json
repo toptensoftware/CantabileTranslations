@@ -5242,6 +5242,7 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexDecoder.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexPatcher.cs",
 	],
 },
 "&Suppress":
@@ -5255,6 +5256,18 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
+	],
+},
+"&Decode Sysex:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexPatcher.cs",
+	],
+},
+"&Encode Sysex:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexPatcher.cs",
 	],
 },
 "t&o":
@@ -7563,6 +7576,30 @@
 	"contexts": [
 		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 		".\\Cantabile\\RackPanel\\RackPanel.cs",
+	],
+},
+"Recordings Tab":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
+	],
+},
+"Set List Tab":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
+	],
+},
+"States Tab":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
+	],
+},
+"Monitor Tab":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ViewBinding.cs",
 	],
 },
 "Close Rack Editor":
@@ -10528,6 +10565,13 @@
 	],
 },
 "Unable to load preset\/bank as it references an unknown plugin ID: 0x{0:X8}":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+	],
+},
+"Unable to load preset\/bank as it references an unknown plugin ID: {0}":
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RackPanel.cs",
@@ -15182,6 +15226,12 @@
 		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
+"Sysex Patcher":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
 "-- no description --":
 {
 	"contexts": [
@@ -15819,6 +15869,18 @@
 	],
 },
 "Decode from sys-ex: {0}{1}":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Uninitialized sys-ex Patcher ":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Patch sys-ex: {0} -> {1} {2}":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",
