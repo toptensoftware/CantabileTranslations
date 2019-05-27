@@ -3180,6 +3180,12 @@
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\Transpose.cs",
 	],
 },
+"Learn &Mode":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+	],
+},
 "&Notes Only (suppress all other events)":
 {
 	"contexts": [
@@ -4179,6 +4185,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
 	],
 },
 "Only on significant changes":
@@ -4677,6 +4684,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
 	],
 },
 "A&pply to Channel:":
@@ -4685,6 +4693,7 @@
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\ButtonBank.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCLatch.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToProgramMap.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
@@ -4854,6 +4863,48 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
+	],
+},
+"&Controllers:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
+	],
+},
+"&Velocity:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
+	],
+},
+"&Release Mode:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
+	],
+},
+"When CC Value 0":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
+	],
+},
+"Immediately":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
+	],
+},
+"&Suppress Original Event":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
+	],
+},
+"Use CC Value":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
 	],
 },
 "&Select Program CC:":
@@ -9171,6 +9222,12 @@
 		".\\Cantabile\\Options\\FileLocationsPage.cs",
 	],
 },
+"Sa&ve Current Background Rack As...":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\FileLocationsPage.cs",
+	],
+},
 "General":
 {
 	"contexts": [
@@ -12353,6 +12410,18 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 	],
 },
+"Auto Arrange":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs",
+	],
+},
+"Expand Ports":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs",
+	],
+},
 "Insert &Plugin...":
 {
 	"contexts": [
@@ -13724,36 +13793,42 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
 "On Pause":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
 "On Resume":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
 "On Stop":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
 "On Play or Resume":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
 "On Stop or Pause":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
 "On Position":
@@ -14177,6 +14252,12 @@
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+	],
+},
+"On End of Track\/Range":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
 "Pre MIDI Filter":
@@ -15403,6 +15484,12 @@
 		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
+"Controller to Note":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
 "&Keyboard Split":
 {
 	"contexts": [
@@ -15950,6 +16037,24 @@
 	],
 },
 " channel {0}":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Uninitialized CC To Note Mapping":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"ERR: Number of controller doesn't match number of notes":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Map controllers {0} to notes {1} on {2}":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",

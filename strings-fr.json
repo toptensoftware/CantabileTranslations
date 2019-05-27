@@ -3757,7 +3757,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\UserNotesDialog.cs"
+			".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
 		],
 		"translation": "Remarques (&N):",
 		"machine": false
@@ -3769,6 +3770,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ButtonBank.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCLatch.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToProgramMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
@@ -14254,7 +14256,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
 		],
 		"translation": "Jamais",
 		"machine": true
@@ -15803,7 +15806,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Le jeu",
 		"machine": true
@@ -15812,7 +15816,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "En pause",
 		"machine": true
@@ -15821,7 +15826,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Pour résumer",
 		"machine": true
@@ -15830,7 +15836,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Sur arrêt",
 		"machine": true
@@ -15839,7 +15846,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Le jeu ou reprendre",
 		"machine": true
@@ -15848,7 +15856,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Sur arrêt ou pause",
 		"machine": true
@@ -24631,6 +24640,150 @@
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "horloge midi",
+		"machine": true
+	},
+	"Learn &Mode": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+		],
+		"translation": "&Mode d'apprentissage",
+		"machine": true
+	},
+	"&Controllers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "&Contrôleurs:",
+		"machine": true
+	},
+	"&Velocity:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Rapidité (&V):",
+		"machine": true
+	},
+	"&Release Mode:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Mode de libé&ration:",
+		"machine": true
+	},
+	"When CC Value 0": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Quand CC valeur 0",
+		"machine": true
+	},
+	"Immediately": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Immédiatement",
+		"machine": true
+	},
+	"&Suppress Original Event": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "&Supprimer l'événement d'origine",
+		"machine": true
+	},
+	"Use CC Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Utiliser la valeur CC",
+		"machine": true
+	},
+	"Sa&ve Current Background Rack As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		],
+		"translation": "Enregistrer le support d'arrière-plan actuel sous (&V)...",
+		"machine": true
+	},
+	"Auto Arrange": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		],
+		"translation": "Organisation automatique",
+		"machine": true
+	},
+	"Expand Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		],
+		"translation": "Développer les ports",
+		"machine": true
+	},
+	"On End of Track\/Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "En fin de piste \/ portée",
+		"machine": true
+	},
+	"Controller to Note": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Contrôleur à noter",
+		"machine": true
+	},
+	"Uninitialized CC To Note Mapping": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Mappage de CC non initialisé à la note",
+		"machine": true
+	},
+	"ERR: Number of controller doesn't match number of notes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "ERR: le numéro du contrôleur ne correspond pas au nombre de notes",
+		"machine": true
+	},
+	"Map controllers {0} to notes {1} on {2}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Les contrôleurs de carte {0} aux notes {1} sur {2}",
 		"machine": true
 	}
 }

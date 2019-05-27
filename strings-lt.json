@@ -4720,7 +4720,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
 		],
 		"translation": "niekada",
 		"machine": true
@@ -5258,7 +5259,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\UserNotesDialog.cs"
+			".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
 		],
 		"translation": "Pastabos (&N):",
 		"machine": true
@@ -5270,6 +5272,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ButtonBank.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCLatch.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToProgramMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
@@ -15109,7 +15112,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "žaisti",
 		"machine": true
@@ -15118,7 +15122,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Dėl pauzė",
 		"machine": true
@@ -15127,7 +15132,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "apie CV",
 		"machine": true
@@ -15136,7 +15142,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Dėl stotelės",
 		"machine": true
@@ -15145,7 +15152,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Žaisti ar tęsti",
 		"machine": true
@@ -15154,7 +15162,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Dėl sustojimo ar pertraukos",
 		"machine": true
@@ -24631,6 +24640,150 @@
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "midi laikrodis",
+		"machine": true
+	},
+	"Learn &Mode": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+		],
+		"translation": "Sužinokite reži&mą",
+		"machine": true
+	},
+	"&Controllers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Valdikliai (&C):",
+		"machine": true
+	},
+	"&Velocity:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Greitis (&V):",
+		"machine": true
+	},
+	"&Release Mode:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Atleidimo &režimas:",
+		"machine": true
+	},
+	"When CC Value 0": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Kai CC vertė 0",
+		"machine": true
+	},
+	"Immediately": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Nedelsiant",
+		"machine": true
+	},
+	"&Suppress Original Event": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "&Sustabdyti pradinį įvykį",
+		"machine": true
+	},
+	"Use CC Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Naudokite CC reikšmę",
+		"machine": true
+	},
+	"Sa&ve Current Background Rack As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		],
+		"translation": "Išsaugokite esamą foninę stelažą kaip (&V)...",
+		"machine": true
+	},
+	"Auto Arrange": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		],
+		"translation": "Automatiškai pasirūpinti",
+		"machine": true
+	},
+	"Expand Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		],
+		"translation": "Išskleisti uostus",
+		"machine": true
+	},
+	"On End of Track\/Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Bėgių kelio \/ diapazono pabaigoje",
+		"machine": true
+	},
+	"Controller to Note": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Kontrolierius pažymi",
+		"machine": true
+	},
+	"Uninitialized CC To Note Mapping": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Neprogramuotas CC, kad pažymėtumėte žemėlapius",
+		"machine": true
+	},
+	"ERR: Number of controller doesn't match number of notes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "ERR: valdiklio skaičius neatitinka įrašų skaičiaus",
+		"machine": true
+	},
+	"Map controllers {0} to notes {1} on {2}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "{2} žemėlapio valdiklius {0} pažymėkite {1}",
 		"machine": true
 	}
 }

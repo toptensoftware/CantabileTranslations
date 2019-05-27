@@ -5856,7 +5856,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
 		],
 		"translation": "Soha",
 		"machine": false
@@ -6480,7 +6481,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\UserNotesDialog.cs"
+			".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
 		],
 		"translation": "Jegyzetek (&N):",
 		"machine": false
@@ -6492,6 +6494,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ButtonBank.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCLatch.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToProgramMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
@@ -17626,7 +17629,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Lejátszásban",
 		"machine": false
@@ -17635,7 +17639,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Szünetben",
 		"machine": false
@@ -17644,7 +17649,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Folytatásban",
 		"machine": false
@@ -17653,7 +17659,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Állásban",
 		"machine": false
@@ -17662,7 +17669,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Lejátszásban vagy folytatásban",
 		"machine": false
@@ -17671,7 +17679,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Leállításban vagy szünetban",
 		"machine": false
@@ -24632,5 +24641,149 @@
 		],
 		"translation": "midi óra",
 		"machine": false
+	},
+	"Learn &Mode": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+		],
+		"translation": "Tanulási &mód",
+		"machine": true
+	},
+	"&Controllers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "vezérlők (&C):",
+		"machine": true
+	},
+	"&Velocity:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Sebesség (&V):",
+		"machine": true
+	},
+	"&Release Mode:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Engedélyezési mód (&R):",
+		"machine": true
+	},
+	"When CC Value 0": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Amikor a CC értéke 0",
+		"machine": true
+	},
+	"Immediately": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Azonnal",
+		"machine": true
+	},
+	"&Suppress Original Event": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Elnyomja az eredeti e&seményt",
+		"machine": true
+	},
+	"Use CC Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Használja a CC értéket",
+		"machine": true
+	},
+	"Sa&ve Current Background Rack As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		],
+		"translation": "Mentse az aktuális háttéráll&ványt...",
+		"machine": true
+	},
+	"Auto Arrange": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		],
+		"translation": "Automatikus elrendezés",
+		"machine": true
+	},
+	"Expand Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		],
+		"translation": "Bontsa ki a portokat",
+		"machine": true
+	},
+	"On End of Track\/Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "A pálya \/ tartomány végén",
+		"machine": true
+	},
+	"Controller to Note": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Vezérlő megjegyezni",
+		"machine": true
+	},
+	"Uninitialized CC To Note Mapping": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Nem feltárt CC a feltérképezéshez",
+		"machine": true
+	},
+	"ERR: Number of controller doesn't match number of notes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "ERR: a vezérlők száma nem felel meg a jegyzetek számának",
+		"machine": true
+	},
+	"Map controllers {0} to notes {1} on {2}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "A {0} vezérlők a {2} {1}-es jegyzeteihez",
+		"machine": true
 	}
 }

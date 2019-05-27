@@ -1875,6 +1875,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ButtonBank.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCLatch.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToProgramMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
@@ -8813,7 +8814,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\UserNotesDialog.cs"
+			".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
 		],
 		"translation": "&Notater:",
 		"machine": true
@@ -14431,7 +14433,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
 		],
 		"translation": "Aldri",
 		"machine": true
@@ -15803,7 +15806,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "på spill",
 		"machine": true
@@ -15812,7 +15816,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "på pause",
 		"machine": true
@@ -15821,7 +15826,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "på CV",
 		"machine": true
@@ -15830,7 +15836,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "på stopp",
 		"machine": true
@@ -15839,7 +15846,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "På spill eller gjenoppta",
 		"machine": true
@@ -15848,7 +15856,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "På stopp eller pause",
 		"machine": true
@@ -24631,6 +24640,150 @@
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "midi klokke",
+		"machine": true
+	},
+	"Learn &Mode": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+		],
+		"translation": "Lær &modus",
+		"machine": true
+	},
+	"&Controllers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "&Controllers:",
+		"machine": true
+	},
+	"&Velocity:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Hastighet (&V):",
+		"machine": true
+	},
+	"&Release Mode:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Utgivelsesmodus (&R):",
+		"machine": true
+	},
+	"When CC Value 0": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Når CC verdi 0",
+		"machine": true
+	},
+	"Immediately": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Umiddelbart",
+		"machine": true
+	},
+	"&Suppress Original Event": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Undertrykk original oppgave (&S)",
+		"machine": true
+	},
+	"Use CC Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Bruk CC verdi",
+		"machine": true
+	},
+	"Sa&ve Current Background Rack As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		],
+		"translation": "Lagre dagens bakgrunnsstati&v som...",
+		"machine": true
+	},
+	"Auto Arrange": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		],
+		"translation": "Automatisk ordne",
+		"machine": true
+	},
+	"Expand Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		],
+		"translation": "Utvid porter",
+		"machine": true
+	},
+	"On End of Track\/Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "På slutten av spor \/ rekkevidde",
+		"machine": true
+	},
+	"Controller to Note": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Kontroller å merke seg",
+		"machine": true
+	},
+	"Uninitialized CC To Note Mapping": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Uninitialized CC å merke kartlegging",
+		"machine": true
+	},
+	"ERR: Number of controller doesn't match number of notes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "ERR: Antall kontroller stemmer ikke overens med antall notater",
+		"machine": true
+	},
+	"Map controllers {0} to notes {1} on {2}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Kartkontroller {0} til notater {1} på {2}",
 		"machine": true
 	}
 }

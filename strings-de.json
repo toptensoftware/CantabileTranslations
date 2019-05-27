@@ -1814,6 +1814,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\AfterTouchToController.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ButtonBank.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCLatch.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToProgramMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\HuiSwitchDecoder.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
@@ -8813,7 +8814,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\UserNotesDialog.cs"
+			".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
 		],
 		"translation": "&Notizen:",
 		"machine": false
@@ -14431,7 +14433,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
 		],
 		"translation": "Nie",
 		"machine": false
@@ -15803,7 +15806,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Bei Play",
 		"machine": false
@@ -15812,7 +15816,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Bei Pause",
 		"machine": false
@@ -15821,7 +15826,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Beim Fortsetzen ",
 		"machine": false
@@ -15830,7 +15836,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Bei Stop",
 		"machine": false
@@ -15839,7 +15846,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Bei Play oder Fortsetzen",
 		"machine": false
@@ -15848,7 +15856,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "Bei Stop oder Pause",
 		"machine": false
@@ -24632,5 +24641,149 @@
 		],
 		"translation": "Midi-Clock",
 		"machine": false
+	},
+	"Learn &Mode": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
+		],
+		"translation": "Lern&modus",
+		"machine": true
+	},
+	"&Controllers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "&Controller:",
+		"machine": true
+	},
+	"&Velocity:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Geschwindigkeit (&V):",
+		"machine": true
+	},
+	"&Release Mode:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "F&reigabemodus:",
+		"machine": true
+	},
+	"When CC Value 0": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Bei CC Wert 0",
+		"machine": true
+	},
+	"Immediately": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Sofort",
+		"machine": true
+	},
+	"&Suppress Original Event": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Ur&sprüngliches Ereignis unterdrücken",
+		"machine": true
+	},
+	"Use CC Value": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
+		],
+		"translation": "Verwenden Sie den CC-Wert",
+		"machine": true
+	},
+	"Sa&ve Current Background Rack As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		],
+		"translation": "Aktuelles Hintergrundrack speichern unter (&V)...",
+		"machine": true
+	},
+	"Auto Arrange": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		],
+		"translation": "Automatisch anordnen",
+		"machine": true
+	},
+	"Expand Ports": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		],
+		"translation": "Erweitern Sie die Ports",
+		"machine": true
+	},
+	"On End of Track\/Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Am Ende der Strecke",
+		"machine": true
+	},
+	"Controller to Note": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Controller zu beachten",
+		"machine": true
+	},
+	"Uninitialized CC To Note Mapping": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Nicht initialisiertes CC zum Notieren der Zuordnung",
+		"machine": true
+	},
+	"ERR: Number of controller doesn't match number of notes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "ERR: Die Anzahl der Controller stimmt nicht mit der Anzahl der Noten überein",
+		"machine": true
+	},
+	"Map controllers {0} to notes {1} on {2}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Ordnen Sie die Controller {0} den Noten {1} auf {2} zu",
+		"machine": true
 	}
 }
