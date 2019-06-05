@@ -644,6 +644,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs",
@@ -657,6 +658,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs",
@@ -671,6 +673,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -686,6 +689,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -3467,6 +3471,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\AddBindingFooterSlot.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\AddGroupFooterSlot.cs",
@@ -6635,15 +6640,6 @@
 		"translation": "Įdėti mygtuką (&A)...",
 		"machine": true
 	},
-	"&Delete Button...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs"
-		],
-		"translation": "Ištrinti mygtuką (&D)...",
-		"machine": true
-	},
 	"Move &Left": 
 	{
 		"contexts": 
@@ -6669,15 +6665,6 @@
 			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		],
 		"translation": "perkelti (&N)",
-		"machine": true
-	},
-	"&Tempo": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs"
-		],
-		"translation": "&tempas",
 		"machine": true
 	},
 	"&Song Selector": 
@@ -8767,6 +8754,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\MainWindowViewState.cs",
 			".\\Cantabile\\Misc\\ColorMenu.cs",
 			".\\Cantabile.Utils\\BasicColor.cs"
 		],
@@ -16003,6 +15992,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PortBuilder.cs"
 		],
 		"translation": "Tuščia",
@@ -24028,15 +24018,6 @@
 		"translation": "&Duomenų baitai (hex):",
 		"machine": true
 	},
-	"D&uplicate Button...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs"
-		],
-		"translation": "Paspa&udus mygtuką...",
-		"machine": true
-	},
 	"Output Gain (Outer)": 
 	{
 		"contexts": 
@@ -24784,6 +24765,96 @@
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "{2} žemėlapio valdiklius {0} pažymėkite {1}",
+		"machine": true
+	},
+	"New Layout": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Naujas išdėstymas",
+		"machine": true
+	},
+	"&Layout Name:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Išdėstymo pavadinimas (&L):",
+		"machine": true
+	},
+	"&Initial Content:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Prad&inis turinys:",
+		"machine": true
+	},
+	"Same as current layout": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Tas pats kaip ir dabartinis išdėstymas",
+		"machine": true
+	},
+	"A standard set of CC buttons": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Standartinis CC mygtukų rinkinys",
+		"machine": true
+	},
+	"Please enter a name for the layout.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Įveskite išdėstymo pavadinimą.",
+		"machine": true
+	},
+	"Are you sure you want to overwrite existing controller bar layout named '{0}'": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Ar tikrai norite perrašyti esamą valdiklio juostos išdėstymą „{0}'",
+		"machine": true
+	},
+	"Duplicate Button...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "Paspaudus mygtuką...",
+		"machine": true
+	},
+	"Are you sure you want to delete the layout '{0}'\n\n(This action can't be undone)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "Ar tikrai norite ištrinti išdėstymą „{0}'\n\n(Šio veiksmo negalima atšaukti)",
+		"machine": true
+	},
+	"T&empo": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "T&empo",
 		"machine": true
 	}
 }

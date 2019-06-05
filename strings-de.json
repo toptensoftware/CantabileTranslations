@@ -822,6 +822,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\AddBindingFooterSlot.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\AddGroupFooterSlot.cs",
@@ -876,6 +877,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -921,6 +923,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -2661,6 +2664,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs",
@@ -2674,6 +2678,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs",
@@ -4956,6 +4961,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PortBuilder.cs"
 		],
 		"translation": "Leer",
@@ -8915,6 +8921,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\MainWindowViewState.cs",
 			".\\Cantabile\\Misc\\ColorMenu.cs",
 			".\\Cantabile.Utils\\BasicColor.cs"
 		],
@@ -12556,15 +12564,6 @@
 			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		],
 		"translation": "Button hinzufügen (&A)...",
-		"machine": false
-	},
-	"&Delete Button...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs"
-		],
-		"translation": "Button löschen (&D)...",
 		"machine": false
 	},
 	"Move &Left": 
@@ -19012,15 +19011,6 @@
 		"translation": "Tra&nsponieren",
 		"machine": false
 	},
-	"&Tempo": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs"
-		],
-		"translation": "&Tempo",
-		"machine": false
-	},
 	"&Song Selector": 
 	{
 		"contexts": 
@@ -24028,15 +24018,6 @@
 		"translation": "&Wave-Dateityp:",
 		"machine": false
 	},
-	"D&uplicate Button...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs"
-		],
-		"translation": "Button d&uplizieren...",
-		"machine": false
-	},
 	"Output Gain (Outer)": 
 	{
 		"contexts": 
@@ -24747,7 +24728,7 @@
 		[
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
-		"translation": "Am Ende des Tracks/Bereichs",
+		"translation": "Am Ende des Tracks\/Bereichs",
 		"machine": false
 	},
 	"Controller to Note": 
@@ -24785,5 +24766,95 @@
 		],
 		"translation": "Controller {0} den Noten {1} auf {2} zuordnen",
 		"machine": false
+	},
+	"New Layout": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Neues Layout",
+		"machine": true
+	},
+	"&Layout Name:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "&Layoutname:",
+		"machine": true
+	},
+	"&Initial Content:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Anfangs&inhalt:",
+		"machine": true
+	},
+	"Same as current layout": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Wie aktuelles Layout",
+		"machine": true
+	},
+	"A standard set of CC buttons": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Ein Standardsatz von CC-Tasten",
+		"machine": true
+	},
+	"Please enter a name for the layout.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Bitte geben Sie einen Namen für das Layout ein.",
+		"machine": true
+	},
+	"Are you sure you want to overwrite existing controller bar layout named '{0}'": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
+		],
+		"translation": "Möchten Sie das vorhandene Controller-Leistenlayout mit dem Namen \"{0}\" wirklich überschreiben?'",
+		"machine": true
+	},
+	"Duplicate Button...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "Doppelte Schaltfläche...",
+		"machine": true
+	},
+	"Are you sure you want to delete the layout '{0}'\n\n(This action can't be undone)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "Möchten Sie das Layout \"{0}\" wirklich löschen?'\n\n(Diese Aktion kann nicht rückgängig gemacht werden)",
+		"machine": true
+	},
+	"T&empo": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "T&empo",
+		"machine": true
 	}
 }
