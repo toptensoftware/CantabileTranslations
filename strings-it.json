@@ -2385,6 +2385,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
 			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs"
@@ -2515,6 +2516,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs",
+			".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
 			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
@@ -17705,8 +17707,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs"
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Guadagno volume di uscita principale",
 		"machine": false
@@ -21215,8 +21216,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs"
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Guadagno ingresso master",
 		"machine": false
@@ -24919,6 +24919,43 @@
 			".\\Cantabile.Core\\Curve.cs"
 		],
 		"translation": "Migliora (inversa)",
+		"machine": true
+	},
+	"Output Audio Level": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\MasterLevels.cs"
+		],
+		"translation": "Livello audio in uscita",
+		"machine": true
+	},
+	"Input Audio Level": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\MasterLevels.cs"
+		],
+		"translation": "Ingresso livello audio",
+		"machine": true
+	},
+	"Audio Levels": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Livelli audio",
+		"machine": true
+	},
+	"Audio Level": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+		],
+		"translation": "Livello audio",
 		"machine": true
 	}
 }
