@@ -825,6 +825,12 @@
 		".\\Cantabile\\Commands\\EditCommands.cs",
 	],
 },
+"Change Preset Model":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
 "New Song":
 {
 	"contexts": [
@@ -1843,6 +1849,7 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 		".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
+		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
 "&Pan:":
@@ -2915,6 +2922,7 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
 "(end)":
@@ -3788,6 +3796,25 @@
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 	],
 },
+"Preset Model: {0}":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+	],
+},
+"Load Plugin Program":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Copy Program Name":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
 "Rename Program":
 {
 	"contexts": [
@@ -4171,6 +4198,81 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginTagsDialog.cs",
+	],
+},
+"Choose Preset Model":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"The preset model controls how Cantabile's preset selector picker behaves.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"NOTE: changing the preset model will clear all current plugin snapshots\non this plugin and this operation cannot be undone.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"NOTE: changing the preset model will clear all current parameter sets\non this plugin and this operation cannot be undone.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"Use Plugin's Programs":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
+	],
+},
+"Presets's map directly to the plugin's exported programs.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"Entire Plugin Snapshots":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
+	],
+},
+"A possibly slow but comprehensive preset model where each preset\nstores a snapshot of the plugin's entire state.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"Parameter Sets":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
+	],
+},
+"A fast, light-weight preset model where each preset only stores the\nplugin's exported automatable parameters.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"Switch Presets":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"Forward to the plugin":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
 	],
 },
 "Enter Bank and &Program Number:":
@@ -10080,7 +10182,7 @@
 		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
-"&VST Plugin Folders: (separate multiple paths with a semicolon)":
+"&VST Plugin Folders:":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\PluginsPage.cs",
@@ -11724,7 +11826,7 @@
 		".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
 	],
 },
-"Change Preset &on MIDI Program Change":
+"Change Preset M&odel...":
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
@@ -16584,19 +16686,19 @@
 "Not a valid bank or preset (invalid chunk magic).":
 {
 	"contexts": [
-		".\\Cantabile.Core\\PluginHost.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
 	],
 },
 "Not a valid bank or preset (invalid preset\/bank magic).":
 {
 	"contexts": [
-		".\\Cantabile.Core\\PluginHost.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
 	],
 },
 "Failed to load VST 3 module - {0}":
 {
 	"contexts": [
-		".\\Cantabile.Core\\PluginHost.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
 	],
 },
 "Failed to create audio driver, unknown multi-driver configuration '{0}'":

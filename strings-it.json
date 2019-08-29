@@ -180,7 +180,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
-			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
+			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
 		"translation": "&Rimuovi",
 		"machine": false
@@ -509,7 +510,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
 		"translation": "Elemento",
 		"machine": false
@@ -4015,15 +4017,6 @@
 		"translation": "Plugin VST",
 		"machine": false
 	},
-	"&VST Plugin Folders: (separate multiple paths with a semicolon)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "Cartelle dei plugin &VST: (Molteplici percorsi vanno separati con punto e virgola)",
-		"machine": false
-	},
 	"Re&scan plugin folders on startup": 
 	{
 		"contexts": 
@@ -5429,7 +5422,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginHost.cs"
+			".\\Cantabile.Core\\PluginUtils.cs"
 		],
 		"translation": "Banco o preset non valido (chunk magic non valido).",
 		"machine": false
@@ -5438,7 +5431,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginHost.cs"
+			".\\Cantabile.Core\\PluginUtils.cs"
 		],
 		"translation": "Banco o preset non valido (preset\/bank magic non valido).",
 		"machine": false
@@ -5447,7 +5440,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginHost.cs"
+			".\\Cantabile.Core\\PluginUtils.cs"
 		],
 		"translation": "Impossibile caricare modulo VST 3 - {0}",
 		"machine": false
@@ -9885,15 +9878,6 @@
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Riassegna numeri di programma",
-		"machine": false
-	},
-	"Change Preset &on MIDI Program Change": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		],
-		"translation": "Cambia preset in MIDI pr&ogram change",
 		"machine": false
 	},
 	"Re-assign Program Numbers...": 
@@ -25146,6 +25130,172 @@
 			".\\Cantabile\\Options\\DiagnosticsPage.cs"
 		],
 		"translation": "Disabilita la barra dei &menu personalizzati",
+		"machine": true
+	},
+	"Change Preset Model": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Cambia il modello preimpostato",
+		"machine": true
+	},
+	"Preset Model: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		],
+		"translation": "Modello preimpostato: {0}",
+		"machine": true
+	},
+	"Load Plugin Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Carica programma plugin",
+		"machine": true
+	},
+	"Copy Program Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Copia il nome del programma",
+		"machine": true
+	},
+	"Choose Preset Model": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Scegli il modello preimpostato",
+		"machine": true
+	},
+	"The preset model controls how Cantabile's preset selector picker behaves.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Il modello di preselezione controlla il comportamento del selettore di preselezioni di cantabile.",
+		"machine": true
+	},
+	"NOTE: changing the preset model will clear all current plugin snapshots\non this plugin and this operation cannot be undone.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "NOTA: la modifica del modello preimpostato cancellerà tutte le istantanee dei plug-in correnti\nsu questo plugin e questa operazione non può essere annullata.",
+		"machine": true
+	},
+	"NOTE: changing the preset model will clear all current parameter sets\non this plugin and this operation cannot be undone.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "NOTA: la modifica del modello preimpostato cancellerà tutti i set di parametri correnti\nsu questo plugin e questa operazione non può essere annullata.",
+		"machine": true
+	},
+	"Use Plugin's Programs": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+			".\\Cantabile.Core\\PluginUtils.cs"
+		],
+		"translation": "Usa i programmi del plugin",
+		"machine": true
+	},
+	"Presets's map directly to the plugin's exported programs.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Mappa dei preset direttamente ai programmi esportati del plugin.",
+		"machine": true
+	},
+	"Entire Plugin Snapshots": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+			".\\Cantabile.Core\\PluginUtils.cs"
+		],
+		"translation": "Istantanee di interi plug-in",
+		"machine": true
+	},
+	"A possibly slow but comprehensive preset model where each preset\nstores a snapshot of the plugin's entire state.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Un modello di preselezione forse lento ma completo in cui ogni preselezione\nmemorizza un'istantanea dell'intero stato del plug-in.",
+		"machine": true
+	},
+	"Parameter Sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+			".\\Cantabile.Core\\PluginUtils.cs"
+		],
+		"translation": "Set di parametri",
+		"machine": true
+	},
+	"A fast, light-weight preset model where each preset only stores the\nplugin's exported automatable parameters.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Un modello di preset veloce e leggero in cui ogni preset memorizza solo il file\nparametri automatizzabili esportati dal plugin.",
+		"machine": true
+	},
+	"Switch Presets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Cambia preimpostazioni",
+		"machine": true
+	},
+	"Forward to the plugin": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Inoltra al plug-in",
+		"machine": true
+	},
+	"&VST Plugin Folders:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\PluginsPage.cs"
+		],
+		"translation": "Cartelle del plug-in &VST:",
+		"machine": true
+	},
+	"Change Preset M&odel...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
+		],
+		"translation": "Cambia il m&odello preimpostato...",
 		"machine": true
 	}
 }
