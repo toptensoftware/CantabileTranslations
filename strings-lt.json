@@ -2199,8 +2199,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
-			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs"
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
 		],
 		"translation": "pašalinti (&R)",
 		"machine": true
@@ -3242,8 +3241,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "punktas",
 		"machine": true
@@ -18700,7 +18698,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginUtils.cs"
+			".\\Cantabile.Core\\PluginHost.cs"
 		],
 		"translation": "Negaliojantis banko ar preset (negaliojantis riekė magija).",
 		"machine": true
@@ -18709,7 +18707,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginUtils.cs"
+			".\\Cantabile.Core\\PluginHost.cs"
 		],
 		"translation": "Negaliojantis banko ar preset (negaliojantis anksto \/ banko magija).",
 		"machine": true
@@ -18718,7 +18716,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginUtils.cs"
+			".\\Cantabile.Core\\PluginHost.cs"
 		],
 		"translation": "Nepavyko įkelti VST 3 modulis - {0}",
 		"machine": true
@@ -25132,170 +25130,22 @@
 		"translation": "Išjungti pasirinktinę &meniu juostą",
 		"machine": true
 	},
-	"Change Preset Model": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		],
-		"translation": "Pakeisti iš anksto nustatytą modelį",
-		"machine": true
-	},
-	"Preset Model: {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
-		],
-		"translation": "Iš anksto nustatytas modelis: {0}",
-		"machine": true
-	},
-	"Load Plugin Program": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
-		],
-		"translation": "Įkelti papildinio programą",
-		"machine": true
-	},
-	"Copy Program Name": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
-		],
-		"translation": "Nukopijuokite programos pavadinimą",
-		"machine": true
-	},
-	"Choose Preset Model": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Pasirinkite iš anksto nustatytą modelį",
-		"machine": true
-	},
-	"The preset model controls how Cantabile's preset selector picker behaves.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Iš anksto nustatytas modelis kontroliuoja, kaip elgiasi „cantabile“ išankstinio nustatymo rinkiklis.",
-		"machine": true
-	},
-	"NOTE: changing the preset model will clear all current plugin snapshots\non this plugin and this operation cannot be undone.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "PASTABA: pakeitus iš anksto nustatytą modelį, bus išvalytos visos dabartinės įskiepių nuotraukos\nšiame papildinyje ir šios operacijos negalima anuliuoti.",
-		"machine": true
-	},
-	"NOTE: changing the preset model will clear all current parameter sets\non this plugin and this operation cannot be undone.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "PASTABA: pakeitus iš anksto nustatytą modelį, visi dabartiniai parametrų rinkiniai bus išvalyti\nšiame papildinyje ir šios operacijos negalima anuliuoti.",
-		"machine": true
-	},
-	"Use Plugin's Programs": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
-			".\\Cantabile.Core\\PluginUtils.cs"
-		],
-		"translation": "Naudokite papildinio programas",
-		"machine": true
-	},
-	"Presets's map directly to the plugin's exported programs.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Iš anksto nustato žemėlapį tiesiai į papildinio eksportuotas programas.",
-		"machine": true
-	},
-	"Entire Plugin Snapshots": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
-			".\\Cantabile.Core\\PluginUtils.cs"
-		],
-		"translation": "Visos įskiepio nuotraukos",
-		"machine": true
-	},
-	"A possibly slow but comprehensive preset model where each preset\nstores a snapshot of the plugin's entire state.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Galimas lėtas, bet išsamus išankstinio nustatymo modelis, kuriame kiekvienas iš anksto nustatytas\nsaugo visos papildinio būsenos momentinę nuotrauką.",
-		"machine": true
-	},
-	"Parameter Sets": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
-			".\\Cantabile.Core\\PluginUtils.cs"
-		],
-		"translation": "Parametrų rinkiniai",
-		"machine": true
-	},
-	"A fast, light-weight preset model where each preset only stores the\nplugin's exported automatable parameters.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Greitas, lengvas išankstinio nustatymo modelis, kuriame kiekvienas išankstinis nustatymas išsaugo tik\npapildinio eksportuojami automatiniai parametrai.",
-		"machine": true
-	},
-	"Switch Presets": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Perjunkite išankstinius nustatymus",
-		"machine": true
-	},
-	"Forward to the plugin": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Pirmyn į papildinį",
-		"machine": true
-	},
-	"&VST Plugin Folders:": 
+	"&VST Plugin Folders: (separate multiple paths with a semicolon)": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
-		"translation": "&VST papildinių aplankai:",
+		"translation": "&VST įskiepių aplankai: (atskirkite kelis taškus kabliataškiu)",
 		"machine": true
 	},
-	"Change Preset M&odel...": 
+	"Change Preset &on MIDI Program Change": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
 		],
-		"translation": "Pakeisti iš ankst&o nustatytą modelį...",
+		"translation": "Pakeiskite iš ankst&o nustatytą MIDI programos pakeitimą",
 		"machine": true
 	}
 }
