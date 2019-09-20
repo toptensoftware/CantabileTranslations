@@ -536,6 +536,7 @@
 		".\\Cantabile\\Commands\\EditCommands.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile\\Options\\PluginsPage.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -820,6 +821,12 @@
 	],
 },
 "Auto Arrange Routing Diagram":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Change Preset Model":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\EditCommands.cs",
@@ -1836,6 +1843,7 @@
 		".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 		".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
 		".\\Cantabile\\Options\\ExternalToolsPage.cs",
+		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
 "&Remove":
@@ -1843,6 +1851,7 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 		".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
+		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
 "&Pan:":
@@ -2691,7 +2700,6 @@
 		".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 		".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 		".\\Cantabile\\Options\\HotKeysPage.cs",
-		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
 "&Edit...":
@@ -2915,6 +2923,7 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
 "(end)":
@@ -3788,6 +3797,25 @@
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 	],
 },
+"Preset Model: {0}":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+	],
+},
+"Load Plugin Program":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Copy Program Name":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
 "Rename Program":
 {
 	"contexts": [
@@ -4171,6 +4199,81 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginTagsDialog.cs",
+	],
+},
+"Choose Preset Model":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"The preset model controls how Cantabile's preset selector picker behaves.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"NOTE: changing the preset model will clear all current plugin snapshots\non this plugin and this operation cannot be undone.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"NOTE: changing the preset model will clear all current parameter sets\non this plugin and this operation cannot be undone.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"Use Plugin's Programs":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
+	],
+},
+"Presets's map directly to the plugin's exported programs.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"Entire Plugin Snapshots":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
+	],
+},
+"A possibly slow but comprehensive preset model where each preset\nstores a snapshot of the plugin's entire state.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"Parameter Sets":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
+	],
+},
+"A fast, light-weight preset model where each preset only stores the\nplugin's exported automatable parameters.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"Switch Presets":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
+	],
+},
+"Forward to the plugin":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PresetModelDialog.cs",
 	],
 },
 "Enter Bank and &Program Number:":
@@ -9638,6 +9741,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Options\\GeneralPage.cs",
+		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
 "Beat Sound:":
@@ -10087,13 +10191,31 @@
 		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
+"The plugin folder '{0}' doesn't exist and will be ignored.":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\PluginsPage.cs",
+	],
+},
+"The plugin folder '{0}' is specified multiple times and duplicates have been disabled":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\PluginsPage.cs",
+	],
+},
+"The plugin folder '{0}' is a sub-folder of another plugin folder '{1}', doesn't need to be included and has been disabled.":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\PluginsPage.cs",
+	],
+},
 "VST Plugins":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
-"&VST Plugin Folders: (separate multiple paths with a semicolon)":
+"&VST Plugin Folders:":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\PluginsPage.cs",
@@ -10106,6 +10228,24 @@
 	],
 },
 "Please select your VST plugins folder:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\PluginsPage.cs",
+	],
+},
+"Enter Folder...":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\PluginsPage.cs",
+	],
+},
+"Enter Folder":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\PluginsPage.cs",
+	],
+},
+"Folder doesn't exist: '{0}'":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\PluginsPage.cs",
@@ -10138,6 +10278,12 @@
 	],
 },
 "Finally, please specify where your VST plugins are installed.\n\nYou can also optionally specify a folder that contains .fxb and .fxp preset files.\nThese files will be made available for quick access when you insert a plugin.":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\PluginsPage.cs",
+	],
+},
+"Clipboard doesn't contain a valid file system folder.":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\PluginsPage.cs",
@@ -11737,7 +11883,7 @@
 		".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
 	],
 },
-"Change Preset &on MIDI Program Change":
+"Change Preset M&odel...":
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
@@ -16621,19 +16767,19 @@
 "Not a valid bank or preset (invalid chunk magic).":
 {
 	"contexts": [
-		".\\Cantabile.Core\\PluginHost.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
 	],
 },
 "Not a valid bank or preset (invalid preset\/bank magic).":
 {
 	"contexts": [
-		".\\Cantabile.Core\\PluginHost.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
 	],
 },
 "Failed to load VST 3 module - {0}":
 {
 	"contexts": [
-		".\\Cantabile.Core\\PluginHost.cs",
+		".\\Cantabile.Core\\PluginUtils.cs",
 	],
 },
 "Failed to create audio driver, unknown multi-driver configuration '{0}'":
