@@ -689,7 +689,6 @@
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -2534,8 +2533,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
-			".\\Cantabile\\Options\\ExternalToolsPage.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs"
+			".\\Cantabile\\Options\\ExternalToolsPage.cs"
 		],
 		"translation": "Hozzá&adás",
 		"machine": false
@@ -2545,8 +2543,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
-			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs"
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
 		],
 		"translation": "Eltávolítás (&R)",
 		"machine": false
@@ -3700,7 +3697,8 @@
 		[
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
-			".\\Cantabile\\Options\\HotKeysPage.cs"
+			".\\Cantabile\\Options\\HotKeysPage.cs",
+			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
 		"translation": "Hozzá&adás...",
 		"machine": false
@@ -4025,8 +4023,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "Elem",
 		"machine": false
@@ -12083,8 +12080,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs"
+			".\\Cantabile\\Options\\GeneralPage.cs"
 		],
 		"translation": "Tallózás...",
 		"machine": false
@@ -21331,7 +21327,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginUtils.cs"
+			".\\Cantabile.Core\\PluginHost.cs"
 		],
 		"translation": "Nem érvényes bank vagy beállítás (érvénytelen chunk varázslat).",
 		"machine": false
@@ -21340,7 +21336,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginUtils.cs"
+			".\\Cantabile.Core\\PluginHost.cs"
 		],
 		"translation": "Nem érvényes bank vagy beállítás (érvénytelen beállítás\/bank mágia).",
 		"machine": false
@@ -21349,7 +21345,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginUtils.cs"
+			".\\Cantabile.Core\\PluginHost.cs"
 		],
 		"translation": "Nem sikerült betölteni a VST 3 modult - {0}",
 		"machine": false
@@ -25189,293 +25185,22 @@
 		"translation": "Nyomtatható álla&potlista",
 		"machine": true
 	},
-	"Change Preset Model": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		],
-		"translation": "Az előre beállított modell módosítása",
-		"machine": true
-	},
-	"Preset Model: {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
-		],
-		"translation": "Előre beállított modell: {0}",
-		"machine": true
-	},
-	"Load Plugin Program": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
-		],
-		"translation": "Töltse be a plugin programot",
-		"machine": true
-	},
-	"Copy Program Name": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
-		],
-		"translation": "Másolja a program nevét",
-		"machine": true
-	},
-	"Choose Preset Model": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Válasszon előre beállított modellt",
-		"machine": true
-	},
-	"The preset model controls how Cantabile's preset selector picker behaves.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Az előre beállított modell szabályozza, hogyan viselkedik a cantabile előre beállított választója.",
-		"machine": true
-	},
-	"NOTE: changing the preset model will clear all current plugin snapshots\non this plugin and this operation cannot be undone.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "MEGJEGYZÉS: Az előre beállított modell megváltoztatásával az összes aktuális plugin pillanatkép törlődik\nezen a beépülő modulon, és ezt a műveletet nem lehet visszavonni.",
-		"machine": true
-	},
-	"NOTE: changing the preset model will clear all current parameter sets\non this plugin and this operation cannot be undone.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "MEGJEGYZÉS: Az előre beállított modell megváltoztatása az összes aktuális paraméterkészletet törli\nezen a beépülő modulon, és ezt a műveletet nem lehet visszavonni.",
-		"machine": true
-	},
-	"Use Plugin's Programs": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\PluginUtils.cs"
-		],
-		"translation": "Használja a plugin programjait",
-		"machine": true
-	},
-	"Presets's map directly to the plugin's exported programs.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Előre állítja a térképet a plugin exportált programjaihoz.",
-		"machine": true
-	},
-	"Entire Plugin Snapshots": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\PluginUtils.cs"
-		],
-		"translation": "Teljes plugin pillanatképek",
-		"machine": true
-	},
-	"A possibly slow but comprehensive preset model where each preset\nstores a snapshot of the plugin's entire state.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Lehetséges, hogy lassú, de átfogó előre beállított modell, ahol minden előre beállított\na plugin teljes állapotának pillanatképét tárolja.",
-		"machine": true
-	},
-	"Parameter Sets": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\PluginUtils.cs"
-		],
-		"translation": "Paraméterkészletek",
-		"machine": true
-	},
-	"A fast, light-weight preset model where each preset only stores the\nplugin's exported automatable parameters.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Gyors, könnyű előre beállított modell, ahol minden preset csak a\na plugin exportált automatizált paraméterei.",
-		"machine": true
-	},
-	"Switch Presets": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Kapcsolja az előre beállított értékeket",
-		"machine": true
-	},
-	"Forward to the plugin": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Tovább a pluginhez",
-		"machine": true
-	},
-	"The plugin folder '{0}' doesn't exist and will be ignored.": 
+	"&VST Plugin Folders: (separate multiple paths with a semicolon)": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
-		"translation": "A '{0}' plugin mappa nem létezik, ezért figyelmen kívül hagyjuk.",
+		"translation": "&VST plugin mappák: (különálló útvonalakat külön pontosvesszővel különítsen el)",
 		"machine": true
 	},
-	"The plugin folder '{0}' is specified multiple times and duplicates have been disabled": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "A „{0}” plugin mappát többször megadtuk, és a másolatokat letiltottuk",
-		"machine": true
-	},
-	"The plugin folder '{0}' is a sub-folder of another plugin folder '{1}', doesn't need to be included and has been disabled.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "A „{0}” plugin mappa egy másik „{1}” plugin mappa almappája, nem kell belefoglalni, és le van tiltva.",
-		"machine": true
-	},
-	"&VST Plugin Folders:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "&VST plugin mappák:",
-		"machine": true
-	},
-	"Enter Folder...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "Írja be a mappát...",
-		"machine": true
-	},
-	"Enter Folder": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "Írja be a mappát",
-		"machine": true
-	},
-	"Folder doesn't exist: '{0}'": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "Nem létezik mappa: '{0}'",
-		"machine": true
-	},
-	"Clipboard doesn't contain a valid file system folder.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "A vágólap nem tartalmaz érvényes fájlrendszermappát.",
-		"machine": true
-	},
-	"Change Preset M&odel...": 
+	"Change Preset &on MIDI Program Change": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
 		],
-		"translation": "Az előre beállít&ott modell módosítása...",
-		"machine": true
-	},
-	"&Use Plugin's Programs": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Használja a pl&ugin programjait",
-		"machine": true
-	},
-	"Entire Plugin &Snapshots": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "Telje&s plugin pillanatképek",
-		"machine": true
-	},
-	"&Parameter Sets": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "&Paraméterkészletek",
-		"machine": true
-	},
-	"Upgrade Plugin": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		],
-		"translation": "Frissítse a bővítményt",
-		"machine": true
-	},
-	"Show Plugin Information": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		],
-		"translation": "Bővítményinformációk megjelenítése",
-		"machine": true
-	},
-	"Upgrade Plugin...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		],
-		"translation": "Frissítse a bővítményt...",
-		"machine": true
-	},
-	"Plugin Infor&mation...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		],
-		"translation": "Plugin-infor&mációk...",
+		"translation": "Előre beállít&ott érték megváltoztatása a MIDI programváltáskor",
 		"machine": true
 	}
 }
