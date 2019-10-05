@@ -689,7 +689,6 @@
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -2442,8 +2441,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
-			".\\Cantabile\\Options\\ExternalToolsPage.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs"
+			".\\Cantabile\\Options\\ExternalToolsPage.cs"
 		],
 		"translation": "加 (&A)",
 		"machine": true
@@ -2453,8 +2451,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
-			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs"
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
 		],
 		"translation": "去掉 (&R)",
 		"machine": true
@@ -3636,7 +3633,8 @@
 		[
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
-			".\\Cantabile\\Options\\HotKeysPage.cs"
+			".\\Cantabile\\Options\\HotKeysPage.cs",
+			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
 		"translation": "加 (&A)...",
 		"machine": true
@@ -3961,8 +3959,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
 		],
 		"translation": "项目",
 		"machine": true
@@ -12387,8 +12384,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs"
+			".\\Cantabile\\Options\\GeneralPage.cs"
 		],
 		"translation": "浏览...",
 		"machine": true
@@ -21965,7 +21961,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginUtils.cs"
+			".\\Cantabile.Core\\PluginHost.cs"
 		],
 		"translation": "不是有效的银行或预设（无效的块魔术).",
 		"machine": true
@@ -21974,7 +21970,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginUtils.cs"
+			".\\Cantabile.Core\\PluginHost.cs"
 		],
 		"translation": "不是有效的银行或预设（无效的预设\/银行魔术).",
 		"machine": true
@@ -21983,7 +21979,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginUtils.cs"
+			".\\Cantabile.Core\\PluginHost.cs"
 		],
 		"translation": "无法加载VST 3模块 -  {0}",
 		"machine": true
@@ -25189,294 +25185,22 @@
 		"translation": "可打印状态列表 (&P)",
 		"machine": true
 	},
-	"Upgrade Plugin": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
-		],
-		"translation": "升级插件",
-		"machine": true
-	},
-	"Change Preset Model": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		],
-		"translation": "更改预设型号",
-		"machine": true
-	},
-	"Show Plugin Information": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		],
-		"translation": "显示插件信息",
-		"machine": true
-	},
-	"Preset Model: {0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
-		],
-		"translation": "预设型号：{0}",
-		"machine": true
-	},
-	"Load Plugin Program": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
-		],
-		"translation": "加载插件程序",
-		"machine": true
-	},
-	"Copy Program Name": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
-		],
-		"translation": "复制程序名称",
-		"machine": true
-	},
-	"Choose Preset Model": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "选择预设型号",
-		"machine": true
-	},
-	"The preset model controls how Cantabile's preset selector picker behaves.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "预设模型控制cantabile的预设选择器选择器的行为.",
-		"machine": true
-	},
-	"NOTE: changing the preset model will clear all current plugin snapshots\non this plugin and this operation cannot be undone.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "注意：更改预设模型将清除所有当前的插件快照\n在此插件上，此操作无法撤消.",
-		"machine": true
-	},
-	"NOTE: changing the preset model will clear all current parameter sets\non this plugin and this operation cannot be undone.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "注意：更改预设模型将清除所有当前参数集\n在此插件上，此操作无法撤消.",
-		"machine": true
-	},
-	"&Use Plugin's Programs": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "使用插件程序 (&U)",
-		"machine": true
-	},
-	"Presets's map directly to the plugin's exported programs.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "预设的地图直接到插件的导出程序.",
-		"machine": true
-	},
-	"Entire Plugin &Snapshots": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "整个插件快照 (&S)",
-		"machine": true
-	},
-	"A possibly slow but comprehensive preset model where each preset\nstores a snapshot of the plugin's entire state.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "可能缓慢但全面的预设模型，其中每个预设\n存储插件整个状态的快照.",
-		"machine": true
-	},
-	"&Parameter Sets": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "参数集 (&P)",
-		"machine": true
-	},
-	"A fast, light-weight preset model where each preset only stores the\nplugin's exported automatable parameters.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "快速，轻巧的预设模型，其中每个预设仅存储\n插件的导出的自动参数.",
-		"machine": true
-	},
-	"Switch Presets": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "切换预设",
-		"machine": true
-	},
-	"Forward to the plugin": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		],
-		"translation": "转发到插件",
-		"machine": true
-	},
-	"The plugin folder '{0}' doesn't exist and will be ignored.": 
+	"&VST Plugin Folders: (separate multiple paths with a semicolon)": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
-		"translation": "插件文件夹“ {0}”不存在，将被忽略.",
+		"translation": "&VST插件文件夹：（用分号分隔多个路径)",
 		"machine": true
 	},
-	"The plugin folder '{0}' is specified multiple times and duplicates have been disabled": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "多次指定了插件文件夹“ {0}”，并且已禁用重复项",
-		"machine": true
-	},
-	"The plugin folder '{0}' is a sub-folder of another plugin folder '{1}', doesn't need to be included and has been disabled.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "插件文件夹“ {0}”是另一个插件文件夹“ {1}”的子文件夹，不需要包含且已被禁用.",
-		"machine": true
-	},
-	"&VST Plugin Folders:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "&VST插件文件夹:",
-		"machine": true
-	},
-	"Enter Folder...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "输入资料夹...",
-		"machine": true
-	},
-	"Enter Folder": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "输入资料夹",
-		"machine": true
-	},
-	"Folder doesn't exist: '{0}'": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "文件夹不存在：'{0}'",
-		"machine": true
-	},
-	"Clipboard doesn't contain a valid file system folder.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		],
-		"translation": "剪贴板不包含有效的文件系统文件夹.",
-		"machine": true
-	},
-	"Upgrade Plugin...": 
+	"Change Preset &on MIDI Program Change": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
 		],
-		"translation": "升级插件...",
-		"machine": true
-	},
-	"Change Preset M&odel...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		],
-		"translation": "更改预设型号 (&O)...",
-		"machine": true
-	},
-	"Plugin Infor&mation...": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		],
-		"translation": "插件信息 (&M)...",
-		"machine": true
-	},
-	"Use Plugin's Programs": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\PluginUtils.cs"
-		],
-		"translation": "使用插件程序",
-		"machine": true
-	},
-	"Entire Plugin Snapshots": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\PluginUtils.cs"
-		],
-		"translation": "整个插件快照",
-		"machine": true
-	},
-	"Parameter Sets": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\PluginUtils.cs"
-		],
-		"translation": "参数集",
+		"translation": "更改MIDI程序更改时的预设 (&O)",
 		"machine": true
 	}
 }
