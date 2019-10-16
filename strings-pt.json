@@ -2924,15 +2924,6 @@
 		"translation": "&Nenhum",
 		"machine": false
 	},
-	"Media Player #{0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs"
-		],
-		"translation": "Reprodutor de Media # {0}",
-		"machine": false
-	},
 	"&Key Range:": 
 	{
 		"contexts": 
@@ -3199,15 +3190,6 @@
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
 		],
 		"translation": "Procurar plug-in (&b)...",
-		"machine": false
-	},
-	"Object #{0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs"
-		],
-		"translation": "Objeto # {0}",
 		"machine": false
 	},
 	"Channel Pressure": 
@@ -6535,15 +6517,6 @@
 		"translation": "Maioria das falhas na carga de processamento e de página da memória ao longo do último segundo.",
 		"machine": false
 	},
-	"Rack by Index": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\IndexedRackHostBindingClass.cs"
-		],
-		"translation": "Rack pelo Índice",
-		"machine": false
-	},
 	"Song Ticker": 
 	{
 		"contexts": 
@@ -8660,18 +8633,6 @@
 		"translation": "Excluir Estados",
 		"machine": false
 	},
-	"Rack #{0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\IndexedPluginBindingClass.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\IndexedRackHostBindingClass.cs"
-		],
-		"translation": "Prateleira #{0}",
-		"machine": false
-	},
 	"controller {0}": 
 	{
 		"contexts": 
@@ -9015,15 +8976,6 @@
 			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Adicionar música...",
-		"machine": false
-	},
-	"Plugin by Index": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\IndexedPluginBindingClass.cs"
-		],
-		"translation": "Plugin por índice",
 		"machine": false
 	},
 	"Shows the level of audio signal coming from the plugin.": 
@@ -10569,15 +10521,6 @@
 		"translation": "Cantabile x64 (64-bit)",
 		"machine": false
 	},
-	"Plugin #{0}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\IndexedPluginBindingClass.cs"
-		],
-		"translation": "Plugin #{0}",
-		"machine": false
-	},
 	"Plugin and Preset Files": 
 	{
 		"contexts": 
@@ -10638,10 +10581,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\IndexedPluginBindingClass.cs"
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
 		],
 		"translation": "Música",
 		"machine": false
@@ -14738,15 +14678,6 @@
 		"translation": "Em qualquer alteração exceto via atribuições",
 		"machine": false
 	},
-	"Object by Index": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs"
-		],
-		"translation": "Objeto pelo índice",
-		"machine": false
-	},
 	"Scan Plugin Folders (&Full)": 
 	{
 		"contexts": 
@@ -14772,15 +14703,6 @@
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
 		],
 		"translation": "MmcBase??",
-		"machine": false
-	},
-	"Media Player by Index": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs"
-		],
-		"translation": "Reprodutor de Mídia pelo Índice",
 		"machine": false
 	},
 	"Please check your email.\n(Don't forget to check your spam folder)\n\nClick continue when you're ready to enter your license key.": 
@@ -21050,15 +20972,6 @@
 		"translation": "&Incluir no indicador mestre",
 		"machine": true
 	},
-	"Select Object Index": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\BindingIndiciesDialog.cs"
-		],
-		"translation": "Selecione o índice de objeto",
-		"machine": true
-	},
 	"&Track Parameter Changes": 
 	{
 		"contexts": 
@@ -25497,6 +25410,51 @@
 			".\\Cantabile.Core\\PluginUtils.cs"
 		],
 		"translation": "Conjuntos de parâmetros",
+		"machine": true
+	},
+	"Select Object": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingIndiciesDialog.cs"
+		],
+		"translation": "Selecionar objeto",
+		"machine": true
+	},
+	"Object by Index\/Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs"
+		],
+		"translation": "Objeto por índice \/ nome",
+		"machine": true
+	},
+	"Media Player by Index\/Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs"
+		],
+		"translation": "Media player por índice \/ nome",
+		"machine": true
+	},
+	"Plugin by Index\/Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\IndexedPluginBindingClass.cs"
+		],
+		"translation": "Plugin por índice \/ nome",
+		"machine": true
+	},
+	"Rack by Index\/Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\IndexedRackHostBindingClass.cs"
+		],
+		"translation": "Rack por índice \/ nome",
 		"machine": true
 	}
 }
