@@ -258,7 +258,8 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
-			".\\Cantabile\\Options\\ExternalToolsPage.cs"
+			".\\Cantabile\\Options\\ExternalToolsPage.cs",
+			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
 		"translation": "Legg (&A)",
 		"machine": true
@@ -268,7 +269,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
-			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
+			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
 		"translation": "Fje&rne",
 		"machine": true
@@ -649,7 +651,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
 		"translation": "Element",
 		"machine": true
@@ -705,7 +708,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\Dialogs\\TransposeDialog.cs"
 		],
 		"translation": "Lukk",
 		"machine": true
@@ -878,6 +882,7 @@
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\Options\\PluginsPage.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -4648,8 +4653,7 @@
 		[
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
-			".\\Cantabile\\Options\\HotKeysPage.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs"
+			".\\Cantabile\\Options\\HotKeysPage.cs"
 		],
 		"translation": "Legg (&A)...",
 		"machine": true
@@ -6976,7 +6980,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginHost.cs"
+			".\\Cantabile.Core\\PluginUtils.cs"
 		],
 		"translation": "Ikke en gyldig bank eller forhåndsinnstilling (ugyldig blings magi).",
 		"machine": true
@@ -6985,7 +6989,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginHost.cs"
+			".\\Cantabile.Core\\PluginUtils.cs"
 		],
 		"translation": "Ikke en gyldig bank eller forhåndsinnstilling (ugyldig forhåndsinnstilt \/ bank magi).",
 		"machine": true
@@ -6994,7 +6998,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Core\\PluginHost.cs"
+			".\\Cantabile.Core\\PluginUtils.cs"
 		],
 		"translation": "Kunne ikke laste VST 3 modul - {0}",
 		"machine": true
@@ -10786,7 +10790,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
 		"translation": "Bla...",
 		"machine": true
@@ -25185,22 +25190,313 @@
 		"translation": "Utskriftsvennlig tilstandsliste (&P)",
 		"machine": true
 	},
-	"&VST Plugin Folders: (separate multiple paths with a semicolon)": 
+	"Upgrade Plugin": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		],
+		"translation": "Oppgrader plugin",
+		"machine": true
+	},
+	"Change Preset Model": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Endre forhåndsinnstilt modell",
+		"machine": true
+	},
+	"Show Plugin Information": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Vis plugin-informasjon",
+		"machine": true
+	},
+	"Preset Model: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		],
+		"translation": "Forhåndsinnstilt modell: {0}",
+		"machine": true
+	},
+	"Change...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		],
+		"translation": "Endring...",
+		"machine": true
+	},
+	"Load Plugin Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Last inn plugin-programmet",
+		"machine": true
+	},
+	"Copy Program Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Kopier programnavn",
+		"machine": true
+	},
+	"Choose Preset Model": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Velg forhåndsinnstilt modell",
+		"machine": true
+	},
+	"The preset model controls how Cantabile's preset selector picker behaves.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Den forhåndsinnstilte modellen styrer hvordan cantabiles forhåndsinnstilte velgervelger oppfører seg.",
+		"machine": true
+	},
+	"NOTE: changing the preset model will clear all current plugin snapshots\non this plugin and this operation cannot be undone.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "MERKNAD: å endre den forhåndsinnstilte modellen vil fjerne alle gjeldende øyeblikksbilder av plugin-filer\npå denne pluginen, og denne operasjonen kan ikke angre.",
+		"machine": true
+	},
+	"NOTE: changing the preset model will clear all current parameter sets\non this plugin and this operation cannot be undone.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "MERKNAD: å endre den forhåndsinnstilte modellen vil fjerne alle gjeldende parametersett\npå denne pluginen, og denne operasjonen kan ikke angre.",
+		"machine": true
+	},
+	"&Use Plugin's Programs": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Br&uk plugin-programmene",
+		"machine": true
+	},
+	"Presets's map directly to the plugin's exported programs.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Forhåndsinnstiller kart direkte til plugins eksporterte programmer.",
+		"machine": true
+	},
+	"Entire Plugin &Snapshots": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Hele øyeblikk&sbilder av plugin-filer",
+		"machine": true
+	},
+	"A possibly slow but comprehensive preset model where each preset\nstores a snapshot of the plugin's entire state.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "En muligens treg, men omfattende forhåndsinnstilt modell der hver forhåndsinnstilling\nlagrer et øyeblikksbilde av pluginens hele tilstand.",
+		"machine": true
+	},
+	"&Parameter Sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "&Parametersett",
+		"machine": true
+	},
+	"A fast, light-weight preset model where each preset only stores the\nplugin's exported automatable parameters.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "En rask, lett forhåndsinnstilt modell der hver forhåndsinnstilling bare lagrer\nplugins eksporterte automatiske parametere.",
+		"machine": true
+	},
+	"On receiving a &MIDI Program Change:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Når du &mottar et MIDI-program endring:",
+		"machine": true
+	},
+	"Switch Presets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Bytt forhåndsinnstillinger",
+		"machine": true
+	},
+	"Forward to the plugin": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		],
+		"translation": "Videresend til plugin-modulen",
+		"machine": true
+	},
+	"The plugin folder '{0}' doesn't exist and will be ignored.": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\Options\\PluginsPage.cs"
 		],
-		"translation": "&VST-plugin-mapper: (skill flere stier med semikolon))",
+		"translation": "Plugin-mappen '{0}' eksisterer ikke og blir ignorert.",
 		"machine": true
 	},
-	"Change Preset &on MIDI Program Change": 
+	"The plugin folder '{0}' is specified multiple times and duplicates have been disabled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\PluginsPage.cs"
+		],
+		"translation": "Plugin-mappen '{0}' er spesifisert flere ganger og duplikater er deaktivert",
+		"machine": true
+	},
+	"The plugin folder '{0}' is a sub-folder of another plugin folder '{1}', doesn't need to be included and has been disabled.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\PluginsPage.cs"
+		],
+		"translation": "Plugin-mappen '{0}' er en undermappe av en annen plugin-mappe '{1}', trenger ikke å være inkludert og har blitt deaktivert.",
+		"machine": true
+	},
+	"&VST Plugin Folders:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\PluginsPage.cs"
+		],
+		"translation": "&VST-plugin-mapper:",
+		"machine": true
+	},
+	"Enter Folder...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\PluginsPage.cs"
+		],
+		"translation": "Gå inn i mappen...",
+		"machine": true
+	},
+	"Enter Folder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\PluginsPage.cs"
+		],
+		"translation": "Gå inn i mappen",
+		"machine": true
+	},
+	"Folder doesn't exist: '{0}'": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\PluginsPage.cs"
+		],
+		"translation": "Mappen eksisterer ikke: '{0}'",
+		"machine": true
+	},
+	"Clipboard doesn't contain a valid file system folder.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\PluginsPage.cs"
+		],
+		"translation": "Utklippstavlen inneholder ikke en gyldig filsystemmappe.",
+		"machine": true
+	},
+	"Upgrade Plugin...": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
 		],
-		"translation": "Endre f&orhåndsinnstilling ved MIDI-programendring",
+		"translation": "Oppgrader plugin...",
+		"machine": true
+	},
+	"Change Preset M&odel...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
+		],
+		"translation": "Endre f&orhåndsinnstilt modell...",
+		"machine": true
+	},
+	"Plugin Infor&mation...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
+		],
+		"translation": "Infor&masjon om plugin...",
+		"machine": true
+	},
+	"Use Plugin's Programs": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\PluginUtils.cs"
+		],
+		"translation": "Bruk plugin-programmene",
+		"machine": true
+	},
+	"Entire Plugin Snapshots": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\PluginUtils.cs"
+		],
+		"translation": "Hele øyeblikksbilder av plugin-filer",
+		"machine": true
+	},
+	"Parameter Sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\PluginUtils.cs"
+		],
+		"translation": "Parametersett",
 		"machine": true
 	}
 }
