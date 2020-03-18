@@ -223,6 +223,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
+			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
@@ -239,6 +240,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
+			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
@@ -3059,6 +3061,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
 			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		],
@@ -3518,6 +3521,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
@@ -4159,15 +4163,6 @@
 			".\\Cantabile\\Options\\GeneralPage.cs"
 		],
 		"translation": "Andere Fensterskalierung (&c):",
-		"machine": false
-	},
-	"Enable &High-Resolution UI": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "&Hochauflösende Anzeige aktivieren",
 		"machine": false
 	},
 	"Metronome Sounds:": 
@@ -5384,24 +5379,6 @@
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PortBuilder.cs"
 		],
 		"translation": "22.2",
-		"machine": false
-	},
-	"Delete Sub-state": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
-		],
-		"translation": "Unterzustand löschen",
-		"machine": false
-	},
-	"New Sub-state": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
-		],
-		"translation": "Neuer Unterzustand",
 		"machine": false
 	},
 	"MIDI": 
@@ -6865,7 +6842,8 @@
 		[
 			".\\Cantabile\\Commands\\StateCommands.cs",
 			".\\Cantabile\\Dialogs\\StateDialog.cs",
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+			".\\Cantabile\\SidePanel\\StatesPanel.cs",
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
 		],
 		"translation": "Neuer Zustand",
 		"machine": false
@@ -6977,7 +6955,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+			".\\Cantabile\\SidePanel\\StatesPanel.cs",
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
 		],
 		"translation": "Zustand löschen",
 		"machine": false
@@ -7112,6 +7091,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Options\\GeneralPage.cs",
 			".\\Cantabile\\Options\\KeyboardPage.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
@@ -8315,6 +8295,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
 		],
@@ -9133,6 +9114,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Options\\AudioEnginePage.cs",
+			".\\Cantabile\\Options\\GeneralPage.cs",
 			".\\Cantabile\\Options\\KeyboardPage.cs"
 		],
 		"translation": "Ausgeschaltet",
@@ -9505,7 +9487,8 @@
 		[
 			".\\Cantabile.Application\\Bindable\\States.cs",
 			".\\Cantabile.Application\\Bindable\\Triggers.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		],
 		"translation": "Ungültiger Parameter",
 		"machine": false
@@ -13546,6 +13529,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
@@ -15061,7 +15045,12 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		],
 		"translation": "Tastenbereich löschen",
 		"machine": false
@@ -15229,6 +15218,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
 		],
 		"translation": "Tastenbereich setzen...",
@@ -15320,6 +15311,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
 		],
 		"translation": "Ordner (&F)",
@@ -15338,6 +15330,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
 		],
 		"translation": "Ordner auswählen...",
@@ -18554,15 +18547,6 @@
 		"translation": "Druckbare Setl&iste",
 		"machine": false
 	},
-	"Toggle Object Solo Control": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		],
-		"translation": "Soloeinstellung dieses Objekts umschalten",
-		"machine": false
-	},
 	"Solo this rack": 
 	{
 		"contexts": 
@@ -18587,6 +18571,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
@@ -22073,24 +22058,6 @@
 		"translation": "Stunden",
 		"machine": false
 	},
-	"Enable &High-Resolution for Cantabile Windows": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "&Hohe Auflösung für Cantabile-Fenster aktivieren",
-		"machine": false
-	},
-	"Use Per-Window Resolution Scaling (prevents plugins appearing too small)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		],
-		"translation": "Auflösung pro Fenster aktivieren (verhindert, dass Plugins zu klein erscheinen))",
-		"machine": false
-	},
 	"Enable GPU Accelerated Rendering (OpenGL)": 
 	{
 		"contexts": 
@@ -23171,15 +23138,6 @@
 			".\\Cantabile\\Dialogs\\SetListPropertiesDialog.cs"
 		],
 		"translation": "Im Finde&r anzeigen",
-		"machine": false
-	},
-	"A&ll Racks": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "A&lle Racks",
 		"machine": false
 	},
 	"&Double Buffered Audio": 
@@ -25806,6 +25764,270 @@
 			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		],
 		"translation": "Gesperrt (&K)",
+		"machine": true
+	},
+	"Learn Key Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Lernen Sie den Schlüsselbereich",
+		"machine": true
+	},
+	"Learn Transpose": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Transponieren lernen",
+		"machine": true
+	},
+	"Clear Transpose": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+		],
+		"translation": "Klar transponieren",
+		"machine": true
+	},
+	"Choose Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs"
+		],
+		"translation": "Wählen Sie ein Rack",
+		"machine": true
+	},
+	"Type to filter...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
+		],
+		"translation": "Geben Sie zum Filtern ein...",
+		"machine": true
+	},
+	"Location": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
+		],
+		"translation": "Ort",
+		"machine": true
+	},
+	"Use Racks Folder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs"
+		],
+		"translation": "Verwenden Sie den Rack-Ordner",
+		"machine": true
+	},
+	"Choose Racks Folder": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs"
+		],
+		"translation": "Wählen Sie den Rack-Ordner",
+		"machine": true
+	},
+	"Play first note of key range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\LearnKeyRangePopup.cs"
+		],
+		"translation": "Spielen Sie die erste Note des Tastenbereichs",
+		"machine": true
+	},
+	"Play second note of key range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\LearnKeyRangePopup.cs"
+		],
+		"translation": "Spielen Sie die zweite Note des Tastenbereichs",
+		"machine": true
+	},
+	"Play any note in the current key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\LearnTransposePopup.cs"
+		],
+		"translation": "Spielen Sie eine beliebige Note in der aktuellen Taste",
+		"machine": true
+	},
+	"Play the equivalent note in the new key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\LearnTransposePopup.cs"
+		],
+		"translation": "Spielen Sie die entsprechende Note in der neuen Taste",
+		"machine": true
+	},
+	"Allocate Voices from &Channel:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VoiceAllocator.cs"
+		],
+		"translation": "Stimmen vom Kanal zuweisen (&C):",
+		"machine": true
+	},
+	"&To Channels:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VoiceAllocator.cs"
+		],
+		"translation": "Zu Kanälen (&T):",
+		"machine": true
+	},
+	"All Rac&ks": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Alle Gestelle (&K)",
+		"machine": true
+	},
+	"&Gain": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Misc\\VariableMenu.cs"
+		],
+		"translation": "Dazu&gewinnen",
+		"machine": true
+	},
+	"Enabled & Upscale Plugins": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		],
+		"translation": "Aktivierte& gehobene Plugins",
+		"machine": true
+	},
+	"Learn Key Range...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
+		],
+		"translation": "Lernen Sie den Schlüsselbereich...",
+		"machine": true
+	},
+	"Learn Transpose...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
+		],
+		"translation": "Transponieren lernen...",
+		"machine": true
+	},
+	"Non-Linked Behaviour": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Nicht verknüpftes Verhalten",
+		"machine": true
+	},
+	"Store separate values in each state for this behaviour - even across linked clones.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Speichern Sie für dieses Verhalten in jedem Status separate Werte - auch für verknüpfte Klone.",
+		"machine": true
+	},
+	"Choose MIDI Route Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+		],
+		"translation": "Wählen Sie die MIDI-Routennummer",
+		"machine": true
+	},
+	"MIDI Route #{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+		],
+		"translation": "MIDI-Route # {0}",
+		"machine": true
+	},
+	"MIDI Route #": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+		],
+		"translation": "MIDI-Route #",
+		"machine": true
+	},
+	"Voice Allocator": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Sprachzuweisung",
+		"machine": true
+	},
+	"Uninitialised voice allocator": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Nicht initialisierter Sprachzuweiser",
+		"machine": true
+	},
+	"Allocate voices from {0} to {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Ordnen Sie Stimmen von {0} bis {1} zu",
 		"machine": true
 	}
 }
