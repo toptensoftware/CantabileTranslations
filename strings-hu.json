@@ -3853,15 +3853,6 @@
 		"translation": "Nem hoztál létre kapu hozzárendelést - ebből a fájlból semmit sem fogsz hallani. Biztos, hogy folytatod?",
 		"machine": false
 	},
-	"Invalid tempo, please enter a number between 30 and 300": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MediaFileDialog.cs"
-		],
-		"translation": "Érvénytelen tempó, írj be egy számot 30 és 300 között",
-		"machine": false
-	},
 	"Audio files must have a tempo specified": 
 	{
 		"contexts": 
@@ -9153,15 +9144,6 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Valódi kivétel elvetése (&N)...",
-		"machine": false
-	},
-	"Fake Driver &Kill": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Hamisított meghajtó leállítása (&K)",
 		"machine": false
 	},
 	"Run &GC Now": 
@@ -17536,6 +17518,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs",
 			".\\Cantabile.Application\\Bindable\\Triggers.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
@@ -26081,5 +26064,69 @@
 		],
 		"translation": "Kizárás a linkklónokból",
 		"machine": false
+	},
+	"Create Copy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Hozzon létre másolatot",
+		"machine": true
+	},
+	"Invalid tempo, please enter a number between {0} and {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs"
+		],
+		"translation": "Érvénytelen tempó, kérjük, írjon be egy számot a {0} és {1} közé",
+		"machine": true
+	},
+	"Create Copy of Song File": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		],
+		"translation": "Készítsen másolatot a dalfájlról",
+		"machine": true
+	},
+	"Create Cop&y...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "Hozzon létre másolatot (&Y)...",
+		"machine": true
+	},
+	"On Custom Button": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs"
+		],
+		"translation": "Az egyéni gombra",
+		"machine": true
+	},
+	"Select Button": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs"
+		],
+		"translation": "Kiválasztás gomb",
+		"machine": true
+	},
+	"Button {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackLevels.cs"
+		],
+		"translation": "Gomb {0}",
+		"machine": true
 	}
 }
