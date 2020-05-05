@@ -46,7 +46,9 @@
 		[
 			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Dialogs\\ChooseFileListView.cs",
-			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "byla",
 		"machine": true
@@ -121,7 +123,9 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
@@ -136,7 +140,9 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
@@ -152,7 +158,9 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -692,6 +700,7 @@
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -1063,7 +1072,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
+			".\\Cantabile\\Commands\\FileCommands.cs",
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
 		],
 		"translation": "Nauja daina",
 		"machine": true
@@ -1077,38 +1087,13 @@
 		"translation": "Atviras daina",
 		"machine": true
 	},
-	"Save File": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Išsaugoti failą",
-		"machine": true
-	},
-	"Save File As": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Išsaugoti failą kaip",
-		"machine": true
-	},
-	"Save Copy As": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Įrašyti kopiją kaip",
-		"machine": true
-	},
 	"New Set List": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
+			".\\Cantabile\\Commands\\FileCommands.cs",
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "Nauja rinkinys sąrašas",
 		"machine": true
@@ -1309,6 +1294,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
 		],
 		"translation": "Prijungti",
@@ -1330,7 +1316,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "Nauja susijęs stovas",
 		"machine": true
@@ -1349,6 +1336,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
 		],
 		"translation": "Grotuvas",
@@ -1790,15 +1778,6 @@
 		"translation": "Nutolinti",
 		"machine": true
 	},
-	"Show Menu": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		],
-		"translation": "Rodyti meniu",
-		"machine": true
-	},
 	"Zoom to Play Range": 
 	{
 		"contexts": 
@@ -2051,9 +2030,11 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\StateDialog.cs",
-			".\\Cantabile\\Licensing\\RegisterPage.cs"
+			".\\Cantabile\\Licensing\\RegisterPage.cs",
+			".\\Cantabile\\Options\\ColorsPage.cs"
 		],
 		"translation": "vardas (&N):",
 		"machine": true
@@ -2153,10 +2134,12 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs"
 		],
@@ -2170,10 +2153,12 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 			".\\Cantabile\\Dialogs\\PluginScanProgressDialog.cs",
 			".\\Cantabile\\Dialogs\\SongLoadProgressDialog.cs",
 			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
@@ -2369,11 +2354,13 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
+			".\\Cantabile\\Options\\ColorsPage.cs",
 			".\\Cantabile\\Options\\MidiPortsPage.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -3009,7 +2996,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\JumpToPositionDialog.cs"
+			".\\Cantabile\\Dialogs\\JumpToPositionDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
 		],
 		"translation": "&pozicija:",
 		"machine": true
@@ -3182,7 +3170,9 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
-			".\\Cantabile\\Options\\GeneralPage.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
 		"translation": "Visi failai",
 		"machine": true
@@ -4066,7 +4056,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "Prašome įvesti stovo vardą.",
 		"machine": true
@@ -4084,7 +4075,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "Stovas vardas yra neteisingas failo pavadinimo raides ir negali būti naudojamas.",
 		"machine": true
@@ -4093,7 +4085,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "Failas tokiu pavadinimu jau egzistuoja. perrašyti?",
 		"machine": true
@@ -5457,7 +5450,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
 		],
 		"translation": "Taikyti kanalus (&P):",
 		"machine": true
@@ -5806,6 +5800,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs"
 		],
 		"translation": "į",
@@ -6672,15 +6667,6 @@
 		"translation": "pe&rkelti į dešinę",
 		"machine": true
 	},
-	"Tra&nspose": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs"
-		],
-		"translation": "perkelti (&N)",
-		"machine": true
-	},
 	"&Song Selector": 
 	{
 		"contexts": 
@@ -6873,7 +6859,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListPanel.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
 		"translation": "Išs&augoti kaip...",
 		"machine": true
@@ -6909,7 +6896,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "&naujas",
@@ -6919,28 +6905,10 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListPanel.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
 		"translation": "Atviras (&O)...",
-		"machine": true
-	},
-	"&Recent Songs": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Naujausi dainos (&R)",
-		"machine": true
-	},
-	"R&ecent Set Lists": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Naujausi rinkinys sąrašai (&E)",
 		"machine": true
 	},
 	"E&xit": 
@@ -7137,6 +7105,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "P&auzė",
@@ -7173,6 +7142,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
@@ -7183,6 +7153,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "į&rašas",
@@ -7780,6 +7751,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Pradeda atkūrimą magistro transporto",
@@ -7789,6 +7761,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Pauzių atkūrimą magistro transporto",
@@ -7798,6 +7771,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
 		],
@@ -7918,6 +7892,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "įrašas",
@@ -7927,6 +7902,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Pradeda ir baigia įrašymo.\n\nMažas indikatorius, kai automatinis įrašas yra įjungtas ir gali būti kontroliuojami dešiniuoju pelės klavišu.",
@@ -8525,15 +8501,6 @@
 		"translation": "Pasirinkite loopCount",
 		"machine": true
 	},
-	"Show this Menu": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
-		],
-		"translation": "Rodyti šį meniu",
-		"machine": true
-	},
 	"Show &All": 
 	{
 		"contexts": 
@@ -8760,8 +8727,7 @@
 		[
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainWindowViewState.cs",
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "Numatytas",
 		"machine": true
@@ -8770,8 +8736,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "raudonas",
 		"machine": true
@@ -8780,8 +8745,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "kaštoninė spalva",
 		"machine": true
@@ -8790,8 +8754,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "žalias",
 		"machine": true
@@ -8800,8 +8763,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "kalkės",
 		"machine": true
@@ -8810,8 +8772,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "mėlynas",
 		"machine": true
@@ -8820,8 +8781,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "karinis jūrų laivynas",
 		"machine": true
@@ -8830,8 +8790,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "geltonas",
 		"machine": true
@@ -8840,8 +8799,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "alyvmedis",
 		"machine": true
@@ -8850,8 +8808,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "Fuscia",
 		"machine": true
@@ -8860,8 +8817,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "Violetinė",
 		"machine": true
@@ -8870,8 +8826,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "Žydras",
 		"machine": true
@@ -8880,8 +8835,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "kryklė",
 		"machine": true
@@ -8890,8 +8844,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "oranžinis",
 		"machine": true
@@ -8900,8 +8853,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "rudas",
 		"machine": true
@@ -10769,6 +10721,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
 			".\\Cantabile\\Options\\PluginsPage.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs",
 			".\\Cantabile\\Options\\StartupPage.cs"
@@ -10803,28 +10756,11 @@
 		"translation": "įrašymo",
 		"machine": true
 	},
-	"Location and Filename": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "Vieta ir failo",
-		"machine": true
-	},
-	"&Location": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "vieta (&L)",
-		"machine": true
-	},
 	"Please select recordings folder:": 
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs"
 		],
 		"translation": "Prašome pasirinkti aplanke Recordings:",
@@ -10834,6 +10770,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs"
 		],
 		"translation": "&Failo formatas:",
@@ -10843,7 +10780,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs"
 		],
 		"translation": "skaitiklis (&C):",
 		"machine": true
@@ -10902,51 +10839,6 @@
 		"translation": "Automatinis įrašas",
 		"machine": true
 	},
-	"Start recording on:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "Pradėti įrašymą:",
-		"machine": true
-	},
-	"&MIDI Input": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "&MIDI įvestis",
-		"machine": true
-	},
-	"MIDI &Output": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "MIDI (&O)",
-		"machine": true
-	},
-	"&Audio Input": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "G&arso įvesties",
-		"machine": true
-	},
-	"A&udio Output": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "Garso išvestis (&U)",
-		"machine": true
-	},
 	"&Stop auto-recordings after": 
 	{
 		"contexts": 
@@ -10992,15 +10884,6 @@
 		"translation": "Garso triukšmo riba (&N):",
 		"machine": true
 	},
-	"Recordings List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "Įrašai sąrašas",
-		"machine": true
-	},
 	"&Pin new recordings": 
 	{
 		"contexts": 
@@ -11019,15 +10902,6 @@
 		"translation": "Pašalinti Sva&rbi įrašus iš sąrašo po",
 		"machine": true
 	},
-	"day(s)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "dieną (-ai)",
-		"machine": true
-	},
 	"&Delete unpinned recordings after": 
 	{
 		"contexts": 
@@ -11041,6 +10915,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs"
 		],
 		"translation": "Failo pavadinimas yra neleistinų simbolių",
@@ -12975,6 +12851,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
 			".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs"
 		],
@@ -12985,6 +12862,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		],
 		"translation": "Aplinkkelių garso signalą aplink šiuo įskiepiai.",
@@ -13531,6 +13409,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		],
@@ -13550,6 +13429,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs"
 		],
@@ -13787,6 +13667,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Redaguoti...",
@@ -14715,6 +14596,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		],
@@ -14943,7 +14825,8 @@
 		[
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+			".\\Cantabile.Application\\Bindable\\Triggers.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "#{0}",
 		"machine": true
@@ -14952,6 +14835,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
 		],
@@ -15223,6 +15107,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Options\\ColorsPage.cs",
 			".\\Cantabile.Application\\Bindings\\Binding.cs",
 			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
@@ -16484,6 +16369,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+			".\\Cantabile.Application\\Application.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
 		],
 		"translation": "Nauja daina",
@@ -16684,6 +16570,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Options\\ColorsPage.cs",
 			".\\Cantabile.Application\\ShowNotes\\ShowNote.cs"
 		],
 		"translation": "spalvos",
@@ -17341,6 +17228,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "perkel&ti",
@@ -19724,15 +19612,6 @@
 		"translation": "Perjungti spyna",
 		"machine": true
 	},
-	"Revert File": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Grąžinti bylą",
-		"machine": true
-	},
 	"New Linked Clone": 
 	{
 		"contexts": 
@@ -19882,7 +19761,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "sugrįžti (&V)...",
 		"machine": true
@@ -20006,21 +19886,13 @@
 		"translation": "atrakinti būklę",
 		"machine": true
 	},
-	"Song\/Rack Options": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Dainų \/ krumpliniai variantai",
-		"machine": true
-	},
 	"&New...": 
 	{
 		"contexts": 
 		[
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "&naujas...",
@@ -25764,6 +25636,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
@@ -25854,6 +25727,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\LearnGlobalTransposePopup.cs",
 			".\\Cantabile\\Dialogs\\LearnTransposePopup.cs"
 		],
 		"translation": "Atkurkite bet kurį dabartinio klavišo įrašą",
@@ -25863,6 +25737,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\LearnGlobalTransposePopup.cs",
 			".\\Cantabile\\Dialogs\\LearnTransposePopup.cs"
 		],
 		"translation": "Atkurkite lygiavertį natą naujame klaviše",
@@ -26181,6 +26056,1598 @@
 			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
 		],
 		"translation": "Išsaugoti uosto rinkinį",
+		"machine": true
+	},
+	"Follow Routing Forward": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Sekite maršrutą pirmyn",
+		"machine": true
+	},
+	"Follow Routing Reverse": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Laikykitės maršruto atgal",
+		"machine": true
+	},
+	"Save Song or Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Išsaugokite dainą ar grotuvą",
+		"machine": true
+	},
+	"Save Song or Rack As": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Išsaugokite dainą ar grotuvą kaip",
+		"machine": true
+	},
+	"Save Song or Rack Copy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Išsaugokite dainos ar stovo kopiją",
+		"machine": true
+	},
+	"Revert Song or Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Grąžinkite dainą ar stovą",
+		"machine": true
+	},
+	"Save": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Sutaupyti",
+		"machine": true
+	},
+	"Save As": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Išsaugoti kaip",
+		"machine": true
+	},
+	"Save Copy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Išsaugoti kopiją",
+		"machine": true
+	},
+	"Save As Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs",
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "Išsaugoti kaip šabloną",
+		"machine": true
+	},
+	"Revert": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Grąžinti",
+		"machine": true
+	},
+	"File Options": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Failų parinktys",
+		"machine": true
+	},
+	"Song or Rack Options": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Dainų ar stovo variantai",
+		"machine": true
+	},
+	"Unlink Clone": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs",
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+		],
+		"translation": "Atsieti kloną",
+		"machine": true
+	},
+	"Activate Panel Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Aktyvuokite skydelio meniu",
+		"machine": true
+	},
+	"Responds to Master &Gain": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortDialog.cs"
+		],
+		"translation": "Rea&guoja į pagrindinį pelną",
+		"machine": true
+	},
+	"Res&ponds to Song Gain": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortDialog.cs"
+		],
+		"translation": "Reaguoja į dainos &padidėjimą",
+		"machine": true
+	},
+	"Choose Route": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseRouteDialog.cs"
+		],
+		"translation": "Pasirinkite maršrutą",
+		"machine": true
+	},
+	"&Choose Template:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs"
+		],
+		"translation": "Pasirinkite šabloną (&C):",
+		"machine": true
+	},
+	"(Blank)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "(Tuščias)",
+		"machine": true
+	},
+	"&Open Template for Editing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs"
+		],
+		"translation": "Atidarykite redagavim&o šabloną",
+		"machine": true
+	},
+	"Templates...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "Šablonai...",
+		"machine": true
+	},
+	"Find": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "Rasti",
+		"machine": true
+	},
+	"Type to find anything...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "Įveskite ką nors rasti...",
+		"machine": true
+	},
+	"Type": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "Tipas",
+		"machine": true
+	},
+	"&Open": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "Atviras (&O)",
+		"machine": true
+	},
+	"Song State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "Dainos būsena",
+		"machine": true
+	},
+	"Rack State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "Stovo būsena",
+		"machine": true
+	},
+	"Edit Marker": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
+		],
+		"translation": "Redaguoti žymeklį",
+		"machine": true
+	},
+	"N&umber:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
+		],
+		"translation": "Skaiči&us:",
+		"machine": true
+	},
+	"&Color:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
+		],
+		"translation": "Spalva (&C):",
+		"machine": true
+	},
+	"New File Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "Naujas failo vardas",
+		"machine": true
+	},
+	"Use &Template:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "Naudoki&te šabloną:",
+		"machine": true
+	},
+	"A rack with this name is already loaded.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "Stelažas tokiu pavadinimu jau yra pakrautas.",
+		"machine": true
+	},
+	"Cle&ar Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "&Aiški programa",
+		"machine": true
+	},
+	"Lock All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Užrakinkite visus",
+		"machine": true
+	},
+	"Unlock All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Atrakinti visus",
+		"machine": true
+	},
+	"By &Vendor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "Parda&vėjas",
+		"machine": true
+	},
+	"By Vendor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "Pardavėjas",
+		"machine": true
+	},
+	"(Unspecified)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "(Nepatikslinta)",
+		"machine": true
+	},
+	"Record Set Settings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs"
+		],
+		"translation": "Įrašykite nustatytus parametrus",
+		"machine": true
+	},
+	"&Location:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Vieta (&L):",
+		"machine": true
+	},
+	"Template &Name:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "Šablo&no pavadinimas:",
+		"machine": true
+	},
+	"Please enter a name for the template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "Įveskite šablono pavadinimą",
+		"machine": true
+	},
+	"The templates folder doesn't exist and couldn't be created.\n\n{0}\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "Šablonų aplankas neegzistuoja ir jo nebuvo galima sukurti.\n\n{0}\n\n{1}",
+		"machine": true
+	},
+	"Template file already exists.  Overwrite?\n\n{0)}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "Šablono failas jau yra. perrašyti?\n\n{0)}",
+		"machine": true
+	},
+	"&Show songs already in set list": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
+		],
+		"translation": "Rodyti daina&s, jau įtrauktas į sąrašą",
+		"machine": true
+	},
+	"&Learn": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\TransposeDialog.cs"
+		],
+		"translation": "Mokytis (&L)",
+		"machine": true
+	},
+	"Remap": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Remap",
+		"machine": true
+	},
+	"(same)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "(tas pats)",
+		"machine": true
+	},
+	"(suppressed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "(slopinamas)",
+		"machine": true
+	},
+	"Remap XXXXXXXX to:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Pakartokite XXXXXXXX į:",
+		"machine": true
+	},
+	"Actions": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Veiksmai",
+		"machine": true
+	},
+	"Load One-to-One Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Įkelkite „vienas su vienu“ žemėlapį",
+		"machine": true
+	},
+	"Load Suppres All Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Įkeliant panaikinamas visas žemėlapis",
+		"machine": true
+	},
+	"Copy Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Kopijuoti žemėlapį",
+		"machine": true
+	},
+	"Paste Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Įklijuokite žemėlapį",
+		"machine": true
+	},
+	"Import...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Importuoti...",
+		"machine": true
+	},
+	"Cantabile Mapping": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Cantabile žemėlapių sudarymas",
+		"machine": true
+	},
+	"Export...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Eksportuoti...",
+		"machine": true
+	},
+	"Remap {0} to:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Pakartokite {0} į:",
+		"machine": true
+	},
+	"&Play": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "žaisti (&P)",
+		"machine": true
+	},
+	"St&op": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "Sustabdyti (&O)",
+		"machine": true
+	},
+	"Open &Recent Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Atida&ryti naujausią dainą",
+		"machine": true
+	},
+	"Open Set List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Atidaryti rinkinių sąrašą...",
+		"machine": true
+	},
+	"Open &Recent Set List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Atida&ryti naujausių rinkinių sąrašą",
+		"machine": true
+	},
+	"Save As Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "Išsaugoti kaip šabloną...",
+		"machine": true
+	},
+	"&Find...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Rasti (&F)...",
+		"machine": true
+	},
+	"Unl&ink Clone...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Ats&ieti kloną...",
+		"machine": true
+	},
+	"Rewind": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Atsukti",
+		"machine": true
+	},
+	"Fast Forward": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Pirmyn",
+		"machine": true
+	},
+	"Next Marker": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Kitas žymeklis",
+		"machine": true
+	},
+	"Timeline Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Laiko juostos meniu",
+		"machine": true
+	},
+	"Commands for working with the time line": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Komandos darbui su laiko juosta",
+		"machine": true
+	},
+	"Move to current position": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Pereiti į dabartinę padėtį",
+		"machine": true
+	},
+	"Show Marker &Numbers": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Rodyti žymeklių &numerius",
+		"machine": true
+	},
+	"Reassign all Marker Numbers": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Priskirkite visus žymeklių numerius",
+		"machine": true
+	},
+	"&Create Marker...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Sukurti žymeklį (&C)...",
+		"machine": true
+	},
+	"Opacity of colors when used as background color:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "Spalvų nepermatomumas, kai naudojama kaip fono spalva:",
+		"machine": true
+	},
+	"Customize &Colors:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "Tinkinkite spalvas (&C):",
+		"machine": true
+	},
+	"Reset All Defaults": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "Atkurti visus numatytuosius nustatymus",
+		"machine": true
+	},
+	"Are you sure you want to reset all custom color settings to their defaults?": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "Ar tikrai norite atkurti numatytuosius visų pasirinktinių spalvų nustatymų parametrus?",
+		"machine": true
+	},
+	"Template Files:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		],
+		"translation": "Šablonų failai:",
+		"machine": true
+	},
+	"Please select your set templates folder:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		],
+		"translation": "Pasirinkite savo nustatytų šablonų aplanką:",
+		"machine": true
+	},
+	"Displayed Keyboard &Range:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "&Rodomas klaviatūros diapazonas:",
+		"machine": true
+	},
+	" to ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": " į ",
+		"machine": true
+	},
+	"Fast-Forward and Rewind": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Greitai pirmyn ir atgal",
+		"machine": true
+	},
+	"Repeat Rate\n(seconds)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Pakartokite normą\n(sekundžių)",
+		"machine": true
+	},
+	"Step\nDistance": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Žingsnis\nAtstumas",
+		"machine": true
+	},
+	"Real-time Speed 1:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "1 greitis realiuoju laiku:",
+		"machine": true
+	},
+	"seconds": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "sekundžių",
+		"machine": true
+	},
+	"Real-time Speed 2:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Realaus laiko greitis 2:",
+		"machine": true
+	},
+	"Musical Speed 1:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Muzikinis greitis 1:",
+		"machine": true
+	},
+	"measures": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "priemonės",
+		"machine": true
+	},
+	"Musical Speed 2:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Muzikinis greitis 2:",
+		"machine": true
+	},
+	"Reset &All Defaults": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "&Atkurti visus numatytuosius nustatymus",
+		"machine": true
+	},
+	"88 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "88 raktas",
+		"machine": true
+	},
+	"76 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "76 raktas",
+		"machine": true
+	},
+	"61 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "61 raktas",
+		"machine": true
+	},
+	"49 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "49 raktas",
+		"machine": true
+	},
+	"37 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "37 raktas",
+		"machine": true
+	},
+	"25 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "25 raktas",
+		"machine": true
+	},
+	"Full MIDI Key Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Visas MIDI raktų diapazonas",
+		"machine": true
+	},
+	"Recording Sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Įrašų rinkiniai",
+		"machine": true
+	},
+	"Automatically create a new recording set for each song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Automatiškai sukurkite naują kiekvienos dainos įrašų rinkinį",
+		"machine": true
+	},
+	"Recording Set Defaults": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Įrašymo numatytosios reikšmės",
+		"machine": true
+	},
+	"These settings will be used as the defaults for new recording sets.\nTo set the default port configuration, use the \"Set as Default\"\ncommand in the recorder ports panel menu.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Šie nustatymai bus naudojami kaip numatytieji nustatymai naujiems įrašymo rinkiniams.\nNorėdami nustatyti numatytąją prievado konfigūraciją, naudokite „nustatyti kaip numatytąją\"\nkomanda įrašymo įrenginio prievadų skydelio meniu.",
+		"machine": true
+	},
+	"Pinned Recordings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Susieti įrašai",
+		"machine": true
+	},
+	"days (set to zero to disable)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "dienų (jei norite išjungti, nustatykite nulį)",
+		"machine": true
+	},
+	"Save As Rack Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Išsaugoti kaip stelažo šabloną...",
+		"machine": true
+	},
+	"Save As Song Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Išsaugoti kaip dainos šabloną...",
+		"machine": true
+	},
+	"Save Rack Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Išsaugokite stovo šabloną",
+		"machine": true
+	},
+	"Save Song Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Išsaugoti dainos šabloną",
+		"machine": true
+	},
+	"A file with this name is already loaded and can't be overwritten.\n\n{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Failas tokiu vardu jau yra įkeltas ir jo negalima perrašyti.\n\n{0}",
+		"machine": true
+	},
+	"Are you sure you want to revert and discard all changes to this file?\n\n{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Ar tikrai norite sugrąžinti ir atmesti visus šio failo pakeitimus?\n\n{0}",
+		"machine": true
+	},
+	"off": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs"
+		],
+		"translation": "išjungtas",
+		"machine": true
+	},
+	"Save Set List Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		],
+		"translation": "Išsaugoti nustatyto sąrašo šabloną...",
+		"machine": true
+	},
+	"Save Set List Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		],
+		"translation": "Išsaugoti nustatyto sąrašo šabloną",
+		"machine": true
+	},
+	"Re&vert Set List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		],
+		"translation": "Grąžinti rinkinių sąrašą (&V)...",
+		"machine": true
+	},
+	"Set List Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "Nustatyti sąrašo meniu",
+		"machine": true
+	},
+	"Commands for working with set lists": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "Komandos darbui su nustatytais sąrašais",
+		"machine": true
+	},
+	"Recorder Ports Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Diktofono prievadų meniu",
+		"machine": true
+	},
+	"Commands for saving and loading recorder port sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Diktofono prievadų rinkinių išsaugojimo ir įkėlimo komandos",
+		"machine": true
+	},
+	"Set as Default": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Nustatyti kaip numatytąją",
+		"machine": true
+	},
+	"Load Default": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Įkelti numatytąjį",
+		"machine": true
+	},
+	"Auto Record Monitor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Automatinis įrašymo monitorius",
+		"machine": true
+	},
+	"Should this port be monitored for activity to start auto-recordings.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Ar turėtų būti stebimas šis uostas, kad būtų galima pradėti automatinius įrašus.",
+		"machine": true
+	},
+	"Record Port": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Įrašo prievadas",
+		"machine": true
+	},
+	"Selects whether this port will be included in recordings.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Pasirenkama, ar šis prievadas bus įtrauktas į įrašus.",
+		"machine": true
+	},
+	"Recordings Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Įrašų meniu",
+		"machine": true
+	},
+	"Commands for working with recordings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Komandos darbui su įrašais",
+		"machine": true
+	},
+	"(No recording set as song not saved)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "(Įrašų nenustatyta, nes daina neišsaugota)",
+		"machine": true
+	},
+	"(No recording set)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "(Nėra įrašymo)",
+		"machine": true
+	},
+	"&Settings...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Nu&statymai...",
+		"machine": true
+	},
+	"Open &Recent": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Atida&ryti neseniai",
+		"machine": true
+	},
+	"Save Recording Set &As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Išs&augoti įrašymo rinkinį kaip...",
+		"machine": true
+	},
+	"Cantabile Recording Sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Neįmanoma įrašymo rinkiniai",
+		"machine": true
+	},
+	"Recording Set Settings...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Įrašymo nustatymai...",
+		"machine": true
+	},
+	"The recorder can't be started because you've selected to use per-song recording sets but the current song hasn't been saved.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Diktofono negalima paleisti, nes pasirinkote naudoti kiekvienos dainos įrašymo rinkinius, tačiau dabartinė daina neišsaugota.",
+		"machine": true
+	},
+	"The recorder can't be started because there is no recording set loaded.\n\nPlease load or create a new recording set.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Diktofono negalima paleisti, nes nėra įkeltų įrašymo rinkinių.\n\nĮkelkite arba sukurkite naują įrašymo rinkinį.",
+		"machine": true
+	},
+	"You must select at least one MIDI or Audio port to record.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Norėdami įrašyti, turite pasirinkti bent vieną MIDI arba garso prievadą.",
+		"machine": true
+	},
+	"State Behaviours Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Būsenos elgesio meniu",
+		"machine": true
+	},
+	"Commands for saving and loading state behaviour sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Būsenos elgsenos rinkinių išsaugojimo ir įkėlimo komandos",
+		"machine": true
+	},
+	"Save Behaviour Set": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Išsaugokite elgesio rinkinį",
+		"machine": true
+	},
+	"States Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Valstybių meniu",
+		"machine": true
+	},
+	"Commands for working with states": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Komandos darbui su valstybėmis",
+		"machine": true
+	},
+	"No Media File": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Nėra medijos failo",
+		"machine": true
+	},
+	"Cantabile's audio engine has been stopped because the audio driver stopped responding": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "„Cantabile“ garso variklis buvo sustabdytas, nes garso tvarkyklė nustojo reaguoti",
+		"machine": true
+	},
+	"Failed to create background rack.\n\n{0}\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Nepavyko sukurti foninio stovo.\n\n{0}\n\n{1}",
+		"machine": true
+	},
+	"Failed to load background rack.\n\n{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Nepavyko įkelti foninio stovo.\n\n{0}",
+		"machine": true
+	},
+	"Failed to start - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Nepavyko paleisti - {0}",
+		"machine": true
+	},
+	"{0}\n\nFailed to open song - {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "{0}\n\nNepavyko atidaryti dainos - {1}",
+		"machine": true
+	},
+	"{0}\n\nFailed to open set list - {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "{0}\n\nNepavyko atidaryti rinkinio sąrašo - {1}",
+		"machine": true
+	},
+	"Failed to load control curve '{0}' - ignored.\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Nepavyko įkelti valdymo kreivės „{0}“ - nepaisoma.\n\n{1}",
+		"machine": true
+	},
+	"Failed to load recording set.\n\n{0}\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Nepavyko įkelti įrašymo rinkinio.\n\n{0}\n\n{1}",
+		"machine": true
+	},
+	"Previous Marker": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Ankstesnis žymeklis",
+		"machine": true
+	},
+	"Marker By Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Žymeklis pagal numerį",
+		"machine": true
+	},
+	"Marker With Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Žymeklis su numeriu",
+		"machine": true
+	},
+	"Fast-Forward (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Greitas pirmyn (1 greitis)",
+		"machine": true
+	},
+	"Rewind (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Atsukti atgal (1 greitis))",
+		"machine": true
+	},
+	"Fast-Forward (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Greitai į priekį (2 greitis)",
+		"machine": true
+	},
+	"Rewind (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Atsukti atgal (2 greitis))",
+		"machine": true
+	},
+	"Musical Fast-Forward (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Muzikinis greitasis pirmyn (1 greitis)",
+		"machine": true
+	},
+	"Musical Rewind (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Muzikinis atsukimas (1 greitis))",
+		"machine": true
+	},
+	"Musical Fast-Forward (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Muzikinis greitasis pirmyn (2 greitis)",
+		"machine": true
+	},
+	"Musical Rewind (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Muzikinis atsukimas (2 greitis))",
+		"machine": true
+	},
+	"Real-time Fast-Forward (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Greitas persukimas į priekį realiuoju laiku (1 greitis)",
+		"machine": true
+	},
+	"Real-time Rewind (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Realus laikas atgal (1 greitis)",
+		"machine": true
+	},
+	"Real-time Fast-Forward (Speed2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Greitas persukimas realiu laiku (greitis 2)",
+		"machine": true
+	},
+	"Real-time Rewind (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Realus laikas atgal (2 greitis)",
+		"machine": true
+	},
+	"Choose Marker Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Pasirinkite žymeklio numerį",
+		"machine": true
+	},
+	"Failed to upgrade recording list - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Recordings\\Recorder.cs"
+		],
+		"translation": "Nepavyko atnaujinti įrašų sąrašo - {0}",
+		"machine": true
+	},
+	"Note Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Užrašų žemėlapis",
+		"machine": true
+	},
+	"Uninitialised note map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Neinicializuotas užrašų žemėlapis",
+		"machine": true
+	},
+	"Remap notes on {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Pakartokite pastabas apie {0}",
+		"machine": true
+	},
+	"(unused)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\PluginHost.cs"
+		],
+		"translation": "(nenaudojamas)",
 		"machine": true
 	}
 }

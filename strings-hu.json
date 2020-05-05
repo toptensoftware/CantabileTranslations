@@ -46,7 +46,9 @@
 		[
 			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Dialogs\\ChooseFileListView.cs",
-			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "Fájl",
 		"machine": false
@@ -136,7 +138,9 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
@@ -151,7 +155,9 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
@@ -167,7 +173,9 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -707,6 +715,7 @@
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -1087,7 +1096,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
+			".\\Cantabile\\Commands\\FileCommands.cs",
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
 		],
 		"translation": "Új nóta",
 		"machine": false
@@ -1101,47 +1111,13 @@
 		"translation": "Nóta megnyitása",
 		"machine": false
 	},
-	"Save File": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Fájl mentése",
-		"machine": false
-	},
-	"Save File As": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Fájl mentése mint",
-		"machine": false
-	},
-	"Save Copy As": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Másolat mentése másként",
-		"machine": false
-	},
-	"Revert File": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Fájl visszaállítása",
-		"machine": false
-	},
 	"New Set List": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
+			".\\Cantabile\\Commands\\FileCommands.cs",
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "Új nótalista",
 		"machine": false
@@ -1189,15 +1165,6 @@
 			".\\Cantabile\\Commands\\FileCommands.cs"
 		],
 		"translation": "Összes mentése",
-		"machine": false
-	},
-	"Song\/Rack Options": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "Nóta\/fiók opciók",
 		"machine": false
 	},
 	"Add Current Song to Set List": 
@@ -1351,6 +1318,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
 		],
 		"translation": "Modul",
@@ -1372,7 +1340,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "Új összekapcsolt fiók",
 		"machine": false
@@ -1391,6 +1360,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
 		],
 		"translation": "Médialejátszó",
@@ -2099,15 +2069,6 @@
 		"translation": "Kicsinyítés",
 		"machine": false
 	},
-	"Show Menu": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		],
-		"translation": "Menü megjelenítése",
-		"machine": false
-	},
 	"Zoom to Play Range": 
 	{
 		"contexts": 
@@ -2396,9 +2357,11 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\StateDialog.cs",
-			".\\Cantabile\\Licensing\\RegisterPage.cs"
+			".\\Cantabile\\Licensing\\RegisterPage.cs",
+			".\\Cantabile\\Options\\ColorsPage.cs"
 		],
 		"translation": "&Név:",
 		"machine": false
@@ -2498,10 +2461,12 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs"
 		],
@@ -2515,10 +2480,12 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 			".\\Cantabile\\Dialogs\\PluginScanProgressDialog.cs",
 			".\\Cantabile\\Dialogs\\SongLoadProgressDialog.cs",
 			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
@@ -2734,11 +2701,13 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
+			".\\Cantabile\\Options\\ColorsPage.cs",
 			".\\Cantabile\\Options\\MidiPortsPage.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -3393,7 +3362,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\JumpToPositionDialog.cs"
+			".\\Cantabile\\Dialogs\\JumpToPositionDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
 		],
 		"translation": "&Pozíció:",
 		"machine": false
@@ -3785,7 +3755,9 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
-			".\\Cantabile\\Options\\GeneralPage.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
 		"translation": "Minden fájl",
 		"machine": false
@@ -4829,7 +4801,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "Adj meg egy fióknevet.",
 		"machine": false
@@ -4847,7 +4820,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "A fióknév érvénytelen fájlnév karaktereket tartalmaz, és nem használható.",
 		"machine": false
@@ -4856,7 +4830,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "Már létezik egy ilyen nevű fájl. Felülírod?",
 		"machine": false
@@ -6660,7 +6635,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
 		],
 		"translation": "Alkalmazás a következő csatornákra (&P):",
 		"machine": false
@@ -7038,6 +7014,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs"
 		],
 		"translation": "ehhez: ",
@@ -7988,15 +7965,6 @@
 		"translation": "Mozgatás &jobbra",
 		"machine": false
 	},
-	"Tra&nspose": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs"
-		],
-		"translation": "Tra&nszponálás",
-		"machine": false
-	},
 	"&Song Selector": 
 	{
 		"contexts": 
@@ -8175,7 +8143,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListPanel.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
 		"translation": "Mentés másként (&A)...",
 		"machine": false
@@ -8184,7 +8153,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "&Visszatérés...",
 		"machine": false
@@ -8230,7 +8200,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "Ú&j",
@@ -8240,8 +8209,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListPanel.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
 		"translation": "Megnyitás (&O)...",
 		"machine": false
@@ -8307,24 +8276,6 @@
 		"translation": "Nyomtatható nótal&ista",
 		"machine": false
 	},
-	"&Recent Songs": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "Legutó&bbi nóták",
-		"machine": false
-	},
-	"R&ecent Set Lists": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "L&egutóbbi nótalisták",
-		"machine": false
-	},
 	"E&xit": 
 	{
 		"contexts": 
@@ -8349,6 +8300,7 @@
 		[
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "Új (&N)...",
@@ -8616,6 +8568,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Szünet (&A)",
@@ -8652,6 +8605,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
@@ -8662,6 +8616,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "Felvétel (&R)",
@@ -9266,6 +9221,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Elindítja a főátvitel lejátszását",
@@ -9275,6 +9231,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Megszakítja a főátvitel lejátszását",
@@ -9284,6 +9241,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
 		],
@@ -9440,6 +9398,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Felvétel",
@@ -9449,6 +9408,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "Elindítja és leállítja a felvevőt.\n\nA kis jelzőfény akkor világít, ha az automatikus felvétel engedélyezve van; jobb kattintással vezérelhető.",
@@ -10225,15 +10185,6 @@
 		"translation": "Hurokszám választás",
 		"machine": false
 	},
-	"Show this Menu": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
-		],
-		"translation": "Megjeleníti ezt a menüt",
-		"machine": false
-	},
 	"Show &All": 
 	{
 		"contexts": 
@@ -10495,8 +10446,7 @@
 		[
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainWindowViewState.cs",
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "alapértelmezett",
 		"machine": false
@@ -10505,8 +10455,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "vörös",
 		"machine": false
@@ -10515,8 +10464,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "gesztenyebarna",
 		"machine": false
@@ -10525,8 +10473,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "fűzöld",
 		"machine": false
@@ -10535,8 +10482,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "világoszöld",
 		"machine": false
@@ -10545,8 +10491,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "kék",
 		"machine": false
@@ -10555,8 +10500,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "tengerkék",
 		"machine": false
@@ -10565,8 +10509,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "sárga",
 		"machine": false
@@ -10575,8 +10518,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "olajzöld",
 		"machine": false
@@ -10585,8 +10527,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "bordó",
 		"machine": false
@@ -10595,8 +10536,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "bíbor",
 		"machine": false
@@ -10605,8 +10545,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "kékeszöld",
 		"machine": false
@@ -10615,8 +10554,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "sötétzöld",
 		"machine": false
@@ -10625,8 +10563,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "narancs",
 		"machine": false
@@ -10635,8 +10572,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "barna",
 		"machine": false
@@ -12703,6 +12639,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
 			".\\Cantabile\\Options\\PluginsPage.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs",
 			".\\Cantabile\\Options\\StartupPage.cs"
@@ -12737,28 +12674,11 @@
 		"translation": "Felvétel",
 		"machine": false
 	},
-	"Location and Filename": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "Útvonal és fájlnév",
-		"machine": false
-	},
-	"&Location": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "Mentés he&lye:",
-		"machine": false
-	},
 	"Please select recordings folder:": 
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs"
 		],
 		"translation": "Válaszd ki a felvételi mappát:",
@@ -12768,6 +12688,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs"
 		],
 		"translation": "&Fájlnév formátuma:",
@@ -12777,7 +12698,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs"
 		],
 		"translation": "S&zámláló:",
 		"machine": false
@@ -12863,51 +12784,6 @@
 		"translation": "Auto felvétel",
 		"machine": false
 	},
-	"Start recording on:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "A felvételt indítja:",
-		"machine": false
-	},
-	"&MIDI Input": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "&MIDI bemenet",
-		"machine": false
-	},
-	"MIDI &Output": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "MI&DI kimenet",
-		"machine": false
-	},
-	"&Audio Input": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "H&angbemenet",
-		"machine": false
-	},
-	"A&udio Output": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "Hang&kimenet",
-		"machine": false
-	},
 	"&Stop auto-recordings after": 
 	{
 		"contexts": 
@@ -12953,15 +12829,6 @@
 		"translation": "Ha&ng zajküszöb:",
 		"machine": false
 	},
-	"Recordings List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "Felvételek listája",
-		"machine": false
-	},
 	"&Pin new recordings": 
 	{
 		"contexts": 
@@ -12980,15 +12847,6 @@
 		"translation": "Táv&olítsa el a megtűzött felvételeket a listából",
 		"machine": false
 	},
-	"day(s)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "nap után",
-		"machine": false
-	},
 	"&Delete unpinned recordings after": 
 	{
 		"contexts": 
@@ -13002,6 +12860,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs"
 		],
 		"translation": "A fájlnév érvénytelen karaktereket tartalmaz",
@@ -14982,6 +14842,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
 			".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs"
 		],
@@ -14992,6 +14853,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		],
 		"translation": "Az audiojel megkerüli a modult.",
@@ -15547,6 +15409,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		],
@@ -15566,6 +15429,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs"
 		],
@@ -15803,6 +15667,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "Szerkesztés...",
@@ -17046,6 +16911,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		],
@@ -17310,7 +17176,8 @@
 		[
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+			".\\Cantabile.Application\\Bindable\\Triggers.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "#{0}",
 		"machine": false
@@ -17319,6 +17186,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
 		],
@@ -17733,6 +17601,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Options\\ColorsPage.cs",
 			".\\Cantabile.Application\\Bindings\\Binding.cs",
 			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
@@ -19081,6 +18950,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+			".\\Cantabile.Application\\Application.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
 		],
 		"translation": "ÚjNóta",
@@ -19279,6 +19149,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Options\\ColorsPage.cs",
 			".\\Cantabile.Application\\ShowNotes\\ShowNote.cs"
 		],
 		"translation": "Színek",
@@ -19889,6 +19760,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "&Transzponálás",
@@ -25764,6 +25636,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
@@ -25854,6 +25727,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\LearnGlobalTransposePopup.cs",
 			".\\Cantabile\\Dialogs\\LearnTransposePopup.cs"
 		],
 		"translation": "Bármilyen hang lejátszása az aktuális kulcsban",
@@ -25863,6 +25737,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\LearnGlobalTransposePopup.cs",
 			".\\Cantabile\\Dialogs\\LearnTransposePopup.cs"
 		],
 		"translation": "Egyenértékű hang lejátszása az új kulcsban",
@@ -26181,6 +26056,1598 @@
 			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
 		],
 		"translation": "Portkészlet mentése",
+		"machine": true
+	},
+	"Follow Routing Forward": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Kövesse az előrehaladást",
+		"machine": true
+	},
+	"Follow Routing Reverse": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "Kövesse az útválasztást hátra",
+		"machine": true
+	},
+	"Save Song or Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Mentsd el a dalt vagy rack-et",
+		"machine": true
+	},
+	"Save Song or Rack As": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "A dal vagy rack mentése más néven",
+		"machine": true
+	},
+	"Save Song or Rack Copy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Mentsd el a dalt vagy rack másolatot",
+		"machine": true
+	},
+	"Revert Song or Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Zeneszám vagy rack visszaállítása",
+		"machine": true
+	},
+	"Save": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Megment",
+		"machine": true
+	},
+	"Save As": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Mentés másként",
+		"machine": true
+	},
+	"Save Copy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Mentés másolatra",
+		"machine": true
+	},
+	"Save As Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs",
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "Mentés sablonként",
+		"machine": true
+	},
+	"Revert": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Visszaszáll",
+		"machine": true
+	},
+	"File Options": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Fájlbeállítások",
+		"machine": true
+	},
+	"Song or Rack Options": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "Dal vagy rack opciók",
+		"machine": true
+	},
+	"Unlink Clone": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs",
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+		],
+		"translation": "Csatlakoztassa le a klónt",
+		"machine": true
+	},
+	"Activate Panel Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "Aktiválja a panel menüt",
+		"machine": true
+	},
+	"Responds to Master &Gain": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortDialog.cs"
+		],
+		"translation": "Rea&gál a fő nyereségre",
+		"machine": true
+	},
+	"Res&ponds to Song Gain": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortDialog.cs"
+		],
+		"translation": "Reagál a dalszerzésre (&P)",
+		"machine": true
+	},
+	"Choose Route": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseRouteDialog.cs"
+		],
+		"translation": "Válasszon útvonalat",
+		"machine": true
+	},
+	"&Choose Template:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs"
+		],
+		"translation": "Válasszon sablont (&C):",
+		"machine": true
+	},
+	"(Blank)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "(Üres)",
+		"machine": true
+	},
+	"&Open Template for Editing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs"
+		],
+		"translation": "Nyissa meg a sabl&ont a szerkesztéshez",
+		"machine": true
+	},
+	"Templates...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "sablonok...",
+		"machine": true
+	},
+	"Find": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "megtalálja",
+		"machine": true
+	},
+	"Type to find anything...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "Írja be, hogy bármit megtaláljon...",
+		"machine": true
+	},
+	"Type": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "típus",
+		"machine": true
+	},
+	"&Open": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "Nyisd ki (&O)",
+		"machine": true
+	},
+	"Song State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "Dal állapota",
+		"machine": true
+	},
+	"Rack State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "Rack állapot",
+		"machine": true
+	},
+	"Edit Marker": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
+		],
+		"translation": "Jelölő szerkesztése",
+		"machine": true
+	},
+	"N&umber:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
+		],
+		"translation": "Szám (&U):",
+		"machine": true
+	},
+	"&Color:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
+		],
+		"translation": "Szín (&C):",
+		"machine": true
+	},
+	"New File Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "Új fájlnév",
+		"machine": true
+	},
+	"Use &Template:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "Használjon sablon&t:",
+		"machine": true
+	},
+	"A rack with this name is already loaded.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "Az ilyen nevet tartalmazó rack már betöltve.",
+		"machine": true
+	},
+	"Cle&ar Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Tiszt&a program",
+		"machine": true
+	},
+	"Lock All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Mindet bezár",
+		"machine": true
+	},
+	"Unlock All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "Mindegyik feloldása",
+		"machine": true
+	},
+	"By &Vendor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "Az eladó (&V)",
+		"machine": true
+	},
+	"By Vendor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "Az eladó",
+		"machine": true
+	},
+	"(Unspecified)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "(Meg nem határozott)",
+		"machine": true
+	},
+	"Record Set Settings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs"
+		],
+		"translation": "Rögzítse a beállított beállításokat",
+		"machine": true
+	},
+	"&Location:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "E&lhelyezkedés:",
+		"machine": true
+	},
+	"Template &Name:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "Sablo&nnév:",
+		"machine": true
+	},
+	"Please enter a name for the template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "Adja meg a sablon nevét",
+		"machine": true
+	},
+	"The templates folder doesn't exist and couldn't be created.\n\n{0}\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "A sablonok mappája nem létezik, és nem lehetett létrehozni.\n\nzz0\n\nzz0",
+		"machine": true
+	},
+	"Template file already exists.  Overwrite?\n\n{0)}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "A sablonfájl már létezik. átír?\n\nzz0",
+		"machine": true
+	},
+	"&Show songs already in set list": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
+		],
+		"translation": "Muta&ssa meg a dalokat a beállított listában",
+		"machine": true
+	},
+	"&Learn": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\TransposeDialog.cs"
+		],
+		"translation": "Tanu&l",
+		"machine": true
+	},
+	"Remap": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "leképezést",
+		"machine": true
+	},
+	"(same)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "(azonos)",
+		"machine": true
+	},
+	"(suppressed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "(elnyomott)",
+		"machine": true
+	},
+	"Remap XXXXXXXX to:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Helyezze újra a (z) XXXXXXXX kódot a következőre::",
+		"machine": true
+	},
+	"Actions": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Hozzászólások",
+		"machine": true
+	},
+	"Load One-to-One Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Töltsön be egy-egy térképet",
+		"machine": true
+	},
+	"Load Suppres All Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "A betöltés lefedi az összes térképet",
+		"machine": true
+	},
+	"Copy Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Másolja a térképet",
+		"machine": true
+	},
+	"Paste Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Térkép beillesztése",
+		"machine": true
+	},
+	"Import...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "import...",
+		"machine": true
+	},
+	"Cantabile Mapping": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Cantabile leképezés",
+		"machine": true
+	},
+	"Export...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Export...",
+		"machine": true
+	},
+	"Remap {0} to:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "Remap {0}-ig:",
+		"machine": true
+	},
+	"&Play": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "Játék (&P)",
+		"machine": true
+	},
+	"St&op": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "Állj meg (&O)",
+		"machine": true
+	},
+	"Open &Recent Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Nyissa meg a legutóbbi dalt (&R)",
+		"machine": true
+	},
+	"Open Set List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Nyissa meg a készletlistát...",
+		"machine": true
+	},
+	"Open &Recent Set List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "Nyissa meg a legutóbbi készletlistát (&R)",
+		"machine": true
+	},
+	"Save As Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "Mentés sablonként...",
+		"machine": true
+	},
+	"&Find...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "megtalálja (&F)...",
+		"machine": true
+	},
+	"Unl&ink Clone...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Csatlakoztassa le a klónt (&I)...",
+		"machine": true
+	},
+	"Rewind": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Visszatekerés",
+		"machine": true
+	},
+	"Fast Forward": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Előrepörgetés",
+		"machine": true
+	},
+	"Next Marker": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Következő jelölő",
+		"machine": true
+	},
+	"Timeline Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Idővonal menü",
+		"machine": true
+	},
+	"Commands for working with the time line": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Parancsok az idővonal kezelésére",
+		"machine": true
+	},
+	"Move to current position": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Ugrás az aktuális helyzetbe",
+		"machine": true
+	},
+	"Show Marker &Numbers": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "A jelölő számok megjele&nítése",
+		"machine": true
+	},
+	"Reassign all Marker Numbers": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Jelölje újra az összes jelölő számot",
+		"machine": true
+	},
+	"&Create Marker...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "Hozzon létre jelölőt (&C)...",
+		"machine": true
+	},
+	"Opacity of colors when used as background color:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "A színek átlátszatlansága, ha háttérként használják:",
+		"machine": true
+	},
+	"Customize &Colors:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "Testreszabhatja a színeket (&C):",
+		"machine": true
+	},
+	"Reset All Defaults": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "Minden alapértelmezett érték visszaállítása",
+		"machine": true
+	},
+	"Are you sure you want to reset all custom color settings to their defaults?": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "Biztos benne, hogy vissza szeretné állítani az összes egyedi színbeállítást az alapértelmezett értékre?",
+		"machine": true
+	},
+	"Template Files:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		],
+		"translation": "Sablon fájlok:",
+		"machine": true
+	},
+	"Please select your set templates folder:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		],
+		"translation": "Kérjük, válassza ki a beállított sablonok mappáját:",
+		"machine": true
+	},
+	"Displayed Keyboard &Range:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Megjelenített billentyűzet-ta&rtomány:",
+		"machine": true
+	},
+	" to ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": " nak nek ",
+		"machine": true
+	},
+	"Fast-Forward and Rewind": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Gyors előre- és visszatekerés",
+		"machine": true
+	},
+	"Repeat Rate\n(seconds)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Ismételje meg a sebességet\n(másodperc)",
+		"machine": true
+	},
+	"Step\nDistance": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Lépés\nTávolság",
+		"machine": true
+	},
+	"Real-time Speed 1:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Valós idejű sebesség 1:",
+		"machine": true
+	},
+	"seconds": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "másodperc",
+		"machine": true
+	},
+	"Real-time Speed 2:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Valós idejű sebesség 2:",
+		"machine": true
+	},
+	"Musical Speed 1:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Zenei sebesség 1:",
+		"machine": true
+	},
+	"measures": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "intézkedések",
+		"machine": true
+	},
+	"Musical Speed 2:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Zenei sebesség 2:",
+		"machine": true
+	},
+	"Reset &All Defaults": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Minden &alapértelmezett érték visszaállítása",
+		"machine": true
+	},
+	"88 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "88 Kulcs",
+		"machine": true
+	},
+	"76 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "76 Kulcs",
+		"machine": true
+	},
+	"61 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "61 Kulcs",
+		"machine": true
+	},
+	"49 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "49 Kulcs",
+		"machine": true
+	},
+	"37 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "37 Kulcs",
+		"machine": true
+	},
+	"25 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "25 kulcs",
+		"machine": true
+	},
+	"Full MIDI Key Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "Teljes MIDI kulcstartomány",
+		"machine": true
+	},
+	"Recording Sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Felvevőkészletek",
+		"machine": true
+	},
+	"Automatically create a new recording set for each song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Automatikusan hozzon létre új felvételi készletet minden dalhoz",
+		"machine": true
+	},
+	"Recording Set Defaults": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "A felvétel alapértelmezett értékei",
+		"machine": true
+	},
+	"These settings will be used as the defaults for new recording sets.\nTo set the default port configuration, use the \"Set as Default\"\ncommand in the recorder ports panel menu.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Ezeket a beállításokat alapértelmezésként használják az új felvételi készleteknél.\nAz alapértelmezett portkonfiguráció beállításához használja a \"alapértelmezettként beállítást\"\nparancs a felvevő portjai menüben.",
+		"machine": true
+	},
+	"Pinned Recordings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "Rögzített rögzítések",
+		"machine": true
+	},
+	"days (set to zero to disable)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "nap (nullára állítva a letiltáshoz)",
+		"machine": true
+	},
+	"Save As Rack Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Mentés racksablonként...",
+		"machine": true
+	},
+	"Save As Song Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Mentés dalsablonként...",
+		"machine": true
+	},
+	"Save Rack Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Rack sablon mentése",
+		"machine": true
+	},
+	"Save Song Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Mentés dalsablonra",
+		"machine": true
+	},
+	"A file with this name is already loaded and can't be overwritten.\n\n{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Az ilyen névű fájl már betöltve, és nem lehet felülírni.\n\nzz0",
+		"machine": true
+	},
+	"Are you sure you want to revert and discard all changes to this file?\n\n{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "Biztos benne, hogy vissza kívánja állítani és el akarja dobni a fájl összes módosítását?\n\nzz0",
+		"machine": true
+	},
+	"off": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs"
+		],
+		"translation": "ki",
+		"machine": true
+	},
+	"Save Set List Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		],
+		"translation": "Mentés a beállított lista sablonjára...",
+		"machine": true
+	},
+	"Save Set List Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		],
+		"translation": "Mentés a beállított lista sablonjára",
+		"machine": true
+	},
+	"Re&vert Set List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		],
+		"translation": "&Visszaállítja a beállított listát...",
+		"machine": true
+	},
+	"Set List Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "Lista menü beállítása",
+		"machine": true
+	},
+	"Commands for working with set lists": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "Parancsok a beállított listákkal való munkához",
+		"machine": true
+	},
+	"Recorder Ports Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Rögzítő portok menü",
+		"machine": true
+	},
+	"Commands for saving and loading recorder port sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Parancsok a felvevő portkészletének mentésére és betöltésére",
+		"machine": true
+	},
+	"Set as Default": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Beállítás alapértelmezettként",
+		"machine": true
+	},
+	"Load Default": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Alapértelmezett betöltése",
+		"machine": true
+	},
+	"Auto Record Monitor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Automatikus rekordfigyelő",
+		"machine": true
+	},
+	"Should this port be monitored for activity to start auto-recordings.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Ha ezt a portot figyelni kell az automatikus felvétel elindításához szükséges tevékenységekre.",
+		"machine": true
+	},
+	"Record Port": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Nyilvántartó port",
+		"machine": true
+	},
+	"Selects whether this port will be included in recordings.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "Kiválaszthatja, hogy ezt a portot felvegye-e a felvételekbe.",
+		"machine": true
+	},
+	"Recordings Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Felvétel menü",
+		"machine": true
+	},
+	"Commands for working with recordings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Parancsok a felvételekkel való munkához",
+		"machine": true
+	},
+	"(No recording set as song not saved)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "(Nincs rögzítve, mert a dal nincs mentve)",
+		"machine": true
+	},
+	"(No recording set)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "(Nincs rögzítés)",
+		"machine": true
+	},
+	"&Settings...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Beállítá&sok...",
+		"machine": true
+	},
+	"Open &Recent": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Nyitott a közelmúltban (&R)",
+		"machine": true
+	},
+	"Save Recording Set &As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "&A felvétel beállítása mint...",
+		"machine": true
+	},
+	"Cantabile Recording Sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Leképezhető felvételi készletek",
+		"machine": true
+	},
+	"Recording Set Settings...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Felvételkészítési beállítások...",
+		"machine": true
+	},
+	"The recorder can't be started because you've selected to use per-song recording sets but the current song hasn't been saved.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "A felvevő nem indítható el, mert kiválasztotta a zeneszámonkénti felvételi készletek használatát, de az aktuális zeneszámot nem mentette el.",
+		"machine": true
+	},
+	"The recorder can't be started because there is no recording set loaded.\n\nPlease load or create a new recording set.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "A felvevő nem indítható el, mert nincs felvételi készlet betöltve.\n\nKérjük, töltsön be vagy készítsen új felvételi készletet.",
+		"machine": true
+	},
+	"You must select at least one MIDI or Audio port to record.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "Legalább egy MIDI-t vagy audioportot ki kell választania a rögzítéshez.",
+		"machine": true
+	},
+	"State Behaviours Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Állami viselkedésmenü",
+		"machine": true
+	},
+	"Commands for saving and loading state behaviour sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "Parancsok az állapot viselkedéskészletének mentésére és betöltésére",
+		"machine": true
+	},
+	"Save Behaviour Set": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "A viselkedéskészlet mentése",
+		"machine": true
+	},
+	"States Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Államok menü",
+		"machine": true
+	},
+	"Commands for working with states": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "Parancsok az államokkal való együttműködésre",
+		"machine": true
+	},
+	"No Media File": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Nincs médiafájl",
+		"machine": true
+	},
+	"Cantabile's audio engine has been stopped because the audio driver stopped responding": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "A Cantabile audio motorját leállítottuk, mert az audio illesztőprogram nem válaszolt",
+		"machine": true
+	},
+	"Failed to create background rack.\n\n{0}\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "A háttérállvány létrehozása nem sikerült.\n\nzz0\n\nzz0",
+		"machine": true
+	},
+	"Failed to load background rack.\n\n{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "A háttérállvány betöltése nem sikerült.\n\nzz0",
+		"machine": true
+	},
+	"Failed to start - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Az indítás nem sikerült - {0}",
+		"machine": true
+	},
+	"{0}\n\nFailed to open song - {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "zz0\n\nA dal megnyitása nem sikerült - {1}",
+		"machine": true
+	},
+	"{0}\n\nFailed to open set list - {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "zz0\n\nNem sikerült megnyitni a készletlistát - {1}",
+		"machine": true
+	},
+	"Failed to load control curve '{0}' - ignored.\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Nem sikerült betölteni a '{0}' vezérlőgörbét - figyelmen kívül hagyták.\n\nzz0",
+		"machine": true
+	},
+	"Failed to load recording set.\n\n{0}\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Nem sikerült betölteni a felvételi készletet.\n\nzz0\n\nzz0",
+		"machine": true
+	},
+	"Previous Marker": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Előző jelölő",
+		"machine": true
+	},
+	"Marker By Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Marker szám szerint",
+		"machine": true
+	},
+	"Marker With Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Jelölő számmal",
+		"machine": true
+	},
+	"Fast-Forward (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Előretekerés (1. sebesség)",
+		"machine": true
+	},
+	"Rewind (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Visszatekerés (1 sebesség))",
+		"machine": true
+	},
+	"Fast-Forward (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Előretekerés (2. sebesség)",
+		"machine": true
+	},
+	"Rewind (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Visszatekerés (2. sebesség))",
+		"machine": true
+	},
+	"Musical Fast-Forward (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Zenei gyors előrehaladás (1. sebesség))",
+		"machine": true
+	},
+	"Musical Rewind (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Zenei visszatekerés (1 sebesség))",
+		"machine": true
+	},
+	"Musical Fast-Forward (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Zenei gyors előrecsúszás (2. sebesség))",
+		"machine": true
+	},
+	"Musical Rewind (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Zenei visszatekerés (2 - es sebesség))",
+		"machine": true
+	},
+	"Real-time Fast-Forward (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Valósidejű gyorskeresés (1. sebesség)",
+		"machine": true
+	},
+	"Real-time Rewind (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Valósidejű visszatekerés (1. sebesség)",
+		"machine": true
+	},
+	"Real-time Fast-Forward (Speed2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Valós idejű gyorskeresés (2. sebesség)",
+		"machine": true
+	},
+	"Real-time Rewind (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Valósidejű visszatekerés (2. sebesség)",
+		"machine": true
+	},
+	"Choose Marker Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "Válassza ki a jelölő számot",
+		"machine": true
+	},
+	"Failed to upgrade recording list - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Recordings\\Recorder.cs"
+		],
+		"translation": "Nem sikerült frissíteni a felvételi listát - {0}",
+		"machine": true
+	},
+	"Note Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Megjegyzés térkép",
+		"machine": true
+	},
+	"Uninitialised note map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Inicializálatlan jegyzettérkép",
+		"machine": true
+	},
+	"Remap notes on {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "Remap megjegyzések a {0}-ról",
+		"machine": true
+	},
+	"(unused)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\PluginHost.cs"
+		],
+		"translation": "(felhasználatlan)",
 		"machine": true
 	}
 }

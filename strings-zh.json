@@ -46,7 +46,9 @@
 		[
 			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Dialogs\\ChooseFileListView.cs",
-			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs"
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "文件",
 		"machine": true
@@ -136,7 +138,9 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
@@ -151,7 +155,9 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
@@ -167,7 +173,9 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -707,6 +715,7 @@
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -1105,7 +1114,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
+			".\\Cantabile\\Commands\\FileCommands.cs",
+			".\\Cantabile\\MainWindow\\MainWindow.cs"
 		],
 		"translation": "新歌",
 		"machine": true
@@ -1119,47 +1129,13 @@
 		"translation": "打开歌曲",
 		"machine": true
 	},
-	"Save File": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "保存存档",
-		"machine": true
-	},
-	"Save File As": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "另存为",
-		"machine": true
-	},
-	"Save Copy As": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "保存副本为",
-		"machine": true
-	},
-	"Revert File": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "还原文件",
-		"machine": true
-	},
 	"New Set List": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
+			".\\Cantabile\\Commands\\FileCommands.cs",
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
 		],
 		"translation": "新的集合列表",
 		"machine": true
@@ -1207,15 +1183,6 @@
 			".\\Cantabile\\Commands\\FileCommands.cs"
 		],
 		"translation": "保存全部",
-		"machine": true
-	},
-	"Song\/Rack Options": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		],
-		"translation": "歌曲\/机架选项",
 		"machine": true
 	},
 	"Add Current Song to Set List": 
@@ -1369,6 +1336,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
 		],
 		"translation": "插入",
@@ -1390,7 +1358,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "新的链接机架",
 		"machine": true
@@ -1409,6 +1378,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
 		],
 		"translation": "媒体播放器",
@@ -2136,15 +2106,6 @@
 		"translation": "缩小",
 		"machine": true
 	},
-	"Show Menu": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		],
-		"translation": "显示菜单",
-		"machine": true
-	},
 	"Zoom to Play Range": 
 	{
 		"contexts": 
@@ -2303,9 +2264,11 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\StateDialog.cs",
-			".\\Cantabile\\Licensing\\RegisterPage.cs"
+			".\\Cantabile\\Licensing\\RegisterPage.cs",
+			".\\Cantabile\\Options\\ColorsPage.cs"
 		],
 		"translation": "名称 (&N):",
 		"machine": true
@@ -2405,10 +2368,12 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 			".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs"
 		],
@@ -2422,10 +2387,12 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 			".\\Cantabile\\Dialogs\\PluginScanProgressDialog.cs",
 			".\\Cantabile\\Dialogs\\SongLoadProgressDialog.cs",
 			".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
@@ -2641,11 +2608,13 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
+			".\\Cantabile\\Options\\ColorsPage.cs",
 			".\\Cantabile\\Options\\MidiPortsPage.cs",
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -3318,7 +3287,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\JumpToPositionDialog.cs"
+			".\\Cantabile\\Dialogs\\JumpToPositionDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
 		],
 		"translation": "位置 (&P):",
 		"machine": true
@@ -3720,7 +3690,9 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
-			".\\Cantabile\\Options\\GeneralPage.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
 		"translation": "全部文件",
 		"machine": true
@@ -4764,7 +4736,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "请输入机架名称.",
 		"machine": true
@@ -4782,7 +4755,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "机架名称包含无效的文件名字符，无法使用.",
 		"machine": true
@@ -4791,7 +4765,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs"
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
 		],
 		"translation": "具有此名称的文件已存在。覆盖?",
 		"machine": true
@@ -6604,7 +6579,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
 		],
 		"translation": "适用于渠道 (&P):",
 		"machine": true
@@ -6982,6 +6958,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs"
 		],
 		"translation": "至",
@@ -7950,15 +7927,6 @@
 		"translation": "向右移 (&R)",
 		"machine": true
 	},
-	"Tra&nspose": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs"
-		],
-		"translation": "颠倒 (&N)",
-		"machine": true
-	},
 	"&Song Selector": 
 	{
 		"contexts": 
@@ -8137,7 +8105,8 @@
 		"contexts": 
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListPanel.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
 		"translation": "另存为 (&A)...",
 		"machine": true
@@ -8156,7 +8125,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "还原 (&V)...",
 		"machine": true
@@ -8202,7 +8172,6 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\SetList\\SetListPanel.cs"
 		],
 		"translation": "新 (&N)",
@@ -8212,8 +8181,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListPanel.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
 		],
 		"translation": "打开 (&O)...",
 		"machine": true
@@ -8279,24 +8248,6 @@
 		"translation": "可打印的设置列表 (&I)",
 		"machine": true
 	},
-	"&Recent Songs": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "最近的歌曲 (&R)",
-		"machine": true
-	},
-	"R&ecent Set Lists": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		],
-		"translation": "最近设置的列表 (&E)",
-		"machine": true
-	},
 	"E&xit": 
 	{
 		"contexts": 
@@ -8321,6 +8272,7 @@
 		[
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs"
 		],
 		"translation": "新 (&N)...",
@@ -8633,6 +8585,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "暂停 (&A)",
@@ -8669,6 +8622,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
@@ -8679,6 +8633,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		],
 		"translation": "记录 (&R)",
@@ -9326,6 +9281,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "开始播放主传输",
@@ -9335,6 +9291,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "暂停主传输的播放",
@@ -9344,6 +9301,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
 		],
@@ -9536,6 +9494,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "记录",
@@ -9545,6 +9504,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
 		],
 		"translation": "开始和停止录像机.\n\n自动记录启用时，小指示灯亮起并可通过右击进行控制.",
@@ -10366,15 +10326,6 @@
 		"translation": "选择loopCount",
 		"machine": true
 	},
-	"Show this Menu": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
-		],
-		"translation": "显示此菜单",
-		"machine": true
-	},
 	"Show &All": 
 	{
 		"contexts": 
@@ -10645,8 +10596,7 @@
 		[
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainWindowViewState.cs",
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "默认",
 		"machine": true
@@ -10655,8 +10605,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "红",
 		"machine": true
@@ -10665,8 +10614,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "栗色",
 		"machine": true
@@ -10675,8 +10623,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "绿色",
 		"machine": true
@@ -10685,8 +10632,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "青柠",
 		"machine": true
@@ -10695,8 +10641,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "蓝色",
 		"machine": true
@@ -10705,8 +10650,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "海军",
 		"machine": true
@@ -10715,8 +10659,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "黄色",
 		"machine": true
@@ -10725,8 +10668,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "橄榄",
 		"machine": true
@@ -10735,8 +10677,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "Fuscia",
 		"machine": true
@@ -10745,8 +10686,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "紫色",
 		"machine": true
@@ -10755,8 +10695,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "青色",
 		"machine": true
@@ -10765,8 +10704,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "蒂尔",
 		"machine": true
@@ -10775,8 +10713,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "橙子",
 		"machine": true
@@ -10785,8 +10722,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Misc\\ColorMenu.cs",
-			".\\Cantabile.Utils\\BasicColor.cs"
+			".\\Cantabile.Gui\\Theme.cs"
 		],
 		"translation": "棕色",
 		"machine": true
@@ -13042,6 +12978,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
 			".\\Cantabile\\Options\\PluginsPage.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs",
 			".\\Cantabile\\Options\\StartupPage.cs"
@@ -13076,28 +13013,11 @@
 		"translation": "记录",
 		"machine": true
 	},
-	"Location and Filename": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "位置和文件名",
-		"machine": true
-	},
-	"&Location": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "位置 (&L)",
-		"machine": true
-	},
 	"Please select recordings folder:": 
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs"
 		],
 		"translation": "请选择录音文件夹:",
@@ -13107,6 +13027,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs"
 		],
 		"translation": "文件名格式 (&F):",
@@ -13116,7 +13037,7 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs"
 		],
 		"translation": "计数器 (&C):",
 		"machine": true
@@ -13212,51 +13133,6 @@
 		"translation": "自动记录",
 		"machine": true
 	},
-	"Start recording on:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "开始录制:",
-		"machine": true
-	},
-	"&MIDI Input": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "&MIDI输入",
-		"machine": true
-	},
-	"MIDI &Output": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "MIDI输出 (&O)",
-		"machine": true
-	},
-	"&Audio Input": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "音频输入 (&A)",
-		"machine": true
-	},
-	"A&udio Output": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "音频输出 (&U)",
-		"machine": true
-	},
 	"&Stop auto-recordings after": 
 	{
 		"contexts": 
@@ -13302,15 +13178,6 @@
 		"translation": "音频噪声阈值 (&N):",
 		"machine": true
 	},
-	"Recordings List": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "录音列表",
-		"machine": true
-	},
 	"&Pin new recordings": 
 	{
 		"contexts": 
@@ -13329,15 +13196,6 @@
 		"translation": "之后从列表中删除固定的录音 (&R)",
 		"machine": true
 	},
-	"day(s)": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Options\\RecordingPage.cs"
-		],
-		"translation": "天)",
-		"machine": true
-	},
 	"&Delete unpinned recordings after": 
 	{
 		"contexts": 
@@ -13351,6 +13209,8 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs"
 		],
 		"translation": "文件名包含无效字符",
@@ -13619,6 +13479,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
 		],
@@ -13630,6 +13491,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+			".\\Cantabile.Application\\Application.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
 		],
 		"translation": "新歌",
@@ -15671,6 +15533,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
 			".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs"
 		],
@@ -15681,6 +15544,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		],
 		"translation": "绕过此插件绕过音频信号.",
@@ -16264,6 +16128,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		],
@@ -16283,6 +16148,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs"
 		],
@@ -16538,6 +16404,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		],
 		"translation": "编辑...",
@@ -17768,6 +17635,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		],
@@ -18032,7 +17900,8 @@
 		[
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
 			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+			".\\Cantabile.Application\\Bindable\\Triggers.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
 		],
 		"translation": "#{0}",
 		"machine": true
@@ -18445,6 +18314,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Options\\ColorsPage.cs",
 			".\\Cantabile.Application\\Bindings\\Binding.cs",
 			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
@@ -20036,6 +19906,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Options\\ColorsPage.cs",
 			".\\Cantabile.Application\\ShowNotes\\ShowNote.cs"
 		],
 		"translation": "颜色",
@@ -20623,6 +20494,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs"
 		],
 		"translation": "颠倒 (&T)",
@@ -25764,6 +25636,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
@@ -25854,6 +25727,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\LearnGlobalTransposePopup.cs",
 			".\\Cantabile\\Dialogs\\LearnTransposePopup.cs"
 		],
 		"translation": "播放当前琴键中的任何音符",
@@ -25863,6 +25737,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\LearnGlobalTransposePopup.cs",
 			".\\Cantabile\\Dialogs\\LearnTransposePopup.cs"
 		],
 		"translation": "在新琴键中弹奏同等音符",
@@ -26181,6 +26056,1598 @@
 			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
 		],
 		"translation": "保存端口集",
+		"machine": true
+	},
+	"Follow Routing Forward": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "跟随路由前进",
+		"machine": true
+	},
+	"Follow Routing Reverse": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		],
+		"translation": "反向路由",
+		"machine": true
+	},
+	"Save Song or Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "保存歌曲或机架",
+		"machine": true
+	},
+	"Save Song or Rack As": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "将歌曲或乐句另存为",
+		"machine": true
+	},
+	"Save Song or Rack Copy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "保存歌曲或机架副本",
+		"machine": true
+	},
+	"Revert Song or Rack": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "还原歌曲或机架",
+		"machine": true
+	},
+	"Save": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "救",
+		"machine": true
+	},
+	"Save As": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "另存为",
+		"machine": true
+	},
+	"Save Copy": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "保存副本",
+		"machine": true
+	},
+	"Save As Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs",
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "另存为模板",
+		"machine": true
+	},
+	"Revert": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "还原",
+		"machine": true
+	},
+	"File Options": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "文件选项",
+		"machine": true
+	},
+	"Song or Rack Options": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		],
+		"translation": "乐曲或架子选项",
+		"machine": true
+	},
+	"Unlink Clone": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\StateCommands.cs",
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+		],
+		"translation": "取消克隆克隆",
+		"machine": true
+	},
+	"Activate Panel Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		],
+		"translation": "激活面板菜单",
+		"machine": true
+	},
+	"Responds to Master &Gain": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortDialog.cs"
+		],
+		"translation": "响应主增益 (&G)",
+		"machine": true
+	},
+	"Res&ponds to Song Gain": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\AudioPortDialog.cs"
+		],
+		"translation": "响应歌曲增加 (&P)",
+		"machine": true
+	},
+	"Choose Route": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseRouteDialog.cs"
+		],
+		"translation": "选择路线",
+		"machine": true
+	},
+	"&Choose Template:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs"
+		],
+		"translation": "选择模板 (&C):",
+		"machine": true
+	},
+	"(Blank)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "(空白)",
+		"machine": true
+	},
+	"&Open Template for Editing": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs"
+		],
+		"translation": "打开模板进行编辑 (&O)",
+		"machine": true
+	},
+	"Templates...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "范本...",
+		"machine": true
+	},
+	"Find": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "找",
+		"machine": true
+	},
+	"Type to find anything...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "键入以查找任何内容...",
+		"machine": true
+	},
+	"Type": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "类型",
+		"machine": true
+	},
+	"&Open": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "打开 (&O)",
+		"machine": true
+	},
+	"Song State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "娀",
+		"machine": true
+	},
+	"Rack State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
+		],
+		"translation": "机架状态",
+		"machine": true
+	},
+	"Edit Marker": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
+		],
+		"translation": "编辑标记",
+		"machine": true
+	},
+	"N&umber:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
+		],
+		"translation": "数 (&U):",
+		"machine": true
+	},
+	"&Color:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
+		],
+		"translation": "颜色 (&C):",
+		"machine": true
+	},
+	"New File Name": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "新档案名称",
+		"machine": true
+	},
+	"Use &Template:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "使用范本 (&T):",
+		"machine": true
+	},
+	"A rack with this name is already loaded.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs"
+		],
+		"translation": "具有该名称的机架已加载.",
+		"machine": true
+	},
+	"Cle&ar Program": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "清除程序 (&A)",
+		"machine": true
+	},
+	"Lock All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "全部锁定",
+		"machine": true
+	},
+	"Unlock All": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		],
+		"translation": "解锁全部",
+		"machine": true
+	},
+	"By &Vendor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "按供应商 (&V)",
+		"machine": true
+	},
+	"By Vendor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "按供应商",
+		"machine": true
+	},
+	"(Unspecified)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "(未指定)",
+		"machine": true
+	},
+	"Record Set Settings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs"
+		],
+		"translation": "记录集设置",
+		"machine": true
+	},
+	"&Location:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "位置 (&L):",
+		"machine": true
+	},
+	"Template &Name:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "模板名称 (&N):",
+		"machine": true
+	},
+	"Please enter a name for the template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "请输入模板名称",
+		"machine": true
+	},
+	"The templates folder doesn't exist and couldn't be created.\n\n{0}\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "templates文件夹不存在，无法创建.\n\n{0}\n\n{1}",
+		"machine": true
+	},
+	"Template file already exists.  Overwrite?\n\n{0)}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
+		],
+		"translation": "模板文件已存在。覆写?\n\n{0)}",
+		"machine": true
+	},
+	"&Show songs already in set list": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs"
+		],
+		"translation": "显示已在列表中的歌曲 (&S)",
+		"machine": true
+	},
+	"&Learn": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\TransposeDialog.cs"
+		],
+		"translation": "学习 (&L)",
+		"machine": true
+	},
+	"Remap": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "重新映射",
+		"machine": true
+	},
+	"(same)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "(相同)",
+		"machine": true
+	},
+	"(suppressed)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "(压抑)",
+		"machine": true
+	},
+	"Remap XXXXXXXX to:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "将XXXXXXXX重新映射到:",
+		"machine": true
+	},
+	"Actions": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "动作",
+		"machine": true
+	},
+	"Load One-to-One Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "加载一对一地图",
+		"machine": true
+	},
+	"Load Suppres All Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "加载高于所有地图",
+		"machine": true
+	},
+	"Copy Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "复制地图",
+		"machine": true
+	},
+	"Paste Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "贴图",
+		"machine": true
+	},
+	"Import...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "进口...",
+		"machine": true
+	},
+	"Cantabile Mapping": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "可映射",
+		"machine": true
+	},
+	"Export...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "出口...",
+		"machine": true
+	},
+	"Remap {0} to:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
+		],
+		"translation": "将{0}重新映射到:",
+		"machine": true
+	},
+	"&Play": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "玩 (&P)",
+		"machine": true
+	},
+	"St&op": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		],
+		"translation": "停止 (&O)",
+		"machine": true
+	},
+	"Open &Recent Song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "打开最近的歌曲 (&R)",
+		"machine": true
+	},
+	"Open Set List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "打开集列表...",
+		"machine": true
+	},
+	"Open &Recent Set List": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "打开最近的设置列表 (&R)",
+		"machine": true
+	},
+	"Save As Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "另存为模板...",
+		"machine": true
+	},
+	"&Find...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		],
+		"translation": "找 (&F)...",
+		"machine": true
+	},
+	"Unl&ink Clone...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "取消克隆克隆 (&I)...",
+		"machine": true
+	},
+	"Rewind": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "倒带",
+		"machine": true
+	},
+	"Fast Forward": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "快进",
+		"machine": true
+	},
+	"Next Marker": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "下一个标记",
+		"machine": true
+	},
+	"Timeline Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "时间线菜单",
+		"machine": true
+	},
+	"Commands for working with the time line": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "使用时间线的命令",
+		"machine": true
+	},
+	"Move to current position": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "移至目前位置",
+		"machine": true
+	},
+	"Show Marker &Numbers": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "显示标记号 (&N)",
+		"machine": true
+	},
+	"Reassign all Marker Numbers": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "重新分配所有标记号",
+		"machine": true
+	},
+	"&Create Marker...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		],
+		"translation": "创建标记 (&C)...",
+		"machine": true
+	},
+	"Opacity of colors when used as background color:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "用作背景颜色时颜色的不透明度:",
+		"machine": true
+	},
+	"Customize &Colors:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "自定义颜色 (&C):",
+		"machine": true
+	},
+	"Reset All Defaults": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "重设所有默认值",
+		"machine": true
+	},
+	"Are you sure you want to reset all custom color settings to their defaults?": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\ColorsPage.cs"
+		],
+		"translation": "您确定要将所有自定义颜色设置重置为默认设置吗？?",
+		"machine": true
+	},
+	"Template Files:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		],
+		"translation": "模板文件:",
+		"machine": true
+	},
+	"Please select your set templates folder:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		],
+		"translation": "请选择您设置的模板文件夹:",
+		"machine": true
+	},
+	"Displayed Keyboard &Range:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "显示键盘范围 (&R):",
+		"machine": true
+	},
+	" to ": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": " 至 ",
+		"machine": true
+	},
+	"Fast-Forward and Rewind": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "快进和快退",
+		"machine": true
+	},
+	"Repeat Rate\n(seconds)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "重复率\n(秒)",
+		"machine": true
+	},
+	"Step\nDistance": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "步\n距离",
+		"machine": true
+	},
+	"Real-time Speed 1:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "实时速度1:",
+		"machine": true
+	},
+	"seconds": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "秒",
+		"machine": true
+	},
+	"Real-time Speed 2:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "实时速度2:",
+		"machine": true
+	},
+	"Musical Speed 1:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "音乐速度1:",
+		"machine": true
+	},
+	"measures": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "措施",
+		"machine": true
+	},
+	"Musical Speed 2:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "音乐速度2:",
+		"machine": true
+	},
+	"Reset &All Defaults": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "重设所有默认值 (&A)",
+		"machine": true
+	},
+	"88 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "88键",
+		"machine": true
+	},
+	"76 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "76键",
+		"machine": true
+	},
+	"61 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "61键",
+		"machine": true
+	},
+	"49 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "49键",
+		"machine": true
+	},
+	"37 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "37键",
+		"machine": true
+	},
+	"25 Key": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "25键",
+		"machine": true
+	},
+	"Full MIDI Key Range": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		],
+		"translation": "完整的MIDI键范围",
+		"machine": true
+	},
+	"Recording Sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "记录集",
+		"machine": true
+	},
+	"Automatically create a new recording set for each song": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "自动为每首歌曲创建一个新的录音集",
+		"machine": true
+	},
+	"Recording Set Defaults": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "记录集默认值",
+		"machine": true
+	},
+	"These settings will be used as the defaults for new recording sets.\nTo set the default port configuration, use the \"Set as Default\"\ncommand in the recorder ports panel menu.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "这些设置将用作新记录集的默认设置.\n要设置默认端口配置，请使用“设置为默认\"\n记录器端口面板菜单中的命令.",
+		"machine": true
+	},
+	"Pinned Recordings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "固定录音",
+		"machine": true
+	},
+	"days (set to zero to disable)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\RecordingPage.cs"
+		],
+		"translation": "天（设置为零以禁用)",
+		"machine": true
+	},
+	"Save As Rack Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "另存为机架模板...",
+		"machine": true
+	},
+	"Save As Song Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "另存为歌曲模板...",
+		"machine": true
+	},
+	"Save Rack Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "保存机架模板",
+		"machine": true
+	},
+	"Save Song Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "保存歌曲模板",
+		"machine": true
+	},
+	"A file with this name is already loaded and can't be overwritten.\n\n{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "具有该名称的文件已被加载，无法覆盖.\n\n{0}",
+		"machine": true
+	},
+	"Are you sure you want to revert and discard all changes to this file?\n\n{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		],
+		"translation": "您确定要还原并放弃对此文件的所有更改吗？?\n\n{0}",
+		"machine": true
+	},
+	"off": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs"
+		],
+		"translation": "关",
+		"machine": true
+	},
+	"Save Set List Template...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		],
+		"translation": "保存集列表模板...",
+		"machine": true
+	},
+	"Save Set List Template": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		],
+		"translation": "保存集列表模板",
+		"machine": true
+	},
+	"Re&vert Set List...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		],
+		"translation": "还原设定清单 (&V)...",
+		"machine": true
+	},
+	"Set List Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "设定清单选单",
+		"machine": true
+	},
+	"Commands for working with set lists": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		],
+		"translation": "用于设置列表的命令",
+		"machine": true
+	},
+	"Recorder Ports Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "记录器端口菜单",
+		"machine": true
+	},
+	"Commands for saving and loading recorder port sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "保存和加载记录器端口集的命令",
+		"machine": true
+	},
+	"Set as Default": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "设为默认",
+		"machine": true
+	},
+	"Load Default": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "载入预设",
+		"machine": true
+	},
+	"Auto Record Monitor": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "自动记录监控",
+		"machine": true
+	},
+	"Should this port be monitored for activity to start auto-recordings.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "是否应监视此端口的活动以开始自动记录.",
+		"machine": true
+	},
+	"Record Port": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "记录端口",
+		"machine": true
+	},
+	"Selects whether this port will be included in recordings.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs"
+		],
+		"translation": "选择此端口是否将包含在记录中.",
+		"machine": true
+	},
+	"Recordings Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "录音菜单",
+		"machine": true
+	},
+	"Commands for working with recordings": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "录音命令",
+		"machine": true
+	},
+	"(No recording set as song not saved)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "(未设置录音，因为未保存歌曲)",
+		"machine": true
+	},
+	"(No recording set)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "(没有录制集)",
+		"machine": true
+	},
+	"&Settings...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "设定值 (&S)...",
+		"machine": true
+	},
+	"Open &Recent": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "最近开放 (&R)",
+		"machine": true
+	},
+	"Save Recording Set &As...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "将录音集另存为 (&A)...",
+		"machine": true
+	},
+	"Cantabile Recording Sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "可录制记录集",
+		"machine": true
+	},
+	"Recording Set Settings...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "记录设定...",
+		"machine": true
+	},
+	"The recorder can't be started because you've selected to use per-song recording sets but the current song hasn't been saved.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "无法启动录音机，因为您已选择使用每首歌曲的录音集，但当前歌曲尚未保存.",
+		"machine": true
+	},
+	"The recorder can't be started because there is no recording set loaded.\n\nPlease load or create a new recording set.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "由于未加载记录集，因此无法启动记录器.\n\n请加载或创建新的记录集.",
+		"machine": true
+	},
+	"You must select at least one MIDI or Audio port to record.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		],
+		"translation": "您必须至少选择一个MIDI或音频端口才能进行录制.",
+		"machine": true
+	},
+	"State Behaviours Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "状态行为菜单",
+		"machine": true
+	},
+	"Commands for saving and loading state behaviour sets": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "用于保存和加载状态行为集的命令",
+		"machine": true
+	},
+	"Save Behaviour Set": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs"
+		],
+		"translation": "保存行为集",
+		"machine": true
+	},
+	"States Menu": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "状态菜单",
+		"machine": true
+	},
+	"Commands for working with states": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		],
+		"translation": "用于处理状态的命令",
+		"machine": true
+	},
+	"No Media File": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "没有媒体文件",
+		"machine": true
+	},
+	"Cantabile's audio engine has been stopped because the audio driver stopped responding": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "Cantabile的音频引擎已停止，因为音频驱动程序停止了响应",
+		"machine": true
+	},
+	"Failed to create background rack.\n\n{0}\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "创建背景架失败.\n\n{0}\n\n{1}",
+		"machine": true
+	},
+	"Failed to load background rack.\n\n{0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "无法加载后台机架.\n\n{0}",
+		"machine": true
+	},
+	"Failed to start - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "无法启动-{0}",
+		"machine": true
+	},
+	"{0}\n\nFailed to open song - {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "{0}\n\n无法打开歌曲-{1}",
+		"machine": true
+	},
+	"{0}\n\nFailed to open set list - {1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "{0}\n\n无法打开设置列表-{1}",
+		"machine": true
+	},
+	"Failed to load control curve '{0}' - ignored.\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "无法加载控制曲线'{0}'-已忽略.\n\n{1}",
+		"machine": true
+	},
+	"Failed to load recording set.\n\n{0}\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Application.cs"
+		],
+		"translation": "加载记录集失败.\n\n{0}\n\n{1}",
+		"machine": true
+	},
+	"Previous Marker": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "上一个标记",
+		"machine": true
+	},
+	"Marker By Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "按数字标记",
+		"machine": true
+	},
+	"Marker With Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "带数字的标记",
+		"machine": true
+	},
+	"Fast-Forward (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "快进（速度1)",
+		"machine": true
+	},
+	"Rewind (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "倒带（速度1)",
+		"machine": true
+	},
+	"Fast-Forward (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "快进（速度2)",
+		"machine": true
+	},
+	"Rewind (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "倒带（速度2)",
+		"machine": true
+	},
+	"Musical Fast-Forward (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "音乐快进（速度1)",
+		"machine": true
+	},
+	"Musical Rewind (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "音乐倒带（速度1)",
+		"machine": true
+	},
+	"Musical Fast-Forward (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "音乐快进（速度2)",
+		"machine": true
+	},
+	"Musical Rewind (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "音乐倒带（速度2)",
+		"machine": true
+	},
+	"Real-time Fast-Forward (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "实时快进（速度1)",
+		"machine": true
+	},
+	"Real-time Rewind (Speed 1)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "实时倒带（速度1)",
+		"machine": true
+	},
+	"Real-time Fast-Forward (Speed2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "实时快进（speed2)",
+		"machine": true
+	},
+	"Real-time Rewind (Speed 2)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "实时倒带（速度2)",
+		"machine": true
+	},
+	"Choose Marker Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		],
+		"translation": "选择标记号",
+		"machine": true
+	},
+	"Failed to upgrade recording list - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Recordings\\Recorder.cs"
+		],
+		"translation": "升级录像列表失败-{0}",
+		"machine": true
+	},
+	"Note Map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "注意图",
+		"machine": true
+	},
+	"Uninitialised note map": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "未初始化的笔记图",
+		"machine": true
+	},
+	"Remap notes on {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "重映射{0}上的注释",
+		"machine": true
+	},
+	"(unused)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\PluginHost.cs"
+		],
+		"translation": "(没用过)",
 		"machine": true
 	}
 }

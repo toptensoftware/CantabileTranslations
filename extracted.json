@@ -75,7 +75,9 @@
 	"contexts": [
 		".\\Cantabile\\Commands\\CommandList.cs",
 		".\\Cantabile\\Dialogs\\ChooseFileListView.cs",
+		".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
 		".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 	],
 },
 "Edit":
@@ -141,7 +143,9 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
 		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
@@ -153,7 +157,9 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
 		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 		".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs",
 		".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
@@ -166,7 +172,9 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\ControlCommands.cs",
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
 		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 		".\\Cantabile.Application\\Bindable\\Transport.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -551,6 +559,7 @@
 		".\\Cantabile\\Commands\\EditCommands.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -828,6 +837,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\EditCommands.cs",
+		".\\Cantabile.Application\\Bindable\\SongLevels.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 		".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
@@ -908,10 +918,23 @@
 		".\\Cantabile\\Commands\\EditCommands.cs",
 	],
 },
+"Follow Routing Forward":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
+"Follow Routing Reverse":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\EditCommands.cs",
+	],
+},
 "New Song":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\FileCommands.cs",
+		".\\Cantabile\\MainWindow\\MainWindow.cs",
 	],
 },
 "Open Song":
@@ -920,25 +943,25 @@
 		".\\Cantabile\\Commands\\FileCommands.cs",
 	],
 },
-"Save File":
+"Save Song or Rack":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\FileCommands.cs",
 	],
 },
-"Save File As":
+"Save Song or Rack As":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\FileCommands.cs",
 	],
 },
-"Save Copy As":
+"Save Song or Rack Copy":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\FileCommands.cs",
 	],
 },
-"Revert File":
+"Revert Song or Rack":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\FileCommands.cs",
@@ -948,6 +971,8 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\FileCommands.cs",
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 	],
 },
 "Open Set List":
@@ -974,13 +999,50 @@
 		".\\Cantabile\\Commands\\FileCommands.cs",
 	],
 },
+"Save":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"Save As":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"Save Copy":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"Save As Template":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+		".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs",
+	],
+},
+"Revert":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
 "Save All":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\FileCommands.cs",
 	],
 },
-"Song\/Rack Options":
+"File Options":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\FileCommands.cs",
+	],
+},
+"Song or Rack Options":
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\FileCommands.cs",
@@ -1088,6 +1150,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\InsertCommands.cs",
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
 	],
 },
@@ -1111,6 +1174,7 @@
 	"contexts": [
 		".\\Cantabile\\Commands\\InsertCommands.cs",
 		".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 	],
 },
 "Existing Linked Rack":
@@ -1123,6 +1187,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\InsertCommands.cs",
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs",
 	],
 },
@@ -1172,6 +1237,13 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\StateCommands.cs",
+	],
+},
+"Unlink Clone":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\StateCommands.cs",
+		".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs",
 	],
 },
 "Edit Current State":
@@ -1667,12 +1739,6 @@
 		".\\Cantabile\\Commands\\ViewCommands.cs",
 	],
 },
-"Show Menu":
-{
-	"contexts": [
-		".\\Cantabile\\Commands\\ViewCommands.cs",
-	],
-},
 "Zoom to Play Range":
 {
 	"contexts": [
@@ -1776,6 +1842,12 @@
 		".\\Cantabile\\Commands\\ViewCommands.cs",
 	],
 },
+"Activate Panel Menu":
+{
+	"contexts": [
+		".\\Cantabile\\Commands\\ViewCommands.cs",
+	],
+},
 "(max)":
 {
 	"contexts": [
@@ -1830,9 +1902,11 @@
 		".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 		".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
 		".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+		".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 		".\\Cantabile\\Dialogs\\StateDialog.cs",
 		".\\Cantabile\\Licensing\\RegisterPage.cs",
+		".\\Cantabile\\Options\\ColorsPage.cs",
 	],
 },
 "A&ssignments:":
@@ -1902,10 +1976,12 @@
 	"contexts": [
 		".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 		".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
+		".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
 		".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 		".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 		".\\Cantabile\\Dialogs\\UpgradeV2SessionDialog.cs",
 		".\\Cantabile\\Dialogs\\UpgradeV2SetListDialog.cs",
 	],
@@ -1916,10 +1992,12 @@
 		".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 		".\\Cantabile\\Dialogs\\AutoRenewSubscriptionDialog.cs",
 		".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
+		".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
 		".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 		".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 		".\\Cantabile\\Dialogs\\PluginScanProgressDialog.cs",
 		".\\Cantabile\\Dialogs\\SongLoadProgressDialog.cs",
 		".\\Cantabile\\Dialogs\\UpdateAvailableDialog.cs",
@@ -1994,6 +2072,18 @@
 	],
 },
 "Defa&ult (automatically connect new plugins to this output)":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
+	],
+},
+"Responds to Master &Gain":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
+	],
+},
+"Res&ponds to Song Gain":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
@@ -2075,11 +2165,13 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 		".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
 		".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 		".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 		".\\Cantabile\\Dialogs\\PromptSaveDialog.cs",
+		".\\Cantabile\\Options\\ColorsPage.cs",
 		".\\Cantabile\\Options\\MidiPortsPage.cs",
 		".\\Cantabile.Application\\Bindable\\SetList.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -2421,6 +2513,38 @@
 		".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
 	],
 },
+"Choose Route":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\ChooseRouteDialog.cs",
+	],
+},
+"&Choose Template:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+	],
+},
+"(Blank)":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
+	],
+},
+"&Open Template for Editing":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+	],
+},
+"Templates...":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
+	],
+},
 "{0}\nExistence of this file indicates Cantabile is either running, or didn't shutdown cleanly":
 {
 	"contexts": [
@@ -2634,6 +2758,74 @@
 		".\\Cantabile\\Dialogs\\ExecuteProgramDialog.cs",
 	],
 },
+"Find":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
+	],
+},
+"Type to find anything...":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
+	],
+},
+"Type":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
+	],
+},
+"&Open":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
+	],
+},
+"MIDI Route":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
+		".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
+	],
+},
+"Audio Route":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
+		".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
+	],
+},
+"Rack":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
+		".\\Cantabile.Application\\Bindable\\RackLevels.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+	],
+},
+"Song State":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
+	],
+},
+"Rack State":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
+	],
+},
+"Song":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
+		".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+		".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+	],
+},
 "Import Set List":
 {
 	"contexts": [
@@ -2669,6 +2861,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\JumpToPositionDialog.cs",
+		".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
 	],
 },
 "&Source Event:":
@@ -2726,6 +2919,20 @@
 		".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
 	],
 },
+"Play any note in the current key":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\LearnGlobalTransposePopup.cs",
+		".\\Cantabile\\Dialogs\\LearnTransposePopup.cs",
+	],
+},
+"Play the equivalent note in the new key":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\LearnGlobalTransposePopup.cs",
+		".\\Cantabile\\Dialogs\\LearnTransposePopup.cs",
+	],
+},
 "Play first note of key range":
 {
 	"contexts": [
@@ -2736,18 +2943,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\LearnKeyRangePopup.cs",
-	],
-},
-"Play any note in the current key":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\LearnTransposePopup.cs",
-	],
-},
-"Play the equivalent note in the new key":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\LearnTransposePopup.cs",
 	],
 },
 "Locate Missing Files":
@@ -2795,7 +2990,9 @@
 		".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 		".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
 		".\\Cantabile\\Options\\GeneralPage.cs",
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
 	],
 },
 "Loop Count":
@@ -3094,6 +3291,24 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MediaFileMidiAssignmentDialog.cs",
+	],
+},
+"Edit Marker":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
+	],
+},
+"N&umber:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
+	],
+},
+"&Color:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
 	],
 },
 "Edit Audio Ports - {0}":
@@ -3775,6 +3990,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 	],
 },
 "The folder doesn't exist - do you want to create it?":
@@ -3787,12 +4003,32 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 	],
 },
 "A file with this name already exists.  Overwrite?":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\NewLinkedRackDialog.cs",
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
+	],
+},
+"New File Name":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
+	],
+},
+"Use &Template:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
+	],
+},
+"A rack with this name is already loaded.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 	],
 },
 "&Import Program or Bank...":
@@ -3820,6 +4056,12 @@
 	],
 },
 "Loc&k Program...":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Cle&ar Program":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
@@ -3927,6 +4169,33 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Lock All":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Unlock All":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+	],
+},
+"Audio Bypass":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+		".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs",
+	],
+},
+"Bypasses the audio signal around this plugin.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
 	],
 },
 "Plugin Gain":
@@ -4338,6 +4607,12 @@
 		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 	],
 },
+"By &Vendor":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+	],
+},
 "Rescan Plugin Folders (&Quick)":
 {
 	"contexts": [
@@ -4418,11 +4693,23 @@
 		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 	],
 },
+"By Vendor":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+	],
+},
 "Hidden":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 		".\\Cantabile.Application\\ShowNotes\\ShowNote.cs",
+	],
+},
+"(Unspecified)":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 	],
 },
 "Edit Tags for {0}":
@@ -4716,6 +5003,56 @@
 		".\\Cantabile\\SidePanel\\StatesPanel.cs",
 	],
 },
+"Record Set Settings":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+	],
+},
+"&Location:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+		".\\Cantabile\\Options\\RecordingPage.cs",
+	],
+},
+"&Browse":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+		".\\Cantabile\\Options\\PluginsPage.cs",
+		".\\Cantabile\\Options\\RecordingPage.cs",
+		".\\Cantabile\\Options\\StartupPage.cs",
+	],
+},
+"Please select recordings folder:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+		".\\Cantabile\\Options\\RecordingPage.cs",
+	],
+},
+"&Filename format:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+		".\\Cantabile\\Options\\RecordingPage.cs",
+	],
+},
+"&Counter:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+	],
+},
+"Filename contains invalid characters":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\RecordingSetDialog.cs",
+		".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs",
+		".\\Cantabile\\Options\\RecordingPage.cs",
+	],
+},
 "New &name:":
 {
 	"contexts": [
@@ -4738,6 +5075,36 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\RpnDialog.cs",
+	],
+},
+"Template &Name:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs",
+	],
+},
+"Please enter a name for the template":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs",
+	],
+},
+"The templates folder doesn't exist and couldn't be created.\n\n{0}\n\n{1}":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs",
+	],
+},
+"Template file already exists.  Overwrite?\n\n{0)}":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs",
+	],
+},
+"&Show songs already in set list":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
 	],
 },
 "Add Brea&k...":
@@ -5098,6 +5465,12 @@
 		".\\Cantabile\\Dialogs\\TransposeDialog.cs",
 	],
 },
+"&Learn":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\TransposeDialog.cs",
+	],
+},
 "Set Trigger Delays":
 {
 	"contexts": [
@@ -5366,6 +5739,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
 	],
 },
 "Controller Kind":
@@ -5649,6 +6023,91 @@
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs",
 	],
 },
+"Remap":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"To":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
+	],
+},
+"(same)":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"(suppressed)":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"Remap XXXXXXXX to:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"Actions":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"Load One-to-One Map":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"Load Suppres All Map":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"Copy Map":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"Paste Map":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"Import...":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"Cantabile Mapping":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"Export...":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
+"Remap {0} to:":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs",
+	],
+},
 "to":
 {
 	"contexts": [
@@ -5656,12 +6115,6 @@
 	],
 },
 "&Target Parameter:":
-{
-	"contexts": [
-		".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
-	],
-},
-"To":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
@@ -6250,6 +6703,28 @@
 		".\\Cantabile\\Licensing\\TrialNoticePage.cs",
 	],
 },
+"Starts playback of the master transport":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+	],
+},
+"Pauses playback of the master transport":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+	],
+},
+"Stops playback of the master transport":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+	],
+},
 "Global Transpose":
 {
 	"contexts": [
@@ -6331,8 +6806,7 @@
 	"contexts": [
 		".\\Cantabile\\MainWindow\\ControllerBar.cs",
 		".\\Cantabile\\MainWindow\\MainWindowViewState.cs",
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
+		".\\Cantabile.Gui\\Theme.cs",
 	],
 },
 "Choose Song":
@@ -6394,6 +6868,7 @@
 	"contexts": [
 		".\\Cantabile\\MainWindow\\ControllerBar.cs",
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
 		".\\Cantabile\\SidePanel\\StatesPanel.cs",
 	],
 },
@@ -6403,10 +6878,37 @@
 		".\\Cantabile\\MainWindow\\ControllerBar.cs",
 	],
 },
-"Tra&nspose":
+"&Record":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
+"&Play":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+	],
+},
+"P&ause":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
+"St&op":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+	],
+},
+"&Transpose":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
 "T&empo":
@@ -6449,6 +6951,28 @@
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+	],
+},
+"Record":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+	],
+},
+"Starts and stops the recorder.\n\nThe small indicator lights up when auto record is enabled and can be controlled by right clicking.":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile\\MainWindow\\MainToolbar.cs",
+	],
+},
+"Auto Recor&d":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\ControllerBar.cs",
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\MainWindow\\MainToolbar.cs",
 	],
 },
 "Create Binding...":
@@ -6536,40 +7060,19 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"&Save":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-		".\\Cantabile\\SetList\\SetListPanel.cs",
-	],
-},
-"Save &As...":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-		".\\Cantabile\\SetList\\SetListPanel.cs",
-	],
-},
-"Save &Copy As...":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-		".\\Cantabile\\SetList\\SetListPanel.cs",
-	],
-},
-"Re&vert...":
+"Open &Recent Song":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"O&ptions...":
+"Open Set List...":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"Save A&ll":
+"Open &Recent Set List":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -6582,20 +7085,6 @@
 	],
 },
 "&Pre-load":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-		".\\Cantabile\\SetList\\SetListPanel.cs",
-	],
-},
-"&New":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-		".\\Cantabile\\SetList\\SetListPanel.cs",
-	],
-},
-"&Open...":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -6645,19 +7134,61 @@
 		".\\Cantabile\\SetList\\SetListPanel.cs",
 	],
 },
-"&Recent Songs":
+"Re&vert...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\SetList\\SetListPanel.cs",
+	],
+},
+"&Save":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\SetList\\SetListPanel.cs",
+	],
+},
+"Save &As...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\SetList\\SetListPanel.cs",
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"Save &Copy As...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\SetList\\SetListPanel.cs",
+	],
+},
+"Save As Template...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\SetList\\SetListPanel.cs",
+	],
+},
+"Save A&ll":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"R&ecent Set Lists":
+"O&ptions...":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
 "E&xit":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+	],
+},
+"&Find...":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -7082,6 +7613,13 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
+"Unl&ink Clone...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\MainMenu.cs",
+		".\\Cantabile\\SidePanel\\StatesPanel.cs",
+	],
+},
 "&Update":
 {
 	"contexts": [
@@ -7121,12 +7659,6 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"P&ause":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-	],
-},
 "&Stop":
 {
 	"contexts": [
@@ -7140,19 +7672,6 @@
 	],
 },
 "Play\/Pa&use":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-	],
-},
-"Auto Recor&d":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainMenu.cs",
-		".\\Cantabile\\MainWindow\\MainToolbar.cs",
-	],
-},
-"&Record":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
@@ -7417,25 +7936,6 @@
 		".\\Cantabile\\MainWindow\\MainMenu.cs",
 	],
 },
-"Starts playback of the master transport":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainToolbar.cs",
-	],
-},
-"Pauses playback of the master transport":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainToolbar.cs",
-	],
-},
-"Stops playback of the master transport":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainToolbar.cs",
-		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
-	],
-},
 "Master Transport":
 {
 	"contexts": [
@@ -7559,18 +8059,6 @@
 	],
 },
 "&Tap Tempo Settings...":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainToolbar.cs",
-	],
-},
-"Record":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\MainToolbar.cs",
-	],
-},
-"Starts and stops the recorder.\n\nThe small indicator lights up when auto record is enabled and can be controlled by right clicking.":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\MainToolbar.cs",
@@ -8123,6 +8611,62 @@
 		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 	],
 },
+"Rewind":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+	],
+},
+"Fast Forward":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+	],
+},
+"Next Marker":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Timeline Menu":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+	],
+},
+"Commands for working with the time line":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+	],
+},
+"Edit...":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+		".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
+	],
+},
+"Move to current position":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+	],
+},
+"Show Marker &Numbers":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+	],
+},
+"Reassign all Marker Numbers":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+	],
+},
 "Loop On":
 {
 	"contexts": [
@@ -8162,12 +8706,6 @@
 	],
 },
 "Choose LoopCount":
-{
-	"contexts": [
-		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
-	],
-},
-"Show this Menu":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
@@ -8252,6 +8790,12 @@
 	],
 },
 "&Delete Play Range":
+{
+	"contexts": [
+		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+	],
+},
+"&Create Marker...":
 {
 	"contexts": [
 		".\\Cantabile\\MainWindow\\TimelinePanel.cs",
@@ -8793,104 +9337,6 @@
 {
 	"contexts": [
 		".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs",
-	],
-},
-"Red":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Maroon":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Green":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Lime":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Blue":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Navy":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Yellow":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Olive":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Fuscia":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Purple":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Cyan":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Teal":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Orange":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
-	],
-},
-"Brown":
-{
-	"contexts": [
-		".\\Cantabile\\Misc\\ColorMenu.cs",
-		".\\Cantabile.Utils\\BasicColor.cs",
 	],
 },
 "Set C&olor":
@@ -9538,6 +9984,51 @@
 		".\\Cantabile\\Options\\AudioPortsPage.cs",
 	],
 },
+"Colors":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\ColorsPage.cs",
+		".\\Cantabile.Application\\ShowNotes\\ShowNote.cs",
+	],
+},
+"Opacity of colors when used as background color:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\ColorsPage.cs",
+	],
+},
+"Customize &Colors:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\ColorsPage.cs",
+	],
+},
+"Color":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\ColorsPage.cs",
+		".\\Cantabile.Application\\Bindings\\Binding.cs",
+		".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+		".\\Cantabile.Application\\Triggers\\Trigger.cs",
+	],
+},
+"Reset All Defaults":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\ColorsPage.cs",
+	],
+},
+"Are you sure you want to reset all custom color settings to their defaults?":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\ColorsPage.cs",
+	],
+},
 "Diagnostics":
 {
 	"contexts": [
@@ -9834,6 +10325,18 @@
 	],
 },
 "Please select your set lists folder:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\FileLocationsPage.cs",
+	],
+},
+"Template Files:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\FileLocationsPage.cs",
+	],
+},
+"Please select your set templates folder:":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\FileLocationsPage.cs",
@@ -10199,6 +10702,78 @@
 		".\\Cantabile\\Options\\KeyboardPage.cs",
 	],
 },
+"Displayed Keyboard &Range:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+" to ":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"Fast-Forward and Rewind":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"Repeat Rate\n(seconds)":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"Step\nDistance":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"Real-time Speed 1:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"seconds":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"Real-time Speed 2:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"Musical Speed 1:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"measures":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"Musical Speed 2:":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"Reset &All Defaults":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
 "Knobs and Sliders":
 {
 	"contexts": [
@@ -10302,6 +10877,48 @@
 	],
 },
 "anywhere, including turning on capture":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"88 Key":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"76 Key":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"61 Key":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"49 Key":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"37 Key":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"25 Key":
+{
+	"contexts": [
+		".\\Cantabile\\Options\\KeyboardPage.cs",
+	],
+},
+"Full MIDI Key Range":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\KeyboardPage.cs",
@@ -10589,14 +11206,6 @@
 		".\\Cantabile\\Options\\PluginsPage.cs",
 	],
 },
-"&Browse":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\PluginsPage.cs",
-		".\\Cantabile\\Options\\RecordingPage.cs",
-		".\\Cantabile\\Options\\StartupPage.cs",
-	],
-},
 "Please select your presets folder:":
 {
 	"contexts": [
@@ -10621,31 +11230,25 @@
 		".\\Cantabile\\Options\\RecordingPage.cs",
 	],
 },
-"Location and Filename":
+"Recording Sets":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\RecordingPage.cs",
 	],
 },
-"&Location":
+"Automatically create a new recording set for each song":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\RecordingPage.cs",
 	],
 },
-"Please select recordings folder:":
+"Recording Set Defaults":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\RecordingPage.cs",
 	],
 },
-"&Filename format:":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\RecordingPage.cs",
-	],
-},
-"&Counter:":
+"These settings will be used as the defaults for new recording sets.\nTo set the default port configuration, use the \"Set as Default\"\ncommand in the recorder ports panel menu.":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\RecordingPage.cs",
@@ -10754,36 +11357,6 @@
 		".\\Cantabile\\Options\\RecordingPage.cs",
 	],
 },
-"Start recording on:":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\RecordingPage.cs",
-	],
-},
-"&MIDI Input":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\RecordingPage.cs",
-	],
-},
-"MIDI &Output":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\RecordingPage.cs",
-	],
-},
-"&Audio Input":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\RecordingPage.cs",
-	],
-},
-"A&udio Output":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\RecordingPage.cs",
-	],
-},
 "&Stop auto-recordings after":
 {
 	"contexts": [
@@ -10814,7 +11387,7 @@
 		".\\Cantabile\\Options\\RecordingPage.cs",
 	],
 },
-"Recordings List":
+"Pinned Recordings":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\RecordingPage.cs",
@@ -10832,19 +11405,13 @@
 		".\\Cantabile\\Options\\RecordingPage.cs",
 	],
 },
-"day(s)":
+"days (set to zero to disable)":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\RecordingPage.cs",
 	],
 },
 "&Delete unpinned recordings after":
-{
-	"contexts": [
-		".\\Cantabile\\Options\\RecordingPage.cs",
-	],
-},
-"Filename contains invalid characters":
 {
 	"contexts": [
 		".\\Cantabile\\Options\\RecordingPage.cs",
@@ -11025,17 +11592,11 @@
 		".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 	],
 },
-"Song":
-{
-	"contexts": [
-		".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
-		".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-	],
-},
 "NewSong":
 {
 	"contexts": [
 		".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+		".\\Cantabile.Application\\Application.cs",
 		".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs",
 	],
 },
@@ -11559,6 +12120,36 @@
 		".\\Cantabile\\RackPanel\\RackPanel.cs",
 	],
 },
+"Save As Rack Template...":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+	],
+},
+"Save As Song Template...":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+	],
+},
+"Save Rack Template":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+	],
+},
+"Save Song Template":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+	],
+},
+"A file with this name is already loaded and can't be overwritten.\n\n{0}":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+	],
+},
 "Re&vert Rack...":
 {
 	"contexts": [
@@ -11566,6 +12157,12 @@
 	],
 },
 "Re&vert Song...":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RackPanel.cs",
+	],
+},
+"Are you sure you want to revert and discard all changes to this file?\n\n{0}":
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RackPanel.cs",
@@ -12495,6 +13092,12 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
 	],
 },
+"off":
+{
+	"contexts": [
+		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+	],
+},
 "Starts playback of the media file":
 {
 	"contexts": [
@@ -12730,19 +13333,6 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs",
 		".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\ObjectProxy.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
-	],
-},
-"Audio Bypass":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
-		".\\Cantabile.Gui.TestHarness\\TestGroupedList.cs",
-	],
-},
-"Bypasses the audio signal around this plugin.":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
 	],
 },
 "Running":
@@ -13038,24 +13628,10 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
 	],
 },
-"MIDI Route":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
-		".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
-	],
-},
 "This icon indicates this is a MIDI route":
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
-	],
-},
-"Audio Route":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
-		".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
 	],
 },
 "This icon indicates this is an audio route":
@@ -13244,12 +13820,6 @@
 		".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
 	],
 },
-"Edit...":
-{
-	"contexts": [
-		".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
-	],
-},
 "Add Note...":
 {
 	"contexts": [
@@ -13387,6 +13957,24 @@
 		".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 	],
 },
+"Save Set List Template...":
+{
+	"contexts": [
+		".\\Cantabile\\SetList\\SetListCommandTarget.cs",
+	],
+},
+"Save Set List Template":
+{
+	"contexts": [
+		".\\Cantabile\\SetList\\SetListCommandTarget.cs",
+	],
+},
+"Re&vert Set List...":
+{
+	"contexts": [
+		".\\Cantabile\\SetList\\SetListCommandTarget.cs",
+	],
+},
 "Pinned":
 {
 	"contexts": [
@@ -13496,6 +14084,18 @@
 		".\\Cantabile\\SetList\\SetListPanel.cs",
 	],
 },
+"Set List Menu":
+{
+	"contexts": [
+		".\\Cantabile\\SetList\\SetListPanel.cs",
+	],
+},
+"Commands for working with set lists":
+{
+	"contexts": [
+		".\\Cantabile\\SetList\\SetListPanel.cs",
+	],
+},
 "Set List - {0}":
 {
 	"contexts": [
@@ -13519,6 +14119,19 @@
 	"contexts": [
 		".\\Cantabile\\SetList\\SetListPanel.cs",
 		".\\Cantabile\\SidePanel\\StatesPanel.cs",
+	],
+},
+"&New":
+{
+	"contexts": [
+		".\\Cantabile\\SetList\\SetListPanel.cs",
+	],
+},
+"&Open...":
+{
+	"contexts": [
+		".\\Cantabile\\SetList\\SetListPanel.cs",
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
 	],
 },
 "Auto Scroll":
@@ -13605,7 +14218,31 @@
 		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
 	],
 },
+"Recorder Ports Menu":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
+	],
+},
+"Commands for saving and loading recorder port sets":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
+	],
+},
 "Save Port Set":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
+	],
+},
+"Set as Default":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
+	],
+},
+"Load Default":
 {
 	"contexts": [
 		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
@@ -13618,6 +14255,30 @@
 		".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs",
 	],
 },
+"Auto Record Monitor":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
+	],
+},
+"Should this port be monitored for activity to start auto-recordings.":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
+	],
+},
+"Record Port":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
+	],
+},
+"Selects whether this port will be included in recordings.":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecorderPortsPanel.cs",
+	],
+},
 "Audio":
 {
 	"contexts": [
@@ -13626,6 +14287,42 @@
 	],
 },
 "Any recordings you make will appear here.\nClick the record button above to start recording, or right click it to enable auto-record":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"Recordings Menu":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"Commands for working with recordings":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"(No recording set as song not saved)":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"(No recording set)":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"&Settings...":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"Open &Recent":
 {
 	"contexts": [
 		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
@@ -13668,6 +14365,42 @@
 	],
 },
 "Reveal in &Finder":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"Save Recording Set &As...":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"Cantabile Recording Sets":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"Recording Set Settings...":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"The recorder can't be started because you've selected to use per-song recording sets but the current song hasn't been saved.":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"The recorder can't be started because there is no recording set loaded.\n\nPlease load or create a new recording set.":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
+	],
+},
+"You must select at least one MIDI or Audio port to record.":
 {
 	"contexts": [
 		".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
@@ -13734,6 +14467,18 @@
 	],
 },
 "Choose which attributes of the selected object should be controlled by states":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs",
+	],
+},
+"State Behaviours Menu":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs",
+	],
+},
+"Commands for saving and loading state behaviour sets":
 {
 	"contexts": [
 		".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs",
@@ -13811,6 +14556,12 @@
 		".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs",
 	],
 },
+"Save Behaviour Set":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\StateBehaviourPanel.cs",
+	],
+},
 "Set As Default Behaviour":
 {
 	"contexts": [
@@ -13830,6 +14581,18 @@
 	],
 },
 "States let you save and recall snapshots of the state a song or rack.":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\StatesPanel.cs",
+	],
+},
+"States Menu":
+{
+	"contexts": [
+		".\\Cantabile\\SidePanel\\StatesPanel.cs",
+	],
+},
+"Commands for working with states":
 {
 	"contexts": [
 		".\\Cantabile\\SidePanel\\StatesPanel.cs",
@@ -13986,6 +14749,12 @@
 		".\\Cantabile.Application\\Application.cs",
 	],
 },
+"No Media File":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
 "Paused":
 {
 	"contexts": [
@@ -14016,13 +14785,61 @@
 		".\\Cantabile.Application\\Application.cs",
 	],
 },
+"Cantabile's audio engine has been stopped because the audio driver stopped responding":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
+"Failed to create background rack.\n\n{0}\n\n{1}":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
+"Failed to load background rack.\n\n{0}":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
+"Failed to start - {0}":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
+"{0}\n\nFailed to open song - {1}":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
 "{0}\n\nFailed to save song - {1}":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Application.cs",
 	],
 },
+"{0}\n\nFailed to open set list - {1}":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
 "{0}\n\nFailed to save setlist - {1}":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
+"Failed to load control curve '{0}' - ignored.\n\n{1}":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Application.cs",
+	],
+},
+"Failed to load recording set.\n\n{0}\n\n{1}":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Application.cs",
@@ -14275,13 +15092,6 @@
 		".\\Cantabile.Application\\Bindable\\PCKeyboard.cs",
 	],
 },
-"Rack":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
-	],
-},
 "Trigger":
 {
 	"contexts": [
@@ -14499,6 +15309,7 @@
 		".\\Cantabile.Application\\Bindable\\SetList.cs",
 		".\\Cantabile.Application\\Bindable\\States.cs",
 		".\\Cantabile.Application\\Bindable\\Triggers.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
 "Transpose Octave Up":
@@ -14805,19 +15616,6 @@
 		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 	],
 },
-"Color":
-{
-	"contexts": [
-		".\\Cantabile.Application\\Bindings\\Binding.cs",
-		".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
-		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
-		".\\Cantabile.Application\\Triggers\\Trigger.cs",
-	],
-},
 "Absolute with Jump Prevention":
 {
 	"contexts": [
@@ -15116,6 +15914,96 @@
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 	],
 },
+"Previous Marker":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Marker By Number":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Marker With Number":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Fast-Forward (Speed 1)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Rewind (Speed 1)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Fast-Forward (Speed 2)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Rewind (Speed 2)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Musical Fast-Forward (Speed 1)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Musical Rewind (Speed 1)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Musical Fast-Forward (Speed 2)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Musical Rewind (Speed 2)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Real-time Fast-Forward (Speed 1)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Real-time Rewind (Speed 1)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Real-time Fast-Forward (Speed2)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Real-time Rewind (Speed 2)":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
 "Solo Exclusive":
 {
 	"contexts": [
@@ -15133,6 +16021,12 @@
 	],
 },
 "On End of Track\/Range":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+	],
+},
+"Choose Marker Number":
 {
 	"contexts": [
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
@@ -15992,6 +16886,12 @@
 		".\\Cantabile.Application\\Racks\\Song\\OnscreenKeyboardState.cs",
 	],
 },
+"Failed to upgrade recording list - {0}":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Recordings\\Recorder.cs",
+	],
+},
 "Delete Song":
 {
 	"contexts": [
@@ -16011,12 +16911,6 @@
 	],
 },
 "Image":
-{
-	"contexts": [
-		".\\Cantabile.Application\\ShowNotes\\ShowNote.cs",
-	],
-},
-"Colors":
 {
 	"contexts": [
 		".\\Cantabile.Application\\ShowNotes\\ShowNote.cs",
@@ -16359,12 +17253,6 @@
 		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
-"&Transpose":
-{
-	"contexts": [
-		".\\Cantabile.Core\\MidiFilterItem.cs",
-	],
-},
 "&Parameter Automation":
 {
 	"contexts": [
@@ -16492,6 +17380,12 @@
 	],
 },
 "Voice Allocator":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Note Map":
 {
 	"contexts": [
 		".\\Cantabile.Core\\MidiFilterItem.cs",
@@ -17253,6 +18147,18 @@
 		".\\Cantabile.Core\\MidiFilterItem.cs",
 	],
 },
+"Uninitialised note map":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
+"Remap notes on {0}":
+{
+	"contexts": [
+		".\\Cantabile.Core\\MidiFilterItem.cs",
+	],
+},
 "Failed to open '{0}' - {1} (error code {2})":
 {
 	"contexts": [
@@ -17266,6 +18172,12 @@
 	],
 },
 "Ch #{0}":
+{
+	"contexts": [
+		".\\Cantabile.Core\\PluginHost.cs",
+	],
+},
+"(unused)":
 {
 	"contexts": [
 		".\\Cantabile.Core\\PluginHost.cs",
@@ -17353,6 +18265,90 @@
 {
 	"contexts": [
 		".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiPort.cs",
+	],
+},
+"Red":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Maroon":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Green":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Lime":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Blue":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Navy":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Yellow":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Olive":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Fuscia":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Purple":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Cyan":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Teal":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Orange":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
+	],
+},
+"Brown":
+{
+	"contexts": [
+		".\\Cantabile.Gui\\Theme.cs",
 	],
 },
 "Gain: +14.0 dB":
