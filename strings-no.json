@@ -266,6 +266,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
@@ -436,6 +437,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
@@ -549,6 +551,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
@@ -1004,6 +1007,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
 		],
 		"translation": "Program",
@@ -1402,6 +1406,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
@@ -23057,15 +23062,6 @@
 		"translation": "&Verdi (s):",
 		"machine": true
 	},
-	"Tip: you can enter a sequence of values to be cycled\nthrough by separating each value with a '{0}' character.\n\nFor banked program numbers, separate each\ncomponent with a '.' character.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
-		],
-		"translation": "Tips: Du kan skrive inn en sekvens av verdier som skal sykles\ngjennom å skille hver verdi med et '{0}' tegn.\n\nFor bankede programnumre, skille hver\nkomponent med en '.' karakter.",
-		"machine": true
-	},
 	"Enter &String Expression:": 
 	{
 		"contexts": 
@@ -27667,6 +27663,177 @@
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
 		],
 		"translation": "Før du oppretter bindinger til en rute, må du gi ruten et navn (via redigeringsmeny -> endre navn).\n\nVil du gi navnet denne ruten nå?",
+		"machine": true
+	},
+	"Set Banked Program Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Still inn banknummernummer",
+		"machine": true
+	},
+	"&Program Numbers: (entries will be cycled through, one at a time each time binding is invoked)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "&Programnumre: (oppføringer vil bli syklet gjennom, en om gangen hver gang binding blir påkalt)",
+		"machine": true
+	},
+	"Edit Selected Entry": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Rediger valgt oppføring",
+		"machine": true
+	},
+	"Program &Number:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Program&nummer:",
+		"machine": true
+	},
+	"&Bank:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "&Bank:",
+		"machine": true
+	},
+	"<user>": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "<user>",
+		"machine": true
+	},
+	"&Program:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "&Program:",
+		"machine": true
+	},
+	"Patch File: -": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Oppdateringsfil: -",
+		"machine": true
+	},
+	"&Load...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "&Laste...",
+		"machine": true
+	},
+	"Failed to load patch list '{0}'\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Kunne ikke laste oppdateringslisten '{0}'\n\n{1}",
+		"machine": true
+	},
+	"Patch Name Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Patch navnefiler",
+		"machine": true
+	},
+	"Cakewalk Instrument Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Cakewalk instrumentfiler",
+		"machine": true
+	},
+	"Reaper Bank Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Reaper-bankfiler",
+		"machine": true
+	},
+	"Tip: you can enter a sequence of values to be cycled\nthrough by separating each value with a '{0}' character.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
+		],
+		"translation": "Tips: du kan angi en rekke verdier som skal sykles\nved å skille hver verdi med et \"{0}\" -tegn.",
+		"machine": true
+	},
+	"Sys-Ex (cont)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "Sys-ex (forts)",
+		"machine": true
+	},
+	"Active Sense": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "Aktiv sans",
+		"machine": true
+	},
+	"Meta": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "Meta",
+		"machine": true
+	},
+	"Patch list file not found - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\PatchNameList.cs"
+		],
+		"translation": "Patchlistefilen ble ikke funnet - {0}",
+		"machine": true
+	},
+	"Unknown instrument file type: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\PatchNameList.cs"
+		],
+		"translation": "Ukjent instrumentfiltype: {0}",
 		"machine": true
 	}
 }

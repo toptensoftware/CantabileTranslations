@@ -2174,6 +2174,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
@@ -2354,6 +2355,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
@@ -2485,6 +2487,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
@@ -3164,6 +3167,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
@@ -3809,6 +3813,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
 		],
 		"translation": "programa",
@@ -23057,15 +23062,6 @@
 		"translation": "&Vertė (s):",
 		"machine": true
 	},
-	"Tip: you can enter a sequence of values to be cycled\nthrough by separating each value with a '{0}' character.\n\nFor banked program numbers, separate each\ncomponent with a '.' character.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
-		],
-		"translation": "Patarimas: galite įvesti verčių seką, kuri turi būti ciklas\nkiekvieną vertę atskiriant simboliu \"{0}\".\n\nUž bankruotų programų numerius atskirkite kiekvieną\nkomponentas su \".\" charakteris.",
-		"machine": true
-	},
 	"Enter &String Expression:": 
 	{
 		"contexts": 
@@ -27667,6 +27663,177 @@
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
 		],
 		"translation": "Prieš kurdami susiejimus su maršrutu, turite nurodyti maršruto pavadinimą (per redagavimo meniu -> pervadinti).\n\nAr norite dabar pavadinti šį maršrutą?",
+		"machine": true
+	},
+	"Set Banked Program Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Nustatykite banko programos numerį",
+		"machine": true
+	},
+	"&Program Numbers: (entries will be cycled through, one at a time each time binding is invoked)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "&Programos numeriai: (įrašai bus peržiūrimi po vieną kiekvieną kartą, kai bus įjungtas įrišimas)",
+		"machine": true
+	},
+	"Edit Selected Entry": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Redaguoti pasirinktą įrašą",
+		"machine": true
+	},
+	"Program &Number:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Programos &numeris:",
+		"machine": true
+	},
+	"&Bank:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "&bankas:",
+		"machine": true
+	},
+	"<user>": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "<user>",
+		"machine": true
+	},
+	"&Program:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "&Programa:",
+		"machine": true
+	},
+	"Patch File: -": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Pataisos failas: -",
+		"machine": true
+	},
+	"&Load...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Apkrova (&L)...",
+		"machine": true
+	},
+	"Failed to load patch list '{0}'\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Nepavyko įkelti pataisų sąrašo „{0}“'\n\n{1}",
+		"machine": true
+	},
+	"Patch Name Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Pataisų vardų failai",
+		"machine": true
+	},
+	"Cakewalk Instrument Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "„Cakewalk“ instrumentų bylos",
+		"machine": true
+	},
+	"Reaper Bank Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Pjaunamosios banko bylos",
+		"machine": true
+	},
+	"Tip: you can enter a sequence of values to be cycled\nthrough by separating each value with a '{0}' character.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
+		],
+		"translation": "Patarimas: galite įvesti ciklų reikšmių seką\nkiekvieną vertę atskirdami simboliu „{0}“.",
+		"machine": true
+	},
+	"Sys-Ex (cont)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "„Sys-ex“ (tęsinys)",
+		"machine": true
+	},
+	"Active Sense": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "Aktyvus jausmas",
+		"machine": true
+	},
+	"Meta": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "Meta",
+		"machine": true
+	},
+	"Patch list file not found - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\PatchNameList.cs"
+		],
+		"translation": "Pataisų sąrašo failas nerastas - {0}",
+		"machine": true
+	},
+	"Unknown instrument file type: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\PatchNameList.cs"
+		],
+		"translation": "Nežinomas instrumento failo tipas: {0}",
 		"machine": true
 	}
 }

@@ -1539,6 +1539,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
@@ -1709,6 +1710,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
@@ -1822,6 +1824,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
@@ -2179,6 +2182,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
@@ -2622,6 +2626,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
 		],
 		"translation": "Programme",
@@ -23057,15 +23062,6 @@
 		"translation": "&Valeurs):",
 		"machine": true
 	},
-	"Tip: you can enter a sequence of values to be cycled\nthrough by separating each value with a '{0}' character.\n\nFor banked program numbers, separate each\ncomponent with a '.' character.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
-		],
-		"translation": "Astuce: vous pouvez entrer une séquence de valeurs à cycler\nà travers en séparant chaque valeur avec un caractère '{0}'.\n\nPour les numéros de programme en banque, séparez chaque\ncomposant avec un '.' personnage.",
-		"machine": true
-	},
 	"Enter &String Expression:": 
 	{
 		"contexts": 
@@ -27667,6 +27663,177 @@
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
 		],
 		"translation": "Avant de créer des liaisons à une route, vous devez donner un nom à la route (via le menu d'édition -> renommer).\n\nVoulez-vous nommer cet itinéraire maintenant?",
+		"machine": true
+	},
+	"Set Banked Program Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Définir le numéro de programme mis en banque",
+		"machine": true
+	},
+	"&Program Numbers: (entries will be cycled through, one at a time each time binding is invoked)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Numéros de &programme: (les entrées seront parcourues, une à la fois, chaque fois que la liaison est appelée)",
+		"machine": true
+	},
+	"Edit Selected Entry": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Modifier l'entrée sélectionnée",
+		"machine": true
+	},
+	"Program &Number:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "&Numéro de programme:",
+		"machine": true
+	},
+	"&Bank:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "&Banque:",
+		"machine": true
+	},
+	"<user>": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "<user>",
+		"machine": true
+	},
+	"&Program:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "&Programme:",
+		"machine": true
+	},
+	"Patch File: -": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Fichier patch: -",
+		"machine": true
+	},
+	"&Load...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Charge (&L)...",
+		"machine": true
+	},
+	"Failed to load patch list '{0}'\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Échec du chargement de la liste des correctifs '{0}'\n\n{1}",
+		"machine": true
+	},
+	"Patch Name Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Fichiers de nom de patch",
+		"machine": true
+	},
+	"Cakewalk Instrument Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Fichiers d'instruments Cakewalk",
+		"machine": true
+	},
+	"Reaper Bank Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Fichiers de la banque Reaper",
+		"machine": true
+	},
+	"Tip: you can enter a sequence of values to be cycled\nthrough by separating each value with a '{0}' character.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
+		],
+		"translation": "Astuce: vous pouvez saisir une séquence de valeurs à parcourir\nen séparant chaque valeur par un caractère '{0}'.",
+		"machine": true
+	},
+	"Sys-Ex (cont)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "Sys-ex (suite)",
+		"machine": true
+	},
+	"Active Sense": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "Sens actif",
+		"machine": true
+	},
+	"Meta": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "Meta",
+		"machine": true
+	},
+	"Patch list file not found - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\PatchNameList.cs"
+		],
+		"translation": "Fichier de liste de correctifs introuvable - {0}",
+		"machine": true
+	},
+	"Unknown instrument file type: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\PatchNameList.cs"
+		],
+		"translation": "Type de fichier d'instrument inconnu: {0}",
 		"machine": true
 	}
 }

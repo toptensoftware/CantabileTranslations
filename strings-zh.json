@@ -2408,6 +2408,7 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
@@ -2608,6 +2609,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\Dialogs\\ImportSetListSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
@@ -2739,6 +2741,7 @@
 		"contexts": 
 		[
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
@@ -3685,6 +3688,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
@@ -4490,6 +4494,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
 		],
 		"translation": "程序",
@@ -23057,15 +23062,6 @@
 		"translation": "值（S (&V)):",
 		"machine": true
 	},
-	"Tip: you can enter a sequence of values to be cycled\nthrough by separating each value with a '{0}' character.\n\nFor banked program numbers, separate each\ncomponent with a '.' character.": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
-		],
-		"translation": "提示：您可以输入要循环的值序列\n通过用'{0}'字符分隔每个值.\n\n对于存储的程序编号，将每个编号分开\n组件带有'。'字符.",
-		"machine": true
-	},
 	"Enter &String Expression:": 
 	{
 		"contexts": 
@@ -27667,6 +27663,177 @@
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
 		],
 		"translation": "在创建到路径的绑定之前，必须给路径命名（通过编辑菜单->重命名）).\n\n您现在要命名这条路线吗?",
+		"machine": true
+	},
+	"Set Banked Program Number": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "设置银行程序编号",
+		"machine": true
+	},
+	"&Program Numbers: (entries will be cycled through, one at a time each time binding is invoked)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "程序编号：（每次调用绑定时，每次循环输入一次） (&P))",
+		"machine": true
+	},
+	"Edit Selected Entry": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "编辑所选条目",
+		"machine": true
+	},
+	"Program &Number:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "程序编号 (&N):",
+		"machine": true
+	},
+	"&Bank:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "银行 (&B):",
+		"machine": true
+	},
+	"<user>": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "<user>",
+		"machine": true
+	},
+	"&Program:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "程序 (&P):",
+		"machine": true
+	},
+	"Patch File: -": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "补丁文件: -",
+		"machine": true
+	},
+	"&Load...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "加载 (&L)...",
+		"machine": true
+	},
+	"Failed to load patch list '{0}'\n\n{1}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "无法加载补丁列表'{0}'\n\n{1}",
+		"machine": true
+	},
+	"Patch Name Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "补丁名称文件",
+		"machine": true
+	},
+	"Cakewalk Instrument Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "Cakewalk乐器文件",
+		"machine": true
+	},
+	"Reaper Bank Files": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs"
+		],
+		"translation": "收款银行文件",
+		"machine": true
+	},
+	"Tip: you can enter a sequence of values to be cycled\nthrough by separating each value with a '{0}' character.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
+		],
+		"translation": "提示：您可以输入要循环的值序列\n通过使用“ {0}”字符分隔每个值.",
+		"machine": true
+	},
+	"Sys-Ex (cont)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "Sys-ex（续)",
+		"machine": true
+	},
+	"Active Sense": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "主动感",
+		"machine": true
+	},
+	"Meta": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
+		],
+		"translation": "元",
+		"machine": true
+	},
+	"Patch list file not found - {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\PatchNameList.cs"
+		],
+		"translation": "找不到补丁列表文件-{0}",
+		"machine": true
+	},
+	"Unknown instrument file type: {0}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Utils\\PatchNameList.cs"
+		],
+		"translation": "未知的乐器文件类型：{0}",
 		"machine": true
 	}
 }
