@@ -1448,7 +1448,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\StateCommands.cs"
+			".\\Cantabile\\Commands\\StateCommands.cs",
+			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Estado de actualización",
 		"machine": true
@@ -2183,6 +2184,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Gui\\Composited\\RunModeButton.cs",
 			".\\Cantabile.Gui\\Composited\\SoloModeButton.cs"
 		],
@@ -2704,6 +2706,7 @@
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\Route.cs"
 		],
@@ -14098,6 +14101,7 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\Route.cs"
 		],
@@ -17612,9 +17616,13 @@
 			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
 		"translation": "Color",
@@ -17756,7 +17764,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
 		],
 		"translation": "Nombre del preset seleccionado",
 		"machine": true
@@ -25553,15 +25562,6 @@
 		"translation": "Una canción con este nombre ya está cargada y no se puede sobrescribir.\n\n{0}",
 		"machine": true
 	},
-	"(missing target='{_binding.TargetObject}')": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		],
-		"translation": "(objetivo perdido = '{_binding.TargetObject}')",
-		"machine": true
-	},
 	"Show Externally Held Notes": 
 	{
 		"contexts": 
@@ -27834,6 +27834,114 @@
 			".\\Cantabile.Utils\\PatchNameList.cs"
 		],
 		"translation": "Tipo de archivo de instrumento desconocido: {0}",
+		"machine": true
+	},
+	"Plugin Compatibility": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
+		],
+		"translation": "Compatibilidad de complementos",
+		"machine": true
+	},
+	"Enable Plugin GUI Up-scaling": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
+		],
+		"translation": "Habilitar la ampliación de la GUI del complemento",
+		"machine": true
+	},
+	"Please restart Cantabile for these changes to take effect.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
+		],
+		"translation": "Reinicie cantabile para que estos cambios surtan efecto.",
+		"machine": true
+	},
+	"Edit Tags...\tCtrl+T": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "Editar etiquetas... ctrl + T",
+		"machine": true
+	},
+	"Compatibility...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "Compatibilidad...",
+		"machine": true
+	},
+	"(missing target='{0}')": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "(objetivo faltante = '{0}')",
+		"machine": true
+	},
+	"Reset State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\States.cs"
+		],
+		"translation": "Restablecer estado",
+		"machine": true
+	},
+	"Selected Preset Index": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Índice predeterminado seleccionado",
+		"machine": true
+	},
+	"Selected Preset Scaled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Preset seleccionado escalado",
+		"machine": true
+	},
+	"Is Running": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Esta corriendo",
+		"machine": true
+	},
+	"Is Suspended": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Está suspendido",
+		"machine": true
+	},
+	"Is Unloaded": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Está descargado",
 		"machine": true
 	}
 }

@@ -1448,7 +1448,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Commands\\StateCommands.cs"
+			".\\Cantabile\\Commands\\StateCommands.cs",
+			".\\Cantabile.Application\\Bindable\\States.cs"
 		],
 		"translation": "Állapot frissítése",
 		"machine": false
@@ -2193,6 +2194,7 @@
 	{
 		"contexts": 
 		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Gui\\Composited\\RunModeButton.cs",
 			".\\Cantabile.Gui\\Composited\\SoloModeButton.cs"
 		],
@@ -2714,6 +2716,7 @@
 			".\\Cantabile.Application\\Bindable\\SetList.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\Route.cs"
 		],
@@ -14108,6 +14111,7 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\Route.cs"
 		],
@@ -17612,9 +17616,13 @@
 			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 			".\\Cantabile.Application\\Triggers\\Trigger.cs"
 		],
 		"translation": "Szín",
@@ -17756,7 +17764,8 @@
 	{
 		"contexts": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
 		],
 		"translation": "Beállított név kiválasztása",
 		"machine": false
@@ -25553,15 +25562,6 @@
 		"translation": "Egy ilyen nevű nóta már be van töltve, és nem írható felül.\n\n{0}",
 		"machine": false
 	},
-	"(missing target='{_binding.TargetObject}')": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		],
-		"translation": "(hiányzó cél='{_binding.TargetObject}')",
-		"machine": false
-	},
 	"Show Externally Held Notes": 
 	{
 		"contexts": 
@@ -27834,6 +27834,114 @@
 			".\\Cantabile.Utils\\PatchNameList.cs"
 		],
 		"translation": "Ismeretlen eszközfájl típus: {0}",
+		"machine": true
+	},
+	"Plugin Compatibility": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
+		],
+		"translation": "Plugin kompatibilitás",
+		"machine": true
+	},
+	"Enable Plugin GUI Up-scaling": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
+		],
+		"translation": "Engedélyezze a plugin GUI felmérését",
+		"machine": true
+	},
+	"Please restart Cantabile for these changes to take effect.": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
+		],
+		"translation": "Kérjük, indítsa újra a cantabile-t, hogy ezek a változtatások életbe lépjenek.",
+		"machine": true
+	},
+	"Edit Tags...\tCtrl+T": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "Címkék szerkesztése... ctrl + T",
+		"machine": true
+	},
+	"Compatibility...": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
+		],
+		"translation": "Kompatibilitás...",
+		"machine": true
+	},
+	"(missing target='{0}')": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+		],
+		"translation": "(hiányzó cél = '{0}')",
+		"machine": true
+	},
+	"Reset State": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Bindable\\States.cs"
+		],
+		"translation": "Állapot visszaállítása",
+		"machine": true
+	},
+	"Selected Preset Index": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Kiválasztott előre beállított index",
+		"machine": true
+	},
+	"Selected Preset Scaled": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Kiválasztott előre beállított méretarány",
+		"machine": true
+	},
+	"Is Running": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Fut",
+		"machine": true
+	},
+	"Is Suspended": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Felfüggesztve",
+		"machine": true
+	},
+	"Is Unloaded": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+		],
+		"translation": "Ki van töltve",
 		"machine": true
 	}
 }

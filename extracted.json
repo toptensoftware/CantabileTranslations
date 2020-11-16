@@ -1256,6 +1256,7 @@
 {
 	"contexts": [
 		".\\Cantabile\\Commands\\StateCommands.cs",
+		".\\Cantabile.Application\\Bindable\\States.cs",
 	],
 },
 "Delete Current State":
@@ -2178,6 +2179,7 @@
 		".\\Cantabile.Application\\Bindable\\SetList.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 		".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
 	],
@@ -4115,6 +4117,24 @@
 		".\\Cantabile\\Dialogs\\NewLinkedRackDialog2.cs",
 	],
 },
+"Plugin Compatibility":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs",
+	],
+},
+"Enable Plugin GUI Up-scaling":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs",
+	],
+},
+"Please restart Cantabile for these changes to take effect.":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs",
+	],
+},
 "&Import Program or Bank...":
 {
 	"contexts": [
@@ -4558,6 +4578,18 @@
 	],
 },
 "Type \/ Tags":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+	],
+},
+"Edit Tags...\tCtrl+T":
+{
+	"contexts": [
+		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
+	],
+},
+"Compatibility...":
 {
 	"contexts": [
 		".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
@@ -10119,9 +10151,13 @@
 		".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 		".\\Cantabile.Application\\Triggers\\Trigger.cs",
 	],
 },
@@ -12520,7 +12556,7 @@
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 	],
 },
-"(missing target='{_binding.TargetObject}')":
+"(missing target='{0}')":
 {
 	"contexts": [
 		".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
@@ -12721,6 +12757,7 @@
 		".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 		".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs",
 		".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
 	],
@@ -15490,6 +15527,12 @@
 		".\\Cantabile.Application\\Bindable\\States.cs",
 	],
 },
+"Reset State":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Bindable\\States.cs",
+	],
+},
 "Load State with Index (Delayed)":
 {
 	"contexts": [
@@ -15852,6 +15895,7 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
 	],
 },
 "Object by Index\/Name":
@@ -16249,6 +16293,44 @@
 {
 	"contexts": [
 		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Selected Preset Index":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Selected Preset Scaled":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Is Running":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Is Suspended":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Is Unloaded":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+	],
+},
+"Run Mode":
+{
+	"contexts": [
+		".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+		".\\Cantabile.Gui\\Composited\\RunModeButton.cs",
+		".\\Cantabile.Gui\\Composited\\SoloModeButton.cs",
 	],
 },
 "Choose MIDI Route Number":
@@ -18487,13 +18569,6 @@
 {
 	"contexts": [
 		".\\Cantabile.Gui\\Composited\\MidiActivityIndicator.cs",
-	],
-},
-"Run Mode":
-{
-	"contexts": [
-		".\\Cantabile.Gui\\Composited\\RunModeButton.cs",
-		".\\Cantabile.Gui\\Composited\\SoloModeButton.cs",
 	],
 },
 "Percent:":
