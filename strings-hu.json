@@ -7139,32 +7139,13 @@
 		"translation": "Felső csatorna (&U):",
 		"machine": false
 	},
-	"Allow": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
-		],
-		"translation": "Engedélyez",
-		"machine": false
-	},
 	"Suppress": 
 	{
 		"contexts": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
 		],
 		"translation": "Elnyom",
-		"machine": false
-	},
-	"these &Notes:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
-		],
-		"translation": "ezek a megjegyzések (&N):",
 		"machine": false
 	},
 	"eg: A0,C2-C4": 
@@ -7176,15 +7157,6 @@
 		"translation": "pl. A0, C2-C4",
 		"machine": false
 	},
-	"these &Controllers:": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
-		],
-		"translation": "ezek a vezérlők (&C):",
-		"machine": false
-	},
 	"eg: 1,2,3-30,45": 
 	{
 		"contexts": 
@@ -7192,15 +7164,6 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
 		],
 		"translation": "pl. 1, 2, 3-30, 45",
-		"machine": false
-	},
-	"After &Touch": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
-		],
-		"translation": "Af&tertouch",
 		"machine": false
 	},
 	"P&rogram Change": 
@@ -20658,15 +20621,6 @@
 		"translation": "hangok",
 		"machine": false
 	},
-	"notes {0}{1}": 
-	{
-		"contexts": 
-		[
-			".\\Cantabile.Core\\MidiFilterItem.cs"
-		],
-		"translation": "{0}{1} hangok",
-		"machine": false
-	},
 	"except ": 
 	{
 		"contexts": 
@@ -28520,6 +28474,150 @@
 			".\\Cantabile\\MainWindow\\MainWindow.cs"
 		],
 		"translation": "Ez a cantabile build olyan módosításokat hajt végre a telepítési mappában, amelyek hatással lehetnek a régebbi buildek telepítésére.\n\nHa vissza kell állítania a 3693 vagy korábbi verziót, akkor a régebbi verziók telepítése előtt el kell távolítania a cantabile programot a Windows hozzáadása \/ eltávolítása programmal.\n\nSzeretne további információt erről?",
+		"machine": true
+	},
+	"Suppress Notes Except:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Elnyomja a jegyzeteket, kivéve:",
+		"machine": true
+	},
+	"Suppress Notes:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Elnyomja a jegyzeteket:",
+		"machine": true
+	},
+	"Suppress After Touch Except:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Érintés után elnyomja, kivéve:",
+		"machine": true
+	},
+	"Suppress After Touch:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Érintés után elnyomja:",
+		"machine": true
+	},
+	"Suppress Notes & AT Except:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Elnyomja& az AT megjegyzéseket, kivéve:",
+		"machine": true
+	},
+	"Suppress Notes & AT:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Jegyzetek& elnyomása AT:",
+		"machine": true
+	},
+	"(none)": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "(egyik sem)",
+		"machine": true
+	},
+	"Suppress Controllers Except:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Elnyomja a vezérlőket, kivéve:",
+		"machine": true
+	},
+	"Suppress Controllers:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Elnyomja a vezérlőket:",
+		"machine": true
+	},
+	"All &Notes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Mi&nden jegyzet",
+		"machine": true
+	},
+	"All After &Touch": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SuppressEvents.cs"
+		],
+		"translation": "Minden érin&tés után",
+		"machine": true
+	},
+	"On power resume, delay before starting audio engine:": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		],
+		"translation": "Az újraindításkor késleltesse az audio motor beindítását:",
+		"machine": true
+	},
+	"notes and after touch": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "jegyzetek és érintés után",
+		"machine": true
+	},
+	"{0} {1}{2}": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "{0} {1}{2}",
+		"machine": true
+	},
+	"all notes": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "minden jegyzet",
+		"machine": true
+	},
+	"all after touch": 
+	{
+		"contexts": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		],
+		"translation": "minden érintés után",
 		"machine": true
 	}
 }
