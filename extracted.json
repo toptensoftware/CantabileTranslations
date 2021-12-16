@@ -224,6 +224,7 @@
 		"locations": 
 		[
 			".\\Cantabile.Core\\ChannelMask.cs",
+			".\\Cantabile.Gui\\MidiChannelBar.cs",
 			".\\Cantabile.Application\\Bindable\\ObjectMidiSourceBinding.cs",
 			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiInputPort.cs",
 			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs"
@@ -245,6 +246,7 @@
 			".\\Cantabile.Core\\Curve.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs",
 			".\\Cantabile.Gui\\CCNumberField.cs",
+			".\\Cantabile.Gui\\MidiChannelBar.cs",
 			".\\Cantabile.Gui\\NoteField.cs",
 			".\\Cantabile.Utils\\ControllerKind.cs",
 			".\\Cantabile.Utils\\MusicalNote.cs",
@@ -2266,7 +2268,8 @@
 		"locations": 
 		[
 			".\\Cantabile.Gui\\CCNumberField.cs",
-			".\\Cantabile.Gui\\ChannelCombo.cs"
+			".\\Cantabile.Gui\\ChannelCombo.cs",
+			".\\Cantabile.Gui\\MidiChannelBar.cs"
 		]
 	},
 	{
@@ -4419,7 +4422,8 @@
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs"
 		]
 	},
 	{
@@ -6304,6 +6308,14 @@
 		]
 	},
 	{
+		"phrase": "Custom Event",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\CustomEventDialog.cs"
+		]
+	},
+	{
 		"phrase": "Enter &Custom Event Number: (0-16383)",
 		"translation": null,
 		"locations": 
@@ -6562,6 +6574,8 @@
 		[
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		]
 	},
@@ -8080,6 +8094,14 @@
 	},
 	{
 		"phrase": "Enable Plugin GUI Up-scaling",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
+		]
+	},
+	{
+		"phrase": "Note: plugin up-scaling also needs to be enabled in Options → General → User-Interface.",
 		"translation": null,
 		"locations": 
 		[
@@ -20082,6 +20104,14 @@
 		]
 	},
 	{
+		"phrase": "Assign To",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\Transport.cs"
+		]
+	},
+	{
 		"phrase": "Trigger\/Value",
 		"translation": null,
 		"locations": 
@@ -20402,6 +20432,70 @@
 	},
 	{
 		"phrase": " - (not configured)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
+		]
+	},
+	{
+		"phrase": "the source must be a MIDI binding point",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
+		]
+	},
+	{
+		"phrase": "MIDI targets aren't supported",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
+		]
+	},
+	{
+		"phrase": "the source MIDI event kind isn't supported",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
+		]
+	},
+	{
+		"phrase": "the source MIDI channel can't be omni",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
+		]
+	},
+	{
+		"phrase": "there is no source object with the same name as the binding's target: '{0}'",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
+		]
+	},
+	{
+		"phrase": "there is no target object with the same name as the binding's source: '{0}'",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
+		]
+	},
+	{
+		"phrase": "there is no matching reverse binding point for the binding's target",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
+		]
+	},
+	{
+		"phrase": "there is no matching reverse binding point for the binding's source",
 		"translation": null,
 		"locations": 
 		[
@@ -24147,6 +24241,14 @@
 	},
 	{
 		"phrase": "Object by Index\/Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs"
+		]
+	},
+	{
+		"phrase": "Object",
 		"translation": null,
 		"locations": 
 		[
