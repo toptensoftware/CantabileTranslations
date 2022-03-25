@@ -3082,10 +3082,12 @@
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\MainWindow\\CountdownTimerPopup.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs",
+			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -3101,6 +3103,7 @@
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs",
 			".\\Cantabile.Application\\Bindable\\Transport.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
@@ -3529,6 +3532,46 @@
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\Dialogs\\TempoDetectorSettingsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Countdown Timer - Show",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		]
+	},
+	{
+		"phrase": "Countdown Timer - Start",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		]
+	},
+	{
+		"phrase": "Countdown Timer - Restart",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		]
+	},
+	{
+		"phrase": "Countdown Timer - Stop",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
+		]
+	},
+	{
+		"phrase": "Countdown Timer - Pause",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -5014,6 +5057,14 @@
 		]
 	},
 	{
+		"phrase": "On-screen Keyboard Show MIDI Note Numbers",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		]
+	},
+	{
 		"phrase": "Set List",
 		"translation": null,
 		"locations": 
@@ -5908,6 +5959,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\Options\\GeneralPage.cs",
 			".\\Cantabile\\SidePanel\\RecordingsPanel.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteMap.cs"
@@ -7533,7 +7585,8 @@
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\SetListBuilderDialog.cs",
-			".\\Cantabile\\Dialogs\\SysExDialog.cs"
+			".\\Cantabile\\Dialogs\\SysExDialog.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
 		]
 	},
 	{
@@ -10973,6 +11026,14 @@
 		]
 	},
 	{
+		"phrase": "&Export...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		]
+	},
+	{
 		"phrase": "&Record",
 		"translation": null,
 		"locations": 
@@ -11047,6 +11108,14 @@
 		]
 	},
 	{
+		"phrase": "Controller Bar Layouts",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		]
+	},
+	{
 		"phrase": "Custom MIDI Button",
 		"translation": null,
 		"locations": 
@@ -11091,6 +11160,30 @@
 		]
 	},
 	{
+		"phrase": "Start",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\CountdownTimerPopup.cs"
+		]
+	},
+	{
+		"phrase": "Resume",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\CountdownTimerPopup.cs"
+		]
+	},
+	{
+		"phrase": "Restart",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\CountdownTimerPopup.cs"
+		]
+	},
+	{
 		"phrase": "Create Binding...",
 		"translation": null,
 		"locations": 
@@ -11116,6 +11209,14 @@
 	},
 	{
 		"phrase": "C&ompact Mode",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs"
+		]
+	},
+	{
+		"phrase": "Show MIDI Note Numbers",
 		"translation": null,
 		"locations": 
 		[
@@ -12123,6 +12224,56 @@
 		]
 	},
 	{
+		"phrase": "Countdown Timer",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+		]
+	},
+	{
+		"phrase": "S&how",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "&Start",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "&Restart",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "&Pause",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "S&top",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
 		"phrase": "Flash &Tempo",
 		"translation": null,
 		"locations": 
@@ -12408,6 +12559,14 @@
 	},
 	{
 		"phrase": "Shows the metronome panel where you can adjust tempo, time signature and metronome sound output.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		]
+	},
+	{
+		"phrase": "A simple countdown timer for timing sets, practice sessions etc...",
 		"translation": null,
 		"locations": 
 		[
@@ -19304,6 +19463,76 @@
 		]
 	},
 	{
+		"phrase": "Start or Resume",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+		]
+	},
+	{
+		"phrase": "Start\/Pause",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+		]
+	},
+	{
+		"phrase": "Start\/Stop",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+		]
+	},
+	{
+		"phrase": "Is Stopped",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs",
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		]
+	},
+	{
+		"phrase": "Is Running",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+		]
+	},
+	{
+		"phrase": "Is Paused",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs",
+			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+		]
+	},
+	{
+		"phrase": "Is Expired",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+		]
+	},
+	{
+		"phrase": "On Expired",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+		]
+	},
+	{
 		"phrase": "Engine",
 		"translation": null,
 		"locations": 
@@ -20314,24 +20543,6 @@
 	},
 	{
 		"phrase": "Is Playing",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Is Paused",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Is Stopped",
 		"translation": null,
 		"locations": 
 		[
@@ -24796,15 +25007,6 @@
 		"locations": 
 		[
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
-		]
-	},
-	{
-		"phrase": "Is Running",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		]
 	},
 	{
