@@ -3926,6 +3926,14 @@
 		]
 	},
 	{
+		"phrase": "Create Marker",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs"
+		]
+	},
+	{
 		"phrase": "Embed Object",
 		"translation": null,
 		"locations": 
@@ -4024,6 +4032,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
@@ -4061,6 +4070,15 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs"
+		]
+	},
+	{
+		"phrase": "Find",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
 		]
 	},
 	{
@@ -4358,7 +4376,23 @@
 		]
 	},
 	{
-		"phrase": "Show Tool Tips",
+		"phrase": "Tooltips - Description and Value",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\HelpCommands.cs"
+		]
+	},
+	{
+		"phrase": "Tooltips - Value Only",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\HelpCommands.cs"
+		]
+	},
+	{
+		"phrase": "Tooltips - None",
 		"translation": null,
 		"locations": 
 		[
@@ -4858,6 +4892,22 @@
 		]
 	},
 	{
+		"phrase": "Enable Pointer Lock",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		]
+	},
+	{
+		"phrase": "Disable Pointer Lock Once",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		]
+	},
+	{
 		"phrase": "Show Set List Grid",
 		"translation": null,
 		"locations": 
@@ -4946,6 +4996,14 @@
 		]
 	},
 	{
+		"phrase": "Disable Pointer Lock",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		]
+	},
+	{
 		"phrase": "Hide Set List Grid",
 		"translation": null,
 		"locations": 
@@ -5027,6 +5085,14 @@
 	},
 	{
 		"phrase": "Toggle Live Mode",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		]
+	},
+	{
+		"phrase": "Toggle Pointer Lock",
 		"translation": null,
 		"locations": 
 		[
@@ -6487,7 +6553,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+			".\\Cantabile\\Dialogs\\CustomLabelDialog.cs"
 		]
 	},
 	{
@@ -6540,6 +6607,14 @@
 	},
 	{
 		"phrase": "MIDI &Pressed Value:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
+		]
+	},
+	{
+		"phrase": "Auto-&Home Value:",
 		"translation": null,
 		"locations": 
 		[
@@ -6637,6 +6712,16 @@
 		]
 	},
 	{
+		"phrase": "Custom",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\CustomLabelDialog.cs",
+			".\\Cantabile\\MainWindow\\ControllerBar.cs",
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		]
+	},
+	{
 		"phrase": "&Command Line:",
 		"translation": null,
 		"locations": 
@@ -6650,14 +6735,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\ExecuteProgramDialog.cs"
-		]
-	},
-	{
-		"phrase": "Find",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
 		]
 	},
 	{
@@ -8553,6 +8630,14 @@
 		]
 	},
 	{
+		"phrase": "Solo this plugin",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		]
+	},
+	{
 		"phrase": "Audio Bypass",
 		"translation": null,
 		"locations": 
@@ -8585,6 +8670,15 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		]
+	},
+	{
+		"phrase": "Adjust the output gain of this plugin.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
 	{
@@ -8686,7 +8780,7 @@
 		]
 	},
 	{
-		"phrase": "Morph parameters between start and end values.",
+		"phrase": "Morph parameters between start and end values.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -8760,7 +8854,7 @@
 		]
 	},
 	{
-		"phrase": "Controls the maximum amount parameters are randomized by.",
+		"phrase": "Controls the maximum amount parameters are randomized by.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -8805,6 +8899,14 @@
 	},
 	{
 		"phrase": "Copy Program Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorDialog.cs"
+		]
+	},
+	{
+		"phrase": "Load Factory Preset",
 		"translation": null,
 		"locations": 
 		[
@@ -10936,15 +11038,6 @@
 		]
 	},
 	{
-		"phrase": "Custom",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\ControllerBar.cs",
-			".\\Cantabile\\Options\\GeneralPage.cs"
-		]
-	},
-	{
 		"phrase": "Choose Song",
 		"translation": null,
 		"locations": 
@@ -11135,6 +11228,14 @@
 	},
 	{
 		"phrase": "Right click to customize behaviour.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\ControllerBar.cs"
+		]
+	},
+	{
+		"phrase": "${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -11674,6 +11775,16 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "Pointer Lock",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
 		]
 	},
 	{
@@ -12481,7 +12592,7 @@
 		]
 	},
 	{
-		"phrase": "Show &Tool Tips",
+		"phrase": "&Tool Tips",
 		"translation": null,
 		"locations": 
 		[
@@ -12569,6 +12680,31 @@
 		]
 	},
 	{
+		"phrase": "Live Mode",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+		]
+	},
+	{
+		"phrase": "Saves and restores a different window layout and adjusts some behaviours for more suitable use during live performance.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		]
+	},
+	{
+		"phrase": "Disables mouse and touch control of most settings to prevent accidental adjustments.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs"
+		]
+	},
+	{
 		"phrase": "Master Transport",
 		"translation": null,
 		"locations": 
@@ -12610,23 +12746,6 @@
 		]
 	},
 	{
-		"phrase": "Live Mode",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
-		]
-	},
-	{
-		"phrase": "Saves and restores a different window layout and adjusts some behaviours for more suitable use during live performance.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainToolbar.cs"
-		]
-	},
-	{
 		"phrase": "Master Input Gain:",
 		"translation": null,
 		"locations": 
@@ -12643,7 +12762,7 @@
 		]
 	},
 	{
-		"phrase": "Global input gain setting applied across all songs.",
+		"phrase": "Global input gain setting applied across all songs.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -12667,7 +12786,7 @@
 		]
 	},
 	{
-		"phrase": "Global output gain setting applied across all songs.",
+		"phrase": "Global output gain setting applied across all songs.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -12921,6 +13040,14 @@
 		]
 	},
 	{
+		"phrase": "Sets the metronome's tempo in beats per minute (BPM).\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MetronomePanel.cs"
+		]
+	},
+	{
 		"phrase": "Metronome Sounds",
 		"translation": null,
 		"locations": 
@@ -12945,7 +13072,7 @@
 		]
 	},
 	{
-		"phrase": "Adjusts the volume of the metronome sounds.",
+		"phrase": "Adjusts the volume of the metronome sounds.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -12977,7 +13104,7 @@
 		]
 	},
 	{
-		"phrase": "Adjusts the relative volume of the metronome measure and beat sounds.",
+		"phrase": "Adjusts the relative volume of the metronome measure and beat sounds.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -13258,6 +13385,22 @@
 	},
 	{
 		"phrase": "Saved {0} & {1} racks",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\StatusPanel.cs"
+		]
+	},
+	{
+		"phrase": "Primary Text",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\StatusPanel.cs"
+		]
+	},
+	{
+		"phrase": "Secondary Text",
 		"translation": null,
 		"locations": 
 		[
@@ -16550,6 +16693,30 @@
 	},
 	{
 		"phrase": "Wrap around at end of rack state list",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		]
+	},
+	{
+		"phrase": "Show popup for instant load song bindings",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		]
+	},
+	{
+		"phrase": "Show popup for instant load song state bindings",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		]
+	},
+	{
+		"phrase": "Show popup for instant load rack state bindings",
 		"translation": null,
 		"locations": 
 		[
@@ -23195,6 +23362,22 @@
 		]
 	},
 	{
+		"phrase": "The pasted selection includes a linked rack that's already referenced by this song",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		]
+	},
+	{
+		"phrase": "The pasted selection includes a linked rack and can't be loaded into a another rack ",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		]
+	},
+	{
 		"phrase": "Use show notes to display notes, reminders, lyrics, ascii guitar tabs, chord progressions, images or any other information you\nmight find useful during performance.  (Right click to create and edit notes)",
 		"translation": null,
 		"locations": 
@@ -23631,7 +23814,7 @@
 		]
 	},
 	{
-		"phrase": "Controls the audio input gain setting for this song or rack.",
+		"phrase": "Controls the audio input gain setting for this song or rack.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -23747,12 +23930,11 @@
 		]
 	},
 	{
-		"phrase": "Plugin Name",
+		"phrase": "Media Player Name",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
 		]
 	},
 	{
@@ -23780,7 +23962,7 @@
 		]
 	},
 	{
-		"phrase": "Adjust the gain of this media file.",
+		"phrase": "Adjust the gain of this media file.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -23814,7 +23996,7 @@
 		]
 	},
 	{
-		"phrase": "Adjust the speed of this media file.",
+		"phrase": "Adjust the speed of this media file.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -23844,7 +24026,7 @@
 		]
 	},
 	{
-		"phrase": "Pans the audio signal from left to right.",
+		"phrase": "Pans the audio signal from left to right.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -23884,7 +24066,7 @@
 		]
 	},
 	{
-		"phrase": "Fades the audio signal from front to back.",
+		"phrase": "Fades the audio signal from front to back.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -23945,7 +24127,7 @@
 		]
 	},
 	{
-		"phrase": "Controls the audio output gain setting for this song or rack.",
+		"phrase": "Controls the audio output gain setting for this song or rack.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -23996,6 +24178,14 @@
 		]
 	},
 	{
+		"phrase": "Plugin Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
 		"phrase": "The name of this plugin.\n\nDouble click to open the plugin's editor or Alt+Double click to edit its parameters.",
 		"translation": null,
 		"locations": 
@@ -24021,14 +24211,6 @@
 	},
 	{
 		"phrase": "Manipulate MIDI events being send to the plugin.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Adjust the output gain of this plugin.",
 		"translation": null,
 		"locations": 
 		[
@@ -24077,7 +24259,7 @@
 		]
 	},
 	{
-		"phrase": "Adjusts the wet\/dry mix of this plugin.  By turning down this setting you can reduce the amount of effect applied to an audio signal.",
+		"phrase": "Adjusts the wet\/dry mix of this plugin.  By turning down this setting you can reduce the amount of effect applied to an audio signal.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -24165,7 +24347,7 @@
 		]
 	},
 	{
-		"phrase": "Adjust the output gain of this rack.",
+		"phrase": "Adjust the output gain of this rack.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
@@ -24301,7 +24483,7 @@
 		]
 	},
 	{
-		"phrase": "Adjusts the gain of this audio route.",
+		"phrase": "Adjusts the gain of this audio route.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
