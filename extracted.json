@@ -224,10 +224,10 @@
 		"locations": 
 		[
 			".\\Cantabile.Core\\ChannelMask.cs",
+			".\\Cantabile.Gui\\ChannelCombo.cs",
 			".\\Cantabile.Gui\\MidiChannelBar.cs",
-			".\\Cantabile.Application\\Bindable\\ObjectMidiSourceBinding.cs",
-			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiInputPort.cs",
-			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs"
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs",
+			".\\Cantabile.Application\\Bindings\\MidiTargetBindingPoint.cs"
 		]
 	},
 	{
@@ -254,7 +254,8 @@
 			".\\Cantabile.Utils\\ProgramMask.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\QuickController\\QuickController.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapper.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingValue.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
@@ -267,7 +268,7 @@
 		"locations": 
 		[
 			".\\Cantabile.Core\\Curve.cs",
-			".\\Cantabile.Application\\Bindings\\Binding.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\VelocityCurve.cs"
 		]
 	},
@@ -327,6 +328,8 @@
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs",
+			".\\Cantabile.Application\\Bindings\\MidiTargetBindingPoint.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
 		]
 	},
@@ -689,7 +692,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Core\\MidiControllerEvent.cs"
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
+			".\\Cantabile.Application\\Bindings\\MidiTargetBindingPoint.cs"
 		]
 	},
 	{
@@ -700,7 +704,10 @@
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
 			".\\Cantabile.Gui\\CCNumberField.cs",
 			".\\Cantabile.Gui\\CCValueField.cs",
-			".\\Cantabile.Utils\\ProgramMask.cs"
+			".\\Cantabile.Utils\\ProgramMask.cs",
+			".\\Cantabile\\Controls\\TriggerNumberField.cs",
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingValue.cs"
 		]
 	},
 	{
@@ -716,7 +723,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Core\\MidiControllerEvent.cs"
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
+			".\\Cantabile.Application\\Bindings\\MidiTargetBindingPoint.cs"
 		]
 	},
 	{
@@ -741,7 +749,7 @@
 		"locations": 
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -753,13 +761,27 @@
 		]
 	},
 	{
-		"phrase": "Program Number",
+		"phrase": "Program",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs",
-			".\\Cantabile.Core\\MidiFilterItem.cs",
-			".\\Cantabile.Utils\\ControllerKind.cs"
+			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile.Environment\\Bindings\\LoadProgramBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Song",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
+			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
+			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindableIndexed.cs"
 		]
 	},
 	{
@@ -771,11 +793,20 @@
 		]
 	},
 	{
-		"phrase": "SysEx Channel",
+		"phrase": "Device ID",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile.Core\\MidiControllerEvent.cs"
+		]
+	},
+	{
+		"phrase": "Data",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiControllerEvent.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs"
 		]
 	},
 	{
@@ -1095,6 +1126,16 @@
 		[
 			".\\Cantabile.Core\\MidiFilterItem.cs",
 			".\\Cantabile.Utils\\ControllerKind.cs"
+		]
+	},
+	{
+		"phrase": "Program Number",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Utils\\ControllerKind.cs",
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
 		]
 	},
 	{
@@ -2213,7 +2254,6 @@
 			".\\Cantabile.Gui\\Slider.cs",
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
 			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs"
 		]
@@ -2227,7 +2267,6 @@
 			".\\Cantabile.Gui\\Slider.cs",
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\ShowNoteDialog.cs",
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
 			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs"
 		]
@@ -2264,7 +2303,7 @@
 			".\\Cantabile.Environment\\Environment.cs",
 			".\\Cantabile.Environment\\OnscreenKeyboardDevice.cs",
 			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs",
+			".\\Cantabile\\MainWindow\\ViewBindable.cs",
 			".\\Cantabile\\Options\\KeyboardPage.cs",
 			".\\Cantabile.Application\\Racks\\Song\\OnscreenKeyboardState.cs"
 		]
@@ -2334,8 +2373,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Gui\\NumberPad.cs",
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
+			".\\Cantabile.Gui\\NumberPad.cs"
 		]
 	},
 	{
@@ -2996,7 +3034,7 @@
 		[
 			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -3053,8 +3091,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\CommandList.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs",
-			".\\Cantabile\\MainWindow\\ViewBindingClass.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -3071,12 +3108,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\CommandList.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs"
 		]
 	},
 	{
@@ -3087,11 +3119,11 @@
 			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
 			".\\Cantabile\\SidePanel\\StatesPanel.cs",
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs",
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -3103,10 +3135,10 @@
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -3121,11 +3153,11 @@
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorWindow.cs",
 			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs",
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs",
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -3137,11 +3169,11 @@
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs",
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -3165,8 +3197,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3174,8 +3205,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3183,8 +3213,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3192,8 +3221,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3201,8 +3229,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3210,8 +3237,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3219,8 +3245,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3228,8 +3253,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3237,8 +3261,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3246,8 +3269,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3255,8 +3277,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3264,8 +3285,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3273,8 +3293,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3282,8 +3301,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3291,8 +3309,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3300,8 +3317,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3423,8 +3439,8 @@
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
@@ -3434,8 +3450,8 @@
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
@@ -3508,9 +3524,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3518,9 +3532,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+			".\\Cantabile\\Commands\\ControlCommands.cs"
 		]
 	},
 	{
@@ -3539,7 +3551,7 @@
 			".\\Cantabile\\Commands\\ControlCommands.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -3556,7 +3568,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\ControlCommands.cs",
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -3631,7 +3643,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
@@ -3644,7 +3656,7 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
@@ -3659,7 +3671,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\Options\\PluginsPage.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
@@ -3675,7 +3687,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs",
@@ -3756,7 +3768,8 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs"
+			".\\Cantabile\\Options\\MidiPortsPage.cs",
+			".\\Cantabile.Application\\Bindable\\EnvironmentMidiPorts.cs"
 		]
 	},
 	{
@@ -3914,7 +3927,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -4021,9 +4034,9 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRouteBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
@@ -4036,9 +4049,9 @@
 			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRouteBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
@@ -4047,10 +4060,10 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Bindable\\SongBindable.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRouteBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
@@ -4062,9 +4075,9 @@
 			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRouteBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
@@ -4079,12 +4092,12 @@
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
@@ -4097,12 +4110,12 @@
 			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
@@ -4274,7 +4287,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
+			".\\Cantabile\\Commands\\FileCommands.cs",
+			".\\Cantabile.Application\\Bindable\\RackBindable.cs"
 		]
 	},
 	{
@@ -4487,7 +4501,8 @@
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindableIndexed.cs"
 		]
 	},
 	{
@@ -4534,7 +4549,7 @@
 			".\\Cantabile\\Commands\\InsertCommands.cs",
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindableIndexed.cs"
 		]
 	},
 	{
@@ -4552,7 +4567,8 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
-			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs"
+			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\AddBindingFooterSlot.cs"
 		]
 	},
 	{
@@ -4622,7 +4638,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\StateCommands.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
 		]
 	},
 	{
@@ -4712,7 +4728,7 @@
 		[
 			".\\Cantabile\\Commands\\ToolsCommands.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
 		]
 	},
 	{
@@ -4720,8 +4736,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ToolsCommands.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+			".\\Cantabile\\Commands\\ToolsCommands.cs"
 		]
 	},
 	{
@@ -4778,7 +4793,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\ToolsCommands.cs",
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
 		]
 	},
 	{
@@ -4811,7 +4826,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs",
+			".\\Cantabile\\MainWindow\\ViewBindable.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs"
 		]
 	},
@@ -4829,7 +4844,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs",
+			".\\Cantabile\\MainWindow\\ViewBindable.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs"
 		]
 	},
@@ -4880,7 +4895,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -4889,7 +4904,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -4899,9 +4914,9 @@
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs",
+			".\\Cantabile\\MainWindow\\ViewBindable.cs",
 			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile.Application\\Bindable\\Metronome.cs",
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs",
 			".\\Cantabile.Application\\Racks\\Song\\Metronome.cs"
 		]
 	},
@@ -4911,7 +4926,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -4920,7 +4935,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs",
+			".\\Cantabile\\MainWindow\\ViewBindable.cs",
 			".\\Cantabile\\SidePanel\\SidePanel.cs"
 		]
 	},
@@ -5171,7 +5186,7 @@
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\SidePanel\\SidePanel.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs",
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs",
 			".\\Cantabile.Application\\SetLists\\SetList.cs"
 		]
 	},
@@ -5442,6 +5457,42 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs"
+		]
+	},
+	{
+		"phrase": "Clamp",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Controls\\OutOfRangeCombo.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs"
+		]
+	},
+	{
+		"phrase": "Discard",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Controls\\OutOfRangeCombo.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs"
+		]
+	},
+	{
+		"phrase": "Slide",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Controls\\OutOfRangeCombo.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs"
+		]
+	},
+	{
+		"phrase": "Binding Value",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Controls\\TriggerNumberField.cs",
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
 		]
 	},
 	{
@@ -5778,12 +5829,11 @@
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
 			".\\Cantabile\\Options\\ColorsPage.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
@@ -5943,15 +5993,6 @@
 		]
 	},
 	{
-		"phrase": "Program",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
-			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
-		]
-	},
-	{
 		"phrase": "Edit Selected Entry",
 		"translation": null,
 		"locations": 
@@ -6058,148 +6099,6 @@
 		]
 	},
 	{
-		"phrase": "Binding Value Condition",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingConditionDialog.cs"
-		]
-	},
-	{
-		"phrase": "Relative Scaling:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingEncodedIndexValueDialog.cs",
-			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "Source Controller &Range:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "to:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs",
-			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "&Target Variable Range:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "t&o:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs",
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs"
-		]
-	},
-	{
-		"phrase": "&Curve Kind:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs",
-			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "(for reverse binding only)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "Out of Range Mode:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingEncodedMappingValueDialog.cs",
-			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "Select Object",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingIndiciesDialog.cs"
-		]
-	},
-	{
-		"phrase": "Value Mapping",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "&Source range from:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "&Target range from:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "Curve &Amount:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingMappingValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "On\/Off Value",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingOnOffValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "O&ff Value:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingOnOffValueDialog.cs"
-		]
-	},
-	{
-		"phrase": "&On Value:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\BindingOnOffValueDialog.cs"
-		]
-	},
-	{
 		"phrase": "Binding Delays and Schedule",
 		"translation": null,
 		"locations": 
@@ -6208,7 +6107,7 @@
 		]
 	},
 	{
-		"phrase": "Before executing trigger, delay for:",
+		"phrase": "&Before executing trigger, delay for:",
 		"translation": null,
 		"locations": 
 		[
@@ -6224,7 +6123,7 @@
 		]
 	},
 	{
-		"phrase": "After executing trigger, delay for:",
+		"phrase": "&After executing trigger, delay for:",
 		"translation": null,
 		"locations": 
 		[
@@ -6256,7 +6155,7 @@
 		]
 	},
 	{
-		"phrase": "Other bindings invoked by the same trigger",
+		"phrase": "Other bindings invoked by the same event",
 		"translation": null,
 		"locations": 
 		[
@@ -6272,7 +6171,7 @@
 		]
 	},
 	{
-		"phrase": "Pause song and state &load operations until complete",
+		"phrase": "&Pause song and state &load operations until complete",
 		"translation": null,
 		"locations": 
 		[
@@ -6280,27 +6179,136 @@
 		]
 	},
 	{
-		"phrase": "Target Value",
+		"phrase": "&Re-trigger Limit (milliseconds)",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
+			".\\Cantabile\\Dialogs\\BindingScheduleDialog.cs"
 		]
 	},
 	{
-		"phrase": "&Value(s):",
+		"phrase": "Edit Binding",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
+			".\\Cantabile\\Dialogs\\BindingSettingsDialog.cs"
 		]
 	},
 	{
-		"phrase": "Tip: you can enter a sequence of values to be cycled\nthrough by separating each value with a '{0}' character.",
+		"phrase": "Source",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\BindingSingleValueDialog.cs"
+			".\\Cantabile\\Dialogs\\BindingSettingsDialog.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsForm.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Target",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSettingsDialog.cs",
+			".\\Cantabile.Application\\Bindings\\Binding.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsForm.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs"
+		]
+	},
+	{
+		"phrase": "Mapping",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSettingsDialog.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsForm.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs"
+		]
+	},
+	{
+		"phrase": "Comments",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSettingsDialog.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
+			".\\Cantabile.Application\\Bindings\\Binding.cs",
+			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
+		]
+	},
+	{
+		"phrase": "Edit Binding - None",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSettingsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Binding Disabled by Group",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSettingsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Binding Disabled",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSettingsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Mapping ({0})",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\BindingSettingsDialog.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsForm.cs"
+		]
+	},
+	{
+		"phrase": "Invoke Binding with Value",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\BindingValueDialog.cs"
+		]
+	},
+	{
+		"phrase": "Send &Value:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\BindingValueDialog.cs"
 		]
 	},
 	{
@@ -6716,7 +6724,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs"
+			".\\Cantabile\\Dialogs\\CustomizeButtonDialog.cs",
+			".\\Cantabile.Application\\Bindable\\RackBindable.cs"
 		]
 	},
 	{
@@ -6799,7 +6808,9 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
@@ -6817,10 +6828,12 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
+			".\\Cantabile.Application\\Bindable\\RackInstanceBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindableIndexed.cs"
 		]
 	},
 	{
@@ -6838,16 +6851,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs"
-		]
-	},
-	{
-		"phrase": "Song",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
-			".\\Cantabile\\ProfilerWindow\\ProfilerSidePanel.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
 		]
 	},
 	{
@@ -6933,7 +6936,7 @@
 		]
 	},
 	{
-		"phrase": "No MIDI events found",
+		"phrase": "No events found",
 		"translation": null,
 		"locations": 
 		[
@@ -6942,14 +6945,6 @@
 	},
 	{
 		"phrase": "Please select which controller to bind from the list of learned events",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\LearnBindingDialog.cs"
-		]
-	},
-	{
-		"phrase": "{0}{1} on {2} ch {3}",
 		"translation": null,
 		"locations": 
 		[
@@ -7675,40 +7670,6 @@
 		]
 	},
 	{
-		"phrase": "Comments",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
-			".\\Cantabile.Application\\Bindings\\Binding.cs",
-			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
-			".\\Cantabile.Application\\Triggers\\Trigger.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
 		"phrase": "MIDI Filter Files",
 		"translation": null,
 		"locations": 
@@ -8075,8 +8036,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionBase.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		]
 	},
@@ -8142,8 +8102,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
 		]
 	},
 	{
@@ -8627,7 +8586,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\PluginEditorView.cs"
+			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
@@ -8825,7 +8785,7 @@
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
@@ -8866,7 +8826,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
@@ -8899,7 +8859,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
@@ -8916,8 +8876,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
 	{
@@ -9089,7 +9048,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\PluginPortsDialog.cs"
+			".\\Cantabile\\Dialogs\\PluginPortsDialog.cs",
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
 		]
 	},
 	{
@@ -9624,14 +9584,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\ProgramMaskDialog.cs"
-		]
-	},
-	{
-		"phrase": "Press &Key:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\PromptKeyDialog.cs"
 		]
 	},
 	{
@@ -10439,8 +10391,9 @@
 		[
 			".\\Cantabile\\Dialogs\\TransposeDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Bindable\\SongBindable.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRouteBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs"
 		]
 	},
@@ -10458,22 +10411,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\TransposeDialog.cs"
-		]
-	},
-	{
-		"phrase": "Set Binding Re-trigger Period",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\TriggerPeriodDialog.cs"
-		]
-	},
-	{
-		"phrase": "Re-trigger Period (milliseconds)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\TriggerPeriodDialog.cs"
 		]
 	},
 	{
@@ -10791,7 +10728,7 @@
 			".\\Cantabile\\Licensing\\RegisteredPage.cs",
 			".\\Cantabile\\Licensing\\TrialNoticePage.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs"
 		]
 	},
 	{
@@ -11351,7 +11288,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\CountdownTimerPopup.cs"
+			".\\Cantabile\\MainWindow\\CountdownTimerPopup.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
@@ -11465,7 +11403,9 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\KeyboardPanel.cs"
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs",
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs",
+			".\\Cantabile.Application\\Bindings\\MidiTargetBindingPoint.cs"
 		]
 	},
 	{
@@ -11835,7 +11775,7 @@
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -12428,7 +12368,7 @@
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs"
 		]
 	},
 	{
@@ -12760,7 +12700,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -13067,7 +13007,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MetronomePanel.cs",
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -13084,7 +13024,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MetronomePanel.cs",
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -13101,8 +13041,8 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MetronomePanel.cs",
-			".\\Cantabile.Application\\Bindable\\Metronome.cs",
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
 			".\\Cantabile.Application\\Racks\\Song\\Metronome.cs"
 		]
 	},
@@ -13248,126 +13188,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MetronomePanel.cs"
-		]
-	},
-	{
-		"phrase": "Action",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
-			".\\Cantabile.Application\\Bindable\\ExternalScript.cs",
-			".\\Cantabile.Application\\Bindable\\SetList.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Bindable\\Triggers.cs",
-			".\\Cantabile.Application\\Triggers\\Trigger.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs"
-		]
-	},
-	{
-		"phrase": "Navigation",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs",
-			".\\Cantabile\\MainWindow\\NavigationBindingClass.cs",
-			".\\Cantabile\\Options\\KeyboardPage.cs"
-		]
-	},
-	{
-		"phrase": "Escape",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
-		]
-	},
-	{
-		"phrase": "Shift+Escape",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
-		]
-	},
-	{
-		"phrase": "Up",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
-		]
-	},
-	{
-		"phrase": "Down",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
-		]
-	},
-	{
-		"phrase": "Page Up",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
-		]
-	},
-	{
-		"phrase": "Page Down",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
-		]
-	},
-	{
-		"phrase": "Home",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
-		]
-	},
-	{
-		"phrase": "End",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
-		]
-	},
-	{
-		"phrase": "Ctrl+Up",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
-		]
-	},
-	{
-		"phrase": "Ctrl+Down",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
-		]
-	},
-	{
-		"phrase": "Ctrl+Left",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
-		]
-	},
-	{
-		"phrase": "Ctrl+Right",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\NavigationBinding.cs"
 		]
 	},
 	{
@@ -13784,7 +13604,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -13793,7 +13613,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -13883,8 +13703,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
-			".\\Cantabile\\QuickController\\QuickController.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+			".\\Cantabile\\QuickController\\QuickController.cs"
 		]
 	},
 	{
@@ -13892,7 +13711,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingManualInvoke.cs"
 		]
 	},
 	{
@@ -14048,19 +13868,11 @@
 		]
 	},
 	{
-		"phrase": "Panel\/Bar\/Mode",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
-		]
-	},
-	{
 		"phrase": "On Enter Live Mode",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14068,7 +13880,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14076,7 +13888,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs",
+			".\\Cantabile\\MainWindow\\ViewBindable.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs",
 			".\\Cantabile\\SetList\\SetListGrid.cs"
 		]
@@ -14086,7 +13898,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14094,7 +13906,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14102,7 +13914,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14110,7 +13922,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14118,7 +13930,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14126,7 +13938,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14134,7 +13946,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14142,7 +13954,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs",
+			".\\Cantabile\\MainWindow\\ViewBindable.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs"
 		]
 	},
@@ -14151,7 +13963,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14159,7 +13971,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14167,7 +13979,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14175,7 +13987,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14183,7 +13995,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14191,7 +14003,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14199,7 +14011,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBinding.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -14257,17 +14069,8 @@
 		"locations": 
 		[
 			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs",
-			".\\Cantabile.Application\\Bindable\\PCKeyboard.cs",
-			".\\Cantabile.Application\\Triggers\\Trigger.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs"
-		]
-	},
-	{
-		"phrase": "Data",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorContentView.cs"
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs",
+			".\\Cantabile.Application\\Bindings\\MidiTargetBindingPoint.cs"
 		]
 	},
 	{
@@ -15538,8 +15341,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Options\\AudioEnginePage.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+			".\\Cantabile\\Options\\AudioEnginePage.cs"
 		]
 	},
 	{
@@ -15549,8 +15351,7 @@
 		[
 			".\\Cantabile\\Options\\AudioEnginePage.cs",
 			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile\\Options\\KeyboardPage.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+			".\\Cantabile\\Options\\KeyboardPage.cs"
 		]
 	},
 	{
@@ -15682,16 +15483,15 @@
 			".\\Cantabile\\Options\\ColorsPage.cs",
 			".\\Cantabile.Application\\Bindings\\Binding.cs",
 			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
-			".\\Cantabile.Application\\Triggers\\Trigger.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
@@ -16235,12 +16035,10 @@
 			".\\Cantabile\\Options\\KeyboardPage.cs",
 			".\\Cantabile.Application\\Bindings\\Binding.cs",
 			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
-			".\\Cantabile.Application\\Triggers\\Trigger.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\Route.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
@@ -16522,7 +16320,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\PropertyEditorBoolean.cs"
 		]
 	},
 	{
@@ -16530,7 +16329,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Options\\GeneralPage.cs"
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\PropertyEditorBoolean.cs"
 		]
 	},
 	{
@@ -16570,7 +16370,10 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Options\\HotKeysPage.cs"
+			".\\Cantabile\\Options\\HotKeysPage.cs",
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs",
+			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingValue.cs"
 		]
 	},
 	{
@@ -16824,6 +16627,14 @@
 	},
 	{
 		"phrase": "MIDI &Control Curve:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		]
+	},
+	{
+		"phrase": "Navigation",
 		"translation": null,
 		"locations": 
 		[
@@ -18122,8 +17933,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\QuickController\\QuickController.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+			".\\Cantabile\\QuickController\\QuickController.cs"
 		]
 	},
 	{
@@ -19103,7 +18913,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs"
+			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs",
+			".\\Cantabile.Application\\Bindable\\EnvironmentMidiPorts.cs"
 		]
 	},
 	{
@@ -19814,11 +19625,85 @@
 		]
 	},
 	{
+		"phrase": "Up one semitone",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Down one semitone",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Up one tone",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Down one tone",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Up one octave",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Down one octave",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Up one octave (snapped)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Down one octave (snapped)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Mode",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs",
+			".\\Cantabile.Environment\\Bindings\\LoadBindingPoint.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
 		"phrase": "Start or Resume",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs"
 		]
 	},
 	{
@@ -19826,7 +19711,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs"
 		]
 	},
 	{
@@ -19834,15 +19719,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
-		]
-	},
-	{
-		"phrase": "Seconds Total",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs"
 		]
 	},
 	{
@@ -19850,9 +19727,9 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs",
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -19860,9 +19737,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs"
 		]
 	},
 	{
@@ -19870,9 +19745,9 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs",
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -19880,7 +19755,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs"
 		]
 	},
 	{
@@ -19888,7 +19763,15 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Seconds Total",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs"
 		]
 	},
 	{
@@ -19896,7 +19779,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\CountdownTimer.cs"
+			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs"
 		]
 	},
 	{
@@ -19904,26 +19787,76 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
 		]
 	},
 	{
-		"phrase": "Target",
+		"phrase": "Switch",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs",
-			".\\Cantabile.Application\\Bindings\\Binding.cs",
-			".\\Cantabile.Application\\Triggers\\Trigger.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingValue.cs"
 		]
 	},
 	{
-		"phrase": "Restart Engine (Obsolete)",
+		"phrase": "Float (0.0 -> 1.0)",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+		]
+	},
+	{
+		"phrase": "Float (-1.0 -> 1.0)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+		]
+	},
+	{
+		"phrase": "Integer (0 -> 127)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+		]
+	},
+	{
+		"phrase": "Integer (0 -> 16384)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+		]
+	},
+	{
+		"phrase": "Banked Program Number",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+		]
+	},
+	{
+		"phrase": "Index",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs",
+			".\\Cantabile.Environment\\Bindings\\LoadIndexBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Gain Level",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
 		]
 	},
 	{
@@ -19931,23 +19864,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
-		]
-	},
-	{
-		"phrase": "On All Sounds Off",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
-		]
-	},
-	{
-		"phrase": "On Reset All",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
 		]
 	},
 	{
@@ -19955,7 +19872,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
 		]
 	},
 	{
@@ -19963,7 +19880,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
 		]
 	},
 	{
@@ -19971,7 +19888,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
 		]
 	},
 	{
@@ -19979,7 +19896,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
 		]
 	},
 	{
@@ -19987,7 +19904,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
 		]
 	},
 	{
@@ -19995,7 +19912,55 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Engine.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+		]
+	},
+	{
+		"phrase": "User Trigger",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+		]
+	},
+	{
+		"phrase": "Manual Invoke",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+		]
+	},
+	{
+		"phrase": "Expression",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+		]
+	},
+	{
+		"phrase": "Trigger Number",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+		]
+	},
+	{
+		"phrase": "Data Kind",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+		]
+	},
+	{
+		"phrase": " (loopback)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\EnvironmentMidiPorts.cs"
 		]
 	},
 	{
@@ -20003,7 +19968,18 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\ExternalScript.cs"
+			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs"
+		]
+	},
+	{
+		"phrase": "n\/a",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs",
+			".\\Cantabile.Application\\Bindings\\Binding.cs",
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToSwitch.cs"
 		]
 	},
 	{
@@ -20011,7 +19987,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\ExternalScript.cs"
+			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs"
 		]
 	},
 	{
@@ -20019,7 +19995,39 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\ExternalScript.cs"
+			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs"
+		]
+	},
+	{
+		"phrase": "Display Alert",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs"
+		]
+	},
+	{
+		"phrase": "Write Log Message",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs"
+		]
+	},
+	{
+		"phrase": "Working Dir.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs"
+		]
+	},
+	{
+		"phrase": "Message",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs"
 		]
 	},
 	{
@@ -20027,17 +20035,23 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs"
+			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs"
 		]
 	},
 	{
-		"phrase": "Target Parameter",
+		"phrase": "Port '{0}' Input Gain",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
+			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs"
+		]
+	},
+	{
+		"phrase": "Port '{0}' Output Gain",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs"
 		]
 	},
 	{
@@ -20045,9 +20059,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
@@ -20058,9 +20070,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs",
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
+			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs"
 		]
@@ -20070,7 +20080,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs"
+			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs"
 		]
 	},
 	{
@@ -20078,23 +20088,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs"
-		]
-	},
-	{
-		"phrase": "Port '{0}' Input Gain",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs"
-		]
-	},
-	{
-		"phrase": "Port '{0}' Output Gain",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\MasterLevels.cs"
+			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs"
 		]
 	},
 	{
@@ -20102,8 +20096,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs",
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
@@ -20111,8 +20105,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs",
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
@@ -20120,8 +20114,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs",
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
@@ -20129,7 +20123,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -20137,7 +20131,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -20145,7 +20139,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -20153,7 +20147,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -20161,7 +20155,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -20169,7 +20163,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -20177,15 +20171,15 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
-		"phrase": "Select Time Signature Preset",
+		"phrase": "Select Time Signature",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -20193,7 +20187,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -20201,7 +20195,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
@@ -20209,94 +20203,159 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Metronome.cs"
+			".\\Cantabile.Application\\Bindable\\MetronomeBindable.cs"
 		]
 	},
 	{
-		"phrase": "MIDI Channel",
+		"phrase": "Cantabile Main Window",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\ObjectMidiSourceBinding.cs",
-			".\\Cantabile.Application\\Bindable\\ObjectMidiTargetBinding.cs",
-			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiInputPort.cs",
-			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiOutputPort.cs",
-			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs"
+			".\\Cantabile.Application\\Bindable\\PCKeyboardBindable.cs"
 		]
 	},
 	{
-		"phrase": "PC Keyboard",
+		"phrase": "Any Cantabile Window",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\PCKeyboard.cs"
+			".\\Cantabile.Application\\Bindable\\PCKeyboardBindable.cs"
 		]
 	},
 	{
-		"phrase": "Main Window Key Press",
+		"phrase": "System Wide",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\PCKeyboard.cs"
+			".\\Cantabile.Application\\Bindable\\PCKeyboardBindable.cs"
 		]
 	},
 	{
-		"phrase": "Main Window Key Release",
+		"phrase": "Key Press",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\PCKeyboard.cs"
+			".\\Cantabile.Application\\Bindable\\PCKeyboardBindable.cs"
 		]
 	},
 	{
-		"phrase": "Any Window Key Press",
+		"phrase": "Key Release",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\PCKeyboard.cs"
+			".\\Cantabile.Application\\Bindable\\PCKeyboardBindable.cs"
 		]
 	},
 	{
-		"phrase": "Any Window Key Release",
+		"phrase": "Send Key",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\PCKeyboard.cs"
+			".\\Cantabile.Application\\Bindable\\PCKeyboardBindable.cs"
 		]
 	},
 	{
-		"phrase": "System Wide Key Press",
+		"phrase": "Key",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\PCKeyboard.cs"
+			".\\Cantabile.Application\\Bindable\\PCKeyboardBindable.cs"
 		]
 	},
 	{
-		"phrase": "System Wide Key Release",
+		"phrase": "Ignore in Text Fields",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\PCKeyboard.cs"
+			".\\Cantabile.Application\\Bindable\\PCKeyboardBindable.cs"
 		]
 	},
 	{
-		"phrase": "Trigger",
+		"phrase": "Scope",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Triggers\\Trigger.cs"
+			".\\Cantabile.Application\\Bindable\\PCKeyboardBindable.cs"
 		]
 	},
 	{
-		"phrase": "Output Gain (Outer)",
+		"phrase": "Load State by Program",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs"
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Load State by Index",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Next State",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Previous State",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "First State",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Last State",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Reset State",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Load State with Index",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Load State with Program",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Load State Scaled",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
 		]
 	},
 	{
@@ -20304,9 +20363,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
 		]
 	},
 	{
@@ -20314,25 +20371,71 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
 		]
 	},
 	{
-		"phrase": "On Custom Button",
+		"phrase": "On State Load",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs"
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
 		]
 	},
 	{
-		"phrase": "Save Rack",
+		"phrase": "On State Unload",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs"
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Selected State Index",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Selected State Scaled",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Selected State Program",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Selected State Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "OutputGain",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "InputGain",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
 		]
 	},
 	{
@@ -20340,17 +20443,23 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
 		]
 	},
 	{
-		"phrase": "Select Button",
+		"phrase": "Re-invoke Load Bindings",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs"
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
+		"phrase": "Re-invoke State Load Bindings",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
 		]
 	},
 	{
@@ -20358,27 +20467,31 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs"
+			".\\Cantabile.Application\\Bindable\\RackBindable.cs"
 		]
 	},
 	{
-		"phrase": "Invalid parameter",
+		"phrase": "Output Gain (outer)",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\RackLevels.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Bindable\\Triggers.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Bindable\\RackBindable.cs"
 		]
 	},
 	{
-		"phrase": "Rack States",
+		"phrase": "On Custom Button",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\RackStates.cs"
+			".\\Cantabile.Application\\Bindable\\RackBindable.cs"
+		]
+	},
+	{
+		"phrase": "Open Rack Editor",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBindable.cs"
 		]
 	},
 	{
@@ -20386,7 +20499,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Recorder.cs",
+			".\\Cantabile.Application\\Bindable\\RecorderBindable.cs",
 			".\\Cantabile.Application\\Recordings\\Recorder.cs"
 		]
 	},
@@ -20395,7 +20508,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Recorder.cs"
+			".\\Cantabile.Application\\Bindable\\RecorderBindable.cs"
 		]
 	},
 	{
@@ -20403,7 +20516,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Recorder.cs"
+			".\\Cantabile.Application\\Bindable\\RecorderBindable.cs"
 		]
 	},
 	{
@@ -20411,119 +20524,95 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Recorder.cs"
+			".\\Cantabile.Application\\Bindable\\RecorderBindable.cs"
 		]
 	},
 	{
-		"phrase": "Load Song by Program (Delayed)",
+		"phrase": "Load Song by Program",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
-		"phrase": "Load Song by Program (Instant)",
+		"phrase": "Load Song by Index",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
-		"phrase": "Load Song by Index (Delayed)",
+		"phrase": "Next Song",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
-		"phrase": "Load Song by Index (Instant)",
+		"phrase": "Previous Song",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
-		"phrase": "Next Song or Part (Delayed)",
+		"phrase": "First Song",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
-		"phrase": "Next Song or Part (Instant)",
+		"phrase": "Last Song",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
-		"phrase": "Previous Song or Part (Delayed)",
+		"phrase": "Next Part or Song",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
-		"phrase": "Previous Song or Part (Instant)",
+		"phrase": "Previous Part or Song",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
-		"phrase": "Load Song with Index (Delayed)",
+		"phrase": "Load Song with Index",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
-		"phrase": "Load Song with Index (Instant)",
+		"phrase": "Load Song with Program",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
-		"phrase": "Load Song with Program (Delayed)",
+		"phrase": "Load Song Scaled",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
-		]
-	},
-	{
-		"phrase": "Load Song with Program (Instant)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
-		]
-	},
-	{
-		"phrase": "Load Song Scaled (Delayed)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
-		]
-	},
-	{
-		"phrase": "Load Song Scaled (Instant)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
@@ -20531,7 +20620,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
@@ -20539,7 +20628,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
@@ -20547,7 +20636,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
@@ -20555,63 +20644,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs"
-		]
-	},
-	{
-		"phrase": "#{0} - N\/A",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "#{0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\SetList.cs",
-			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Bindable\\Triggers.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Transpose Octave Up",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
-		]
-	},
-	{
-		"phrase": "Transpose Octave Down",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
-		]
-	},
-	{
-		"phrase": "Transpose Octave Up (Snapped)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
-		]
-	},
-	{
-		"phrase": "Transpose Octave Down (Snapped)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+			".\\Cantabile.Application\\Bindable\\SetListBindable.cs"
 		]
 	},
 	{
@@ -20619,139 +20652,16 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SongLevels.cs"
+			".\\Cantabile.Application\\Bindable\\SongBindable.cs"
 		]
 	},
 	{
-		"phrase": "Song States",
+		"phrase": "Adjust Transpose",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\SongStates.cs"
-		]
-	},
-	{
-		"phrase": "Load State by Program (Delayed)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "Load State by Program (Instant)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "Load State by Index (Delayed)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "Load State by Index (Instant)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "Reset State",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "Load State with Index (Delayed)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "Load State with Index (Instant)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "Load State with Program (Delayed)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "Load State with Program (Instant)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "Load State Scaled (Delayed)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "Load State Scaled (Instant)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs"
-		]
-	},
-	{
-		"phrase": "Selected State Index",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
-		"phrase": "Selected State Scaled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
-		"phrase": "Selected State Program",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
-		"phrase": "Selected State Name",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\States.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Bindable\\SongBindable.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRouteBindable.cs"
 		]
 	},
 	{
@@ -20759,23 +20669,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
-		]
-	},
-	{
-		"phrase": "Assign To",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
-		]
-	},
-	{
-		"phrase": "Trigger\/Value",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
@@ -20783,9 +20677,9 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -20793,9 +20687,9 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -20803,8 +20697,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -20812,8 +20706,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -20821,8 +20715,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -20830,8 +20724,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -20839,8 +20733,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -20848,56 +20742,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "On Position",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
-		]
-	},
-	{
-		"phrase": "On Cross Position",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
-		]
-	},
-	{
-		"phrase": "On Section",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
-		]
-	},
-	{
-		"phrase": "Is After Position",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
-		]
-	},
-	{
-		"phrase": "Is Before Position",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
-		]
-	},
-	{
-		"phrase": "Is In Range",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -20905,8 +20751,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -20914,7 +20760,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
@@ -20922,7 +20768,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
@@ -20930,7 +20776,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
@@ -20938,7 +20784,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
@@ -20946,67 +20792,75 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Transport.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
-		"phrase": "Triggers",
+		"phrase": "On Position",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
-		"phrase": "Trigger Number",
+		"phrase": "On Cross Position",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
-		"phrase": "Specific Trigger Event",
+		"phrase": "On Section",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
-		"phrase": "Indexed Trigger Event",
+		"phrase": "Is After Position",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
-		"phrase": "On Specific Trigger",
+		"phrase": "Is Before Position",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
-		"phrase": "On Indexed Trigger",
+		"phrase": "Is In Range",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
-		"phrase": "Custom Event {0}",
+		"phrase": "Position",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\Triggers.cs"
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
 		]
 	},
 	{
-		"phrase": "An unknown error occured while activating the reverse binding",
+		"phrase": "End",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs"
+		]
+	},
+	{
+		"phrase": "source binding point not set",
 		"translation": null,
 		"locations": 
 		[
@@ -21014,7 +20868,31 @@
 		]
 	},
 	{
-		"phrase": "Failed to create the reverse binding because {0}",
+		"phrase": "target binding point not set",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
+		]
+	},
+	{
+		"phrase": "no valid mapping between source and target binding points",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
+		]
+	},
+	{
+		"phrase": "bi-directional mode not supported - {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\Binding.cs"
+		]
+	},
+	{
+		"phrase": "Missing: {0}",
 		"translation": null,
 		"locations": 
 		[
@@ -21023,129 +20901,6 @@
 	},
 	{
 		"phrase": "Delays",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs",
-			".\\Cantabile.Application\\Triggers\\Trigger.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Absolute",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Absolute with Jump Prevention",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "Relative Mode 1 (2's complement)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "Relative Mode 2 (Offset)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "Relative Mode 3 (Sign Bit)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": " - (not configured)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "the source must be a MIDI binding point",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "MIDI targets aren't supported",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "the source MIDI event kind isn't supported",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "the source MIDI channel can't be omni",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "the binding can't have a condition",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "there is no source object with the same name as the binding's target: '{0}'",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "there is no target object with the same name as the binding's source: '{0}'",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "there is no matching reverse binding point for the binding's target",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindings\\Binding.cs"
-		]
-	},
-	{
-		"phrase": "there is no matching reverse binding point for the binding's source",
 		"translation": null,
 		"locations": 
 		[
@@ -21167,6 +20922,103 @@
 		[
 			".\\Cantabile.Application\\Bindings\\BindingManager.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\MoveBindingMenu.cs"
+		]
+	},
+	{
+		"phrase": "Suppress",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Block until complete (and then suppress)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Full - send internal and external changes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Half - only send internal changes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "$(controllerNumberName)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs",
+			".\\Cantabile.Application\\Bindings\\MidiTargetBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Routing Mode",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Bi-di Mode",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "mapping can't be reversed",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\ReverseBinding.cs"
+		]
+	},
+	{
+		"phrase": "binding has a scheduler or delay",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\ReverseBinding.cs"
+		]
+	},
+	{
+		"phrase": "source binding point can't be reversed",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\ReverseBinding.cs"
+		]
+	},
+	{
+		"phrase": "target binding point can't be reversed",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\ReverseBinding.cs"
+		]
+	},
+	{
+		"phrase": "failed to copy properties from original binding points",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindings\\ReverseBinding.cs"
 		]
 	},
 	{
@@ -21316,6 +21168,362 @@
 		]
 	},
 	{
+		"phrase": "{0} → {1}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperAttribute.cs"
+		]
+	},
+	{
+		"phrase": "toggle mode is not supported by the target binding point",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToSwitch.cs"
+		]
+	},
+	{
+		"phrase": "Turn Off",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToSwitch.cs"
+		]
+	},
+	{
+		"phrase": "Turn On",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToSwitch.cs"
+		]
+	},
+	{
+		"phrase": "Toggle",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToSwitch.cs"
+		]
+	},
+	{
+		"phrase": "Action",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToSwitch.cs"
+		]
+	},
+	{
+		"phrase": "Value(s)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToValue.cs"
+		]
+	},
+	{
+		"phrase": "Inverted",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToCommand.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToSwitch.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToCommand.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToSwitch.cs"
+		]
+	},
+	{
+		"phrase": "Non-inverted",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToCommand.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToSwitch.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToCommand.cs"
+		]
+	},
+	{
+		"phrase": ", auto repeat",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToCommand.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToCommand.cs"
+		]
+	},
+	{
+		"phrase": "Auto Repeat",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToCommand.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToCommand.cs"
+		]
+	},
+	{
+		"phrase": "Initial Delay (ms)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToCommand.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToCommand.cs"
+		]
+	},
+	{
+		"phrase": "Repeat Delay (ms)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToCommand.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToCommand.cs"
+		]
+	},
+	{
+		"phrase": "Off: {0} \/ On: {1}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToValue.cs"
+		]
+	},
+	{
+		"phrase": "Off Value",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToValue.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionToValue.cs"
+		]
+	},
+	{
+		"phrase": "On Value",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToValue.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionToValue.cs"
+		]
+	},
+	{
+		"phrase": "And",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionBase.cs"
+		]
+	},
+	{
+		"phrase": "Or",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionBase.cs"
+		]
+	},
+	{
+		"phrase": "$(condition2label)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionBase.cs"
+		]
+	},
+	{
+		"phrase": "{0} Off: {1} \/ On: {2}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionToValue.cs"
+		]
+	},
+	{
+		"phrase": "relative mode is not supported by the target binding point",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueRelativeToValue.cs"
+		]
+	},
+	{
+		"phrase": "2's complement",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueRelativeToValue.cs"
+		]
+	},
+	{
+		"phrase": "Offset",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueRelativeToValue.cs"
+		]
+	},
+	{
+		"phrase": "Sign Bit",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueRelativeToValue.cs"
+		]
+	},
+	{
+		"phrase": "Relative → {0}-{1}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueRelativeToValue.cs"
+		]
+	},
+	{
+		"phrase": "Encoding",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueRelativeToValue.cs"
+		]
+	},
+	{
+		"phrase": "Scaling (%)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueRelativeToValue.cs"
+		]
+	},
+	{
+		"phrase": "Target Range",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueRelativeToValue.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs"
+		]
+	},
+	{
+		"phrase": "jump prevention is not supported by the target binding point",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs"
+		]
+	},
+	{
+		"phrase": "{0}-{1} → {2}-{3}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs"
+		]
+	},
+	{
+		"phrase": "Prevent Jumps",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs"
+		]
+	},
+	{
+		"phrase": "Source Range",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs"
+		]
+	},
+	{
+		"phrase": "Out of Range",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs"
+		]
+	},
+	{
+		"phrase": "Curve Kind",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs"
+		]
+	},
+	{
+		"phrase": "(max)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingValue.cs"
+		]
+	},
+	{
+		"phrase": "Value",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingValue.cs"
+		]
+	},
+	{
+		"phrase": "Delayed",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\LoadBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Instant",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\LoadBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Instant with Popup",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\LoadBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Wrap at End",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\LoadNextBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Stop at End",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\LoadNextBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Use Global Setting",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\LoadNextBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Wrap",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\LoadNextBindingPoint.cs"
+		]
+	},
+	{
 		"phrase": "Input Port",
 		"translation": null,
 		"locations": 
@@ -21353,38 +21561,6 @@
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerMidiPort.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiPortIn.cs"
-		]
-	},
-	{
-		"phrase": "(max)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Controls\\Forms\\BindingValueField.cs"
-		]
-	},
-	{
-		"phrase": "Clamp",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Controls\\Forms\\OutOfRangeCombo.cs"
-		]
-	},
-	{
-		"phrase": "Discard",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Controls\\Forms\\OutOfRangeCombo.cs"
-		]
-	},
-	{
-		"phrase": "Slide",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Controls\\Forms\\OutOfRangeCombo.cs"
 		]
 	},
 	{
@@ -21883,6 +22059,14 @@
 	},
 	{
 		"phrase": "&Key range:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs"
+		]
+	},
+	{
+		"phrase": "t&o:",
 		"translation": null,
 		"locations": 
 		[
@@ -22405,8 +22589,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\SysexEncoder.cs"
 		]
 	},
 	{
@@ -22490,21 +22673,11 @@
 		]
 	},
 	{
-		"phrase": "(learn)",
+		"phrase": "New Binding",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\AddBindingFooterSlot.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Choose Source",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\AddBindingFooterSlot.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\AddBindingFooterSlot.cs"
 		]
 	},
 	{
@@ -22566,7 +22739,23 @@
 		]
 	},
 	{
-		"phrase": "Enables or disables this binding.",
+		"phrase": "Send On",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingManualInvoke.cs"
+		]
+	},
+	{
+		"phrase": "Send Off",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingManualInvoke.cs"
+		]
+	},
+	{
+		"phrase": "Test Binding",
 		"translation": null,
 		"locations": 
 		[
@@ -22574,7 +22763,7 @@
 		]
 	},
 	{
-		"phrase": "Configures delays and scheduling for this binding.",
+		"phrase": "Immediately invokes this binding (for testing purposes).",
 		"translation": null,
 		"locations": 
 		[
@@ -22582,87 +22771,7 @@
 		]
 	},
 	{
-		"phrase": "Triggers the target of this binding (for testing, not available on all bindings).",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Source Object",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "The source object for this binding.  Changes on this object will trigger the binding and invoke the target action.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Binding Source",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Changes or events on this object will trigger the binding and invoke the target action.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Source Event",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "The event that should trigger this binding. eg: MIDI Control Change (CC) event",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Source Controller",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "The source controller that should trigger this binding. eg: The CC number",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Match the source binding value against a condition",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Binding Target",
+		"phrase": "The source of this binding.  Changes on this object will trigger the binding and invoke the target action.",
 		"translation": null,
 		"locations": 
 		[
@@ -22678,7 +22787,7 @@
 		]
 	},
 	{
-		"phrase": "Target Action",
+		"phrase": "The mapping between the source and target binding points",
 		"translation": null,
 		"locations": 
 		[
@@ -22686,7 +22795,7 @@
 		]
 	},
 	{
-		"phrase": "The MIDI event to send, or the action to perform on the target.",
+		"phrase": "\n\nFailed to bind: {0}",
 		"translation": null,
 		"locations": 
 		[
@@ -22694,7 +22803,7 @@
 		]
 	},
 	{
-		"phrase": "Target Controller",
+		"phrase": "Enables or disables this binding.{0}",
 		"translation": null,
 		"locations": 
 		[
@@ -22702,311 +22811,7 @@
 		]
 	},
 	{
-		"phrase": "The kind of MIDI event to generate when this binding is triggered.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "The value to send from this binding or settings to control how to map values between the binding source and target.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "\n\n{0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Bi-Direction Binding Mode",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Controls bi-direction binding between the source and target.{0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "(missing target='{0}')",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "(no data)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "(not configured)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "(Invalid Binding)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Inverted",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Relative → {0},{1}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Relative",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Auto-Repeat (Fast)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Auto-Repeat (Slow)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Toggle",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Choose ",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Choose MIDI Event Kind",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Enter Keystroke",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Invalid controller value",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Set Delays",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Choose Controller",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Parameter Number",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Choose Target",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "This binding is invalid because you haven't selected a compatible source and target.\n\nTip: If you're trying to bind button controller to an action, try selecting \"Controller (Button)\" or \"Controller (No Edge Button)\"as the event.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Mapping",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Invoke when Switched:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Suppress",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Blocking",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Half",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Full",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": ", failed",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Bi-directional Mode ({0})",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "&Disabled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "&Half",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "&Full",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Routing Mode ({0})",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "&Continue",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "&Block until complete (and then suppress)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs"
-		]
-	},
-	{
-		"phrase": "Re-trigger Period ({0})...",
+		"phrase": "Edit Binding...",
 		"translation": null,
 		"locations": 
 		[
@@ -23029,7 +22834,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs"
 		]
 	},
 	{
@@ -23037,24 +22842,15 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs"
 		]
 	},
 	{
-		"phrase": "Source",
+		"phrase": "Mapper",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Value",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsPanel.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\MappingPropertyList.cs"
 		]
 	},
 	{
@@ -23071,6 +22867,15 @@
 		"locations": 
 		[
 			".\\Cantabile\\RackPanel\\BindingsPanel\\MoveBindingMenu.cs"
+		]
+	},
+	{
+		"phrase": "(no items)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\PropertyEditorIndexOrProgram.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\PropertyEditorSpecialString.cs"
 		]
 	},
 	{
@@ -23692,14 +23497,6 @@
 		]
 	},
 	{
-		"phrase": "Rack: ",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs"
-		]
-	},
-	{
 		"phrase": "NewRack",
 		"translation": null,
 		"locations": 
@@ -23787,30 +23584,6 @@
 		"locations": 
 		[
 			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs"
-		]
-	},
-	{
-		"phrase": "Gain Level",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
-		]
-	},
-	{
-		"phrase": "Gain",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
 		]
 	},
 	{
@@ -24138,6 +23911,18 @@
 		]
 	},
 	{
+		"phrase": "Gain",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
+		]
+	},
+	{
 		"phrase": "Adjust the gain of this media file.\n\n${value}",
 		"translation": null,
 		"locations": 
@@ -24167,8 +23952,8 @@
 		"locations": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -24195,9 +23980,9 @@
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
 		]
 	},
@@ -24235,9 +24020,9 @@
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
 		]
 	},
@@ -24342,7 +24127,9 @@
 		"locations": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
@@ -24915,12 +24702,28 @@
 		]
 	},
 	{
+		"phrase": "Object by Index \/ Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs"
+		]
+	},
+	{
+		"phrase": "Object",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs"
+		]
+	},
+	{
 		"phrase": "Wet\/Dry",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
 		]
 	},
@@ -24929,8 +24732,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs"
 		]
 	},
 	{
@@ -24938,8 +24740,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs"
 		]
 	},
 	{
@@ -24947,32 +24748,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
-		]
-	},
-	{
-		"phrase": "Object by Index\/Name",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs"
-		]
-	},
-	{
-		"phrase": "Object",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\IndexedGenericObjectBindingClass.cs"
-		]
-	},
-	{
-		"phrase": "Media Player by Index\/Name",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\IndexedMediaPlayerBindingClass.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
@@ -25041,248 +24818,107 @@
 		]
 	},
 	{
+		"phrase": "Fast Forward Speed1",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Fast Forward Speed2",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Rewind Speed 1",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Rewind Speed 2",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Musical Fast Forward Speed 1",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Musical Fast Forward Speed 2",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Musical Rewind Speed 1",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Musical Rewind Speed 2",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Real-time Fast Forward Speed 1",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Real-tTime Fast Forward Speed 2",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Real-time Rewind Speed 1",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Real-time Rewind Speed 2",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
 		"phrase": "Play from Start",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Select File Scaled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Select File Indexed",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Selected File Name",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Next File",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Previous File",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Next Play Range",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Previous Play Range",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Select Play Range Scaled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Select Play Range Indexed",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Play Next File",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Play Previous File",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Play Next Range",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Play Previous Range",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Marker By Number",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Marker With Number",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Fast-Forward (Speed 1)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Rewind (Speed 1)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Fast-Forward (Speed 2)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Rewind (Speed 2)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Musical Fast-Forward (Speed 1)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Musical Rewind (Speed 1)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Musical Fast-Forward (Speed 2)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Musical Rewind (Speed 2)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Real-time Fast-Forward (Speed 1)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Real-time Rewind (Speed 1)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Real-time Fast-Forward (Speed2)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Real-time Rewind (Speed 2)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
-		]
-	},
-	{
-		"phrase": "Solo Exclusive",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
-		"phrase": "Audio Level",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -25290,23 +24926,196 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
-		"phrase": "Choose Marker Number",
+		"phrase": "Solo Exclusive",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
-		"phrase": "Plugin by Index\/Name",
+		"phrase": "Next File",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\IndexedPluginBindingClass.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Previous File",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Next Play Range",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Previous Play Range",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Play Next File",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Play Previous File",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Play Next Play Range",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Play Previous Play Range",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Marker By Number",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Marker With Number",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Select Specific File",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Selected File Normalized",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Selected File Index",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Selected Play Range Scaled",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Selected Play Range Indexed",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Selected File Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Audio Level",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
+		]
+	},
+	{
+		"phrase": "Play Mode",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "File Index",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Marker",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "MediaPlayer by Index \/ Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindableIndexed.cs"
+		]
+	},
+	{
+		"phrase": "Media Player: '{0}'",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindableInstance.cs"
 		]
 	},
 	{
@@ -25366,20 +25175,12 @@
 		]
 	},
 	{
-		"phrase": "Resume\/Suspend",
+		"phrase": "MIDI Route #{0}",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
-		]
-	},
-	{
-		"phrase": "Bypass",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
@@ -25387,7 +25188,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
@@ -25395,31 +25196,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
-		]
-	},
-	{
-		"phrase": "Show GUI Editor",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
-		]
-	},
-	{
-		"phrase": "Show Parameters Editor",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
-		]
-	},
-	{
-		"phrase": "Selected Preset Index",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
@@ -25427,24 +25204,48 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
-		"phrase": "Is Suspended",
+		"phrase": "Selected Preset Index",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
-		"phrase": "Is Unloaded",
+		"phrase": "Show GUI Editor",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
+		]
+	},
+	{
+		"phrase": "Show Parameters Editor",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
+		]
+	},
+	{
+		"phrase": "Suspended",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
+		]
+	},
+	{
+		"phrase": "Unloaded",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
@@ -25452,39 +25253,44 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
 	{
-		"phrase": "Choose MIDI Route Number",
+		"phrase": "Bypassed",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
 		]
 	},
 	{
-		"phrase": "MIDI Route #{0}",
+		"phrase": "Plugin by Index \/ Name",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindableIndexed.cs"
 		]
 	},
 	{
-		"phrase": "MIDI Route #",
+		"phrase": "Plugin: '{0}'",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBinding.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindableInstance.cs"
 		]
 	},
 	{
 		"phrase": "Suspend",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
+		]
+	},
+	{
+		"phrase": "Bypass",
 		"translation": null,
 		"locations": 
 		[
@@ -26124,14 +25930,6 @@
 		]
 	},
 	{
-		"phrase": "Rack by Index\/Name",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\IndexedRackHostBindingClass.cs"
-		]
-	},
-	{
 		"phrase": "Circular route between racks",
 		"translation": null,
 		"locations": 
@@ -26180,75 +25978,19 @@
 		]
 	},
 	{
-		"phrase": "Running\/Suspended",
+		"phrase": "Rack by Index \/ Name",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindableIndexed.cs"
 		]
 	},
 	{
-		"phrase": "Next State",
+		"phrase": "Rack: '{0}'",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
-		"phrase": "Previous State",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
-		"phrase": "Select State Scaled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
-		"phrase": "Select State By Program",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
-		"phrase": "Select State By Index",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
-		"phrase": "Open Rack Editor",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
-		"phrase": "Re-trigger Rack On Load",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
-		]
-	},
-	{
-		"phrase": "Re-trigger State On Load",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBinding.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindableInstance.cs"
 		]
 	}
 ]
