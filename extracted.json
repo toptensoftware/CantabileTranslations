@@ -252,6 +252,8 @@
 			".\\Cantabile.Utils\\MusicalNote.cs",
 			".\\Cantabile.Utils\\PanAndFade.cs",
 			".\\Cantabile.Utils\\ProgramMask.cs",
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\QuickController\\QuickController.cs",
 			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs",
@@ -1038,6 +1040,14 @@
 	},
 	{
 		"phrase": "Controller to Switch",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "Note to Program",
 		"translation": null,
 		"locations": 
 		[
@@ -2134,6 +2144,46 @@
 		]
 	},
 	{
+		"phrase": "Uninitialized note to program",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "Map {0} {1} to {2} to program change (base {3}) on {4}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "All Notes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "White Notes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "Black Notes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
 		"phrase": "Failed to open '{0}' - {1} (error code {2})",
 		"translation": null,
 		"locations": 
@@ -2166,6 +2216,46 @@
 		]
 	},
 	{
+		"phrase": "Use Plugin's Programs",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\PluginHost.cs",
+			".\\Cantabile.Core\\PluginUtils.cs"
+		]
+	},
+	{
+		"phrase": "Entire Plugin Snapshots",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\PluginHost.cs",
+			".\\Cantabile.Core\\PluginUtils.cs"
+		]
+	},
+	{
+		"phrase": "Parameter Sets",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\PluginHost.cs",
+			".\\Cantabile.Core\\PluginUtils.cs"
+		]
+	},
+	{
+		"phrase": "n\/a",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\PluginHost.cs",
+			".\\Cantabile.Core\\ValueMapperSwitchToCommand.cs",
+			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs",
+			".\\Cantabile.Application\\Bindings\\Binding.cs",
+			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToSwitch.cs"
+		]
+	},
+	{
 		"phrase": "Not a valid bank or preset (invalid chunk magic).",
 		"translation": null,
 		"locations": 
@@ -2183,30 +2273,6 @@
 	},
 	{
 		"phrase": "Failed to load VST 3 module - {0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Core\\PluginUtils.cs"
-		]
-	},
-	{
-		"phrase": "Use Plugin's Programs",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Core\\PluginUtils.cs"
-		]
-	},
-	{
-		"phrase": "Entire Plugin Snapshots",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Core\\PluginUtils.cs"
-		]
-	},
-	{
-		"phrase": "Parameter Sets",
 		"translation": null,
 		"locations": 
 		[
@@ -2267,18 +2333,6 @@
 		"locations": 
 		[
 			".\\Cantabile.Core\\ValueMapperSwitchToCommand.cs"
-		]
-	},
-	{
-		"phrase": "n\/a",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Core\\ValueMapperSwitchToCommand.cs",
-			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs",
-			".\\Cantabile.Application\\Bindings\\Binding.cs",
-			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs",
-			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToSwitch.cs"
 		]
 	},
 	{
@@ -2458,6 +2512,8 @@
 		"locations": 
 		[
 			".\\Cantabile.Gui\\BasicColorCombo.cs",
+			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs",
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\PropertyEditorMapperPicker.cs"
 		]
@@ -3799,6 +3855,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\Options\\PluginsPage.cs",
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
@@ -3824,7 +3881,16 @@
 		]
 	},
 	{
-		"phrase": "Create Copy",
+		"phrase": "Duplicate",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs"
+		]
+	},
+	{
+		"phrase": "Delete (Keep Connections)",
 		"translation": null,
 		"locations": 
 		[
@@ -3832,7 +3898,7 @@
 		]
 	},
 	{
-		"phrase": "Delete (Keep Connections)",
+		"phrase": "Properties",
 		"translation": null,
 		"locations": 
 		[
@@ -3879,25 +3945,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs"
-		]
-	},
-	{
-		"phrase": "Audio Ports",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile\\Options\\AudioPortsPage.cs"
-		]
-	},
-	{
-		"phrase": "MIDI Ports",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile\\Options\\MidiPortsPage.cs",
-			".\\Cantabile.Application\\Bindable\\EnvironmentMidiPorts.cs"
 		]
 	},
 	{
@@ -3985,14 +4032,6 @@
 	},
 	{
 		"phrase": "Set Transpose",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		]
-	},
-	{
-		"phrase": "Switch Preset on Program Change",
 		"translation": null,
 		"locations": 
 		[
@@ -4272,14 +4311,6 @@
 		]
 	},
 	{
-		"phrase": "Trim Unused Plugin Ports (Selected Plugin)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		]
-	},
-	{
 		"phrase": "Auto Arrange Routing Diagram",
 		"translation": null,
 		"locations": 
@@ -4461,15 +4492,7 @@
 		]
 	},
 	{
-		"phrase": "File Options",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		]
-	},
-	{
-		"phrase": "Song or Rack Options",
+		"phrase": "File Properties",
 		"translation": null,
 		"locations": 
 		[
@@ -5615,6 +5638,14 @@
 		]
 	},
 	{
+		"phrase": "Passthrough",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Controls\\OutOfRangeCombo.cs"
+		]
+	},
+	{
 		"phrase": "Binding Value",
 		"translation": null,
 		"locations": 
@@ -5624,7 +5655,113 @@
 		]
 	},
 	{
-		"phrase": "Edit {0} Channel",
+		"phrase": "Arrange Ports",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\InputPortsCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Spacing:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Tight",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Medium",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Loose",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Sort:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "By Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Audio then MIDI",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "MIDI then Audio",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Add Gap between Groups",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Arrange Rack Ports",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Arrange Environment Ports",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Arrange Inputs and Output Ports",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs"
+		]
+	},
+	{
+		"phrase": "{0} Channel",
 		"translation": null,
 		"locations": 
 		[
@@ -5662,7 +5799,10 @@
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\RackHostGeneralPage.cs",
 			".\\Cantabile\\Dialogs\\StateDialog.cs",
 			".\\Cantabile\\Licensing\\RegisterPage.cs",
 			".\\Cantabile\\Options\\ColorsPage.cs"
@@ -5866,7 +6006,8 @@
 		[
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
 			".\\Cantabile\\Dialogs\\BindingSettingsDialog.cs",
-			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs"
+			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
 		]
 	},
 	{
@@ -6397,6 +6538,7 @@
 		[
 			".\\Cantabile\\Dialogs\\BindingSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
+			".\\Cantabile\\Dialogs\\RackCommentsPage.cs",
 			".\\Cantabile\\Dialogs\\UserNotesDialog.cs",
 			".\\Cantabile.Application\\Bindings\\Binding.cs",
 			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
@@ -6456,7 +6598,7 @@
 		]
 	},
 	{
-		"phrase": "Edit Binding - {0} - {1} - #{2}",
+		"phrase": "Binding - {0} - {1} - #{2}",
 		"translation": null,
 		"locations": 
 		[
@@ -6947,6 +7089,38 @@
 		]
 	},
 	{
+		"phrase": "Rack Button",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\CustomRackButtonDialog.cs"
+		]
+	},
+	{
+		"phrase": "&Title:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\CustomRackButtonDialog.cs"
+		]
+	},
+	{
+		"phrase": "Tooltip T&itle:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\CustomRackButtonDialog.cs"
+		]
+	},
+	{
+		"phrase": "Tooltip &Description:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\CustomRackButtonDialog.cs"
+		]
+	},
+	{
 		"phrase": "&Command Line:",
 		"translation": null,
 		"locations": 
@@ -7420,10 +7594,7 @@
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\Options\\HotKeysPage.cs",
-			".\\Cantabile\\SetList\\SetListGrid.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs",
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+			".\\Cantabile\\Options\\HotKeysPage.cs"
 		]
 	},
 	{
@@ -7628,7 +7799,11 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\RackHostGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\StateDialog.cs"
 		]
 	},
 	{
@@ -7640,12 +7815,15 @@
 		]
 	},
 	{
-		"phrase": "Edit Audio Ports - {0}",
+		"phrase": "Audio Ports",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\MediaPlayerAudioPortsDialog.cs",
-			".\\Cantabile\\Dialogs\\RackAudioPortsDialog.cs"
+			".\\Cantabile\\Dialogs\\MediaPlayerAudioPortsPage.cs",
+			".\\Cantabile\\Dialogs\\PluginAudioPortsPage.cs",
+			".\\Cantabile\\Dialogs\\RackAudioPortsPage.cs",
+			".\\Cantabile\\Options\\AudioPortsPage.cs",
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
 		]
 	},
 	{
@@ -7759,12 +7937,86 @@
 		]
 	},
 	{
-		"phrase": "Edit MIDI Ports - {0}",
+		"phrase": "General",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\MediaPlayerMidiPortsDialog.cs",
-			".\\Cantabile\\Dialogs\\RackMidiPortsDialog.cs"
+			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\RackHostGeneralPage.cs",
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile\\Options\\PluginsPage.cs",
+			".\\Cantabile.Application\\Bindings\\BindingManager.cs"
+		]
+	},
+	{
+		"phrase": "Sync. &Mode:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "Master",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Slave (Realtime)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "Slave (Musical)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "R&eset MIDI at start of file",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "An media player named '{0}' already exists",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "MIDI Ports",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaPlayerMidiPortsPage.cs",
+			".\\Cantabile\\Dialogs\\RackMidiPortsPage.cs",
+			".\\Cantabile\\Options\\MidiPortsPage.cs",
+			".\\Cantabile.Application\\Bindable\\EnvironmentMidiPorts.cs",
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+		]
+	},
+	{
+		"phrase": "Media Player Properties",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaPlayerPropertiesDialog.cs"
 		]
 	},
 	{
@@ -7962,7 +8214,7 @@
 		]
 	},
 	{
-		"phrase": "Duplicate",
+		"phrase": "Undo &All...",
 		"translation": null,
 		"locations": 
 		[
@@ -8039,7 +8291,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
 		]
 	},
@@ -8314,12 +8565,11 @@
 		]
 	},
 	{
-		"phrase": "Edit {0}",
+		"phrase": "{0}",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
-			".\\Cantabile\\MainWindow\\KeyboardPanel.cs"
+			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs"
 		]
 	},
 	{
@@ -8540,6 +8790,54 @@
 		]
 	},
 	{
+		"phrase": "Audio port editing not available when plugin is unloaded",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginAudioPortsPage.cs"
+		]
+	},
+	{
+		"phrase": "&Trim Unused Ports",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginAudioPortsPage.cs"
+		]
+	},
+	{
+		"phrase": "&Map All Channels",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginAudioPortsPage.cs"
+		]
+	},
+	{
+		"phrase": "Plugin Output - {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginAudioPortsPage.cs"
+		]
+	},
+	{
+		"phrase": "Plugin Input - {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginAudioPortsPage.cs"
+		]
+	},
+	{
+		"phrase": "{0} - {1}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginAudioPortsPage.cs"
+		]
+	},
+	{
 		"phrase": "Plugin Compatibility",
 		"translation": null,
 		"locations": 
@@ -8548,11 +8846,41 @@
 		]
 	},
 	{
-		"phrase": "Enable Plugin GUI Up-scaling",
+		"phrase": "Plugin Up-scaling:",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
+		]
+	},
+	{
+		"phrase": "Disabled",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs",
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
+			".\\Cantabile\\Options\\AudioEnginePage.cs",
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		]
+	},
+	{
+		"phrase": "Enabled",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs",
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile\\Options\\KeyboardPage.cs",
+			".\\Cantabile.Application\\Bindings\\Binding.cs",
+			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -8568,7 +8896,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
+			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs",
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs"
 		]
 	},
 	{
@@ -8860,6 +9189,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
@@ -9276,35 +9606,77 @@
 		]
 	},
 	{
-		"phrase": "Edit Ports - {0}",
+		"phrase": "Preset Model:",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\PluginPortsDialog.cs"
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs"
 		]
 	},
 	{
-		"phrase": "Plugin Output - {0}",
+		"phrase": "MIDI Pro&gram Changes:",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\PluginPortsDialog.cs"
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs"
 		]
 	},
 	{
-		"phrase": "Plugin Input - {0}",
+		"phrase": "Switch Presets",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\PluginPortsDialog.cs"
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
 		]
 	},
 	{
-		"phrase": "{0} - {1}",
+		"phrase": "Forward to the plugin",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\PluginPortsDialog.cs"
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
+		]
+	},
+	{
+		"phrase": "&Up-scaling:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "&Flush tail sounds on suspend",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "Enable &MIDI Passthrough Port",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "Information",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginInformationPage.cs"
+		]
+	},
+	{
+		"phrase": "Plugin Properties",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginPropertiesDialog.cs"
 		]
 	},
 	{
@@ -9690,7 +10062,7 @@
 		]
 	},
 	{
-		"phrase": "Edit Tags for {0}",
+		"phrase": "Tags for {0}",
 		"translation": null,
 		"locations": 
 		[
@@ -9698,7 +10070,7 @@
 		]
 	},
 	{
-		"phrase": "Edit Tags for {0} plugins",
+		"phrase": "Tags for {0} plugins",
 		"translation": null,
 		"locations": 
 		[
@@ -9810,22 +10182,6 @@
 		]
 	},
 	{
-		"phrase": "Switch Presets",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		]
-	},
-	{
-		"phrase": "Forward to the plugin",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\PresetModelDialog.cs"
-		]
-	},
-	{
 		"phrase": "Enter Bank and &Program Number:",
 		"translation": null,
 		"locations": 
@@ -9922,11 +10278,11 @@
 		]
 	},
 	{
-		"phrase": " Options",
+		"phrase": "Automatically show comments when rack is inserted",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackCommentsPage.cs"
 		]
 	},
 	{
@@ -9934,7 +10290,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs"
 		]
 	},
 	{
@@ -9942,7 +10298,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs"
 		]
 	},
 	{
@@ -9950,7 +10306,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs"
 		]
 	},
 	{
@@ -9958,7 +10314,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs"
 		]
 	},
 	{
@@ -9966,7 +10322,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs"
 		]
 	},
 	{
@@ -9974,7 +10330,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs"
 		]
 	},
 	{
@@ -9982,7 +10338,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCToNote.cs"
 		]
 	},
@@ -9991,7 +10347,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs"
 		]
 	},
 	{
@@ -9999,7 +10355,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs"
 		]
 	},
 	{
@@ -10007,7 +10363,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs"
 		]
 	},
 	{
@@ -10015,13 +10371,53 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs",
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs",
 			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionBase.cs",
 			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToCommand.cs"
 		]
 	},
 	{
 		"phrase": "Let the parent &song control this rack's selected state and gain",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "Primary &View",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\RackHostGeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "An rack named '{0}' already exists",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\RackHostGeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "Rack Host Properties",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\RackHostPropertiesDialog.cs"
+		]
+	},
+	{
+		"phrase": "Song Properties",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\RackPropertiesDialog.cs"
+		]
+	},
+	{
+		"phrase": "Rack Properties",
 		"translation": null,
 		"locations": 
 		[
@@ -10374,6 +10770,14 @@
 		]
 	},
 	{
+		"phrase": "E&xclude from pre-load",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\SetListSongDialog.cs"
+		]
+	},
+	{
 		"phrase": "Please select a song",
 		"translation": null,
 		"locations": 
@@ -10483,12 +10887,11 @@
 		]
 	},
 	{
-		"phrase": "Edit State",
+		"phrase": "State Properties",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\StateDialog.cs",
-			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+			".\\Cantabile\\Dialogs\\StateDialog.cs"
 		]
 	},
 	{
@@ -11689,6 +12092,14 @@
 		]
 	},
 	{
+		"phrase": "Edit {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\KeyboardPanel.cs"
+		]
+	},
+	{
 		"phrase": "Hide Key Range",
 		"translation": null,
 		"locations": 
@@ -11905,7 +12316,7 @@
 		]
 	},
 	{
-		"phrase": "O&ptions...",
+		"phrase": "&Properties...",
 		"translation": null,
 		"locations": 
 		[
@@ -11954,11 +12365,18 @@
 		]
 	},
 	{
-		"phrase": "Renam&e...",
+		"phrase": "Dup&licate",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
 		]
 	},
 	{
@@ -12018,40 +12436,7 @@
 		]
 	},
 	{
-		"phrase": "&Audio Ports...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "MIDI P&orts...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
 		"phrase": "Trim &Unused Audio Ports",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
-		"phrase": "From Selected Plugin",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
-		"phrase": "From All Plugins in this Song\/Rack...",
 		"translation": null,
 		"locations": 
 		[
@@ -12072,6 +12457,29 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "&Rename...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs",
+			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
+		]
+	},
+	{
+		"phrase": "Pr&operties...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SidePanel\\StatesPanel.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs"
 		]
 	},
 	{
@@ -12365,10 +12773,7 @@
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\InputPortsCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
 		]
 	},
@@ -14827,7 +15232,7 @@
 		]
 	},
 	{
-		"phrase": "Set C&olor",
+		"phrase": "C&olor",
 		"translation": null,
 		"locations": 
 		[
@@ -15724,16 +16129,6 @@
 		]
 	},
 	{
-		"phrase": "Disabled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Options\\AudioEnginePage.cs",
-			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile\\Options\\KeyboardPage.cs"
-		]
-	},
-	{
 		"phrase": "Sample Rate Conversion &Quality:",
 		"translation": null,
 		"locations": 
@@ -16340,16 +16735,6 @@
 		]
 	},
 	{
-		"phrase": "General",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile\\Options\\PluginsPage.cs",
-			".\\Cantabile.Application\\Bindings\\BindingManager.cs"
-		]
-	},
-	{
 		"phrase": "User Interface",
 		"translation": null,
 		"locations": 
@@ -16403,22 +16788,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\Options\\GeneralPage.cs"
-		]
-	},
-	{
-		"phrase": "Enabled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile\\Options\\KeyboardPage.cs",
-			".\\Cantabile.Application\\Bindings\\Binding.cs",
-			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -17190,6 +17559,14 @@
 		]
 	},
 	{
+		"phrase": "Send MIDI Clock Tempo while Stopped",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\MidiPortsPage.cs"
+		]
+	},
+	{
 		"phrase": "The {0} port name '{1}' is used multiple times",
 		"translation": null,
 		"locations": 
@@ -17279,6 +17656,14 @@
 	},
 	{
 		"phrase": "Prevent &monitor power suspend",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\MiscPage.cs"
+		]
+	},
+	{
+		"phrase": "Wa&ke display on MIDI input",
 		"translation": null,
 		"locations": 
 		[
@@ -18837,15 +19222,16 @@
 		]
 	},
 	{
-		"phrase": "Rack O&ptions...",
+		"phrase": "Rack &Properties...",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
+			".\\Cantabile\\RackPanel\\RackPanel.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs"
 		]
 	},
 	{
-		"phrase": "Song O&ptions...",
+		"phrase": "Song &Properties...",
 		"translation": null,
 		"locations": 
 		[
@@ -18857,8 +19243,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
 		]
 	},
 	{
@@ -18935,14 +19320,6 @@
 		]
 	},
 	{
-		"phrase": "&Edit Song...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
-		]
-	},
-	{
 		"phrase": "Rename Song File",
 		"translation": null,
 		"locations": 
@@ -18959,7 +19336,31 @@
 		]
 	},
 	{
+		"phrase": "Duplicate Set List Entries",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		]
+	},
+	{
 		"phrase": "Create Copy of Song File",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		]
+	},
+	{
+		"phrase": "Duplicate Set List Song",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SetList\\SetListCommandTarget.cs"
+		]
+	},
+	{
+		"phrase": "Duplicate Set List Break",
 		"translation": null,
 		"locations": 
 		[
@@ -19107,26 +19508,7 @@
 		]
 	},
 	{
-		"phrase": "&Load Song",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\SetList\\SetListGrid.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs"
-		]
-	},
-	{
-		"phrase": "&Rename...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\SetList\\SetListGrid.cs",
-			".\\Cantabile\\SetList\\SetListPanel.cs",
-			".\\Cantabile\\SidePanel\\RecordingsPanel.cs"
-		]
-	},
-	{
-		"phrase": "Create Cop&y...",
+		"phrase": "&Load",
 		"translation": null,
 		"locations": 
 		[
@@ -19191,6 +19573,24 @@
 	},
 	{
 		"phrase": "Decre&ment Program Number",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		]
+	},
+	{
+		"phrase": "Dup&licate...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SetList\\SetListGrid.cs",
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		]
+	},
+	{
+		"phrase": "E&xclude from Preload",
 		"translation": null,
 		"locations": 
 		[
@@ -19264,11 +19664,13 @@
 		]
 	},
 	{
-		"phrase": "E&xclude from Preload",
+		"phrase": "Pr&operties",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\SetList\\SetListPanel.cs"
+			".\\Cantabile\\SetList\\SetListPanel.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs"
 		]
 	},
 	{
@@ -19323,6 +19725,14 @@
 	},
 	{
 		"phrase": "All",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SetList\\SetListPanel.cs"
+		]
+	},
+	{
+		"phrase": "Move Songs",
 		"translation": null,
 		"locations": 
 		[
@@ -19693,7 +20103,7 @@
 		]
 	},
 	{
-		"phrase": "Recording Set Settings...",
+		"phrase": "Recording Set Properties...",
 		"translation": null,
 		"locations": 
 		[
@@ -19845,7 +20255,7 @@
 		]
 	},
 	{
-		"phrase": "Exclude from Link Clones",
+		"phrase": "Exclude from Linked Clones",
 		"translation": null,
 		"locations": 
 		[
@@ -20053,6 +20463,14 @@
 		]
 	},
 	{
+		"phrase": "Duplicate State(s)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		]
+	},
+	{
 		"phrase": "Delete State",
 		"translation": null,
 		"locations": 
@@ -20078,7 +20496,16 @@
 		]
 	},
 	{
-		"phrase": "&Edit State...",
+		"phrase": "Edit State",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs",
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+		]
+	},
+	{
+		"phrase": "Load",
 		"translation": null,
 		"locations": 
 		[
@@ -20151,6 +20578,14 @@
 	},
 	{
 		"phrase": "&Lock '{0}'",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		]
+	},
+	{
+		"phrase": "Move States",
 		"translation": null,
 		"locations": 
 		[
@@ -20979,6 +21414,14 @@
 		]
 	},
 	{
+		"phrase": "Input Send Balance",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+		]
+	},
+	{
 		"phrase": "Re-send Bound Values",
 		"translation": null,
 		"locations": 
@@ -21591,8 +22034,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindings\\UndoUnits.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs"
+			".\\Cantabile.Application\\Bindings\\UndoUnits.cs"
 		]
 	},
 	{
@@ -22183,6 +22625,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteToProgram.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ProgramMap.cs",
@@ -23350,14 +23793,11 @@
 		]
 	},
 	{
-		"phrase": "Re&name...",
+		"phrase": "Binding Group Properties",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs"
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs"
 		]
 	},
 	{
@@ -23501,6 +23941,22 @@
 		]
 	},
 	{
+		"phrase": "Duplicate Binding(s)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs"
+		]
+	},
+	{
+		"phrase": "Move Binding Groups",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs"
+		]
+	},
+	{
 		"phrase": "Mapper",
 		"translation": null,
 		"locations": 
@@ -23542,25 +23998,50 @@
 		]
 	},
 	{
-		"phrase": "Rack &Audio Ports...",
+		"phrase": "&Port Settings...",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile\\RackPanel\\CommandHandlers\\InputPortsCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\RackPortsCommandTarget.cs"
+			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs"
 		]
 	},
 	{
-		"phrase": "Rack MIDI P&orts...",
+		"phrase": "&MIDI Monitor...",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile\\RackPanel\\CommandHandlers\\InputPortsCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\RackPortsCommandTarget.cs"
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Rack &Properties",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\InputPortsCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Global Audio Ports...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\InputPortsCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Global MIDI Ports...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\InputPortsCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs"
 		]
 	},
 	{
@@ -23574,6 +24055,15 @@
 		]
 	},
 	{
+		"phrase": "Use Shared Port Layout",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\InputPortsCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs"
+		]
+	},
+	{
 		"phrase": "Current &File Settings...",
 		"translation": null,
 		"locations": 
@@ -23582,11 +24072,13 @@
 		]
 	},
 	{
-		"phrase": "Master",
+		"phrase": "Port Settings...",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs"
+			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs"
 		]
 	},
 	{
@@ -23615,6 +24107,14 @@
 	},
 	{
 		"phrase": "Edit Current &File Settings...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Reload",
 		"translation": null,
 		"locations": 
 		[
@@ -23654,23 +24154,7 @@
 		]
 	},
 	{
-		"phrase": "R&eset MIDI at start of file",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "&MIDI Ports...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Reload",
+		"phrase": "MIDI &Monitor",
 		"translation": null,
 		"locations": 
 		[
@@ -23702,62 +24186,6 @@
 		]
 	},
 	{
-		"phrase": "Plugin Path: {0}\nPlugin ID: {1}\nTechnology: {2}\nIs Bridged: {3}\n",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Plugin Path: {0}\nPlugin ID: {1}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "\nUnknown plugin",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Plugin Path: {0}\nPlugin ID: {1}\nTechnology: {2}\n",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Caps: {0}\nVendor: {1}\nName: {2}\nVersion: {3}\nProduct: {4}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "\nGUI Upscaling: Enabled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "\nGUI Upscaling: Disabled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
 		"phrase": "Plugin Ed&itor...",
 		"translation": null,
 		"locations": 
@@ -23774,7 +24202,7 @@
 		]
 	},
 	{
-		"phrase": "Replace Plu&gin...",
+		"phrase": "&Filters...",
 		"translation": null,
 		"locations": 
 		[
@@ -23782,61 +24210,12 @@
 		]
 	},
 	{
-		"phrase": "Upgrade Plugin...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "&Running",
+		"phrase": "&Monitor",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "&Suspended",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Un&loaded",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Flus&h tail sounds on suspend",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Change Preset M&odel...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "&Enable MIDI Passthrough Port",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
 		]
 	},
 	{
@@ -23870,7 +24249,25 @@
 		]
 	},
 	{
-		"phrase": "A&udio Ports...",
+		"phrase": "&Running",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "&Suspended",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Un&loaded",
 		"translation": null,
 		"locations": 
 		[
@@ -23878,7 +24275,7 @@
 		]
 	},
 	{
-		"phrase": "Trim Unused Ports...",
+		"phrase": "Replace Plu&gin...",
 		"translation": null,
 		"locations": 
 		[
@@ -23886,7 +24283,7 @@
 		]
 	},
 	{
-		"phrase": "Map All Channels...",
+		"phrase": "Upgrade Plugin...",
 		"translation": null,
 		"locations": 
 		[
@@ -23894,47 +24291,7 @@
 		]
 	},
 	{
-		"phrase": "Plugin Infor&mation...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Compatibility Settings...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Are you sure you want to replace the current audio port assignments with {0} new {1} mapping all of the plugins audio channels?",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "port",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "ports",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Ed&it Rack...",
+		"phrase": "&Open Rack...",
 		"translation": null,
 		"locations": 
 		[
@@ -23950,7 +24307,15 @@
 		]
 	},
 	{
-		"phrase": "Edit Rack",
+		"phrase": "Open Rack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Replace Rac&k...",
 		"translation": null,
 		"locations": 
 		[
@@ -23959,22 +24324,6 @@
 	},
 	{
 		"phrase": "Convert to E&mbedded Rack...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Use Di&fferent Rack...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "&Primary View",
 		"translation": null,
 		"locations": 
 		[
@@ -24014,14 +24363,6 @@
 		]
 	},
 	{
-		"phrase": "Rename Object",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
-		]
-	},
-	{
 		"phrase": "The pasted selection includes a linked rack that's already referenced by this song",
 		"translation": null,
 		"locations": 
@@ -24038,7 +24379,31 @@
 		]
 	},
 	{
+		"phrase": "Duplicate Object(s)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		]
+	},
+	{
+		"phrase": "Duplicate Route(s)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		]
+	},
+	{
 		"phrase": "Use show notes to display notes, reminders, lyrics, ascii guitar tabs, chord progressions, images or any other information you\nmight find useful during performance.  (Right click to create and edit notes)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
+		]
+	},
+	{
+		"phrase": "Duplicate Show Note(s)",
 		"translation": null,
 		"locations": 
 		[
@@ -24142,6 +24507,14 @@
 		]
 	},
 	{
+		"phrase": "Move Show Notes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
+		]
+	},
+	{
 		"phrase": "Stereo In",
 		"translation": null,
 		"locations": 
@@ -24192,6 +24565,15 @@
 		]
 	},
 	{
+		"phrase": "Edit Route",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs",
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+		]
+	},
+	{
 		"phrase": "New Route",
 		"translation": null,
 		"locations": 
@@ -24209,14 +24591,6 @@
 	},
 	{
 		"phrase": "Delete Route",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
-		]
-	},
-	{
-		"phrase": "Edit Route",
 		"translation": null,
 		"locations": 
 		[
@@ -24263,6 +24637,15 @@
 		"locations": 
 		[
 			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs"
+		]
+	},
+	{
+		"phrase": "Send Balance Kind",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -24434,19 +24817,77 @@
 		]
 	},
 	{
-		"phrase": "Set Button Caption",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\CustomSymbolButton.cs"
-		]
-	},
-	{
 		"phrase": "Controls the audio input gain setting for this song or rack.\n\n${value}",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs"
+		]
+	},
+	{
+		"phrase": "50% A, 50% B",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "100% A",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "100% B",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "{0:0}% A, {1:0}% B",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "A\/B Send Balance",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Adjusts the send levels for audio routes marked as Send A and Send B.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
 		]
 	},
 	{
@@ -24820,6 +25261,14 @@
 		]
 	},
 	{
+		"phrase": "Manipulate MIDI events being send to the plugin.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
 		"phrase": "Plugin Name",
 		"translation": null,
 		"locations": 
@@ -24845,14 +25294,6 @@
 	},
 	{
 		"phrase": "The name of the currently selected preset for this plugin.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Manipulate MIDI events being send to the plugin.",
 		"translation": null,
 		"locations": 
 		[
@@ -25133,6 +25574,14 @@
 		]
 	},
 	{
+		"phrase": "Selects how this route is affected by the send balance",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
 		"phrase": "Adjusts this MIDI settings for this route.",
 		"translation": null,
 		"locations": 
@@ -25357,6 +25806,20 @@
 		]
 	},
 	{
+		"phrase": "Send Balance",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
+		]
+	},
+	{
 		"phrase": "Input Port - {0}",
 		"translation": null,
 		"locations": 
@@ -25433,6 +25896,22 @@
 	},
 	{
 		"phrase": "Media Player \"{0}\"",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs"
+		]
+	},
+	{
+		"phrase": "Media Play List",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs"
+		]
+	},
+	{
+		"phrase": "Replace Media File",
 		"translation": null,
 		"locations": 
 		[
@@ -25806,6 +26285,14 @@
 		]
 	},
 	{
+		"phrase": "Edit Plugin Audio Ports",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		]
+	},
+	{
 		"phrase": "Run and Bypass Mode",
 		"translation": null,
 		"locations": 
@@ -25839,6 +26326,62 @@
 	},
 	{
 		"phrase": "Unrecognized file type",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		]
+	},
+	{
+		"phrase": "Plugin Path: {0}\nPlugin ID: {1}\nTechnology: {2}\nIs Bridged: {3}\n",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		]
+	},
+	{
+		"phrase": "Plugin Path: {0}\nPlugin ID: {1}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		]
+	},
+	{
+		"phrase": "\nUnknown plugin",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		]
+	},
+	{
+		"phrase": "Plugin Path: {0}\nPlugin ID: {1}\nTechnology: {2}\n",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		]
+	},
+	{
+		"phrase": "Caps: {0}\nVendor: {1}\nName: {2}\nVersion: {3}\nProduct: {4}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		]
+	},
+	{
+		"phrase": "\nGUI Upscaling: Enabled",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		]
+	},
+	{
+		"phrase": "\nGUI Upscaling: Disabled",
 		"translation": null,
 		"locations": 
 		[
