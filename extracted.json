@@ -1055,6 +1055,14 @@
 		]
 	},
 	{
+		"phrase": "Note On De-duplicator",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
 		"phrase": "-- no description --",
 		"translation": null,
 		"locations": 
@@ -2184,6 +2192,22 @@
 		]
 	},
 	{
+		"phrase": "Uninitialized note de-duper",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "De-dup Note On on {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
 		"phrase": "Failed to open '{0}' - {1} (error code {2})",
 		"translation": null,
 		"locations": 
@@ -2252,7 +2276,8 @@
 			".\\Cantabile.Application\\Bindable\\ExternalScriptBindable.cs",
 			".\\Cantabile.Application\\Bindings\\Binding.cs",
 			".\\Cantabile.Application\\Bindings\\MidiSourceBindingPoint.cs",
-			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToSwitch.cs"
+			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToSwitch.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs"
 		]
 	},
 	{
@@ -8487,6 +8512,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs",
 			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionBase.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		]
@@ -10372,6 +10398,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\RackGeneralPage.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs",
 			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionBase.cs",
 			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToCommand.cs"
 		]
@@ -10998,7 +11025,8 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\TempoDetectorSettingsDialog.cs",
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteOnDeduper.cs"
 		]
 	},
 	{
@@ -22199,6 +22227,55 @@
 		]
 	},
 	{
+		"phrase": "When Value Changes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs"
+		]
+	},
+	{
+		"phrase": "If Condition True",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs"
+		]
+	},
+	{
+		"phrase": "When Condition Becomes True",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs"
+		]
+	},
+	{
+		"phrase": "When Condition Changes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs"
+		]
+	},
+	{
+		"phrase": "Value",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingValue.cs"
+		]
+	},
+	{
+		"phrase": "Fire",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs"
+		]
+	},
+	{
 		"phrase": "Invoke",
 		"translation": null,
 		"locations": 
@@ -22500,14 +22577,6 @@
 		]
 	},
 	{
-		"phrase": "Value",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Environment\\Bindings\\BindingValue.cs"
-		]
-	},
-	{
 		"phrase": "Delayed",
 		"translation": null,
 		"locations": 
@@ -22625,6 +22694,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteOnDeduper.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteToProgram.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\PitchedVelocityRamp.cs",
