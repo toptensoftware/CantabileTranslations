@@ -245,6 +245,7 @@
 		[
 			".\\Cantabile.Core\\Curve.cs",
 			".\\Cantabile.Core\\MidiFilterItem.cs",
+			".\\Cantabile.Core\\ValueCondition.cs",
 			".\\Cantabile.Gui\\CCNumberField.cs",
 			".\\Cantabile.Gui\\MidiChannelBar.cs",
 			".\\Cantabile.Gui\\NoteField.cs",
@@ -2305,6 +2306,66 @@
 		]
 	},
 	{
+		"phrase": "Always",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\ValueCondition.cs",
+			".\\Cantabile\\Dialogs\\RackGeneralPage.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionBase.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToCommand.cs"
+		]
+	},
+	{
+		"phrase": "Less than",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\ValueCondition.cs"
+		]
+	},
+	{
+		"phrase": "Less than or Equal",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\ValueCondition.cs"
+		]
+	},
+	{
+		"phrase": "Greater than",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\ValueCondition.cs"
+		]
+	},
+	{
+		"phrase": "Greater than or Equal",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\ValueCondition.cs"
+		]
+	},
+	{
+		"phrase": "Equal",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\ValueCondition.cs"
+		]
+	},
+	{
+		"phrase": "Not Equal",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\ValueCondition.cs"
+		]
+	},
+	{
 		"phrase": "If True",
 		"translation": null,
 		"locations": 
@@ -2562,6 +2623,15 @@
 		]
 	},
 	{
+		"phrase": "Gain:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Gui\\DbKnob.cs",
+			".\\Cantabile.Gui\\Slider.cs"
+		]
+	},
+	{
 		"phrase": "Expand\/Collapse (Ctrl+Left\/Right)",
 		"translation": null,
 		"locations": 
@@ -2632,14 +2702,6 @@
 	},
 	{
 		"phrase": "Front",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Gui\\Slider.cs"
-		]
-	},
-	{
-		"phrase": "Gain:",
 		"translation": null,
 		"locations": 
 		[
@@ -9690,6 +9752,14 @@
 		]
 	},
 	{
+		"phrase": "An plugin named '{0}' already exists",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs"
+		]
+	},
+	{
 		"phrase": "Information",
 		"translation": null,
 		"locations": 
@@ -10393,17 +10463,6 @@
 		]
 	},
 	{
-		"phrase": "Always",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\RackGeneralPage.cs",
-			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs",
-			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionBase.cs",
-			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToCommand.cs"
-		]
-	},
-	{
 		"phrase": "Let the parent &song control this rack's selected state and gain",
 		"translation": null,
 		"locations": 
@@ -11060,6 +11119,14 @@
 		[
 			".\\Cantabile\\Dialogs\\TimeSignatureDialog.cs",
 			".\\Cantabile.Application\\Racks\\Song\\Metronome.cs"
+		]
+	},
+	{
+		"phrase": "&Time Signature:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\TimeSignatureDialog.cs"
 		]
 	},
 	{
@@ -20964,7 +21031,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Bindable\\EngineBindable.cs"
+			".\\Cantabile.Application\\Bindable\\EngineBindable.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperExpression.cs"
 		]
 	},
 	{
@@ -22211,6 +22279,14 @@
 		]
 	},
 	{
+		"phrase": "Command to Switch",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToSwitch.cs"
+		]
+	},
+	{
 		"phrase": "Action",
 		"translation": null,
 		"locations": 
@@ -22219,11 +22295,27 @@
 		]
 	},
 	{
+		"phrase": "Command to Value",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToValue.cs"
+		]
+	},
+	{
 		"phrase": "Value(s)",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile.Environment\\Bindings\\BindingMapperCommandToValue.cs"
+		]
+	},
+	{
+		"phrase": "Direct",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperDirect.cs"
 		]
 	},
 	{
@@ -22283,6 +22375,14 @@
 		]
 	},
 	{
+		"phrase": "Switch to Command",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToCommand.cs"
+		]
+	},
+	{
 		"phrase": "Invoke",
 		"translation": null,
 		"locations": 
@@ -22327,7 +22427,23 @@
 		]
 	},
 	{
+		"phrase": "Switch to Switch",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToSwitch.cs"
+		]
+	},
+	{
 		"phrase": "Off\/On → {0}\/{1}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperSwitchToValue.cs"
+		]
+	},
+	{
+		"phrase": "Switch to Value",
 		"translation": null,
 		"locations": 
 		[
@@ -22415,6 +22531,14 @@
 		]
 	},
 	{
+		"phrase": "Value Condition",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionToValue.cs"
+		]
+	},
+	{
 		"phrase": "False Value",
 		"translation": null,
 		"locations": 
@@ -22483,6 +22607,14 @@
 		]
 	},
 	{
+		"phrase": "Relative Index Encoder",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueRelativeToIndex.cs"
+		]
+	},
+	{
 		"phrase": "Encoding",
 		"translation": null,
 		"locations": 
@@ -22502,6 +22634,14 @@
 	},
 	{
 		"phrase": "Relative → {0}-{1}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueRelativeToValue.cs"
+		]
+	},
+	{
+		"phrase": "Relative Value Encoder",
 		"translation": null,
 		"locations": 
 		[
@@ -22536,7 +22676,23 @@
 		]
 	},
 	{
+		"phrase": "Value to Command",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToCommand.cs"
+		]
+	},
+	{
 		"phrase": "not ({0})",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToSwitch.cs"
+		]
+	},
+	{
+		"phrase": "Value to Switch",
 		"translation": null,
 		"locations": 
 		[
@@ -22557,6 +22713,16 @@
 		"locations": 
 		[
 			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs"
+		]
+	},
+	{
+		"phrase": "Range",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueToValue.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs"
 		]
 	},
 	{
@@ -22866,15 +23032,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs"
-		]
-	},
-	{
-		"phrase": "Range",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\CCMap.cs",
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs"
 		]
 	},
 	{
