@@ -4685,7 +4685,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
+			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
 		]
 	},
 	{
@@ -4693,7 +4694,8 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
+			".\\Cantabile\\Commands\\EditCommands.cs",
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
 		]
 	},
 	{
@@ -6401,6 +6403,7 @@
 			".\\Cantabile\\Dialogs\\AudioChannelDialog.cs",
 			".\\Cantabile\\Dialogs\\AudioPortDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaLoopRangeDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
@@ -8400,6 +8403,67 @@
 		]
 	},
 	{
+		"phrase": "Edit Loop Range",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaLoopRangeDialog.cs"
+		]
+	},
+	{
+		"phrase": "&Color:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaLoopRangeDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\RackHostGeneralPage.cs",
+			".\\Cantabile\\Dialogs\\StateDialog.cs"
+		]
+	},
+	{
+		"phrase": "&Start Position:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaLoopRangeDialog.cs"
+		]
+	},
+	{
+		"phrase": "&End Position:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaLoopRangeDialog.cs"
+		]
+	},
+	{
+		"phrase": "&Loop count:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaLoopRangeDialog.cs"
+		]
+	},
+	{
+		"phrase": "(0 = infinite)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaLoopRangeDialog.cs"
+		]
+	},
+	{
+		"phrase": "Infinite",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaLoopRangeDialog.cs"
+		]
+	},
+	{
 		"phrase": "Edit Marker",
 		"translation": null,
 		"locations": 
@@ -8413,18 +8477,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs"
-		]
-	},
-	{
-		"phrase": "&Color:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\MediaMarkerDialog.cs",
-			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs",
-			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
-			".\\Cantabile\\Dialogs\\RackHostGeneralPage.cs",
-			".\\Cantabile\\Dialogs\\StateDialog.cs"
 		]
 	},
 	{
@@ -14205,6 +14257,16 @@
 		]
 	},
 	{
+		"phrase": "Loop Mode",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainToolbar.cs",
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
 		"phrase": "Master Transport",
 		"translation": null,
 		"locations": 
@@ -15199,6 +15261,22 @@
 		]
 	},
 	{
+		"phrase": "Set as Play Range",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		]
+	},
+	{
+		"phrase": "Update Loop Range from Play Range",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		]
+	},
+	{
 		"phrase": "Loop On",
 		"translation": null,
 		"locations": 
@@ -15370,6 +15448,14 @@
 	},
 	{
 		"phrase": "Create &Marker...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\TimelinePanel.cs"
+		]
+	},
+	{
+		"phrase": "Create Loop &Range...",
 		"translation": null,
 		"locations": 
 		[
@@ -22448,6 +22534,42 @@
 		[
 			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Loop Mode - Cycle Modes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Loop Mode - Auto\/Break",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Loop Mode - Auto\/Loop",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Loop Mode - Break\/Loop",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
