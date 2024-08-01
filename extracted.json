@@ -1068,6 +1068,14 @@
 		]
 	},
 	{
+		"phrase": "Note Off Converter",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
 		"phrase": "-- no description --",
 		"translation": null,
 		"locations": 
@@ -1997,7 +2005,23 @@
 		]
 	},
 	{
-		"phrase": "Sostenuto on {0}",
+		"phrase": "Sostenuto {0} ({1})",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "Allow Retriggering of Sostenuto Held Notes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "Suppress Retriggering of Sostenuto Held notes",
 		"translation": null,
 		"locations": 
 		[
@@ -2214,6 +2238,38 @@
 	},
 	{
 		"phrase": "De-dup Note On on {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "Uninitialized note off converter",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "Convert {0} on {1}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "Note Off to Zero Velocity",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Core\\MidiFilterItem.cs"
+		]
+	},
+	{
+		"phrase": "Zero Velocity to Note Off",
 		"translation": null,
 		"locations": 
 		[
@@ -12541,7 +12597,9 @@
 		[
 			".\\Cantabile\\Dialogs\\TempoDetectorSettingsDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs",
-			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteOnDeduper.cs"
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteOffConverter.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteOnDeduper.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\Sostenuto.cs"
 		]
 	},
 	{
@@ -16551,12 +16609,11 @@
 		]
 	},
 	{
-		"phrase": "Note Off",
+		"phrase": "Note Off *",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs",
-			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs"
 		]
 	},
 	{
@@ -16569,6 +16626,15 @@
 	},
 	{
 		"phrase": "Note On",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorEvent.cs",
+			".\\Cantabile\\MidiMonitorWindow\\MidiMonitorSettingsDialog.cs"
+		]
+	},
+	{
+		"phrase": "Note Off",
 		"translation": null,
 		"locations": 
 		[
@@ -24531,6 +24597,7 @@
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRange.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\KeyRangeToNote.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteAsController.cs",
+			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteOffConverter.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteOnDeduper.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\NoteToProgram.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterPanels\\ParameterAutomation.cs",
