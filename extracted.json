@@ -257,19 +257,16 @@
 			".\\Cantabile.Utils\\ProgramMask.cs",
 			".\\Cantabile\\Dialogs\\ArrangePortsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerGeneralPage.cs",
-			".\\Cantabile\\Dialogs\\SaveTabSetDialog.cs",
-			".\\Cantabile\\Dialogs\\SaveWindowLayoutDialog.cs",
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\MainWindow\\ViewBindable.cs",
 			".\\Cantabile\\QuickController\\QuickController.cs",
 			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs",
 			".\\Cantabile.Environment\\Bindings\\BindingMapper.cs",
 			".\\Cantabile.Environment\\Bindings\\BindingValue.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\PropertyEditorModifierPicker.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
 		]
 	},
 	{
@@ -719,8 +716,7 @@
 			".\\Cantabile.Utils\\ProgramMask.cs",
 			".\\Cantabile\\Controls\\TriggerNumberField.cs",
 			".\\Cantabile.Application\\Bindable\\EngineBindable.cs",
-			".\\Cantabile.Environment\\Bindings\\BindingValue.cs",
-			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
+			".\\Cantabile.Environment\\Bindings\\BindingValue.cs"
 		]
 	},
 	{
@@ -3888,8 +3884,8 @@
 		"locations": 
 		[
 			".\\Cantabile.Gui\\Slider.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
 	{
@@ -3943,14 +3939,6 @@
 	},
 	{
 		"phrase": "Tell Me More",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Gui\\TipPanel.cs"
-		]
-	},
-	{
-		"phrase": "Hide All Tips",
 		"translation": null,
 		"locations": 
 		[
@@ -4544,15 +4532,6 @@
 		]
 	},
 	{
-		"phrase": "Routing Diagram",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\CommandList.cs",
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
 		"phrase": "File",
 		"translation": null,
 		"locations": 
@@ -4578,8 +4557,8 @@
 		[
 			".\\Cantabile\\Commands\\CommandList.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\AddObjectFooterSlot.cs",
-			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
 		]
 	},
 	{
@@ -4596,8 +4575,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\CommandList.cs",
-			".\\Cantabile\\MainWindow\\ViewBindable.cs",
-			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -4614,7 +4592,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\CommandList.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs"
 		]
 	},
 	{
@@ -4628,7 +4606,7 @@
 			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs",
 			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
@@ -4642,7 +4620,7 @@
 			".\\Cantabile\\MainWindow\\MainToolbar.cs",
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
@@ -4661,7 +4639,7 @@
 			".\\Cantabile\\ProfilerWindow\\ProfilerWindow.cs",
 			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs",
 			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
@@ -4677,7 +4655,7 @@
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
 			".\\Cantabile.Application\\Bindable\\CountdownTimerBindable.cs",
 			".\\Cantabile.Application\\Bindable\\TransportBindable.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
@@ -5151,8 +5129,8 @@
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs",
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
 		]
 	},
 	{
@@ -5164,8 +5142,8 @@
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs",
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
 		]
 	},
 	{
@@ -5177,12 +5155,12 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\Options\\PluginsPage.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanelCommands.cs",
 			".\\Cantabile\\SetList\\SetListCommandTarget.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs",
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
 		]
 	},
 	{
@@ -5194,12 +5172,12 @@
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
 			".\\Cantabile\\MainWindow\\TimelinePanel.cs",
-			".\\Cantabile\\RackPanel\\RoutingPanelCommands.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs",
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs",
-			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
 		]
 	},
 	{
@@ -5209,7 +5187,6 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
 			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
 		]
@@ -5278,8 +5255,8 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -5288,7 +5265,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -5582,9 +5559,9 @@
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
 			".\\Cantabile\\RackPanel\\RackPanel.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
@@ -5695,6 +5672,38 @@
 		]
 	},
 	{
+		"phrase": "Save Song or Rack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		]
+	},
+	{
+		"phrase": "Save Song or Rack As",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		]
+	},
+	{
+		"phrase": "Save Song or Rack Copy",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		]
+	},
+	{
+		"phrase": "Revert Song or Rack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\FileCommands.cs"
+		]
+	},
+	{
 		"phrase": "New Set List",
 		"translation": null,
 		"locations": 
@@ -5787,14 +5796,6 @@
 		]
 	},
 	{
-		"phrase": "Save Song & Racks",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\FileCommands.cs"
-		]
-	},
-	{
 		"phrase": "File Properties",
 		"translation": null,
 		"locations": 
@@ -5877,7 +5878,7 @@
 		]
 	},
 	{
-		"phrase": "Toggle Tip Panels",
+		"phrase": "Toggle Help Panels",
 		"translation": null,
 		"locations": 
 		[
@@ -5965,8 +5966,8 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\AddObjectFooterSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
 		]
 	},
 	{
@@ -5975,7 +5976,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\AddObjectFooterSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
 		]
 	},
 	{
@@ -6002,7 +6003,7 @@
 		[
 			".\\Cantabile\\Commands\\InsertCommands.cs",
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\AddObjectFooterSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindableIndexed.cs"
 		]
 	},
@@ -6267,40 +6268,17 @@
 		]
 	},
 	{
-		"phrase": "Close Tab",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Show Show Notes",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Hide Show Notes",
+		"phrase": "Show Notes",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs",
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
 		]
 	},
 	{
-		"phrase": "Toggle Show Notes",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Routing Table",
+		"phrase": "Main",
 		"translation": null,
 		"locations": 
 		[
@@ -6314,8 +6292,7 @@
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\MainWindow\\ViewBindable.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs",
-			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
 		]
 	},
 	{
@@ -6884,6 +6861,22 @@
 		]
 	},
 	{
+		"phrase": "Routing Table",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		]
+	},
+	{
+		"phrase": "Routing Diagram",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs"
+		]
+	},
+	{
 		"phrase": "Toggle Routing View",
 		"translation": null,
 		"locations": 
@@ -6925,258 +6918,6 @@
 	},
 	{
 		"phrase": "Activate Panel Menu",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Split None",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Split Left\/Right",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Split Top\/Bottom",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Save Window Layout",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\Dialogs\\SaveWindowLayoutDialog.cs"
-		]
-	},
-	{
-		"phrase": "Update Window Layout",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Manage Window Layouts",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\Dialogs\\ManageWindowLayoutsDialog.cs"
-		]
-	},
-	{
-		"phrase": "Load Window Layout 1",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Window Layout 2",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Window Layout 3",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Window Layout 4",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Window Layout 5",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Window Layout 6",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Window Layout 7",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Window Layout 8",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Window Layout 9",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Window Layout 10",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Save Tab Set",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\Dialogs\\SaveTabSetDialog.cs"
-		]
-	},
-	{
-		"phrase": "Update Tab Set",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Manage Tab Sets",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs",
-			".\\Cantabile\\Dialogs\\ManageTabSetsDialog.cs"
-		]
-	},
-	{
-		"phrase": "Load Tab Set 1",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Tab Set 2",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Tab Set 3",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Tab Set 4",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Tab Set 5",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Tab Set 6",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Tab Set 7",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Tab Set 8",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Tab Set 9",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Load Tab Set 10",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Move Tab Left",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
-		]
-	},
-	{
-		"phrase": "Move Tab Right",
 		"translation": null,
 		"locations": 
 		[
@@ -7418,8 +7159,8 @@
 			".\\Cantabile\\Dialogs\\MediaFileMidiAssignmentDialog.cs",
 			".\\Cantabile\\Dialogs\\SetListSongDialog.cs",
 			".\\Cantabile\\Options\\AudioEnginePage.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -7473,8 +7214,6 @@
 			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
 			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
-			".\\Cantabile\\Dialogs\\ManageTabSetsDialog.cs",
-			".\\Cantabile\\Dialogs\\ManageWindowLayoutsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
@@ -7491,8 +7230,6 @@
 			".\\Cantabile\\Dialogs\\ChooseRackDialog.cs",
 			".\\Cantabile\\Dialogs\\ChooseTemplateDialog.cs",
 			".\\Cantabile\\Dialogs\\LocateMissingFilesDialog.cs",
-			".\\Cantabile\\Dialogs\\ManageTabSetsDialog.cs",
-			".\\Cantabile\\Dialogs\\ManageWindowLayoutsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiRouteSettingsDialog.cs",
@@ -7694,8 +7431,6 @@
 			".\\Cantabile\\Dialogs\\AudioPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\BindingBankedProgramValueDialog.cs",
 			".\\Cantabile\\Dialogs\\GlobalFindDialog.cs",
-			".\\Cantabile\\Dialogs\\ManageTabSetsDialog.cs",
-			".\\Cantabile\\Dialogs\\ManageWindowLayoutsDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\PluginAudioBussesPage.cs",
@@ -8091,7 +7826,7 @@
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsForm.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -8131,15 +7866,15 @@
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingsTable.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\OutputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
@@ -9031,82 +8766,6 @@
 		]
 	},
 	{
-		"phrase": "Shortcut",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\ManageTabSetsDialog.cs",
-			".\\Cantabile\\Dialogs\\ManageWindowLayoutsDialog.cs"
-		]
-	},
-	{
-		"phrase": "&Edit...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\ManageTabSetsDialog.cs",
-			".\\Cantabile\\Dialogs\\ManageWindowLayoutsDialog.cs",
-			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
-			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\Options\\HotKeysPage.cs"
-		]
-	},
-	{
-		"phrase": "&Delete...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\ManageTabSetsDialog.cs",
-			".\\Cantabile\\Dialogs\\ManageWindowLayoutsDialog.cs"
-		]
-	},
-	{
-		"phrase": "Multiple tab sets have the same shortcut.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\ManageTabSetsDialog.cs"
-		]
-	},
-	{
-		"phrase": "Include Window Position",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\ManageWindowLayoutsDialog.cs"
-		]
-	},
-	{
-		"phrase": "Yes",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\ManageWindowLayoutsDialog.cs",
-			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\PropertyEditorBoolean.cs"
-		]
-	},
-	{
-		"phrase": "No",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\ManageWindowLayoutsDialog.cs",
-			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionToValue.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\PropertyEditorBoolean.cs"
-		]
-	},
-	{
-		"phrase": "Multiple layouts have the same shortcut.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\ManageWindowLayoutsDialog.cs"
-		]
-	},
-	{
 		"phrase": "Audio Channel Assignment",
 		"translation": null,
 		"locations": 
@@ -9153,7 +8812,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
 		]
 	},
 	{
@@ -9254,7 +8913,7 @@
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MidiPortsEditor.cs",
 			".\\Cantabile\\Dialogs\\MultiDriverConfigDialog.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -9281,6 +8940,17 @@
 		[
 			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
 			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
+			".\\Cantabile\\Options\\HotKeysPage.cs"
+		]
+	},
+	{
+		"phrase": "&Edit...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
+			".\\Cantabile\\Dialogs\\MediaPlayerDialog.cs",
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\Options\\HotKeysPage.cs"
 		]
 	},
@@ -9365,9 +9035,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\MediaFileDialog.cs",
-			".\\Cantabile\\Dialogs\\SaveTabSetDialog.cs",
-			".\\Cantabile\\Dialogs\\SaveWindowLayoutDialog.cs"
+			".\\Cantabile\\Dialogs\\MediaFileDialog.cs"
 		]
 	},
 	{
@@ -9640,8 +9308,8 @@
 			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RackHostCommandDispatcher.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\AddObjectFooterSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\AddRouteFooterSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddRouteFooterSlot.cs"
 		]
 	},
 	{
@@ -9775,6 +9443,14 @@
 		]
 	},
 	{
+		"phrase": " (Disconnected or not mapped to a port)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\MidiDeviceSettingsDialog.cs"
+		]
+	},
+	{
 		"phrase": "Edit MIDI Filter",
 		"translation": null,
 		"locations": 
@@ -9813,7 +9489,7 @@
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
 		]
 	},
 	{
@@ -9847,8 +9523,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
-			".\\Cantabile\\Dialogs\\TransposeDialog.cs",
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs"
+			".\\Cantabile\\Dialogs\\TransposeDialog.cs"
 		]
 	},
 	{
@@ -9858,7 +9533,7 @@
 		[
 			".\\Cantabile\\Dialogs\\MidiFilterDialog.cs",
 			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs",
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
 		]
 	},
 	{
@@ -10477,8 +10152,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs",
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
+			".\\Cantabile\\Dialogs\\NewControllerBarLayoutDialog.cs"
 		]
 	},
 	{
@@ -10906,9 +10580,9 @@
 			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs",
 			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -11089,6 +10763,14 @@
 		]
 	},
 	{
+		"phrase": "Primary Vie&w",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\PluginEditorView.cs"
+		]
+	},
+	{
 		"phrase": "&Detached",
 		"translation": null,
 		"locations": 
@@ -11210,7 +10892,7 @@
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
 			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
 	{
@@ -11219,7 +10901,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
 	{
@@ -11228,7 +10910,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
 	{
@@ -11245,7 +10927,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
 	{
@@ -11434,7 +11116,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
 	{
@@ -11443,7 +11125,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
 	{
@@ -11452,7 +11134,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
 	{
@@ -11485,7 +11167,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
 		]
 	},
 	{
@@ -12363,6 +12045,14 @@
 		]
 	},
 	{
+		"phrase": "Primary &View",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Dialogs\\RackHostGeneralPage.cs"
+		]
+	},
+	{
 		"phrase": "An rack named '{0}' already exists",
 		"translation": null,
 		"locations": 
@@ -12551,31 +12241,6 @@
 		]
 	},
 	{
-		"phrase": "Edit Tab Set",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\SaveTabSetDialog.cs"
-		]
-	},
-	{
-		"phrase": "Unmapped Key #{0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\SaveTabSetDialog.cs",
-			".\\Cantabile\\Dialogs\\SaveWindowLayoutDialog.cs"
-		]
-	},
-	{
-		"phrase": "Use this tab set for Live Mode",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\SaveTabSetDialog.cs"
-		]
-	},
-	{
 		"phrase": "Template &Name:",
 		"translation": null,
 		"locations": 
@@ -12605,22 +12270,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\Dialogs\\SaveTemplateDialog.cs"
-		]
-	},
-	{
-		"phrase": "Edit Window Layout",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\SaveWindowLayoutDialog.cs"
-		]
-	},
-	{
-		"phrase": "&Include window position",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\SaveWindowLayoutDialog.cs"
 		]
 	},
 	{
@@ -13695,7 +13344,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs"
 		]
 	},
 	{
@@ -13704,7 +13353,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\ControllerBar.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs"
 		]
 	},
 	{
@@ -14435,14 +14084,6 @@
 		]
 	},
 	{
-		"phrase": "Save Son&g and Racks",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
 		"phrase": "Save A&ll",
 		"translation": null,
 		"locations": 
@@ -14650,61 +14291,13 @@
 		]
 	},
 	{
-		"phrase": "&Pointer Lock",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
-		"phrase": "&Full Screen Mode",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
-		"phrase": "Split",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
-		"phrase": "Left\/Right",
+		"phrase": "Pointer Lock",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\MainWindow\\MainToolbar.cs",
 			".\\Cantabile\\MainWindow\\ViewBindable.cs"
-		]
-	},
-	{
-		"phrase": "Top\/Bottom",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\MainWindow\\ViewBindable.cs"
-		]
-	},
-	{
-		"phrase": "Set List &Grid",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
-		"phrase": "Show &Notes",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		]
 	},
 	{
@@ -14724,7 +14317,7 @@
 		]
 	},
 	{
-		"phrase": "&Bindings",
+		"phrase": "&Full Screen Mode",
 		"translation": null,
 		"locations": 
 		[
@@ -14732,7 +14325,31 @@
 		]
 	},
 	{
-		"phrase": "Ticker B&ar",
+		"phrase": "Men&u Bar",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "Tab &Bar",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "Toolb&ar",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "&Controller Bar",
 		"translation": null,
 		"locations": 
 		[
@@ -14741,6 +14358,14 @@
 	},
 	{
 		"phrase": "&Metronome",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "&Ticker Bar",
 		"translation": null,
 		"locations": 
 		[
@@ -14762,30 +14387,6 @@
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs",
 			".\\Cantabile\\Misc\\VariableMenu.cs"
-		]
-	},
-	{
-		"phrase": "&Controller Bar",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
-		"phrase": "&Quick Controller\t0-9",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
-		"phrase": "Backgro&und Rack",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		]
 	},
 	{
@@ -14853,7 +14454,7 @@
 		]
 	},
 	{
-		"phrase": "T&oolbars",
+		"phrase": "Main &Panel",
 		"translation": null,
 		"locations": 
 		[
@@ -14861,7 +14462,7 @@
 		]
 	},
 	{
-		"phrase": "Men&u Bar",
+		"phrase": "Set List &Grid",
 		"translation": null,
 		"locations": 
 		[
@@ -14869,7 +14470,7 @@
 		]
 	},
 	{
-		"phrase": "Toolb&ar",
+		"phrase": "Sho&w Notes",
 		"translation": null,
 		"locations": 
 		[
@@ -14877,7 +14478,15 @@
 		]
 	},
 	{
-		"phrase": "Tab &Bar",
+		"phrase": "Rout&ing",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "Bin&dings",
 		"translation": null,
 		"locations": 
 		[
@@ -14922,6 +14531,53 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "&Quick Controller\t0-9",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "Back&ground Rack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "P&rofiler",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
+		]
+	},
+	{
+		"phrase": "MIDI Mo&nitor",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\InputPortsCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "No suitable object selected",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
 		]
 	},
 	{
@@ -15058,8 +14714,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		]
 	},
 	{
@@ -15352,37 +15007,6 @@
 		]
 	},
 	{
-		"phrase": "P&rofiler",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
-		"phrase": "MIDI Mo&nitor",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\InputPortsCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\RouteCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "No suitable object selected",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\SidePanel\\PortsMonitorPanel.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\MediaPlayerCommandDispatcher.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
 		"phrase": "Scan Plugin Folders (&Quick)",
 		"translation": null,
 		"locations": 
@@ -15523,8 +15147,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs",
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
+			".\\Cantabile\\MainWindow\\MainMenu.cs"
 		]
 	},
 	{
@@ -15600,76 +15223,6 @@
 		]
 	},
 	{
-		"phrase": "Set List Grid",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs",
-			".\\Cantabile\\MainWindow\\ViewBindable.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Show the set list in a large grid view.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Show Notes",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs",
-			".\\Cantabile\\MainWindow\\ViewBindable.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Displays useful information during performance - text notes, reminders, images etc...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Move Left",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs"
-		]
-	},
-	{
-		"phrase": "Move Right",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs"
-		]
-	},
-	{
-		"phrase": "Move to Other Panel",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs"
-		]
-	},
-	{
-		"phrase": "Duplicate to Other Panel",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs"
-		]
-	},
-	{
 		"phrase": "Main Toolbar",
 		"translation": null,
 		"locations": 
@@ -15692,15 +15245,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MainToolbar.cs"
-		]
-	},
-	{
-		"phrase": "Pointer Lock",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainToolbar.cs",
-			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -15961,14 +15505,6 @@
 		]
 	},
 	{
-		"phrase": "Error saving song",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		]
-	},
-	{
 		"phrase": "Error during save all",
 		"translation": null,
 		"locations": 
@@ -16034,7 +15570,7 @@
 		]
 	},
 	{
-		"phrase": "Hide Tip &Panels",
+		"phrase": "Hide Help &Panels",
 		"translation": null,
 		"locations": 
 		[
@@ -16042,40 +15578,7 @@
 		]
 	},
 	{
-		"phrase": "Layout #{0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		]
-	},
-	{
-		"phrase": "&Update '{0}'",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs",
-			".\\Cantabile\\SidePanel\\StatesPanel.cs"
-		]
-	},
-	{
-		"phrase": "New Tab Set",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		]
-	},
-	{
-		"phrase": "Tab Set #{0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainWindow.cs"
-		]
-	},
-	{
-		"phrase": "&Update Tab Set",
+		"phrase": "Show Help &Panels",
 		"translation": null,
 		"locations": 
 		[
@@ -17007,38 +16510,6 @@
 		]
 	},
 	{
-		"phrase": "Toggle Left\/Right On\/Off",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\ViewBindable.cs"
-		]
-	},
-	{
-		"phrase": "Toggle Top\/Bottom On\/Off",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\ViewBindable.cs"
-		]
-	},
-	{
-		"phrase": "Swap Orientation",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\ViewBindable.cs"
-		]
-	},
-	{
-		"phrase": "Cycle All Modes",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\ViewBindable.cs"
-		]
-	},
-	{
 		"phrase": "On Enter Live Mode",
 		"translation": null,
 		"locations": 
@@ -17055,7 +16526,17 @@
 		]
 	},
 	{
-		"phrase": "Show Notes Visible",
+		"phrase": "Set List Grid",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\ViewBindable.cs",
+			".\\Cantabile\\RackPanel\\RackPanel.cs",
+			".\\Cantabile\\SetList\\SetListGrid.cs"
+		]
+	},
+	{
+		"phrase": "Compact Onscreen Keyboard",
 		"translation": null,
 		"locations": 
 		[
@@ -17064,22 +16545,6 @@
 	},
 	{
 		"phrase": "Show Notes\/Routing",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\ViewBindable.cs"
-		]
-	},
-	{
-		"phrase": "Set Split Mode",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\ViewBindable.cs"
-		]
-	},
-	{
-		"phrase": "Compact Onscreen Keyboard",
 		"translation": null,
 		"locations": 
 		[
@@ -17168,7 +16633,15 @@
 		]
 	},
 	{
-		"phrase": "Close All Racks",
+		"phrase": "Close Rack Editor",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
+		]
+	},
+	{
+		"phrase": "Zoom Rack Editor",
 		"translation": null,
 		"locations": 
 		[
@@ -17181,26 +16654,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\ViewBindable.cs"
-		]
-	},
-	{
-		"phrase": "Panel",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\ViewBindable.cs",
-			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
-		]
-	},
-	{
-		"phrase": "Mode",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\ViewBindable.cs",
-			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs",
-			".\\Cantabile.Environment\\Bindings\\LoadBindingPoint.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -19226,8 +18679,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
+			".\\Cantabile\\Options\\GeneralPage.cs"
 		]
 	},
 	{
@@ -19541,6 +18993,25 @@
 		"locations": 
 		[
 			".\\Cantabile\\Options\\GeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "Yes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\PropertyEditorBoolean.cs"
+		]
+	},
+	{
+		"phrase": "No",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile.Environment\\Bindings\\BindingMapperValueConditionToValue.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\PropertyEditorBoolean.cs"
 		]
 	},
 	{
@@ -20356,14 +19827,6 @@
 		]
 	},
 	{
-		"phrase": "Re-open popup plugin editors when loading songs",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Options\\PluginsPage.cs"
-		]
-	},
-	{
 		"phrase": "VST Plugins",
 		"translation": null,
 		"locations": 
@@ -20773,6 +20236,14 @@
 	},
 	{
 		"phrase": "Prompt before e&xiting",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\StartupPage.cs"
+		]
+	},
+	{
+		"phrase": "&Escape key exits",
 		"translation": null,
 		"locations": 
 		[
@@ -21387,6 +20858,111 @@
 		]
 	},
 	{
+		"phrase": "Show the set list in a large grid view.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs",
+			".\\Cantabile\\SetList\\SetListGrid.cs"
+		]
+	},
+	{
+		"phrase": "Solo this rack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
+		"phrase": "Displays useful information during performance - text notes, reminders, images etc...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
+		"phrase": "The routing panel is used load objects (eg: Plugins) and create audio and MIDI routes between them.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
+		"phrase": "Create connections between objects.  eg: control a plugin parameter using a MIDI CC.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
+		"phrase": "Table View",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
+		"phrase": "Show routings as a table.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
+		"phrase": "Wiring View",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
+		"phrase": "Show routings as wiring diagram.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
+		"phrase": "Maximize Rack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
+		"phrase": "Maximizes this rack view.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
+		"phrase": "Rack files must be saved with a .cantabileRack file extension",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
+		"phrase": "Rack is already open and can't be overwritten",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RackPanel.cs"
+		]
+	},
+	{
 		"phrase": "Unable to load preset\/bank as it references an unknown plugin ID: 0x{0:X8}",
 		"translation": null,
 		"locations": 
@@ -21510,23 +21086,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\RackPanel\\RackPanel.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Rack files must be saved with a .cantabileRack file extension",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Rack is already open and can't be overwritten",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
 		]
 	},
 	{
@@ -21632,110 +21192,6 @@
 		"locations": 
 		[
 			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Solo this rack",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "The routing panel is used load objects (eg: Plugins) and create audio and MIDI routes between them.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Create connections between objects.  eg: control a plugin parameter using a MIDI CC.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Table View",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Show routings as a table.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Wiring View",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Show routings as wiring diagram.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Maximize Rack",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Maximizes this rack view.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "The pasted selection includes a linked rack that's already referenced by this song",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanelCommands.cs"
-		]
-	},
-	{
-		"phrase": "The pasted selection includes a linked rack and can't be loaded into a another rack ",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanelCommands.cs"
-		]
-	},
-	{
-		"phrase": "Duplicate Object(s)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanelCommands.cs"
-		]
-	},
-	{
-		"phrase": "Duplicate Route(s)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RoutingPanelCommands.cs"
 		]
 	},
 	{
@@ -23045,6 +22501,14 @@
 		]
 	},
 	{
+		"phrase": "&Update '{0}'",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SidePanel\\StatesPanel.cs"
+		]
+	},
+	{
 		"phrase": "&Delete '{0}'",
 		"translation": null,
 		"locations": 
@@ -23162,6 +22626,16 @@
 		"locations": 
 		[
 			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs"
+		]
+	},
+	{
+		"phrase": "Mode",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\AdjustTransposeBindingPoint.cs",
+			".\\Cantabile.Environment\\Bindings\\LoadBindingPoint.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
 		]
 	},
 	{
@@ -23525,7 +22999,7 @@
 		[
 			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs",
 			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\OutputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
 		]
@@ -23537,7 +23011,7 @@
 		[
 			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs",
 			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs"
 		]
 	},
@@ -23921,14 +23395,6 @@
 		]
 	},
 	{
-		"phrase": "Open Editor",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs"
-		]
-	},
-	{
 		"phrase": "Button {0}",
 		"translation": null,
 		"locations": 
@@ -23946,6 +23412,14 @@
 	},
 	{
 		"phrase": "On Custom Button",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\RackBindable.cs"
+		]
+	},
+	{
+		"phrase": "Open Rack Editor",
 		"translation": null,
 		"locations": 
 		[
@@ -26544,12 +26018,12 @@
 		[
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\OutputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -27156,6 +26630,38 @@
 		]
 	},
 	{
+		"phrase": "The pasted selection includes a linked rack that's already referenced by this song",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		]
+	},
+	{
+		"phrase": "The pasted selection includes a linked rack and can't be loaded into a another rack ",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		]
+	},
+	{
+		"phrase": "Duplicate Object(s)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		]
+	},
+	{
+		"phrase": "Duplicate Route(s)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\RoutingPanel.cs"
+		]
+	},
+	{
 		"phrase": "Use show notes to display notes, reminders, lyrics, ascii guitar tabs, chord progressions, images or any other information you\nmight find useful during performance.  (Right click to create and edit notes)",
 		"translation": null,
 		"locations": 
@@ -27181,6 +26687,14 @@
 	},
 	{
 		"phrase": "Set Text Color",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\ShowNotesPanel\\ShowNotesPanel.cs"
+		]
+	},
+	{
+		"phrase": "Hide Show Notes",
 		"translation": null,
 		"locations": 
 		[
@@ -27268,1094 +26782,6 @@
 		]
 	},
 	{
-		"phrase": "Add Object",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\AddObjectFooterSlot.cs"
-		]
-	},
-	{
-		"phrase": "Adds new objects to this song or rack.\n\neg: plugins, media players, racks etc...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\AddObjectFooterSlot.cs"
-		]
-	},
-	{
-		"phrase": "Plugin...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\AddObjectFooterSlot.cs"
-		]
-	},
-	{
-		"phrase": "New Linked Rack...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\AddObjectFooterSlot.cs"
-		]
-	},
-	{
-		"phrase": "Existing Linked Rack...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\AddObjectFooterSlot.cs"
-		]
-	},
-	{
-		"phrase": "Add Route",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\AddRouteFooterSlot.cs"
-		]
-	},
-	{
-		"phrase": "Adds a new audio or MIDI route from this object to another object.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\AddRouteFooterSlot.cs"
-		]
-	},
-	{
-		"phrase": "New Route From",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\AddRouteFooterSlot.cs"
-		]
-	},
-	{
-		"phrase": "Customize...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\CustomSymbolButton.cs"
-		]
-	},
-	{
-		"phrase": "Controls the audio input gain setting for this song or rack.\n\n${value}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs"
-		]
-	},
-	{
-		"phrase": "50% A, 50% B",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "100% A",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "100% B",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "{0:0}% A, {1:0}% B",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "A\/B Send Balance",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Adjusts the send levels for audio routes marked as Send A and Send B.\n\n${value}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Audio Level Meter",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\OutputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Shows the input audio signal level.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs"
-		]
-	},
-	{
-		"phrase": "MIDI Input Indicator",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Lights up when MIDI events arrive at this song or rack.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs"
-		]
-	},
-	{
-		"phrase": "Input Ports",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\WiringPanel\\ObjectProxy.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs"
-		]
-	},
-	{
-		"phrase": "Tr: {0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs"
-		]
-	},
-	{
-		"phrase": "off",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs"
-		]
-	},
-	{
-		"phrase": "Starts playback of the media file",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "Pauses playback of the media file",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "Stops playback of the media file",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "Solo this object",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "MediaPlayer Name",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "Media Player Name",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "The name of this media player.\n\nDouble click to edit the play list.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "The name of the currently loaded media file.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "MediaPlayer Gain",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "Gain",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
-		]
-	},
-	{
-		"phrase": "Adjust the gain of this media file.\n\n${value}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "Speed:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "500%",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "Speed",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
-		]
-	},
-	{
-		"phrase": "Adjust the speed of this media file.\n\n${value}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "100% Right",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Pan",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
-		]
-	},
-	{
-		"phrase": "Pans the audio signal from left to right.\n\n${value}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Fade:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "100% Front",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Fade",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
-		]
-	},
-	{
-		"phrase": "Fades the audio signal from front to back.\n\n${value}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Shows the level of audio signal coming from the media player",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "MIDI Output Indicator",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\OutputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Lights up when the player sends MIDI events.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "Position Indicator",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "Shows the current play position as a percentage of the total file length.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "Choose File",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs"
-		]
-	},
-	{
-		"phrase": "Controls the audio output gain setting for this song or rack.\n\n${value}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\OutputPortsSlot.cs"
-		]
-	},
-	{
-		"phrase": "Shows the output audio signal level.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\OutputPortsSlot.cs"
-		]
-	},
-	{
-		"phrase": "Lights up when MIDI events are being sent from this song or rack.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\OutputPortsSlot.cs"
-		]
-	},
-	{
-		"phrase": "Output Ports",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\OutputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\WiringPanel\\ObjectProxy.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs"
-		]
-	},
-	{
-		"phrase": "Running",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
-		]
-	},
-	{
-		"phrase": "Starts the plugin processing audio and MIDI.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Manipulate MIDI events being send to the plugin.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Plugin Name",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "The name of this plugin.\n\nDouble click to open the plugin's editor or Alt+Double click to edit its parameters.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Preset Name",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "The name of the currently selected preset for this plugin.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "50% Wet, 50% Dry",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "100% Dry",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "100% Wet",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "{0:0}% Wet, {1:0}% Dry",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Wet\/Dry Mix",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
-		]
-	},
-	{
-		"phrase": "Adjusts the wet\/dry mix of this plugin.  By turning down this setting you can reduce the amount of effect applied to an audio signal.\n\n${value}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Shows the level of audio signal coming from the plugin.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Lights up when MIDI events arrive at the plugin.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Lights up when the plugin sends MIDI events.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "(Failed)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
-		]
-	},
-	{
-		"phrase": "Starts the rack processing audio and MIDI.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Rack Name",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "The name of this rack.\n\nDouble click to open the rack for editing.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Selected State",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "The name of this rack's currently selected state.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Rack Gain",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Adjust the output gain of this rack.\n\n${value}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Shows the level of audio signal coming from the rack.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Lights up when MIDI events arrive at the rack.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Lights up when the rack sends MIDI events.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "This is an embedded rack.\n\nEmbedded racks are saved in the parent song file and can't be shared across songs.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Linked Rack",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "This is a linked rack.\n\nLinked racks are saved in a separate file and can be shared across multiple songs.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Do you want to save changes to '{0}'?",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Choose State",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Also Reset the Rack",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Enables or disables this route.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Source Port",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
-		]
-	},
-	{
-		"phrase": "The port that this route connects from.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Destination",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Target Object\/Port",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "The object and port that this route connects to.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Manipulate MIDI events passing through this route.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Route Gain",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Adjusts the gain of this audio route.\n\n${value}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Send Balance Kind",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs"
-		]
-	},
-	{
-		"phrase": "Selects how this route is affected by the send balance",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Adjusts this MIDI settings for this route.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Shows the level of audio signals passing through this route.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Key Range Indicator",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Shows the range of keys that this route responds to.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Lights up when MIDI events arrive at the route.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Lights up when the route sends MIDI events.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Choose Route Source",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Choose Route Target",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": ", Pr: {0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "up to {0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "{0} and above",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "{0} to {1}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": ", Tr: {0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": ", CC #{0} {1} {2}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Use this Routing panel to load instrument and effect plugins, media players and racks.\nConnect objects by creating Audio and MIDI Routes (expand the source object slot to see its outgoing routes).",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs"
-		]
-	},
-	{
-		"phrase": "Name\/Source",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs"
-		]
-	},
-	{
-		"phrase": "Preset\/Destination",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs"
-		]
-	},
-	{
-		"phrase": "Indicators",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs"
-		]
-	},
-	{
-		"phrase": "Move Routes",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs"
-		]
-	},
-	{
-		"phrase": "Move Objects",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\TablePanel.cs"
-		]
-	},
-	{
-		"phrase": "Use this wiring panel to load instrument and effect plugins, media players and racks.\nConnect Audio and MIDI routes by drawing wires between objects.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
-		]
-	},
-	{
-		"phrase": "Auto Arrange",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
-		]
-	},
-	{
-		"phrase": "Expand Ports",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
-		]
-	},
-	{
-		"phrase": "Insert &Plugin...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
-		]
-	},
-	{
-		"phrase": "Insert &Embedded Rack",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
-		]
-	},
-	{
-		"phrase": "Insert Embedded Rack (from &file)...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
-		]
-	},
-	{
-		"phrase": "Insert New Linked &Rack...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
-		]
-	},
-	{
-		"phrase": "Insert E&xisting Linked Rack...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
-		]
-	},
-	{
-		"phrase": "Insert Media Pla&yer",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\WiringPanel\\WiringPanel.cs"
-		]
-	},
-	{
 		"phrase": "Stereo In",
 		"translation": null,
 		"locations": 
@@ -28415,38 +26841,6 @@
 		]
 	},
 	{
-		"phrase": "Active",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
-		]
-	},
-	{
-		"phrase": "Primary (left\/top)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
-		]
-	},
-	{
-		"phrase": "Secondary (right\/bottom)",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
-		]
-	},
-	{
-		"phrase": "Table",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
-		]
-	},
-	{
 		"phrase": "New Route",
 		"translation": null,
 		"locations": 
@@ -28503,11 +26897,30 @@
 		]
 	},
 	{
+		"phrase": "Source Port",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
 		"phrase": "Target Port",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs"
+		]
+	},
+	{
+		"phrase": "Send Balance Kind",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -28596,6 +27009,1075 @@
 		"locations": 
 		[
 			".\\Cantabile.Application\\Racks\\Song\\OnscreenKeyboardState.cs"
+		]
+	},
+	{
+		"phrase": "Add Object",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
+		]
+	},
+	{
+		"phrase": "Add Plugin",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
+		]
+	},
+	{
+		"phrase": "Adds new objects to this song or rack.\n\neg: plugins, media players, racks etc...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
+		]
+	},
+	{
+		"phrase": "Plugin...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
+		]
+	},
+	{
+		"phrase": "New Linked Rack...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
+		]
+	},
+	{
+		"phrase": "Existing Linked Rack...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddObjectFooterSlot.cs"
+		]
+	},
+	{
+		"phrase": "Add Route",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddRouteFooterSlot.cs"
+		]
+	},
+	{
+		"phrase": "Adds a new audio or MIDI route from this object to another object.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddRouteFooterSlot.cs"
+		]
+	},
+	{
+		"phrase": "New Route From",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\AddRouteFooterSlot.cs"
+		]
+	},
+	{
+		"phrase": "Customize...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\CustomSymbolButton.cs"
+		]
+	},
+	{
+		"phrase": "Controls the audio input gain setting for this song or rack.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs"
+		]
+	},
+	{
+		"phrase": "50% A, 50% B",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "100% A",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "100% B",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "{0:0}% A, {1:0}% B",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "A\/B Send Balance",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Adjusts the send levels for audio routes marked as Send A and Send B.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Audio Level Meter",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Shows the input audio signal level.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs"
+		]
+	},
+	{
+		"phrase": "MIDI Input Indicator",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Lights up when MIDI events arrive at this song or rack.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs"
+		]
+	},
+	{
+		"phrase": "Input Ports",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\ObjectProxy.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs"
+		]
+	},
+	{
+		"phrase": "Tr: {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs"
+		]
+	},
+	{
+		"phrase": "off",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\InputPortsSlot.cs"
+		]
+	},
+	{
+		"phrase": "Starts playback of the media file",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "Pauses playback of the media file",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "Stops playback of the media file",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "Solo this object",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "MediaPlayer Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "Media Player Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "The name of this media player.\n\nDouble click to edit the play list.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "The name of the currently loaded media file.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "MediaPlayer Gain",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "Gain",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs"
+		]
+	},
+	{
+		"phrase": "Adjust the gain of this media file.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "Speed:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "500%",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "Speed",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs"
+		]
+	},
+	{
+		"phrase": "Adjust the speed of this media file.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "100% Right",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Pan",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
+		]
+	},
+	{
+		"phrase": "Pans the audio signal from left to right.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Fade:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "100% Front",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Fade",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
+		]
+	},
+	{
+		"phrase": "Fades the audio signal from front to back.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Shows the level of audio signal coming from the media player",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "MIDI Output Indicator",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Lights up when the player sends MIDI events.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "Position Indicator",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "Shows the current play position as a percentage of the total file length.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "Choose File",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\MediaPlayerSlot.cs"
+		]
+	},
+	{
+		"phrase": "Controls the audio output gain setting for this song or rack.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs"
+		]
+	},
+	{
+		"phrase": "Shows the output audio signal level.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs"
+		]
+	},
+	{
+		"phrase": "Lights up when MIDI events are being sent from this song or rack.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs"
+		]
+	},
+	{
+		"phrase": "Output Ports",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\OutputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\ObjectProxy.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs"
+		]
+	},
+	{
+		"phrase": "Running",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
+		]
+	},
+	{
+		"phrase": "Starts the plugin processing audio and MIDI.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Manipulate MIDI events being send to the plugin.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Plugin Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "The name of this plugin.\n\nDouble click to open the plugin's editor or Alt+Double click to edit its parameters.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Preset Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "The name of the currently selected preset for this plugin.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "50% Wet, 50% Dry",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "100% Dry",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "100% Wet",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "{0:0}% Wet, {1:0}% Dry",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Wet\/Dry Mix",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
+		]
+	},
+	{
+		"phrase": "Adjusts the wet\/dry mix of this plugin.  By turning down this setting you can reduce the amount of effect applied to an audio signal.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Shows the level of audio signal coming from the plugin.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Lights up when MIDI events arrive at the plugin.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Lights up when the plugin sends MIDI events.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "(Failed)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Starts the rack processing audio and MIDI.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Rack Name",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "The name of this rack.\n\nDouble click to open the rack for editing.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Selected State",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "The name of this rack's currently selected state.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Rack Gain",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Adjust the output gain of this rack.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Shows the level of audio signal coming from the rack.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Lights up when MIDI events arrive at the rack.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Lights up when the rack sends MIDI events.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "This is an embedded rack.\n\nEmbedded racks are saved in the parent song file and can't be shared across songs.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Linked Rack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "This is a linked rack.\n\nLinked racks are saved in a separate file and can be shared across multiple songs.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Do you want to save changes to '{0}'?",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Choose State",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Also Reset the Rack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Enables or disables this route.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "The port that this route connects from.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Destination",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Target Object\/Port",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "The object and port that this route connects to.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Manipulate MIDI events passing through this route.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Route Gain",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Adjusts the gain of this audio route.\n\n${value}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Selects how this route is affected by the send balance",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Adjusts this MIDI settings for this route.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Shows the level of audio signals passing through this route.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Key Range Indicator",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Shows the range of keys that this route responds to.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Lights up when MIDI events arrive at the route.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Lights up when the route sends MIDI events.",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Choose Route Source",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Choose Route Target",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": ", Pr: {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "up to {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "{0} and above",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "{0} to {1}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": ", Tr: {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": ", CC #{0} {1} {2}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\RouteSlot.cs"
+		]
+	},
+	{
+		"phrase": "Use this Routing panel to load instrument and effect plugins, media players and racks.\nConnect objects by creating Audio and MIDI Routes (expand the source object slot to see its outgoing routes).",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs"
+		]
+	},
+	{
+		"phrase": "Name\/Source",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs"
+		]
+	},
+	{
+		"phrase": "Preset\/Destination",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs"
+		]
+	},
+	{
+		"phrase": "Indicators",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs"
+		]
+	},
+	{
+		"phrase": "Move Routes",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs"
+		]
+	},
+	{
+		"phrase": "Move Objects",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\TablePanel\\TablePanel.cs"
+		]
+	},
+	{
+		"phrase": "Auto Arrange",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		]
+	},
+	{
+		"phrase": "Expand Ports",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		]
+	},
+	{
+		"phrase": "Insert &Plugin...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		]
+	},
+	{
+		"phrase": "Insert &Embedded Rack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		]
+	},
+	{
+		"phrase": "Insert Embedded Rack (from &file)...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		]
+	},
+	{
+		"phrase": "Insert New Linked &Rack...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		]
+	},
+	{
+		"phrase": "Insert E&xisting Linked Rack...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
+		]
+	},
+	{
+		"phrase": "Insert Media Pla&yer",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\RoutingPanel\\WiringPanel\\WiringPanel.cs"
 		]
 	},
 	{
