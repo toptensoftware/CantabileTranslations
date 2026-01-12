@@ -5622,7 +5622,6 @@
 		[
 			".\\Cantabile\\Commands\\EditCommands.cs",
 			".\\Cantabile\\Dialogs\\PluginEditorView.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs",
 			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
 			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
@@ -6355,7 +6354,6 @@
 		[
 			".\\Cantabile\\Commands\\ViewCommands.cs",
 			".\\Cantabile\\MainWindow\\ViewBindable.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
 		]
 	},
@@ -15747,8 +15745,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MainTabPanel.cs",
-			".\\Cantabile\\MainWindow\\ViewBindable.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -15756,8 +15753,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
+			".\\Cantabile\\MainWindow\\MainTabPanel.cs"
 		]
 	},
 	{
@@ -15766,8 +15762,7 @@
 		"locations": 
 		[
 			".\\Cantabile\\MainWindow\\MainTabPanel.cs",
-			".\\Cantabile\\MainWindow\\ViewBindable.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -15775,8 +15770,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\MainTabPanel.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
+			".\\Cantabile\\MainWindow\\MainTabPanel.cs"
 		]
 	},
 	{
@@ -17273,8 +17267,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\MainWindow\\ViewBindable.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
+			".\\Cantabile\\MainWindow\\ViewBindable.cs"
 		]
 	},
 	{
@@ -19304,7 +19297,8 @@
 		"locations": 
 		[
 			".\\Cantabile\\Options\\FileLocationsPage.cs",
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
+			".\\Cantabile\\RackPanel\\RackPanel.cs",
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
 		]
 	},
 	{
@@ -21591,249 +21585,7 @@
 		]
 	},
 	{
-		"phrase": "&Save Rack",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "&Save Song",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Save Rack &As...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Save Song &As...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Save Rack &Copy As...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Save Song &Copy As...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Failed to save rack - {0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
-		]
-	},
-	{
-		"phrase": "Rack files must be saved with a .cantabileRack file extension",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Rack is already open and can't be overwritten",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Save As Rack Template...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Save As Song Template...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Save Rack Template",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Save Song Template",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "A file with this name is already loaded and can't be overwritten.\n\n{0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Failed to save template - {0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Re&vert Rack...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Re&vert Song...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Are you sure you want to revert and discard all changes to this file?\n\n{0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Failed to revert rack - {0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Rack &Properties...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs",
-			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs"
-		]
-	},
-	{
-		"phrase": "Song &Properties...",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
 		"phrase": "No unused plugins ports",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Solo this rack",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "The routing panel is used load objects (eg: Plugins) and create audio and MIDI routes between them.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Create connections between objects.  eg: control a plugin parameter using a MIDI CC.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Table View",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Show routings as a table.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Wiring View",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Show routings as wiring diagram.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Maximize Rack",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\RackPanel.cs"
-		]
-	},
-	{
-		"phrase": "Maximizes this rack view.",
 		"translation": null,
 		"locations": 
 		[
@@ -21870,6 +21622,176 @@
 		"locations": 
 		[
 			".\\Cantabile\\RackPanel\\RoutingPanelCommands.cs"
+		]
+	},
+	{
+		"phrase": "Rack &Properties...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\CommandHandlers\\OutputPortsCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Song &Properties...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "&Save Rack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "&Save Song",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Save Rack &As...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Save Song &As...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Save Rack &Copy As...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Save Song &Copy As...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Failed to save rack - {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs",
+			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs"
+		]
+	},
+	{
+		"phrase": "Rack files must be saved with a .cantabileRack file extension",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Rack is already open and can't be overwritten",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Save As Rack Template...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Save As Song Template...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Save Rack Template",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Save Song Template",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "A file with this name is already loaded and can't be overwritten.\n\n{0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Failed to save template - {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Re&vert Rack...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Re&vert Song...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Are you sure you want to revert and discard all changes to this file?\n\n{0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
+		]
+	},
+	{
+		"phrase": "Failed to revert rack - {0}",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\SongCommandDispatcher.cs"
 		]
 	},
 	{
