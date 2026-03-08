@@ -18,19 +18,22 @@ Cantabile looks for these files in the same folder as Cantabile.exe.
 
 Currently Cantabile doesn't include any official language translations so you'll need to manually install these files in order to use them:
 
-1. Locate the file for the language you're interested in from the [translations repository](https://bitbucket.org/toptensoftware/cantabiletranslations/src).
+1. Locate the file for the language you're interested in from the [translations repository](https://github.com/toptensoftware/cantabiletranslations).
 2. Click the file to view it and then download it by right clicking the "Raw" button at the top right and choosing Save As.
 3. Copy the file to the same location as Cantabile.exe, typically:
 	* `C:\Program Files\Topten Software\Cantabile 3.0`, or 
 	* `C:\Program Files (x86)\Topten Software\Cantabile 3.0`, or 
 
-To quickly locate Cantabile.exe, right click on it's short cut in the Windows Start menu, choose Properties and click the Open File Location button.
+To locate Cantabile.exe, right click on it's short cut in the Windows Start menu, choose Properties and click the Open File Location button.
 
 You'll need to restart Cantabile if it's already running.
 
 ## Switching Languages
 
-Cantabile doesn't provide a setting for which language to use.  Rather it uses the language selected in the operating system.  To switch languages you need to close Cantabile, change the language in the operating system and restart Cantabile.
+Once a translation file has been installed to the correct location you can switch languages in Cantabile -> Tools -> Options -> General -> User Interface -> Language.
+
+If you choose "Use System Setting" Cantabile will try to match to the Windows language selection.  
+
 
 # Notes for Translators
 
@@ -40,7 +43,7 @@ The following describes how to contribute to a language translation for Cantabil
 
 Before starting on a translation, please [get in contact](http://www.cantabilesoftware.com/contact) with me.  This way I can make sure no one is already working on the same language and also provide you with a machine generated translation to get you started.
 
-Once you decide to start work on a translation you can either download the file directly from BitBucket, or if you're familiar with git you can simply clone the repository.
+Once you decide to start work on a translation you can either download the file directly from GitHub, or if you're familiar with git you can simply clone the repository.
 
 ## File Format
 
@@ -122,7 +125,7 @@ Sometimes however the same English string may need different translations for a 
 
 ## Committing Changes
 
-Once you've made a set of changes you'd like to commit for inclusion, either email me the file directly and I'll commit it back into the repository, or, if you understand git you can send me a pull request on BitBucket.
+Once you've made a set of changes you'd like to commit for inclusion, either email me the file directly and I'll commit it back into the repository, or, if you understand git you can send me a pull request on GitHub.
 
 ## New Builds of Cantabile
 
