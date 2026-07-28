@@ -146,7 +146,7 @@
 		]
 	},
 	{
-		"phrase": "Cantabile's audio engine has been stopped because the audio driver stopped responding",
+		"phrase": "Failed to create global rack.\n\n{0}\n\n{1}",
 		"translation": null,
 		"locations": 
 		[
@@ -154,15 +154,7 @@
 		]
 	},
 	{
-		"phrase": "Failed to create background rack.\n\n{0}\n\n{1}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\CantabileApp.cs"
-		]
-	},
-	{
-		"phrase": "Failed to load background rack.\n\n{0}",
+		"phrase": "Failed to load global rack.\n\n{0}\n\n{1}",
 		"translation": null,
 		"locations": 
 		[
@@ -3846,8 +3838,6 @@
 		"locations": 
 		[
 			".\\Cantabile.Gui\\BasicColorCombo.cs",
-			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs",
-			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
 			".\\Cantabile\\Options\\GeneralPage.cs",
 			".\\Cantabile\\Options\\RecordingPage.cs",
 			".\\Cantabile\\RackPanel\\BindingsPanel\\PropertyEditorMapperPicker.cs"
@@ -5629,7 +5619,7 @@
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationHandler.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
@@ -5647,7 +5637,7 @@
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationHandler.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
@@ -5703,14 +5693,6 @@
 	},
 	{
 		"phrase": "Follow Routing Reverse",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Commands\\EditCommands.cs"
-		]
-	},
-	{
-		"phrase": "Edit Plugin Compatibility",
 		"translation": null,
 		"locations": 
 		[
@@ -6762,11 +6744,23 @@
 		]
 	},
 	{
-		"phrase": "Background Rack",
+		"phrase": "Global Pre-Rack",
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile\\Commands\\ViewCommands.cs"
+			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+		]
+	},
+	{
+		"phrase": "Global Post-Rack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Commands\\ViewCommands.cs",
+			".\\Cantabile\\MainWindow\\MainMenu.cs",
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
 		]
 	},
 	{
@@ -7649,7 +7643,7 @@
 		]
 	},
 	{
-		"phrase": "Res&ponds to Song Gain",
+		"phrase": "Res&ponds to Master Gain Song Adjust",
 		"translation": null,
 		"locations": 
 		[
@@ -11021,69 +11015,6 @@
 		]
 	},
 	{
-		"phrase": "Plugin Compatibility",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
-		]
-	},
-	{
-		"phrase": "Plugin Up-scaling:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
-		]
-	},
-	{
-		"phrase": "Disabled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs",
-			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
-			".\\Cantabile\\Options\\AudioEnginePage.cs",
-			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile\\Options\\KeyboardPage.cs"
-		]
-	},
-	{
-		"phrase": "Enabled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs",
-			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs",
-			".\\Cantabile\\Options\\GeneralPage.cs",
-			".\\Cantabile\\Options\\KeyboardPage.cs",
-			".\\Cantabile.Application\\Bindings\\Binding.cs",
-			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
-			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
-		]
-	},
-	{
-		"phrase": "Note: plugin up-scaling also needs to be enabled in Options → General → User-Interface.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs"
-		]
-	},
-	{
-		"phrase": "Please restart Cantabile for these changes to take effect.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\PluginCompatibilityDialog.cs",
-			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs"
-		]
-	},
-	{
 		"phrase": "&Import Program or Bank...",
 		"translation": null,
 		"locations": 
@@ -11823,14 +11754,6 @@
 		]
 	},
 	{
-		"phrase": "&Up-scaling:",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\PluginGeneralPage.cs"
-		]
-	},
-	{
 		"phrase": "&Flush tail sounds on suspend",
 		"translation": null,
 		"locations": 
@@ -11929,14 +11852,6 @@
 	},
 	{
 		"phrase": "Edit Tags...\tCtrl+T",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\Dialogs\\PluginSelectorDialog.cs"
-		]
-	},
-	{
-		"phrase": "Compatibility...",
 		"translation": null,
 		"locations": 
 		[
@@ -14970,14 +14885,6 @@
 	},
 	{
 		"phrase": "&Quick Controller\t0-9",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\MainWindow\\MainMenu.cs"
-		]
-	},
-	{
-		"phrase": "Backgro&und Rack",
 		"translation": null,
 		"locations": 
 		[
@@ -18924,6 +18831,16 @@
 		]
 	},
 	{
+		"phrase": "Disabled",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\AudioEnginePage.cs",
+			".\\Cantabile\\Options\\GeneralPage.cs",
+			".\\Cantabile\\Options\\KeyboardPage.cs"
+		]
+	},
+	{
 		"phrase": "Sample Rate Conversion &Quality:",
 		"translation": null,
 		"locations": 
@@ -19497,7 +19414,7 @@
 		]
 	},
 	{
-		"phrase": "Back&ground Rack File:",
+		"phrase": "&Global Pre-Rack File:",
 		"translation": null,
 		"locations": 
 		[
@@ -19505,7 +19422,7 @@
 		]
 	},
 	{
-		"phrase": "Sa&ve Current Background Rack As...",
+		"phrase": "Sa&ve Current Global Pre-Rack As...",
 		"translation": null,
 		"locations": 
 		[
@@ -19523,7 +19440,31 @@
 		]
 	},
 	{
-		"phrase": "No background rack loaded",
+		"phrase": "&Global Post-Rack File:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		]
+	},
+	{
+		"phrase": "Sa&ve Current Global Post-Rack As...",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		]
+	},
+	{
+		"phrase": "No global pre-rack loaded",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\FileLocationsPage.cs"
+		]
+	},
+	{
+		"phrase": "No global post-rack loaded",
 		"translation": null,
 		"locations": 
 		[
@@ -19588,7 +19529,15 @@
 		]
 	},
 	{
-		"phrase": "Enabled & Upscale Plugins",
+		"phrase": "System DPI",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\GeneralPage.cs"
+		]
+	},
+	{
+		"phrase": "Per-Monitor Aware",
 		"translation": null,
 		"locations": 
 		[
@@ -20126,6 +20075,21 @@
 		"locations": 
 		[
 			".\\Cantabile\\Options\\KeyboardPage.cs"
+		]
+	},
+	{
+		"phrase": "Enabled",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\Options\\KeyboardPage.cs",
+			".\\Cantabile.Application\\Bindings\\Binding.cs",
+			".\\Cantabile.Application\\Bindings\\BindingGroup.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingGroupSlot.cs",
+			".\\Cantabile\\RackPanel\\BindingsPanel\\BindingSlot.cs",
+			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\AudioRoute.cs",
+			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs"
 		]
 	},
 	{
@@ -22622,7 +22586,48 @@
 		]
 	},
 	{
-		"phrase": "Port Activity",
+		"phrase": "Master Levels",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SidePanel\\MasterLevelsPanel.cs",
+			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs"
+		]
+	},
+	{
+		"phrase": "Input:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SidePanel\\MasterLevelsPanel.cs"
+		]
+	},
+	{
+		"phrase": "Output:",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SidePanel\\MasterLevelsPanel.cs"
+		]
+	},
+	{
+		"phrase": "Input (Song Adj):",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SidePanel\\MasterLevelsPanel.cs"
+		]
+	},
+	{
+		"phrase": "Output (Song Adj):",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\SidePanel\\MasterLevelsPanel.cs"
+		]
+	},
+	{
+		"phrase": "Ports",
 		"translation": null,
 		"locations": 
 		[
@@ -23821,14 +23826,6 @@
 		]
 	},
 	{
-		"phrase": "Master Levels",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs"
-		]
-	},
-	{
 		"phrase": "Port '{0}' Input Gain",
 		"translation": null,
 		"locations": 
@@ -23865,6 +23862,22 @@
 			".\\Cantabile.Application\\Bindable\\RackBaseBindable.cs",
 			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs"
+		]
+	},
+	{
+		"phrase": "Output Gain (Song Adj)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs"
+		]
+	},
+	{
+		"phrase": "Input Gain (Song Adj)",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Bindable\\MasterLevelsBindable.cs"
 		]
 	},
 	{
@@ -25635,11 +25648,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiPort.cs",
-			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerMidiPort.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiPortIn.cs"
+			".\\Cantabile.Environment\\Interfaces\\IObjectWithMidiMonitor.cs"
 		]
 	},
 	{
@@ -25647,11 +25656,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Environment\\DriverPorts\\EnvironmentMidiPort.cs",
-			".\\Cantabile.Application\\Racks\\Rack\\RackMidiPort.cs",
-			".\\Cantabile.Application\\Racks\\Routing\\MidiRoute.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerMidiPort.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiPortIn.cs"
+			".\\Cantabile.Environment\\Interfaces\\IObjectWithMidiMonitor.cs"
 		]
 	},
 	{
@@ -27387,14 +27392,6 @@
 		]
 	},
 	{
-		"phrase": "The compatibility settings for this plugin can't be set because the plugin wasn't found in the plugin database",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\CommandHandlers\\PluginCommandDispatcher.cs"
-		]
-	},
-	{
 		"phrase": "Plugin Ed&itor...",
 		"translation": null,
 		"locations": 
@@ -27846,46 +27843,6 @@
 		]
 	},
 	{
-		"phrase": "Audio Level Meter",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\OutputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Shows the input audio signal level.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs"
-		]
-	},
-	{
-		"phrase": "MIDI Input Indicator",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
-			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
-		]
-	},
-	{
-		"phrase": "Lights up when MIDI events arrive at this song or rack.",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile\\RackPanel\\TablePanel\\InputPortsSlot.cs"
-		]
-	},
-	{
 		"phrase": "Input Ports",
 		"translation": null,
 		"locations": 
@@ -28058,7 +28015,7 @@
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationHandler.cs"
 		]
 	},
 	{
@@ -28098,7 +28055,7 @@
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationHandler.cs"
 		]
 	},
 	{
@@ -28108,6 +28065,18 @@
 		[
 			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
 			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "Audio Level Meter",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\TablePanel\\MediaPlayerSlot.cs",
+			".\\Cantabile\\RackPanel\\TablePanel\\OutputPortsSlot.cs",
+			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
+			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -28310,6 +28279,16 @@
 		"locations": 
 		[
 			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs"
+		]
+	},
+	{
+		"phrase": "MIDI Input Indicator",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile\\RackPanel\\TablePanel\\PluginSlot.cs",
+			".\\Cantabile\\RackPanel\\TablePanel\\RackHostSlot.cs",
+			".\\Cantabile\\RackPanel\\TablePanel\\RouteSlot.cs"
 		]
 	},
 	{
@@ -28796,6 +28775,14 @@
 		]
 	},
 	{
+		"phrase": "MIDI In",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
+		]
+	},
+	{
 		"phrase": "Stereo Out",
 		"translation": null,
 		"locations": 
@@ -28805,28 +28792,12 @@
 		]
 	},
 	{
-		"phrase": "MIDI In",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs"
-		]
-	},
-	{
 		"phrase": "MIDI Out",
 		"translation": null,
 		"locations": 
 		[
 			".\\Cantabile.Application\\Racks\\Rack\\Rack.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayer.cs"
-		]
-	},
-	{
-		"phrase": "NewRack",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
 		]
 	},
 	{
@@ -28844,6 +28815,14 @@
 		[
 			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\RackUndoUnits.cs"
+		]
+	},
+	{
+		"phrase": "NewRack",
+		"translation": null,
+		"locations": 
+		[
+			".\\Cantabile.Application\\Racks\\RackBase\\RackBase.cs"
 		]
 	},
 	{
@@ -28931,6 +28910,7 @@
 		"translation": null,
 		"locations": 
 		[
+			".\\Cantabile.Application\\Racks\\RackBase\\UndoRestartOperationGroup.cs",
 			".\\Cantabile.Application\\Racks\\RackBase\\UndoRouteOperationGroup.cs"
 		]
 	},
@@ -29045,30 +29025,6 @@
 		]
 	},
 	{
-		"phrase": "Input Port - {0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalInputPorts.cs"
-		]
-	},
-	{
-		"phrase": "Loopback - {0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs"
-		]
-	},
-	{
-		"phrase": "Output Port - {0}",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\External\\ExternalOutputPorts.cs"
-		]
-	},
-	{
 		"phrase": "Object by Index \/ Name",
 		"translation": null,
 		"locations": 
@@ -29083,7 +29039,7 @@
 		[
 			".\\Cantabile.Application\\Racks\\Objects\\GenericObjectBinding\\GenericObjectBindableIndexed.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationHandler.cs"
 		]
 	},
 	{
@@ -29311,7 +29267,7 @@
 		[
 			".\\Cantabile.Application\\Racks\\Objects\\MediaPlayer\\MediaPlayerBindable.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginBindable.cs",
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs",
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationHandler.cs",
 			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHostBindable.cs"
 		]
 	},
@@ -29598,22 +29554,6 @@
 		]
 	},
 	{
-		"phrase": "\nGUI Upscaling: Enabled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
-		]
-	},
-	{
-		"phrase": "\nGUI Upscaling: Disabled",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\Plugin.cs"
-		]
-	},
-	{
 		"phrase": "MIDI Route #{0}",
 		"translation": null,
 		"locations": 
@@ -29741,7 +29681,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationHandler.cs"
 		]
 	},
 	{
@@ -29749,7 +29689,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationHandler.cs"
 		]
 	},
 	{
@@ -29757,7 +29697,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationHandler.cs"
 		]
 	},
 	{
@@ -29765,15 +29705,7 @@
 		"translation": null,
 		"locations": 
 		[
-			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationTarget.cs"
-		]
-	},
-	{
-		"phrase": "Circular route between racks",
-		"translation": null,
-		"locations": 
-		[
-			".\\Cantabile.Application\\Racks\\Objects\\RackHost\\RackHost.cs"
+			".\\Cantabile.Application\\Racks\\Objects\\Plugin\\PluginMidiFilterAutomationHandler.cs"
 		]
 	},
 	{
